@@ -4,3 +4,4 @@ El mercat dels videojocs en dispositius mòbils no ha deixat de creixer en els d
 
 En aquest treball aprofundirem en aquesta pregunta per què sí, es farà un videojoc per a dispositius mòbils i es publicarà per a les principals tendes d'aplicacions.
 
+Ara bé, quin tipus de joc serà el que es farà? Doncs
