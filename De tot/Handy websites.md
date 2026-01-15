@@ -7,3 +7,6 @@
 - [Tutorial Godot Alva Mayo](https://youtu.be/eQ_HBvtdoiU?si=IHor9TK2aN9blE5E)
 -  [Tutorial Godot Brakeys](https://youtu.be/LOhfqjmasi0?si=KYdVsSc1_RRd22Z1)
 - [Curs Godot random](https://youtu.be/L3pFEk1HPCQ?si=5--PFyfRyqIUYnbR)
+# Info
+- data.ai
+- 

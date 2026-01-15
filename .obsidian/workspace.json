@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Videojoc.md",
+                "file": "Memoria/Abstract.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Videojoc"
+              "title": "Abstract"
+            }
+          },
+          {
+            "id": "d390304bb061a21e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "De tot/Reunions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunions"
             }
           },
           {
@@ -64,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,26 +241,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9eec48be94113bd5",
+  "active": "d390304bb061a21e",
   "lastOpenFiles": [
-    "Idees/Handy websites.md",
-    "Videojoc.md",
-    "Metodologia.md",
-    "Justificació i Objectius.md",
-    "Índex.md",
-    "Introducció.md",
-    "Resumen.md",
-    "Resum.md",
-    "Objectius.md",
-    "Marc teòric.md",
-    "Desenvolupament.md",
-    "Dedicatòria.md",
-    "Conclusions.md",
-    "Cites.md",
-    "Bibliografia i referències.md",
-    "Annexos.md",
-    "Agraïments.md",
-    "Abstract.md",
-    "Idees"
+    "Memoria/Abstract.md",
+    "De tot/Reunions.md",
+    "Sense títol",
+    "Memoria/Metodologia.md",
+    "Memoria",
+    "De tot/Handy websites.md",
+    "De tot/Videojoc.md",
+    "Memoria/Justificació i Objectius.md",
+    "Memoria/Índex.md",
+    "Memoria/Introducció.md",
+    "Memoria/Resumen.md",
+    "Memoria/Resum.md",
+    "Memoria/Objectius.md",
+    "Memoria/Marc teòric.md",
+    "Memoria/Desenvolupament.md",
+    "Memoria/Dedicatòria.md",
+    "Memoria/Conclusions.md",
+    "Memoria/Cites.md",
+    "Memoria/Bibliografia i referències.md",
+    "Memoria/Annexos.md",
+    "Memoria/Agraïments.md",
+    "De tot"
   ]
 }

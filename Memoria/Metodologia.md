@@ -1,4 +1,7 @@
-%%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.%%
+%%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.
+# Metodollogia àgil
+%%TODO: explicar que seguirem una metodologia àgil i com la implementarem i perquè%%
+
 ## Ferramentes
 Per al desenvolupament d'aquest TFG m'he basat en les següents ferramentes i sistemes per a les diferents tasques que havia d'abordar:
 ### MacOS Tahoe
