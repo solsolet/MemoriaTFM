@@ -1,5 +1,5 @@
 %%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.
-# Metodollogia àgil
+# Metodologia àgil
 %%TODO: explicar que seguirem una metodologia àgil i com la implementarem i perquè%%
 
 ## Ferramentes
@@ -15,7 +15,7 @@ Programari de sistema de control de versions per a mantenir el projecte en diver
 https://github.com
 ### Clockify
 Programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte 'TFM' i he anat creant diferents tasques com:
-- Memòria Obsidian: per a tot el relacionat amb la memporia
+- Memòria Obsidian: per a tot el relacionat amb la memòria
 - Reunió *x*: per a tota classe de reunions.
 - Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
 - Organització *x*: per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
@@ -27,7 +27,7 @@ https://obsidian.md
 Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF).
 https://pandoc.org/index.html
 ### Godot 4.5.1
-Motor de jocs 2D-3D de codi obert multiplataforma amb el què es desenvolupara el videojocs del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast d'aquest projecte en el seu inici.
+Motor de jocs 2D-3D de codi obert multiplataforma amb el què es desenvoluparà el videojocs del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 https://godotengine.org
 ### GanttProject
 Aplicació multiplataforma de programari lliure (sota la llicència GPL), la fi de la qual és la **gestió de projectes** mitjançant una representació gràfica de la distribució de les tasques necessàries a curt, mitjà i/o llarg termini.

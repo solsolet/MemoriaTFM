@@ -9,19 +9,19 @@ Fet:
 
 Dubtes resolts:
 - Marc teòric què posar?
-	- Context: doncs assumir que el lector sap que és un videojoc i partir de quines caracteeríatiques tenen les videojocs mòbils que els fa particulars (responsiveness, interfície, tactil, accessibilitat, notificacions...).
-	- Estat de l'art: elegir un parell de jocs en el que m'inbspire o son un bon exemple de gènere idle i nlizar-los una mica, traure l'arbre d'habilitats...
+	- Context: assumir que el lector sap que és un videojoc i partir de quines caracteríatiques tenen les videojocs mòbils que els fa particulars (responsiveness, interfície, tactil, accessibilitat, notificacions...).
+	- Estat de l'art: elegir un parell de jocs en el que m'inspire o son un bon exemple de gènere idle i anlizar-los una mica, traure l'arbre d'habilitats...
 - Desenvolupament ja pensarem con estructurar-ho quan tinguem clar i mig fet el projecte
 
 Fer:
-- Provar prototip utorial en android/iOS a vore com és la importació
-- Començaar a pensar en el meu arbre d'habilitats
+- Provar prototip tutorial en android/iOS a vore com és la importació
+- Començar a pensar en el meu arbre d'habilitats
 - Casos d'us
 - Pensar mètriques (com ABP, temps costs...)
 - Estudi jocs en el mercat
 - Anotar coses que aprenga de godot per si les incloc en la memòria
 - Fer + tutorials Godot
-- Mirar plugin KAnban
+- Mirar plugin Kanban
 
 Idees:
 - Idea, piano, cauen les notes

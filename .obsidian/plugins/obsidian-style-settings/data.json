@@ -13,5 +13,8 @@
   "anuppuccin-theme-settings@@anp-canvas-dark-bg": true,
   "anuppuccin-theme-settings@@anp-alt-rainbow-style": "anp-simple-rainbow-color-toggle",
   "anuppuccin-theme-settings@@hide-comments": false,
-  "anuppuccin-theme-settings@@hide-comment-indicators": true
+  "anuppuccin-theme-settings@@hide-comment-indicators": true,
+  "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
+  "anuppuccin-theme-settings@@anp-table-toggle": true,
+  "anuppuccin-theme-settings@@anp-header-divider-color-toggle": false
 }

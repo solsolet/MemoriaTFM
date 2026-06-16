@@ -9,4 +9,4 @@
 - [Curs Godot random](https://youtu.be/L3pFEk1HPCQ?si=5--PFyfRyqIUYnbR)
 # Info
 - data.ai
-- 
+- https://www.gamedevs.org/uploads/grand-theft-auto.pdf

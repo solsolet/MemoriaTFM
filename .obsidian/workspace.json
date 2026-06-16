@@ -8,54 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "43a16a0ebdc0b32a",
+            "id": "9282983d6b53be30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Idees/Handy websites.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Handy websites"
-            }
-          },
-          {
-            "id": "9eec48be94113bd5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memoria/Abstract.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Abstract"
-            }
-          },
-          {
-            "id": "d390304bb061a21e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "De tot/Reunions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reunions"
-            }
-          },
-          {
-            "id": "b98d89d77c2d26c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Idees/Handy websites.md",
+                "file": "De tot/Handy websites.md",
                 "mode": "source",
                 "source": false
               },
@@ -69,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bibliografia i referències.md",
+                "file": "Memoria/Metodologia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bibliografia i referències"
+              "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +68,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -151,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Desenvolupament.md",
+                "file": "De tot/Reunions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Retroenllaços per a Desenvolupament"
+              "title": "Retroenllaços per a Reunions"
             }
           },
           {
@@ -170,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Desenvolupament.md",
+                "file": "De tot/Reunions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enllaços sortints de Desenvolupament"
+              "title": "Enllaços sortints de Reunions"
             }
           },
           {
@@ -213,50 +170,64 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Desenvolupament.md",
+                "file": "De tot/Reunions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Desenvolupament"
+              "title": "Esquema de Reunions"
+            }
+          },
+          {
+            "id": "82fdb615d7f7b6b7",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Crea una base nova": false,
       "switcher:Obre el selector ràpid": false,
       "graph:Obre la vista gràfica": false,
       "canvas:Crea un llenç nou": false,
       "daily-notes:Obre la nota d'avui": false,
       "templates:Inserir plantilla": false,
       "command-palette:Obre la paleta d'ordres": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "d390304bb061a21e",
+  "active": "9282983d6b53be30",
   "lastOpenFiles": [
-    "Memoria/Abstract.md",
+    "Diari/2026-04-24.md",
+    "De tot/Kanban.md",
+    "Sense títol 1.base",
+    "Sense títol.base",
+    "2026-04-24.md",
+    "Diari/2026-04-22.md",
+    "lol lol.md",
+    "p1 @{2026-04-24} @@{12 00} lol lol.md",
+    "Sense títol 2.base",
+    "Untitled Kanban.md",
     "De tot/Reunions.md",
-    "Sense títol",
-    "Memoria/Metodologia.md",
-    "Memoria",
-    "De tot/Handy websites.md",
-    "De tot/Videojoc.md",
+    "Memoria/Abstract.md",
+    "Fer tauler Kanban.md",
     "Memoria/Justificació i Objectius.md",
-    "Memoria/Índex.md",
+    "Diari",
     "Memoria/Introducció.md",
-    "Memoria/Resumen.md",
-    "Memoria/Resum.md",
-    "Memoria/Objectius.md",
-    "Memoria/Marc teòric.md",
+    "Memoria/Índex.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Dedicatòria.md",
     "Memoria/Conclusions.md",
@@ -264,6 +235,13 @@
     "Memoria/Bibliografia i referències.md",
     "Memoria/Annexos.md",
     "Memoria/Agraïments.md",
+    "Memoria/Metodologia.md",
+    "Memoria",
+    "De tot/Handy websites.md",
+    "De tot/Videojoc.md",
+    "Memoria/Resumen.md",
+    "Memoria/Resum.md",
+    "Memoria/Objectius.md",
     "De tot"
   ]
 }
