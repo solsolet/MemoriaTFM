@@ -25,17 +25,67 @@
             "id": "406098fff223dfd6",
             "type": "leaf",
             "state": {
+              "type": "kanban",
+              "state": {
+                "file": "De tot/Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Kanban"
+            }
+          },
+          {
+            "id": "90404d52e09b5535",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Memoria/Metodologia.md",
+                "file": "Memoria/Annexos/One-Sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodologia"
+              "title": "One-Sheet"
+            }
+          },
+          {
+            "id": "91bcd44bed836207",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Annexos/Ten-Pager.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ten-Pager"
+            }
+          },
+          {
+            "id": "fc226c577fd967fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/Template-Tracking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Template-Tracking"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -209,12 +259,20 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9282983d6b53be30",
+  "active": "91bcd44bed836207",
   "lastOpenFiles": [
-    "Diari/2026-04-24.md",
+    "Memoria/Annexos/One-Sheet.md",
+    "Memoria/Annexos/Ten-Pager.md",
+    "Templates/Template-Tracking.md",
+    "Diari/2026-06-18.md",
+    "Memoria/Annexos",
+    "Templates",
     "De tot/Kanban.md",
-    "Sense títol 1.base",
+    "Diari/2026-06-17.md",
     "Sense títol.base",
+    "Sense títol 1.base",
+    "De tot/Handy websites.md",
+    "Diari/2026-04-24.md",
     "2026-04-24.md",
     "Diari/2026-04-22.md",
     "lol lol.md",
@@ -235,13 +293,7 @@
     "Memoria/Bibliografia i referències.md",
     "Memoria/Annexos.md",
     "Memoria/Agraïments.md",
-    "Memoria/Metodologia.md",
     "Memoria",
-    "De tot/Handy websites.md",
-    "De tot/Videojoc.md",
-    "Memoria/Resumen.md",
-    "Memoria/Resum.md",
-    "Memoria/Objectius.md",
     "De tot"
   ]
 }
