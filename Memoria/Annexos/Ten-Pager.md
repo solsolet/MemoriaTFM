@@ -42,7 +42,7 @@ POV: eres un jove pianista estudiant del conservatori i t'has d'aplicar per als 
 #### Assaig (concentració)
 ## El personatge
 ### Edat, sexe, aparença
-Jove andrògin al cual només veurem les mans de moment.
+Jove andrògin al qual només veurem les mans de moment.
 ### Historia de fons i relació amb el gameplay
 Vols entrar al superior de piano i per tant s'ha d'esforçar en aquests últims anys de conservatori per a arribar preparat. Per aquests motius té tant d'interès i està una mica desesperat en intentar-ho tot per a poder aplicar-se i millorar les seues habilitats amb el seu intrument.
 ### Habilitats, armes, atacs
@@ -64,27 +64,71 @@ A banda de les estadístiques, el jugador tindrà un *nivell* on segons vages gu
 Idle, Ritme, Casual, Productivitat
 ### Capitols o fases de la història
 Segons el nivell del jugador tindrem les següents fases:
-- 
+- Barroquista
+- Clàssic
+- Romanticona
+- Se llevará una gran impresión
+- XX
+
+Es repartira el nombre de nivells totals entre aquesta quantitat de fases.
 ### Mecàniques
+Totes les mecàniques son usant la pantalla tàctil del mòbil fent *tap*, entre elles tindrem que podem:
+- Tocar tecles
+- Elegir habilitat
+- Comprar millores
 ### Minijocs
-Tocar tipo piano tiles cançonetes
+Tocar cançons a l'estil Piano Tiles. Segons el nivell en que estem desbloquejarem noves obres.
 ### Elements propis de la plataforma
-Notificacions
+- Notificacions
+- Detecció del cicle de vida de l'aplicació (p.e.: detecta si te n'ixes en el mode concentració)
 ***
 ## Mon del joc
+### Descripció de l'entorn
+Entorn 2D on en la part de baix de la pantalla hi ha un teclat en un número inicial de tecles. Cauran notes (en forma de blocs) de dalt de la pantalla de manera que el jugador toque la tecla corresponent quant tecla estiga a sobre.
+
+"Tenda": lloc on comprar millores a mode kiosk
+
+Arbre d'habilitats
+### Mapa
+L'arbre d'habilitats serà desbloquejable una vegada s'arribe a uns mínims en l'habilitat dessitjada.
+### Música
+La música que sone de fons serà acorde a les époques desbloquejades en el nivell corresponent interpretada per un piano.
+### Enllaç amb la història
+L'estetica musical està relacionada en l'ambient de conservatori i l'època muscial en la que ens trobem segons el nivell.
 ***
 ## Experiencia de joc
+### Sensació a transmetre
+### Escena d'apertura
+### Cinemàtiques
+### So i música
+### Navegació per les pantalles del joc
 ***
 ## Mecàniques
+### Mecàniques
+Elementos con los que interactuamos (cuerdas, mover bloques, plataformas móviles, puertas, etc)
+### Perills
+Pinchos, fuego, huecos por los que caer, etc. No tienen inteligencia
+### Power-ups
+Potenciadors (munició, vides, inmunitat, etc.)
+### Col·leccionables
+No tienen impacto inmediato en el gameplay (monedas, trofeos, etc). Describir si tiene sistema económico.
 ***
 ## Enemics
+Peligros con inteligencia, Tipos de enemigos y cómo vencerlos, Jefes
 Cap
 ***
 ## Multijugador i material extra
+### Material extra desbloquejable, assoliments
+
+### Incentius per a seguir jugant
+
+### Plataformes externes (Google Play, Game Center)
+
+### Modes multijugador. Número de jugadors. Tempos real o per torns
 ***
 ## Monetització
 ### Model free-to-play
-### Que es pot comprar pagant
+### Que es pot comprar pagant?
 ### Tipus de monedes en el joc
 ### Possibles expansions i DLCs
 Noves cançons, noves trames amb nous instruments
