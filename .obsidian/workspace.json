@@ -85,7 +85,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -259,17 +259,17 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "91bcd44bed836207",
+  "active": "406098fff223dfd6",
   "lastOpenFiles": [
-    "Memoria/Annexos/One-Sheet.md",
     "Memoria/Annexos/Ten-Pager.md",
+    "De tot/Kanban.md",
+    "Templates/Template-Tracking.md",
+    "Memoria/Annexos/One-Sheet.md",
     "Diari/2026-06-21.md",
     "Diari/2026-06-20.md",
-    "Templates/Template-Tracking.md",
     "Diari/2026-06-18.md",
     "Memoria/Annexos",
     "Templates",
-    "De tot/Kanban.md",
     "Diari/2026-06-17.md",
     "Sense títol.base",
     "Sense títol 1.base",

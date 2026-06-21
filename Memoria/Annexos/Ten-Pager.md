@@ -13,7 +13,6 @@ state: In Progress
 |        |                     |                              |
 |        |                     |                              |
 ***
-
 ## Títol
 ### Pianissimo
 Títol provisional.
@@ -94,44 +93,128 @@ L'arbre d'habilitats serà desbloquejable una vegada s'arribe a uns mínims en l
 ### Música
 La música que sone de fons serà acorde a les époques desbloquejades en el nivell corresponent interpretada per un piano.
 ### Enllaç amb la història
-L'estetica musical està relacionada en l'ambient de conservatori i l'època muscial en la que ens trobem segons el nivell.
+L'estetica musical està relacionada en l'ambient de conservatori i l'època musical en la que ens trobem segons el nivell.
 ***
 ## Experiencia de joc
 ### Sensació a transmetre
+Diversió, absurdesa, ganes d'anar conquistant objectius.
 ### Escena d'apertura
+Com si d'una página de cómic es tractara, apareixen rítmicament vinyetes de l'estressant situació del jugador, 3 per pantalla:
+1. Mostrar estrés de forma cómica:
+	- intruments sonant a la vegada, cadascún a la seua bola amb el jugador amagat per dins
+	- Partitures per totes bandes, apilades, caent del cel amb el jugador per enmig més irritat
+	- Mescla de les dos anteriors.
+2. Trobar la solució a l'estrés: el nostre joc:
+	- Li sona el telèfon de la butxaca
+	- L'agafa i apareix el nostre joc amb un botó d'inici temptador
+	- Llampada de llum cegadora que dona peu al nostre menú d'inici
+
+L'escena seria saltable mitjançant un botó que ho permetera que et portaria directament a la pantalla d'inici.
 ### Cinemàtiques
+Entre els diferents canvis de fase/nivell es podria mostrar una cinemàtica de com evoluciona el nostre personatge a mode de cómic també.
+
+En cas s'ampliar el teclat també podria haver una escena de com creix una tecla nova.
 ### So i música
+Cada tecla del teclat faria el so d'una tecla/acord de piano concret.
+
+Sonaria durant el joc una música de fons interpretada per un piano, concretament peces per a practicar i calfar, p.e. estudis de Czerny.
+
+Fora dels sons de piano els botons sonarien "bips" sintètics i simpàtics.
+
+El disseny sonor seria simpàtic a pesar de tindre una "banda sonora" de piano clàssic per tal de fer el joc amable i no molt carregat.
 ### Navegació per les pantalles del joc
+TODO: posar una imatge d'un esquema.
 ***
 ## Mecàniques
 ### Mecàniques
-Elementos con los que interactuamos (cuerdas, mover bloques, plataformas móviles, puertas, etc)
+El jugador por interacuar polsant:
+- tecles durant el joc
+- Botons durant tot el cicle de vida de l'aplicació
 ### Perills
-Pinchos, fuego, huecos por los que caer, etc. No tienen inteligencia
+Pel moment no en contemple afegir-ne cap.
 ### Power-ups
-Potenciadors (munició, vides, inmunitat, etc.)
+Durant una run et pots trobar power-ups temporals i d'altres permanents que anomenarem habilitats.
+#### Temporals
+- Mans extra: aparició d'una mà que va tocant notes per tu. Trobariem diversos nivells del 1 al 4.
+- Manaza: toca totes les tecles a la vegada durant x temps
+- Avalanxa de notes
+- Nyan cat: maneta de gat
+#### Permanents (habilitats)
+- Metrònom: millora precisió.
+- Mans extra: aparició d'una ma flotant que toca per tu. Es trobaria sotmesa a una classe d'estadístiques que es podrien millorar.
+- Peu extra: t'ajuda a tocar els pedals
+- Pedals:
+	- una corda (esquerra)
+	- sordina (central)
+	- sostenuto (dret)
+- Torrent de notes: cauen més notes per tant es poden guanyar més punts
+- Glissando: desbloqueges poder tocar notes arrastrant.
+
 ### Col·leccionables
-No tienen impacto inmediato en el gameplay (monedas, trofeos, etc). Describir si tiene sistema económico.
+Per fase es desbloquejarien dues cançons (en cas de ser poques augmentariem a tres) relacionades en l'època musical corresponent.
+- Barroc: 
+- Clàssicisme:
+- Romanticisme: 4 impromptus , D. 899 (Op. 90) Allegro E Flat
+- Impresionisme:
+- Segle XX:
+
 ***
 ## Enemics
-Peligros con inteligencia, Tipos de enemigos y cómo vencerlos, Jefes
 Cap
 ***
 ## Multijugador i material extra
 ### Material extra desbloquejable, assoliments
+#### Assoliments
+
+| Títol                         | Descripció                                                     |
+| ----------------------------- | -------------------------------------------------------------- |
+| Barroquista                   | arriba a la fase 1                                             |
+| Clàssic                       | arriba a la fase 2                                             |
+| Romanticona                   | arriba a la fase 3                                             |
+| Se llevará una gran impresión | arriba a la fase 4                                             |
+| XX                            | arriba a la fase 5                                             |
+| Professional                  | Assoleix el máxim nivell                                       |
+| Amateur                       | Aconsegueix X punts                                            |
+| Flipat                        | Aconsegueix X més punts                                        |
+| Devora tribunals              | Aocnseguieix una burrada de punts                              |
+| 4' 33"                        | Estigues dins del joc idle sense tocar cap tecla durant 4' 33" |
+#### Cromos
+
+| Tipus      | Nom      | Descripció                                                                                                                                                                |
+| ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Compositor | Bach     |                                                                                                                                                                           |
+| Compositor |          |                                                                                                                                                                           |
+| Compositor | Czerny   | Autor de molts estudis que han sonat durant Idle. Fun fact: l'autora del joc l'odia                                                                                       |
+| Compositor | Schubert |                                                                                                                                                                           |
+|            |          |                                                                                                                                                                           |
+| Obra       |          |                                                                                                                                                                           |
+|            |          |                                                                                                                                                                           |
+| Obra       | 4' 33"   | Obra composta al 1952 per John Cage on la peça indica a l'interpret no tocar el seu instrument durant aquest temps, permetant sentir els sorolls ambiental del teu entorn |
+| Curiositat | Pedals   | Info dels pedals i diferències entre els dos pianos                                                                                                                       |
 
 ### Incentius per a seguir jugant
-
+- Repte diari: assoleix X punts i a canvi reps una recompensa
+- Repte setmanal: assoleix X punts al llarg de la setmana per rebre una recompensa
+- Cançons per debloquejar rejugables per tal d'aconseguir la millor puntuació
 ### Plataformes externes (Google Play, Game Center)
-
+Es podria descarregar de Google Play i si hi ha temps durant el desenvolupament, a Game Center.
 ### Modes multijugador. Número de jugadors. Tempos real o per torns
+No hi hauria multijugador però podries competir amb amics per tindre la millor posició en el ránking.
+
+Els dos modes es juguen en temps real, de fet el pas del temps és important per a guanyar més punts.
 ***
 ## Monetització
 ### Model free-to-play
+El joc es podrà descarregar gratuitament des de les tendes d'aplicacions.
 ### Que es pot comprar pagant?
+Més contingut, en aquest cas més obres i més profunditat i nivells de dificultat per a jugar-les.
 ### Tipus de monedes en el joc
+Moneda blaneta: notes, els punts que guanyes per polsar les tecles bé.
 ### Possibles expansions i DLCs
-Noves cançons, noves trames amb nous instruments
+- Noves cançons
+- noves trames amb nous instruments
+- widget per a rellotge inteligent
 ### Ho utilitzem per a vendre un producte extern?
-No?
-Metrònoms
+En principi no, però en cas de poder desenvolupar una mica mñes la historia es podria fer un cómic.
+
+En cas de flipar-se, un metrónom que integre conexió en l'aplicació en el mode Assaig per a trackejar millor el progrés durant l'estudi.

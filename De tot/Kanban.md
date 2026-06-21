@@ -9,15 +9,13 @@ kanban-plugin: board
 - [ ] Repassar apunts AESM
 - [ ] Repassar apunts FV
 - [ ] Repassar documentació Kaiwa
-- [ ] Fer Ten Pager #docu
-- [ ] Elaborar GDD #docu
 
 
 ## To Do (10)
 
 - [ ] Jugar a Magic Archery hihihaha #i @{2026-05-01}
 - [ ] Jugar a Magic Archery serio #l #docu .
-- [ ] Fer One Pager #docu #l
+- [ ] Elaborar GDD #docu
 
 
 ## In Progress (5)
@@ -30,6 +28,8 @@ kanban-plugin: board
 
 **Complete**
 - [x] Organitzar Kanban #l @{2026-05-01}
+- [x] Fer One Pager #docu #l
+- [x] Fer Ten Pager #docu
 - [x] Intentar exportar joc a Android
 
 
