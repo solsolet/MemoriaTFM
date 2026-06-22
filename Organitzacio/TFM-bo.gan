@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="TFM" company="UA" webLink="http://" view-date="2026-06-08" view-index="0" gantt-divider-location="501" resource-divider-location="527" version="3.3.3322" locale="ca_ES">
+    <description><![CDATA[Planificació del TFM (ara sí que sí) coordinada amb Clockify i el plugin de Kanban de Obsidian.]]></description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="242" order="0"/>
+        <field id="tpd4" name="Inici" width="96" order="1"/>
+        <field id="tpd5" name="Finalització" width="98" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <field id="tpd6" name="Durada" width="48" order="3"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ff6600 #eeeeee #ff0033 #00ffcc #006666 #6600ff #6633ff #9999ff #ccccff #660099]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="323" order="0"/>
+        <field id="1" name="Funció" width="198" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="es">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Year's Day]]></date>
+        <date year="" month="1" date="6" type="HOLIDAY"><![CDATA[Epiphany]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Labour Day]]></date>
+        <date year="" month="8" date="15" type="HOLIDAY"><![CDATA[Assumption Day]]></date>
+        <date year="" month="10" date="12" type="HOLIDAY"><![CDATA[Hispanic Day]]></date>
+        <date year="" month="11" date="1" type="HOLIDAY"><![CDATA[All Saints Day]]></date>
+        <date year="" month="12" date="6" type="HOLIDAY"><![CDATA[Constitution Day]]></date>
+        <date year="" month="12" date="8" type="HOLIDAY"><![CDATA[Immaculate Conception Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="2026" month="4" date="2" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2026" month="4" date="3" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2025" month="4" date="17" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2025" month="4" date="18" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2016" month="3" date="24" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2016" month="3" date="25" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2017" month="1" date="2" type="HOLIDAY"><![CDATA[New Year's Holiday]]></date>
+        <date year="2017" month="4" date="13" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2017" month="4" date="14" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2018" month="3" date="29" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2018" month="3" date="30" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2019" month="4" date="18" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2019" month="4" date="19" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2020" month="4" date="9" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2020" month="4" date="10" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2020" month="11" date="2" type="HOLIDAY"><![CDATA[All Saints Day (in lieu)]]></date>
+        <date year="2020" month="12" date="7" type="HOLIDAY"><![CDATA[Constitution Day (in lieu)]]></date>
+        <date year="2021" month="4" date="1" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2021" month="4" date="2" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2022" month="4" date="14" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2022" month="4" date="15" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="7" uid="deb52d0dd6c242e6858f09db35da2c9b" name="TFM" meeting="false" start="2026-06-15" duration="83" complete="0" expand="true">
+            <task id="10" uid="35c3f7f6a4164b3584aa96b4d6fa921a" name="GESTIÓ" color="#009999" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2026-06-15" duration="12" complete="0" expand="false">
+                <task id="17" uid="a393c1a8aea447c1ade3a375e0701293" name="Configuració GranttProject" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"/>
+                <task id="18" uid="839f5c18db014d039653495d3eb2bb0b" name="Configuració Clockify" meeting="false" start="2026-06-16" duration="1" complete="0" expand="true"/>
+                <task id="20" uid="6621d9dbc8f947c2a6c72ed56b45e5ed" name="Configuració Kanban" color="#8cb6ce" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                <task id="21" uid="439ac6ad577e4eca87a66e7bb65d333c" name="Planificació" meeting="false" start="2026-06-22" duration="2" complete="0" expand="true"/>
+                <task id="22" uid="6f598d5b0c9a4b2db1cd4cff0c479b4a" name="Seguiment" meeting="false" start="2026-06-24" duration="1" complete="0" expand="true"/>
+                <task id="23" uid="ad25ea11c7234dddbd818abbcdc02918" name="Revisio planificació" meeting="false" start="2026-06-25" duration="1" complete="0" expand="true"/>
+                <task id="24" uid="39b51ae8b5b449f99eee3d4a00491c16" name="Reunions" meeting="false" start="2026-06-26" duration="1" complete="0" expand="true"/>
+                <task id="26" uid="124be5bc949f4b87a482f7c263ab6c7e" name="Gestió documentació" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="11" uid="65c3fdeb0db545fc93e603fe3ed0b457" name="INVESTIGACIÓ I ANÀLISI" meeting="false" start="2026-06-23" duration="5" complete="0" expand="true">
+                <task id="27" uid="89acfbe267944bbdbe5b54866e8e209e" name="Estudi mercat" meeting="false" start="2026-06-23" duration="2" complete="0" expand="true"/>
+                <task id="28" uid="0e938f2734a64997b62aec7169f9cd34" name="Benchmarking" meeting="false" start="2026-06-23" duration="2" complete="0" expand="true"/>
+                <task id="29" uid="b4457ebef0534591886183deac43715b" name="Investigació tecnològica" meeting="false" start="2026-06-24" duration="4" complete="0" expand="false">
+                    <task id="49" uid="a77ad512d7ba4fcfbc8c580bf35675cf" name="Investigació Godot" meeting="false" start="2026-06-24" duration="3" complete="0" expand="true"/>
+                    <task id="50" uid="7073fd3b0d584d548a4c7a1dbc75a200" name="Investigació sistema áudio" meeting="false" start="2026-06-24" duration="1" complete="0" expand="true"/>
+                    <task id="51" uid="1c26e8c3f7b04c39939fee1879598d7c" name="Investigació notificacions" meeting="false" start="2026-06-25" duration="1" complete="0" expand="true"/>
+                    <task id="52" uid="8444fc50266048d7bbfab0420a24b43d" name="Inverstigació persistencia" meeting="false" start="2026-06-26" duration="1" complete="0" expand="true"/>
+                    <task id="53" uid="bbd68f9e462740ccae1f7edb1b56b6ed" name="Investigació control cicle aplicació" meeting="false" start="2026-06-27" duration="1" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="102" uid="d7a5a467392c459f9db3ff4b82e6084b" name="Proves Pandocs" meeting="false" start="2026-06-27" duration="1" complete="0" expand="true"/>
+            <task id="15" uid="7bfcb6ea286048deb809ac3a19710057" name="DESENVOLUPAMENT" color="#660099" meeting="false" start="2026-06-16" duration="62" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <task id="8" uid="1edea7e3b85d453d8629730b6f672374" name="PREPRODUCCIÓ" color="#9999ff" meeting="false" start="2026-06-16" duration="14" complete="0" expand="false">
+                    <task id="31" uid="a673623699004fe88aaec01a2feb6a7f" name="Disseny" meeting="false" start="2026-06-16" duration="14" complete="0" expand="true">
+                        <notes><![CDATA[Primer esboç de la documentació.]]></notes>
+                        <task id="54" uid="4376beec746e458e8284cd5a68630a50" name="One-sheet" meeting="false" start="2026-06-16" duration="1" complete="0" expand="true">
+                            <depend id="55" type="1" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="55" uid="6546840a33ad459bb9d8c8f678d36842" name="Ten Pager" meeting="false" start="2026-06-16" duration="6" complete="0" expand="true">
+                            <depend id="56" type="2" difference="1" hardness="Strong"/>
+                        </task>
+                        <task id="56" uid="fa39d5502b9a4ad5b7af6ba39552707c" name="GDD 1" meeting="false" start="2026-06-23" duration="7" complete="0" expand="true">
+                            <depend id="57" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                    </task>
+                    <task id="32" uid="aa1b20b7471a42889de52e6f9c60d378" name="Arquitectura" meeting="false" start="2026-06-23" duration="3" complete="0" expand="true">
+                        <notes><![CDATA[- Diagrama en paper per a gilitzar el procés
+- Buscar ferramentes per a fer diagrames
+- Passar diagrames a net
+- Deixar reposar
+- Revisar diagrames]]></notes>
+                        <depend id="33" type="2" difference="0" hardness="Strong"/>
+                        <task id="58" uid="e434ab1078dd4e29b730320da9023db9" name="Diagrama flux" meeting="false" start="2026-06-23" duration="2" complete="0" expand="true"/>
+                        <task id="59" uid="b2ae44e78f6a48fc8106f281b58f6f41" name="Diagrama classes" meeting="false" start="2026-06-24" duration="2" complete="0" expand="true"/>
+                        <task id="60" uid="636960025dcb40e8ba2c1fb3a33a95dd" name="Disseny BD" meeting="false" start="2026-06-25" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="33" uid="0a1cc480e073470d97d05d06bcaf318f" name="Prototip" meeting="false" start="2026-06-26" duration="4" complete="0" expand="true">
+                        <depend id="103" type="2" difference="0" hardness="Strong"/>
+                        <task id="62" uid="8f17f4c9f4024a61b20f0dfbe31d5a41" name="Mockups" meeting="false" start="2026-06-26" duration="2" complete="0" expand="true"/>
+                        <task id="61" uid="3c43de8547064f5ebcb4e4b4d1bc01ff" name="Grayboxing mecànica teclat" meeting="false" start="2026-06-27" duration="3" complete="0" expand="true"/>
+                    </task>
+                    <task id="103" uid="b477497c46c94fe5a2e26cd5670ebf0b" name="Prototip GrayBox" color="#ff6600" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="true" start="2026-06-30" duration="0" complete="0" priority="2" expand="true">
+                        <depend id="12" type="2" difference="1" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="12" uid="a8503ae4f85845f58bbe85d63f186145" name="PRODUCCIÓ" color="#6633ff" meeting="false" start="2026-07-01" duration="30" complete="0" expand="true">
+                    <notes><![CDATA[TODO: pensar com organitzar en iteracions.]]></notes>
+                    <depend id="13" type="2" difference="1" hardness="Strong"/>
+                    <task id="34" uid="9caeab17aec94b3ab5911aad970cafa3" name="Projecte" meeting="false" start="2026-07-01" duration="4" complete="0" expand="false">
+                        <task id="63" uid="e21f55f190ee4b47a76fb2334470a054" name="Configuració Godot" meeting="false" start="2026-07-01" duration="1" complete="0" expand="true"/>
+                        <task id="64" uid="5cedb14228a2479f93d15d0ac4b03039" name="Estructurar escenes" meeting="false" start="2026-07-01" duration="1" complete="0" expand="true"/>
+                        <task id="65" uid="e3ac63109be84e52ac2197810fb20374" name="Configuració joc" meeting="false" start="2026-07-01" duration="1" complete="0" expand="true"/>
+                        <task id="66" uid="a5669c2b98414feebb171eec49ef876e" name="Export Android" meeting="false" start="2026-07-02" duration="1" complete="0" expand="true"/>
+                        <task id="67" uid="e3e7188bcca84602bef029417b435c4c" name="Export iOS" meeting="false" start="2026-07-04" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="35" uid="a7e215c780104acda809c0b7d7b8436c" name="Gameplay" meeting="false" start="2026-07-02" duration="6" complete="0" expand="false">
+                        <task id="68" uid="c8893e6957e94d67b9409bc6383efceb" name="Sistema teclat" meeting="false" start="2026-07-02" duration="3" complete="0" expand="true"/>
+                        <task id="69" uid="bd71bb38fa11438cb7a951b55b9bbd34" name="Tenda" meeting="false" start="2026-07-03" duration="2" complete="0" expand="true"/>
+                        <task id="70" uid="b2f6aee6032c46a0b5c491038d50fe80" name="Arbre Habilitats" meeting="false" start="2026-07-04" duration="2" complete="0" expand="true"/>
+                        <task id="71" uid="c4c90baaa8ad483eaf5a51f766b64b3b" name="Sistema Idle" meeting="false" start="2026-07-05" duration="2" complete="0" expand="true"/>
+                        <task id="72" uid="91f8582364ab4765806fb6b14d3cbc57" name="Sistema Concentració" meeting="false" start="2026-07-06" duration="1" complete="0" expand="true"/>
+                        <task id="76" uid="5a301906a980432c88ae6a53943ebbad" name="Sistema nivell/fase" meeting="false" start="2026-07-07" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="36" uid="1b93c6b8ddd8414fa42dcacaf31592a4" name="Àudio" meeting="false" start="2026-07-03" duration="8" complete="0" expand="false">
+                        <task id="77" uid="fd146cc83dd3468ca00165a8b6311009" name="Sistema àudio" meeting="false" start="2026-07-03" duration="3" complete="0" expand="true"/>
+                        <task id="73" uid="7a7a418bad764008b436e49de2dfc31b" name="SFX" meeting="false" start="2026-07-06" duration="2" complete="0" expand="true"/>
+                        <task id="74" uid="03ada79fee814abea97910f9e44e2679" name="Música" meeting="false" start="2026-07-06" duration="2" complete="0" expand="true"/>
+                        <task id="75" uid="6d59230bed56451ca16f5584c32864ac" name="Processament MIDI" meeting="false" start="2026-07-08" duration="3" complete="0" expand="true"/>
+                    </task>
+                    <task id="37" uid="f15fbbd3d3b948a4b9e6d47383ae866b" name="UI" meeting="false" start="2026-07-02" duration="10" complete="0" expand="false">
+                        <task id="78" uid="bd2fe89fffcb48a0b89a3d66a0820840" name="Tema personalitzat" meeting="false" start="2026-07-02" duration="4" complete="0" expand="true"/>
+                        <task id="79" uid="972a156a2bb84fa58c76eec78e9c1521" name="HUD" meeting="false" start="2026-07-07" duration="1" complete="0" expand="true"/>
+                        <task id="80" uid="d2b15fadc2d54f5d883ab0c2dd55afea" name="Responsiveness" meeting="false" start="2026-07-03" duration="1" complete="0" expand="true"/>
+                        <task id="81" uid="64ee20f09ecc4ca79612d846dcb4c6c9" name="Notificacions personalitzades" meeting="false" start="2026-07-11" duration="1" complete="0" expand="true"/>
+                    </task>
+                    <task id="38" uid="d342ce3b592a4a97b82e88b68a858708" name="Assets" meeting="false" start="2026-07-02" duration="7" complete="0" expand="false">
+                        <task id="83" uid="ffadb21db4b7446aaf2aa68ec88ba05d" name="Sprites 2D" meeting="false" start="2026-07-02" duration="7" complete="0" expand="true"/>
+                        <task id="86" uid="000217cb449542c094f4f9b76e4e088b" name="Icones" meeting="false" start="2026-07-02" duration="3" complete="0" expand="true"/>
+                        <task id="84" uid="c94d90b8cf0c475bad7bd36653bb2fb4" name="SFX" meeting="false" start="2026-07-02" duration="3" complete="0" expand="true"/>
+                        <task id="85" uid="0d4737bc299f42ea9765b45a6d097d5f" name="Crear MIDIs" meeting="false" start="2026-07-02" duration="7" complete="0" expand="true"/>
+                    </task>
+                    <task id="39" uid="062729e817634a54948bc6c5f64a1a01" name="Persistència" meeting="false" start="2026-07-07" duration="1" complete="0" expand="true"/>
+                    <task id="57" uid="bacf03a25a1e4a29aee2b98124a23a3a" name="Actualització GDD 1 it" meeting="false" start="2026-07-01" duration="11" complete="0" expand="true"/>
+                    <task id="104" uid="ff3cff81b7ae478fb5529d54142c34b7" name="PMV 1 it" color="#ff6600" meeting="true" start="2026-07-11" duration="0" complete="0" expand="true">
+                        <notes><![CDATA[Producte mínim viable:
+- Que funione en Android
+- Mínim de nivells per provar que tal
+- 1 cançó per nivell
+- X número de logros (sense integració Play Store)
+- Logo i nom básics
+- X número d'habilitats
+- Navegació completa
+
+Que estiga tot pero encara que siga per a polir]]></notes>
+                    </task>
+                    <task id="105" uid="dfffea90711742b7bffaf5e7bbae99d1" name="PMV" color="#ff6600" meeting="true" start="2026-07-31" duration="0" complete="0" priority="2" expand="true"/>
+                </task>
+                <task id="13" uid="0cfe4b69de814ff38bd5be3ed6113d7f" name="POSTPRODUCCIÓ" color="#6600ff" meeting="false" start="2026-08-01" duration="16" complete="0" expand="true">
+                    <task id="40" uid="f4ed826ba83a488482716f0ae0347fdd" name="Proves tècniques" meeting="false" start="2026-08-01" duration="3" complete="0" expand="true"/>
+                    <task id="41" uid="cc2e70d511e54b14914073cd87c9a7ff" name="Correcció" meeting="false" start="2026-08-01" duration="7" complete="0" expand="true"/>
+                    <task id="42" uid="db19f2e7d52b41b98fb39bfe547710f7" name="Validació" meeting="false" start="2026-08-01" duration="16" complete="0" expand="true">
+                        <task id="87" uid="e35efae5d55b44f1af865a625bc9a997" name="User testig" meeting="false" start="2026-08-01" duration="7" complete="0" expand="true">
+                            <depend id="88" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="88" uid="50c6685f79df4e218424122e5b1765b6" name="Anàlisi feedback" meeting="false" start="2026-08-08" duration="2" complete="0" expand="true"/>
+                        <task id="89" uid="b01c7eb2a9b84b35856747743449391d" name="Iteracions finals" meeting="false" start="2026-08-10" duration="7" complete="0" expand="true"/>
+                    </task>
+                </task>
+                <task id="106" uid="600a54beacd7466ba3f1a9d880cb5551" name="v1.0.0" color="#ff6600" meeting="true" start="2026-08-17" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="1" uid="f21f28c8ad374f8391483840d76e3a94" name="MEMÒRIA" meeting="false" start="2026-06-15" duration="42" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <task id="43" uid="4320b4df75414aa5b7aef99dca0041df" name="Redacció inicial" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true">
+                    <depend id="46" type="2" difference="0" hardness="Strong"/>
+                    <task id="90" uid="c1922dfd71b2414b9b45317c0d6a6235" name="Resum" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                    <task id="91" uid="bffcd3d75cf7491f9e2f83ba02eff6de" name="Introducció" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                    <task id="92" uid="b2b8e1cff2d344fcb81db9ac449498cf" name="Objectius" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                    <task id="93" uid="8c30a791d79b446a90f5fd7930784cdd" name="Justificació i Objectius" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                    <task id="94" uid="b09c271219de4fb98bd4162b8998a02e" name="Metodologia" meeting="false" start="2026-06-15" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="44" uid="2d91dca354a141589db7baf849d05e1f" name="Marc Teòric" meeting="false" start="2026-06-23" duration="7" complete="0" expand="true"/>
+                <task id="45" uid="a0ee9733269146c9826116de4e9b067f" name="Desenvolupament" meeting="false" start="2026-06-24" duration="30" complete="0" expand="true">
+                    <depend id="46" type="2" difference="0" hardness="Strong"/>
+                    <task id="96" uid="1d88a6dd7a3140beb87b2df433601b39" name="Disseny del joc" meeting="false" start="2026-06-24" duration="7" complete="0" expand="true"/>
+                    <task id="97" uid="643064f60ee848d58bf818f8813cd0f1" name="Arquitectura" meeting="false" start="2026-06-25" duration="2" complete="0" expand="true"/>
+                    <task id="98" uid="abb609eb27274f51b23893d0469dce3c" name="Implementació" meeting="false" start="2026-06-26" duration="28" complete="0" expand="true"/>
+                    <task id="99" uid="249f1648b2c541d4b7287634141b360b" name="Organització temporal" meeting="false" start="2026-06-24" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="46" uid="1cf9497a7f7249cb9cf886e1a700c75b" name="Conclusions" meeting="false" start="2026-07-24" duration="3" complete="0" expand="true"/>
+                <task id="100" uid="b520e9444dc14d9386b7a9121511a4bb" name="Revisar bibliografia" meeting="false" start="2026-06-30" duration="1" complete="0" expand="true"/>
+                <task id="101" uid="49b95585ca61489a95ee963f373a8a63" name="Export Pandocs" meeting="false" start="2026-06-30" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="107" uid="1e764e596a2a47aa813c0602801a61b8" name="PDF Memòria" color="#ff6600" meeting="true" start="2026-09-01" duration="0" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" uid="44195bccf97b48c8ad3d427cf8e6dd2a" name="DEFENSA" meeting="false" start="2026-09-02" duration="5" complete="0" expand="true">
+                <task id="47" uid="1f855865f4114bcdbfbc4f284c3310de" name="Power" meeting="false" start="2026-09-02" duration="3" complete="0" expand="true"/>
+                <task id="48" uid="7221da66327f43c3afedadf59a6b7d5d" name="Assaig" meeting="false" start="2026-09-02" duration="5" complete="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="Perfil" type="text" default-value=""/>
+        <custom-property-definition id="tpc1" name="Nom i cognoms" type="text" default-value=""/>
+        <resource id="1" name="Desenvolupadora" function="Default:1" contacts="gsl21@alu.ua.es" phone="">
+            <custom-property definition-id="tpc1" value="Gemma Sellés Lloret"/>
+            <custom-property definition-id="tpc0" value="Estudiant"/>
+        </resource>
+    </resources>
+    <allocations/>
+    <vacations>
+        <vacation start="2026-07-24" end="2026-07-27" resourceid="1"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
