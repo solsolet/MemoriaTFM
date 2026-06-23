@@ -22,38 +22,45 @@
             }
           },
           {
-            "id": "406098fff223dfd6",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "De tot/Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Kanban"
-            }
-          },
-          {
             "id": "90404d52e09b5535",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memoria/Annexos/One-Sheet.md",
+                "file": "Memoria/Justificació i Objectius.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "One-Sheet"
+              "title": "Justificació i Objectius"
+            }
+          },
+          {
+            "id": "0ace7e409f8332bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Índex.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Índex"
+            }
+          },
+          {
+            "id": "78c0ba5781991d80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Bibliografia i referències.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bibliografia i referències"
             }
           },
           {
@@ -71,21 +78,21 @@
             }
           },
           {
-            "id": "fc226c577fd967fd",
+            "id": "6f2b6cccdefd38e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memoria/Annexos/GDD.md",
+                "file": "Memoria/Marc teòric.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDD"
+              "title": "Marc teòric"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -259,43 +266,43 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9a95ba6b3fa63c7d",
+  "active": "6f2b6cccdefd38e5",
   "lastOpenFiles": [
+    "Memoria/Índex.md",
+    "Memoria/Marc teòric.md",
+    "Memoria/Bibliografia i referències.md",
+    "Memoria/Introducció.md",
+    "Organitzacio/Reunions.md",
+    "Memoria/Desenvolupament.md",
+    "Memoria/Dedicatòria.md",
+    "Memoria/Conclusions.md",
+    "Memoria/Cites.md",
+    "Memoria/Annexos.md",
+    "Memoria/Agraïments.md",
+    "Memoria/Metodologia.md",
+    "Memoria/Annexos/Ten-Pager.md",
+    "Memoria/Justificació i Objectius.md",
+    "De tot/Handy websites.md",
+    "Memoria/Objectius.md",
+    "Diari/2026-06-23.md",
+    "Organitzacio/Kanban.md",
+    "Memoria/Annexos/One-Sheet.md",
+    "Sense títol.md",
+    "Memoria/Resum.md",
+    "Memoria/Abstract.md",
+    "Memoria/Annexos/GDD.md",
     "Organitzacio/TFM-bo 2.gan",
     "Organitzacio/TFM-bo 1.gan",
     "Organitzacio/TFM-bo.gan",
     "Organitzacio",
     "Diari/2026-06-22.md",
-    "Memoria/Annexos/GDD.md",
     "Templates/Template-Tracking.md",
-    "Memoria/Annexos/One-Sheet.md",
-    "Memoria/Annexos/Ten-Pager.md",
-    "Organitzacio/Kanban.md",
     "Diari/2026-06-21.md",
-    "Diari/2026-06-20.md",
-    "Diari/2026-06-18.md",
     "Memoria/Annexos",
     "Templates",
-    "Diari/2026-06-17.md",
     "Sense títol.base",
     "Sense títol 1.base",
-    "De tot/Handy websites.md",
-    "Diari/2026-04-24.md",
-    "2026-04-24.md",
-    "Diari/2026-04-22.md",
-    "lol lol.md",
-    "p1 @{2026-04-24} @@{12 00} lol lol.md",
     "Sense títol 2.base",
-    "Untitled Kanban.md",
-    "Organitzacio/Reunions.md",
-    "Memoria/Abstract.md",
-    "Fer tauler Kanban.md",
-    "Memoria/Justificació i Objectius.md",
-    "Diari",
-    "Memoria/Introducció.md",
-    "Memoria/Índex.md",
-    "Memoria/Desenvolupament.md",
-    "Memoria/Dedicatòria.md",
-    "Memoria"
+    "Diari"
   ]
 }

@@ -3,7 +3,9 @@
 - _Índex de figures_: si el document inclou figures es podrà incloure també un índex amb la seua relació, indicant la pàgina on se situen.
 - _Índex de taules_: en cas d'existir en el text, ídem que l'anterior..
 - _Índex d'abreviatures, sigles, símbols, etc.:_ en cas de ser necessaris es podrà incloure cadascun d'ells..%%
-# Índex de continguts
-# Índex de figures
-# Índex de taules
-# Índex d'abreviatures
+
+# Índex
+## Índex de continguts
+## Índex de figures
+## Índex de taules
+## Índex d'abreviatures

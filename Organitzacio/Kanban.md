@@ -31,6 +31,8 @@ kanban-plugin: board
 - [x] Fer One Pager #docu #l
 - [x] Fer Ten Pager #docu
 - [x] Intentar exportar joc a Android
+- [x] Acabar Introducció #docu
+- [x] Revisar Justificació i objectius #docu #i
 
 
 ***
