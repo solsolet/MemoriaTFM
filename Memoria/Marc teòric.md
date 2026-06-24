@@ -4,13 +4,13 @@ En aquesta part de la memòria s'explicarà tot el necessari per a comprendre to
 Qualsevol qüestió que es considere susceptible d'ampliar, i continue sent rellevant per al treball, per tal de no fer pesada la lectura, estarà com a material de consulta a l'annex.
 ## Context
 Aquest apartat donarà les nocions necessàries al lector per a saber en quin context es troba aquest projecte. Veurem conceptes que s'han de tenir presents durant la lectura.
-%%no se quins subblocs posar%%
+%%TODO : no se quins subblocs posar%%
 ### Videojocs
 #### Gèneres
 ##### Idle
-%%TODO: Contar que son%%
+%%TODO : Contar què son%%
 ##### Productivitat
-%%TODO: Contar que son%%
+%%TODO : Contar què son%%
 ### Mercat de videojocs mòbil
 #### Tendències
 #### Monetització

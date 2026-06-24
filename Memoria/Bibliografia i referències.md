@@ -32,7 +32,7 @@ https://newzoo.com/resources/blog/hypercasual-mobile-games-introduced-millions-o
 
 https://newzoo.com/resources/blog/mobile-games-market-engagement-revenues-covid-19-gaming
 
-%%REVIsAR%%
+%%TODO : revisar referències%%
 Antier Market Intelligence. (2026). Hybrid casual games vs hypercasual: What’s driving higher retention, LTV, and revenue in 2026? Antier Research Blogs. https://antier.com
 
 GameAnalytics. (2026). 2026 mobile & pc gaming benchmarks. GameAnalytics Reports & Guides. https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks

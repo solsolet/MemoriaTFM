@@ -165,6 +165,7 @@ Cap
 ## Multijugador i material extra
 ### Material extra desbloquejable, assoliments
 #### Assoliments
+%%TODO : pensar-ne més%%
 
 | Títol                         | Descripció                                                     |
 | ----------------------------- | -------------------------------------------------------------- |
@@ -179,6 +180,7 @@ Cap
 | Devora tribunals              | Aocnseguieix una burrada de punts                              |
 | 4' 33"                        | Estigues dins del joc idle sense tocar cap tecla durant 4' 33" |
 #### Cromos
+%%TODO : pensar-ne més%%
 
 | Tipus      | Nom      | Descripció                                                                                                                                                                |
 | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

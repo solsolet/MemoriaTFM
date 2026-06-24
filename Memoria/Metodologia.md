@@ -1,9 +1,9 @@
-%%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.
+%%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.%%
 # Metodologia
 ## Metodologia àgil
-%%TODO: explicar que seguirem una metodologia àgil, com la implementarem i perquè%%
-Durant el desenvolupament d'aquest treball es seguirà una metodologia àgil de manera que s'itere sobre el projecte, fent xicotetes verisions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
+%%TODO : explicar que seguirem una metodologia àgil, com la implementarem i perquè%%
 
+Durant el desenvolupament d'aquest treball es seguirà una metodologia àgil de manera que s'itere sobre el projecte, fent xicotetes verisions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
 Per a implementar-la s'han planificat una serie de fites per a anar avançant durant el desenvolupament.
 
 S'ha plasmat aquesta planificació inicial amb Gantt Project de manera que es visualitze com es van complentant les tasques respecte una línia del temps.
@@ -59,4 +59,4 @@ Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
 https://kdenlive.org/es/
 ## Proves
-%%TODO: explicar com s'ha testejat l'app%%
+%%TODO : explicar com s'ha testejat l'app%%
