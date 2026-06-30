@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="TFM" company="UA" webLink="http://" view-date="2026-06-14" view-index="0" gantt-divider-location="453" resource-divider-location="527" version="3.3.3322" locale="ca_ES">
+<?xml version="1.0" encoding="UTF-8"?><project name="TFM" company="UA" webLink="http://" view-date="2026-06-14" view-index="0" gantt-divider-location="437" resource-divider-location="527" version="3.3.3322" locale="ca_ES">
     <description><![CDATA[Planificació del TFM (ara sí que sí) coordinada amb Clockify i el plugin de Kanban de Obsidian.]]></description>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="218" order="0"/>
-        <field id="tpd4" name="Inici" width="87" order="1"/>
-        <field id="tpd5" name="Finalització" width="89" order="2"/>
+        <field id="tpd3" name="Nom" width="210" order="0"/>
+        <field id="tpd4" name="Inici" width="84" order="1"/>
+        <field id="tpd5" name="Finalització" width="86" order="2"/>
         <field id="tpd15" name="Notes" width="20" order="3"/>
-        <field id="tpd6" name="Durada" width="42" order="3"/>
+        <field id="tpd6" name="Durada" width="40" order="3"/>
         <option id="taskLabelUp" value=""/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>

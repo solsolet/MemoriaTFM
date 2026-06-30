@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "GDD"
             }
+          },
+          {
+            "id": "328f8e9bedb48a7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/main.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "main"
+            }
           }
         ]
       }
@@ -185,8 +199,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -221,18 +235,30 @@
   },
   "active": "78c0ba5781991d80",
   "lastOpenFiles": [
+    "Memoria/TFM.bib",
+    "Memoria/main.md",
+    "Memoria/references.bib",
+    "Memoria/refes 3.bib",
+    "Memoria/refes 2.bib",
+    "Memoria/refes 1.bib",
+    "Memoria/refes.bib",
+    "Memoria/Marc teòric.md",
+    "Memoria/Annexos/GDD.md",
+    "monetització.md",
+    "Memoria/Bibliografia i referències.md",
+    "Memoria/Img/MobileOS-Europe-2020-2026-StatCounter.png",
+    "Memoria/Img/MobileOS-Worldwide-2020-2026-StatCounter.png",
+    "Memoria/Img/MobileOS-Spain-2020-2026-StatCounter.png",
+    "Memoria/Img",
     "Memoria/Llegenda.md",
     "De tot/Handy websites.md",
-    "Memoria/Bibliografia i referències.md",
     "Memoria/Metodologia.md",
-    "Memoria/Annexos/GDD.md",
     "De tot/Videojoc.md",
     "Organitzacio/Reunions.md",
     "Organitzacio/Kanban.md",
     "Memoria/Resumen.md",
     "Memoria/Resum.md",
     "Memoria/Objectius.md",
-    "Memoria/Marc teòric.md",
     "Memoria/Justificació i Objectius.md",
     "Memoria/Introducció.md",
     "Memoria/Índex.md",
@@ -244,18 +270,8 @@
     "Memoria/Agraïments.md",
     "Memoria/Abstract.md",
     "Memoria/Annexos/Ten-Pager.md",
-    "Memoria/Annexos/One-Sheet.md",
     "Sense títol.base",
     "Sense títol 1.base",
-    "Diari/2026-06-23.md",
-    "Sense títol.md",
-    "Organitzacio/TFM-bo 2.gan",
-    "Organitzacio/TFM-bo 1.gan",
-    "Organitzacio/TFM-bo.gan",
-    "Organitzacio",
-    "Memoria/Annexos",
-    "Templates",
-    "Sense títol 2.base",
-    "Diari"
+    "Organitzacio/TFM-bo 2.gan"
   ]
 }
