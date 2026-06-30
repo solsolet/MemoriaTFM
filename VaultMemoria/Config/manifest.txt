@@ -1,0 +1,31 @@
+Memoria/Resum.md
+Memoria/Resumen.md
+Memoria/Abstract.md
+
+Memoria/Justificacio i Objectius.md
+
+Memoria/Agraiments.md
+
+Memoria/Dedicatoria.md
+
+Memoria/Cites.md
+
+Memoria/Index.md
+
+Memoria/Introduccio.md
+
+Memoria/Marc Teoric.md
+
+Memoria/Objectius.md
+
+Memoria/Metodologia.md
+
+Memoria/Desenvolupament.md
+
+Memoria/Conclusions.md
+
+Memoria/Bibliografia.md
+
+Memoria/Annexos/One-Sheet.md
+Memoria/Annexos/Ten-Pager.md
+Memoria/Annexos/GDD.md

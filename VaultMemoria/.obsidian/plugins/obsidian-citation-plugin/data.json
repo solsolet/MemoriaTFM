@@ -5,5 +5,5 @@
   "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n---\n\n",
   "markdownCitationTemplate": "[@{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
-  "citationExportPath": "/Users/mastermoviles/Documents/TFM/MemoriaTFM/Memoria/references.bib"
+  "citationExportPath": "/Users/mastermoviles/Documents/TFM/ProjecteTFM/VaultMemoria/Config/references.bib"
 }

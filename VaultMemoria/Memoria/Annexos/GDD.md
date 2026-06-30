@@ -9,7 +9,7 @@ Títol: Pianissimo (fins que trobe un altre)
 *Tag line*: piano piano piano (?)
 Fet per Gemma Sellés Lloret aka solsolet
 Última revisió agost 2026.
-## 📋 Historial de versions
+## Historial de versions
 
 | Versió | Data       | Descripció dels canvis       |
 | :----- | :--------- | :--------------------------- |

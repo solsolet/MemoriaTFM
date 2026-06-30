@@ -1,0 +1,25 @@
+title: "TFM: Desenvolupament d'un videojoc mòbil 2D amb Godot"
+author: "Gemma Sellés Lloret"
+date: today
+
+lang: ca-ES
+
+toc-depth: 3
+
+number-sections: true
+
+bibliography: Config/references.bib
+csl: Config/apa.csl
+
+link-citations: true
+
+geometry:
+  - left=3cm
+  - right=2.5cm
+  - top=2.5cm
+  - bottom=2.5cm
+
+fontsize: 12pt
+
+linestretch: 1.5
+

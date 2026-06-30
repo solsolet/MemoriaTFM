@@ -1,2 +1,10 @@
-/Diari
+VaultMemoria/Diari
 .DS_Store
+
+Output/
+
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz

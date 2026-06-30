@@ -5,7 +5,7 @@ state: In Progress
 ---
 # Ten-Pager
 
-### 📋 Historial de versions
+### Historial de versions
 
 | Versió | Data                | Descripció dels canvis       |
 | :----- | :------------------ | :--------------------------- |

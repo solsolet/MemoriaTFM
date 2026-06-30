@@ -5,7 +5,7 @@ state: "In Progress"
 ---
 # {{title}}
 
-### 📋 Historial de versions
+### Historial de versions
 
 | Versió | Data                | Descripció dels canvis       |
 | :----- | :------------------ | :--------------------------- |

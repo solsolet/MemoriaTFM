@@ -54,15 +54,15 @@ Com a últim esdeveniment important que va donar un gran impuls al mercat, ens s
 Els usuaris de dispositius mòbils es poden separar segons el SO que usen. Si mirem enrere fins hui dia, per exemple situant-nos l'any 2020 fins al 2026 (any en què es redacta aquest treball), la seua majoria usen Android (quasi un 70%) i la resta iOS (quasi el 30%) i la resta de SO no resulten significatius.
 Globalment podem veure:
 
-![[MobileOS-Worldwide-2020-2026-StatCounter.png]]
+![Mobile OS Worldwide 2020-2026. StatCounter](Memoria/Assets/MobileOS-Worldwide-2020-2026-StatCounter.png)
 
 A escala europea:
 
-![[MobileOS-Europe-2020-2026-StatCounter.png]]
+![MobileOS-Europe-2020-2026-StatCounter](Memoria/Assets/MobileOS-Europe-2020-2026-StatCounter.png)
 
 I en l'àmbit nacional:
 
-![[MobileOS-Spain-2020-2026-StatCounter.png]]
+![Mobile OS Spain 2020-2026. StatCounter](Memoria/Assets/MobileOS-Spain-2020-2026-StatCounter.png)
 
 En aquests últims mesos es comença a veure un canvi en la tònica predominant que, encara que no es produïra, resulta interessant desenvolupar per als dos mercats. I no només cal prestar-li atenció al mercat d'iOS pel seu creixement, sinó també a pesar de ser molt menor té majors vendes dins de les seues aplicacions.
 %%TODO : justificar açò últim, pot ser en monetització%%
