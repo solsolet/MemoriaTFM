@@ -1,4 +1,5 @@
 %%on es farà èmfasi a la importància de la temàtica, la seua vigència i actualitat; es plantejarà el problema a investigar, així com el propòsit o finalitat de la investigació.%%
+
 # Introducció
 El mercat dels videojocs en dispositius mòbils no ha deixat de créixer en els darrers anys i això fa que siga una opció atractiva per a joves desenvolupadors que volen fer els seus primers jocs, explorar el medi, donar-se a conéixer, enfrontar-se a un projecte a soles... però quin és el procés de desenvolupar un videojoc per a aquest tipus de dispositiu de principi a fi?
 

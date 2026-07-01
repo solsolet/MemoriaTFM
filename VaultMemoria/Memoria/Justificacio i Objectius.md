@@ -1,4 +1,5 @@
 %%Es descriuran la motivació que ha originat la realització del TFG/TFM, així com d'una breu descripció dels objectius generals que es volen aconseguir amb el treball presentat %%
+
 # Justificació i objectius
 Aquest treball naix fruit del meu interés personal en l'àmbit dels videojocs i tot el que tinga a veure amb ells. He estat estudiant d'Enginyeria Multimedia, i vaig tindre el gust de fer-ne algú o altre durant la carrera i sempre ha sigut una experiencia molt enriquidora.
 

@@ -4,20 +4,13 @@
 - _Índex de taules_: en cas d'existir en el text, ídem que l'anterior..
 - _Índex d'abreviatures, sigles, símbols, etc.:_ en cas de ser necessaris es podrà incloure cadascun d'ells..%%
 
-# Índex
-
-## Índex de continguts
 
 \tableofcontents
 
 \newpage
 
-## Índex de figures
-
 \listoffigures
 
-## Índex de taules
+\newpage
 
 \listoftables
-
-## Índex d'abreviatures
