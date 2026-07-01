@@ -4,14 +4,17 @@ date: today
 
 lang: ca-ES
 
-toc-depth: 5
+toc-depth: 6
 
 number-sections: true
 
 bibliography: Config/references.bib
 csl: Config/apa.csl
 
-link-citations: true
+# Activar els enllaços a nivell de Pandoc per a forçar el clic natiu
+colorlinks: true
+urlcolor: blue
+linkcolor: blue
 
 geometry:
   - left=3cm
@@ -30,20 +33,19 @@ pass-options-to-packages:
 header-includes:
   - \sloppy
 
-  # Método seguro sin caracteres especiales para forzar la ruptura en letras y números
-  - \def\UrlBreaks{\do\/\do\-\do\.\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
   - \newcommand{\keywordname}{Paraules clau}
-  - \renewcommand{\contentsname}{Índex}
-  - \renewcommand{\listfigurename}{Llista de figures}
-  - \renewcommand{\listtablename}{Llista de taules}
+  - \renewcommand{\contentsname}{Índex de continguts}
+  - \renewcommand{\listfigurename}{Índex de figures}
+  - \renewcommand{\listtablename}{Índex de taules}
   - \renewcommand{\figurename}{Figura}
   - \renewcommand{\tablename}{Taula}
   - \renewcommand{\abstractname}{Resum}
 
+   # Paquete para gestionar PDFs externos
   - \usepackage{pdfpages}
-
-  # Insertar la portada (buscando desde la carpeta raíz del proyecto)
-  - \AtBeginDocument{\includepdf{Config/portada.pdf}}
+  
+  # Insertar la portada forzando a que el papel se adapte exactamente al PDF original
+  - \AtBeginDocument{\includepdf[fitpaper=true, pages=1]{Config/portada.pdf}}
   
   # Crear la página en blanco obligatoria después de la portada
   - \AtBeginDocument{\thispagestyle{empty}\mbox{}\newpage}
