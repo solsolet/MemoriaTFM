@@ -208,9 +208,10 @@
   "active": "5ff90f8ddda069db",
   "lastOpenFiles": [
     "Output/_build_processed.md",
+    "Output/TFM.docx",
+    "Output/_build.md",
     "Config/portada.pdf",
     "Config/Portada.pdf",
-    "Output/TFM.docx",
     "Config/template.docx",
     "Config/Plantilla_TFM_EPS_UA.docx",
     "Config.zip",
@@ -243,8 +244,6 @@
     "Memoria/Resumen.md",
     "Memoria/Resum.md",
     "Memoria/Objectius.md",
-    "Memoria/Justificació i Objectius.md",
-    "Memoria/Introducció.md",
-    "Memoria/Índex.md"
+    "Memoria/Justificació i Objectius.md"
   ]
 }

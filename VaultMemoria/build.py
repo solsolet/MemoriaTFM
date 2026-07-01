@@ -12,6 +12,10 @@ METADATA = CONFIG / "metadata.yaml"
 
 BUILD_MD = OUTPUT / "_build.md"
 PDF = OUTPUT / "TFM.pdf"
+DOCX = OUTPUT / "TFM.docx"
+
+# Rutes per als fitxers temporals de text
+BUILD_MD_PROCESSED = OUTPUT / "_build_processed.md"
 
 
 def llegir_manifest():
@@ -48,7 +52,9 @@ def construir_md(fitxers):
 
 
 def generar_pdf():
-    print("Compilant la memòria directa amb Pandoc...")
+
+    print("1. Processant la bibliografia amb Pandoc cap a Markdown net...")
+    # Pas A: Generem un fitxer Markdown provisional on la bibliografia d'APA ja està escrita en text pla
     subprocess.run(
         [
             "pandoc",
@@ -56,9 +62,55 @@ def generar_pdf():
             "--metadata-file",
             str(METADATA),
             "--citeproc",
+            "-t", "markdown",
+            "-o", str(BUILD_MD_PROCESSED),
+        ],
+        cwd=ROOT,
+        check=True,
+    )
+
+    print("2. Convertint les URLs de la bibliografia en enllaços reals...")
+    # Pas B: Llegim el fitxer on està la bibliografia i convertim les adreces de text pla en enllaços clicables
+    text_bibliografia = BUILD_MD_PROCESSED.read_text(encoding="utf8")
+    
+    # Busquem qualsevol URL que no estiga ja en un enllaç de Markdown i la convertim en un enllaç [url](url)
+    text_amb_enllaços_reals = re.sub(r'(?<!\()(https?://[^\s\)]+)', r'[\1](\1)', text_bibliografia)
+    
+    # Tornem a guardar el text modificat
+    BUILD_MD_PROCESSED.write_text(text_amb_enllaços_reals, encoding="utf8")
+
+    print("3. Compilant el PDF final amb enllaços actius...")
+    # Pas C: Convertim el document processat a PDF de forma totalment neta
+    subprocess.run(
+        [
+            "pandoc",
+            str(BUILD_MD_PROCESSED),
+            "--metadata-file",
+            str(METADATA),
+            "-o", str(PDF),
+        ],
+        cwd=ROOT,
+        check=True,
+    )
+
+    # Neteja final del fitxer de text intermedi
+    #if BUILD_MD_PROCESSED.exists():
+        #BUILD_MD_PROCESSED.unlink()
+
+
+def generar_docx():
+
+    subprocess.run(
+        [
+            "pandoc",
+            str(BUILD_MD_PROCESSED),
+            "--metadata-file",
+            str(METADATA),
             "--resource-path=.",
+            "--reference-doc",
+            str(CONFIG / "template.docx"),
             "-o",
-            str(PDF),
+            str(DOCX),
         ],
         cwd=ROOT,
         check=True,
@@ -73,8 +125,14 @@ def main():
     validar(fitxers)
     construir_md(fitxers)
     generar_pdf()
+    print("4. Generant DOCX...")
 
-    print("\n✔ PDF generat correctament.\n")
+    generar_docx()
+
+    if BUILD_MD_PROCESSED.exists():
+        BUILD_MD_PROCESSED.unlink()
+
+    print("\n✔ PDF i docx generats correctament.\n")
 
 
 if __name__ == "__main__":
