@@ -48,7 +48,7 @@ En resumits comptes, va propulsar el sector mòbil en tots els seus aspectes. Va
 
 Amb aquest context, jocs com Angry Birds, llançat en 2009, va arribar a l'App Store per un preu assequible per al consumidor que el va fer arribar al podi de les aplicacions de pagament als principis dels 2010. Prompte es va llançar la versió del joc per a Android de forma gratuïta, però amb anuncis a menys que es pagara.
 
-Molts altres grans títols es van llançar en aquesta dècada i van aplicar diverses tècniques de monetització que hui han servit de precedent per a hui en dia, ja que encara s'usen assíduament. S'ampliarà la informació en l'apartat de [[Marc teoric#Monetització|monetització]].
+Molts altres grans títols es van llançar en aquesta dècada i van aplicar diverses tècniques de monetització que hui han servit de precedent per a hui en dia, ja que encara s'usen assíduament. S'ampliarà la informació en l'apartat de [monetització](#monetització).
 
 D'altres jocs rellevants també van aportar al consolidament d'aquest mercat i a l'atracció de públic com va ser el cas de:
 

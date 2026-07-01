@@ -2,10 +2,8 @@ from pathlib import Path
 import subprocess
 import sys
 import re
-import unicodedata
 
 ROOT = Path(__file__).parent
-
 CONFIG = ROOT / "Config"
 OUTPUT = ROOT / "Output"
 
@@ -33,7 +31,6 @@ def llegir_manifest():
 def validar(fitxers):
     for fitxer in fitxers:
         if not fitxer.exists():
-
             print(f"ERROR: no existeix {fitxer}")
             sys.exit(1)
 
@@ -43,27 +40,8 @@ def construir_md(fitxers):
         for fitxer in fitxers:
             contingut = fitxer.read_text(encoding="utf8")
             
-            # 1. Eliminar comentaris d'Obsidian (%% comentari %%)
+            # Filtrem només els comentaris d'Obsidian (%% comentari %%) de forma segura
             contingut_net = re.sub(re.compile(r"%%.*?%%", re.DOTALL), "", contingut)
-            
-            # 2. Funció definitiva ajustada als IDs Kebab-case de Pandoc
-            def transformar_enllaç(match):
-                desti = match.group(1).strip()  # ex: "Marc teòric"
-                text_visible = match.group(2).strip()  # ex: "monetització"
-                
-                # Eliminem accents i diacrítics (ex: "teòric" -> "teoric")
-                desti_net = "".join(
-                    c for c in unicodedata.normalize('NFD', desti)
-                    if unicodedata.category(c) != 'Mn'
-                )
-                
-                # Convertim exactament a la lògica de Pandoc: minúscules i espais per guions
-                desti_formatat = desti_net.lower().replace(" ", "-")
-                
-                return f"[{text_visible}](#{desti_formatat})"
-            
-            # 3. Convertir [[#Seccio|Text]] o [[Seccio|Text]] al format de Pandoc [Text](#seccio)
-            contingut_net = re.sub(r'\[\[(?:#)?([^|\]]+)\|([^\]]+)\]\]', transformar_enllaç, contingut_net)
             
             out.write(contingut_net.rstrip())
             out.write("\n\n\\newpage\n\n")
@@ -80,12 +58,11 @@ def generar_pdf():
             "--citeproc",
             "--resource-path=.",
             "-o",
-            str(PDF), # Recorda canviar-ho per str(PDF) si és el nom de la teua variable
+            str(PDF),
         ],
         cwd=ROOT,
         check=True,
     )
-
 
 
 def main():

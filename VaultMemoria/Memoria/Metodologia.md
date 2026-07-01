@@ -34,7 +34,7 @@ Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 ### GitHub
 
 Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte
-https://github.com
+[https://github.com](https://github.com)
 
 ### Clockify
 
@@ -43,13 +43,14 @@ Programa per al seguiment de temps per a les meues hores de treball en aquest pr
 - Reunió *x*: per a tota classe de reunions.
 - Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
 - Organització *x*: per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
-https://clockify.me/es/
+[https://clockify.me/es/](https://clockify.me/es/)
 
 ### Obsidian
 
 Programa per a prendre notes, seleccionar i gestionar informació i idees. El seu ús principal serà per a escriure tota la memòria.
-https://obsidian.md
+[https://obsidian.md](https://obsidian.md)
 Adicionalment ha servit per al desenvolupament i organització d'aquest treball els següents plugins:
+
 - Enhancing Export
 - Git
 - Kanban
@@ -61,15 +62,16 @@ Adicionalment ha servit per al desenvolupament i organització d'aquest treball 
 ### Pandoc
 
 Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF).
-https://pandoc.org/index.html
+[https://pandoc.org/index.html](https://pandoc.org/index.html)
 
 ### Godot 4.5.1
 
 Motor de jocs 2D-3D de codi obert multiplataforma amb el què es desenvoluparà el videojocs del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
-https://godotengine.org
+[https://godotengine.org](https://godotengine.org)
 Adicionalment ha servit per al desenvolupament d'aquest treball els següents plugins:
-- Godot Play Game Services: https://github.com/godot-sdk-integrations/godot-play-game-services.git
-- Godot iOS GameCenter plugin: https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter
+
+- Godot Play Game Services: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
+- Godot iOS GameCenter plugin: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)
 
 ### GanttProject
 
@@ -86,7 +88,7 @@ Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics 
 ### KDenLive
 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
-https://kdenlive.org/es/
+[https://kdenlive.org/es/](https://kdenlive.org/es/)
 
 ## Proves
 
