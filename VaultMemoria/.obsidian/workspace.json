@@ -207,6 +207,13 @@
   },
   "active": "5ff90f8ddda069db",
   "lastOpenFiles": [
+    "Output/TFM.docx",
+    "Config/template.docx",
+    "Config/Plantilla_TFM_EPS_UA.docx",
+    "Config.zip",
+    "Config/template.txt",
+    "Config/template.tex",
+    "Assets/Portada.pdf",
     "Memoria/Annexos/Ten-Pager.md",
     "Output/TFM.pdf",
     "Memoria/Annexos/One-Sheet.md",
@@ -220,14 +227,8 @@
     "2026-06-30.md",
     "Memoria/00_Config",
     "Memoria/prova.pdf",
-    "Memoria/Bibliografia/apa.csl",
-    "Memoria/Bibliografia",
-    "Memoria/apa.csl",
     "Img/Mobile.md",
-    "Img",
     "Memoria/Bibliografia i referències.md",
-    "Memoria/TFM.bib",
-    "Memoria/references.bib",
     "Memoria/Marc teòric.md",
     "monetització.md",
     "Memoria/Img/MobileOS-Europe-2020-2026-StatCounter.png",
@@ -244,7 +245,6 @@
     "Memoria/Objectius.md",
     "Memoria/Justificació i Objectius.md",
     "Memoria/Introducció.md",
-    "Memoria/Índex.md",
-    "Memoria/Desenvolupament.md"
+    "Memoria/Índex.md"
   ]
 }

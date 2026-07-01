@@ -55,3 +55,5 @@ Statista. (2026). Mobile games - worldwide market forecast outlook. Statista Med
 Tenjin Analytics. (2026). Ad monetization benchmark report 2026. Tenjin Mobile Marketing Guides. https://tenjin.com
 
 [@AppleReinventsPhone2007]
+[@bajarinHowApplesIPhone2017]
+[@crichton-stuartMobileGameMonetization2026]
