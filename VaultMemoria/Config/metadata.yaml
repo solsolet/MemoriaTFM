@@ -49,3 +49,11 @@ header-includes:
   
   # Crear la página en blanco obligatoria después de la portada
   - \AtBeginDocument{\thispagestyle{empty}\mbox{}\newpage}
+
+  # Configurar 4t i 5é nivell
+  #- \setcounter{secnumdepth}{5} # posa nombres als títols
+  - \setcounter{tocdepth}{5}
+  - \makeatletter
+  - \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}{-3.25ex\@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\bfseries}}
+  - \renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}{-3.25ex\@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\bfseries\itshape}}
+  - \makeatother

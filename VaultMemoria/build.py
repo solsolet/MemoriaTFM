@@ -93,10 +93,6 @@ def generar_pdf():
         check=True,
     )
 
-    # Neteja final del fitxer de text intermedi
-    #if BUILD_MD_PROCESSED.exists():
-        #BUILD_MD_PROCESSED.unlink()
-
 
 def generar_docx():
 
