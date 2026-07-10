@@ -15,13 +15,13 @@ kanban-plugin: board
 
 - [ ] Jugar a Magic Archery hihihaha #i @{2026-05-01}
 - [ ] Jugar a Magic Archery serio #l #docu .
-- [ ] Elaborar GDD #docu
 
 
 ## In Progress (5)
 
-- [ ] ### Trobar GDD #i
-	Per a organitzar les idees del joc @{2026-05-01}
+- [ ] Elaborar GDD 1 #docu
+- [ ] Diagrama Flux
+- [ ] Jugar Cookie Clicker hihi haha #i
 
 
 ## Done
@@ -30,6 +30,8 @@ kanban-plugin: board
 - [x] Organitzar Kanban #l @{2026-05-01}
 - [x] Fer One Pager #docu #l
 - [x] Fer Ten Pager #docu
+- [x] ### Trobar GDD #i
+	Per a organitzar les idees del joc @{2026-05-01}
 - [x] Intentar exportar joc a Android
 - [x] Acabar Introducció #docu
 - [x] Revisar Justificació i objectius #docu #i

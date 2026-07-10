@@ -4,8 +4,6 @@
 
 ## Metodologia àgil
 
-%%TODO : explicar que seguirem una metodologia àgil, com la implementarem i perquè%%
-
 Durant el desenvolupament d'aquest treball es seguirà una metodologia àgil de manera que s'itere sobre el projecte, fent xicotetes verisions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
 Per a implementar-la s'han planificat una serie de fites per a anar avançant durant el desenvolupament.
 
@@ -34,6 +32,7 @@ Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 ### GitHub
 
 Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte
+
 [https://github.com](https://github.com)
 
 ### Clockify
@@ -43,12 +42,15 @@ Programa per al seguiment de temps per a les meues hores de treball en aquest pr
 - Reunió *x*: per a tota classe de reunions.
 - Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
 - Organització *x*: per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
+
 [https://clockify.me/es/](https://clockify.me/es/)
 
 ### Obsidian
 
 Programa per a prendre notes, seleccionar i gestionar informació i idees. El seu ús principal serà per a escriure tota la memòria.
+
 [https://obsidian.md](https://obsidian.md)
+
 Adicionalment ha servit per al desenvolupament i organització d'aquest treball els següents plugins:
 
 - Enhancing Export
@@ -62,12 +64,15 @@ Adicionalment ha servit per al desenvolupament i organització d'aquest treball 
 ### Pandoc
 
 Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF).
+
 [https://pandoc.org/index.html](https://pandoc.org/index.html)
 
 ### Godot 4.5.1
 
 Motor de jocs 2D-3D de codi obert multiplataforma amb el què es desenvoluparà el videojocs del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
+
 [https://godotengine.org](https://godotengine.org)
+
 Adicionalment ha servit per al desenvolupament d'aquest treball els següents plugins:
 
 - Godot Play Game Services: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
@@ -88,7 +93,23 @@ Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics 
 ### KDenLive
 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
+
 [https://kdenlive.org/es/](https://kdenlive.org/es/)
+
+## Anàlisi de videojocs {#sec-analisi-videojocs}
+
+Per a analitzar els videojocs de l'[estat l'art](#sec-estat-art), s'ha seguit aquesta metodologia:
+
+1. Primer s'han jugat els jocs lúdicament sense cap altre objectiu que no siga progressar i passar-s'ho bé, com ho podria fer qualsevol jugador.
+2. Després d'una sessió de joc, que pot s jugar intermitentment durant un dia, en el punt on ens trobem s'analitzarà:
+	1. Interfície d'usuari amb captures del joc.
+	2. Mecàniques.
+	3. Progressió.
+	4. Experiència d'usuari.
+	5. Estil artístic.
+	6. Música i sons.
+
+Una vegada estiguen tots analitzats ajudarà al desenvolupament del videojoc del qual tracta aquest TFM. Podrem replicar i adaptar tècniques i estratègies de jocs que han sigut exitosos al propi.
 
 ## Proves
 
