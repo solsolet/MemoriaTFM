@@ -144,11 +144,17 @@ A continuació es comentaran els treballs que han servit de punt de partida per 
 
 ### [Cookie Clicker](https://cookieclicker.com)
 
-Cookie Clicker és un joc indie desenvolupat per [Orteil](https://orteil.dashnet.org) i [DashNet](https://dashnet.org) llançat en 2013.
+Cookie Clicker és un joc indie desenvolupat per [Orteil](https://orteil.dashnet.org) i [DashNet](https://dashnet.org) llançat en 2013 fet amb Javascript.
 
 Es pot jugar en la versió web gratuïta o en plataformes com Steam, PlayStation, Xbox, Switch i Android. En aquesta última trobem la versió gratuïta amb anuncis i la de pagament sense, entre les dues versions té més de 5 milions de baixades a la Play Store.
 
 Sent un dels jocs més importants del gènere idle, resulta interessant analitzar com ha estat implementat. La versió mòbil és una adaptació de la versió web.
+
+%% TODO : Webs que em poden resultar útils: %% 
+%%
+https://cookieclickers.io 
+https://es.wikipedia.org/wiki/Cookie_Clicker
+%%
 
 #### Mecàniques
 
@@ -160,21 +166,32 @@ El joc tracta d'anar guanyant galetes. Es poden gastar en:
 Les galetes es poden guanyar fent **clic** a la galeta gegant o a través dels teus Edificis. A mesura que s'avança en el joc, es desbloquejaran assoliments.
 
 %% TODO : mencionar terrons de sucre i legado %%
-#### Interfície
+#### UI/UX
 
-A continuació unes imatges de la interfície.
+En les figures \ref{fig:cookie-pc} i \ref{fig:cookie-pc-esquema} es poden veure unes imatges de la interfície per a ordinador.
 
-![Interfície d'usuari en ordinador de Cookie Clicker](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png) 
+![Interfície d'usuari en ordinador. Font: Cookie Clicker \label{fig:cookie-pc}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png) 
 
-![Esquema interfície d'usuari en ordinador de Cookie Clicker](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png) 
+![Esquema interfície d'usuari en ordinador de Cookie Clicker \label{fig:cookie-pc-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png) 
 
-En l'aspecte mòbil es veu així:
+Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:cookie-mobil} i \ref{fig:cookie-mobil-esquema}.
 
-![Interfície d'usuari en mòbil](CookieClicker-UI-Mobile.png)
+![Interfície d'usuari en mòbil, per ordre d'aparició: Cookie, Tenda (d'edificis i de millores), Especial, Estadístiques, Miscelània i detall dels Assoliments i de les Millores. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png)
 
-![Interfície d'usuari en mòbil](CookieClicker-UI-Mobile-Esquema.png)
+![Interfície d'usuari en mòbil \label{fig:cookie-mobil-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png)
 
-%% TODO : Explicar tipo taula/llista cada part %%
+La interfície és senzilla tant visualment com d'usar-la. Es pot veure ben diferenciades cada part d'aquesta:
+
+| Zona         | Funcionalitat                                                                              | Navegador                                                                              | Mòbil                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Cookie**   | Mostra el marcador i és la zona interacutable per a guanyar galetes                        | Fer clic                                                                               | Fer tap                                                                   |
+| **Menú**     | Menú variat amb els botos per a veure: opcions, estadístiques, informació del joc i llegat | Tots en els botons en un mateix lloc                                                   | Desplega ten diferents apartats entre la pestanya de "`Stats`" i "`Misc`" |
+| **Recursos** | Disposició gràfica dels Edificis comprats                                                  | Quan hi ha més files que espai disponible en la pantalla es pot desplaçar verticalment | No apareix                                                                |
+| **Tenda**    | Mostra els articles que es poden comprar amb un clic d'Edificis i millores.                | Les millores al situar el ratolí es desplegar per a verue'n totes les disponibles      | Es separa en dues pantalles que per met desplaçar-te per la llista        |
+| **Anuncis**  | Anunci tipus *banner*                                                                      | No hi ha                                                                               | Hi ha en la versió gratuïta                                               |
+| **Especial** | Events estacionals                                                                         | No hi ha                                                                               | S'activa quan hi ha                                                       |
+: Comparativa interfície entre la versió de navegador de Cookie Clicker i la de mòbil
+
 #### Progressió
 
 Per a progressar en el joc s'ha d'anar comprant Edificis o Millores. Aquestes es poden comprar mitjançant galetes que es poden aconseguir clicant la galeta o bé passivament per les que generen els Edificis.
@@ -188,6 +205,22 @@ El joc en la seua versió mòbil està carent de música de cap mena i de sons n
 - El clik sobre la galeta
 - Els cliks a botons de la interfície. No tots els botons sonen igual
 
-### Push The Square
+### [Push The Square](https://asdehielo.itch.io/push-the-square)
+
+Joc indie desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publicat a itch.io en 2021. Tracta que un misteriós quadrat ha aparegut en ta casa i no fa res a banda de girar en el sentit de els agulles del rellotge. Gastaràs tots els teus estalvis assegurante que gire [@PushSquare].
+
+És un joc curt que es pot passar en menys de 10 minuts.
+
+%% TODO : posar més coses %%
+
+#### UI/UX
+
+El joc té un estil píxel art senzill.
+
+![Pantalla del joc. Font: Push the Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png)
+
+![Estadístiques. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png)
+
+![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png)
 
 ### Rythym Paradise

@@ -6,7 +6,7 @@
       {
         "id": "cfc97f11375f2783",
         "type": "tabs",
-        "dimension": 43.1,
+        "dimension": 31.284606866002214,
         "children": [
           {
             "id": "5ff90f8ddda069db",
@@ -63,22 +63,8 @@
       {
         "id": "bfc4c7d84dd9c277",
         "type": "tabs",
-        "dimension": 56.89999999999999,
+        "dimension": 68.71539313399778,
         "children": [
-          {
-            "id": "3abd4cd38cd6ab41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memoria/Marc teoric.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Marc teoric"
-            }
-          },
           {
             "id": "56048fa49796033c",
             "type": "leaf",
@@ -92,8 +78,23 @@
               "icon": "lucide-file",
               "title": "Annexos"
             }
+          },
+          {
+            "id": "d11425630fbdf166",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Marc teoric.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Marc teoric"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 411.5
+    "width": 410.5
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -277,29 +278,33 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3abd4cd38cd6ab41",
+  "active": "d11425630fbdf166",
   "lastOpenFiles": [
+    "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png.md",
+    "Memoria/Assets/AltresJocs/PushTheSquare",
+    "Memoria/Marc teoric.md",
+    "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png",
+    "Memoria/Annexos.md",
+    "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png",
+    "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png",
+    "Memoria/Assets/AltresJocs/PushTheSquare",
+    "Memoria/Assets/carpeta sense nom",
+    "Memoria/Assets/PushSquare-Credits.png",
+    "Memoria/Assets/PushSquare-2.png",
+    "Memoria/Assets/PushSquare-1.png",
+    "Output/_build_processed.md",
     "Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png",
     "Memoria/Metodologia.md",
     "Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png",
     "De tot/Originals/CookieClicker-1.af~lock~",
-    "Memoria/Marc teoric.md",
     "De tot/Originals/CookieClicker-1.af",
     "De tot/Originals",
-    "Output/_build_processed.md",
     "Diari/2026-07-09.md",
     "Memoria/Assets/AltresJocs/UIClicker.png",
     "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Achievements.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Store2.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Store1.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-1.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Noti.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Misc-Updates.jpg",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-Misc-Updates-Detail.jpg",
     "2026-07-09.md",
     "Memoria/Assets/AltresJocs/Cookie",
     "Memoria/Assets/AltresJocs",
-    "Memoria/Annexos.md",
     "Memoria/Bibliografia.md",
     "Organitzacio/Kanban.md",
     "Sense títol.md",
@@ -308,9 +313,6 @@
     "Output/TFM.docx",
     "Output/_build.md",
     "Config/portada.pdf",
-    "Config/Portada.pdf",
-    "Config/template.docx",
-    "Config/Plantilla_TFM_EPS_UA.docx",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Annexos/One-Sheet.md",
     "Templates/Template-Tracking.md",
