@@ -128,6 +128,10 @@ En aquests últims mesos es comença a veure un canvi en la tònica predominant 
 - Estudi de models de monetització
 - Identificació del públic objectiu%%
 
+### Godot
+
+%% TODO : explicar com funciona godot. puc comparar amb altres motors comercials, per que ra està en auge %%
+
 ## Estat de l'art {#sec-estat-art}
 
 A continuació es comentaran els treballs que han servit de punt de partida per al desenvolupament d'aquest TFM. Per a saber més sobre el mètode d'anàlisi dels videojocs escollits, es pot consultar en la [metodologia](#sec-analisi-videojocs).
@@ -197,6 +201,8 @@ La interfície és senzilla tant visualment com d'usar-la. Es pot veure ben dife
 Per a progressar en el joc s'ha d'anar comprant Edificis o Millores. Aquestes es poden comprar mitjançant galetes que es poden aconseguir clicant la galeta o bé passivament per les que generen els Edificis.
 
 %% TODO : consultar la Wikia  per a posar valors de coses. Mencionar notificacions ingame %%
+
+S'ha provat el joc en la versió de navegador i de mòbil i es pot apreciar una progressió més elevada amb la mòbil, ja que sempre que tornes a l'aplicació, aquesta independentment estiga en *backgroud* o no, en tornar et diu moltes galetes has guanyat en la teua absència, mentre que al tancar el navegador i tornar, no passa.
 
 #### Música i sons
 
