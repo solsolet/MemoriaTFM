@@ -10,20 +10,14 @@ state: In Progress
 | Versió | Data       | Descripció dels canvis                               |
 | :----- | :--------- | :--------------------------------------------------- |
 | v1.0.0 | 2026-06-18 | Creació inicial del document i esboç de cada apartat |
-|        |            |                                                      |
+| v1.0.1 | 2026-07-26 | Revisió per a la Play Store                          |
 |        |            |                                                      |
 
 ***
 
 ## Títol del joc
 
-Possibles idees:
-
-- Assaig
-- A Assatjar
-- Practice time
-- Piano piano
-- Pianissimo
+Pianissimo
 
 ## Génere del joc
 
@@ -31,7 +25,7 @@ Idle, Ritme, Casual, Productivitat
 
 ## Plataformes en les que eixiria
 
-Android i, si vaig bé de temps, iOS.
+Android i iOS.
 
 ## Edat i públic objectiu
 
@@ -39,7 +33,7 @@ El joc seria apte per a totes les edats, i pel que fa al mode concentració, per
 
 ## Resum de la història i gameplay
 
-POV: eres un estudiant de conservatori que es prepara per al seu examen de final de curs.
+POV: ets un estudiant de conservatori que es prepara per al seu examen de final de curs.
 
 El gameplay mostraria un teclat virtual on s'ha de polsar les tecles conforme van caent notes per la pantalla en la tecla corresponent. Conforme vas encertant notes guanyaras punts que podrás invertir en desbloquejar habilitats, millores o canvis del comportament del joc per tal de aconseguir més punts, tenir millor presició...
 

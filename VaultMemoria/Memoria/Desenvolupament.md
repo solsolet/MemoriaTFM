@@ -50,7 +50,16 @@ Crec que la inversió de temps ha valgut la pena perquè una vegada s'acabe la r
 
 #### Projecte Godot
 
+S'ha creat un projecte en la versió de Godot 4.5.1. L'objectiu principal en aquesta iteració havia de ser aconseguir configurar l'exportació del joc tant per a iOS com per a Android, així deixant aquest tema aclarit, no caldrà enfrontar la incertesa quan ja s'haja d'entregar el treball. A més s'ha creat i ocnfigurat les fitxes de l'aplicació en les corresponents tendes d'aplicacions.
+
+Es pot veure com aquesta plantilla senzilla s'ha pogut provar en dispositius Android i iOS reals.
+
 %% TODO : posar. plantilla Android %%
+
+![[Pianissimo-Android-It1.png]]
+
+
+
 
 #### Memòria
 

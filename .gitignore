@@ -8,3 +8,6 @@ Output/
 *.toc
 *.out
 *.synctex.gz
+
+pianissimo/bundles/
+key

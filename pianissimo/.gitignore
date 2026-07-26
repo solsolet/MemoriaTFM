@@ -1,0 +1,25 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.import/
+
+# Exports
+# export_presets.cfg
+*.apk
+*.aab
+*.ipa
+
+# Mono (si algun dia el gastes)
+.mono/
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
