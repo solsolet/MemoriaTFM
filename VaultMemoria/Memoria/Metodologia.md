@@ -63,7 +63,7 @@ Adicionalment ha servit per al desenvolupament i organització d'aquest treball 
 
 ### Pandoc
 
-Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF).
+Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
 
 [https://pandoc.org/index.html](https://pandoc.org/index.html)
 
@@ -77,6 +77,15 @@ Adicionalment ha servit per al desenvolupament d'aquest treball els següents pl
 
 - Godot Play Game Services: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
 - Godot iOS GameCenter plugin: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)
+
+
+### VSCode
+
+
+
+### Xcode
+
+Per a compilar i fer proves del projecte de Godot en un iPhone real.
 
 ### GanttProject
 

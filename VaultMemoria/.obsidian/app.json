@@ -6,7 +6,11 @@
     "hipercasual",
     "roguelike",
     "ZPG",
-    "anàlisi"
+    "anàlisi",
+    "Bundle",
+    "Signing",
+    "Changelog",
+    "Zotero"
   ],
   "alwaysUpdateLinks": true
 }
