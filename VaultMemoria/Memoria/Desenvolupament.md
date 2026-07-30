@@ -4,7 +4,7 @@
 
 ## Disseny
 
-El disseny del projecte s'arreplega en els documents situats en l'annex.
+El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sheet](One-Sheet), [Ten-Pager](Ten-Pager) i [GDD](GDD).
 
 ## Projecte
 
@@ -49,15 +49,13 @@ Durant la realització d'algunes tasques ja he anat experimentant que les he sub
 
 %% TODO : Posar imatge de solució GanttProject realista %%
 
-Una altra cosa a tenir en compte és com usaria Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una tenda d'aplicacions, sabem quin codi es tenia en aquell moment.
-
-%% TODO : no sé si m'agrada com està expressat %%
-%% Com tenim dos stores cerc que si mantenim la numeració unificada serà molt més fàcil de mantenir %%
+Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una tenda d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#Changelog).
 
 He donat per conclosa aquesta primera iteració quan he tingut les primeres peces d'aquest projecte i memòria per tal de no fer-la més llarga i així passar a un nou començament amb les idees més clares per a la següent.
+
 #### Exportador de memòria
 
-Pel que fa a la memòria, com s'ha explicat en la metodologia, en usar Obsidian s'han usat diferents extensions i ferramentes per a facilitar la recopilació de bibliografia i exportació de la memòria en un format PDF, però no era suficient, ja que el format no es podia controlar a mesura i calia fer molts canvis manualment.
+Pel que fa a la memòria, com s'ha explicat en la metodologia, en Obsidian s'han usat diferents extensions i ferramentes per a facilitar la recopilació de bibliografia i exportació de la memòria en un format PDF, però no era suficient, ja que el format no es podia controlar a mesura i calia fer molts canvis manualment.
 
 Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la memòria, redactada en Obsidian com a Markdown, que amb un simple `./build.sh` m'exportara la memòria en un format llest per a entregar. Aquest format inclou:
 
@@ -70,6 +68,8 @@ Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la 
 - Ordre de la memòria segons es tinga establit en el fitxer `manifest.txt`.
 - Títols generats automàticament en l'idioma indicat.
 - Enllaços funcionals tant externs com interns.
+
+El format es va fer amb una combinació de python %% TODO : %%
 
 Van sorgir alguns problemes durant aquesta iteració.
 Un va ser que la versió de Pandoc instal·lada era l'actual en el moment d'instal·lació, però durant el desenvolupament va eixir una nova que venia amb moltes més llibreries amb funcions que s'han programat a mà que hagueren fet més senzill el sistema d'exportació.
