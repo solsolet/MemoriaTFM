@@ -53,6 +53,8 @@ Els videojocs musicals són un gènere de videojoc completament orientat a la in
 
 **Exemples**: *Rythm Heaven*, *Just Dance*, *Geometry Dash* o *Guitar Hero*.
 
+La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser variada, des de perifèrics, com guitarres, o amb els peus ballant fins a usar els botons físics d'una consola o virtuals.
+
 ##### Productivitat
 
 %%TODO : Contar què son%%
@@ -135,6 +137,15 @@ En aquests últims mesos es comença a veure un canvi en la tònica predominant 
 ## Estat de l'art {#sec-estat-art}
 
 A continuació es comentaran els treballs que han servit de punt de partida per al desenvolupament d'aquest TFM. Per a saber més sobre el mètode d'anàlisi dels videojocs escollits, es pot consultar en la [metodologia](#sec-analisi-videojocs).
+
+Tots els videojocs analitzats compten en una qualificació per edat per a tots els públics.
+
+%% TODO : vore si filar tan prim %%
+
+%%ESRB: Everyone, tothom
+PEGI: 3, apte per a tots els públics
+CERO: A, all ages, totes les edats
+USK: 0, sense restriccions d’edat %%
 
 %%Benchmarking:
 
@@ -230,3 +241,71 @@ El joc té un estil píxel art senzill.
 ![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png)
 
 ### Rythym Paradise
+
+*Rhythm Paradise* és un videojoc musical, de ritme a l’estil Wario Ware, és a dir, com una sèrie de minijocs. Aquests videojocs posen a prova el sentit del ritme del jugador i normalment va lligat amb la memòria. D’aquest tipus, Nintendo compta amb predecessors com la sèrie *Guitar Hero*, *In the Groove* o *Rock Band*. I de la casa trobem *Donkey Konga*, *Elite Beats Agents* o *ElectroPlankton* entre altres.
+
+El videojoc va ser llançat al Japó el 31 de juliol de l’any 2008 amb el nom de *Rhythm Tengoku Gold* (リズム天国ゴールド), que vol dir *Rhythm Heaven Gold*. A la resta del món va ser comercialitzat en altres dates. A l’Amèrica del Nord el 5 d’abril del 2009, a Austràlia el 4 de juny amb el nom de *Rhythm Heaven*,  i a Europa l’1 de maig del mateix any amb el nom de *Rhythm Paradise*, que és com s'anomenarà en aquest cas.
+
+Molts d’aquests videojocs van de bracet amb una trama íntegrament musical o lligada a un instrument, cosa que *Rhythm Paradise* no. Incorpora la música com un acompanyant de l’acció del minijoc, com puga ser jugar al ping-pong o collir fruita.
+
+El videojoc va ser llançat per a la Nintendo DS. El seu predecessor, *Rhythm Tengoku*, per a la Game Boy Advance i altres títols de la sèrie han sigut per a Wii o Wii U com la continuació *Rhythm Heaven Fever*. La presència del joc en diferents consoles que evolucionen amb el temps, és un indicatiu que les mecàniques es poden replicar en diferents contextos tecnològics.
+
+Va tindre una gran rebuda, de totes les pàgines que puguem consultar de rànkings de videojocs, veurem que la seua nota sempre és un notable. Com ara a *Metacritic*, que té un 83 sobre 100, en *Famitsu* un 34/40 o 9 de 10 estrelles en *Wired*.
+
+#### Mecàniques
+
+L’objectiu principal és passar-se tots els minijocs; compta amb 50. A banda pots desbloquejar lectures, cançons, jocs sense fi o lliçons de guitarra segons que obtingues bones marques en els minijocs.
+
+Quan polses per a jugar a un minijoc, abans tens l’opció de practicar-lo perquè t’ensenye quina mecànica usa i t’hi habitues abans de jugar de debò.
+
+Una vegada acabes un minijoc, al final et donarà una puntuació de com ho has fet; hi ha 4 possibilitats:
+
+- **Una altra vegada**, has suspés i has de tornar a intentar-ho (nota ≤4)
+- **Bé**, passes la prova i desbloqueges la següent (5-6)
+- **Bastant bé**, has estat a 2 errades d’haver pogut aconseguir un Genial (7-8)
+- **Genial**, obtens una medalla i un **marc d’or** (9-10)
+
+Segons les medalles que tingues pots desbloquejar unes coses o altres.
+
+Una vegada tingues un Genial pots optar a un **Perfecte**. Per aconseguir-lo, el joc, aleatòriament entre els minijocs que tingues, un Genial t’avisarà que pots intentar-ho. Disposes de 3 intents per a no cometre cap errada i després torna a la normalitat. Si ho 'aconsegueixes et desbloquejarà una lectura o cançó del minijoc i el marc passarà d’or a *perfecte*.
+
+Per a jugar al *Rhythm Paradise* no fa falta res més que girar la Nintendo verticalment i usar el seu *stylus* en la pantalla tàctil. El videojoc permet canviar l'orientació segons sigues esquerrà o dret.
+
+Amb aquest hi ha 4 gestos que es poden fer:  tocar, soltar, lliscar i tirar. Es poden practicar a la cafeteria.
+
+A cada minijoc seràs un personatge que es mourà al ritme que tu li marques. Els botons no s’utilitzen a excepció del minijoc dels Rockers 2, que es gasten L o R (segons sigues esquerrà  o dret) juntament amb l’stylus.
+
+És una mecànica molt senzilla però efectiva, no cal tindre molta destresa.
+
+#### UI/UX
+
+El videojoc planteja diferents espais, majorment bidimensionals, a excepció dels minijocs A Escala, Peloteo Rítmico i Aerosurf, que estan en 3D.
+
+Fora de desplaçar-nos pel menú i les accions amb l’stylus que fan que el personatge del minijoc interactue no podem moure’ns. En aquest sentit, és un videojoc bastant estàtic.
+
+Pel menú (una vegada ens passem els 15 primers minijocs) podrem lliscar cap avall i ens mostrarà 15 minijocs més per a jugar, i en superar-los ens permeterà anar cap a l’esquerra o la dreta, on hi haurà 20 més en total.
+
+![Vista de les dues pantalles de Rhythm Paradise. Font: Rhythm Paradise, GameCash, s. d., https://www.gamecash.be/rhythm-paradise-e2129.html](Memoria/Assets/AltresJocs/RhythmParadise/rhythm-paradise.jpg)
+
+El jugador pot sentir-se absorbit pel joc, trobar-lo amé, divertir-se, ballar i taral·lejar amb les apegaloses melodies però també pot arribar-se a frustrar si s’encalla amb un minijoc o no aconsegueix la puntuació màxima.
+
+%% TODO : es pot posar una opinió personal? %%
+%% Com a jugadora, entenc el joc com un passatemps, com qui fa un sudoku, no pots jugar al Rhythm Paradise a l’espera d’una trepidant història o una acció desmesurada. Tampoc pots espera-te un gran repte, amb pràctica i un bon sentit del ritme te’l passaràs abans que te n’adones. Encara que, si és així, segur que et quedes amb ganes de més. %%
+
+Segons passen els diferents nivells, seguir el ritme és complica una mica perquè s'hi introdueixen nous patrons de ritme i es juga amb la velocitat.
+
+Per a dir que has “passat el joc”, a banda d’haver superat els 50 minijocs, pots seguir perfeccionant puntuacions fins a tindre un **Genial** en cada un i, per què no anar més lluny, un **Perfecte** en tots. Després ja no quedarà massa cosa per fer.
+
+#### Història
+
+Al món de Rhythm Paradise no es pot situar en un lloc concret. Hi ha una gran quantitat d’escenaris i un gran nombre de personatges. A cada minijoc es crea el seu propi microclima.
+
+Hi ha minijocs que sí es poden situar, com ara *Duduá Moái*. Suposem, pel fet que són dos moais i l’ambientació càlida, que es troben a l’illa de Pasqua. O en *A escala* o *Robotellines* es poden situar en una fàbrica, ja que després parla el capatàs al jugador.
+
+Aquest videojoc no es caracteritza per tindre cap trama. Cada minijoc són històries independents i no tenen per què estar relacionades entre si. És cert que els personatges que hi apareixen es fan cameos i pots veure’ls de fons o ens els *Remix* apareixen seqüencialment els previs quatre minijocs, però d’història transversal a tots, no n’hi ha.
+
+Alguns dels minijocs tenen segones parts (més difícils de superar), com pot ser *Robotellines*, *Club de fans* o *Aves marciales*.
+
+De la resta podem dir que són situacions com un assaig de cor (*El coro*), una carrera de cotxes (Foto final) o fer natació sincronitzada (*El Chapuzón*) que, una vegada acabes el minijoc, segons com de bé ho hages fet, podem veure el desenllaç després que ens diguen la puntuació.
+
+Una vegada obris el joc i fas una nova partida, una granoteta donarà la benvinguda i farà un petit tutorial al jugador de com tirar amb l’stylus on s'ha de tombar una granota i un cotxe de joguet. Després ja es juga lliurement pels minijocs que tingues disponibles, es pot anar a la cafeteria o al medaller.

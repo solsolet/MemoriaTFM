@@ -69,7 +69,7 @@ Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la 
 - Títols generats automàticament en l'idioma indicat.
 - Enllaços funcionals tant externs com interns.
 
-El format es va fer amb una combinació de python %% TODO : %%
+El format es va fer amb una combinació de Python i el contingut de la carpeta `config`, ja que es necessiten alguns fitxers per a poder exportar la memòria correctament a PDF, com l'ordre de les notes d'Obsidian a `manifest.txt`, la portada segons la plantilla, el format APA desitjat, les metadades que controlen manualment algunes variables de Pandoc i la bibliogradia que es guarda automàticament de Zotero. 
 
 Van sorgir alguns problemes durant aquesta iteració.
 Un va ser que la versió de Pandoc instal·lada era l'actual en el moment d'instal·lació, però durant el desenvolupament va eixir una nova que venia amb moltes més llibreries amb funcions que s'han programat a mà que hagueren fet més senzill el sistema d'exportació.
@@ -118,4 +118,7 @@ Un inconvenient que em vaig trobar va ser a principi de juliol per a accedir a c
 
 No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut de fer recerca per al desevolupament en Godot.
 
-#### Iteració 2
+### Iteració 2
+
+#### Diagrames i mockups
+
