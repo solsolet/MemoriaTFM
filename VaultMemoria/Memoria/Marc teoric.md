@@ -186,9 +186,7 @@ Les galetes es poden guanyar fent **clic** a la galeta gegant o a través dels t
 En les figures \ref{fig:cookie-pc} i \ref{fig:cookie-pc-esquema} es poden veure unes imatges de la interfície per a ordinador.
 
 ![Interfície d'usuari en ordinador. Font: Cookie Clicker \label{fig:cookie-pc}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png) 
-
 ![Esquema interfície d'usuari en ordinador de Cookie Clicker \label{fig:cookie-pc-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png) 
-
 Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:cookie-mobil} i \ref{fig:cookie-mobil-esquema}.
 
 ![Interfície d'usuari en mòbil, per ordre d'aparició: Cookie, Tenda (d'edificis i de millores), Especial, Estadístiques, Miscelània i detall dels Assoliments i de les Millores. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png)
@@ -215,7 +213,7 @@ Per a progressar en el joc s'ha d'anar comprant Edificis o Millores. Aquestes es
 
 S'ha provat el joc en la versió de navegador i de mòbil i es pot apreciar una progressió més elevada amb la mòbil, ja que sempre que tornes a l'aplicació, aquesta independentment estiga en *backgroud* o no, en tornar et diu moltes galetes has guanyat en la teua absència, mentre que al tancar el navegador i tornar, no passa.
 
-#### Música i sons
+#### Música i so
 
 El joc en la seua versió mòbil està carent de música de cap mena i de sons només hi ha de dues classes:
 
@@ -244,7 +242,7 @@ El joc té un estil píxel art senzill.
 
 *Rhythm Paradise* és un videojoc musical, de ritme a l’estil Wario Ware, és a dir, com una sèrie de minijocs. Aquests videojocs posen a prova el sentit del ritme del jugador i normalment va lligat amb la memòria. D’aquest tipus, Nintendo compta amb predecessors com la sèrie *Guitar Hero*, *In the Groove* o *Rock Band*. I de la casa trobem *Donkey Konga*, *Elite Beats Agents* o *ElectroPlankton* entre altres.
 
-El videojoc va ser llançat al Japó el 31 de juliol de l’any 2008 amb el nom de *Rhythm Tengoku Gold* (リズム天国ゴールド), que vol dir *Rhythm Heaven Gold*. A la resta del món va ser comercialitzat en altres dates. A l’Amèrica del Nord el 5 d’abril del 2009, a Austràlia el 4 de juny amb el nom de *Rhythm Heaven*,  i a Europa l’1 de maig del mateix any amb el nom de *Rhythm Paradise*, que és com s'anomenarà en aquest cas.
+El videojoc va ser llançat al Japó el 31 de juliol de l’any 2008 amb el nom de *Rhythm Tengoku Gold*, que vol dir *Rhythm Heaven Gold*. A la resta del món va ser comercialitzat en altres dates. A l’Amèrica del Nord el 5 d’abril del 2009, a Austràlia el 4 de juny amb el nom de *Rhythm Heaven*,  i a Europa l’1 de maig del mateix any amb el nom de *Rhythm Paradise*, que és com s'anomenarà en aquest cas.
 
 Molts d’aquests videojocs van de bracet amb una trama íntegrament musical o lligada a un instrument, cosa que *Rhythm Paradise* no. Incorpora la música com un acompanyant de l’acció del minijoc, com puga ser jugar al ping-pong o collir fruita.
 
@@ -254,28 +252,28 @@ Va tindre una gran rebuda, de totes les pàgines que puguem consultar de rànkin
 
 #### Mecàniques
 
-L’objectiu principal és passar-se tots els minijocs; compta amb 50. A banda pots desbloquejar lectures, cançons, jocs sense fi o lliçons de guitarra segons que obtingues bones marques en els minijocs.
+L’objectiu principal és passar-se tots els minijocs; compta amb 50. A banda es poden desbloquejar lectures, cançons, jocs sense fi o lliçons de guitarra segons s'obtinguen bones marques en els minijocs.
 
-Quan polses per a jugar a un minijoc, abans tens l’opció de practicar-lo perquè t’ensenye quina mecànica usa i t’hi habitues abans de jugar de debò.
+Quan es polsa per a jugar a un minijoc, abans hi ha l’opció de practicar-lo perquè s'ensenye quina mecànica usa i t’hi habitues abans de jugar de debò.
 
 Una vegada acabes un minijoc, al final et donarà una puntuació de com ho has fet; hi ha 4 possibilitats:
 
-- **Una altra vegada**, has suspés i has de tornar a intentar-ho (nota ≤4)
-- **Bé**, passes la prova i desbloqueges la següent (5-6)
-- **Bastant bé**, has estat a 2 errades d’haver pogut aconseguir un Genial (7-8)
-- **Genial**, obtens una medalla i un **marc d’or** (9-10)
+- **Una altra vegada**, suspés i s'ha de tornar a intentar-ho (nota <= 4).
+- **Bé**, prova passada i desbloqueig de la següent (5 - 6).
+- **Bastant bé**, ha faltat a 2 errades d’haver pogut aconseguir un Genial (7 - 8).
+- **Genial**, s'obté una medalla i un **marc d’or** (9 - 10).
 
-Segons les medalles que tingues pots desbloquejar unes coses o altres.
+Segons les medalles que tinga el jugador pot desbloquejar unes coses o altres.
 
-Una vegada tingues un Genial pots optar a un **Perfecte**. Per aconseguir-lo, el joc, aleatòriament entre els minijocs que tingues, un Genial t’avisarà que pots intentar-ho. Disposes de 3 intents per a no cometre cap errada i després torna a la normalitat. Si ho 'aconsegueixes et desbloquejarà una lectura o cançó del minijoc i el marc passarà d’or a *perfecte*.
+Una vegada s'obtinga un Genial es pot optar a un **Perfecte**. Per aconseguir-lo, el joc, aleatòriament entre els minijocs que tingues, un Genial t’avisarà que pots intentar-ho. Es disposa de 3 intents per a no cometre cap errada i després torna a la normalitat. Si s'aconsegueix es desbloquejarà una lectura o cançó del minijoc i el marc passarà d’or a *perfecte*.
 
-Per a jugar al *Rhythm Paradise* no fa falta res més que girar la Nintendo verticalment i usar el seu *stylus* en la pantalla tàctil. El videojoc permet canviar l'orientació segons sigues esquerrà o dret.
+Per a jugar al *Rhythm Paradise* no fa falta res més que girar la Nintendo verticalment i usar el seu *stylus* en la pantalla tàctil. El videojoc permet canviar l'orientació segons es jugue amb la mà esquerra o dreta.
 
-Amb aquest hi ha 4 gestos que es poden fer:  tocar, soltar, lliscar i tirar. Es poden practicar a la cafeteria.
+Amb aquest hi ha 4 **gestos** que es poden fer: tocar, soltar, lliscar i tirar. Es poden practicar a la cafeteria.
 
-A cada minijoc seràs un personatge que es mourà al ritme que tu li marques. Els botons no s’utilitzen a excepció del minijoc dels Rockers 2, que es gasten L o R (segons sigues esquerrà  o dret) juntament amb l’stylus.
+A cada minijoc seràs un personatge que es mourà al ritme que se li marque. Els botons no s’utilitzen a excepció del minijoc dels Rockers 2, que es gasten L o R (segons es siga esquerrà o dret) juntament amb l’stylus.
 
-És una mecànica molt senzilla però efectiva, no cal tindre molta destresa.
+És una mecànica molt senzilla, però efectiva, no cal tindre molta destresa.
 
 #### UI/UX
 
@@ -283,29 +281,80 @@ El videojoc planteja diferents espais, majorment bidimensionals, a excepció del
 
 Fora de desplaçar-nos pel menú i les accions amb l’stylus que fan que el personatge del minijoc interactue no podem moure’ns. En aquest sentit, és un videojoc bastant estàtic.
 
-Pel menú (una vegada ens passem els 15 primers minijocs) podrem lliscar cap avall i ens mostrarà 15 minijocs més per a jugar, i en superar-los ens permeterà anar cap a l’esquerra o la dreta, on hi haurà 20 més en total.
+Pel menú (una vegada ens passem els 15 primers minijocs) es pot lliscar cap avall i mostrarà 15 minijocs més per a jugar, i en superar-los es permetrà anar cap a l’esquerra o la dreta, on hi haurà 20 més en total.
 
-![Vista de les dues pantalles de Rhythm Paradise. Font: Rhythm Paradise, GameCash, s. d., https://www.gamecash.be/rhythm-paradise-e2129.html](Memoria/Assets/AltresJocs/RhythmParadise/rhythm-paradise.jpg)
+![Vista de les dues pantalles de Rhythm Paradise. Font: Rhythm Paradise, GameCash, s. d., ](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Vista.jpg)
 
-El jugador pot sentir-se absorbit pel joc, trobar-lo amé, divertir-se, ballar i taral·lejar amb les apegaloses melodies però també pot arribar-se a frustrar si s’encalla amb un minijoc o no aconsegueix la puntuació màxima.
+Font: https://www.gamecash.be/rhythm-paradise-e2129.html
 
-%% TODO : es pot posar una opinió personal? %%
-%% Com a jugadora, entenc el joc com un passatemps, com qui fa un sudoku, no pots jugar al Rhythm Paradise a l’espera d’una trepidant història o una acció desmesurada. Tampoc pots espera-te un gran repte, amb pràctica i un bon sentit del ritme te’l passaràs abans que te n’adones. Encara que, si és així, segur que et quedes amb ganes de més. %%
+El jugador pot sentir-se absorbit pel joc, trobar-lo amé, divertir-se, ballar i taral·lejar amb les apegaloses melodies, però també pot arribar-se a frustrar si s’encalla amb un minijoc o no aconsegueix la puntuació màxima.
 
-Segons passen els diferents nivells, seguir el ritme és complica una mica perquè s'hi introdueixen nous patrons de ritme i es juga amb la velocitat.
+Segons passen els diferents nivells, seguir el ritme es complica una mica perquè s'hi introdueixen nous patrons de ritme i es juga amb la velocitat.
 
-Per a dir que has “passat el joc”, a banda d’haver superat els 50 minijocs, pots seguir perfeccionant puntuacions fins a tindre un **Genial** en cada un i, per què no anar més lluny, un **Perfecte** en tots. Després ja no quedarà massa cosa per fer.
+Perquè un jugador diga que s'ha “passat el joc”, a banda d’haver superat els 50 minijocs, es pot continuar perfeccionant puntuacions fins a tenir un **Genial** en cadascun i, per què no anar més lluny, un **Perfecte** en tots. Després ja no quedarà massa cosa per fer.
+
+##### Menú
+
+El menú del joc va estretament lligat amb el nostre progrés, segons avancem es modificarà. Apareixerà al centre un botó que ens permetrà moure’ns.
+
+![Esquema menú del Rhythm Paradise](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png)
+
+1. La part verda té 15 minijocs, 5 per columna i n’hi ha 3. Anem del centre cap a dalt on el 5é minijoc de cada columna és un remix dels 4 anteriors.
+2. Una vegada se supere l’anterior, es pot moure segons indiquen les fletxes blaves, es pot anar a la part blava. Passa com dalt, però al revés.
+3. Superats els següents 15, es pot jugar el minijoc especial Aerosurf mentre apareixen els crèdits amb tots els personatges del joc. A continuació, es desbloqueja l’opció de moure’s com les fletxes taronja i s'afigen 20 minijocs que són les continuacions d’alguns dels jugats anteriorment (situats en la part groga, començant pel de l’esquerra i després el de la dreta).
+4. Passats els 10 dels 20 que ens queden passem a jugar als minijocs de la part vermella.
 
 #### Història
 
 Al món de Rhythm Paradise no es pot situar en un lloc concret. Hi ha una gran quantitat d’escenaris i un gran nombre de personatges. A cada minijoc es crea el seu propi microclima.
 
-Hi ha minijocs que sí es poden situar, com ara *Duduá Moái*. Suposem, pel fet que són dos moais i l’ambientació càlida, que es troben a l’illa de Pasqua. O en *A escala* o *Robotellines* es poden situar en una fàbrica, ja que després parla el capatàs al jugador.
+Hi ha minijocs que sí que es poden situar, com ara *Duduá Moái*. Suposem, pel fet que són dos moais i l’ambientació càlida, que es troben a l’illa de Pasqua. O en *A escala* o *Robotellines* es poden situar en una fàbrica, ja que després parla el capatàs al jugador.
 
-Aquest videojoc no es caracteritza per tindre cap trama. Cada minijoc són històries independents i no tenen per què estar relacionades entre si. És cert que els personatges que hi apareixen es fan cameos i pots veure’ls de fons o ens els *Remix* apareixen seqüencialment els previs quatre minijocs, però d’història transversal a tots, no n’hi ha.
+Aquest videojoc no es caracteritza per tindre cap trama. Cada minijoc són històries independents i no tenen per què estar relacionades entre si. És cert que els personatges que hi apareixen es fan cameos i pots veure’ls de fons o en els *Remix* apareixen seqüencialment els previs quatre minijocs, però d’història transversal a tots, no n’hi ha.
 
 Alguns dels minijocs tenen segones parts (més difícils de superar), com pot ser *Robotellines*, *Club de fans* o *Aves marciales*.
 
 De la resta podem dir que són situacions com un assaig de cor (*El coro*), una carrera de cotxes (Foto final) o fer natació sincronitzada (*El Chapuzón*) que, una vegada acabes el minijoc, segons com de bé ho hages fet, podem veure el desenllaç després que ens diguen la puntuació.
 
 Una vegada obris el joc i fas una nova partida, una granoteta donarà la benvinguda i farà un petit tutorial al jugador de com tirar amb l’stylus on s'ha de tombar una granota i un cotxe de joguet. Després ja es juga lliurement pels minijocs que tingues disponibles, es pot anar a la cafeteria o al medaller.
+
+#### Música i so
+
+Tractant-se d'un joc de ritme, la música té un paper fonamental. Les peces, repartides entre els minijocs, han de ser d'una longitud similar, atractives a l'oïda i tenir alguna dificultat rítmica que les faça un repte. Sense deixar de costat que han de ser diferents i originals per a no tenir la sensació d'estar jugant tota l'estona la mateixa música.
+
+Hi ha minijocs on hi ha una cançó amb lletra i d'altres que no. Segons el que s'estiga percutint el disseny sonor s'adapta, per exemple en *Peloteo Rítmico*, la pilota de ping-pong sona com una de veritat quan la veus rebotar o la colpeges.
+
+Com analitzar-les totes és molt extens, només en destacaré dues: *Aves Marciales* i *Remix 3*. La particularitat dels *Remix*, com el seu nom indica, són un nivell on trobem els motius rítmics i música dels minijocs de la seua columna d'una manera que tenen una instrumentació i estètica diferent i uniforme.
+
+##### Aves Marciales
+
+La cançó d’aquest minijoc és un **tango**. Com a tal, es poden identificar alguns instruments que sonen, com un acordió, violins, una caixa, postisses i un contrabaix (o bé podria ser un baix elèctric), entre altres.
+
+Està en **Re m**. Té una estructura A-B-A'-coda més una petita introducció (taronja). Cada secció està dividida en dues frases (rosa) i estan unides per un pont (verd). En vermell estan els graus d’alguns dels acords. En la secció B modula de tonalitat veïna Sol m, però després torna.
+
+Té un ritme molt marcat i moltes síncopes, pròpies del tango.
+
+S'ha fet una petita anàlisi en seria la següent:
+
+%% TODO : Com citar la font? L'anàlisi és meu, la música és de Nintendo, la partitura és d'un lloc web de partitures %%
+![Anàlisi propi de la partitura de *Aves Marciales*. Font: Musescore.com, ](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Partitura-Aves.jpeg)
+
+Font: https://musescore.com/user/36512366/scores/6794705?share=copy_link
+
+##### Remix 3
+
+La presentació de la pantalla d’inici dels *Remix* està fet a l’estil 8 bit. La cançó en si és una **barreja d’estils** com puga ser tango, jazz, copla o folk.
+
+Se Senten trompetes, un saxo, una carraca, un cencerro, plats, piano, flautes… el que podria ser una mena de big band.
+
+La cançó està en subdivisió ternària. Es tracta d’un 6 per 8 i està en **La m**.
+
+Es senten dues parts separades d’un pont. Una possible estructura seria A-B-pont-B'-A.
+
+En la primera part escoltem la trompeta acompanyada del que podria ser la big band, després dona pas al solo de saxo mentre el jugador fa tresillos.
+
+A continuació hi ha un pont on sonen els vents fusta que ens tornen a dur al la part de saxo. Acaba en el tema principal i la tornada de la trompeta.
+
+O podriem interpretar-ho com a A-B-A' i on abans havia distingit en A i B fer que siguen frases diferents.
+
+De tota manera tant la part de trompeta  o de saxo estan en La m, al canvi al vent fusta es produeix una modulació a la dominant, Mi m. Després torna a la tònica i acaba.
