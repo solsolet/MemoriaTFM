@@ -67,13 +67,13 @@ Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de 
 
 [https://pandoc.org/index.html](https://pandoc.org/index.html)
 
-### Godot 4.5.1
+### Godot 4.5.1 {#sec-godot-451}
 
-Motor de jocs 2D-3D de codi obert multiplataforma amb el què es desenvoluparà el videojocs del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
+Motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 
 [https://godotengine.org](https://godotengine.org)
 
-Adicionalment ha servit per al desenvolupament d'aquest treball els següents plugins:
+Addicionalment ha servit per al desenvolupament d'aquest treball els següents connectors:
 
 - Godot Play Game Services: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
 - Godot iOS GameCenter plugin: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)

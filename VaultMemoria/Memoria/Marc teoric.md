@@ -132,6 +132,15 @@ En aquests últims mesos es comença a veure un canvi en la tònica predominant 
 
 ### Godot
 
+Com s'ha explicat a la [metodologia](#sec-godot-451), Godot és un motor de videojocs 2D-3D de codi obert multiplataforma. Serà la ferramenta principal per a desenvolupar el videojoc, ja que ens permetrà exportar-lo tant a iOS com Android amb els ajustos que es determinen. A més es poden afegir connectors que facilitaran el control de funcions de les tendes d'aplicacions.
+
+No només resulta atractiu com a motor per cobrir les necessitats bàsiques del projecte, també ho resulta per ser de **codi obert** sota una llicència MIT [@GODOT_faq], que vol dir:
+
+- És de descàrrega gratuïta i es pot usar el motor per a qualsevol finalitat tan personal, sense ànim de lucre, comercial o altres.
+- L'usuari és lliure de modificar, distribuir, redistribuir i mesclar Godot com vulga, per qualsevol raó, siga comercial o no.
+
+A diferència dels altres motors comercials que predominen el mercat dels videojocs, com puguen ser Unreal o Unity, que poden ser idonis per a projectes més complexos i grans, per al cas d'un videojoc senzill de mòbil podrien considerar-se excessius a més de fer els projectes més grossos i difícils d'utilitzar.
+
 %% TODO : explicar com funciona godot. puc comparar amb altres motors comercials, per que ra està en auge %%
 
 ## Estat de l'art {#sec-estat-art}
