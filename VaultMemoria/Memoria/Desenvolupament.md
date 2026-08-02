@@ -35,6 +35,22 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 ## Iteracions
 
+### Interacció 0
+
+Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usariem, Godot. 
+
+Després em vaig centrar en aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc usant el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
+
+Aquest calentament es va fer sense tenir encara una idea del joc. No va ser fins a la segona reunió amb el tutor que no es va tindre un idea més concisa: un joc mòbil idle, senzill, que explorara alguna caraceterística pròpia dels dispositius mòbils, per exemple les notificacions. Se'm va ocorrer que fora de temàtica musical, ja que tinc afinitat pel tema al ser pianista. *POV: eres un pianista que ha d'assatjar per als seus exàmens* va ser la premisa amb la que ho construiria tot.
+
+El temps d'assaig seria la mecànica idle, tu pots manualment tocar tecles i de fer-ho bé guanyes puntuació, experiència... com es vulga dir. Poc a poc podries anar guanyant millores que automatitzarien eixe procés per a poder seguir guanyant més.
+
+La idea i el projecte es van quedar de costat durant el curs ja que sempre li donava prioritat a les pràctiques de les assignatures i li'ls dedicava més temps que res per a fer-les el millor possible.
+
+Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig seguir treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per seguir familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
+
+Després d'un temps usant-lo el trobe còmode d'usar i m'alegre d'haver pres la decisió d'elegir Godot perquè, en el context d'un projecte real on tens una motivació per a desenvolupar-lo, et veus forçat aprendre al ritme que marca el projecte i no tu sense cap restricció.
+
 ### Iteració 1
 
 En aquesta iteració s'han fet les preparacions inicials per a tot el que conforma el projecte de Godot com per a la memòria.
@@ -49,7 +65,7 @@ Durant la realització d'algunes tasques ja he anat experimentant que les he sub
 
 %% TODO : Posar imatge de solució GanttProject realista %%
 
-Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una tenda d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#Changelog).
+Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una tenda d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#changelog).
 
 He donat per conclosa aquesta primera iteració quan he tingut les primeres peces d'aquest projecte i memòria per tal de no fer-la més llarga i així passar a un nou començament amb les idees més clares per a la següent.
 
@@ -84,7 +100,7 @@ S'ha creat un projecte en la versió de Godot 4.5.1. L'objectiu principal en aqu
 
 Es pot veure com aquesta plantilla senzilla s'ha pogut provar en dispositius Android i iOS reals.
 
-![Exportació del projecte de Godot a Android i iOS respectivament](Memoria/Assets/Pianissimo/Pianissimo-It1.png)
+![Exportació del projecte de Godot a Android i iOS respectivament](Memoria/Assets/Pianissimo/Pianissimo-It1.png){height=6cm}
 
 En veure que funciona en dispositius reals, s'ha preparat correctament la configuració d'exportació. En el cas d'Android s'ha fet les següents tasques:
 

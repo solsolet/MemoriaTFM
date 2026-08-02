@@ -113,6 +113,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "De tot/Com exportar a PDF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Com exportar a PDF"
+            }
+          },
+          {
+            "id": "7f6b8c6ced9c6879",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Memoria/Marc teoric.md",
                 "mode": "source",
                 "source": false
@@ -122,7 +136,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -308,31 +322,32 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "371aadb4379c49dc",
+  "active": "0535144597973b2b",
   "lastOpenFiles": [
-    "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
+    "Memoria/Desenvolupament.md",
     "Output/_build_processed.md",
-    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Partitura-Aves.jpeg",
-    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png",
+    "De tot/Com exportar a PDF.md",
+    "Memoria/Llegenda.md",
+    "Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Icon.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc4.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc3.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc2.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Paleta.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Inici.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Icon.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Joc2.png",
+    "Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Joc.png",
+    "Memoria/Metodologia.md",
     "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png.sb-17f81a0c-Dyx8FC",
-    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Vista.jpg",
     "Rhythm Paradise.pdf",
     "Memoria/Assets/AltresJocs/RhythmParadise",
-    "Memoria/Desenvolupament.md",
-    "Memoria/Llegenda.md",
     "Memoria/Annexos/One-Sheet.md",
-    "Memoria/Assets/Pianissimo/Pianissimo-It1.png",
-    "Memoria/Assets/Pianissimo/Pianissimo-iOS-It1.jpg",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Assets/Pianissimo",
-    "Memoria/Assets/Pianissimo/Pianissimo-Android-It1.png",
-    "Memoria/Assets/GanttProject/Plan-It1-Inicial.png",
     "Diari/2026-07-24.md",
     "Diari/2026-07-23.md",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png",
-    "Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png",
     "Memoria/Assets/GanttProject",
     "Organitzacio/Reunions.md",
     "Memoria/Annexos.md",

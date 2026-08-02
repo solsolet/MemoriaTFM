@@ -111,11 +111,11 @@ Els usuaris de dispositius mòbils es poden separar segons el SO que usen. Si mi
 
 Globalment, ho podem veure a la figura \ref{fig:os-mundial}. També podem analitzar les dades a escala europea (vegeu la Figura \ref{fig:os-europa}) i finalment en l'àmbit nacional a la Figura \ref{fig:os-espanya}.
 
-![Mobile OS Worldwide 2020-2026. StatCounter \label{fig:os-mundial}](Memoria/Assets/MobileOS-Worldwide-2020-2026-StatCounter.png)
+![Mobile OS Worldwide 2020-2026. StatCounter \label{fig:os-mundial}](Memoria/Assets/MobileOS-Worldwide-2020-2026-StatCounter.png){height=6cm}
 
-![MobileOS-Europe-2020-2026-StatCounter \label{fig:os-europa}](Memoria/Assets/MobileOS-Europe-2020-2026-StatCounter.png)
+![MobileOS-Europe-2020-2026-StatCounter \label{fig:os-europa}](Memoria/Assets/MobileOS-Europe-2020-2026-StatCounter.png){height=6cm}
 
-![Mobile OS Spain 2020-2026. StatCounter \label{fig:os-espanya}](Memoria/Assets/MobileOS-Spain-2020-2026-StatCounter.png)
+![Mobile OS Spain 2020-2026. StatCounter \label{fig:os-espanya}](Memoria/Assets/MobileOS-Spain-2020-2026-StatCounter.png){height=6cm}
 
 En aquests últims mesos es comença a veure un canvi en la tònica predominant que, encara que no es produïra, resulta interessant desenvolupar per als dos mercats. I no només cal prestar-li atenció al mercat d'iOS pel seu creixement, sinó també a pesar de ser molt menor té majors vendes dins de les seues aplicacions.
 
@@ -126,7 +126,6 @@ En aquests últims mesos es comença a veure un canvi en la tònica predominant 
 %%Estudi mercat, mòbil:
 
 - Investigació del mercat de videojocs mòbils
-- Anàlisi de tendències actuals
 - Estudi de models de monetització
 - Identificació del públic objectiu%%
 
@@ -139,17 +138,23 @@ No només resulta atractiu com a motor per cobrir les necessitats bàsiques del 
 - És de descàrrega gratuïta i es pot usar el motor per a qualsevol finalitat tan personal, sense ànim de lucre, comercial o altres.
 - L'usuari és lliure de modificar, distribuir, redistribuir i mesclar Godot com vulga, per qualsevol raó, siga comercial o no.
 
-A diferència dels altres motors comercials que predominen el mercat dels videojocs, com puguen ser Unreal o Unity, que poden ser idonis per a projectes més complexos i grans, per al cas d'un videojoc senzill de mòbil podrien considerar-se excessius a més de fer els projectes més grossos i difícils d'utilitzar.
+A diferència dels altres motors comercials que predominen el mercat dels videojocs, com puguen ser Unreal o Unity, que poden ser idonis per a projectes més complexos i grans, per al cas d'un videojoc indie senzill de mòbil podrien considerar-se excessius a més de fer els projectes més grossos i difícils d'utilitzar.
 
-%% TODO : explicar com funciona godot. puc comparar amb altres motors comercials, per que ra està en auge %%
+Godot a més, després de la polèmica de Unity l'any 2023, de les tarifes per instal·lació i canvis en els termes i condicions, va créixer en popularitat. Per a fer memòria, el que va passar va ser que segons la llicència i vendes del desenvolupador i els canvis retroactius van posar a la comunitat en la seua contra i es plantejara buscar noves alternatives.
+
+Unity és un motor de programari privatiu, per tant, no és mai del desenvolupador; aquests només tenen una llicència d'ús. Es troba en mans d'una corporació que mira pel seu interés propi, encara que això signifique degradar el servei, les condicions i perdre la confiança dels seus usuaris.
+
+I per afegir més motius: mesos abans de la polèmica, Godot va llançar la seua versió 4.0 on s'afig i es millora suport gràfic 3D com també altres funcionalitats i arreglar algunes errades. Aquest Godot va traent versions i a dia de la redacció d'aquesta memòria hi ha fins a la 4.7 llançada en juny de 2026.
+
+![Jocs fets amb Godot llançats en steam cada any. Font: steamdb.info](Memoria/Assets/Godot-Steam-Releases.png){height=5cm}
+
+La comunitat va creixent, tenint més presència a xarxes, cada vegada es llancen més jocs fets amb Godot i també s'organitzen més *Game Jams* que impulsen l'ús del motor [@engineGodotUsageEngine].
 
 ## Estat de l'art {#sec-estat-art}
 
 A continuació es comentaran els treballs que han servit de punt de partida per al desenvolupament d'aquest TFM. Per a saber més sobre el mètode d'anàlisi dels videojocs escollits, es pot consultar en la [metodologia](#sec-analisi-videojocs).
 
 Tots els videojocs analitzats compten en una qualificació per edat per a tots els públics.
-
-%% TODO : vore si filar tan prim %%
 
 %%ESRB: Everyone, tothom
 PEGI: 3, apte per a tots els públics
@@ -158,7 +163,6 @@ USK: 0, sense restriccions d’edat %%
 
 %%Benchmarking:
 
-- Selecció de jocs de referència
 - Anàlisi de mecàniques
 - Anàlisi d'interfícies (paper de Playing to wait llegir "Implementing Games Across the Interactivity Spectrum")
 - Anàlisi de progressió
@@ -194,13 +198,19 @@ Les galetes es poden guanyar fent **clic** a la galeta gegant o a través dels t
 
 En les figures \ref{fig:cookie-pc} i \ref{fig:cookie-pc-esquema} es poden veure unes imatges de la interfície per a ordinador.
 
-![Interfície d'usuari en ordinador. Font: Cookie Clicker \label{fig:cookie-pc}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png) 
-![Esquema interfície d'usuari en ordinador de Cookie Clicker \label{fig:cookie-pc-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png) 
+
+![Interfície d'usuari en ordinador. Font: Cookie Clicker](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC.png){#fig:cookie-pc height=7cm}
+
+
+![Esquema interfície d'usuari en ordinador de Cookie Clicker](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png){#fig:cookie-pc-esquema height=7cm}
+
+
 Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:cookie-mobil} i \ref{fig:cookie-mobil-esquema}.
 
-![Interfície d'usuari en mòbil, per ordre d'aparició: Cookie, Tenda (d'edificis i de millores), Especial, Estadístiques, Miscelània i detall dels Assoliments i de les Millores. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png)
+![Interfície d'usuari en mòbil. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png){height=8cm}
 
-![Interfície d'usuari en mòbil \label{fig:cookie-mobil-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png)
+
+![Interfície d'usuari en mòbil \label{fig:cookie-mobil-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png){height=8cm}
 
 La interfície és senzilla tant visualment com d'usar-la. Es pot veure ben diferenciades cada part d'aquesta:
 
@@ -226,8 +236,8 @@ S'ha provat el joc en la versió de navegador i de mòbil i es pot apreciar una 
 
 El joc en la seua versió mòbil està carent de música de cap mena i de sons només hi ha de dues classes:
 
-- El clik sobre la galeta
-- Els cliks a botons de la interfície. No tots els botons sonen igual
+- El clic sobre la galeta.
+- Els clics a botons de la interfície. No tots els botons sonen igual.
 
 ### [Push The Square](https://asdehielo.itch.io/push-the-square)
 
@@ -241,23 +251,23 @@ Joc indie desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publ
 
 El joc té un estil píxel art senzill.
 
-![Pantalla del joc. Font: Push the Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png)
+![Pantalla del joc. Font: Push the Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png){height=6cm}
 
-![Estadístiques. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png)
+![Estadístiques. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png){height=6cm}
 
-![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png)
+![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png){height=6cm}
 
 ### Rythym Paradise
 
 *Rhythm Paradise* és un videojoc musical, de ritme a l’estil Wario Ware, és a dir, com una sèrie de minijocs. Aquests videojocs posen a prova el sentit del ritme del jugador i normalment va lligat amb la memòria. D’aquest tipus, Nintendo compta amb predecessors com la sèrie *Guitar Hero*, *In the Groove* o *Rock Band*. I de la casa trobem *Donkey Konga*, *Elite Beats Agents* o *ElectroPlankton* entre altres.
 
-El videojoc va ser llançat al Japó el 31 de juliol de l’any 2008 amb el nom de *Rhythm Tengoku Gold*, que vol dir *Rhythm Heaven Gold*. A la resta del món va ser comercialitzat en altres dates. A l’Amèrica del Nord el 5 d’abril del 2009, a Austràlia el 4 de juny amb el nom de *Rhythm Heaven*,  i a Europa l’1 de maig del mateix any amb el nom de *Rhythm Paradise*, que és com s'anomenarà en aquest cas.
+El videojoc va ser llançat al Japó el 31 de juliol de l’any 2008 amb el nom de *Rhythm Tengoku Gold*, que vol dir *Rhythm Heaven Gold*. A la resta del món va ser comercialitzat en altres dates. A l’Amèrica del Nord el 5 d’abril del 2009, a Austràlia el 4 de juny amb el nom de *Rhythm Heaven*, i a Europa l’1 de maig del mateix any amb el nom de *Rhythm Paradise*, que és com s'anomenarà en aquest cas.
 
 Molts d’aquests videojocs van de bracet amb una trama íntegrament musical o lligada a un instrument, cosa que *Rhythm Paradise* no. Incorpora la música com un acompanyant de l’acció del minijoc, com puga ser jugar al ping-pong o collir fruita.
 
 El videojoc va ser llançat per a la Nintendo DS. El seu predecessor, *Rhythm Tengoku*, per a la Game Boy Advance i altres títols de la sèrie han sigut per a Wii o Wii U com la continuació *Rhythm Heaven Fever*. La presència del joc en diferents consoles que evolucionen amb el temps, és un indicatiu que les mecàniques es poden replicar en diferents contextos tecnològics.
 
-Va tindre una gran rebuda, de totes les pàgines que puguem consultar de rànkings de videojocs, veurem que la seua nota sempre és un notable. Com ara a *Metacritic*, que té un 83 sobre 100, en *Famitsu* un 34/40 o 9 de 10 estrelles en *Wired*.
+Va tindre una gran rebuda, de totes les pàgines que puguem consultar de rànquings de videojocs, veurem que la seua nota sempre és un notable. Com ara a *Metacritic*, que té un 83 sobre 100, en *Famitsu* un 34/40 o 9 de 10 estrelles en *Wired*.
 
 #### Mecàniques
 
@@ -286,15 +296,13 @@ A cada minijoc seràs un personatge que es mourà al ritme que se li marque. Els
 
 #### UI/UX
 
-El videojoc planteja diferents espais, majorment bidimensionals, a excepció dels minijocs A Escala, Peloteo Rítmico i Aerosurf, que estan en 3D.
+El videojoc planteja diferents espais, majorment bidimensionals, a excepció dels minijocs *A Escala*, *Peloteo Rítmico* i *Aerosurf*, que estan en 3D.
 
 Fora de desplaçar-nos pel menú i les accions amb l’stylus que fan que el personatge del minijoc interactue no podem moure’ns. En aquest sentit, és un videojoc bastant estàtic.
 
 Pel menú (una vegada ens passem els 15 primers minijocs) es pot lliscar cap avall i mostrarà 15 minijocs més per a jugar, i en superar-los es permetrà anar cap a l’esquerra o la dreta, on hi haurà 20 més en total.
 
-![Vista de les dues pantalles de Rhythm Paradise. Font: Rhythm Paradise, GameCash, s. d., ](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Vista.jpg)
-
-Font: https://www.gamecash.be/rhythm-paradise-e2129.html
+![Vista de les dues pantalles de Rhythm Paradise. Font: Rhythm Paradise, GameCash.be @RPGameCash](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Vista.jpg){height=5cm}
 
 El jugador pot sentir-se absorbit pel joc, trobar-lo amé, divertir-se, ballar i taral·lejar amb les apegaloses melodies, però també pot arribar-se a frustrar si s’encalla amb un minijoc o no aconsegueix la puntuació màxima.
 
@@ -306,12 +314,38 @@ Perquè un jugador diga que s'ha “passat el joc”, a banda d’haver superat 
 
 El menú del joc va estretament lligat amb el nostre progrés, segons avancem es modificarà. Apareixerà al centre un botó que ens permetrà moure’ns.
 
-![Esquema menú del Rhythm Paradise](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png)
+![Esquema menú del Rhythm Paradise](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png){height=5cm}
 
 1. La part verda té 15 minijocs, 5 per columna i n’hi ha 3. Anem del centre cap a dalt on el 5é minijoc de cada columna és un remix dels 4 anteriors.
 2. Una vegada se supere l’anterior, es pot moure segons indiquen les fletxes blaves, es pot anar a la part blava. Passa com dalt, però al revés.
-3. Superats els següents 15, es pot jugar el minijoc especial Aerosurf mentre apareixen els crèdits amb tots els personatges del joc. A continuació, es desbloqueja l’opció de moure’s com les fletxes taronja i s'afigen 20 minijocs que són les continuacions d’alguns dels jugats anteriorment (situats en la part groga, començant pel de l’esquerra i després el de la dreta).
+3. Superats els següents 15, es pot jugar el minijoc especial *Aerosurf* mentre apareixen els crèdits amb tots els personatges del joc. A continuació, es desbloqueja l’opció de moure’s com les fletxes taronja i s'afigen 20 minijocs que són les continuacions d’alguns dels jugats anteriorment (situats en la part groga, començant pel de l’esquerra i després el de la dreta).
 4. Passats els 10 dels 20 que ens queden passem a jugar als minijocs de la part vermella.
+
+A la barra central del menú veiem opcions com: la *Cafetería*, el *Medallero*, l'*Aerosurf* i la *Batalla de Bandes*.
+
+##### Estètica visual
+
+És un joc 2D (menys per alguns minijocs) on trobem dos estils: el de les portades i el dels propis minijocs.
+
+Les **portades** tenen un estil més lliure, pot ser més geomètric, tenir diferents composicions, usar degradats... Mentre que els **jocs** tenen un *sprites* *cartoon* ximples, on el personatges i escenaris tenen unes línies i figures ben definides, acolorits segons la paleta del nivell.
+
+Visualment és molt consistent, a pesar de tenir molts minijocs i cadascun anar de coses diferents, cadascun és fidel a la seua temàtica i encaixa en el conjunt.
+
+S'exemplificarà a través de dos minijocs: *Aves Marciales* i *Remix 3*.
+
+|                      | Aves Marciales                                                                     | Remix 3                                                                     |
+| -------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **Icona**            | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Icon.png)               | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Icon.png)               |
+| **Pantalla Inicial** | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Inici.png){height=4cm}  | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Inici.png){height=4cm}  |
+| **Paleta de colors** | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Paleta.png){height=3cm} | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Paleta.png){height=3cm} |
+| **Joc**              | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Joc.png){height=4cm}    | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc.png){height=4cm}    |
+: Comparació visual entre un minijoc normal i un remix en Rhythm Paradise. Font de les imatges: Rhythm Paradise
+
+Pel que fa a les paletes, son de colors vius i funcionen bé en l'estètica del nivell, en aquestos casos verds per a simular l'entrenament militar de les aus i morats seductors dues execucions pensades per al mateix estil: un tango.
+
+Els *Remix* com tornem a veure les escenes dels minijocs que en formen part i escoltem les seues músiques, l'estil de cada aparició s'integra en l'estètica comuna. En el cas d'aquest 3r, tenen una estètica tradicional japonesa on veurem personatges amb kimono i flors de cirerer, mentre els personatges es mouen al ritme de la música tenyits dels colors morats i grocs.
+
+Cal destacar també que com el joc és per a la Nintendo, l'acció es veu en la pantalla superior de la consola i el jugador interacciona en la inferior, la tàctil. En aquesta última només veurem un punter redó al tocar la pantalla amb l'stylus amb els colors de la paleta del nivell.
 
 #### Història
 
@@ -333,7 +367,7 @@ Tractant-se d'un joc de ritme, la música té un paper fonamental. Les peces, re
 
 Hi ha minijocs on hi ha una cançó amb lletra i d'altres que no. Segons el que s'estiga percutint el disseny sonor s'adapta, per exemple en *Peloteo Rítmico*, la pilota de ping-pong sona com una de veritat quan la veus rebotar o la colpeges.
 
-Com analitzar-les totes és molt extens, només en destacaré dues: *Aves Marciales* i *Remix 3*. La particularitat dels *Remix*, com el seu nom indica, són un nivell on trobem els motius rítmics i música dels minijocs de la seua columna d'una manera que tenen una instrumentació i estètica diferent i uniforme.
+Com analitzar-les totes és molt extens, només destacaré el minijocs analitzats anteriorment: *Aves Marciales* i *Remix 3*. La particularitat dels *Remix*, com el seu nom indica, són un nivell on trobem els motius rítmics i música dels minijocs de la seua columna d'una manera que tenen una instrumentació i estètica diferent i uniforme.
 
 ##### Aves Marciales
 
@@ -343,12 +377,9 @@ Està en **Re m**. Té una estructura A-B-A'-coda més una petita introducció (
 
 Té un ritme molt marcat i moltes síncopes, pròpies del tango.
 
-S'ha fet una petita anàlisi en seria la següent:
+S'ha fet una petita anàlisi sobre una partitura:
 
-%% TODO : Com citar la font? L'anàlisi és meu, la música és de Nintendo, la partitura és d'un lloc web de partitures %%
-![Anàlisi propi de la partitura de *Aves Marciales*. Font: Musescore.com, ](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Partitura-Aves.jpeg)
-
-Font: https://musescore.com/user/36512366/scores/6794705?share=copy_link
+![Anàlisi propi de la partitura de *Aves Marciales*. Font: Musescore.com, @musescoreBlueBirdsRhythm](Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Partitura-Aves.jpeg){height=8cm}
 
 ##### Remix 3
 
