@@ -10,7 +10,9 @@
     "Bundle",
     "Signing",
     "Changelog",
-    "Zotero"
+    "Zotero",
+    "VSCode",
+    "Tahoe"
   ],
   "alwaysUpdateLinks": true
 }

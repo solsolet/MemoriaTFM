@@ -90,7 +90,7 @@ En resumits comptes, va propulsar el sector mòbil en tots els seus aspectes. Va
 
 Amb aquest context, jocs com *Angry Birds*, llançat en 2009, va arribar a l'App Store per un preu assequible per al consumidor que el va fer arribar al podi de les aplicacions de pagament als principis dels 2010. Prompte es va llançar la versió del joc per a Android de forma gratuïta, però amb anuncis a menys que es pagara.
 
-Molts altres grans títols es van llançar en aquesta dècada i van aplicar diverses tècniques de monetització que hui han servit de precedent per a hui en dia, ja que encara s'usen assíduament. S'ampliarà la informació en l'apartat de [monetització](#monetització).
+Molts altres grans títols es van llançar en aquesta dècada i van aplicar diverses tècniques de monetització que hui han servit de precedent per a hui en dia, ja que encara s'usen assíduament.
 
 D'altres jocs rellevants també van aportar al consolidament d'aquest mercat i a l'atracció de públic com va ser el cas de:
 
@@ -105,8 +105,6 @@ Com a últim esdeveniment important que va donar un gran impuls al mercat, ens s
 
 #### Tendències
 
-#### Monetització
-
 Els usuaris de dispositius mòbils es poden separar segons el SO que usen. Si mirem enrere fins hui dia, per exemple situant-nos l'any 2020 fins al 2026 (any en què es redacta aquest treball), la seua majoria usen Android (quasi un 70%) i la resta iOS (quasi el 30%) i la resta de SO no resulten significatius.
 
 Globalment, ho podem veure a la figura \ref{fig:os-mundial}. També podem analitzar les dades a escala europea (vegeu la Figura \ref{fig:os-europa}) i finalment en l'àmbit nacional a la Figura \ref{fig:os-espanya}.
@@ -118,8 +116,6 @@ Globalment, ho podem veure a la figura \ref{fig:os-mundial}. També podem analit
 ![Mobile OS Spain 2020-2026. StatCounter \label{fig:os-espanya}](Memoria/Assets/MobileOS-Spain-2020-2026-StatCounter.png){height=6cm}
 
 En aquests últims mesos es comença a veure un canvi en la tònica predominant que, encara que no es produïra, resulta interessant desenvolupar per als dos mercats. I no només cal prestar-li atenció al mercat d'iOS pel seu creixement, sinó també a pesar de ser molt menor té majors vendes dins de les seues aplicacions.
-
-%%TODO : justificar açò últim, pot ser en monetització%%
 
 #### Públic
 
@@ -140,7 +136,7 @@ No només resulta atractiu com a motor per cobrir les necessitats bàsiques del 
 
 A diferència dels altres motors comercials que predominen el mercat dels videojocs, com puguen ser Unreal o Unity, que poden ser idonis per a projectes més complexos i grans, per al cas d'un videojoc indie senzill de mòbil podrien considerar-se excessius a més de fer els projectes més grossos i difícils d'utilitzar.
 
-Godot a més, després de la polèmica de Unity l'any 2023, de les tarifes per instal·lació i canvis en els termes i condicions, va créixer en popularitat. Per a fer memòria, el que va passar va ser que segons la llicència i vendes del desenvolupador i els canvis retroactius van posar a la comunitat en la seua contra i es plantejara buscar noves alternatives.
+Godot a més, després de la polèmica de Unity l'any 2023 de les tarifes per instal·lació i canvis en els termes i condicions, va créixer en popularitat. Per a fer memòria, el que va passar va ser que segons la llicència i vendes del desenvolupador i els canvis retroactius van posar a la comunitat en la seua contra i es plantejara buscar noves alternatives.
 
 Unity és un motor de programari privatiu, per tant, no és mai del desenvolupador; aquests només tenen una llicència d'ús. Es troba en mans d'una corporació que mira pel seu interés propi, encara que això signifique degradar el servei, les condicions i perdre la confiança dels seus usuaris.
 
@@ -156,45 +152,86 @@ A continuació es comentaran els treballs que han servit de punt de partida per 
 
 Tots els videojocs analitzats compten en una qualificació per edat per a tots els públics.
 
-%%ESRB: Everyone, tothom
-PEGI: 3, apte per a tots els públics
-CERO: A, all ages, totes les edats
-USK: 0, sense restriccions d’edat %%
-
 %%Benchmarking:
+- Anàlisi d'interfícies (paper de Playing to wait llegir "Implementing Games Across the Interactivity Spectrum")%%
 
-- Anàlisi de mecàniques
-- Anàlisi d'interfícies (paper de Playing to wait llegir "Implementing Games Across the Interactivity Spectrum")
-- Anàlisi de progressió
-- Anàlisi d'experiència d'usuari%%
+### [Magic Archery](https://barribob.itch.io/magic-archery)
 
-### Magic Archery
+Videojoc *idle* desenvolupat per [Barribob](https://barribob.itch.io) l'any 2024 de forma gratuita a itch.io i a Steam. Es pot jugar al navegador o descarregar-lo per a Windows. Has d'entrenar a un arquer per a ser el millor de tots els temps.
+
+Les versions en cada tenda són diferents.
+
+#### Mecàniques i progressió
+
+Es pot passar en una vesprada tranquil·lament. L'arquer llança fletxes a les dianes sense que el jugador haja de fer, el que sí que pot decidir és quines estadístiques es centra o quines millores adquireix.
+
+En la pestanya de **Pràctica** trobem les estadístiques de l'arquer, que són:
+
+- **Concentració**: augmenta la velocitat.
+- **Força**: augmenta el dany.
+- **Fletxes**: hi ha de diversos tipus i cadascuna té particularitats i un dany associat. Els tipus de fletxes son: *Mana*, *Crítiques*, *Foc*, *Gel*, *Qi*, *Destral*, *Espectrals* i *Portal*.
+
+Després hi ha la pestanya de **millores** que es poden comprar. Es divideix en 4 grups:
+
+- **Equipació**: millores que afecten a les estadístiques muntant el seu percentatge. El seu preu es duplica en cada compra.
+- **Noves habilitats**: La seua compra desbloqueja un tipus diferent de fletxa. Preu únic.
+- **Talents**: Millora alguna característica especial d'alguns tipus de fletxes. El seu preu es quadriplica en cada compra.
+- **Mag**: millores que afecten a la diana. Es pot augmentar el nombre de dianes, fer-les més fortes i armarles per a que donen més diners.
+
+#### UI/UX
+
+El joc té un estil pixel art on el personatge del jugador, l'arquer és molt petit i tota l'atenció de la pantalla la tenen la trajectòria de les fletxes i les dianes.
+
+Es pot accedir als menú clicant els botons per a mostrar-los i ocultar-los.
+
+Una vegada es desbloquegen les fletxes s'obri un menú que mostra el dany de cada tipus de fletxa i conforme en compres s'incorporen.
+
+Els menús resulten una mica molestos perquè tapen la pantalla del joc i no s'acaben de veure les fletxes, que son l'únic atractiu visual fora del fons de bosc. Els joc idle, com es vorà a continuació, solen tenir una interfície on la tenda de millores es troba a la dreta sense interrompre en l'escena del joc.
+
+![Captura de pantalla de Magic Archery. Font: itch.io](MagicArchery-Joc.png){height=7cm}
+
+Les fletxes quan impacten en la diana els apareix el dany que li han inflingit amb el color del tipus de fletxa.
+
+La música és relaxant i promou l'amosfera màgica de bosc. Els efectes sonors el principi quan hi ha poques fletxes és agradable, però conforme es tenen moltes resulta molt molest. Cada fletxa sona diferent
 
 ### [Cookie Clicker](https://cookieclicker.com)
 
-Cookie Clicker és un joc indie desenvolupat per [Orteil](https://orteil.dashnet.org) i [DashNet](https://dashnet.org) llançat en 2013 fet amb Javascript.
+*Cookie Clicker* és un joc indie desenvolupat per [Orteil](https://orteil.dashnet.org) i [DashNet](https://dashnet.org) llançat en 2013 fet amb Javascript.
 
 Es pot jugar en la versió web gratuïta o en plataformes com Steam, PlayStation, Xbox, Switch i Android. En aquesta última trobem la versió gratuïta amb anuncis i la de pagament sense, entre les dues versions té més de 5 milions de baixades a la Play Store.
 
-Sent un dels jocs més importants del gènere idle, resulta interessant analitzar com ha estat implementat. La versió mòbil és una adaptació de la versió web.
+Sent un dels jocs més importants del gènere *idle*, resulta interessant analitzar com ha estat implementat. La versió mòbil és una adaptació de la versió web.
 
-%% TODO : Webs que em poden resultar útils: %% 
-%%
-https://cookieclickers.io 
-https://es.wikipedia.org/wiki/Cookie_Clicker
-%%
-
-#### Mecàniques
+#### Mecàniques i progressió
 
 El joc tracta d'anar guanyant galetes. Es poden gastar en:
 
-- **Edificis**: ajudants que et proporcionen una quantitat de galetes per segon. De cada tipus d'edifici pots tenir moltes unitats.
-- **Millores**: increments de la producció de galetes o de les estadístiques d'un tipus d'edifici.
+- **Edificis**: ajudants que et proporcionen una quantitat de galetes per segon. De cada tipus d'edifici pots tenir moltes unitats. Hi ha fins a 20 tipus diferents.
+- **Millores**: increments de la producció de galetes o de les estadístiques d'un tipus d'edifici. Hi ha fins a 716 diferents.
 
-Les galetes es poden guanyar fent **clic** a la galeta gegant o a través dels teus Edificis. A mesura que s'avança en el joc, es desbloquejaran assoliments.
+Les galetes es poden guanyar fent **clic** a la galeta gegant o a les *galetes daurades*, a través dels teus *Edificis* o per la quantitat de *Llet*. A mesura que s'avança en el joc, es desbloquejaran **assoliments**.
 
-%% TODO : mencionar terrons de sucre i legado %%
+Una altra mecànica que hi ha és el **llegat**. Quan es guanya certa quantitat de galetes es pot **ascendir**, que vol dir perdre el progrés, però es guanya en *fitxes celestials* i *nivells de prestigi* que porta a tenir millores permanents en la resta de partides.
+
+La versió de navegador compta amb altres mecàniques que tenen alguns dels seus edificis com: invertir en borsa amb els bancs, cultivar llavors amb la granja...  També té *terrossos de sucre* on pots guanyar-ne un diàriament.
+Aquestes mecàniques ajuden a guanyar més galetes i millorar la teua progressió. Fa també el joc més interessant. Després d'estar un temps jugant les dues versions, es podria considerar que la versió de navegador és més entretinguda i motiva a entrar diàriament, cosa que la versió mòbil no propícia.
+
+Per a progressar en el joc s'ha d'anar comprant *Edificis* o *Millores*.
+
+Cada *Edifici* té:
+
+- Un preu base per al 1r *edifici* i per cada nova compra augmenta el preu un 15%.
+- Un *Cookies per Second*, **CpS**, base que augmenta amb *millores*, *Llet* o *prestigi*.
+- Un tipus de *Iaia* associat que augmenta els CpS segons la quantitat de iaies que es tinga.
+- Millores de diversos tipus: que dupliquen la producció, de *sinergia*, de *fortuna* i *celestials*.
+
+La progressió és més ràpida amb la versió mòbil, ja que sempre que tornes a l'aplicació, aquesta independentment estiga en *backgroud* o no, en tornar et diu moltes galetes has guanyat en la teua absència, mentre que al tancar el navegador i tornar, no passa.
+
 #### UI/UX
+
+L'estil visual del joc és ximple. Els edificis, millores i icones tenen un estil píxel-art molt detallat.
+
+La interfície està molt ben compartimentada en totes les seues versions, la distribució això sí es veu afectada segons en quina.
 
 En les figures \ref{fig:cookie-pc} i \ref{fig:cookie-pc-esquema} es poden veure unes imatges de la interfície per a ordinador.
 
@@ -204,6 +241,7 @@ En les figures \ref{fig:cookie-pc} i \ref{fig:cookie-pc-esquema} es poden veure 
 
 ![Esquema interfície d'usuari en ordinador de Cookie Clicker](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-PC-Esquema.png){#fig:cookie-pc-esquema height=7cm}
 
+En un monitor gran podem veure totes les seccions juntes. El detall en posar el ratolí damunt d'una millora o edifici es veu bé i la informació s'entén bé. Per altra banda, en un telèfon mòbil les seccions estan separades, el detall costa fer 1 clic i no et posa el percentatge de la producció com ho fa el navegador.
 
 Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:cookie-mobil} i \ref{fig:cookie-mobil-esquema}.
 
@@ -224,14 +262,6 @@ La interfície és senzilla tant visualment com d'usar-la. Es pot veure ben dife
 | **Especial** | Events estacionals                                                                         | No hi ha                                                                               | S'activa quan hi ha                                                       |
 : Comparativa interfície entre la versió de navegador de Cookie Clicker i la de mòbil
 
-#### Progressió
-
-Per a progressar en el joc s'ha d'anar comprant Edificis o Millores. Aquestes es poden comprar mitjançant galetes que es poden aconseguir clicant la galeta o bé passivament per les que generen els Edificis.
-
-%% TODO : consultar la Wikia  per a posar valors de coses. Mencionar notificacions ingame %%
-
-S'ha provat el joc en la versió de navegador i de mòbil i es pot apreciar una progressió més elevada amb la mòbil, ja que sempre que tornes a l'aplicació, aquesta independentment estiga en *backgroud* o no, en tornar et diu moltes galetes has guanyat en la teua absència, mentre que al tancar el navegador i tornar, no passa.
-
 #### Música i so
 
 El joc en la seua versió mòbil està carent de música de cap mena i de sons només hi ha de dues classes:
@@ -241,21 +271,34 @@ El joc en la seua versió mòbil està carent de música de cap mena i de sons n
 
 ### [Push The Square](https://asdehielo.itch.io/push-the-square)
 
-Joc indie desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publicat a itch.io en 2021. Tracta que un misteriós quadrat ha aparegut en ta casa i no fa res a banda de girar en el sentit de els agulles del rellotge. Gastaràs tots els teus estalvis assegurante que gire [@PushSquare].
+Joc indie desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publicat a itch.io en 2021. Tracta que un misteriós quadrat ha aparegut en ta casa i no fa res a banda de girar en el sentit de els agulles del rellotge. Gastaràs tots els teus estalvis assegurant-te que gire [@PushSquare].
 
-És un joc curt que es pot passar en menys de 10 minuts.
+#### Mecàniques i progressió
 
-%% TODO : posar més coses %%
+Es juga donant clic als botons de la part inferior:
+
+- **Work**: Guanyes diners que pots usar per a comprar millores.
+- **Push**: espentes el quadrat. Quan completes una rotació muntarà el seu comptador corresponent.
+
+Les **millores** que es poden adquirir ajuden a generar més diners, tant per clic com passivament, redueix la fricció en girar el quadrat, per tat anirà més de pressa, o s'afigen elements decoratius a la pantalla.
+
+És un joc curt que es pot passar en menys de 10 minuts, no hi ha moltes millores i eventualment es generen diners i voltes molt ràpides sense esforç, ja que es pot deixar polsat el botó. El fet que siga curt no li lleva la gràcia, les millores són absurdes i es veu com la pantalla va omplint-se de ninots que fan una festa mentre es gira el quadrat. És un exemple absurdament condensat del gènere idle i funciona perfectament, fan ganes de jugar per a veure fins on arriba.
 
 #### UI/UX
 
-El joc té un estil píxel art senzill.
+El joc té un estil píxel art senzill, com també una interfície simple amb la tenda a la dreta com *Cookie clicker*. En les millores que pots comprar hi ha una descripció del que fan.
+
+No té versió mòbill com a tal, encara que es pot jugar en el navegador a itch.io amb el disposiu apaïsat.
 
 ![Pantalla del joc. Font: Push the Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png){height=6cm}
+
+Al clicar un botó, comprar una millora o guanyar diners sentirem un efecte sonor de l'acció. Quan es compra la millora de festa es pot sentir música dels altaveus que apareixen en l'escenari.
 
 ![Estadístiques. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png){height=6cm}
 
 ![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png){height=6cm}
+
+Al final el terra es trenca i es veu el quadrat flotar en l'espai en 3D mentre apareix el temps que s'ha tardat en passar-se el joc.
 
 ### Rythym Paradise
 
@@ -346,20 +389,6 @@ Pel que fa a les paletes, son de colors vius i funcionen bé en l'estètica del 
 Els *Remix* com tornem a veure les escenes dels minijocs que en formen part i escoltem les seues músiques, l'estil de cada aparició s'integra en l'estètica comuna. En el cas d'aquest 3r, tenen una estètica tradicional japonesa on veurem personatges amb kimono i flors de cirerer, mentre els personatges es mouen al ritme de la música tenyits dels colors morats i grocs.
 
 Cal destacar també que com el joc és per a la Nintendo, l'acció es veu en la pantalla superior de la consola i el jugador interacciona en la inferior, la tàctil. En aquesta última només veurem un punter redó al tocar la pantalla amb l'stylus amb els colors de la paleta del nivell.
-
-#### Història
-
-Al món de Rhythm Paradise no es pot situar en un lloc concret. Hi ha una gran quantitat d’escenaris i un gran nombre de personatges. A cada minijoc es crea el seu propi microclima.
-
-Hi ha minijocs que sí que es poden situar, com ara *Duduá Moái*. Suposem, pel fet que són dos moais i l’ambientació càlida, que es troben a l’illa de Pasqua. O en *A escala* o *Robotellines* es poden situar en una fàbrica, ja que després parla el capatàs al jugador.
-
-Aquest videojoc no es caracteritza per tindre cap trama. Cada minijoc són històries independents i no tenen per què estar relacionades entre si. És cert que els personatges que hi apareixen es fan cameos i pots veure’ls de fons o en els *Remix* apareixen seqüencialment els previs quatre minijocs, però d’història transversal a tots, no n’hi ha.
-
-Alguns dels minijocs tenen segones parts (més difícils de superar), com pot ser *Robotellines*, *Club de fans* o *Aves marciales*.
-
-De la resta podem dir que són situacions com un assaig de cor (*El coro*), una carrera de cotxes (Foto final) o fer natació sincronitzada (*El Chapuzón*) que, una vegada acabes el minijoc, segons com de bé ho hages fet, podem veure el desenllaç després que ens diguen la puntuació.
-
-Una vegada obris el joc i fas una nova partida, una granoteta donarà la benvinguda i farà un petit tutorial al jugador de com tirar amb l’stylus on s'ha de tombar una granota i un cotxe de joguet. Després ja es juga lliurement pels minijocs que tingues disponibles, es pot anar a la cafeteria o al medaller.
 
 #### Música i so
 

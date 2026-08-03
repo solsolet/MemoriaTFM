@@ -7,11 +7,11 @@ state: In Progress
 
 ### Historial de versions
 
-| Versió | Data                | Descripció dels canvis       |
-| :----- | :------------------ | :--------------------------- |
+| Versió | Data       | Descripció dels canvis       |
+| :----- | :--------- | :--------------------------- |
 | v1.0.0 | 2026-06-18 | Creació inicial del document |
-|        |                     |                              |
-|        |                     |                              |
+| v1.0.1 | 2026-07-31 | Revisió puntuació            |
+|        |            |                              |
 
 ***
 
@@ -23,15 +23,15 @@ Títol provisional.
 
 ### Plataformes
 
-Android i, si dona temps, iOS.
+Android i iOS.
 
 ### Edat i públic objectiu
 
-Per a totes les edats, orientat tant per a gent que es necesite concentrar-se com per a matar el temps.
+Per a totes les edats, orientat tant per a gent que es necessite concentrar-se com per a matar el temps.
 
 ### Calificació d'edat
 
-Sense restricció d'edat, seria per a tots els públics, però tractaria de que s'usara a partir d'una edat on puguen usar teléfon i relacionar-se amb la tecnologia amb seguretat i maduresa, pot ser a partir de 12 anys.
+Sense restricció d'edat, seria per a tots els públics, però tractaria de que s'usara a partir d'una edat on puguen usar telèfon i relacionar-se amb la tecnologia amb seguretat i maduresa, pot ser a partir de 12 anys.
 
 ### Data estimada de llançament
 
@@ -52,12 +52,12 @@ POV: eres un jove pianista estudiant del conservatori i t'has d'aplicar per als 
 
 #### Idle
 
-- Jugues tocant tecles al ritme de la música
-- Guanyes punts
-- Pots consumir-los intencanviant-los per:
-	- millores (*power-ups*) que es poden fer guanyar punts més ràpid
-	- desbloquejar habilitats que milloren les teues estadístiques
-- Torna a començar
+- Jugues tocant tecles al ritme de la música.
+- Guanyes punts.
+- Pots consumir-los intercanviant-los per:
+	- millores (*power-ups*) que es poden fer guanyar punts més ràpid.
+	- desbloquejar habilitats que milloren les teues estadístiques.
+- Torna a començar.
 
 #### Assaig (concentració)
 
@@ -69,7 +69,7 @@ Jove andrògin al qual només veurem les mans de moment.
 
 ### Historia de fons i relació amb el gameplay
 
-Vols entrar al superior de piano i per tant s'ha d'esforçar en aquests últims anys de conservatori per a arribar preparat. Per aquests motius té tant d'interès i està una mica desesperat en intentar-ho tot per a poder aplicar-se i millorar les seues habilitats amb el seu intrument.
+Vols entrar al superior de piano i per tant s'ha d'esforçar en aquests últims anys de conservatori per a arribar preparat. Per aquests motius té tant d'interès i està una mica desesperat en intentar-ho tot per a poder aplicar-se i millorar les seues habilitats amb el seu instrument.
 
 ### Habilitats, armes, atacs
 
@@ -163,13 +163,13 @@ Diversió, absurdesa, ganes d'anar conquistant objectius.
 Com si d'una página de cómic es tractara, apareixen rítmicament vinyetes de l'estressant situació del jugador, 3 per pantalla:
 
 1. Mostrar estrés de forma cómica:
-	- intruments sonant a la vegada, cadascún a la seua bola amb el jugador amagat per dins
-	- Partitures per totes bandes, apilades, caent del cel amb el jugador per enmig més irritat
+	- intruments sonant a la vegada, cadascún a la seua bola amb el jugador amagat per dins.
+	- Partitures per totes bandes, apilades, caent del cel amb el jugador per enmig més irritat.
 	- Mescla de les dos anteriors.
 2. Trobar la solució a l'estrés: el nostre joc:
-	- Li sona el telèfon de la butxaca
-	- L'agafa i apareix el nostre joc amb un botó d'inici temptador
-	- Llampada de llum cegadora que dona peu al nostre menú d'inici
+	- Li sona el telèfon de la butxaca.
+	- L'agafa i apareix el nostre joc amb un botó d'inici temptador.
+	- Llampada de llum cegadora que dona peu al nostre menú d'inici.
 
 L'escena seria saltable mitjançant un botó que ho permetera que et portaria directament a la pantalla d'inici.
 
@@ -191,7 +191,7 @@ El disseny sonor seria simpàtic a pesar de tindre una "banda sonora" de piano c
 
 ### Navegació per les pantalles del joc
 
-TODO: posar una imatge d'un esquema.
+%% TODO : posar una imatge d'un esquema. %%
 
 ***
 
@@ -199,14 +199,14 @@ TODO: posar una imatge d'un esquema.
 
 ### Mecàniques
 
-El jugador por interacuar polsant:
+El jugador por interactuar polsant:
 
-- tecles durant el joc
-- Botons durant tot el cicle de vida de l'aplicació
+- tecles durant el joc.
+- Botons durant tot el cicle de vida de l'aplicació.
 
 ### Perills
 
-Pel moment no en contemple afegir-ne cap.
+Pel moment no es contempla afegir-ne cap.
 
 ### Power-ups
 
@@ -214,21 +214,21 @@ Durant una run et pots trobar power-ups temporals i d'altres permanents que anom
 
 #### Temporals
 
-- Mans extra: aparició d'una mà que va tocant notes per tu. Trobariem diversos nivells del 1 al 4.
-- Manaza: toca totes les tecles a la vegada durant x temps
-- Avalanxa de notes
-- Nyan cat: maneta de gat
+- Mans extra: aparició d'una mà que va tocant notes per tu. Trobaríem diversos nivells del 1 al 4.
+- Manaza: toca totes les tecles a la vegada durant x temps.
+- Avalanxa de notes.
+- Nyan cat: maneta de gat.
 
 #### Permanents (habilitats)
 
 - Metrònom: millora precisió.
 - Mans extra: aparició d'una ma flotant que toca per tu. Es trobaria sotmesa a una classe d'estadístiques que es podrien millorar.
-- Peu extra: t'ajuda a tocar els pedals
+- Peu extra: t'ajuda a tocar els pedals.
 - Pedals:
-	- una corda (esquerra)
-	- sordina (central)
-	- sostenuto (dret)
-- Torrent de notes: cauen més notes per tant es poden guanyar més punts
+	- una corda (esquerra).
+	- sordina (central).
+	- sostenuto (dret).
+- Torrent de notes: cauen més notes per tant es poden guanyar més punts.
 - Glissando: desbloqueges poder tocar notes arrastrant.
 
 ### Col·leccionables

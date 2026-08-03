@@ -1,17 +1,17 @@
-%%s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme ; s'identificarà la població i la grandària de la mostra així com les tècniques i instruments de recol·lecció de dades.%%
+%% s'indicarà el tipus o tipus d'investigació, les tècniques i els procediments que seran utilitzats per a dur-la a terme; s'identificarà la població i la grandària de la mostra com també les tècniques i instruments de recol·lecció de dades.%%
 
 # Metodologia
 
 ## Metodologia àgil
 
-Durant el desenvolupament d'aquest treball es seguirà una metodologia àgil de manera que s'itere sobre el projecte, fent xicotetes verisions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
-Per a implementar-la s'han planificat una serie de fites per a anar avançant durant el desenvolupament.
+Durant el desenvolupament d'aquest treball se seguirà una metodologia àgil de manera que s'**itere** sobre el projecte, fent xicotetes versions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
+Per a implementar-la s'han planificat una sèrie de fites per a anar avançant durant el desenvolupament.
 
-S'ha plasmat aquesta planificació inicial amb Gantt Project de manera que es visualitze com es van complentant les tasques respecte una línia del temps.
+S'ha plasmat aquesta planificació inicial amb Gantt Project de manera que es visualitze com es van completant les tasques respecte a una línia del temps.
 
-A més també s'ha usat un tauler Kanban per a controlar quines tasques hi ha pendents, quines s'estan executant i quines s'acaben en cada moment. D'aquesta manera serà molt més senzill detectar colls de botella ques es puguen produir durant el desenvolupament.
+A més també s'ha usat un tauler Kanban per a controlar quines tasques hi ha pendents, quines s'estan executant i quines s'acaben en cada moment. D'aquesta manera serà molt més senzill detectar colls de botella que es puguen produir durant el desenvolupament.
 
-Aquestes ferramentes ajuden a fer l'exercici de planificar les tasques, donar-les un pes, calcular quan tardaran a realitzar-se, quina prioritat li donar-li... així tot queda organitzat visualment i qualsevol persona podria ubicar en quin punt es troba el projecte, què s'ha fet i quines tasques queden per acabar.
+Aquestes ferramentes ajuden a fer l'exercici de planificar les tasques, donar-les un pes, calcular quant tardaran a realitzar-se, quina prioritat donar-li... així tot queda organitzat visualment i qualsevol persona podria ubicar en quin punt es troba el projecte, què s'ha fet i quines tasques queden per acabar.
 
 ## Ferramentes
 
@@ -29,13 +29,11 @@ Distribució del sistema operatiu Linux.
 
 Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 
-### GitHub
+### [GitHub](https://github.com)
 
-Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte
+Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte.
 
-[https://github.com](https://github.com)
-
-### Clockify
+### [Clockify]([https://clockify.me/es/](https://clockify.me/es/))
 
 Programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte 'TFM' i he anat creant diferents tasques com:
 - Memòria Obsidian: per a tot el relacionat amb la memòria
@@ -43,45 +41,36 @@ Programa per al seguiment de temps per a les meues hores de treball en aquest pr
 - Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
 - Organització *x*: per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
 
-[https://clockify.me/es/](https://clockify.me/es/)
-
-### Obsidian
+### [Obsidian]([https://obsidian.md](https://obsidian.md))
 
 Programa per a prendre notes, seleccionar i gestionar informació i idees. El seu ús principal serà per a escriure tota la memòria.
 
-[https://obsidian.md](https://obsidian.md)
+Addicionalment, ha servit per al desenvolupament i organització d'aquest treball els següents connectors:
 
-Adicionalment ha servit per al desenvolupament i organització d'aquest treball els següents plugins:
+- *Enhancing Export*
+- *Git*
+- *Kanban*
+- *LanguageTool Integration*
+- *Pandoc Plugin*
+- *Style settings*
+- *Task Notes*
 
-- Enhancing Export
-- Git
-- Kanban
-- LanguageTool Integration
-- Pandoc Plugin
-- Style settings
-- Task Notes
+### [Pandoc](https://pandoc.org)
 
-### Pandoc
+Convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
 
-Conversor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
-
-[https://pandoc.org/index.html](https://pandoc.org/index.html)
-
-### Godot 4.5.1 {#sec-godot-451}
+### [Godot 4.5.1]([https://godotengine.org](https://godotengine.org)) {#sec-godot-451}
 
 Motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 
-[https://godotengine.org](https://godotengine.org)
+Addicionalment, ha servit per al desenvolupament d'aquest treball els següents connectors:
 
-Addicionalment ha servit per al desenvolupament d'aquest treball els següents connectors:
-
-- Godot Play Game Services: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
-- Godot iOS GameCenter plugin: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)
-
+- *Godot Play Game Services*: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
+- *Godot iOS GameCenter plugin*: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)
 
 ### VSCode
 
-
+Editor de codi que s'ha usat per a fer l'exportador a PDF, com també revisar i alguns fitxers, usar la terminal integrada i controlar el repositori de Git.
 
 ### Xcode
 
@@ -99,18 +88,16 @@ Editor d'imatges per a fer dibuixos i muntatges de diferents elements artístics
 
 Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics del joc.
 
-### KDenLive
+### [KDenLive]([https://kdenlive.org/es/](https://kdenlive.org/es/))
 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
-
-[https://kdenlive.org/es/](https://kdenlive.org/es/)
 
 ## Anàlisi de videojocs {#sec-analisi-videojocs}
 
 Per a analitzar els videojocs de l'[estat l'art](#sec-estat-art), s'ha seguit aquesta metodologia:
 
 1. Primer s'han jugat els jocs lúdicament sense cap altre objectiu que no siga progressar i passar-s'ho bé, com ho podria fer qualsevol jugador.
-2. Després d'una sessió de joc, que pot s jugar intermitentment durant un dia, en el punt on ens trobem s'analitzarà:
+2. Després d'una sessió de joc, que es pot jugar intermitentment durant un dia, en el punt on ens trobem s'analitzarà:
 	1. Interfície d'usuari amb captures del joc.
 	2. Mecàniques.
 	3. Progressió.
