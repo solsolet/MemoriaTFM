@@ -36,6 +36,7 @@ Programari de sistema de control de versions per a mantenir el projecte en diver
 ### [Clockify]([https://clockify.me/es/](https://clockify.me/es/))
 
 Programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte 'TFM' i he anat creant diferents tasques com:
+
 - Memòria Obsidian: per a tot el relacionat amb la memòria
 - Reunió *x*: per a tota classe de reunions.
 - Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...

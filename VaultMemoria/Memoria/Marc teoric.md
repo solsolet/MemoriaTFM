@@ -1,6 +1,7 @@
 %%es farà esment als elements conceptuals que serveixen de base per a la investigació, estudis previs relacionats amb el problema plantejat, etc%%
 
 # Marc teòric
+
 En aquesta part de la memòria s'explicarà tot el necessari per a comprendre tot el que es conta en aquest treball. El lector trobarà elements conceptuals bàsics, estudis previs i la seua anàlisi per plantejar de quin punt de partida naix aquest projecte. Llegir aquesta secció facilitarà la lectura de les següents i es contestarà els "per què" d'algunes decisions.
 Qualsevol qüestió que es considere susceptible d'ampliar, i continue sent rellevant per al treball, per tal de no fer pesada la lectura, estarà com a material de consulta a l'annex.
 
@@ -36,6 +37,10 @@ Aquest gènere també el trobar anomenat com: *background games*, *ambiental gam
 
 **Exemples**: *Cookie clicker*, *Magic Archery*, *Progress Quest* o *Push The Square*.
 
+L'èxit d'un joc *idle* radica en un bon disseny de la retenció en tractar-se de partides molt llargues, i per a aconseguir-ho s'ha de tindre una progressió balancejada.
+
+Un recurs molt utilitzat és el **creixement exponencial**, ja que provoca una sensació de progrés molt ràpid al principi.
+
 ##### Musical
 
 Els videojocs musicals són un gènere de videojoc completament orientat a la interacció de les accions del jugador sincronitzades amb la música que sona. Aquestes accions solen estar dins del pols i al ritme de la música [@Building-a-music-rhythm-video-game, p. 1].
@@ -57,7 +62,7 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 ##### Productivitat
 
-%%TODO : Contar què son%%
+%%TODO : Contar què son, quan tinga algo del mode concentració implementat%%
 
 ### Mercat de videojocs mòbils
 
@@ -103,11 +108,11 @@ D'altres jocs rellevants també van aportar al consolidament d'aquest mercat i a
 
 Com a últim esdeveniment important que va donar un gran impuls al mercat, ens situem en la pandèmia en 2020 que com a resultat del confinament, la gent es va abocar a jugar a videojocs. Al sector mòbil açò va repercutir en un increment del 40% [@impactCOVID19Mobile2020].
 
-#### Tendències
+#### Públic
 
-Els usuaris de dispositius mòbils es poden separar segons el SO que usen. Si mirem enrere fins hui dia, per exemple situant-nos l'any 2020 fins al 2026 (any en què es redacta aquest treball), la seua majoria usen Android (quasi un 70%) i la resta iOS (quasi el 30%) i la resta de SO no resulten significatius.
+Els usuaris de dispositius mòbils es poden separar segons el SO que usen. Si es mira enrere fins hui dia, per exemple situant-se l'any 2020 fins al 2026 (any en què es redacta aquest treball), la seua majoria usen Android (quasi un 70%) i la resta iOS (quasi el 30%) i la resta de SO no resulten significatius.
 
-Globalment, ho podem veure a la figura \ref{fig:os-mundial}. També podem analitzar les dades a escala europea (vegeu la Figura \ref{fig:os-europa}) i finalment en l'àmbit nacional a la Figura \ref{fig:os-espanya}.
+Globalment, es pot veure a la figura \ref{fig:os-mundial}. També es poden analitzar les dades a escala europea (vegeu la Figura \ref{fig:os-europa}) i finalment en l'àmbit nacional a la Figura \ref{fig:os-espanya}.
 
 ![Mobile OS Worldwide 2020-2026. StatCounter \label{fig:os-mundial}](Memoria/Assets/MobileOS-Worldwide-2020-2026-StatCounter.png){height=6cm}
 
@@ -117,13 +122,16 @@ Globalment, ho podem veure a la figura \ref{fig:os-mundial}. També podem analit
 
 En aquests últims mesos es comença a veure un canvi en la tònica predominant que, encara que no es produïra, resulta interessant desenvolupar per als dos mercats. I no només cal prestar-li atenció al mercat d'iOS pel seu creixement, sinó també a pesar de ser molt menor té majors vendes dins de les seues aplicacions.
 
-#### Públic
+Pel que fa al públic dels jocs *idle*, es veu que els usuaris d'aquest tipus de joc són:
 
-%%Estudi mercat, mòbil:
+|             | Valoració mercat | Quota de mercat |
+| ----------- | ---------------- | --------------- |
+| **Adults**      | $7.18 bilions    | 54.4%           |
+| **Adolescents** | $3.7 bilions     | 28%             |
+| **Xiquets**     | $2.32 bilions    | 16.6%           |
+: Segments demogràfics i el seu valor de mercat dels jocs *idle
 
-- Investigació del mercat de videojocs mòbils
-- Estudi de models de monetització
-- Identificació del públic objectiu%%
+El públic adult és el que encapçala el mercat dels jocs *idles*. Aquest públic, a causa de la seua independència econòmica i voluntat d'invertir a millorar l'experiència de joc, demostren els ingressos mitjans més alts per usuari entre els 32 $ - 45 $ anuals [@inteloIdleGamesMarket2025].
 
 ### Godot
 
@@ -163,7 +171,7 @@ Les versions en cada tenda són diferents.
 
 #### Mecàniques i progressió
 
-Es pot passar en una vesprada tranquil·lament. L'arquer llança fletxes a les dianes sense que el jugador haja de fer, el que sí que pot decidir és quines estadístiques es centra o quines millores adquireix.
+Es pot passar en una vesprada tranquil·lament. L'arquer llança fletxes a les dianes sense que el jugador haja de fer, el que sí que pot decidir és quines estadístiques se centra o quines millores adquireix.
 
 En la pestanya de **Pràctica** trobem les estadístiques de l'arquer, que són:
 
@@ -173,10 +181,10 @@ En la pestanya de **Pràctica** trobem les estadístiques de l'arquer, que són:
 
 Després hi ha la pestanya de **millores** que es poden comprar. Es divideix en 4 grups:
 
-- **Equipació**: millores que afecten a les estadístiques muntant el seu percentatge. El seu preu es duplica en cada compra.
+- **Equipació**: millores que afecten les estadístiques muntant el seu percentatge. El seu preu es duplica en cada compra.
 - **Noves habilitats**: La seua compra desbloqueja un tipus diferent de fletxa. Preu únic.
-- **Talents**: Millora alguna característica especial d'alguns tipus de fletxes. El seu preu es quadriplica en cada compra.
-- **Mag**: millores que afecten a la diana. Es pot augmentar el nombre de dianes, fer-les més fortes i armarles per a que donen més diners.
+- **Talents**: Millora alguna característica especial d'alguns tipus de fletxes. El seu preu es quadruplica en cada compra.
+- **Mag**: millores que afecten la diana. Es pot augmentar el nombre de dianes, fer-les més fortes i armar-les perquè donen més diners. El preu es multiplica per 10 en cada compra.
 
 #### UI/UX
 
@@ -188,7 +196,7 @@ Una vegada es desbloquegen les fletxes s'obri un menú que mostra el dany de cad
 
 Els menús resulten una mica molestos perquè tapen la pantalla del joc i no s'acaben de veure les fletxes, que son l'únic atractiu visual fora del fons de bosc. Els joc idle, com es vorà a continuació, solen tenir una interfície on la tenda de millores es troba a la dreta sense interrompre en l'escena del joc.
 
-![Captura de pantalla de Magic Archery. Font: itch.io](MagicArchery-Joc.png){height=7cm}
+![Captura de pantalla de Magic Archery. Font: itch.io](Memoria/Assets/AltresJocs/MagicArchery/MagicArchery-Joc.png){height=7cm}
 
 Les fletxes quan impacten en la diana els apareix el dany que li han inflingit amb el color del tipus de fletxa.
 

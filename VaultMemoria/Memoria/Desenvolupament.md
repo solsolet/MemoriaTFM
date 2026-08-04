@@ -37,17 +37,17 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 ### Interacció 0
 
-Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usariem, Godot. 
+Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usaríem, Godot. 
 
-Després em vaig centrar en aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc usant el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
+Després em vaig centrar a aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc usant el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
 
-Aquest calentament es va fer sense tenir encara una idea del joc. No va ser fins a la segona reunió amb el tutor que no es va tindre un idea més concisa: un joc mòbil idle, senzill, que explorara alguna caraceterística pròpia dels dispositius mòbils, per exemple les notificacions. Se'm va ocorrer que fora de temàtica musical, ja que tinc afinitat pel tema al ser pianista. *POV: eres un pianista que ha d'assatjar per als seus exàmens* va ser la premisa amb la que ho construiria tot.
+Aquest escalfament es va fer sense tenir encara una idea del joc. No va ser fins a la segona reunió amb el tutor que no es va tindre un idea més concisa: un joc mòbil *idle*, senzill, que explorara alguna característica pròpia dels dispositius mòbils, per exemple les notificacions. Se'm va ocórrer que fora de temàtica musical, ja que tinc afinitat pel tema al ser pianista. *POV: eres un pianista que ha d'assatjar per als seus exàmens* va ser la premissa amb la que ho construiria tot.
 
-El temps d'assaig seria la mecànica idle, tu pots manualment tocar tecles i de fer-ho bé guanyes puntuació, experiència... com es vulga dir. Poc a poc podries anar guanyant millores que automatitzarien eixe procés per a poder seguir guanyant més.
+El temps d'assaig seria la mecànica *idle*, on pots manualment tocar tecles i de fer-ho bé guanyes puntuació, experiència... com es vulga dir. A poc a poc podries anar guanyant millores que automatitzarien eixe procés per a poder continuar guanyant més.
 
-La idea i el projecte es van quedar de costat durant el curs ja que sempre li donava prioritat a les pràctiques de les assignatures i li'ls dedicava més temps que res per a fer-les el millor possible.
+La idea i el projecte es van quedar de costat durant el curs, ja que sempre li donava prioritat a les pràctiques de les assignatures i li'ls dedicava més temps que res per a fer-les el millor possible.
 
-Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig seguir treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per seguir familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
+Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig continuar treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per continuar familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
 
 Després d'un temps usant-lo el trobe còmode d'usar i m'alegre d'haver pres la decisió d'elegir Godot perquè, en el context d'un projecte real on tens una motivació per a desenvolupar-lo, et veus forçat aprendre al ritme que marca el projecte i no tu sense cap restricció.
 
@@ -85,7 +85,7 @@ Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la 
 - Títols generats automàticament en l'idioma indicat.
 - Enllaços funcionals tant externs com interns.
 
-El format es va fer amb una combinació de Python i el contingut de la carpeta `config`, ja que es necessiten alguns fitxers per a poder exportar la memòria correctament a PDF, com l'ordre de les notes d'Obsidian a `manifest.txt`, la portada segons la plantilla, el format APA desitjat, les metadades que controlen manualment algunes variables de Pandoc i la bibliogradia que es guarda automàticament de Zotero. 
+El format es va fer amb una combinació de Python i el contingut de la carpeta `config`, ja que es necessiten alguns fitxers per a poder exportar la memòria correctament a PDF, com l'ordre de les notes d'Obsidian a `manifest.txt`, la portada segons la plantilla, el format APA desitjat, les metadades que controlen manualment algunes variables de Pandoc i la bibliografia que es guarda automàticament de Zotero. 
 
 Van sorgir alguns problemes durant aquesta iteració.
 Un va ser que la versió de Pandoc instal·lada era l'actual en el moment d'instal·lació, però durant el desenvolupament va eixir una nova que venia amb moltes més llibreries amb funcions que s'han programat a mà que hagueren fet més senzill el sistema d'exportació.
@@ -130,9 +130,9 @@ De la mà de la memòria la investigació ha sigut un eix central d'aquesta iter
 
 Pel que fa a l'estat de l'art una part més agraïda ha sigut haver de jugar a molts jocs per a poder analitzar-los. Mai havia jugat a jocs incrementals per tant de temps i els he trobat molt entretinguts i m'he enganxat una mica. He caigut en totes les tècniques que he d'aconseguir replicar per al meu.
 
-Un inconvenient que em vaig trobar va ser a principi de juliol per a accedir a certs portals d'articles amb les credencials de la UA perquè se'm va caducar la contrassenya durant la caiguda dels servidors d'UACloud i durant aquells dies no vaig consultar fonts per eixa via sinó per altres.
+Un inconvenient que em vaig trobar va ser a principi de juliol per a accedir a certs portals d'articles amb les credencials de la UA perquè se'm va caducar la contrasenya durant la caiguda dels servidors d'UACloud i durant aquells dies no vaig consultar fonts per eixa via sinó per altres.
 
-No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut de fer recerca per al desevolupament en Godot.
+No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut de fer recerca per al desenvolupament en Godot.
 
 ### Iteració 2
 

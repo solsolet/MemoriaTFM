@@ -5,12 +5,8 @@ El mercat dels videojocs en dispositius mòbils no ha deixat de créixer en els 
 
 En aquest treball aprofundirem en aquesta pregunta per què sí, es farà un videojoc per a dispositius mòbils i es publicarà per a les principals tendes d'aplicacions.
 
-Ara bé, quin tipus de joc serà el que es farà? Doncs partint de les particularitats del medi, els dispositius mòbils, es desenvolupará un videojoc 2D de temàtica musical. El génere d'aquest serà principalment **idle** de manera que aprofite el temps que tinga lliure l'usuari entre hores i no requerisca una gran cárrega mental i entretinga en moments d'espera. D'altra manera no només se centrarà en el que caracteritza a aquest gènere, sino que inclourà un mode de concentració, d'*assaig*, on el podriem emmarcar a més en **productivitat**.
+Ara bé, quin tipus de joc serà el que es farà? Doncs partint de les particularitats del medi, els dispositius mòbils, es desenvolupará un videojoc 2D de temàtica musical. El génere d'aquest serà principalment **idle** de manera que aprofite el temps que tinga lliure l'usuari entre hores i no requerisca una gran càrrega mental i entretinga en moments d'espera. D'altra manera no només se centrarà en el que caracteritza a aquest gènere, sinó que inclourà un mode de concentració, d'*assaig*, on el podríem emmarcar a més en **productivitat**.
 
-%%TODO : quan mirem el mercat mobil i l'analitzem i tal posar algo que si el nostre joc segueix alguna tendencia, és actual, quina es la seua vigencia...%%
-
-En el desenvolupament d'aquest videojoc es treballarà de principi a fi en la creació d'aquest: des de la concepció de la idea, passant pel seu disseny en tots els aspectes, continuant amb la suea programació amb Godot fins a la seua publicació i prova en dispositius reals. Aquest treball serà per iteracions seguint una planificació.
+En el desenvolupament d'aquest videojoc es treballarà de principi a fi en la creació d'aquest: des de la concepció de la idea, passant pel seu disseny en tots els aspectes, continuant amb la seua programació amb Godot fins a la seua publicació i prova en dispositius reals. Aquest treball serà per iteracions seguint una planificació.
 
 Finalment amb aquesta faena podrem comprovar els objectius que hem aconseguit, quines dificultats hi trobem respecte a altres desenvolupaments de programari i com és treballar enfocat a un maquinari en concret.
-
-%%TODO : revisar si afegir més coses i reescriure com està escrit el final, no m'agrada com ha quedat, crec que és prou millorable%%
