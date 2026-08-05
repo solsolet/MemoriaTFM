@@ -33,16 +33,16 @@ Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 
 Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte.
 
-### [Clockify]([https://clockify.me/es/](https://clockify.me/es/))
+### [Clockify](https://clockify.me/es/)
 
 Programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte 'TFM' i he anat creant diferents tasques com:
 
-- Memòria Obsidian: per a tot el relacionat amb la memòria
-- Reunió *x*: per a tota classe de reunions.
-- Investigació *x*: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
-- Organització *x*: per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
+- **Memòria Obsidian**: per a tot el relacionat amb la memòria
+- **Reunió *x***: per a tota classe de reunions.
+- **Investigació *x***: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
+- **Organització *x*:** per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el Vault, control de versions, revisar el seguiment...
 
-### [Obsidian]([https://obsidian.md](https://obsidian.md))
+### [Obsidian](https://obsidian.md)
 
 Programa per a prendre notes, seleccionar i gestionar informació i idees. El seu ús principal serà per a escriure tota la memòria.
 
@@ -60,7 +60,7 @@ Addicionalment, ha servit per al desenvolupament i organització d'aquest trebal
 
 Convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
 
-### [Godot 4.5.1]([https://godotengine.org](https://godotengine.org)) {#sec-godot-451}
+### [Godot 4.5.1](https://godotengine.org){#sec-godot-451}
 
 Motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 
@@ -89,7 +89,7 @@ Editor d'imatges per a fer dibuixos i muntatges de diferents elements artístics
 
 Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics del joc.
 
-### [KDenLive]([https://kdenlive.org/es/](https://kdenlive.org/es/))
+### [KDenLive](https://kdenlive.org/es/)
 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
 

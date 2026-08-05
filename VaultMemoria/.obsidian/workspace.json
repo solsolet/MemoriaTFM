@@ -8,33 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "61f2a0725595bbb6",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Memoria/Assets/AltresJocs/MagicArchery/MagicArchery-Joc.png"
-              },
-              "icon": "lucide-image",
-              "title": "MagicArchery-Joc"
-            }
-          },
-          {
             "id": "c55d40714af84ba1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memoria/Marc teoric.md",
+                "file": "Memoria/Metodologia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Marc teoric"
+              "title": "Metodologia"
+            }
+          },
+          {
+            "id": "ba0e863b5e08c1b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          },
+          {
+            "id": "09b56046f7e1e8ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Memoria/Cites.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cites"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,18 +238,25 @@
   "active": "c55d40714af84ba1",
   "lastOpenFiles": [
     "Output/_build_processed.md",
+    "Memoria/Marc teoric.md",
+    "Memoria/Cites.md",
+    "Memoria/Bibliografia.md",
+    "Memoria/Annexos.md",
+    "Memoria/Agraiments.md",
+    "Memoria/Abstract.md",
+    "Memoria/Resumen.md",
+    "Memoria/Resum.md",
+    "Memoria/Index.md",
     "Memoria/Metodologia.md",
     "Memoria/Assets/AltresJocs/MagicArchery/MagicArchery-Joc.png",
     "Memoria/Objectius.md",
     "Memoria/Llegenda.md",
-    "Memoria/Marc teoric.md",
     "Memoria/Justificacio i Objectius.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Introduccio.md",
     "De tot/Com exportar a PDF.md",
     "Memoria/Annexos/Ten-Pager.md",
     "Organitzacio/Kanban.md",
-    "Memoria/Bibliografia.md",
     "Memoria/Annexos/One-Sheet.md",
     "Sense títol.md",
     "Memoria/Assets/AltresJocs/MagicArchery/MagicArchery_Congrats.png",
@@ -256,16 +278,10 @@
     "Diari/2026-07-23.md",
     "Memoria/Assets/GanttProject",
     "Organitzacio/Reunions.md",
-    "Memoria/Annexos.md",
     "Diari/2026-07-21.md",
-    "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png.md",
     "Memoria/Assets/AltresJocs/PushTheSquare",
     "Memoria/Assets/AltresJocs/PushTheSquare",
     "Memoria/Assets/carpeta sense nom",
-    "De tot/Originals/CookieClicker-1.af~lock~",
-    "Diari/2026-07-09.md",
-    "2026-07-09.md",
-    "Memoria/Annexos/GDD.md",
-    "Diari/2026-07-02.md"
+    "De tot/Originals/CookieClicker-1.af~lock~"
   ]
 }

@@ -384,13 +384,38 @@ Visualment és molt consistent, a pesar de tenir molts minijocs i cadascun anar 
 
 S'exemplificarà a través de dos minijocs: *Aves Marciales* i *Remix 3*.
 
-|                      | Aves Marciales                                                                     | Remix 3                                                                     |
-| -------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Icona**            | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Icon.png)               | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Icon.png)               |
-| **Pantalla Inicial** | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Inici.png){height=4cm}  | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Inici.png){height=4cm}  |
-| **Paleta de colors** | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Paleta.png){height=3cm} | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Paleta.png){height=3cm} |
-| **Joc**              | ![](Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Joc.png){height=4cm}    | ![](Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc.png){height=4cm}    |
-: Comparació visual entre un minijoc normal i un remix en Rhythm Paradise. Font de les imatges: Rhythm Paradise
+\begin{table}[htbp]
+\centering
+\caption{Comparació visual entre un minijoc normal i un remix en Rhythm Paradise. Font de les imatges: Rhythm Paradise}
+\vspace{0.5cm}
+\label{tab:comparacio-rhythm}
+
+\begin{tabular}{p{4cm}cc}
+\hline
+ & \textbf{Aves Marciales} & \textbf{Remix 3} \\
+\hline
+\\[-0.2cm]
+
+\textbf{Icona} &
+\includegraphics[height=1.5cm]{Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Icon.png} &
+\includegraphics[height=1.5cm]{Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Icon.png} \\[0.5cm]
+
+\textbf{Pantalla inicial} &
+\includegraphics[height=4cm]{Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Inici.png} &
+\includegraphics[height=4cm]{Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Inici.png} \\[0.5cm]
+
+\textbf{Paleta de colors} &
+\includegraphics[height=3cm]{Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Paleta.png} &
+\includegraphics[height=3cm]{Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Paleta.png} \\[0.5cm]
+
+\textbf{Joc} &
+\includegraphics[height=4cm]{Memoria/Assets/AltresJocs/RhythmParadise/AvesMarciales-Joc.png} &
+\includegraphics[height=4cm]{Memoria/Assets/AltresJocs/RhythmParadise/Remix3-Joc.png} \\
+
+\hline
+\end{tabular}
+
+\end{table}
 
 Pel que fa a les paletes, son de colors vius i funcionen bé en l'estètica del nivell, en aquestos casos verds per a simular l'entrenament militar de les aus i morats seductors dues execucions pensades per al mateix estil: un tango.
 
