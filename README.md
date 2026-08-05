@@ -1,4 +1,7 @@
 # TFM
+
+[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)
+
 Repositori per al Treball Final de Màster del Màster en Desenvolupament de programari per a Dispositius Mòbils de la Universitat d'Alacant.
 
 Hi figuren totes les parts que s'avaluaran del treball:
