@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Pianissimo"
 config/tags=PackedStringArray("android", "google_play_games_services", "ios")
-run/main_scene="uid://cn6a42umr04wt"
+run/main_scene="uid://d3xjva4n8hejr"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
@@ -21,6 +21,17 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1080
 window/size/viewport_height=1920
 window/handheld/orientation=1
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "pink",
+"res://scripts/": "teal"
+}
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://assets/i18n/translations.ca.translation", "res://assets/i18n/translations.en.translation", "res://assets/i18n/translations.es.translation")
 
 [rendering]
 
