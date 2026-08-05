@@ -7,7 +7,8 @@ HOME_LEADERBOARDS,Marcadors,Marcadores,Leaderboards
 HOME_CREDITS,Crèdits,Créditos,Credits
 INSTRUCTIONS_TITLE,"Com jugar","Cómo jugar","How to play"
 CREDITS_BODY,"[b]Fet per Gemma Sellés Lloret[/b]\n \nAlguns SFX son de Freesound sota la Llicència CC0\nAgraïments especials per a xxx","[b]Hecho por Gemma Sellés Lloret[/b]\n\nAlgunos SFX son de Freesound con Licencia CC0\nEspecial agradecimiento a xxx","[b]Made by Gemma Sellés Lloret[/b]\n\nSome SFX are from Freesound under CC0 License\nSpecial thanks to xxx"
-CREDITS_BUTTON,Enrere,Atrás,Back
+BACK_BUTTON,Enrere,Atrás,Back
+GAME_NOTES,Notes,Notas,Notes
 PAUSE_LABEL,Pausa,Pausa,Pause
 PAUSE_RESUME,Resume,Continua,Continua
 PAUSE_HOME,Inici,Inicio,Home
