@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
 
-[node name="Control" type="Control"]
+[node name="Game" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,25 +21,19 @@ grow_vertical = 2
 color = Color(0.7121294, 0.7121294, 0.71212935, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -272.0
-offset_top = -175.5
-offset_right = 272.0
-offset_bottom = 175.5
+offset_left = -164.5
+offset_top = -91.0
+offset_right = 164.5
+offset_bottom = 91.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="TitleLabel" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 64
-text = "HOLA, FUNCIONA"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="NotesLabel" type="Label" parent="VBoxContainer"]
 auto_translate_mode = 1
@@ -47,15 +41,51 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 45
 text = "GAME_NOTES"
 
-[node name="ColorRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(20, 50)
+[node name="GameArea" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(450, 450)
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="GameBackground" type="ColorRect" parent="VBoxContainer/GameArea"]
+custom_minimum_size = Vector2(20, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+color = Color(0.34781694, 0.34781697, 0.3478169, 1)
+
+[node name="HitLine" type="ColorRect" parent="VBoxContainer/GameArea"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="KeyRow" type="HBoxContainer" parent="VBoxContainer/GameArea"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Key0" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
+custom_minimum_size = Vector2(80, 100)
 layout_mode = 2
-theme_override_font_sizes/font_size = 45
-text = "Store/upgrades"
+
+[node name="Key1" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Key2" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 auto_translate_mode = 1
@@ -63,4 +93,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 45
 text = "BACK_BUTTON"
 
-[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key0" to="." method="_on_key_0_pressed"]
+[connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key1" to="." method="_on_key_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key2" to="." method="_on_key_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_btn_back_pressed"]
