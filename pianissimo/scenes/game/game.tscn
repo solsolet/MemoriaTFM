@@ -23,15 +23,9 @@ color = Color(0.7121294, 0.7121294, 0.71212935, 1)
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -164.5
-offset_top = -91.0
-offset_right = 164.5
-offset_bottom = 91.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -44,6 +38,7 @@ text = "GAME_NOTES"
 [node name="GameArea" type="Control" parent="VBoxContainer"]
 custom_minimum_size = Vector2(450, 450)
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="GameBackground" type="ColorRect" parent="VBoxContainer/GameArea"]
 custom_minimum_size = Vector2(20, 50)
@@ -57,6 +52,7 @@ size_flags_vertical = 3
 color = Color(0.34781694, 0.34781697, 0.3478169, 1)
 
 [node name="HitLine" type="ColorRect" parent="VBoxContainer/GameArea"]
+custom_minimum_size = Vector2(12, 12)
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -78,13 +74,55 @@ grow_vertical = 0
 [node name="Key0" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
 custom_minimum_size = Vector2(80, 100)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Key1" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
 custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Key2" type="Button" parent="VBoxContainer/GameArea/KeyRow"]
 custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="UpgradePanel" type="Panel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(45, 100)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/UpgradePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14048484, 0.6632491, 0.7463257, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/UpgradePanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UpgradeLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="AutoTapRow" type="HBoxContainer" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="AutoTapButton" type="Button" parent="VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
+layout_mode = 2
+
+[node name="AutoTapLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
+layout_mode = 2
+
+[node name="MultiplierRow" type="HBoxContainer" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="MultiplierButton" type="Button" parent="VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
+layout_mode = 2
+
+[node name="MultiplierLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
 layout_mode = 2
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
@@ -96,4 +134,6 @@ text = "BACK_BUTTON"
 [connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key0" to="." method="_on_key_0_pressed"]
 [connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key1" to="." method="_on_key_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/GameArea/KeyRow/Key2" to="." method="_on_key_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapButton" to="." method="_on_auto_tap_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierButton" to="." method="_on_multiplier_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_btn_back_pressed"]
