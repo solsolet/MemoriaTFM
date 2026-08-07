@@ -62,6 +62,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="KeyRow" type="HBoxContainer" parent="VBoxContainer/GameArea"]
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -87,7 +88,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="UpgradePanel" type="Panel" parent="VBoxContainer"]
-custom_minimum_size = Vector2(45, 100)
+custom_minimum_size = Vector2(50, 200)
 layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="VBoxContainer/UpgradePanel"]
@@ -100,30 +101,41 @@ grow_vertical = 2
 color = Color(0.14048484, 0.6632491, 0.7463257, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/UpgradePanel"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="UpgradeLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Upgrades"
 
 [node name="AutoTapRow" type="HBoxContainer" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
 layout_mode = 2
 
 [node name="AutoTapButton" type="Button" parent="VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Buy"
 
 [node name="AutoTapLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 
 [node name="MultiplierRow" type="HBoxContainer" parent="VBoxContainer/UpgradePanel/VBoxContainer"]
 layout_mode = 2
 
 [node name="MultiplierButton" type="Button" parent="VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Buy"
 
 [node name="MultiplierLabel" type="Label" parent="VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 auto_translate_mode = 1
