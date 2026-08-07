@@ -1,22 +1,22 @@
 extends Control
 
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
-const NOTE_HEIGHT = 24.0
+const NOTE_HEIGHT = 36.0
 const SAVE_PATH = "user://piano_idle_save.cfg"
 
-@onready var notes_label: Label = $VBoxContainer/NotesLabel
-@onready var game_area: Control = $VBoxContainer/GameArea
-@onready var hit_line: ColorRect = $VBoxContainer/GameArea/HitLine
+@onready var notes_label: Label = $SafeAreaContainer/VBoxContainer/NotesLabel
+@onready var game_area: Control = $SafeAreaContainer/VBoxContainer/GameArea
+@onready var hit_line: ColorRect = $SafeAreaContainer/VBoxContainer/GameArea/HitLine
 @onready var key_buttons: Array[Button] = [
-	$VBoxContainer/GameArea/KeyRow/Key0,
-	$VBoxContainer/GameArea/KeyRow/Key1,
-	$VBoxContainer/GameArea/KeyRow/Key2,
+	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key0,
+	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key1,
+	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key2,
 ]
 
-@onready var auto_tap_button: Button = $VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapButton
-@onready var auto_tap_label: Label = $VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapLabel
-@onready var multiplier_button: Button = $VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierButton
-@onready var multiplier_label: Label = $VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierLabel
+@onready var auto_tap_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapButton
+@onready var auto_tap_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapLabel
+@onready var multiplier_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierButton
+@onready var multiplier_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierLabel
 
 var notes_value: int = 0
 var active_notes: Array[Note] = []
@@ -36,6 +36,20 @@ func _ready() -> void:
 	load_progress()
 
 	update_upgrade_labels()
+
+	_apply_ui_scaling()
+	get_viewport().size_changed.connect(_apply_ui_scaling)
+
+
+func _apply_ui_scaling() -> void:
+	var viewport_height = max(1.0, get_viewport().size.y)
+	var font_size = int(clamp(viewport_height * 0.028, 18, 34))
+
+	notes_label.add_theme_font_size_override("font_size", int(font_size * 1.4))
+	auto_tap_label.add_theme_font_size_override("font_size", font_size)
+	multiplier_label.add_theme_font_size_override("font_size", font_size)
+	auto_tap_button.add_theme_font_size_override("font_size", font_size)
+	multiplier_button.add_theme_font_size_override("font_size", font_size)
 
 
 func _notification(what: int) -> void:
@@ -123,7 +137,8 @@ func spawn_note(lane_index: int) -> void:
 	note.speed = note_speed
 
 	var note_width = max(1.0, key_button.size.x)
-	note.set_note_size(Vector2(note_width, NOTE_HEIGHT))
+	var note_height = max(32.0, key_button.size.y * 0.35)
+	note.set_note_size(Vector2(note_width, note_height))
 
 	# Position it relative to the game area.
 	var key_rect = key_button.get_global_rect()
@@ -199,7 +214,7 @@ func _find_closest_note() -> Note:
 
 	for note in active_notes:
 		var distance = abs((note.position.y + note.size.y) - hit_line.position.y)
-		if distance < closest_distance:
+		if distance < closest_distance and distance <= 90.0:
 			closest_distance = distance
 			closest_note = note
 
