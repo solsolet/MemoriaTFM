@@ -2,23 +2,18 @@ extends Control
 
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
-const SAVE_PATH = "user://piano_idle_save.cfg"
-const UPGRADE_DATA_PATH = "res://data/upgrades.json"
+
 
 @export var notes_label: Label
 @export var game_area: Control
 @export var hit_line: ColorRect
 @export var key_buttons: Array[Button] = []
 
-@export var upgrade_card_container: HBoxContainer
-@export var back_button: Button
+@export var auto_tap_button: Button
+@export var auto_tap_label: Label
+@export var multiplier_button: Button
+@export var multiplier_label: Label
 
-@onready var auto_tap_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow/AutoTapButton
-@onready var auto_tap_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow/AutoTapLabel
-@onready var multiplier_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow/MultiplierButton
-@onready var multiplier_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow/MultiplierLabel
-
-var notes_value: int = 0
 var active_notes: Array[Note] = []
 var spawn_timer: Timer
 var auto_tap_timer: Timer
@@ -27,20 +22,23 @@ var note_speed: float = 220.0
 var auto_tap_level: int = 0
 var multiplier_level: int = 0
 
+
 func _ready() -> void:
-	notes_label.text = "Notes: 0"
-
+	Economy.notes_changed.connect(_on_notes_changed)
+	_on_notes_changed(Economy.notes)
+	
+	auto_tap_level = int(SaveManager.data.upgrade_levels.get("auto_tap", 0))
+	multiplier_level = int(SaveManager.data.upgrade_levels.get("multiplier", 0))
+	
+	_apply_offline_income()
 	_setup_timers()
-
-	# Load progress from disk before updating the UI.
-	load_progress()
-
 	update_upgrade_labels()
 
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
 
 
+# INFO: UI
 func _apply_ui_scaling() -> void:
 	var viewport_height = max(1.0, get_viewport().size.y)
 	var font_size = int(clamp(viewport_height * 0.028, 18, 34))
@@ -52,85 +50,56 @@ func _apply_ui_scaling() -> void:
 	multiplier_button.add_theme_font_size_override("font_size", font_size)
 
 
+# INFO: Notifications
 func _notification(what: int) -> void:
 	match what:
 		NOTIFICATION_APPLICATION_PAUSED, NOTIFICATION_APPLICATION_FOCUS_OUT:
-			save_progress()
-
+			SaveManager.save_data()
 		NOTIFICATION_APPLICATION_RESUMED, NOTIFICATION_APPLICATION_FOCUS_IN:
-			load_progress()
+			_apply_offline_income()
+			SaveManager.save_data()
 
 
-# INFO: Persistencia
-func save_progress() -> void:
-	var config = ConfigFile.new()
-
-	config.set_value("player", "notes", notes_value)
-	config.set_value("player", "auto_tap_level", auto_tap_level)
-	config.set_value("player", "multiplier_level", multiplier_level)
-	config.set_value("player", "last_save_time", int(Time.get_unix_time_from_system()))
-
-	var err = config.save(SAVE_PATH)
-	if err != OK:
-		print("Could not save progress: ", err)
-
-func load_progress() -> void:
-	var config = ConfigFile.new()
-
-	if not FileAccess.file_exists(SAVE_PATH):
-		return
-
-	var err = config.load(SAVE_PATH)
-	if err != OK:
-		print("Could not load progress: ", err)
-		return
-
-	notes_value = int(config.get_value("player", "notes", 0))
-	auto_tap_level = int(config.get_value("player", "auto_tap_level", 0))
-	multiplier_level = int(config.get_value("player", "multiplier_level", 0))
-
-	var last_save_time = int(config.get_value("player", "last_save_time", int(Time.get_unix_time_from_system())))
+func _apply_offline_income() -> void:
 	var now = int(Time.get_unix_time_from_system())
-	var elapsed_seconds = max(0, now - last_save_time)
+	var elapsed = max(0, now - SaveManager.data.last_save_time)
+	if elapsed <= 0:
+		return
+	
+	var offline_rate = 1.0 + auto_tap_level
+	var offline_gain = int(elapsed * offline_rate)
+	if offline_gain > 0:
+		Economy.add(offline_gain)
+		print("Offline gain: ", offline_gain)
 
-	if elapsed_seconds > 0:
-		# Simple offline income formula.
-		var offline_rate = 1.0 + auto_tap_level * 0.5
-		var offline_gain = int(elapsed_seconds * offline_rate)
 
-		if offline_gain > 0:
-			notes_value += offline_gain
-			print("Offline gain: ", offline_gain)
-
-	notes_label.text = "Notes: %d" % notes_value
-	update_upgrade_labels()
-
-	# Save again so the last_save_time is refreshed after loading.
-	save_progress()
+func _on_notes_changed(value: int) -> void:
+	notes_label.text = "Notes: %d " % value
 
 
 func _setup_timers() -> void:
-	# Periodically spawn new notes.
+	# Periodically spawn new notes
 	spawn_timer = Timer.new()
 	spawn_timer.wait_time = 0.8
 	spawn_timer.autostart = true
 	spawn_timer.timeout.connect(_on_spawn_timer_timeout)
 	add_child(spawn_timer)
 
-	# Auto-tap notes near the hit line.
+	# Auto-tap notes near the hit line
 	auto_tap_timer = Timer.new()
 	auto_tap_timer.wait_time = 1.0
 	auto_tap_timer.autostart = true
 	auto_tap_timer.timeout.connect(_on_auto_tap_timeout)
 	add_child(auto_tap_timer)
 
+
 func _on_spawn_timer_timeout() -> void:
-	# Spawn a note in a random lane.
+	# Spawn a note in a random lane
 	var lane = randi_range(0, key_buttons.size() - 1)
 	spawn_note(lane)
 
+
 func spawn_note(lane_index: int) -> void:
-	# Create a note and match its width to the key width.
 	var key_button = key_buttons[lane_index]
 	var note = NOTE_SCENE.instantiate() as Note
 	note.lane = lane_index
@@ -140,7 +109,7 @@ func spawn_note(lane_index: int) -> void:
 	var note_height = max(32.0, key_button.size.y * 0.35)
 	note.set_note_size(Vector2(note_width, note_height))
 
-	# Position it relative to the game area.
+	# Position it relative to the game area
 	var key_rect = key_button.get_global_rect()
 	var game_rect = game_area.get_global_rect()
 
@@ -151,8 +120,9 @@ func spawn_note(lane_index: int) -> void:
 	game_area.add_child(note)
 	active_notes.append(note)
 
+
 func _process(delta: float) -> void:
-	# Move notes downward and remove them once they hit the line.
+	# Move notes downward and remove them once they hit the line
 	for i in range(active_notes.size() - 1, -1, -1):
 		var note = active_notes[i]
 		note.position.y += note.speed * delta
@@ -161,21 +131,26 @@ func _process(delta: float) -> void:
 			active_notes.remove_at(i)
 			note.queue_free()
 
+
 func _note_reached_hit_line(note: Note) -> bool:
 	var note_bottom = note.position.y + note.size.y
 	return note_bottom >= hit_line.position.y
 
+
 func _on_key_0_pressed() -> void:
 	handle_key_input(0)
+
 
 func _on_key_1_pressed() -> void:
 	handle_key_input(1)
 
+
 func _on_key_2_pressed() -> void:
 	handle_key_input(2)
 
+
 func handle_key_input(lane_index: int) -> void:
-	# Try to hit the closest note in the requested lane.
+	# Try to hit the closest note in the requested lane
 	var best_note = _find_best_note_for_lane(lane_index)
 	if best_note == null:
 		return
@@ -192,6 +167,7 @@ func handle_key_input(lane_index: int) -> void:
 	active_notes.erase(best_note)
 	best_note.queue_free()
 
+
 func _find_best_note_for_lane(lane_index: int) -> Note:
 	var best_note: Note = null
 	var best_distance: float = INF
@@ -199,13 +175,13 @@ func _find_best_note_for_lane(lane_index: int) -> Note:
 	for note in active_notes:
 		if note.lane != lane_index:
 			continue
-
 		var distance = abs((note.position.y + note.size.y) - hit_line.position.y)
 		if distance < best_distance:
 			best_distance = distance
 			best_note = note
 
 	return best_note
+
 
 func _find_closest_note() -> Note:
 	# Used by auto-tap to find the note closest to the hit line.
@@ -222,16 +198,12 @@ func _find_closest_note() -> Note:
 
 
 func award_notes(amount: int) -> void:
-	# Multiply the reward with the current multiplier level.
 	var reward = amount * (1 + multiplier_level)
-	notes_value += reward
-	notes_label.text = "Notes: %d" % notes_value
-
-	save_progress()
+	Economy.add(reward)
 
 
 func _on_auto_tap_timeout() -> void:
-	# Auto-tap only if the player already bought the upgrade.
+	# Auto-tap only if the player already bought the upgrade
 	if auto_tap_level <= 0:
 		return
 
@@ -243,48 +215,46 @@ func _on_auto_tap_timeout() -> void:
 	active_notes.erase(best_note)
 	best_note.queue_free()
 
+
 func _on_auto_tap_button_pressed() -> void:
 	var cost = auto_tap_cost()
-	if notes_value < cost:
+	if not Economy.spend(cost):
 		return
-
-	notes_value -= cost
+	
 	auto_tap_level += 1
-
-	# Faster auto-tap as the level grows.
+	SaveManager.data.upgrade_levels["auto_tap"] = auto_tap_level
 	auto_tap_timer.wait_time = max(0.4, 1.0 - 0.1 * auto_tap_level)
 	update_upgrade_labels()
-
-	save_progress()
+	SaveManager.save_data()
 
 
 func _on_multiplier_button_pressed() -> void:
 	var cost = multiplier_cost()
-	if notes_value < cost:
+	if not Economy.spend(cost):
 		return
 
-	notes_value -= cost
 	multiplier_level += 1
+	SaveManager.data.upgrade_levels["multiplayer"] = multiplier_level
 	update_upgrade_labels()
+	SaveManager.save_data()
 
-	save_progress()
 
 func auto_tap_cost() -> int:
 	return 10 + auto_tap_level * 8
 
+
 func multiplier_cost() -> int:
 	return 15 + multiplier_level * 12
+
 
 func update_upgrade_labels() -> void:
 	auto_tap_label.text = "Auto Tap Lv %d  Cost: %d" % [auto_tap_level, auto_tap_cost()]
 	multiplier_label.text = "Multiplier Lv %d  Cost: %d" % [multiplier_level, multiplier_cost()]
-	notes_label.text = "Notes: %d" % notes_value
 
 
+# Stop timers and clear notes when leaving the scene
 func cleanup() -> void:
-	# Stop timers and clear notes when leaving the scene.
-	save_progress()
-
+	SaveManager.save_data()
 	set_process(false)
 
 	if spawn_timer:
@@ -299,23 +269,7 @@ func cleanup() -> void:
 
 	for note in active_notes:
 		note.queue_free()
-
 	active_notes.clear()
-
-
-func load_upgrade_data() -> Array[Dictionary]:
-	var file = FileAccess.open(UPGRADE_DATA_PATH, FileAccess.READ)
-	if file == null:
-		return []
-
-	var text = file.get_as_text()
-	file.close()
-
-	var parsed = JSON.parse_string(text)
-	if parsed is Array:
-		return parsed
-
-	return []
 
 
 func _exit_tree() -> void:
