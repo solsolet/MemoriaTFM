@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cn6a42umr04wt"]
 
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
-[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://scenes/game/safe_area_container.gd" id="2_7h61r"]
+[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_7h61r"]
 
-[node name="Game" type="Control"]
+[node name="Game" type="Control" node_paths=PackedStringArray("notes_label", "game_area", "hit_line", "key_buttons", "upgrade_card_container", "back_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sul5r")
+notes_label = NodePath("SafeAreaContainer/VBoxContainer/NotesLabel")
+game_area = NodePath("SafeAreaContainer/VBoxContainer/GameArea")
+hit_line = NodePath("SafeAreaContainer/VBoxContainer/GameArea/HitLine")
+key_buttons = [NodePath("SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key0"), NodePath("SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key1"), NodePath("SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key2")]
+upgrade_card_container = NodePath("SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer")
+back_button = NodePath("SafeAreaContainer/VBoxContainer/BottomBar/BackButton")
 
 [node name="SafeAreaContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -100,44 +106,59 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.14048484, 0.6632491, 0.7463257, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel"]
-custom_minimum_size = Vector2(100, 0)
+[node name="UpgradeLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="UpgradeLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer"]
-layout_mode = 2
+offset_right = 148.0
+offset_bottom = 45.0
 theme_override_font_sizes/font_size = 32
 text = "Upgrades"
 
-[node name="AutoTapRow" type="HBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AutoTapRow" type="VBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 
-[node name="AutoTapButton" type="Button" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
+[node name="AutoTapButton" type="Button" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow"]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Buy"
 
-[node name="AutoTapLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow"]
+[node name="AutoTapLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 
-[node name="MultiplierRow" type="HBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer"]
+[node name="MultiplierRow" type="VBoxContainer" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 
-[node name="MultiplierButton" type="Button" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
+[node name="MultiplierButton" type="Button" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow"]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Buy"
 
-[node name="MultiplierLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow"]
+[node name="MultiplierLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 
-[node name="BackButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
+[node name="BottomBar" type="MarginContainer" parent="SafeAreaContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="SafeAreaContainer/VBoxContainer/BottomBar"]
 auto_translate_mode = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 45
@@ -146,6 +167,6 @@ text = "BACK_BUTTON"
 [connection signal="pressed" from="SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key0" to="." method="_on_key_0_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key1" to="." method="_on_key_1_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key2" to="." method="_on_key_2_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapButton" to="." method="_on_auto_tap_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierButton" to="." method="_on_multiplier_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/BackButton" to="." method="_on_btn_back_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow/AutoTapButton" to="." method="_on_auto_tap_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow/MultiplierButton" to="." method="_on_multiplier_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/BottomBar/BackButton" to="." method="_on_btn_back_pressed"]

@@ -3,20 +3,20 @@ extends Control
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
 const SAVE_PATH = "user://piano_idle_save.cfg"
+const UPGRADE_DATA_PATH = "res://data/upgrades.json"
 
-@onready var notes_label: Label = $SafeAreaContainer/VBoxContainer/NotesLabel
-@onready var game_area: Control = $SafeAreaContainer/VBoxContainer/GameArea
-@onready var hit_line: ColorRect = $SafeAreaContainer/VBoxContainer/GameArea/HitLine
-@onready var key_buttons: Array[Button] = [
-	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key0,
-	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key1,
-	$SafeAreaContainer/VBoxContainer/GameArea/KeyRow/Key2,
-]
+@export var notes_label: Label
+@export var game_area: Control
+@export var hit_line: ColorRect
+@export var key_buttons: Array[Button] = []
 
-@onready var auto_tap_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapButton
-@onready var auto_tap_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/AutoTapRow/AutoTapLabel
-@onready var multiplier_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierButton
-@onready var multiplier_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/VBoxContainer/MultiplierRow/MultiplierLabel
+@export var upgrade_card_container: HBoxContainer
+@export var back_button: Button
+
+@onready var auto_tap_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow/AutoTapButton
+@onready var auto_tap_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/AutoTapRow/AutoTapLabel
+@onready var multiplier_button: Button = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow/MultiplierButton
+@onready var multiplier_label: Label = $SafeAreaContainer/VBoxContainer/UpgradePanel/ScrollContainer/HBoxContainer/MultiplierRow/MultiplierLabel
 
 var notes_value: int = 0
 var active_notes: Array[Note] = []
@@ -301,6 +301,21 @@ func cleanup() -> void:
 		note.queue_free()
 
 	active_notes.clear()
+
+
+func load_upgrade_data() -> Array[Dictionary]:
+	var file = FileAccess.open(UPGRADE_DATA_PATH, FileAccess.READ)
+	if file == null:
+		return []
+
+	var text = file.get_as_text()
+	file.close()
+
+	var parsed = JSON.parse_string(text)
+	if parsed is Array:
+		return parsed
+
+	return []
 
 
 func _exit_tree() -> void:

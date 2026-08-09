@@ -16,6 +16,16 @@ run/main_scene="uid://d3xjva4n8hejr"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SettingsManager="*res://autoload/settings_manager.gd"
+SaveManager="*res://autoload/save_manager.gd"
+Economy="*res://autoload/economy.gd"
+UpgradeManager="*res://autoload/upgrade_manager.gd"
+AudioManager="*res://autoload/audio_manager.gd"
+AchievementManager="*res://autoload/achievement_manager.gd"
+NotificationManager="*res://autoload/notification_manager.gd"
+
 [display]
 
 window/size/viewport_width=1080
@@ -25,8 +35,13 @@ window/handheld/orientation=1
 [file_customization]
 
 folder_colors={
-"res://assets/": "pink",
-"res://scripts/": "teal"
+"res://assets/": "red",
+"res://autoload/": "orange",
+"res://data/": "yellow",
+"res://resources/": "green",
+"res://scenes/": "teal",
+"res://scripts/": "blue",
+"res://ui/": "purple"
 }
 
 [internationalization]
