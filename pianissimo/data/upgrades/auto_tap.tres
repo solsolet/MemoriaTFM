@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://i1wonfcomvjo"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_3ow8b"]
+
+[resource]
+script = ExtResource("1_3ow8b")
+id = "auto_tap"
+display_name = "Auto Tap"
+cost_growth = 8
+metadata/_custom_type_script = "uid://ugia523xnwc0"

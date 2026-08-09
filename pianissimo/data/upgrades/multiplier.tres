@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://du1i8sxnd3mwa"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_db0vn"]
+
+[resource]
+script = ExtResource("1_db0vn")
+id = "multiplier"
+display_name = "Multiplier"
+base_cost = 15
+cost_growth = 12
+metadata/_custom_type_script = "uid://ugia523xnwc0"

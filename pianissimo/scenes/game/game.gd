@@ -9,30 +9,21 @@ const NOTE_HEIGHT = 36.0
 @export var hit_line: ColorRect
 @export var key_buttons: Array[Button] = []
 
-@export var auto_tap_button: Button
-@export var auto_tap_label: Label
-@export var multiplier_button: Button
-@export var multiplier_label: Label
-
 var active_notes: Array[Note] = []
 var spawn_timer: Timer
 var auto_tap_timer: Timer
 
 var note_speed: float = 220.0
-var auto_tap_level: int = 0
-var multiplier_level: int = 0
 
 
 func _ready() -> void:
 	Economy.notes_changed.connect(_on_notes_changed)
 	_on_notes_changed(Economy.notes)
 	
-	auto_tap_level = int(SaveManager.data.upgrade_levels.get("auto_tap", 0))
-	multiplier_level = int(SaveManager.data.upgrade_levels.get("multiplier", 0))
+	UpgradeManager.upgrade_purchased.connect(_on_upgrade_purchased)
 	
 	_apply_offline_income()
 	_setup_timers()
-	update_upgrade_labels()
 
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
@@ -44,10 +35,6 @@ func _apply_ui_scaling() -> void:
 	var font_size = int(clamp(viewport_height * 0.028, 18, 34))
 
 	notes_label.add_theme_font_size_override("font_size", int(font_size * 1.4))
-	auto_tap_label.add_theme_font_size_override("font_size", font_size)
-	multiplier_label.add_theme_font_size_override("font_size", font_size)
-	auto_tap_button.add_theme_font_size_override("font_size", font_size)
-	multiplier_button.add_theme_font_size_override("font_size", font_size)
 
 
 # INFO: Notifications
@@ -60,13 +47,18 @@ func _notification(what: int) -> void:
 			SaveManager.save_data()
 
 
+func _on_upgrade_purchased(id: String, new_level: int) -> void:
+	if id == "auto_tap":
+		auto_tap_timer.wait_time = max(0.4, 1.0 - 0.1 * new_level)
+
+
 func _apply_offline_income() -> void:
 	var now = int(Time.get_unix_time_from_system())
 	var elapsed = max(0, now - SaveManager.data.last_save_time)
 	if elapsed <= 0:
 		return
 	
-	var offline_rate = 1.0 + auto_tap_level
+	var offline_rate = 1.0 + UpgradeManager.get_level("auto_tap") * 0.5
 	var offline_gain = int(elapsed * offline_rate)
 	if offline_gain > 0:
 		Economy.add(offline_gain)
@@ -198,13 +190,13 @@ func _find_closest_note() -> Note:
 
 
 func award_notes(amount: int) -> void:
-	var reward = amount * (1 + multiplier_level)
+	var reward = amount * (1 + UpgradeManager.get_level("multiplier"))
 	Economy.add(reward)
 
 
 func _on_auto_tap_timeout() -> void:
 	# Auto-tap only if the player already bought the upgrade
-	if auto_tap_level <= 0:
+	if UpgradeManager.get_level("auto_tap") <= 0:
 		return
 
 	var best_note = _find_closest_note()
@@ -214,42 +206,6 @@ func _on_auto_tap_timeout() -> void:
 	award_notes(1)
 	active_notes.erase(best_note)
 	best_note.queue_free()
-
-
-func _on_auto_tap_button_pressed() -> void:
-	var cost = auto_tap_cost()
-	if not Economy.spend(cost):
-		return
-	
-	auto_tap_level += 1
-	SaveManager.data.upgrade_levels["auto_tap"] = auto_tap_level
-	auto_tap_timer.wait_time = max(0.4, 1.0 - 0.1 * auto_tap_level)
-	update_upgrade_labels()
-	SaveManager.save_data()
-
-
-func _on_multiplier_button_pressed() -> void:
-	var cost = multiplier_cost()
-	if not Economy.spend(cost):
-		return
-
-	multiplier_level += 1
-	SaveManager.data.upgrade_levels["multiplayer"] = multiplier_level
-	update_upgrade_labels()
-	SaveManager.save_data()
-
-
-func auto_tap_cost() -> int:
-	return 10 + auto_tap_level * 8
-
-
-func multiplier_cost() -> int:
-	return 15 + multiplier_level * 12
-
-
-func update_upgrade_labels() -> void:
-	auto_tap_label.text = "Auto Tap Lv %d  Cost: %d" % [auto_tap_level, auto_tap_cost()]
-	multiplier_label.text = "Multiplier Lv %d  Cost: %d" % [multiplier_level, multiplier_cost()]
 
 
 # Stop timers and clear notes when leaving the scene
