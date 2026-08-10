@@ -33,10 +33,8 @@ func _collect_keys() -> void:
 			key_buttons.append(child)
 	key_buttons.sort_custom(func(a, b): return a.name < b.name)
 	
-	var lane_index := 0
 	for i in key_buttons.size():
-		key_buttons[i].pressed.connect(func(): handle_key_input(lane_index))
-		lane_index += 1
+		key_buttons[i].pressed.connect(handle_key_input.bind(i))
 
 
 func _layout_keys() -> void:

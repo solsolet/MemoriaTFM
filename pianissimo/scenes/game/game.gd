@@ -25,7 +25,7 @@ func _ready() -> void:
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
 	
-	AudioManager.play_music("bg_music_01.ogg")
+	AudioManager.play_music("Fugue No.2 Cm.mp3")
 
 
 # INFO: UI
@@ -80,6 +80,7 @@ func _on_note_scored(_lane: int, accuracy: String) -> void:
 func cleanup() -> void:
 	if piano:
 		piano.cleanup()
+	AudioManager.stop_music()
 	SaveManager.save_data()
 
 
