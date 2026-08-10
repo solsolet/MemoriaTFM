@@ -2,6 +2,8 @@ extends Node
 
 const SFX_DIR := "res://assets/sound/sfx/"
 const MUSIC_DIR := "res://assets/sound/music/"
+const MUSIC_BUS := "Music"
+const SFX_BUS := "SFX"
 const SFX_POOL_SIZE := 8
 
 var _sfx_players: Array[AudioStreamPlayer] = []
@@ -16,15 +18,27 @@ const LANE_NOTE_MAP := {
 
 
 func _ready() -> void:
+	_ensure_bus(MUSIC_BUS)
+	_ensure_bus(SFX_BUS)
+	
 	for i in SFX_POOL_SIZE:
 		var p := AudioStreamPlayer.new()
-		p.bus = "SFX"
+		p.bus = SFX_BUS
 		add_child(p)
 		_sfx_players.append(p)
 
 	music_player = AudioStreamPlayer.new()
-	music_player.bus = "Music"
+	music_player.bus = MUSIC_BUS
 	add_child(music_player)
+
+
+func _ensure_bus(bus_name: String) -> void:
+	if AudioServer.get_bus_index(bus_name) != -1:
+		return
+	AudioServer.add_bus()
+	var idx := AudioServer.bus_count - 1
+	AudioServer.set_bus_name(idx, bus_name)
+	AudioServer.set_bus_send(idx, "Master")
 
 
 func play_note_hit(lane: int) -> void:
