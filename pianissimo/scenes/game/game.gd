@@ -24,6 +24,8 @@ func _ready() -> void:
 
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
+	
+	AudioManager.play_music("bg_music_01.ogg")
 
 
 # INFO: UI

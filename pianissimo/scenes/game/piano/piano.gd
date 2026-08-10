@@ -117,6 +117,8 @@ func handle_key_input(lane_index: int) -> void:
 
 	var distance = abs((best_note.position.y + best_note.size.y) - hit_line.position.y)
 	var accuracy := ""
+	AudioManager.play_note_hit(lane_index)
+	
 	if distance <= 20.0:
 		accuracy = "perfect"
 	elif distance <= 50.0:
@@ -170,6 +172,7 @@ func _on_auto_tap_timeout() -> void:
 		return
 
 	var lane := best_note.lane
+	AudioManager.play_note_hit(lane)
 	best_note.missed.disconnect(_on_note_missed)
 	best_note.queue_free()
 	note_scored.emit(lane, "auto")

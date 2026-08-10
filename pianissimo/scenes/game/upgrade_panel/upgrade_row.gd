@@ -23,4 +23,5 @@ func refresh() -> void:
 
 
 func _on_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	purchase_requested.emit(upgrade_id)
