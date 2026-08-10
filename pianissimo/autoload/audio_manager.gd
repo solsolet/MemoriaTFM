@@ -4,6 +4,12 @@ const SFX_DIR := "res://assets/sound/sfx/"
 const MUSIC_DIR := "res://assets/sound/music/"
 const SFX_POOL_SIZE := 8
 
+## click1: https://freesound.org/s/751232/
+## click2: https://freesound.org/s/250552/
+## pop: https://freesound.org/s/665183/
+## ding: https://freesound.org/s/204648/
+## bach1: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
+
 var _sfx_players: Array[AudioStreamPlayer] = []
 var _sfx_cache: Dictionary = {}  # file_name -> AudioStream
 var music_player: AudioStreamPlayer
@@ -33,7 +39,7 @@ func play_note_hit(lane: int) -> void:
 
 
 func play_ui_click() -> void:
-	_play_sfx("purchase_click.wav")
+	_play_sfx("click1.wav")
 
 
 func play_music(file_name: String, loop: bool = true) -> void:
