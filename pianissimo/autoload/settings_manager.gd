@@ -14,7 +14,7 @@ var sfx_volume: float = 0.8:
 		AudioManager.set_sfx_volume_linear(sfx_volume)
 
 func _ready() -> void:
-	load_settings()
+	call_deferred("load_settings")
 
 
 func load_settings() -> void:

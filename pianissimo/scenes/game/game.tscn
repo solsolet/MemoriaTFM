@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_7h61r"]
-[ext_resource type="PackedScene" uid="uid://crevbtvnya6aq" path="res://scenes/game/upgrade_panel/upgrade_panel.tscn" id="3_0sr1o"]
+[ext_resource type="PackedScene" path="res://scenes/game/upgrade_panel/upgrade_panel.tscn" id="3_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://bm3bx3x6h1drl" path="res://scenes/game/piano/piano.tscn" id="3_kelw5"]
 
 [node name="Game" type="Control" node_paths=PackedStringArray("notes_label", "piano")]
@@ -40,6 +40,7 @@ theme_override_font_sizes/font_size = 45
 text = "GAME_NOTES"
 
 [node name="Piano" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_kelw5")]
+layout_mode = 2
 
 [node name="UpgradePanel" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_0sr1o")]
 

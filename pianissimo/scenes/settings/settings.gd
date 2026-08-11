@@ -1,7 +1,7 @@
 extends Control
 
-@onready var music_slider: HSlider = $VBoxContainer/MusicSlider
-@onready var sfx_slider: HSlider = $VBoxContainer/SfxSlider
+@onready var music_slider: HSlider = $SafeAreaContainer/VBoxContainer/MusicSlider
+@onready var sfx_slider: HSlider = $SafeAreaContainer/VBoxContainer/SfxSlider
 
 
 func _ready() -> void:
