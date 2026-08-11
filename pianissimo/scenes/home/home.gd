@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_idle_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
+	get_tree().change_scene_to_file(ScenePaths.GAME)
 
 
 func _on_focus_button_pressed() -> void:
@@ -10,7 +10,8 @@ func _on_focus_button_pressed() -> void:
 
 
 func _on_settings_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/settings/settings.tscn")
+	SettingsManager.return_scene_path = ScenePaths.HOME
+	get_tree().change_scene_to_file(ScenePaths.SETTINGS)
 
 
 func _on_achievments_button_pressed() -> void:

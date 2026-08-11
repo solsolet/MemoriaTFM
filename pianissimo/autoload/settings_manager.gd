@@ -1,7 +1,9 @@
 extends Node
-## User preferences: ConfigFile
 
 const SETTINGS_PATH := "user://settings.cfg"
+
+var return_scene_path: String = ScenePaths.HOME
+
 
 var music_volume: float = 0.8:
 	set(value):
@@ -13,6 +15,7 @@ var sfx_volume: float = 0.8:
 		sfx_volume = clamp(value, 0.0, 1.0)
 		AudioManager.set_sfx_volume_linear(sfx_volume)
 
+
 func _ready() -> void:
 	call_deferred("load_settings")
 
@@ -23,7 +26,6 @@ func load_settings() -> void:
 		music_volume = float(config.get_value("audio", "music_volume", 0.8))
 		sfx_volume = float(config.get_value("audio", "sfx_volume", 0.8))
 	else:
-		# No file yet
 		music_volume = music_volume
 		sfx_volume = sfx_volume
 

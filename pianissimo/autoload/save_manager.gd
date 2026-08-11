@@ -4,6 +4,7 @@ extends Node
 const SAVE_PATH := "user://player_save.tres"
 
 var data: PlayerSaveData
+var return_scene_path: String = ScenePaths.HOME
 
 
 func _ready() -> void:

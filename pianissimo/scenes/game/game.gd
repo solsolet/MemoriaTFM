@@ -1,10 +1,11 @@
 extends Control
 
-const NOTE_SCENE = preload("res://scenes/note/note.tscn")
+const NOTE_SCENE = preload(ScenePaths.NOTE)
 const NOTE_HEIGHT = 36.0
 
 
 @export var notes_label: Label
+@export var settings_button: Button
 @export var piano: Piano
 
 var active_notes: Array[Note] = []
@@ -15,6 +16,7 @@ var note_speed: float = 220.0
 
 
 func _ready() -> void:
+	settings_button.pressed.connect(_on_settings_button_pressed)
 	Economy.notes_changed.connect(_on_notes_changed)
 	_on_notes_changed(Economy.notes)
 	
@@ -90,4 +92,10 @@ func _exit_tree() -> void:
 
 func _on_btn_back_pressed() -> void:
 	cleanup()
-	get_tree().change_scene_to_file("res://scenes/home/home.tscn")
+	get_tree().change_scene_to_file(ScenePaths.HOME)
+
+
+func _on_settings_button_pressed() -> void:
+	SettingsManager.return_scene_path = ScenePaths.GAME
+	cleanup()
+	get_tree().change_scene_to_file(ScenePaths.SETTINGS)

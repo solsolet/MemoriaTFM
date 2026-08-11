@@ -3,7 +3,7 @@ class_name Piano
 
 signal note_scored(lane: int, accuracy: String)
 
-const NOTE_SCENE = preload("res://scenes/note/note.tscn")
+const NOTE_SCENE = preload(ScenePaths.NOTE)
 const BLACK_LANE := 1 # lane 1 renders as a black key; generalize later if lane_count grows
 
 @export var note_speed: float = 220.0

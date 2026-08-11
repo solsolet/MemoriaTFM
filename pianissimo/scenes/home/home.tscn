@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3xjva4n8hejr"]
+[gd_scene load_steps=3 format=3 uid="uid://d3xjva4n8hejr"]
 
 [ext_resource type="Script" uid="uid://cjcoqsqh48w3s" path="res://scenes/home/home.gd" id="1_5q1ba"]
+[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_ng36q"]
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -12,17 +13,20 @@ grow_vertical = 2
 script = ExtResource("1_5q1ba")
 
 [node name="SafeAreaContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_ng36q")
 
 [node name="ColorRect" type="ColorRect" parent="SafeAreaContainer"]
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeAreaContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 
 [node name="Title" type="Label" parent="SafeAreaContainer/VBoxContainer"]
@@ -31,6 +35,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 96
 text = "GAME_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="IdleButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1

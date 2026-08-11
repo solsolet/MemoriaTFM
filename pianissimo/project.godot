@@ -30,6 +30,8 @@ NotificationManager="*res://autoload/notification_manager.gd"
 
 window/size/viewport_width=1080
 window/size/viewport_height=1920
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/handheld/orientation=1
 
 [file_customization]
@@ -37,11 +39,12 @@ window/handheld/orientation=1
 folder_colors={
 "res://assets/": "red",
 "res://autoload/": "orange",
-"res://data/": "yellow",
-"res://resources/": "green",
-"res://scenes/": "teal",
-"res://scripts/": "blue",
-"res://ui/": "purple"
+"res://core/": "yellow",
+"res://data/": "green",
+"res://resources/": "teal",
+"res://scenes/": "blue",
+"res://scripts/": "purple",
+"res://ui/": "pink"
 }
 
 [gui]

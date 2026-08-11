@@ -23,4 +23,4 @@ func _on_sfx_changed(value: float) -> void:
 
 
 func _on_back_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/home/home.tscn")
+	get_tree().change_scene_to_file(SettingsManager.return_scene_path)

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxdr2m7yf45q5"]
+[gd_scene load_steps=3 format=3 uid="uid://bxdr2m7yf45q5"]
 
 [ext_resource type="Script" uid="uid://bl2jptd8vxlei" path="res://scenes/settings/settings.gd" id="1"]
+[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_vu5fi"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_vu5fi")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeAreaContainer"]
 layout_mode = 2
