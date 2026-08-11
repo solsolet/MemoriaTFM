@@ -44,6 +44,10 @@ folder_colors={
 "res://ui/": "purple"
 }
 
+[gui]
+
+theme/custom="uid://dt2kc553fw26"
+
 [internationalization]
 
 locale/translations=PackedStringArray("res://assets/i18n/translations.ca.translation", "res://assets/i18n/translations.en.translation", "res://assets/i18n/translations.es.translation")
