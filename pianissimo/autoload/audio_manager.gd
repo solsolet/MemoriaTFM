@@ -12,8 +12,13 @@ var music_player: AudioStreamPlayer
 
 const LANE_NOTE_MAP := {
 	0: "c4.wav",
-	1: "c4#.wav",
+	1: "c#4.wav",
 	2: "d4.wav",
+	3: "d#4.wav", # TODO: Afegir noves tecles
+	4: "e4.wav",
+	5: "f4.wav",
+	6: "f#4.wav",
+	7: "g4.wav",
 }
 
 
