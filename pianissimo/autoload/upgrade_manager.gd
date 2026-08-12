@@ -4,29 +4,38 @@ extends Node
 signal upgrade_purchased(id: String, new_level: int)
 
 const UPGRADES_PATH := "res://data/upgrades/"
+const DEFINITIONS: Array[UpgradeDefinition] = [
+	preload("res://data/upgrades/auto_tap.tres"),
+	preload("res://data/upgrades/multiplier.tres"),
+]
 
 var _definitions: Dictionary = {} # id -> Upgrade Definitions
 
 
 func _ready() -> void:
-	_load_definitions()
+	for def in DEFINITIONS:
+		if def != null and def.id != "":
+			_definitions[def.id] = def
+
+#func _ready() -> void:
+	#_load_definitions()
 
 
-func _load_definitions() -> void:
-	var dir := DirAccess.open(UPGRADES_PATH)
-	if dir == null:
-		push_warning("UpgradeManager: could not open %s" % UPGRADES_PATH)
-		return
-	
-	dir.list_dir_begin()
-	var file_name := dir.get_next()
-	while file_name != "":
-		if not dir.current_is_dir() and file_name.ends_with(".tres"):
-			var res := ResourceLoader.load(UPGRADES_PATH + file_name) as UpgradeDefinition
-			if res != null and res.id != "":
-				_definitions[res.id] = res
-		file_name = dir.get_next()
-	dir.list_dir_end()
+#func _load_definitions() -> void:
+	#var dir := DirAccess.open(UPGRADES_PATH)
+	#if dir == null:
+		#push_warning("UpgradeManager: could not open %s" % UPGRADES_PATH)
+		#return
+	#
+	#dir.list_dir_begin()
+	#var file_name := dir.get_next()
+	#while file_name != "":
+		#if not dir.current_is_dir() and file_name.ends_with(".tres"):
+			#var res := ResourceLoader.load(UPGRADES_PATH + file_name) as UpgradeDefinition
+			#if res != null and res.id != "":
+				#_definitions[res.id] = res
+		#file_name = dir.get_next()
+	#dir.list_dir_end()
 
 
 func get_definition(id: String) -> UpgradeDefinition:

@@ -1,6 +1,6 @@
 extends Control
 
-const NOTE_SCENE = preload(ScenePaths.NOTE)
+const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
 
 
