@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4b7tc787ywhh"]
+
+[ext_resource type="Script" uid="uid://ejltda6v51aj" path="res://scenes/game/stats_panel/stats_panel.gd" id="1_i6aim"]
+
+[node name="StatsPanel" type="Panel"]
+custom_minimum_size = Vector2(50, 230)
+script = ExtResource("1_i6aim")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.27058825, 0.5254902, 0.7411765, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpgradeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Stats"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical_scroll_mode = 0
+
+[node name="CardsRow" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12

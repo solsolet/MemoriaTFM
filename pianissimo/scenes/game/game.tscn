@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cn6a42umr04wt"]
+[gd_scene load_steps=6 format=3 uid="uid://cn6a42umr04wt"]
 
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_7h61r"]
 [ext_resource type="PackedScene" uid="uid://crevbtvnya6aq" path="res://scenes/game/upgrade_panel/upgrade_panel.tscn" id="3_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://bm3bx3x6h1drl" path="res://scenes/game/piano/piano.tscn" id="3_kelw5"]
+[ext_resource type="PackedScene" uid="uid://d4b7tc787ywhh" path="res://scenes/game/stats_panel/stats_panel.tscn" id="5_lfrn8"]
 
 [node name="Game" type="Control" node_paths=PackedStringArray("notes_label", "settings_button", "piano")]
 layout_mode = 3
@@ -59,6 +60,9 @@ text = "⚙"
 layout_mode = 2
 
 [node name="UpgradePanel" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_0sr1o")]
+layout_mode = 2
+
+[node name="StatsPanel" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("5_lfrn8")]
 layout_mode = 2
 
 [connection signal="pressed" from="SafeAreaContainer/VBoxContainer/TopBar/BackButton" to="." method="_on_btn_back_pressed"]

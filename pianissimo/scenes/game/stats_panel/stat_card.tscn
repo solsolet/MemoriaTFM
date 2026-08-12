@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dss56dhhaoqxh"]
+
+[ext_resource type="Script" uid="uid://bykng2kjgnvwh" path="res://scenes/game/stats_panel/stat_card.gd" id="1_hykih"]
+
+[node name="StatCard" type="Button"]
+custom_minimum_size = Vector2(140, 170)
+script = ExtResource("1_hykih")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="IconRect" type="ColorRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.60718703, 0.8164007, 1, 1)
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Upgrade"
+horizontal_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Lv 0"
+horizontal_alignment = 1
+
+[node name="CostLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Cost"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

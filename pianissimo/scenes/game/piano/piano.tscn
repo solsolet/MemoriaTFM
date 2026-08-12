@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bm3bx3x6h1drl"]
+[gd_scene load_steps=2 format=3 uid="uid://bm3bx3x6h1drl"]
 
 [ext_resource type="Script" uid="uid://b54bfjn6jqskw" path="res://scenes/game/piano/piano.gd" id="1"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_black_key"]
-bg_color = Color(0.08, 0.08, 0.08, 1)
 
 [node name="Piano" type="Control"]
 custom_minimum_size = Vector2(450, 450)
@@ -43,7 +40,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="KeyRow" type="Control" parent="."]
-custom_minimum_size = Vector2(0, 500)
+custom_minimum_size = Vector2(0, 450)
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -52,16 +49,3 @@ anchor_bottom = 1.0
 offset_top = -8.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="Key0" type="Button" parent="KeyRow"]
-layout_mode = 0
-
-[node name="Key1" type="Button" parent="KeyRow"]
-layout_mode = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxFlat_black_key")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_black_key")
-theme_override_styles/hover = SubResource("StyleBoxFlat_black_key")
-
-[node name="Key2" type="Button" parent="KeyRow"]
-layout_mode = 0
