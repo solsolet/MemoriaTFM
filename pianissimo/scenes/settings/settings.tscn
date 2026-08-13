@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bl2jptd8vxlei" path="res://scenes/settings/settings.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_vu5fi"]
 
-[node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "reset_button", "reset_confirm_dialog")]
+[node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "music_mute_button", "sfx_mute_button", "reset_button", "reset_confirm_dialog")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,6 +13,8 @@ grow_vertical = 2
 script = ExtResource("1")
 music_slider = NodePath("SafeAreaContainer/VBoxContainer/MusicSlider")
 sfx_slider = NodePath("SafeAreaContainer/VBoxContainer/SfxSlider")
+music_mute_button = NodePath("SafeAreaContainer/VBoxContainer/MusicMuteButton")
+sfx_mute_button = NodePath("SafeAreaContainer/VBoxContainer/SfxMuteButton")
 reset_button = NodePath("SafeAreaContainer/VBoxContainer/ResetButton")
 reset_confirm_dialog = NodePath("SafeAreaContainer/VBoxContainer/ConfirmationDialog")
 
@@ -43,6 +45,10 @@ layout_mode = 2
 max_value = 1.0
 step = 0.05
 
+[node name="MusicMuteButton" type="CheckButton" parent="SafeAreaContainer/VBoxContainer"]
+layout_mode = 2
+text = "SETTINGS_MUTE"
+
 [node name="SfxLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
@@ -52,6 +58,10 @@ text = "SETTINGS_SFX"
 layout_mode = 2
 max_value = 1.0
 step = 0.05
+
+[node name="SfxMuteButton" type="CheckButton" parent="SafeAreaContainer/VBoxContainer"]
+layout_mode = 2
+text = "SETTINGS_MUTE"
 
 [node name="DataLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1

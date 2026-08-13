@@ -20,6 +20,7 @@ PAUSE_HOME,Inici,Inicio,Home
 SETTINGS,Configuració,Configuración,Settings
 SETTINGS_MUSIC,Música,Música,Music
 SETTINGS_SFX,SFX,SFX,SFX
+SETTINGS_MUTE, Silenciar, Silenciar, Mute
 SETTINGS_DATA, Dades, Datos, Data
 SETTINGS_RESET, Resetejar progrés, Resetear progreso, Reset progress
 
