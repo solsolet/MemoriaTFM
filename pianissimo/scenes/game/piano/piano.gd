@@ -121,6 +121,9 @@ func _layout_keys() -> void:
 		button.position = Vector2((after_index + 1) * white_width - black_width * 0.5, 0)
 		button.size = Vector2(black_width, black_height)
 		button.move_to_front()
+	
+	hit_line.position = Vector2(0, key_row.position.y)
+	hit_line.size.x = key_row.size.x
 
 
 func _setup_timers() -> void:

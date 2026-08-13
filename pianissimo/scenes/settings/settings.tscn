@@ -33,11 +33,13 @@ layout_mode = 2
 [node name="SettingsLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+theme_type_variation = &"TitleLabel"
 text = "SETTINGS"
 
 [node name="MusicLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "SETTINGS_MUSIC"
 
 [node name="MusicSlider" type="HSlider" parent="SafeAreaContainer/VBoxContainer"]
@@ -52,6 +54,7 @@ text = "SETTINGS_MUTE"
 [node name="SfxLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "SETTINGS_SFX"
 
 [node name="SfxSlider" type="HSlider" parent="SafeAreaContainer/VBoxContainer"]
@@ -66,6 +69,7 @@ text = "SETTINGS_MUTE"
 [node name="DataLabel" type="Label" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "SETTINGS_DATA"
 
 [node name="ResetButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]

@@ -45,10 +45,14 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [resource]
-default_font_size = 42
+default_font_size = 36
 Button/styles/disabled = SubResource("StyleBoxFlat_6tukj")
 Button/styles/hover = SubResource("StyleBoxFlat_tsbh2")
 Button/styles/normal = SubResource("StyleBoxFlat_g1fjd")
 Button/styles/pressed = SubResource("StyleBoxFlat_3xb56")
 Label/colors/font_color = Color(0.9607843, 0.9411765, 0.9019608, 1)
 Label/constants/line_spacing = 5
+Title2Label/base_type = &"Label"
+Title2Label/font_sizes/font_size = 60
+TitleLabel/base_type = &"Label"
+TitleLabel/font_sizes/font_size = 90
