@@ -40,29 +40,36 @@ vertical_alignment = 1
 
 [node name="IdleButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "HOME_IDLE"
 
 [node name="FocusButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 theme_override_font_sizes/font_size = 45
 text = "HOME_FOCUS"
 
 [node name="SettingsButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 45
 text = "SETTINGS"
 
 [node name="AchievmentsButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "HOME_ACHIEVEMENTS"
 

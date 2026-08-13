@@ -1,9 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://4q2dd8mo88ah"]
+[gd_scene load_steps=6 format=3 uid="uid://4q2dd8mo88ah"]
 
 [ext_resource type="Script" uid="uid://b2b0a55m8cfvo" path="res://autoload/stat_manager.gd" id="1_p1373"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="2_j6or2"]
 [ext_resource type="Resource" uid="uid://ix4k64vlovk8" path="res://data/stats/keyboard.tres" id="3_ddre8"]
+[ext_resource type="Resource" uid="uid://bpagjsovsmxmp" path="res://data/stats/velocity.tres" id="4_mmus3"]
+[ext_resource type="Resource" uid="uid://dds7lied185et" path="res://data/stats/precision.tres" id="5_ku6ok"]
 
 [node name="StatManager" type="Node"]
 script = ExtResource("1_p1373")
-definitions = Array[ExtResource("2_j6or2")]([ExtResource("3_ddre8")])
+definitions = Array[ExtResource("2_j6or2")]([ExtResource("3_ddre8"), ExtResource("4_mmus3"), ExtResource("5_ku6ok")])
