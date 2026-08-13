@@ -1,0 +1,10 @@
+[gd_scene load_steps=5 format=3 uid="uid://clkqu0elnq6ov"]
+
+[ext_resource type="Script" uid="uid://duqe3xuqpmc85" path="res://autoload/upgrade_manager.gd" id="1_ot2vy"]
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="2_0g3lt"]
+[ext_resource type="Resource" uid="uid://i1wonfcomvjo" path="res://data/upgrades/auto_tap.tres" id="3_nkogt"]
+[ext_resource type="Resource" uid="uid://du1i8sxnd3mwa" path="res://data/upgrades/multiplier.tres" id="4_o3imi"]
+
+[node name="UpgradeManager" type="Node"]
+script = ExtResource("1_ot2vy")
+definitions = Array[ExtResource("2_0g3lt")]([ExtResource("3_nkogt"), ExtResource("4_o3imi")])

@@ -2,15 +2,13 @@ extends Node
 
 signal stat_purchased(id: String, new_level: int)
 
-const DEFINITIONS: Array[StatDefinition] = [
-	preload("res://data/stats/keyboard.tres"),
-]
+@export var definitions: Array[UpgradeDefinition] = []
 
 var _definitions: Dictionary = {}
 
 
 func _ready() -> void:
-	for def in DEFINITIONS:
+	for def in definitions:
 		if def != null and def.id != "":
 			_definitions[def.id] = def
 
