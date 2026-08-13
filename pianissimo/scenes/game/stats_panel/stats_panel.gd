@@ -17,6 +17,10 @@ func _ready() -> void:
 	Economy.notes_changed.connect(_on_notes_changed)
 	StatManager.stat_purchased.connect(_on_stat_purchased)
 
+
+func _on_purchase_requested(id: String) -> void:
+	StatManager.purchase(id)
+
 func _on_stat_purchased(id: String, _new_level: int) -> void:
 	if _cards.has(id):
 		_cards[id].refresh()

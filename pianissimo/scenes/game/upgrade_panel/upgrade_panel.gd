@@ -9,7 +9,7 @@ var _cards: Dictionary = {}
 
 func _ready() -> void:
 	for id in UpgradeManager.get_all_ids():
-		print("UpgradePanel size: ", size, " | cards: ", cards_container.get_child_count())
+		#print("UpgradePanel size: ", size, " | cards: ", cards_container.get_child_count())
 		var card := UPGRADE_CARD_SCENE.instantiate() as UpgradeCard
 		cards_container.add_child(card)
 		card.setup(id)
@@ -17,6 +17,7 @@ func _ready() -> void:
 
 	Economy.notes_changed.connect(_on_notes_changed)
 	UpgradeManager.upgrade_purchased.connect(_on_upgrade_purchased)
+
 
 func _on_purchase_requested(id: String) -> void:
 	UpgradeManager.purchase(id)

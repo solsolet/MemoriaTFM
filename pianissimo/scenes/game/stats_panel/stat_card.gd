@@ -8,9 +8,11 @@ var stat_id: String = ""
 @onready var level_label: Label = $VBoxContainer/LevelLabel
 @onready var cost_label: Label = $VBoxContainer/CostLabel
 
+
 func setup(id: String) -> void:
 	stat_id = id
 	refresh()
+
 
 func refresh() -> void:
 	var def := StatManager.get_definition(stat_id)

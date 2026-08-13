@@ -3,8 +3,6 @@ extends Node
 
 signal upgrade_purchased(id: String, new_level: int)
 
-const UPGRADES_PATH := "res://data/upgrades/"
-
 @export var definitions: Array[UpgradeDefinition] = []
 
 var _definitions: Dictionary = {} # id -> Upgrade Definitions

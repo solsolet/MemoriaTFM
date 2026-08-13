@@ -16,12 +16,33 @@ const NOTE_SEQUENCE := ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A
 var key_buttons: Array[Button] = []
 var spawn_timer: Timer
 var auto_tap_timer: Timer
+
+# Custom Button Styles
 var _black_key_style: StyleBoxFlat
+var _white_key_normal: StyleBoxFlat
+var _white_key_pressed: StyleBoxFlat
+var _black_key_normal: StyleBoxFlat
+var _black_key_pressed: StyleBoxFlat
 
 
 func _ready() -> void:
-	_black_key_style = StyleBoxFlat.new()
-	_black_key_style.bg_color = Color(0.08, 0.08, 0.08, 1)
+	_white_key_normal = StyleBoxFlat.new()
+	_white_key_normal.bg_color = Color(0.96, 0.96, 0.93, 1)
+	_white_key_normal.border_color = Color(0.75, 0.75, 0.72, 1)
+	_white_key_normal.border_width_bottom = 2
+	_white_key_normal.corner_radius_bottom_left = 4
+	_white_key_normal.corner_radius_bottom_right = 4
+
+	_white_key_pressed = _white_key_normal.duplicate()
+	_white_key_pressed.bg_color = Color(0.90, 0.80, 0.45, 1)  # gold tint on tap
+
+	_black_key_normal = StyleBoxFlat.new()
+	_black_key_normal.bg_color = Color(0.08, 0.08, 0.08, 1)
+	_black_key_normal.corner_radius_bottom_left = 4
+	_black_key_normal.corner_radius_bottom_right = 4
+
+	_black_key_pressed = _black_key_normal.duplicate()
+	_black_key_pressed.bg_color = Color(0.55, 0.45, 0.15, 1)  # gold tint on tap
 
 	_build_keys()
 	key_row.resized.connect(_layout_keys)
@@ -51,10 +72,15 @@ func _build_keys() -> void:
 		var button := Button.new()
 		button.name = "Key%d" % i
 		if _is_black_key(i):
-			button.add_theme_stylebox_override("normal", _black_key_style)
-			button.add_theme_stylebox_override("hover", _black_key_style)
-			button.add_theme_stylebox_override("pressed", _black_key_style)
+			button.add_theme_stylebox_override("normal", _black_key_normal)
+			button.add_theme_stylebox_override("hover", _black_key_normal)
+			button.add_theme_stylebox_override("pressed", _black_key_pressed)
 			button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
+		else:
+			button.add_theme_stylebox_override("normal", _white_key_normal)
+			button.add_theme_stylebox_override("hover", _white_key_normal)
+			button.add_theme_stylebox_override("pressed", _white_key_pressed)
+			button.add_theme_color_override("font_color", Color(0.1, 0.1, 0.1, 1))
 		key_row.add_child(button)
 		key_buttons.append(button)
 		button.pressed.connect(handle_key_input.bind(i))
@@ -200,7 +226,7 @@ func _on_auto_tap_timeout() -> void:
 		return
 
 	var lane := best_note.lane
-	AudioManager.play_note_hit(lane)
+	#AudioManager.play_note_hit(lane) # WARNING: Quan vagen molt ràpides les notes crec que molestarà
 	best_note.missed.disconnect(_on_note_missed)
 	best_note.queue_free()
 	note_scored.emit(lane, "auto")
