@@ -25,3 +25,9 @@ func save_data() -> void:
 	var err := ResourceSaver.save(data, SAVE_PATH)
 	if err != OK:
 		push_warning("SaveManager: save failed (error %d)" % err)
+
+
+func reset_data() -> void:
+	data = PlayerSaveData.new()
+	data.last_save_time = int(Time.get_unix_time_from_system())
+	save_data()

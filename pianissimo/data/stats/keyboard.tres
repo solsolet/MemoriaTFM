@@ -8,5 +8,5 @@ id = "keyboard"
 display_name = "Kayboard"
 base_cost = 50
 cost_growth = 40
-max_level = 5
+max_level = 9
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

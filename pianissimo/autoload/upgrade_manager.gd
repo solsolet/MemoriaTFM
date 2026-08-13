@@ -32,7 +32,7 @@ func get_cost(id: String) -> int:
 	var def := get_definition(id)
 	if def == null:
 		return 0
-	return def.base_cost + get_level(id) * def.cost_growth
+	return int(round(def.base_cost * pow(def.cost_multiplier, get_level(id))))
 
 
 func can_purchase(id: String) -> bool:
