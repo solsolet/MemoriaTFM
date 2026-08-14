@@ -12,3 +12,5 @@
 **BPM**: *Beats per minute*, pulsacions per minut.
 **UI**: *User Interface*, interfície d'usuari.
 **UX**: *User eXperience*, experiència d'usuari.
+**GDD**: *Game Design Document*.
+**SO**: Sistema Operatiu.

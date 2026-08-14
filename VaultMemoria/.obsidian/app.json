@@ -12,7 +12,15 @@
     "Changelog",
     "Zotero",
     "VSCode",
-    "Tahoe"
+    "Tahoe",
+    "autoloads",
+    "scenes",
+    "assets",
+    "settings",
+    "SaveManager",
+    "SaveManager",
+    "UpgradeManager",
+    "HBoxContainer"
   ],
   "alwaysUpdateLinks": true
 }

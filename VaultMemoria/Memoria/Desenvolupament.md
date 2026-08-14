@@ -10,9 +10,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 ### Changelog
 
-%% TODO : vore si dir-ho així o posar un nom adaptat %%
 %% TODO : vore si fer-ho amb títols o a mode taula %%
-%% TODO : organitzar Mode taula al final %%
 
 #### v0.1.0
 
@@ -100,7 +98,7 @@ S'ha creat un projecte en la versió de Godot 4.5.1. L'objectiu principal en aqu
 
 Es pot veure com aquesta plantilla senzilla s'ha pogut provar en dispositius Android i iOS reals.
 
-![Exportació del projecte de Godot a Android i iOS respectivament](Memoria/Assets/Pianissimo/Pianissimo-It1.png){height=6cm}
+![Exportació del projecte de Godot a Android i iOS respectivament](Pianissimo-It1.png){height=6cm}
 
 En veure que funciona en dispositius reals, s'ha preparat correctament la configuració d'exportació. En el cas d'Android s'ha fet les següents tasques:
 
@@ -136,61 +134,111 @@ No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut
 
 ### Iteració 2
 
+Aquesta iteració comprén des del 5 al 14 d'agost de 2026.
+Aquesta iteració s'ha centrat a aconseguir una versió del joc bàsica, tipus *gray box*. De fer-ho així ha permés programar totes les mecàniques i sistemes que ha de tindre el joc i després facilita iterar per a millorar l'aspecte del joc i generar contingut.
+
 #### Diagrames i mockups
 
-TODO : Posar bé
+%%TODO : explicar i passat a net%%
 
-Botó reset del progrés amb dialeg de confirmació. Es crear un nou Savenoseque i giardarlo pel que tenim. com a tal nmo borra només guardes un buit.
+![[Diagrama_Singleton_Paper.jpg]]
 
-Canvi del creixement del cost de les millores i estadístiques. Abans era lineal amb `return def.base_cost + get_level(id) * def.cost_growth` en la funció de `get_cost`dels managers de Update i Stat i ara és `return int(round(def.base_cost * pow(def.cost_multiplier, get_level(id))))`.
+![[Diagrama_SistemesGame_It2_Paper.jpg]]
 
-Aquest canvi s'aproxima més a com fa *idle* el cookie clicker, que el seu creisement es de 1.15 i nosaltres el farem de 1.12, el podrem anar variant. Aquest creixement vol dir que cada nova compra costa un 12% més cada vegada.
+![[Pianissimo_MockupUI_paper.jpg]]
 
-Afegir botons de mute yass
+![[Pianissimo_MockupUI_paper2.jpg]]
 
-TODO : millorar margin d'esquerra a dreta que ix tot molt ample
+#### Projecte Godot
 
-Tecles blanques piano fallen perquè el tema se sobreescriu. Canvis en el codi per a fer-ho a mà. S'ha canviat de posició la hitline en lloc de bai a dalt, perquè si l'altura de la tecla pot canviar les notes si passen per darrere del teclat perdem la percepció de quan fer tap a temps. Com en el codi s'usa la posició absoluta no hi ha cap problema. De fet tambe quan encertes la nota s'allibera. S'ha arreglat amb checkar Clipiing en l'inspector de `NotesLayer` de `piano.tscn`.
+Després de pensar quin aspecte tindria el joc i quins sistemes hauria de tindre, es va començar amb la creació de les escenes **home** i **game**.
 
-Separació de Piano en 3: piano sap de la lògica, piano_keyboard s'encarrega de la construcció del teclat i note_fiel sap tot lo de les notes.
+Per a mantindre-ho simple *home* només tindria botons que es portaren a les parts de l'aplicació necessàries i *game* tota la lògica del joc *idle*.
+
+Entre els botons de *home* es troben:
+
+- **Idle**: porta a *game*.
+- **Focus**: portarà al mode Assaig. S'ha quedat en aquest nom temporal, però segurament canvie a assaig per a mantenir l'estètica musical.
+- **Configuració**: porta a *settings*.
+- **Assoliments**: portarà als assoliments, segons si és per a iOS o Android canviarà segons es connecte amb la *store*.
+
+A *game* trobem el piano, les millores i estadístiques, el camp de notes i el marcador de notes junt els botons d'anar a *home* o *settings*. Per a veure el detall de com s'ha implementat es pot consultar el [GDD](GDD) a l'annex.
+
+En eixe moment es va decidir una estructura de carpetes inicial, on es podia veure *scenes*, *assets*, *scripts*, *ui* i *autoloads*. Després es mostrarà l'estat final de les carpetes en aquesta iteració, ja que segons les necessitats del moment es van anar creant més.
+%% TODO : posar enllaç figura foto carpetes%%
+
+Continuant amb la implementació, una vegada estaven les escenes, alguns elements de la interfície (botons, etiquetes...) es va preparar la **internacionalització**, perquè era una tasca senzilla i es podria provar el seu funcionament amb el poc text que es tenia de moment.
+%%TODO : posar enllaç internacionalització al GDD%%
+
+Ja clavant-nos en el desenvolupament com a tal, les mecàniques bàsiques inicials que volia aconseguir eren:
+
+- Un teclat (servia en poques notes) que en polsar sonara una nota
+- Un sistema que generara notes a l'estil *Magik Piano* que en polsar-les quan estiguen a prop del teclat es guanyen punts, **notes**.
+- Un sistema econòmic per intercanviar notes per millores del tipus:
+	- **Millores** que permetera guanyar més notes. Cada millora tindria un cost de notes associat. De moment s'havia pensat en una de fer *tap automàticament* (i així tenir la mecànica *idle*) i una de *multiplicador* de notes per nota ben polsada.
+	- **Estadístiques** del jugador que permetera facilitar l'obtenció de notes. Com les millores, però semànticament diferent. De les planejades en el [Ten-Pager](Ten-Pager), primer s'implementarien la del teclat, velocitat i precisió.
+- Persistència de les dades al tancar i obrir el joc així com seguir guanyant notes quan no s'està en l'aplicació (i seguir la mecànica *idle*).
+
+Per a fer-ho, no es va elegir la manera més intel·ligent i calculada de programar, sinó que es va tirar per la força bruta per a veure si es podia i quedava bé el prototip, abans de perdre el temps dissenyant i implementant sistemes que potser no resultaren viables.
+
+El codi resultant era espagueti, no respectava cap principi ACID era insostenible a llarg termini. Game tenia el fitxer de codi de tot i ja es pot intuir com devia ser de llarg. El seu propòsit va servir per a determinar que efectivament la idea era viable, atractiva inclús. De refactoritzar el codi correctament es podria deixar una base sòlida on anar afegint noves millores i estadístiques per fer de la part *idle* duradora.
+
+![[Pianissimo_Home1_It2.jpg]]
+
+![[Pianissimo_Game1_It2.jpg]]
+
+En aquest punt es contemplava que els **assoliments** haurien de tenir importància per a sincronitzar amb les millores així com ho fa *Cookie Clicker*, per exemple, quan compres una millora per primer cop aconsegueixes un assoliment nou. La dificultat d'implementar el sistema d'assoliments ara és que s'hauria de fer una façana per a delegar segons el SO en l'API de la *store* corresponent. Mentre que Android sí que es dominava millor gràcies a un anterior projecte, iOS era el gran desconegut i per a deixar-ho a mitges o tardar molt a incloure-ho en el prototip de *gray box*, millor deixar-ho per a una següent iteració.
+
+Centrant-nos ara en la refactorització, primer es va plantejar fer uns **managers** que foren *autoloads*, així es diu en Godot als **Singleton**. Aquest patró de disseny per a un joc senzill com el meu és molt convenient per a la majoria dels sistemes, ja que tinc una única economia, un nombre de dades del jugador limitat per a guardar i carregar al llarg de la partida, un sistema d'àudio centralitzat i façanes per a adaptar el joc als diferents SO, com seria per al cas dels assoliments i notificacions.
+
+Els fitxers es van crear buits primer i després es van posar com a *Autoloads*. Es va començar per aquests:
+
+- **SaveManager**: controla el que es guarda/carrega en *PlayerSaveData*.
+- **Economy**: controla les notes que s'afigen o es gasten quan es compren o s'obtenen. Depén de *SaveManager*. Actua com una API que controla la quantitat de notes.
+- **UpgradeManager**: controla tot allò relacionat amb les millores, de manera que té tots els mètodes per a obtenir dades i comprar millores. Va tot amb el seu ID.
+
+A `game.gd`, que abans era un monòlit, s'ha adaptat per a llevar-li la funcionalitat de guardar que tenia i s'ha traspassat a `SaveManager.save_data`. L'abstracció continua amb les millores, que s'han separat en una escena que actua com a panell i cada *Millora* va tenir el seu propi *HBoxContainer* i més tard una aparença més de *carta*.
+
+Posteriorment, les *Estadístiques* copien l'estructura de les *Millores* i prenen la mateixa forma. Pel moment encara que siguen iguals a nivell de codi, la seua definició conceptual no és la mateixa, és per això que és una decisió de disseny mantenir-les per separat. Encara més, de les *estadístiques* que s'han pogut implementar podrien passar per *Millores*, però les que falten per implementar potser necessiten més especificitat en la seua declaració. Si en un futur no fos així es podria tornar a refactoritzar i afegir algun atribut que determine si és *millora* o *estadística*.
+
+També s'ha refactoritzat l'escena *Note* de manera cada nota és responsable del seu moviment, no ho ha de fer `game.gd` fotograma a fotograma. Si algú necessita totes les notes pot fer `notes_layer.get_children()`
+
+Es va crear l'escena de settings amb el seu codi associat. La idea en aquesta iteració és poder controlar el volum de l'àudio i esborrar les dades del jugador (ajudaria també en el testatge de l'aplicació). El botó de *reset* del progrés s'ha implementat amb diàleg de confirmació.
+
+Iterant amb l'àudio, ja que estava, vaig afegir un CheckButtons per a mutejar els efectes o la música. Està bé deixar-li l'opció a l'usuari en lloc de tenir que baixar els sliders al mínim.
+
+Un nou paradigma de l'evolució del joc va ser que en principi s'havia apostat per una evolució lineal, però en diversos testejos es veia l'errada: un munt de notes que no pots ni gastar-te-les totes en *millores*. Va ser aleshores el moment de revisar el funcionament dels *idles*, el seu creixement sol ser exponencial, així que inspirant-nos de nou en el Cookie Clicker, es va fer el canvi. Abans el lineal feia `return def.base_cost + get_level(id) * def.cost_growth` en la funció de `get_cost`dels *managers* de *Update* i *Stat*, i el canvi va ser a `return int(round(def.base_cost * pow(def.cost_multiplier, get_level(id))))`.
+
+*Cookie Clicker* té un creixement del 15% a cada compra de *Millores*, nosaltres el farem d'un 12% més cada vegada.
+
+Finalment,  es van fer uns xicotets canvis en la UI, que el propòsit era fer-la personalitzada. Els més importants va ser respectar les *safe area* del mòbil, que no interferira amb els *action button* o el *notch* en cas de tenir i tenir un xicotet marge a l'esquerra i dreta.
+
+També es va ajustar el *Display* en les *settings* del projecte, ja que la diferència entre l'emulador de Godot i el telèfon era abismal, amb molta disparitat en les mides.
+%%TODO : posar settings de Dsiplay%%
+
+Les tecles blanques del piano fallàven perquè el tema se sobreescrivia. La solució va ser fer canvis en el codi per a fer-ho manualment.
+
+Es va canviar de posició la *hit-line* del teclat: en lloc de baix es va passar a dalt, perquè si l'altura de la tecla pot canviar les notes si passen per darrere del teclat perdem la percepció de quan fer *tap* a temps. Com en el codi s'usa la posició absoluta no hi ha cap problema. De fet, també quan encertes la nota s'allibera. S'ha arreglat amb *checkar* el *Cliping* en l'inspector de `NotesLayer` de `piano.tscn`.
+
+Tornant a la refactorització quan la UI tenia millor pinta, es va fer la separació de Piano en 3: `piano` sap de la lògica, `piano_keyboard` s'encarrega de la construcció del teclat i `note_field` sap tot el relacionat amb les notes.
 
 Upgrades tipo card sí
 
-Stats en procés, piano convertible fet!
-
 Millorar bugs, centrlaitzar path, botons en estil, settigns entrables dins del joc.
 
+%% TODO : fer edit i posar-les juntes %%
+
+![[Pianissimo_Home2_It2.jpg]]
+
+![[Pianissimo_Game2_It2.jpg]]
+
 Millorar diferencia safe area, no esta mostrantse correctmaent per que els pixels físics no corresponene en en els lógics:
-I ara també per a saber com funciona el piano:
+I ara també per a saber com funciona el piano
 
-lol
+### Iteració 3
 
-Refactorització per a previndre que el prototip grayboxed tinga tota la logica en game, per a provar pot estar bé, pero comença a ser inentendible.
+Aquesta iteració comprén del 14 al 20 d'agost de 2026.
 
-Introducció de singletons per als managers que ho necessiten. Es creen buits. Es posen com a Autoload.
+#### Projecte Godot
 
-- SaveManager: controla el que es guarda/carrega en PlayerSaveData.
-- Economy: controla les notes que s'afigen o es gasten quan es compren o s'obtenen. Depén de SaveManager. Actua com una API que controla la quantitat de notes.
-- UpgradeManager: controla tot lo relacionat amb les upgrades, de manera que té tots els mètodes per a obtindre dades i comprar upgrades. Va tot amb el seu ID.
-
-Les dependències fan que l'ordre dels Autoloads importe, si no donaria un error.
-`game.gd` se li ha llevat tot lo de guardar que tenia i ara es cridra a `SaveManager.save_data` de moment.
-
-Més abstracció per a les Upgrades, s'ha separat tot el que hi havia l'escena de Game per una panell per a les Upgrades que es una escena de per si i cada Upgrade té el seu propi HBoxContainer.
-
-DONE : passar les millores d'horitzontal a vertical i parametritzar posar icona
-TODO : internacionalitzar cadenes de text dels botos i millores
-
-Millorar escen Note de manera cada nota es resposnable del seu moviment, no ho ha de fer game frame a frame. Si algu necessita totes les notes pot fer `notes_layer.get_children()`
-
-Credits audio de prova:
-- C4: https://freesound.org/s/794435/
-- C#4: https://freesound.org/s/794434/
-- D4: https://freesound.org/s/794458/
-- Pack: https://freesound.org/p/43099/
-- click1: https://freesound.org/s/751232/
-- click2: https://freesound.org/s/250552/
-- pop: https://freesound.org/s/665183/
-- ding: https://freesound.org/s/204648/
-- bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
-
+Fer Focus mode
