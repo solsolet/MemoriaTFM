@@ -21,23 +21,26 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="IconRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(0, 70)
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 mouse_filter = 2
 color = Color(0.831, 0.686, 0.216, 1)
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Upgrade"
 horizontal_alignment = 1
 
 [node name="LevelLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Lv 0"
 horizontal_alignment = 1
 
 [node name="CostLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Cost"
 horizontal_alignment = 1
 

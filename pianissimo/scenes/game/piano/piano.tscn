@@ -10,7 +10,6 @@ layout_mode = 3
 anchors_preset = 0
 size_flags_vertical = 3
 script = ExtResource("1")
-note_speed = null
 
 [node name="GameBackground" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(20, 50)

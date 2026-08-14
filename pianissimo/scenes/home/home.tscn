@@ -25,11 +25,15 @@ script = ExtResource("2_ng36q")
 [node name="ColorRect" type="ColorRect" parent="SafeAreaContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SafeAreaContainer"]
+[node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 
-[node name="Title" type="Label" parent="SafeAreaContainer/VBoxContainer"]
+[node name="Spacer" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="SafeAreaContainer/Layout"]
 auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"TitleLabel"
@@ -38,7 +42,14 @@ text = "GAME_TITLE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="IdleButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
+[node name="ButtonContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.0
+
+[node name="IdleButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
@@ -47,7 +58,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "HOME_IDLE"
 
-[node name="FocusButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
+[node name="FocusButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
@@ -56,7 +67,7 @@ size_flags_vertical = 0
 theme_override_font_sizes/font_size = 45
 text = "HOME_FOCUS"
 
-[node name="SettingsButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
+[node name="SettingsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
@@ -64,7 +75,7 @@ size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 45
 text = "SETTINGS"
 
-[node name="AchievmentsButton" type="Button" parent="SafeAreaContainer/VBoxContainer"]
+[node name="AchievmentsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
@@ -73,7 +84,11 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "HOME_ACHIEVEMENTS"
 
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/IdleButton" to="." method="_on_idle_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/FocusButton" to="." method="_on_focus_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/VBoxContainer/AchievmentsButton" to="." method="_on_achievments_button_pressed"]
+[node name="BottomSpacer" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/IdleButton" to="." method="_on_idle_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/FocusButton" to="." method="_on_focus_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AchievmentsButton" to="." method="_on_achievments_button_pressed"]

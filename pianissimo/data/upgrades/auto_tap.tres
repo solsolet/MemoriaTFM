@@ -6,5 +6,5 @@
 script = ExtResource("1_3ow8b")
 id = "auto_tap"
 display_name = "Auto Tap"
-cost_growth = 8
+base_cost = 20
 metadata/_custom_type_script = "uid://ugia523xnwc0"
