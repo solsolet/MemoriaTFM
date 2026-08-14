@@ -138,3 +138,59 @@ No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut
 
 #### Diagrames i mockups
 
+TODO : Posar bé
+
+Botó reset del progrés amb dialeg de confirmació. Es crear un nou Savenoseque i giardarlo pel que tenim. com a tal nmo borra només guardes un buit.
+
+Canvi del creixement del cost de les millores i estadístiques. Abans era lineal amb `return def.base_cost + get_level(id) * def.cost_growth` en la funció de `get_cost`dels managers de Update i Stat i ara és `return int(round(def.base_cost * pow(def.cost_multiplier, get_level(id))))`.
+
+Aquest canvi s'aproxima més a com fa *idle* el cookie clicker, que el seu creisement es de 1.15 i nosaltres el farem de 1.12, el podrem anar variant. Aquest creixement vol dir que cada nova compra costa un 12% més cada vegada.
+
+Afegir botons de mute yass
+
+TODO : millorar margin d'esquerra a dreta que ix tot molt ample
+
+Tecles blanques piano fallen perquè el tema se sobreescriu. Canvis en el codi per a fer-ho a mà. S'ha canviat de posició la hitline en lloc de bai a dalt, perquè si l'altura de la tecla pot canviar les notes si passen per darrere del teclat perdem la percepció de quan fer tap a temps. Com en el codi s'usa la posició absoluta no hi ha cap problema. De fet tambe quan encertes la nota s'allibera. S'ha arreglat amb checkar Clipiing en l'inspector de `NotesLayer` de `piano.tscn`.
+
+Separació de Piano en 3: piano sap de la lògica, piano_keyboard s'encarrega de la construcció del teclat i note_fiel sap tot lo de les notes.
+
+Upgrades tipo card sí
+
+Stats en procés, piano convertible fet!
+
+Millorar bugs, centrlaitzar path, botons en estil, settigns entrables dins del joc.
+
+Millorar diferencia safe area, no esta mostrantse correctmaent per que els pixels físics no corresponene en en els lógics:
+I ara també per a saber com funciona el piano:
+
+lol
+
+Refactorització per a previndre que el prototip grayboxed tinga tota la logica en game, per a provar pot estar bé, pero comença a ser inentendible.
+
+Introducció de singletons per als managers que ho necessiten. Es creen buits. Es posen com a Autoload.
+
+- SaveManager: controla el que es guarda/carrega en PlayerSaveData.
+- Economy: controla les notes que s'afigen o es gasten quan es compren o s'obtenen. Depén de SaveManager. Actua com una API que controla la quantitat de notes.
+- UpgradeManager: controla tot lo relacionat amb les upgrades, de manera que té tots els mètodes per a obtindre dades i comprar upgrades. Va tot amb el seu ID.
+
+Les dependències fan que l'ordre dels Autoloads importe, si no donaria un error.
+`game.gd` se li ha llevat tot lo de guardar que tenia i ara es cridra a `SaveManager.save_data` de moment.
+
+Més abstracció per a les Upgrades, s'ha separat tot el que hi havia l'escena de Game per una panell per a les Upgrades que es una escena de per si i cada Upgrade té el seu propi HBoxContainer.
+
+DONE : passar les millores d'horitzontal a vertical i parametritzar posar icona
+TODO : internacionalitzar cadenes de text dels botos i millores
+
+Millorar escen Note de manera cada nota es resposnable del seu moviment, no ho ha de fer game frame a frame. Si algu necessita totes les notes pot fer `notes_layer.get_children()`
+
+Credits audio de prova:
+- C4: https://freesound.org/s/794435/
+- C#4: https://freesound.org/s/794434/
+- D4: https://freesound.org/s/794458/
+- Pack: https://freesound.org/p/43099/
+- click1: https://freesound.org/s/751232/
+- click2: https://freesound.org/s/250552/
+- pop: https://freesound.org/s/665183/
+- ding: https://freesound.org/s/204648/
+- bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
+
