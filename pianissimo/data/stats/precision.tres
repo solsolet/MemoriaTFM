@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatDefinition" load_steps=2 format=3 uid="uid://dds7lied185et"]
+
+[ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_bha2y"]
+
+[resource]
+script = ExtResource("1_bha2y")
+id = "precision"
+display_name = "Precision"
+max_level = 10
+metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3xjva4n8hejr"]
+
+[ext_resource type="Script" uid="uid://cjcoqsqh48w3s" path="res://scenes/home/home.gd" id="1_5q1ba"]
+[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_ng36q"]
+
+[node name="Home" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5q1ba")
+
+[node name="SafeAreaContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_ng36q")
+
+[node name="ColorRect" type="ColorRect" parent="SafeAreaContainer"]
+layout_mode = 2
+
+[node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="SafeAreaContainer/Layout"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TitleLabel"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "GAME_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.0
+
+[node name="IdleButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 45
+text = "HOME_IDLE"
+
+[node name="FocusButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 45
+text = "HOME_FOCUS"
+
+[node name="SettingsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 45
+text = "SETTINGS"
+
+[node name="AchievmentsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 45
+text = "HOME_ACHIEVEMENTS"
+
+[node name="BottomSpacer" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/IdleButton" to="." method="_on_idle_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/FocusButton" to="." method="_on_focus_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AchievmentsButton" to="." method="_on_achievments_button_pressed"]

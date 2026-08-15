@@ -1,0 +1,152 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxdr2m7yf45q5"]
+
+[ext_resource type="Script" uid="uid://bl2jptd8vxlei" path="res://scenes/settings/settings.gd" id="1"]
+[ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_vu5fi"]
+
+[node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "music_mute_button", "sfx_mute_button", "reset_button", "reset_confirm_dialog")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+music_slider = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer/MusicSlider")
+sfx_slider = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer/SfxSlider")
+music_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer/MusicMuteButton")
+sfx_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer/SfxMuteButton")
+reset_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ResetButton")
+reset_confirm_dialog = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ConfirmationDialog")
+
+[node name="SafeAreaContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_vu5fi")
+
+[node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SettingsContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="SettingsLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_type_variation = &"TitleLabel"
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SoundContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="MusicLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"Title2Label"
+text = "SETTINGS_MUSIC"
+
+[node name="MusicCntainer" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="MusicSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 3.0
+max_value = 1.0
+step = 0.05
+
+[node name="MusicMuteButton" type="CheckButton" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "SETTINGS_MUTE"
+
+[node name="SfxLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"Title2Label"
+text = "SETTINGS_SFX"
+
+[node name="SfxContainer" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="SfxSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 3.0
+max_value = 1.0
+step = 0.05
+
+[node name="SfxMuteButton" type="CheckButton" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "SETTINGS_MUTE"
+
+[node name="DataContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DataLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_vertical = 6
+theme_type_variation = &"Title2Label"
+text = "SETTINGS_DATA"
+vertical_alignment = 1
+
+[node name="ResetButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "SETTINGS_RESET"
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+auto_translate_mode = 1
+oversampling_override = 1.0
+title = "DIALOG_RESET_TITLE"
+initial_position = 1
+size = Vector2i(822, 246)
+min_size = Vector2i(250, 200)
+max_size = Vector2i(16000, 8000)
+content_scale_mode = 1
+content_scale_aspect = 4
+ok_button_text = "DIALOG_OK"
+dialog_text = "DIALOG_RESET_TEXT"
+cancel_button_text = "DIALOG_CANCEL"
+
+[node name="BackButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_vertical = 10
+text = "BACK_BUTTON"
+
+[node name="Spacer2" type="Control" parent="SafeAreaContainer/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="SafeAreaContainer/Layout/SettingsContainer/BackButton" to="." method="_on_back_button_pressed"]

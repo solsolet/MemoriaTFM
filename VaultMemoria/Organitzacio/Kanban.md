@@ -9,26 +9,38 @@ kanban-plugin: board
 - [ ] Repassar apunts AESM
 - [ ] Repassar apunts FV
 - [ ] Repassar documentació Kaiwa
+- [ ] Pensar logo
+- [ ] It 2 Disgrama Gantt
 
 
 ## To Do (10)
 
-- [ ] Jugar a Magic Archery hihihaha #i @{2026-05-01}
-- [ ] Jugar a Magic Archery serio #l #docu .
+- [ ] Diagrama Flux
+- [ ] generació notes
+- [ ] contador punts
+- [ ] sistema traduccions
+- [ ] Posar UI tema basica:
+	- [ ] respetar bordes Notch/botons
+	- [ ] UI responsive
+- [ ] sistema so
+- [ ] sistema persistencia
+- [ ] afegir una millora
 
 
 ## In Progress (5)
 
-- [ ] Elaborar GDD 1 #docu
-- [ ] Diagrama Flux
-- [ ] Jugar Cookie Clicker hihi haha #i
+- [ ] crear escenes
 
 
 ## Done
 
 **Complete**
 - [x] Organitzar Kanban #l @{2026-05-01}
+- [x] Jugar a Magic Archery hihihaha #i @{2026-05-01}
+- [x] Jugar a Magic Archery serio #l #docu .
+- [x] Jugar Cookie Clicker hihi haha #i
 - [x] Fer One Pager #docu #l
+- [x] Elaborar GDD 1 #docu
 - [x] Fer Ten Pager #docu
 - [x] ### Trobar GDD #i
 	Per a organitzar les idees del joc @{2026-05-01}
