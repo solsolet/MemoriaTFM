@@ -25,8 +25,7 @@ Fet per Gemma Sellés Lloret aka solsolet
 
 ## Introducció
 
-Aquest document especifica el disseny per al joc amb el nom provisional de "Pianissimo". Està basat en les idees reflexades en el One-Sheet i el Ten-Pager del mateix joc. La idea es remunta al 14 de gener de 
-l'any 2026 a les mans de Gemma Sellés Lloret per a la elaboració del seu TFM.
+Aquest document especifica el disseny per al joc amb el nom provisional de "Pianissimo". Està basat en les idees reflectides en el One-Sheet i el Ten-Pager del mateix joc. La idea es remunta al 14 de gener de l'any 2026 a les mans de Gemma Sellés Lloret per a l'elaboració del seu TFM.
 
 ### Destinataris
 Aquest document té la intenció de ser llegit per tota aquella persona que estiguen involucrades en el disseny, implementació o proves del videojoc, com poden ser programadors, artistes... O per aquells que tinguen la curiositat de veure com s'ha fet i desenvolupat aquest projecte.
@@ -59,7 +58,7 @@ Es poden ordenar segons la prioritat. En el cas de Pianissimo és de vital impor
 
 Evitar posar en els scripts `class_name`, car que dona error també, entra en conflicte amb la naturalesa dels *Autoloads* de tenir una única instància.
 
-### Internacionalització
+### Internacionalització {#gdd-internacionalitzacio}
 
 Una bona pràctica per a fer que el joc arribe a més gent és tenir-lo disponible en diversos idiomes. En Godot es pot aconseguir de manera senzilla amb un CSV.
 
@@ -90,11 +89,20 @@ Hi ha moltes opcions d'internacionalització, però per a un projecte senzill no
 
 Settings:  Botó delete progress: Es crear un nou Savenoseque i giardarlo pel que tenim. com a tal nmo borra només guardes un buit.
 
+### Piano
+
+El piano té 4 parts mòbils:
+
+1. **`NOTE_SEQUENCE`.** Quina nota és el carril N": `["C", "C#", "D", "D#", "E", ...]`. `_is_black_key(i)` comprova quina `NOTE_SEQUENCE[i]` acaba en `#` per decidir el color de la tecla.
+2. **`_build_keys()` reconstrueix cada botó de 0.** Llig `current_lane_count()` (que és `StatManager.get_level("keyboard") + 3`, màxim 12), i itera creant `Button.new()` per carril, aplicant l'estil de tecla negra si `_is_black_key()` ho diu i  `button.pressed.connect(handle_key_input.bind(i))`. `bind(i)` Encapsula específicament un carril en un botó en concret, p. ex. el botó 4 qcridaràsempre a  `handle_key_input(4)` independentment si després es creen més tecles.
+3. **`_layout_keys()` geometria.** Separa les tecles en "blanques" (dividides a parts iguals segons l'amplària) i "negres" (la meitat d'amples i col·locades entre dues blanques quan corresponga, `move_to_front()`per a dibuixar-se al davant). Es fa separat de  `_build_keys()` a postes: el *layout* necessita tornar a executar-se quan la pantalla es canvia de mida (`key_row.resized.connect(_layout_keys)`), però reconstruir els nodes dels botons només necessita que ocórrega quan canvia el nombre de carrils.
+4. **Disparador.** `StatManager.stat_purchased` és un *signal*; `piano.gd` l'escolta i crida a  `_build_keys()` només quan compra l'ID `"keyboard"`. La resta (*spawning*, detecció de tap, puntuació) ni coneix ni li importa que canvie el nombre de tecles, només mira pel nombre de botons en `key_buttons`.
+
 ## UI/UX
 
 ### Tema personalitzat
 
-TODO : explicar el tema com s'ha fet i pensat, el arxiu i com posar-lo global, variacions persionalitzades, paleta, estètica...
+TODO : explicar el tema com s'ha fet i pensat, l'arxiu i com posar-lo global, variacions ppersonalitzades paleta, estètica...
 
 Upgrades de HBoxContainer a Card
 
@@ -105,6 +113,7 @@ Upgrades de HBoxContainer a Card
 #### Audios prova
 
 Credits audio de prova:
+
 - C4: https://freesound.org/s/794435/
 - C#4: https://freesound.org/s/794434/
 - D4: https://freesound.org/s/794458/

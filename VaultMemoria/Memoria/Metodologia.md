@@ -60,7 +60,7 @@ Addicionalment, ha servit per al desenvolupament i organització d'aquest trebal
 
 Convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
 
-### [Godot 4.5.1](https://godotengine.org){#sec-godot-451}
+### [Godot 4.5.1](https://godotengine.org) {#sec-godot-451}
 
 Motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 
@@ -111,3 +111,11 @@ Una vegada estiguen tots analitzats ajudarà al desenvolupament del videojoc del
 ## Proves
 
 %%TODO : explicar com s'ha testejat l'app%%
+### Dispositius
+
+L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells:
+
+- Redmi note 13Pro + 5G:
+- iPhone 12:
+
+TODO : posar característiques dels dispositius, podria ser en forma de taula
