@@ -3,9 +3,9 @@ keys,ca,es,en
 GAME_TITLE,Pianissimo,Pianissimo,Pianissimo
 
 HOME_IDLE,Idle,Idle,Idle
-HOME_FOCUS,Focus,Focus,Focus
+HOME_FOCUS,Assaig,Ensayo,Practise
 HOME_ACHIEVEMENTS,Assoliments,Logros,Achievements
-HOME_LEADERBOARDS,Marcadors,Marcadores,Leaderboards
+HOME_ALBUM,Àlbum,Álbum,Album
 HOME_CREDITS,Crèdits,Créditos,Credits
 
 INSTRUCTIONS_TITLE,"Com jugar","Cómo jugar","How to play"
@@ -37,3 +37,5 @@ PRACTISE_DURATION, Duració (minuts), Duración (minutos), Duration (minutes)
 PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.
+
+CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album
