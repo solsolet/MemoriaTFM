@@ -6,7 +6,7 @@ func _on_idle_button_pressed() -> void:
 
 
 func _on_focus_button_pressed() -> void:
-	print("Focus mode coming soon")
+	get_tree().change_scene_to_file(ScenePaths.FOCUS_SETUP)
 
 
 func _on_settings_button_pressed() -> void:
