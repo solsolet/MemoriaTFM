@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dndofhgx0k770"]
+
+[ext_resource type="Script" uid="uid://blnvusx8ihioq" path="res://scenes/cards/card_tile.gd" id="1"]
+
+[node name="CardTile" type="PanelContainer"]
+custom_minimum_size = Vector2(160, 190)
+script = ExtResource("1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="IconRect" type="ColorRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(20, 50)
+layout_mode = 2
+text = "???"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="DescLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(20, 50)
+layout_mode = 2
+theme_type_variation = &"CardLabel"
+text = "Locked"
+horizontal_alignment = 1
+autowrap_mode = 2

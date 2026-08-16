@@ -7,8 +7,12 @@ extends Control
 
 func _ready() -> void:
 	if FocusManager.last_completed:
-		result_label.text = "Session completed"
-		detail_label.text = "You earned %d notes." % FocusManager.last_reward
+		result_label.text = "Session complete!"
+		var detail = "You earned %d notes." % FocusManager.last_reward
+		if FocusManager.last_unlocked_card_id != "":
+			var def := CardManager.get_definition(FocusManager.last_unlocked_card_id)
+			detail += "\nNew card: %s!" % def.display_name
+		detail_label.text = detail
 	else:
 		result_label.text = "Session failed"
 		detail_label.text = "You left the app before finishing."

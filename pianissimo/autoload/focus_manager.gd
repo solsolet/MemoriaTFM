@@ -17,6 +17,8 @@ var last_reward: int = 0
 
 var _timer: Timer
 
+var last_unlocked_card_id: String = ""
+
 
 func _ready() -> void:
 	_timer = Timer.new()
@@ -76,6 +78,7 @@ func _complete_session() -> void:
 	Economy.add(reward)
 	last_completed = true
 	last_reward = reward
+	last_unlocked_card_id = CardManager.unlock_random_card()
 
 	_log_session(title, description, target_seconds, target_seconds, true, SaveManager.data.focus_session_start_time)
 	_clear_persisted_session()

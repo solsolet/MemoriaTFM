@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://0xsx1ic7wc8b"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_mx6aq"]
+
+[resource]
+script = ExtResource("1_mx6aq")
+id = "mozart"
+display_name = "W. A. Mozart"
+description = "Classical-era prodigy who composed symphonies and operas from childhood."
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

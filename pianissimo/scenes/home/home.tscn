@@ -84,6 +84,9 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "HOME_ACHIEVEMENTS"
 
+[node name="AlbumButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+layout_mode = 2
+
 [node name="BottomSpacer" type="Control" parent="SafeAreaContainer/Layout"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -92,3 +95,4 @@ size_flags_vertical = 3
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/FocusButton" to="." method="_on_focus_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AchievmentsButton" to="." method="_on_achievments_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AlbumButton" to="." method="_on_album_button_pressed"]
