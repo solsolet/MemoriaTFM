@@ -87,7 +87,33 @@ Hi ha moltes opcions d'internacionalització, però per a un projecte senzill no
 
 ### Persistència
 
-Settings:  Botó delete progress: Es crear un nou Savenoseque i giardarlo pel que tenim. com a tal nmo borra només guardes un buit.
+El joc necessita persistència per a dades que han de quedar entre partides. Aquestes necessiten ser recursos que es puguen llegir i escriure en la memòria del dispositiu. S'ha de guardar:
+
+- El **progrés** del jugador, com a *recurs propi*, guardat en `user://player_save.tres`. Es controlarà amb `save_manager.gd`, i les dades a guardar les definirà `player_save_data.gd`.
+- La **configuració**, com a *ConfigFile*, guardada en `user://settings.cfg`. Es controlarà amb `settings_manager.gd`.
+
+En els dos casos trobem funcions públiques de guardar i carregar les dades, `save_data()` i `load_data()`, que usen els corresponents mètodes de cada tipus d'arxiu i fan comprovacions de la ruta. En el cas del progrés també es guarda el moment quan es va modificar l'arxiu per a poder calcular quantes notes s'han generat en l'absència del jugador.
+
+Exemple del codi de `save_manager.gd`:
+
+```gd
+func load_data() -> void:
+	if ResourceLoader.exists(SAVE_PATH):
+		var loaded = ResourceLoader.load(SAVE_PATH, "", ResourceLoader.CACHE_MODE_IGNORE)
+		data = loaded if loaded is PlayerSaveData else PlayerSaveData.new()
+	else:
+		# Primera partida
+		data = PlayerSaveData.new()
+		data.last_save_time = int(Time.get_unix_time_from_system())
+
+func save_data() -> void:
+	data.last_save_time = int(Time.get_unix_time_from_system())
+	var err := ResourceSaver.save(data, SAVE_PATH)
+	if err != OK:
+		push_warning("SaveManager: save failed (error %d)" % err)
+```
+
+El progrés també ha de ser capaç de reiniciar-se en cas que el jugador ho necessite sense desinstal·lar-se el joc. Per a fer-ho s'usa la funció `reset_data()` que crea un nou *PlayerSaveData* i guardar-lo en lloc de què teníem, com a tal no esborra res, sobreescriu.
 
 ### Piano
 
@@ -109,6 +135,32 @@ Upgrades de HBoxContainer a Card
 ## So
 
 ### Disseny sonor
+
+El joc en tenir un component pianístic es necessitaran sons adients a aquesta estètica. Tots els àudios que s'han utilitzat estan sota la llicència CC0, trets de *Freesound* o *Musopen*. Per tal d'organitzar-los tots junts s'han disposat en forma de taula:
+
+| Nom                        | Descripció                                                                      | Àudio                          |
+| -------------------------- | ------------------------------------------------------------------------------- | ------------------------------ |
+| Clic                       | Menys els botons especials, la resta faran aquest so en polsar-los              | clic.wav                       |
+| Notes piano                | Cada tecla del piano fa el corresponent so, el nom de la pista és el de la nota | C4.wav, C#4.wav, [...], B4.wav |
+| Compra Millora/Estadística | Quan es polsa una millora o estadística sonarà                                  |                                |
+| Muntar de nivell           | Quan el jugador munte de nivell                                                 |                                |
+| Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
+: Efectes de so de Pianissimo
+
+| Nom             | Descripció                        | Àudio |
+| --------------- | --------------------------------- | ----- |
+| Menú            | Música que sona de fons en *home* |       |
+| Barroc1         |                                   |       |
+| Barroc2         |                                   |       |
+| Classicisme1    |                                   |       |
+| Classicisme2    |                                   |       |
+| Romanticisme1   |                                   |       |
+| Romaticisme2    |                                   |       |
+| Impressionisme1 |                                   |       |
+| Impressionisme2 |                                   |       |
+: Música de Pianissimo
+
+El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.
 
 #### Audios prova
 
