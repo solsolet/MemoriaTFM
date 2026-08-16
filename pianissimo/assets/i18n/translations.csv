@@ -28,3 +28,10 @@ DIALOG_CANCEL, Cancel·lar, Cancelar, Cancel
 DIALOG_OK, D'acord, Aceptar, Accept
 DIALOG_RESET_TITLE, Vols esborrar el teu progrés ?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
 DIALOG_RESET_TEXT, Aquesta acció no es podrà desfer, Esta acción no se podrá deshacer, This action could not be reversed
+
+PRACTISE_NEW_SESSION, Nou assaig, Nuevo ensayo, New practise
+PRACTISE_TITLE_PLACEHOLDER, Títol de la sessió (p. ex. Escala Do M), Título de la sessión (p. ej. Escala Do M), Session title (e.g. Scales practice)
+PRACTISE_DESCRIPTION_PLACEHOLDER, Descripció (opcional), Descripción (opcional), Description (optional)
+PRACTISE_DURATION, Duració (minuts), Duración (minutos), Duration (minutes)
+PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
+PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
