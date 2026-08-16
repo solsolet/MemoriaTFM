@@ -261,6 +261,12 @@ Durant la implementació del piano vaig trobar alguns problemes com:
 
 Quan es va aconseguir solucionar-ho tot s'hi van afegir algunes funcions per a relacionar la perfecció de les notes tocades amb les estadístiques de velocitat i precisió. Fins que no es detecte altre problema o es necessite una nova funcionalitat, el piano es quedarà com està.
 
+#### Investigació
+
+Es va consultar molta documentació per a veure en quin format es podria emmagatzemar les dades de l'usuari. Pel que vaig llegir per al me cas em convindria un **recurs propi** en el cas de les dades del joc i un **CofigFile** per als ajustos que tinga el jugador en *settings*, a pesar que ene la primera versió espgueti vaig usar un JSON.
+
+https://uhiyama-lab.com/en/notes/godot/save-load-system/
+
 ### Iteració 3
 
 Aquesta iteració comprén del 15 al 20 d'agost de 2026.
