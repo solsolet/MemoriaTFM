@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://ba7krjv772gf2"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_5vv3x"]
+
+[resource]
+script = ExtResource("1_5vv3x")
+id = "harpsichord"
+display_name = "Harpsichord"
+category = 1
+description = "A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone."
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

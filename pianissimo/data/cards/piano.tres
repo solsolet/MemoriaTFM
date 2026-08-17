@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cb7w5uo83drio"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_jmq4a"]
+
+[resource]
+script = ExtResource("1_jmq4a")
+id = "piano_instrument"
+display_name = "The Piano"
+category = 1
+description = "Invented around 1700, it can play both loud and soft — hence its original name, \"pianoforte.\""
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

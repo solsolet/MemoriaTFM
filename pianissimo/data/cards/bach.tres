@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bynwitywmw7x"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_krdfh"]
+
+[resource]
+script = ExtResource("1_krdfh")
+id = "bach"
+display_name = "J. S. Bach"
+description = "Baroque composer and organist, famed for intricate counterpoint like The Well-Tempered Clavier."
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

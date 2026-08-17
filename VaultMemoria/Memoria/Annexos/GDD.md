@@ -15,11 +15,11 @@ Fet per Gemma Sellés Lloret aka solsolet
 
 ## Historial de versions
 
-| Versió | Data       | Descripció dels canvis       |
-| :----- | :--------- | :--------------------------- |
-| v1.0.0 | 2026-06-23 | Creació inicial del document |
-|        |            |                              |
-|        |            |                              |
+| Versió | Data       | Descripció dels canvis          |
+| :----- | :--------- | :------------------------------ |
+| v0.1.0 | 2026-06-23 | Creació inicial del document    |
+| v0.2.0 | 2026-08-15 | Mig afegides funcionalitats It2 |
+|        |            |                                 |
 
 ***
 
@@ -47,6 +47,16 @@ Totes les imatges, si no s’indica el contrari, son d’elaboració pròpia.
 "Pianissimo" és un videojoc per a dispositius mòbils per tant ha de funcionar per a aquests, això inclou tauletes i telèfons mòbils. Estarà disponible per a dispositius Android i iOS.
 
 ## No sé sota quin paraigua posar-ho
+
+### Modes
+
+#### Idle
+
+ús de game
+
+#### Assaig
+
+Ús de FocusManager. Afegim dades a playersavedata relacionades amb el mode per a poder guardar la sessió.
 
 ### *Autoloads*
 

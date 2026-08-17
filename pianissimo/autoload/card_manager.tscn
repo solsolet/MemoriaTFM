@@ -1,0 +1,15 @@
+[gd_scene load_steps=9 format=3 uid="uid://bxmm73l3c48me"]
+
+[ext_resource type="Script" uid="uid://cb6lp05ddwevl" path="res://autoload/card_manager.gd" id="1_2yo8l"]
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="2_0lcwv"]
+[ext_resource type="Resource" uid="uid://bynwitywmw7x" path="res://data/cards/bach.tres" id="3_fgy4v"]
+[ext_resource type="Resource" uid="uid://wwkryd68k0bc" path="res://data/cards/chopin.tres" id="4_enavl"]
+[ext_resource type="Resource" uid="uid://ba7krjv772gf2" path="res://data/cards/harpsicord.tres" id="5_nwhwk"]
+[ext_resource type="Resource" uid="uid://0xsx1ic7wc8b" path="res://data/cards/mozart.tres" id="6_vy5o2"]
+[ext_resource type="Resource" uid="uid://cb7w5uo83drio" path="res://data/cards/piano.tres" id="7_juee0"]
+[ext_resource type="Resource" uid="uid://bi8tvlu5wg4us" path="res://data/cards/wtc_fact.tres" id="8_hr0ay"]
+
+[node name="CardManager" type="Node"]
+auto_translate_mode = 1
+script = ExtResource("1_2yo8l")
+definitions = Array[ExtResource("2_0lcwv")]([ExtResource("3_fgy4v"), ExtResource("4_enavl"), ExtResource("5_nwhwk"), ExtResource("6_vy5o2"), ExtResource("7_juee0"), ExtResource("8_hr0ay")])

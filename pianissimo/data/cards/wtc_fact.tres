@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bi8tvlu5wg4us"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_l8xtf"]
+
+[resource]
+script = ExtResource("1_l8xtf")
+id = "wtc_fact"
+display_name = "The Well-Tempered Clavier"
+category = 2
+description = "A landmark collection covering every major and minor key, still used to teach piano technique today."
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

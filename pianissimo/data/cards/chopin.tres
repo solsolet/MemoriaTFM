@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://wwkryd68k0bc"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_2mjl4"]
+
+[resource]
+script = ExtResource("1_2mjl4")
+id = "chopin"
+display_name = "Frédéric Chopin"
+description = "Romantic-era composer who wrote almost exclusively for solo piano."
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"
