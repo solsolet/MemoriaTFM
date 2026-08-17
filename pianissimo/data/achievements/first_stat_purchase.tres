@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://bwm5i5fnae4se"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_x4tvl"]
+
+[resource]
+script = ExtResource("1_x4tvl")
+id = "first_stat_purchase"
+display_name = "Growth Mindset"
+description = "Buy your first stat"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://xmrm23qjjblj"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_nn53a"]
+
+[resource]
+script = ExtResource("1_nn53a")
+id = "first_focus_session"
+display_name = "First Steps"
+description = "Complete your first focus session"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

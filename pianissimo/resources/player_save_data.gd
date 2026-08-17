@@ -14,5 +14,7 @@ class_name PlayerSaveData
 @export var focus_session_target_seconds: int = 0
 @export var focus_session_title: String = ""
 @export var focus_session_description: String = ""
-
+# Unlockables
 @export var unlocked_cards: Array[String] = []
+@export var unlocked_achievements: Array[String] = []
+@export var total_notes_earned: int = 0

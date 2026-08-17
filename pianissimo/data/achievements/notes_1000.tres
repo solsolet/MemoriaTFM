@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://c88fgdpddk3c4"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_svjsi"]
+
+[resource]
+script = ExtResource("1_svjsi")
+id = "notes_1000"
+display_name = "Getting Started"
+description = "Earn 1,000 notes in total"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"
