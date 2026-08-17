@@ -66,6 +66,7 @@ custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+theme_override_constants/separation = 20
 
 [node name="MusicSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer"]
 layout_mode = 2
@@ -91,6 +92,7 @@ custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+theme_override_constants/separation = 20
 
 [node name="SfxSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer"]
 layout_mode = 2
@@ -109,6 +111,7 @@ text = "SETTINGS_MUTE"
 [node name="DataContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/separation = 20
 
 [node name="DataLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
 auto_translate_mode = 1

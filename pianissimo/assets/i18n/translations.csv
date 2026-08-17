@@ -14,7 +14,7 @@ BACK_BUTTON,Enrere,Atrás,Back
 GAME_NOTES,Notes,Notas,Notes
 
 PAUSE_LABEL,Pausa,Pausa,Pause
-PAUSE_RESUME,Resume,Continua,Continua
+RESUME,Resume,Continua,Continua
 PAUSE_HOME,Inici,Inicio,Home
 
 SETTINGS,Configuració,Configuración,Settings
@@ -37,5 +37,7 @@ PRACTISE_DURATION, Duració (minuts), Duración (minutos), Duration (minutes)
 PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.
+PRACTISE_RESULT, Resultat, Resultado, Result
+PRACTISE_JOURNAL, Diari d'assajos, Diario de ensayos, Practise journal
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album

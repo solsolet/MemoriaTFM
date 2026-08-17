@@ -30,6 +30,7 @@ auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"TitleLabel"
 text = "CARD_ALBUM"
+horizontal_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="SafeArea/VBoxContainer"]
 custom_minimum_size = Vector2(500, 500)
@@ -48,5 +49,9 @@ columns = 2
 auto_translate_mode = 1
 layout_mode = 2
 text = "BACK_BUTTON"
+
+[node name="Control" type="Control" parent="SafeArea/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 
 [connection signal="pressed" from="SafeArea/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

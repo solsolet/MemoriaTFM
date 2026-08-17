@@ -22,15 +22,22 @@ grow_vertical = 2
 script = ExtResource("2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeArea"]
+custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
-theme_override_constants/separation = 16
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="ResultLabel" type="Label" parent="SafeArea/VBoxContainer"]
+auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"TitleLabel"
-text = "Result"
+text = "PRACTISE_RESULT"
 horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="SafeArea/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="DetailLabel" type="Label" parent="SafeArea/VBoxContainer"]
 layout_mode = 2
@@ -38,5 +45,10 @@ text = "Detail"
 horizontal_alignment = 1
 
 [node name="ContinueButton" type="Button" parent="SafeArea/VBoxContainer"]
+auto_translate_mode = 1
 layout_mode = 2
-text = "Continue"
+text = "RESUME"
+
+[node name="Control2" type="Control" parent="SafeArea/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3

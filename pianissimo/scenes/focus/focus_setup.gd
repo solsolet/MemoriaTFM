@@ -1,11 +1,11 @@
 extends Control
 
-@onready var title_field: LineEdit = $SafeArea/VBoxContainer/TitleField
-@onready var description_field: TextEdit = $SafeArea/VBoxContainer/DescriptionField
-@onready var duration_spinbox: SpinBox = $SafeArea/VBoxContainer/DurationSpinBox
-@onready var start_button: Button = $SafeArea/VBoxContainer/StartButton
-@onready var journal_button: Button = $SafeArea/VBoxContainer/JournalButton
-@onready var back_button: Button = $SafeArea/VBoxContainer/BackButton
+@export var title_field: LineEdit
+@export var description_field: TextEdit
+@export var duration_spinbox: SpinBox
+@export var start_button: Button
+@export var journal_button: Button
+@export var back_button: Button
 
 
 func _ready() -> void:

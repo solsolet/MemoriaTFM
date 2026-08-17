@@ -48,6 +48,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 size_flags_stretch_ratio = 2.0
+theme_override_constants/separation = 20
 
 [node name="IdleButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
