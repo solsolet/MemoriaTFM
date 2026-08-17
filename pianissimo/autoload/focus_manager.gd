@@ -79,6 +79,7 @@ func _complete_session() -> void:
 	last_completed = true
 	last_reward = reward
 	last_unlocked_card_id = CardManager.unlock_random_card()
+	AchievementManager.unlock("first_focus_session")
 
 	_log_session(title, description, target_seconds, target_seconds, true, SaveManager.data.focus_session_start_time)
 	_clear_persisted_session()

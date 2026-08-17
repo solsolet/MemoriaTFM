@@ -185,3 +185,7 @@ Credits audio de prova:
 - pop: https://freesound.org/s/665183/
 - ding: https://freesound.org/s/204648/
 - bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
+
+### Assoliments
+
+Fem una façana per a usar per sobre d'Android o iOS
