@@ -37,6 +37,11 @@ func _ready() -> void:
 
 
 func unlock(id: String) -> void:
+	print("AchievementManager: unlock('%s') called" % id)
+	if SaveManager.data.unlocked_achievements.has(id):
+		print("AchievementManager: '%s' already unlocked locally" % id)
+		return
+	
 	if SaveManager.data.unlocked_achievements.has(id):
 		return
 

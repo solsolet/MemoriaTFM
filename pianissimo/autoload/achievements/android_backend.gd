@@ -35,6 +35,7 @@ func show_ui() -> void:
 
 
 func _on_user_authenticated(success: bool) -> void:
+	print("AndroidBackend: authenticated = ", success)
 	_is_signed_in = success
 	authenticated.emit(success)
 

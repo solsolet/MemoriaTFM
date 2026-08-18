@@ -7,4 +7,5 @@ script = ExtResource("1_svjsi")
 id = "notes_1000"
 display_name = "Getting Started"
 description = "Earn 1,000 notes in total"
+android_id = "CgkInrHOzokbEAIQAg"
 metadata/_custom_type_script = "uid://cw2s1k8qqacba"

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cjcoqsqh48w3s" path="res://scenes/home/home.gd" id="1_5q1ba"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_ng36q"]
 
-[node name="Home" type="Control"]
+[node name="Home" type="Control" node_paths=PackedStringArray("achievements_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5q1ba")
+achievements_button = NodePath("SafeAreaContainer/Layout/ButtonContainer/AchievementsButton")
 
 [node name="SafeAreaContainer" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(0, 200)
@@ -76,7 +77,7 @@ size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 45
 text = "SETTINGS"
 
-[node name="AchievmentsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
+[node name="AchievementsButton" type="Button" parent="SafeAreaContainer/Layout/ButtonContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
@@ -98,5 +99,4 @@ size_flags_vertical = 3
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/IdleButton" to="." method="_on_idle_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/FocusButton" to="." method="_on_focus_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AchievmentsButton" to="." method="_on_achievments_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/ButtonContainer/AlbumButton" to="." method="_on_album_button_pressed"]

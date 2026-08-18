@@ -88,6 +88,8 @@ func cleanup() -> void:
 
 func _exit_tree() -> void:
 	cleanup()
+	if get_viewport().size_changed.is_connected(_apply_ui_scaling):
+		get_viewport().size_changed.disconnect(_apply_ui_scaling)
 
 
 func _on_btn_back_pressed() -> void:

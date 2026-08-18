@@ -32,3 +32,8 @@ func _apply_safe_area() -> void:
 
 func _on_viewport_size_changed() -> void:
 	call_deferred("_apply_safe_area")
+
+
+func _exit_tree() -> void:
+	if get_viewport().size_changed.is_connected(_on_viewport_size_changed):
+		get_viewport().size_changed.disconnect(_on_viewport_size_changed)
