@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csta2jhqo3yqe"
-path="res://.godot/imported/discipline.png-10ccf2a0cca929c9d1ad52ead5281136.ctex"
+uid="uid://cinr8xrghvajr"
+path="res://.godot/imported/dedication.png-1c25a5f5f0e168a55d873cec9fc1eec3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/discipline.png"
-dest_files=["res://.godot/imported/discipline.png-10ccf2a0cca929c9d1ad52ead5281136.ctex"]
+source_file="res://assets/achievements/dedication.png"
+dest_files=["res://.godot/imported/dedication.png-1c25a5f5f0e168a55d873cec9fc1eec3.ctex"]
 
 [params]
 

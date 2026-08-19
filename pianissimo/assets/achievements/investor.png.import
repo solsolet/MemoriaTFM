@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cinr8xrghvajr"
-path="res://.godot/imported/dedication.png-caf3f9191146c231115cf71314748add.ctex"
+uid="uid://ck6dwa6kvw3xp"
+path="res://.godot/imported/investor.png-3a376d4e11ebff3fd9d3daeb40bdaec7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/dedication.png"
-dest_files=["res://.godot/imported/dedication.png-caf3f9191146c231115cf71314748add.ctex"]
+source_file="res://assets/achievements/investor.png"
+dest_files=["res://.godot/imported/investor.png-3a376d4e11ebff3fd9d3daeb40bdaec7.ctex"]
 
 [params]
 

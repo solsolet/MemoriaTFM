@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e5k5ijjpnu4y"
-path="res://.godot/imported/first-focus.png-e1cf01659999535eea662cedf577b3dd.ctex"
+path="res://.godot/imported/first-focus.png-583175fab5f983651e42512504f91844.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/first-focus.png"
-dest_files=["res://.godot/imported/first-focus.png-e1cf01659999535eea662cedf577b3dd.ctex"]
+source_file="res://assets/achievements/first-focus.png"
+dest_files=["res://.godot/imported/first-focus.png-583175fab5f983651e42512504f91844.ctex"]
 
 [params]
 

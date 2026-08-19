@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bx8537vuljblk"]
 
-[ext_resource type="Script" path="res://addons/GodotPlayGameServices/dock.gd" id="1_k0q71"]
+[ext_resource type="Script" uid="uid://do0ahtkwxfjd8" path="res://addons/GodotPlayGameServices/dock.gd" id="1_k0q71"]
 
 [node name="Godot Play Game Services" type="PanelContainer"]
 anchors_preset = 15
@@ -28,6 +28,7 @@ text = "Game ID:"
 [node name="GameId" type="LineEdit" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+text = "930293717150"
 max_length = 20
 virtual_keyboard_type = 2
 clear_button_enabled = true

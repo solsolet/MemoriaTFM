@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck6dwa6kvw3xp"
-path="res://.godot/imported/investor.png-f07b0d6aeb71840db335717e28699fa1.ctex"
+uid="uid://djh4lhg21282d"
+path="res://.godot/imported/getting-started.png-4afdc74516b899c6af9658432b71c74e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/investor.png"
-dest_files=["res://.godot/imported/investor.png-f07b0d6aeb71840db335717e28699fa1.ctex"]
+source_file="res://assets/achievements/getting-started.png"
+dest_files=["res://.godot/imported/getting-started.png-4afdc74516b899c6af9658432b71c74e.ctex"]
 
 [params]
 

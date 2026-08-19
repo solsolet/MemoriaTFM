@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlnqlk3schnb5"
-path="res://.godot/imported/img-destacada.png-32f3b67e6d03c90cecb16cd03ef27ba1.ctex"
+uid="uid://xksfi2sv45sr"
+path="res://.godot/imported/growth-mindset.png-a9bd95f5cfe8d4ef04e948ae4c378b33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img-destacada.png"
-dest_files=["res://.godot/imported/img-destacada.png-32f3b67e6d03c90cecb16cd03ef27ba1.ctex"]
+source_file="res://assets/achievements/growth-mindset.png"
+dest_files=["res://.godot/imported/growth-mindset.png-a9bd95f5cfe8d4ef04e948ae4c378b33.ctex"]
 
 [params]
 
