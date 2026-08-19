@@ -26,7 +26,7 @@ func unlock(platform_id: String) -> void:
 	if not _is_signed_in:
 		print("AchievementBackend (Android): not signed in, skipping ", platform_id)
 		return
-	achievements.unlock(platform_id)
+	achievements.unlock_achievement(platform_id)
 
 
 func show_ui() -> void:
@@ -40,5 +40,5 @@ func _on_user_authenticated(success: bool) -> void:
 	authenticated.emit(success)
 
 
-func _on_achievement_unlocked(achievement_id: String) -> void:
-	print("AchievementBackend (Android): unlocked ", achievement_id)
+func _on_achievement_unlocked(is_unlocked: bool, achievement_id: String) -> void:
+	print("AchievementBackend (Android): server confirmed unlock=%s for %s" % [is_unlocked, achievement_id])

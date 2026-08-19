@@ -67,6 +67,8 @@ func _dispatch(def: AchievementDefinition) -> void:
 
 func _send(def: AchievementDefinition) -> void:
 	var platform_id: String = def.android_id if OS.get_name() == "Android" else def.ios_id
+	print("AchievementManager: sending '%s' -> platform_id = '%s'" % [def.id, platform_id])
+	
 	if platform_id == "":
 		return
 	_backend.unlock(platform_id)
@@ -87,3 +89,11 @@ func _on_backend_authenticated(success: bool) -> void:
 func _on_notes_changed(_value: int) -> void:
 	if SaveManager.data.total_notes_earned >= 1000:
 		unlock("notes_1000")
+
+
+func resync_all() -> void:
+	print("AchievementManager: resync_all - unlocked count = ", SaveManager.data.unlocked_achievements.size())
+	for id in SaveManager.data.unlocked_achievements:
+		var def: AchievementDefinition = _definitions.get(id)
+		if def != null:
+			_send(def)

@@ -4,6 +4,7 @@ extends Control
 
 
 func _ready() -> void:
+	AchievementManager.resync_all()
 	achievements_button.pressed.connect(_on_achievements_button_pressed)
 
 
