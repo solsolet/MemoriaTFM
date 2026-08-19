@@ -1,6 +1,6 @@
 extends Control
 
-@onready var entries_container: VBoxContainer = $SafeArea/VBoxContainer/ScrollContainer/EntriesContainer
+@export var entries_container: VBoxContainer
 
 
 func _ready() -> void:
@@ -48,4 +48,4 @@ func _build_row(entry: Dictionary) -> Control:
 	return row
 
 func _on_back_button_pressed() -> void:
-	get_tree().change_scene_to_file(ScenePaths.FOCUS_SETUP)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SETUP)

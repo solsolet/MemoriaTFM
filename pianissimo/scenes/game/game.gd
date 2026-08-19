@@ -94,10 +94,10 @@ func _exit_tree() -> void:
 
 func _on_btn_back_pressed() -> void:
 	cleanup()
-	get_tree().change_scene_to_file(ScenePaths.HOME)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
 
 
 func _on_settings_button_pressed() -> void:
 	SettingsManager.return_scene_path = ScenePaths.GAME
 	cleanup()
-	get_tree().change_scene_to_file(ScenePaths.SETTINGS)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.SETTINGS)

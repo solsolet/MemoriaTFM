@@ -274,3 +274,23 @@ Aquesta iteració comprén del 15 al 20 d'agost de 2026.
 #### Projecte Godot
 
 Fer Focus mode
+
+### Iteració 4
+
+TODO : Penar si mesclar focus mode amb Achievements
+
+#### Projecte Godot
+
+Implementar Achievements.
+
+##### Solució errors
+
+deferring the scene change avoids acting on nodes mid-teardown. Rather than special-case it, apply it everywhere scenes change
+
+```gd
+	# Error can_process
+	get_tree().change_scene_to_file(ScenePaths.CARD_ALBUM)
+	# solució
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.CARD_ALBUM)
+
+```

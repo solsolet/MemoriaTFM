@@ -36,8 +36,8 @@ func _on_sfx_changed(value: float) -> void:
 
 func _on_reset_confirmed() -> void:
 	SaveManager.reset_data()
-	get_tree().change_scene_to_file(ScenePaths.HOME)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
 
 
 func _on_back_button_pressed() -> void:
-	get_tree().change_scene_to_file(SettingsManager.return_scene_path)
+	get_tree().call_deferred("change_scene_to_file",SettingsManager.return_scene_path)
