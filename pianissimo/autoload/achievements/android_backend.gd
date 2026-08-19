@@ -15,7 +15,7 @@ func _enter_tree() -> void:
 func initialize() -> void:
 	sign_in.user_authenticated.connect(_on_user_authenticated)
 	achievements.achievement_unlocked.connect(_on_achievement_unlocked)
-	sign_in.is_authenticated()
+	sign_in.sign_in()
 
 
 func is_ready() -> bool:

@@ -10,7 +10,6 @@ const IOS_BACKEND_SCENE = preload("res://autoload/achievements/ios_backend.tscn"
 
 var _definitions: Dictionary = {}
 var _backend: Node = null
-var _pending_unlocks: Array[String] = []
 
 
 func _ready() -> void:
@@ -62,28 +61,27 @@ func show_achievements_ui() -> void:
 
 
 func _dispatch(def: AchievementDefinition) -> void:
-	if _backend == null:
-		return
-	if not _backend.is_ready():
-		_pending_unlocks.append(def.id)  # not signed in yet -- try again once we are
-		return
+	if _backend == null or not _backend.is_ready():
+		return  # will retry automatically next successful sign-in, via _on_backend_authenticated
 	_send(def)
-
 
 func _send(def: AchievementDefinition) -> void:
 	var platform_id: String = def.android_id if OS.get_name() == "Android" else def.ios_id
-	if platform_id != "":
-		_backend.unlock(platform_id)
-
+	if platform_id == "":
+		return
+	_backend.unlock(platform_id)
+	if not SaveManager.data.achievements_synced.has(def.id):
+		SaveManager.data.achievements_synced.append(def.id)
+		SaveManager.save_data()
 
 func _on_backend_authenticated(success: bool) -> void:
 	if not success:
 		return
-	for id in _pending_unlocks:
-		var def: AchievementDefinition = _definitions.get(id)
-		if def != null:
-			_send(def)
-	_pending_unlocks.clear()
+	for id in SaveManager.data.unlocked_achievements:
+		if not SaveManager.data.achievements_synced.has(id):
+			var def: AchievementDefinition = _definitions.get(id)
+			if def != null:
+				_send(def)
 
 
 func _on_notes_changed(_value: int) -> void:
