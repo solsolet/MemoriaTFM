@@ -5,10 +5,12 @@
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
+			<key>BinaryPath</key>
+			<string>libgamecenter-simulator.release.a</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
-			<string>gamecenter-simulator.release.a</string>
+			<string>libgamecenter-simulator.release.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
@@ -20,14 +22,15 @@
 			<string>simulator</string>
 		</dict>
 		<dict>
+			<key>BinaryPath</key>
+			<string>libgamecenter.arm64-ios.release.a</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_armv7</string>
+			<string>ios-arm64</string>
 			<key>LibraryPath</key>
-			<string>gamecenter-device.release.a</string>
+			<string>libgamecenter.arm64-ios.release.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>armv7</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>
