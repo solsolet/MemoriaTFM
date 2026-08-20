@@ -277,15 +277,16 @@ Fer Focus mode
 
 ### Iteració 4
 
-TODO : Penar si mesclar focus mode amb Achievements
+TODO : Pensar si mesclar focus mode amb Achievements
 
 #### Projecte Godot
 
 Implementar Achievements.
 
-##### Solució errors
+##### Problemes
 
-deferring the scene change avoids acting on nodes mid-teardown. Rather than special-case it, apply it everywhere scenes change
+
+Deferring, aplaçar, els canvis descena evita que s'actue sobre els notes que estan a mig usar quan es produeix el canvi. Sha d'aplicat en tots els canvis d'escena.
 
 ```gd
 	# Error can_process
@@ -295,32 +296,35 @@ deferring the scene change avoids acting on nodes mid-teardown. Rather than spec
 
 ```
 
-Més errors trobats per logcat (comando llarg)
+Més errors trobats per logcat (comando llarg de ``)
 ```gd
-PlayGamesServices[SignInAuthenticator]: **** APP NOT CORRECTLY CONFIGURED TO USE GOOGLE PLAY GAME SERVICES
-PlayGamesServices[SignInAuthenticator]: **** DEVELOPER_ERROR
-PlayGamesServices[SignInAuthenticator]: **** This is usually caused by one of these reasons:
-PlayGamesServices[SignInAuthenticator]: **** (1) Your package name and certificate fingerprint do not match
-PlayGamesServices[SignInAuthenticator]: ****     the client ID you registered in Developer Console.
-PlayGamesServices[SignInAuthenticator]: **** (2) Your App ID was incorrectly entered.
-PlayGamesServices[SignInAuthenticator]: **** (3) Your game settings have not been published and you are 
-PlayGamesServices[SignInAuthenticator]: ****     trying to log in with an account that is not listed as
-PlayGamesServices[SignInAuthenticator]: ****     a test account.
-PlayGamesServices[SignInAuthenticator]: **** (4) A server auth code was requested, but an incorrect client
-PlayGamesServices[SignInAuthenticator]: ****     id was provided. The client id for server auth codes should
-PlayGamesServices[SignInAuthenticator]: ****     be the client id for the game server (not the android app).
-PlayGamesServices[SignInAuthenticator]: ****
-PlayGamesServices[SignInAuthenticator]: **** To help you debug, here is the information about this app
-PlayGamesServices[SignInAuthenticator]: **** Package name         : es.ua.eps.pianissimo
-PlayGamesServices[SignInAuthenticator]: **** Cert SHA1 fingerprint: A7:42:B2:A3:3B:D6:58:C3:67:16:04:F6:7A:0B:38:F8:8F:3E:15:0E
-PlayGamesServices[SignInAuthenticator]: **** App ID from manifest : 930293717150
-PlayGamesServices[SignInAuthenticator]: ****
-PlayGamesServices[SignInAuthenticator]: **** Check that the above information matches your setup in 
-PlayGamesServices[SignInAuthenticator]: **** Developer Console. Also, check that you're logging in with the
-PlayGamesServices[SignInAuthenticator]: **** right account (it should be listed in the Testers section if
-PlayGamesServices[SignInAuthenticator]: **** your project is not yet published).
-PlayGamesServices[SignInAuthenticator]: ****
-PlayGamesServices[SignInAuthenticator]: **** For more information, refer to the troubleshooting guide:
-PlayGamesServices[SignInAuthenticator]: ****   http://developers.google.com/games/services/android/troubleshooting
-PlayGamesServices[SignInAuthenticator]: ****
+**** APP NOT CORRECTLY CONFIGURED TO USE GOOGLE PLAY GAME SERVICES
+**** DEVELOPER_ERROR
+**** This is usually caused by one of these reasons:
+**** (1) Your package name and certificate fingerprint do not match
+****     the client ID you registered in Developer Console.
+**** (2) Your App ID was incorrectly entered.
+**** (3) Your game settings have not been published and you are 
+****     trying to log in with an account that is not listed as
+****     a test account.
+**** (4) A server auth code was requested, but an incorrect client
+****     id was provided. The client id for server auth codes should
+****     be the client id for the game server (not the android app).
+****
+**** To help you debug, here is the information about this app
+**** Package name         : es.ua.eps.pianissimo
+**** Cert SHA1 fingerprint: A7:42:B2:A3:3B:D6:58:C3:67:16:04:F6:7A:0B:38:F8:8F:3E:15:0E
+**** App ID from manifest : 930293717150
+****
+**** Check that the above information matches your setup in 
+**** Developer Console. Also, check that you're logging in with the
+**** right account (it should be listed in the Testers section if
+**** your project is not yet published).
+****
+**** For more information, refer to the troubleshooting guide:
+****   http://developers.google.com/games/services/android/troubleshooting
 ```
+
+Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game-Center habilitat.
+
+![[AppStore_AchievementWarning.png]]

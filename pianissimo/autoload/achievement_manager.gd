@@ -63,7 +63,7 @@ func show_achievements_ui() -> void:
 func _dispatch(def: AchievementDefinition) -> void:
 	if _backend == null or not _backend.is_ready():
 		return  # will retry automatically next successful sign-in, via _on_backend_authenticated
-	_send(def)
+	_send(def)	
 
 func _send(def: AchievementDefinition) -> void:
 	var platform_id: String = def.android_id if OS.get_name() == "Android" else def.ios_id
@@ -91,9 +91,10 @@ func _on_notes_changed(_value: int) -> void:
 		unlock("notes_1000")
 
 
-func resync_all() -> void:
-	print("AchievementManager: resync_all - unlocked count = ", SaveManager.data.unlocked_achievements.size())
-	for id in SaveManager.data.unlocked_achievements:
-		var def: AchievementDefinition = _definitions.get(id)
-		if def != null:
-			_send(def)
+# No borrar persi
+#func resync_all() -> void:
+	#print("AchievementManager: resync_all - unlocked count = ", SaveManager.data.unlocked_achievements.size())
+	#for id in SaveManager.data.unlocked_achievements:
+		#var def: AchievementDefinition = _definitions.get(id)
+		#if def != null:
+			#_send(def)

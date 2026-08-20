@@ -8,14 +8,14 @@ var _is_signed_in: bool = false
 
 func initialize() -> void:
 	if not Engine.has_singleton("GameCenter"):
-		push_warning("AchievementBackend (iOS): GameCenter singleton missing -- check Project Settings > Plugins and the iOS export preset's Plugins section")
+		push_warning("AchievementBackend (iOS): GameCenter singleton missing")
 		return
 	_singleton = Engine.get_singleton("GameCenter")
-	# VERIFY: signal name/shape against the plugin's current README --
-	# this is the part most likely to have moved since I last checked.
-	if _singleton.has_signal("game_center_event"):
-		_singleton.connect("game_center_event", _on_game_center_event)
-	_singleton.authenticate()
+	print("GameCenter methods: ", _singleton.get_method_list())
+	print("GameCenter signals: ", _singleton.get_signal_list())
+	
+	var error = _singleton.authenticate()
+	print("GameCenter authenticate() returned: ", error)
 
 
 func is_ready() -> bool:

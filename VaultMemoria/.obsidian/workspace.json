@@ -154,8 +154,7 @@
               "title": "Marcadors"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -288,11 +287,16 @@
   },
   "active": "09b56046f7e1e8ab",
   "lastOpenFiles": [
+    "Memoria/Assets/Pianissimo/It3/AppStore_AchievementWarning.png",
+    "Memoria/Assets/Pianissimo/Sense títol.md",
+    "Memoria/Assets/Pianissimo/It3",
+    "Memoria/Desenvolupament.md",
+    "Sense títol.base",
+    "Sense títol 1.base",
     "Memoria/Annexos/GDD.md",
     "Memoria/Metodologia.md",
     "Output/_build_processed.md",
     "Memoria/Marc teoric.md",
-    "Memoria/Desenvolupament.md",
     "Diari/2026-08-16.md",
     "Diari/2026-08-12.md",
     "Diari/2026-08-13.md",
@@ -306,7 +310,6 @@
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Game2_It2.jpg",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Game1_It2.jpg",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Demo1_It2.mp4",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Autoloads_It2.png",
     "Memoria/Assets/Pianissimo/It2/Pianissimo-Demo_2_It2.mp4",
     "Memoria/Assets/Pianissimo/It2",
     "Memoria/Assets/Pianissimo/It1",
@@ -327,12 +330,7 @@
     "Memoria/Resumen.md",
     "Memoria/Resum.md",
     "Memoria/Objectius.md",
-    "Memoria/Llegenda.md",
-    "Memoria/Justificacio i Objectius.md",
     "Memoria/Assets/AltresJocs/MagicArchery",
-    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png.sb-17f81a0c-Dyx8FC",
-    "Rhythm Paradise.pdf",
-    "Memoria/Assets/AltresJocs/RhythmParadise",
-    "Memoria/Assets/Pianissimo"
+    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png.sb-17f81a0c-Dyx8FC"
   ]
 }
