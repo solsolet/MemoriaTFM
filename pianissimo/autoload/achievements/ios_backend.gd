@@ -63,5 +63,9 @@ func unlock(platform_id: String) -> void:
 
 
 func show_ui() -> void:
-	if _singleton != null:
-		_singleton.show_game_center()
+	if not _is_signed_in or _singleton == null:
+		print("AchievementBackend (iOS): cannot show Game Center")
+		return
+
+	var result = _singleton.show_game_center({}) # es pot especificar el que volem que mostre, p.e. "view": "achievements"
+	print("AchievementBackend (iOS): show_game_center returned ", result)

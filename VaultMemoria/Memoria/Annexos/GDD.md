@@ -186,6 +186,28 @@ Credits audio de prova:
 - ding: https://freesound.org/s/204648/
 - bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
 
+
+## Integració segons SO
 ### Assoliments
 
-Fem una façana per a usar per sobre d'Android o iOS
+Fem una façana per a usar per sobre d'Android o iOS i després per cada SO un back-end específic. 
+
+S'ha usat els connectors oficials de Godot de `google-play-services` i `gamecenter` 
+
+TODO : posar enllaços ací o en la iteració o en els dos llocs.
+
+Els assoliments en el projecte es troben com a recursos personalitzats `.tres` definits per `achievementDefinition` on inclouen diferents variables per a cadascun.
+
+| ID                       | Títol           | Descripció                        | ID Android             | ID iOS                 | Imatge |
+| ------------------------ | --------------- | --------------------------------- | ---------------------- | ---------------------- | ------ |
+| `first_focus_session`    | First Steps     | Complete your first focus session | CgkInrHOzokbEAIQAQ     | first_focus_session    |        |
+| `notes_1000`             | Getting Started | Earn 1,000 notes in total         | <br>CgkInrHOzokbEAIQAg | notes_1000             |        |
+| `first_upgrade_purchase` | Investor        | Buy your first upgrade            | CgkInrHOzokbEAIQAw     | first_upgrade_purchase |        |
+| `first_stat_purchase`    | Growth Mindset  | Buy your first stat               | <br>CgkInrHOzokbEAIQBA | first_stat_purchase    |        |
+| `upgrade_level_10`       | Dedicated       | Reach level 10 on any upgrade     | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10       |        |
+| `stat_level_10`          | Disciplined     | Reach level 10 on any stat        | CgkInrHOzokbEAIQBg     | stat_level_10          |        |
+: Assoliments implementats en Pianissimo
+
+S'ha creat una imatge diferent per a cada assoliment no per decisió pròpia si no per què la Play Store ho exigeix i ja que estava lo dona una miqueta més de personalitat. I Ja que s'ha fet a faena l'App Store també es beneficia de la diversitat de caràtules.
+
+### Notificacions

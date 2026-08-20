@@ -43,20 +43,6 @@
             }
           },
           {
-            "id": "e35e240550904da0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Diari/2026-08-12.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-12"
-            }
-          },
-          {
             "id": "94d175d2df51557a",
             "type": "leaf",
             "state": {
@@ -133,7 +119,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#get_tree",
+                "query": "tag:#dev",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -287,28 +273,31 @@
   },
   "active": "09b56046f7e1e8ab",
   "lastOpenFiles": [
-    "Memoria/Assets/Pianissimo/It3/AppStore_AchievementWarning.png",
-    "Memoria/Assets/Pianissimo/Sense títol.md",
-    "Memoria/Assets/Pianissimo/It3",
+    "Memoria/Assets/Pianissimo/It3/Pianisimo_FocusSession.png",
+    "Memoria/Assets/Pianissimo/It3/Pianissimo_FocusJournal.png",
+    "Memoria/Assets/Pianissimo/It3/Pianissimo_FocusMode.png",
     "Memoria/Desenvolupament.md",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_UI.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Start.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_SignIn.png",
+    "Memoria/Assets/Godot-Steam-Releases.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Achievements.png",
+    "Memoria/Assets/Pianissimo/It4",
+    "Memoria/Assets/Pianissimo/Sense títol.md",
+    "Memoria/Annexos/GDD.md",
+    "Diari/2026-08-12.md",
+    "Organitzacio/Kanban.md",
+    "Memoria/Metodologia.md",
+    "Memoria/Assets/Pianissimo/It4/AppStore_AchievementWarning.png",
+    "Memoria/Assets/Pianissimo/It3",
     "Sense títol.base",
     "Sense títol 1.base",
-    "Memoria/Annexos/GDD.md",
-    "Memoria/Metodologia.md",
     "Output/_build_processed.md",
     "Memoria/Marc teoric.md",
     "Diari/2026-08-16.md",
-    "Diari/2026-08-12.md",
     "Diari/2026-08-13.md",
     "Pasted image 20260815145507.png",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Home2_It2.jpg",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots2_It2.png",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots1_It2.png",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Settings_It2.jpg",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Home1_It2.jpg",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Game2_It2.jpg",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Game1_It2.jpg",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Demo1_It2.mp4",
     "Memoria/Assets/Pianissimo/It2/Pianissimo-Demo_2_It2.mp4",
     "Memoria/Assets/Pianissimo/It2",
@@ -322,15 +311,12 @@
     "Memoria/Cites.md",
     "Diari/fase.md",
     "Memoria/Index.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Bibliografia.md",
     "Memoria/Annexos.md",
     "Memoria/Agraiments.md",
     "Memoria/Abstract.md",
     "Memoria/Resumen.md",
     "Memoria/Resum.md",
-    "Memoria/Objectius.md",
-    "Memoria/Assets/AltresJocs/MagicArchery",
-    "Memoria/Assets/AltresJocs/RhythmParadise/RhythmParadise-Menu.png.sb-17f81a0c-Dyx8FC"
+    "Memoria/Objectius.md"
   ]
 }

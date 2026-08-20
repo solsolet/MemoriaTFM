@@ -37,6 +37,23 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Sistema d'àudio.
 - Internacionalització.
 
+#### v0.3.0
+
+- Pantalles per al mode **focus**.
+- Solució error `can_process`
+
+#### v0.4.0
+
+- Implementació dels connectors específics de cada tenda d'aplicacions al projecte de Godot.
+- Investigació de les especificacions dels connectors `godot-play-services` i `gamecenter` de Godot.
+- Façana comuna i *back-end* específic per a assoliments tant d'Android com d'iOS.
+- Implementació d'assoliments en la Play Store i App Store.
+- Implementació dels assoliments com a recurs en el projecte de Godot.
+- Autenticació de l'usuari a Play Game Services i en Game Center.
+- Visualització de la UI d'assoliments de cada SO amb `show_achivements_ui`.
+- Proves en dispositius de cada SO per a validar que es poden desbloquejar assoliments.
+- Muntada del joc a les tendes d'aplicacions per a poder descarregar-lo.
+
 ## Iteracions
 
 ### Interacció 0
@@ -269,7 +286,10 @@ https://uhiyama-lab.com/en/notes/godot/save-load-system/
 
 ### Iteració 3
 
-Aquesta iteració comprén del 15 al 20 d'agost de 2026.
+Aquesta iteració comprén del 15 al 17 d'agost de 2026. Ha durat molt menys del que es tenia previst ja que ha resultat una implementació senzilla.
+
+Després d'implementar-ho tot
+S'ha quedat una errada surant que aprofitant ja que la resta ha sigut ràpid d'implementar, s'ha preferit continuar i seguir implementant característiques més rellevants del joc que seguir aprofundint ja que la solució segurament portaria cert temps.
 
 #### Projecte Godot
 
@@ -277,11 +297,13 @@ Fer Focus mode
 
 ### Iteració 4
 
-TODO : Pensar si mesclar focus mode amb Achievements
+Aquesta iteració comprén del 18 al 21 d'agost de 2026. També ha seigut relativament ràpida encara qe ha sigut la més costosa i desesperant de realitzar fins al momnet.
 
 #### Projecte Godot
 
 Implementar Achievements.
+
+TODO : posar captures fetes collage
 
 ##### Problemes
 
@@ -328,3 +350,19 @@ Més errors trobats per logcat (comando llarg de ``)
 Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game-Center habilitat.
 
 ![[AppStore_AchievementWarning.png]]
+
+### Iteració 5
+
+Aquesta iteració comprén del 22 fins al 26
+
+Centrar-se en UI per a preparar proves usuaris.
+
+### Iteració 6
+
+Aquesta iteració comprén dle 27 al 31 (pot ser més dies si agafem testing)
+
+Centrar-se en Notis if possible + crear més contingut de millores i stats + test
+
+### Iteració 7
+
+setembre, rematar + resultats
