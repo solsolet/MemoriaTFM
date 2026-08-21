@@ -19,6 +19,7 @@ kanban-plugin: board
 - [ ] Música de fons Focus Mode Botó #nice-to-have
 - [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have
 - [ ] Tipus de restricció Focus #nice-to-have
+- [ ] Arreglar taula assoliments GDD #docu
 
 
 ## To Do (10)

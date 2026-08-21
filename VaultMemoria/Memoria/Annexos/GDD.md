@@ -233,7 +233,7 @@ Quan es completa un assaig hi ha una recompensa en forma de carta que es poden v
 | bach             | J. S. Bach                | Compositor | Baroque composer and organist, famed for intricate counterpoint like The Well-Tempered Clavier.      |
 | mozart           | W. A. Mozart              | Compositor | Classical-era prodigy who composed symphonies and operas from childhood.                             |
 | chopin           | Frédéric Chopin           | Compositor | Romantic-era composer who wrote almost exclusively for solo piano.                                   |
-| piano_insturment | The Piano                 | Instrument | Invented around 1700, it can play both loud and soft — hence its original name, "pianoforte".        |
+| piano_instrument | The Piano                 | Instrument | Invented around 1700, it can play both loud and soft — hence its original name, "pianoforte".        |
 | harpichord       | Harpsichord               | Instrument | A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone.       |
 | wtc_fact         | The Well-Tempered Clavier | Dada       | A landmark collection covering every major and minor key, still used to teach piano technique today. |
 : Recursos tipus carta implementats a Pianissimo

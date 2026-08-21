@@ -193,7 +193,7 @@ A *game* trobem el piano, les millores i estadístiques, el camp de notes i el m
 
 En eixe moment es va decidir una estructura de carpetes inicial, on es podia veure *scenes*, *assets*, *scripts*, *ui* i *autoloads*. Després es mostrarà l'estat final de les carpetes en aquesta iteració, ja que segons les necessitats del moment es van anar creant més.
 
-![Estructra de carpetes final de la iteració 2](Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png){height=5cm}
+![Estructra de carpetes final de la iteració 2](Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png){height=4cm}
 
 Continuant amb la implementació, una vegada estaven les escenes, alguns elements de la interfície (botons, etiquetes...) es va preparar la **[internacionalització](#gdd-internacionalitzacio)**, perquè era una tasca senzilla i es podria provar el seu funcionament amb el poc text que es tenia de moment.
 
