@@ -26,8 +26,8 @@ func _format_time(seconds: float) -> String:
 
 
 func _on_completed(_reward: int) -> void:
-	get_tree().change_scene_to_file(ScenePaths.FOCUS_SUMMARY)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SUMMARY)
 
 
 func _on_failed() -> void:
-	get_tree().change_scene_to_file(ScenePaths.FOCUS_SUMMARY)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SUMMARY)

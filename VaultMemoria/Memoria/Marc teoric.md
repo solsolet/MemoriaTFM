@@ -62,7 +62,9 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 ##### Productivitat
 
-%%TODO : Contar què son, quan tinga algo del mode concentració implementat%%
+%%TODO : Contar què son, quan tinga algo del mode concentració implementat, ocmentar si la música de fons pot aaportar a performejar millor%%
+
+**Exemples**: *Forest*.
 
 ### Mercat de videojocs mòbils
 
@@ -460,3 +462,20 @@ A continuació hi ha un pont on sonen els vents fusta que ens tornen a dur al la
 O podriem interpretar-ho com a A-B-A' i on abans havia distingit en A i B fer que siguen frases diferents.
 
 De tota manera tant la part de trompeta  o de saxo estan en La m, al canvi al vent fusta es produeix una modulació a la dominant, Mi m. Després torna a la tònica i acaba.
+
+### Forest {#sec-marc-teoric-forest}
+
+L'aplicació Forest és una aplicació de concentració que permet als usuaris fer seguiment de les seues tasques.
+
+#### Mecàniques i progressió
+#### UI/UX
+
+L'aplicació comença amb un tutorial de swipe? I et demana estar registrat o bé amb google o amb email. L'app et pregunta si vols que t'enviï notificacions i si li dius que sí apareix el toggle de permetre el permís. Té un pla de pagament
+
+L'estètica és 2D senzilla, colors vers, marrons, que evoquen la natura d'acord amb tota el imaginari d'un bosc.
+
+#### So
+
+El joc com a tal no té efectes de so al clicar els diferents elements de la pantalla, però sí que hi ha l'opció de posar so de fons, durant la tasca al clicar a l'icona dels auriculars.
+
+Els sons disponibles son relaxants i d'ambient. Son sons de fons que s'apropen als sorolls de tots els colors, blanc, marró, rosa... Per exemple, el so d'una cascada, un riu, el vent, etc. tenen unes freqüències que s'identifiquen en aquests tipus de so.

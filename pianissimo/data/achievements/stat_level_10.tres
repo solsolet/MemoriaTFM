@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://cfxwd54paibaq"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_ah6xe"]
+
+[resource]
+script = ExtResource("1_ah6xe")
+id = "stat_level_10"
+display_name = "Disciplined"
+description = "Reach level 10 on any stat"
+android_id = "CgkInrHOzokbEAIQBg"
+ios_id = "stat_level_10"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

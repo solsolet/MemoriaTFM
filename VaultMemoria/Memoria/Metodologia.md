@@ -93,6 +93,10 @@ Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics 
 
 Editor de vídeo per a elaborar vídeos de demos i producte final.
 
+### LLM
+
+En el desenvolupament del joc s'ha utilitzat Claude i ChatGPT per a depurar, trobar errades i refactoritzar diferents funcionalitats implementades en el joc. Només s'han usat pel que fa a la programació. Aquests LLM han permés anar més de pressa i evitar quedar-se paralitzat per alguna cosa que no eixira durant la implementació.
+
 ## Anàlisi de videojocs {#sec-analisi-videojocs}
 
 Per a analitzar els videojocs de l'[estat l'art](#sec-estat-art), s'ha seguit aquesta metodologia:

@@ -20,7 +20,8 @@
     "SaveManager",
     "SaveManager",
     "UpgradeManager",
-    "HBoxContainer"
+    "HBoxContainer",
+    "idle"
   ],
   "alwaysUpdateLinks": true
 }

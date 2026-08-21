@@ -1,0 +1,14 @@
+[gd_scene load_steps=9 format=3 uid="uid://yox1hb6km7dy"]
+
+[ext_resource type="Script" uid="uid://djd8863mc2lhy" path="res://autoload/achievement_manager.gd" id="1_a2ob2"]
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="2_l8hkb"]
+[ext_resource type="Resource" uid="uid://xmrm23qjjblj" path="res://data/achievements/first_focus_session.tres" id="3_7x2d4"]
+[ext_resource type="Resource" uid="uid://bwm5i5fnae4se" path="res://data/achievements/first_stat_purchase.tres" id="4_cumlm"]
+[ext_resource type="Resource" uid="uid://hrwnlm0ubx0f" path="res://data/achievements/first_upgrade_purchase.tres" id="5_a3ymf"]
+[ext_resource type="Resource" uid="uid://c88fgdpddk3c4" path="res://data/achievements/notes_1000.tres" id="6_dgkrk"]
+[ext_resource type="Resource" uid="uid://cfxwd54paibaq" path="res://data/achievements/stat_level_10.tres" id="7_1sg6p"]
+[ext_resource type="Resource" uid="uid://d3mi23acrktko" path="res://data/achievements/upgrade_level_10.tres" id="8_suxok"]
+
+[node name="AchievementManager" type="Node"]
+script = ExtResource("1_a2ob2")
+definitions = Array[ExtResource("2_l8hkb")]([ExtResource("3_7x2d4"), ExtResource("4_cumlm"), ExtResource("5_a3ymf"), ExtResource("6_dgkrk"), ExtResource("7_1sg6p"), ExtResource("8_suxok")])

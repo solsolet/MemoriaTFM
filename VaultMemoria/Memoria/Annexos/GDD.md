@@ -58,6 +58,8 @@ Totes les imatges, si no s’indica el contrari, son d’elaboració pròpia.
 
 Ús de FocusManager. Afegim dades a playersavedata relacionades amb el mode per a poder guardar la sessió.
 
+TODO : posar més coses.
+
 ### *Autoloads*
 
 Els *autoloads* s'han utilitzat per als *managers* que necessitava el joc com a *Singleton*. Per a fer-ho s'ha creat una carpeta `autoloads` on se situen tots i per a carregar-los com a tal en el projecte es fa: `Project > Globals > Autoload`.
@@ -160,7 +162,7 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 | Nom             | Descripció                        | Àudio |
 | --------------- | --------------------------------- | ----- |
 | Menú            | Música que sona de fons en *home* |       |
-| Barroc1         |                                   |       |
+| Barroc1         | Fuga en Do m de J. S. Bach        |       |
 | Barroc2         |                                   |       |
 | Classicisme1    |                                   |       |
 | Classicisme2    |                                   |       |
@@ -185,3 +187,53 @@ Credits audio de prova:
 - pop: https://freesound.org/s/665183/
 - ding: https://freesound.org/s/204648/
 - bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
+
+## Integració segons SO
+
+Com el joc està pensat per a iOS i Android hi ha funcionalitats que s'han d'adaptar segons el SO i la seua tenda d'aplicacions.
+
+### Assoliments
+
+Fem una façana per a usar per sobre d'Android o iOS i després per cada SO un back-end específic. 
+
+S'ha usat els connectors oficials de Godot de `google-play-services` i `gamecenter` 
+
+TODO : posar enllaços ací o en la iteració o en els dos llocs.
+
+Els assoliments en el projecte es troben com a recursos personalitzats `.tres` definits per `achievementDefinition` on inclouen diferents variables per a cadascun.
+
+| ID                       | Títol           | Descripció                        | ID Android             | ID iOS                 | Imatge |
+| ------------------------ | --------------- | --------------------------------- | ---------------------- | ---------------------- | ------ |
+| `first_focus_session`    | First Steps     | Complete your first focus session | CgkInrHOzokbEAIQAQ     | first_focus_session    |        |
+| `notes_1000`             | Getting Started | Earn 1,000 notes in total         | <br>CgkInrHOzokbEAIQAg | notes_1000             |        |
+| `first_upgrade_purchase` | Investor        | Buy your first upgrade            | CgkInrHOzokbEAIQAw     | first_upgrade_purchase |        |
+| `first_stat_purchase`    | Growth Mindset  | Buy your first stat               | <br>CgkInrHOzokbEAIQBA | first_stat_purchase    |        |
+| `upgrade_level_10`       | Dedicated       | Reach level 10 on any upgrade     | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10       |        |
+| `stat_level_10`          | Disciplined     | Reach level 10 on any stat        | CgkInrHOzokbEAIQBg     | stat_level_10          |        |
+: Assoliments implementats en Pianissimo
+
+S'ha creat una imatge diferent per a cada assoliment no per decisió pròpia si no per què la Play Store ho exigeix i, ja que estava li dona una miqueta més de personalitat. Com s'ha fet a faena l'App Store també es beneficia de la diversitat de caràtules.
+
+### Notificacions
+
+Si s'implementen posar com s'ha fet.
+
+## Recursos
+
+### Àlbum de cartes {#gdd-album-cartes}
+
+Quan es completa un assaig hi ha una recompensa en forma de carta que es poden visualitzar en l'escena d'**àlbum**. De moment hi ha 3 tipus de cartes:
+
+- **COMPOSER**: on apareixeran compositors famosos de totes les èpoques.
+- **INSTRUMENT**: instruments de la família dels teclats al llard de la història, es podria ampliar a altres tipus d'instruments.
+- **FACT**: dades o curiositats musicals que tinguen a veure en les diferents èpoques, tècnica, obres en concret... És una categoria general.
+
+| ID               | Nom                       | Categoria  | Descripció                                                                                           |
+| ---------------- | ------------------------- | ---------- | ---------------------------------------------------------------------------------------------------- |
+| bach             | J. S. Bach                | Compositor | Baroque composer and organist, famed for intricate counterpoint like The Well-Tempered Clavier.      |
+| mozart           | W. A. Mozart              | Compositor | Classical-era prodigy who composed symphonies and operas from childhood.                             |
+| chopin           | Frédéric Chopin           | Compositor | Romantic-era composer who wrote almost exclusively for solo piano.                                   |
+| piano_insturment | The Piano                 | Instrument | Invented around 1700, it can play both loud and soft — hence its original name, "pianoforte".        |
+| harpichord       | Harpsichord               | Instrument | A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone.       |
+| wtc_fact         | The Well-Tempered Clavier | Dada       | A landmark collection covering every major and minor key, still used to teach piano technique today. |
+: Recursos tipus carta implementats a Pianissimo

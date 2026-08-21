@@ -26,8 +26,9 @@ StatManager="*res://autoload/stat_manager.tscn"
 FocusManager="*res://autoload/focus_manager.gd"
 CardManager="*res://autoload/card_manager.tscn"
 AudioManager="*res://autoload/audio_manager.gd"
-AchievementManager="*res://autoload/achievement_manager.gd"
+AchievementManager="*res://autoload/achievement_manager.tscn"
 NotificationManager="*res://autoload/notification_manager.gd"
+GodotPlayGameServices="*res://addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd"
 
 [display]
 
@@ -36,6 +37,10 @@ window/size/viewport_height=1920
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodotPlayGameServices/plugin.cfg")
 
 [file_customization]
 

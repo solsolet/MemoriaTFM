@@ -37,6 +37,25 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Sistema d'àudio.
 - Internacionalització.
 
+#### v0.3.0
+
+- Pantalles mode **focus** (configuració, historial, sessió i resultat d'assajos) i **àlbum** de cartes.
+- Sistema d'assajos.
+- Recompensa de guanyar cartes i desbloquejar-les en l'àlbum per assaig completat.
+- Solució error `can_process`.
+
+#### v0.4.0
+
+- Implementació dels connectors específics de cada tenda d'aplicacions al projecte de Godot.
+- Investigació de les especificacions dels connectors `godot-play-services` i `gamecenter` de Godot.
+- Façana comuna i *back-end* específic per a assoliments tant d'Android com d'iOS.
+- Implementació d'assoliments en la Play Store i App Store.
+- Implementació dels assoliments com a recurs en el projecte de Godot.
+- Autenticació de l'usuari a Play Game Services i en Game Center.
+- Visualització de la UI d'assoliments de cada SO amb `show_achivements_ui`.
+- Proves en dispositius de cada SO per a validar que es poden desbloquejar assoliments.
+- Muntada del joc a les tendes d'aplicacions per a poder descarregar-lo.
+
 ## Iteracions
 
 ### Interacció 0
@@ -269,8 +288,124 @@ https://uhiyama-lab.com/en/notes/godot/save-load-system/
 
 ### Iteració 3
 
-Aquesta iteració comprén del 15 al 20 d'agost de 2026.
+Aquesta iteració comprén del 15 al 17 d'agost de 2026. Ha durat menys del previst (5 o 6 dies), ja que ha resultat una implementació senzilla.
+
+El mode *focus*, o millor dit, d'**assaig**, naix de la idea que l'aplicació pot ser un punt d'encontre entre jugadors casuals de la part *idle* i de gent que vulga una aplicació per a fer un seguiment de tasques per temps. Al ser de temàtica musical, els músics poden ser públic objectiu.
+
+Si bé és cert que d'aplicacions de concentració n'hi ha moltes, aquesta vol apostar per combinar el gènere *idle* en unes sessions de *productivitat gamificada* amb una estètica musical. A més té molt de sentit, els jocs *idle* són jocs d'esperar i depenent del tipus, tens una xicoteta part de controlar els recursos al teu abast. Per què no aprofitar l'espera i fer alguna cosa de profit mentrestant i, a canvi, reps una recompensa per la part *idle*?
+
+Aquesta lògica s'ha inspirat en l'aplicació Forest, que es pot consultar al seu corresponent apartat en el [marc teòric](#sec-marc-teoric-forest). Forest fa molt bé donar-li importància a la teua concentració i accions: quan comences una tasca tens un arbre que creix durant el temps que s'ha determinat. En cas d'eixir de l'aplicació, "distreure't", la planta morirà i hauràs "fracassat", en canvi, si la compleixes la tindràs al teu jardí.
+
+És molt bona aplicació i realment encara que s'imités al 100% ningú tindria prou raons per apostar pel meu joc en lloc de l'original. Per això necessita la part *idle* per a donar-li sentit i pes, i l'estètica musical pot ser interessant per a músics que vulguen fer seguiment dels seus assajos.
+
+*Pianissimo* podria ser un joc *idle* a seques, però no una aplicació de control de tasques a soles. Sobretot al nivell ximple que tindrà de moment l'apartat d'assajos.
+
+Per a donar-li encara més de pes a la part musical, i que algun músic tinga l'interés d'usar-la per als seus assajos, a més d'una recompensa en la part *idle*, hi haurà unes cartes col·leccionables amb píndoles de curiositats musicals. Es pot aprendre cultura musical metre s'assaja.
+
+Aquest disseny *piano-musical* també escau en el fet que he estudiat música per molts anys, i he tingut el bon costum, a mesura que passaven els cursos i gràcies a la meua mestra, d'anar intentant optimitzar i controlar els meus assajos.
+
+Sempre he hagut de dedicar-li més hores que ningú per a tenir resultats normals i, així i tot, no sempre l'esforç s'ha vist recompensat. Anotar el que assajava, apuntar notes sobre el meu progrés, quines seccions d'una obra em costaven més, què estava fent per a treballar-les... va suposar un punt d'inflexió en la meua destresa com a pianista.
 
 #### Projecte Godot
 
-Fer Focus mode
+Primer es van crear les pantalles, començant per la de la configuració de la sessió d'assaig. Per ara, només s'han posat camps bàsics com el títol de la sessió, el temps en minuts de durada i, opcionalment, una descripció de la tasca. En el futur es podrien afegir més camps com etiquetes o el tipus de restricció que volem.
+
+Per a guardar les dades s'afigen com a variables en `player_save_data.gd` i es controlaran amb `focus_manager.gd` que és un *autoload*. El codi compta amb 3 *senyals* per a avisar entre les diferents pantalles si la sessió ha començat quan es completa i si ha fallat. A més té el funcionament de guardar les dades de l'assaig amb `SaveManager`.
+
+Una vegada amb aquesta base feta es van continuar implementant la resta de les pantalles:
+
+- `focus_journal`: mostra els assajos en mode llista, es creen per files.
+- `focus_session`: L'assaig en si, veient com passa el comptador i s'emplena el progrés.
+- `focus_summary`: El resultat de l'assaig, si s'ha completat a més es posa la recompensa.
+
+Una vegada comprovat que funcionaven es va implementar el sistema de cartes desbloquejables com a recompensa, això va comportar crear:
+
+- Una nova escena per a l'àlbum, `card_album.tscn`.
+- L'element carta, `card_tile.tscn` i la seua definició, `card_definition`, per a poder crear recursos tipus "carta", guardats en la carpeta `/data/cards`.
+- Un `card_manager` com a *autoload* per a emmagatzemar totes les cartes disponibles.
+
+Per a les cartes s'ha definit que siguen d'un tipus en concret per a donar-li un sentit, en un futur es podria veure quantes cartes de cada tipus es té o organitzar l'àlbum. El detall es troba en l'apartat de [cartes](#gdd-album-cartes) al GDD.
+
+La interfície és molt lletja de moment, només hi ha els elements bàsics sense tocar el tema per defecte pràcticament com es pot veure en la figura \ref{fig:screenshots-it3}. En futures iteracions se li donarà una rentada de cara.
+
+![Mode Assaig en la iteració 3 de Pianissimo \label{fig:screenshots-it3}](Memoria/Assets/Pianissimo/It3/Pianissimo_FocusMode.png){height=6cm}
+
+S'ha quedat una errada surant que aprofitant, ja que la resta ha sigut ràpid d'implementar, s'ha preferit continuar i continuar implementant característiques més rellevants del joc que continuar aprofundint perquè la solució segurament portaria cert temps.
+
+### Iteració 4
+
+Aquesta iteració comprén del 18 al 21 d'agost de 2026. També ha sigut relativament ràpida encara que ha sigut la més costosa i desesperant de realitzar fins al moment.
+
+S'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la tenda corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna.
+
+La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
+
+#### Projecte Godot
+
+Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assoliments que tinga tots els mètodes necessaris i per baix hi haja una espècie de back-end específic tant per a Android com per a iOS.
+
+![Captures de Pianissimo en un iPhone amb Game Center habilitat en iOS](Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Config.png){height=6cm}
+
+![Captures de Pianissimo en un Android amb els Google Play Services habilitats](Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png){height=6cm}
+
+##### Problemes
+
+Deferring, aplaçar, els canvis descena evita que s'actue sobre els notes que estan a mig usar quan es produeix el canvi. Sha d'aplicat en tots els canvis d'escena.
+
+```gd
+	# Error can_process
+	get_tree().change_scene_to_file(ScenePaths.CARD_ALBUM)
+	# solució
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.CARD_ALBUM)
+
+```
+
+Més errors trobats per logcat (comando llarg de `lol`)
+
+```gd
+**** APP NOT CORRECTLY CONFIGURED TO USE GOOGLE PLAY GAME SERVICES
+**** DEVELOPER_ERROR
+**** This is usually caused by one of these reasons:
+**** (1) Your package name and certificate fingerprint do not match
+****     the client ID you registered in Developer Console.
+**** (2) Your App ID was incorrectly entered.
+**** (3) Your game settings have not been published and you are 
+****     trying to log in with an account that is not listed as
+****     a test account.
+**** (4) A server auth code was requested, but an incorrect client
+****     id was provided. The client id for server auth codes should
+****     be the client id for the game server (not the android app).
+****
+**** To help you debug, here is the information about this app
+**** Package name         : es.ua.eps.pianissimo
+**** Cert SHA1 fingerprint: A7:42:B2:A3:3B:D6:58:C3:67:16:04:F6:7A:0B:38:F8:8F:3E:15:0E
+**** App ID from manifest : 930293717150
+****
+**** Check that the above information matches your setup in 
+**** Developer Console. Also, check that you're logging in with the
+**** right account (it should be listed in the Testers section if
+**** your project is not yet published).
+****
+**** For more information, refer to the troubleshooting guide:
+****   http://developers.google.com/games/services/android/troubleshooting
+```
+
+Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game Center habilitat.
+
+![[AppStore_AchievementWarning.png]]
+
+### Iteració 5
+
+Aquesta iteració comprén del 22 fins al 26
+
+Centrar-se en UI per a preparar proves usuaris.
+
+### Iteració 6
+
+Aquesta iteració comprén dle 27 al 31 (pot ser més dies si fem proves amb usuaris)
+
+Centrar-se en Notis if possible + crear més contingut de millores i stats + test
+
+### Iteració 7
+
+setembre, rematar + resultats + p

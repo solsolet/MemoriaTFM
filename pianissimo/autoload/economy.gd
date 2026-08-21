@@ -11,6 +11,7 @@ func add(amount: int) -> void:
 	if amount <= 0:
 		return
 	SaveManager.data.notes += amount
+	SaveManager.data.total_notes_earned += amount
 	notes_changed.emit(SaveManager.data.notes)
 
 func spend(amount: int) -> bool:

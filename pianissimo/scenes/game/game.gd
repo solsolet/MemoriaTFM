@@ -88,14 +88,16 @@ func cleanup() -> void:
 
 func _exit_tree() -> void:
 	cleanup()
+	if get_viewport().size_changed.is_connected(_apply_ui_scaling):
+		get_viewport().size_changed.disconnect(_apply_ui_scaling)
 
 
 func _on_btn_back_pressed() -> void:
 	cleanup()
-	get_tree().change_scene_to_file(ScenePaths.HOME)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
 
 
 func _on_settings_button_pressed() -> void:
 	SettingsManager.return_scene_path = ScenePaths.GAME
 	cleanup()
-	get_tree().change_scene_to_file(ScenePaths.SETTINGS)
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.SETTINGS)

@@ -51,4 +51,7 @@ func purchase(id: String) -> bool:
 	SaveManager.data.upgrade_levels[id] = new_level
 	SaveManager.save_data()
 	upgrade_purchased.emit(id, new_level)
+	AchievementManager.unlock("first_upgrade_purchase")
+	if new_level >= 10:
+		AchievementManager.unlock("upgrade_level_10")
 	return true

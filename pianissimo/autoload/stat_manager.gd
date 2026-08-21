@@ -50,4 +50,7 @@ func purchase(id: String) -> bool:
 	SaveManager.data.stat_levels[id] = new_level
 	SaveManager.save_data()
 	stat_purchased.emit(id, new_level)
+	AchievementManager.unlock("first_stat_purchase")
+	if new_level >= 10:
+		AchievementManager.unlock("stat_level_10")
 	return true

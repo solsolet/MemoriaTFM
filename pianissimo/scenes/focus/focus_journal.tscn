@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://btgexob012atw" path="res://scenes/focus/focus_journal.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
 
-[node name="FocusJournal" type="Control"]
+[node name="FocusJournal" type="Control" node_paths=PackedStringArray("entries_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
+entries_container = NodePath("SafeArea/VBoxContainer/ScrollContainer/EntriesContainer")
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1
