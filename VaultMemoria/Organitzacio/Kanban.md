@@ -16,6 +16,9 @@ kanban-plugin: board
 - [ ] Lore #nice-to-have
 - [ ] Settings notificació #nice-to-have
 - [ ] Home tipo piano
+- [ ] Música de fons Focus Mode Botó #nice-to-have
+- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have
+- [ ] Tipus de restricció Focus #nice-to-have
 
 
 ## To Do (10)

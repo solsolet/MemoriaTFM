@@ -1,11 +1,11 @@
 [
   "obsidian-git",
-  "obsidian-languagetool-plugin",
   "obsidian-pandoc",
   "obsidian-enhancing-export",
   "obsidian-style-settings",
   "obsidian-kanban",
   "todoseq",
   "obsidian-zotero-desktop-connector",
-  "obsidian-citation-plugin"
+  "obsidian-citation-plugin",
+  "obsidian-languagetool-plugin"
 ]
