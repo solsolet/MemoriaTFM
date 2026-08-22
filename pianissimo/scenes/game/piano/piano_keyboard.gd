@@ -7,36 +7,30 @@ signal layout_changed
 const NOTE_SEQUENCE := ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 const BASE_LANE_COUNT := 3
 
-var key_buttons: Array[Button] = []
+@export var interior_border_width: int = 0  # same-row keys
 
-var _white_key_normal: StyleBoxFlat
-var _white_key_pressed: StyleBoxFlat
-var _black_key_normal: StyleBoxFlat
-var _black_key_pressed: StyleBoxFlat
+var key_buttons: Array[Button] = []
 
 
 func _ready() -> void:
-	_white_key_normal = StyleBoxFlat.new()
-	_white_key_normal.bg_color = Color(1.0, 1.0, 1.0, 1.0)
-	_white_key_normal.border_color = Color(0.75, 0.75, 0.72, 1)
-	_white_key_normal.border_width_bottom = 2
-	_white_key_normal.corner_radius_bottom_left = 4
-	_white_key_normal.corner_radius_bottom_right = 4
-
-	_white_key_pressed = _white_key_normal.duplicate()
-	_white_key_pressed.bg_color = Color(0.90, 0.80, 0.45, 1)
-
-	_black_key_normal = StyleBoxFlat.new()
-	_black_key_normal.bg_color = Color(0.08, 0.08, 0.08, 1)
-	_black_key_normal.corner_radius_bottom_left = 4
-	_black_key_normal.corner_radius_bottom_right = 4
-
-	_black_key_pressed = _black_key_normal.duplicate()
-	_black_key_pressed.bg_color = Color(0.55, 0.45, 0.15, 1)
-
 	_build_keys()
 	resized.connect(_layout_keys)
 	StatManager.stat_purchased.connect(_on_stat_purchased)
+
+
+func _style_key(button: Button, is_black: bool, index: int, total: int) -> void:
+	var variation: StringName = &"BlackKeyButton" if is_black else &"WhiteKeyButton"
+	button.theme_type_variation = variation
+
+	# Real keys sit edge-to-edge, unlike Home's stacked column -- thin out the
+	# shared side borders so neighbors don't double up into a thick seam.
+	var base_style: StyleBoxFlat = ThemeDB.get_project_theme().get_stylebox("normal", variation)
+	var style := base_style.duplicate() as StyleBoxFlat
+	if index > 0:
+		style.border_width_left = interior_border_width
+	if index < total - 1:
+		style.border_width_right = interior_border_width
+	button.add_theme_stylebox_override("normal", style)
 
 
 func current_lane_count() -> int:
@@ -62,15 +56,9 @@ func _build_keys() -> void:
 		var button := Button.new()
 		button.name = "Key%d" % i
 		if _is_black_key(i):
-			button.add_theme_stylebox_override("normal", _black_key_normal)
-			button.add_theme_stylebox_override("hover", _black_key_normal)
-			button.add_theme_stylebox_override("pressed", _black_key_pressed)
-			button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
+			_style_key(button, _is_black_key(i), i, current_lane_count())
 		else:
-			button.add_theme_stylebox_override("normal", _white_key_normal)
-			button.add_theme_stylebox_override("hover", _white_key_normal)
-			button.add_theme_stylebox_override("pressed", _white_key_pressed)
-			button.add_theme_color_override("font_color", Color(0.1, 0.1, 0.1, 1))
+			_style_key(button, false, i, current_lane_count())
 		add_child(button)
 		key_buttons.append(button)
 		button.pressed.connect(key_pressed.emit.bind(i))
