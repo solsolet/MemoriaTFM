@@ -5,11 +5,6 @@ const MUSIC_DIR := "res://assets/sound/music/"
 const MUSIC_BUS := "Music"
 const SFX_BUS := "SFX"
 const SFX_POOL_SIZE := 8
-
-var _sfx_players: Array[AudioStreamPlayer] = []
-var _sfx_cache: Dictionary = {}  # file_name -> AudioStream
-var music_player: AudioStreamPlayer
-
 const LANE_NOTE_MAP := {
 	0: "c4.wav",
 	1: "c#4.wav",
@@ -20,6 +15,13 @@ const LANE_NOTE_MAP := {
 	6: "f#4.wav",
 	7: "g4.wav",
 }
+
+var _sfx_players: Array[AudioStreamPlayer] = []
+var _sfx_cache: Dictionary = {}  # file_name -> AudioStream
+var music_player: AudioStreamPlayer
+
+var _playlist: Array[String] = []
+var _playlist_index: int = 0
 
 
 func _ready() -> void:
@@ -35,6 +37,8 @@ func _ready() -> void:
 	music_player = AudioStreamPlayer.new()
 	music_player.bus = MUSIC_BUS
 	add_child(music_player)
+	
+	music_player.finished.connect(_on_music_finished)
 
 
 func _ensure_bus(bus_name: String) -> void:
@@ -46,6 +50,14 @@ func _ensure_bus(bus_name: String) -> void:
 	AudioServer.set_bus_send(idx, "Master")
 
 
+func ensure_playlist_playing(file_names: Array[String]) -> void:
+	if music_player.playing and _playlist == file_names:
+		return
+	_playlist = file_names
+	_playlist_index = 0
+	_play_current_track()
+
+
 func play_note_hit(lane: int) -> void:
 	var file_name: String = LANE_NOTE_MAP.get(lane, "c4.wav")
 	_play_sfx(file_name)
@@ -55,18 +67,25 @@ func play_ui_click() -> void:
 	_play_sfx("click1.wav")
 
 
-func play_music(file_name: String, loop: bool = true) -> void:
-	var path := MUSIC_DIR + file_name
+func _play_current_track() -> void:
+	if _playlist.is_empty():
+		return
+	var path := MUSIC_DIR + _playlist[_playlist_index]
 	if not ResourceLoader.exists(path):
 		return
-	var stream: AudioStream = ResourceLoader.load(path)
-	if stream is AudioStreamOggVorbis:
-		stream.loop = loop
-	music_player.stream = stream
+	music_player.stream = ResourceLoader.load(path)
 	music_player.play()
 
 
+func _on_music_finished() -> void:
+	if _playlist.is_empty():
+		return
+	_playlist_index = (_playlist_index + 1) % _playlist.size()
+	_play_current_track()
+
+
 func stop_music() -> void:
+	_playlist.clear()
 	music_player.stop()
 
 
