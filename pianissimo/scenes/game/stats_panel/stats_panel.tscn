@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ejltda6v51aj" path="res://scenes/game/stats_panel/stats_panel.gd" id="1_i6aim"]
 
 [node name="StatsPanel" type="Panel"]
-custom_minimum_size = Vector2(50, 230)
+custom_minimum_size = Vector2(50, 300)
 script = ExtResource("1_i6aim")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -24,9 +24,10 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="UpgradeLabel" type="Label" parent="VBoxContainer"]
+auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"Title2Label"
-text = "Stats"
+text = "GAME_STATS"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 layout_mode = 2

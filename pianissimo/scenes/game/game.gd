@@ -27,7 +27,7 @@ func _ready() -> void:
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
 	
-	AudioManager.play_music("Fugue No.2 Cm.mp3")
+	AudioManager.ensure_playlist_playing(["Fugue No.2 Cm.mp3"])
 
 
 # INFO: UI
@@ -73,7 +73,7 @@ func _on_notes_changed(value: int) -> void:
 func _on_note_scored(_lane: int, accuracy: String) -> void:
 	var base_amount := 1
 	if accuracy == "perfect":
-		base_amount = 2
+		base_amount = 2 + StatManager.get_level("technique")
 	var reward = base_amount * (1 + UpgradeManager.get_level("multiplier"))
 	Economy.add(reward)
 

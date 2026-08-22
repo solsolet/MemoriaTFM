@@ -19,3 +19,5 @@ class_name PlayerSaveData
 @export var unlocked_achievements: Array[String] = []
 @export var achievements_synced: Array[String] = []
 @export var total_notes_earned: int = 0
+
+@export var cards_seen_count: int = 0

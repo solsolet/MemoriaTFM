@@ -6,7 +6,11 @@ const CARD_TILE_SCENE = preload("res://scenes/cards/card_tile.tscn")
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
 	_populate()
+	
+	SaveManager.data.cards_seen_count = SaveManager.data.unlocked_cards.size() # For the badge count in Home
+	SaveManager.save_data()
 
 
 func _populate() -> void:

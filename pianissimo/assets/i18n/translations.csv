@@ -17,6 +17,9 @@ PAUSE_LABEL,Pausa,Pausa,Pause
 RESUME,Resume,Continua,Continua
 PAUSE_HOME,Inici,Inicio,Home
 
+GAME_UPGRADES, Millores, Mejoras, Upgrades
+GAME_STATS, Stats, Stats, Stats
+
 SETTINGS,Configuració,Configuración,Settings
 SETTINGS_MUSIC,Música,Música,Music
 SETTINGS_SFX,SFX,SFX,SFX

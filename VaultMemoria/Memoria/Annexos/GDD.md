@@ -159,17 +159,17 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 | Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
 : Efectes de so de Pianissimo
 
-| Nom             | Descripció                        | Àudio |
-| --------------- | --------------------------------- | ----- |
-| Menú            | Música que sona de fons en *home* |       |
-| Barroc1         | Fuga en Do m de J. S. Bach        |       |
-| Barroc2         |                                   |       |
-| Classicisme1    |                                   |       |
-| Classicisme2    |                                   |       |
-| Romanticisme1   |                                   |       |
-| Romaticisme2    |                                   |       |
-| Impressionisme1 |                                   |       |
-| Impressionisme2 |                                   |       |
+| Nom             | Descripció                        | Àudio                           |
+| --------------- | --------------------------------- | ------------------------------- |
+| Menú            | Música que sona de fons en *home* | https://freesound.org/s/621130/ |
+| Barroc1         | Fuga en Do m de J. S. Bach        |                                 |
+| Barroc2         |                                   |                                 |
+| Classicisme1    |                                   |                                 |
+| Classicisme2    |                                   |                                 |
+| Romanticisme1   |                                   |                                 |
+| Romaticisme2    |                                   |                                 |
+| Impressionisme1 |                                   |                                 |
+| Impressionisme2 |                                   |                                 |
 : Música de Pianissimo
 
 El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.

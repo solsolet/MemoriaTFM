@@ -29,18 +29,24 @@ script = ExtResource("2_7h61r")
 
 [node name="ColorRect" type="ColorRect" parent="SafeAreaContainer"]
 layout_mode = 2
-color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+color = Color(0.76, 0.8993333, 0.95, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeAreaContainer"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 
 [node name="TopBar" type="HBoxContainer" parent="SafeAreaContainer/VBoxContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 4
 
 [node name="BackButton" type="Button" parent="SafeAreaContainer/VBoxContainer/TopBar"]
 auto_translate_mode = 1
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
 text = "BACK_BUTTON"
 
@@ -48,22 +54,34 @@ text = "BACK_BUTTON"
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.5
 theme_type_variation = &"TitleLabel"
 theme_override_font_sizes/font_size = 45
 text = "GAME_NOTES"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="SettingsButton" type="Button" parent="SafeAreaContainer/VBoxContainer/TopBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
 text = "⚙"
 
 [node name="Piano" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_kelw5")]
 layout_mode = 2
+size_flags_stretch_ratio = 7.0
 
-[node name="UpgradePanel" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_0sr1o")]
+[node name="ShopContainer" type="VBoxContainer" parent="SafeAreaContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+theme_override_constants/separation = 15
+
+[node name="UpgradePanel" parent="SafeAreaContainer/VBoxContainer/ShopContainer" instance=ExtResource("3_0sr1o")]
 layout_mode = 2
 
-[node name="StatsPanel" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("5_lfrn8")]
+[node name="StatsPanel" parent="SafeAreaContainer/VBoxContainer/ShopContainer" instance=ExtResource("5_lfrn8")]
 layout_mode = 2
 
 [connection signal="pressed" from="SafeAreaContainer/VBoxContainer/TopBar/BackButton" to="." method="_on_btn_back_pressed"]

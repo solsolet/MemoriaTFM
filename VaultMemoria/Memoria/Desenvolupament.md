@@ -56,6 +56,11 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Proves en dispositius de cada SO per a validar que es poden desbloquejar assoliments.
 - Muntada del joc a les tendes d'aplicacions per a poder descarregar-lo.
 
+#### v0.5.0
+
+- Implementació UI `home` tipus piano.
+- Afegir sons tecles bé.
+
 ## Iteracions
 
 ### Interacció 0
@@ -399,6 +404,9 @@ Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game 
 Aquesta iteració comprén del 22 fins al 26
 
 Centrar-se en UI per a preparar proves usuaris.
+
+Fix: bug de focus en botó = posar un stylebox emplty
+Fix: música que es para quan s'acaba
 
 ### Iteració 6
 

@@ -9,6 +9,8 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
 	start_button.pressed.connect(_on_start_pressed)
 	journal_button.pressed.connect(_on_journal_pressed)
 	back_button.pressed.connect(_on_back_pressed)

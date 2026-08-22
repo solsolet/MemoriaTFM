@@ -84,8 +84,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -271,10 +270,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "94d175d2df51557a",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
+    "Memoria/Annexos/GDD.md",
+    "Memoria/Metodologia.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
+    "Memoria/Marc teoric.md",
     "Output/_build_processed.md",
     "Memoria/Assets/Pianissimo/Pianissimo_PlayStore1.jpg",
     "Memoria/Assets/Pianissimo/It4/Pianissimo_PlayStore_SignIn.jpg",
@@ -288,13 +290,10 @@
     "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
     "Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png",
     "Memoria/Assets/AltresJocs/Forest",
-    "Memoria/Marc teoric.md",
-    "Memoria/Annexos/GDD.md",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/It4",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",
-    "Memoria/Metodologia.md",
     "Memoria/Assets/Pianissimo/It3",
     "Sense títol.base",
     "Sense títol 1.base",

@@ -4,6 +4,8 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
 	_populate()
 
 

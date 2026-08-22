@@ -6,6 +6,8 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
 	if FocusManager.last_completed:
 		result_label.text = "Session complete!"
 		var detail = "You earned %d notes." % FocusManager.last_reward

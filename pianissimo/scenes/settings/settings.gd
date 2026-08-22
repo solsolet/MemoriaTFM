@@ -9,6 +9,8 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
 	music_slider.value = SettingsManager.music_volume
 	sfx_slider.value = SettingsManager.sfx_volume
 	music_mute_button.button_pressed = SettingsManager.music_muted

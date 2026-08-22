@@ -9,6 +9,8 @@ func _ready() -> void:
 	title_label.text = FocusManager.title
 	FocusManager.session_completed.connect(_on_completed)
 	FocusManager.session_failed.connect(_on_failed)
+	
+	AudioManager.stop_music()
 
 
 func _process(_delta: float) -> void:
