@@ -24,7 +24,7 @@ mouse_filter = 2
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 mouse_filter = 2
-color = Color(0.831, 0.686, 0.216, 1)
+color = Color(1, 0.7019608, 0.47843137, 1)
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2

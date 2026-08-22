@@ -18,10 +18,10 @@ func setup(def: CardDefinition, unlocked: bool) -> void:
 func _category_color(category: int) -> Color:
 	match category:
 		CardDefinition.Category.COMPOSER:
-			return Color(0.72, 0.32, 0.32, 1)
+			return Color("FF9B8F") # HEX format
 		CardDefinition.Category.INSTRUMENT:
-			return Color(0.32, 0.5, 0.72, 1)
+			return Color("6EE7D9")
 		CardDefinition.Category.FACT:
-			return Color(0.4, 0.68, 0.42, 1)
+			return Color("9CE8A8")
 		_:
 			return Color(0.5, 0.5, 0.5, 1)

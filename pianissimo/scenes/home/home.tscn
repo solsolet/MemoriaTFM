@@ -25,6 +25,7 @@ script = ExtResource("2_ng36q")
 
 [node name="ColorRect" type="ColorRect" parent="SafeAreaContainer"]
 layout_mode = 2
+color = Color(1, 0.9647059, 0.9137255, 1)
 
 [node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
 custom_minimum_size = Vector2(200, 200)

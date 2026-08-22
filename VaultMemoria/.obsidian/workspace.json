@@ -85,7 +85,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -271,25 +271,26 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "dac89e18e1224274",
+  "active": "94d175d2df51557a",
   "lastOpenFiles": [
-    "Memoria/Marc teoric.md",
-    "Memoria/Desenvolupament.md",
     "Organitzacio/Kanban.md",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-17-21-405_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-46-375_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-41-904_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-37-373_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-27-101_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-11-577_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-16-07-181_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-15-49-845_cc.forestapp.jpg",
-    "Memoria/Assets/AltresJocs/Forest",
-    "Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png",
+    "Memoria/Desenvolupament.md",
+    "Output/_build_processed.md",
+    "Memoria/Assets/Pianissimo/Pianissimo_PlayStore1.jpg",
     "Memoria/Assets/Pianissimo/It4/Pianissimo_PlayStore_SignIn.jpg",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_PlayStore_Picker.jpg",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_PlayStore_Achievements.jpg",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_UI.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Start.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_SignIn.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Config.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Achievements.png",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
+    "Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png",
+    "Memoria/Assets/AltresJocs/Forest",
+    "Memoria/Marc teoric.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Assets/Pianissimo/It3.md",
-    "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
     "Memoria/Assets/Pianissimo/It4",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",
@@ -297,7 +298,6 @@
     "Memoria/Assets/Pianissimo/It3",
     "Sense títol.base",
     "Sense títol 1.base",
-    "Output/_build_processed.md",
     "Diari/2026-08-16.md",
     "Diari/2026-08-13.md",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Demo1_It2.mp4",

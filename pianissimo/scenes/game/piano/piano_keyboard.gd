@@ -17,7 +17,7 @@ var _black_key_pressed: StyleBoxFlat
 
 func _ready() -> void:
 	_white_key_normal = StyleBoxFlat.new()
-	_white_key_normal.bg_color = Color(0.96, 0.96, 0.93, 1)
+	_white_key_normal.bg_color = Color(1.0, 1.0, 1.0, 1.0)
 	_white_key_normal.border_color = Color(0.75, 0.75, 0.72, 1)
 	_white_key_normal.border_width_bottom = 2
 	_white_key_normal.corner_radius_bottom_left = 4
