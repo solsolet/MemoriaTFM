@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=59 format=4 uid="uid://dt2kc553fw26"]
+[gd_resource type="Theme" load_steps=60 format=4 uid="uid://dt2kc553fw26"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv78t"]
 content_margin_left = 20.0
@@ -3352,6 +3352,19 @@ expand_margin_top = 10.0
 expand_margin_right = 5.0
 expand_margin_bottom = 10.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7c1g8"]
+bg_color = Color(1, 0.7019608, 0.47843137, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9411765, 0.5254902, 0.3764706, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juxpn"]
 bg_color = Color(1, 0.9647059, 0.9137255, 1)
 border_width_left = 10
@@ -3490,6 +3503,8 @@ HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_joxlk")
 HSlider/styles/slider = SubResource("StyleBoxFlat_11ing")
 Label/colors/font_color = Color(0.50638646, 0.48452926, 0.4492039, 1)
 Label/constants/line_spacing = 5
+Note/base_type = &"Panel"
+Note/styles/panel = SubResource("StyleBoxFlat_7c1g8")
 Title2Label/base_type = &"Label"
 Title2Label/font_sizes/font_size = 60
 TitleLabel/base_type = &"Label"

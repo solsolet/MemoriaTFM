@@ -405,8 +405,15 @@ Aquesta iteració comprén del 22 fins al 26
 
 Centrar-se en UI per a preparar proves usuaris.
 
-Fix: bug de focus en botó = posar un stylebox emplty
+Fix: bug de focus en botó = posar un stylebox empty
 Fix: música que es para quan s'acaba
+Piano Home i Piano game amb tecles custom funcionals
+A mitges arreglat theme notes
+A mitges arreglat Cards
+
+TODO : afegir sons per a totes les tecles
+TODO : corregir UI settings
+TODO : corregir UI focus
 
 ### Iteració 6
 

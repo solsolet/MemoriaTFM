@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bykng2kjgnvwh" path="res://scenes/game/stats_panel/stat_card.gd" id="1_hykih"]
 
-[node name="StatCard" type="Button"]
+[node name="StatCard" type="Button" node_paths=PackedStringArray("icon_rect", "title_label", "level_label", "cost_label")]
 custom_minimum_size = Vector2(250, 200)
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,6 +10,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hykih")
+icon_rect = NodePath("VBoxContainer/IconRect")
+title_label = NodePath("VBoxContainer/TitleLabel")
+level_label = NodePath("VBoxContainer/LevelLabel")
+cost_label = NodePath("VBoxContainer/CostLabel")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

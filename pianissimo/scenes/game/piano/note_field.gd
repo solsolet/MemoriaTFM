@@ -35,11 +35,19 @@ func try_hit_lane(lane_index: int) -> String:
 	if best_note == null:
 		return ""
 
-	var distance = abs((best_note.position.y + best_note.size.y) - hit_line_y)
+	#var distance = abs((best_note.position.y + best_note.size.y) - hit_line_y)
+	#var accuracy := ""
+	#if distance <= _perfect_threshold():
+		#accuracy = "perfect"
+	#elif distance <= _good_threshold():
+		#accuracy = "good"
+	#else:
+		#return ""
+	var offset = (best_note.position.y + best_note.size.y) - hit_line_y  # negative = early, positive = late
 	var accuracy := ""
-	if distance <= _perfect_threshold():
+	if offset >= -6.0 and offset <= _perfect_threshold():
 		accuracy = "perfect"
-	elif distance <= _good_threshold():
+	elif offset >= -20.0 and offset <= _good_threshold():
 		accuracy = "good"
 	else:
 		return ""

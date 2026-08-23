@@ -7,7 +7,7 @@ signal layout_changed
 const NOTE_SEQUENCE := ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 const BASE_LANE_COUNT := 3
 
-@export var interior_border_width: int = 0  # same-row keys
+@export var interior_border_width: int = 1  # same-row keys
 
 var key_buttons: Array[Button] = []
 
