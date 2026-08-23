@@ -11,13 +11,13 @@ kanban-plugin: board
 - [ ] Repassar documentació Kaiwa
 - [ ] Pensar logo #grafics
 - [ ] It 2 Disgrama Gantt
-- [ ] Pop-up desbloqueig d'assoliments #nice-to-have
+- [ ] Pop-up desbloqueig d'assoliments #ui #nice-to-have
 - [ ] Tutorial joc #nice-to-have
 - [ ] Lore #nice-to-have
 - [ ] Settings notificació #nice-to-have
 - [ ] Música de fons Focus Mode Botó #nice-to-have
-- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have
-- [ ] Tipus de restricció Focus #nice-to-have
+- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
+- [ ] Tipus de restricció Focus #dev #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
 - [ ] Hi ha un xicotet huevo entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
 - [ ] HOME sona repe Do en les ultimes notes, problema del for? #bug #dev
@@ -28,18 +28,19 @@ kanban-plugin: board
 - [ ] Diagrama Flux #memo
 - [ ] Redactar It4 #memo #l
 - [ ] Notificació diària #dev
-- [ ] Badge Dot avisa cartes noves #dev #ui #nice-to-have
-- [ ] No sonen les tecles blanques HOME #i  #bug #dev #ui #nice-to-have
+- [ ] Comprimir imatges Memoria #memo #i
 
 
 ## In Progress (5)
 
-- [ ] Home tipo piano #ui #dev #l
 
 
 ## Done
 
 **Complete**
+- [x] Home tipo piano #ui #dev #l
+- [x] No sonen les tecles blanques HOME #i  #bug #dev #ui #nice-to-have
+- [x] Badge Dot avisa cartes noves #dev #ui #nice-to-have
 - [x] Crear assoliments Play Store
 - [x] Crear Assoliments App Store
 - [x] Crear imatges Assoliments (6) #grafics
