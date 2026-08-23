@@ -84,7 +84,8 @@
               "title": "Metodologia"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -270,12 +271,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "94d175d2df51557a",
   "lastOpenFiles": [
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Metodologia.md",
     "Memoria/Desenvolupament.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Marc teoric.md",
     "Output/_build_processed.md",
     "Memoria/Assets/Pianissimo/Pianissimo_PlayStore1.jpg",

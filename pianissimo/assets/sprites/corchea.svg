@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 181 344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-142.336061,-35)">
+        <g id="corchea">
+            <g transform="matrix(-1.358203,0.45272,0.323026,0.969109,732.900913,-104.60759)">
+                <path d="M361.5,56C356.781,69.883 352.95,91.765 352.95,115.5C352.95,139.235 356.781,161.117 361.5,175C345.77,175 333,148.339 333,115.5C333,82.661 345.77,56 361.5,56Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.24987,0.532528,-0.952467,0.446912,458.175627,89.811334)">
+                <ellipse cx="188" cy="325" rx="68" ry="53" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-66,-13)">
+                <rect x="298" y="48" width="17" height="290" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.006954,-0.538573,0.403009,0.753494,-137.337625,187.498488)">
+                <path d="M361.5,56C356.781,69.883 352.95,91.765 352.95,115.5C352.95,139.235 356.781,161.117 361.5,175C345.77,175 333,148.339 333,115.5C333,82.661 345.77,56 361.5,56Z" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -237,3 +237,16 @@ Quan es completa un assaig hi ha una recompensa en forma de carta que es poden v
 | harpichord       | Harpsichord               | Instrument | A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone.       |
 | wtc_fact         | The Well-Tempered Clavier | Dada       | A landmark collection covering every major and minor key, still used to teach piano technique today. |
 : Recursos tipus carta implementats a Pianissimo
+
+### Icones UI
+
+Les icones que contenen alguns elements `Button` o `Label` contenen icones per a representar el seu significat. Totes les icones estaran en format SVG, ja que Godot pot importar i rasteritzar aquest format. Els dissenys en SVG garanteixen que sempre es veuran nítids sense importar la resolució i l'aplicació serà més lleugera.
+
+| Nom        | Ús                                      |
+| ---------- | --------------------------------------- |
+| back_arrow | Botó en `game` de tornar arrere         |
+| settings   | Botó en `game` d'anar a la configuració |
+| corchea    | Label comptador de notes                |
+: Icones que s'han usat per a alguns elements de la UI de Pianissimo
+
+Les icones són d'elaboració pròpia i s'han elaborat amb Affinity.

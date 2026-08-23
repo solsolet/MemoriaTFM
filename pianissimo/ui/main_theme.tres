@@ -3439,6 +3439,7 @@ BlackKeyButton_V/styles/hover = SubResource("StyleBoxFlat_xw7tv")
 BlackKeyButton_V/styles/normal = SubResource("StyleBoxFlat_gjt7e")
 BlackKeyButton_V/styles/pressed = SubResource("StyleBoxFlat_5d22w")
 Button/colors/font_color = Color(1, 1, 1, 1)
+Button/constants/icon_max_width = 85
 Button/font_sizes/font_size = 64
 Button/styles/disabled = SubResource("StyleBoxFlat_6tukj")
 Button/styles/focus = SubResource("StyleBoxEmpty_g1fjd")

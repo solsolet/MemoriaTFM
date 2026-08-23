@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn6a42umr04wt"]
+[gd_scene load_steps=8 format=3 uid="uid://cn6a42umr04wt"]
 
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_7h61r"]
 [ext_resource type="PackedScene" uid="uid://crevbtvnya6aq" path="res://scenes/game/upgrade_panel/upgrade_panel.tscn" id="3_0sr1o"]
+[ext_resource type="Texture2D" uid="uid://dyaa05jfx51f5" path="res://assets/sprites/arrow.svg" id="3_5i0tg"]
 [ext_resource type="PackedScene" uid="uid://bm3bx3x6h1drl" path="res://scenes/game/piano/piano.tscn" id="3_kelw5"]
+[ext_resource type="Texture2D" uid="uid://80e1s0uxy0is" path="res://assets/sprites/settings.svg" id="4_bdhmt"]
 [ext_resource type="PackedScene" uid="uid://d4b7tc787ywhh" path="res://scenes/game/stats_panel/stats_panel.tscn" id="5_lfrn8"]
 
 [node name="Game" type="Control" node_paths=PackedStringArray("notes_label", "settings_button", "piano")]
@@ -48,7 +50,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_font_sizes/font_size = 45
-text = "BACK_BUTTON"
+text = "
+"
+icon = ExtResource("3_5i0tg")
+icon_alignment = 1
 
 [node name="NotesLabel" type="Label" parent="SafeAreaContainer/VBoxContainer/TopBar"]
 auto_translate_mode = 1
@@ -66,7 +71,8 @@ custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-text = "⚙"
+icon = ExtResource("4_bdhmt")
+icon_alignment = 1
 
 [node name="Piano" parent="SafeAreaContainer/VBoxContainer" instance=ExtResource("3_kelw5")]
 layout_mode = 2
