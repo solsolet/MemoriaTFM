@@ -22,8 +22,6 @@ func _style_key(button: Button, is_black: bool, index: int, total: int) -> void:
 	var variation: StringName = &"BlackKeyButton" if is_black else &"WhiteKeyButton"
 	button.theme_type_variation = variation
 
-	# Real keys sit edge-to-edge, unlike Home's stacked column -- thin out the
-	# shared side borders so neighbors don't double up into a thick seam.
 	var base_style: StyleBoxFlat = ThemeDB.get_project_theme().get_stylebox("normal", variation)
 	var style := base_style.duplicate() as StyleBoxFlat
 	if index > 0:
@@ -86,7 +84,7 @@ func _layout_keys() -> void:
 	var white_width := width / float(white_keys.size())
 	for i in white_keys.size():
 		white_keys[i].position = Vector2(i * white_width, 0)
-		white_keys[i].size = Vector2(white_width, height)
+		white_keys[i].size = Vector2(white_width, height) # reduir altura en custom_min_Y de LeyRow
 
 	var black_width := white_width * 0.5
 	var black_height := height * 0.6

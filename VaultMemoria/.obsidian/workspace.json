@@ -85,7 +85,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -271,10 +271,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3dc5d0950143acef",
+  "active": "f7bb3cbe3ef61239",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Marc teoric.md",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Home2_It2.jpg",

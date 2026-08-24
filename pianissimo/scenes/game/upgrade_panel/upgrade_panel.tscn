@@ -4,6 +4,7 @@
 
 [node name="UpgradePanel" type="Panel"]
 custom_minimum_size = Vector2(50, 300)
+size_flags_vertical = 3
 script = ExtResource("1")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -36,4 +37,5 @@ vertical_scroll_mode = 0
 
 [node name="CardsRow" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/separation = 12

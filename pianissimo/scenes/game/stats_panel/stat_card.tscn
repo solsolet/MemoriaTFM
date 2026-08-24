@@ -3,30 +3,40 @@
 [ext_resource type="Script" uid="uid://bykng2kjgnvwh" path="res://scenes/game/stats_panel/stat_card.gd" id="1_hykih"]
 
 [node name="StatCard" type="Button" node_paths=PackedStringArray("icon_rect", "title_label", "level_label", "cost_label")]
-custom_minimum_size = Vector2(250, 200)
+custom_minimum_size = Vector2(200, 200)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_vertical = 3
+icon_alignment = 1
 script = ExtResource("1_hykih")
 icon_rect = NodePath("VBoxContainer/IconRect")
 title_label = NodePath("VBoxContainer/TitleLabel")
-level_label = NodePath("VBoxContainer/LevelLabel")
-cost_label = NodePath("VBoxContainer/CostLabel")
+level_label = NodePath("VBoxContainer/StatsRow/LevelLabel")
+cost_label = NodePath("VBoxContainer/StatsRow/CostLabel")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -108.5
+offset_right = 66.0
+offset_bottom = 108.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme_override_constants/separation = 5
 
 [node name="IconRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(0, 70)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
+size_flags_horizontal = 4
 mouse_filter = 2
 color = Color(0.43137255, 0.90588236, 0.8509804, 1)
 
@@ -36,13 +46,16 @@ theme_override_font_sizes/font_size = 32
 text = "Upgrade"
 horizontal_alignment = 1
 
-[node name="LevelLabel" type="Label" parent="VBoxContainer"]
+[node name="StatsRow" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer/StatsRow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Lv 0"
 horizontal_alignment = 1
 
-[node name="CostLabel" type="Label" parent="VBoxContainer"]
+[node name="CostLabel" type="Label" parent="VBoxContainer/StatsRow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Cost"

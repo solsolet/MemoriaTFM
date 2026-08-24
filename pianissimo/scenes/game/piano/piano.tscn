@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm3bx3x6h1drl"]
+[gd_scene load_steps=5 format=3 uid="uid://bm3bx3x6h1drl"]
 
 [ext_resource type="Script" uid="uid://b54bfjn6jqskw" path="res://scenes/game/piano/piano.gd" id="1"]
 [ext_resource type="Script" uid="uid://bpumwpmdmus4x" path="res://scenes/game/piano/note_field.gd" id="2_37rg0"]
 [ext_resource type="Script" uid="uid://bxkb0js8sg646" path="res://scenes/game/piano/piano_keyboard.gd" id="2_bpdpq"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_gq0ba"]
 
 [node name="Piano" type="Control"]
 custom_minimum_size = Vector2(450, 450)
@@ -12,6 +13,7 @@ size_flags_vertical = 3
 script = ExtResource("1")
 
 [node name="GameBackground" type="ColorRect" parent="."]
+visible = false
 custom_minimum_size = Vector2(20, 50)
 layout_mode = 1
 anchors_preset = 15
@@ -22,7 +24,15 @@ grow_vertical = 2
 size_flags_vertical = 3
 color = Color(0.52156866, 0.49803922, 0.4745098, 1)
 
-[node name="NotesLayer" type="Control" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.5803922, 0.5803922, 0.5803922, 0.81960785)
+layout_mode = 1
+offset_right = 1080.0
+offset_bottom = 1920.0
+texture = ExtResource("2_gq0ba")
+flip_v = true
+
+[node name="NotesLayer" type="Control" parent="." node_paths=PackedStringArray("good_zone", "perfect_zone")]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 15
@@ -32,6 +42,28 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("2_37rg0")
+good_zone = NodePath("GoodZone")
+perfect_zone = NodePath("PerfectZone")
+
+[node name="GoodZone" type="ColorRect" parent="NotesLayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.7372549, 0.50980395, 0.5803922)
+
+[node name="PerfectZone" type="ColorRect" parent="NotesLayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.68235296, 0.9490196, 0.93333334, 0.6784314)
 
 [node name="HitLine" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(10, 10)

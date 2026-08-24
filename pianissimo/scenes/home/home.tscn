@@ -199,6 +199,7 @@ text = "HOME_ALBUM"
 
 [node name="Badge" type="Panel" parent="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/AlbumButton"]
 auto_translate_mode = 1
+visible = false
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 1
 anchors_preset = -1

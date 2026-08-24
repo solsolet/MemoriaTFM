@@ -119,11 +119,11 @@ Una vegada estiguen tots analitzats ajudarà al desenvolupament del videojoc del
 
 L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells:
 
-| Nom                   | Marca  | SO      | RAM   | Gràfics |
-| --------------------- | ------ | ------- | ----- | ------- |
-| Redmi note 13Pro + 5G | Xiaomi | Android | 12 GB |         |
-| Mi A1                 | Xiaomi | Android |       |         |
-| iPhone 12             | Apple  | iOS     |       |         |
+| Nom                   | Marca  | SO      | RAM   | Gràfics | API |
+| --------------------- | ------ | ------- | ----- | ------- | --- |
+| Redmi note 13Pro + 5G | Xiaomi | Android | 12 GB |         | 35  |
+| Mi A1                 | Xiaomi | Android |       |         | 21  |
+| iPhone 12             | Apple  | iOS     |       |         |     |
 
 
 TODO : posar característiques dels dispositius, podria ser en forma de taula
