@@ -144,6 +144,8 @@ TODO : explicar el tema com s'ha fet i pensat, l'arxiu i com posar-lo global, va
 
 Upgrades de HBoxContainer a Card
 
+Tipografia icona: https://github.com/fkretlow/sebastian
+
 ## So
 
 ### Disseny sonor

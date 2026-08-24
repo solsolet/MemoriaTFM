@@ -85,7 +85,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -144,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.8333435058594
+    "width": 364.5
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -271,10 +271,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3dc5d0950143acef",
+  "active": "94d175d2df51557a",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Marc teoric.md",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Home2_It2.jpg",

@@ -1,6 +1,7 @@
 extends Node
 
 const SFX_DIR := "res://assets/sound/sfx/"
+const PIANO_KEYS_DIR := SFX_DIR + "piano_keys/"
 const MUSIC_DIR := "res://assets/sound/music/"
 const MUSIC_BUS := "Music"
 const SFX_BUS := "SFX"
@@ -9,11 +10,15 @@ const LANE_NOTE_MAP := {
 	0: "c4.wav",
 	1: "c#4.wav",
 	2: "d4.wav",
-	3: "d#4.wav", # TODO: Afegir noves tecles
+	3: "d#4.wav",
 	4: "e4.wav",
 	5: "f4.wav",
 	6: "f#4.wav",
 	7: "g4.wav",
+	8: "g#4.wav",
+	9: "a4.wav",
+	10: "a#4.wav",
+	11: "b4.wav",
 }
 
 var _sfx_players: Array[AudioStreamPlayer] = []
@@ -60,7 +65,7 @@ func ensure_playlist_playing(file_names: Array[String]) -> void:
 
 func play_note_hit(lane: int) -> void:
 	var file_name: String = LANE_NOTE_MAP.get(lane, "c4.wav")
-	_play_sfx(file_name)
+	_play_sfx(file_name, PIANO_KEYS_DIR)
 
 
 func play_ui_click() -> void:
@@ -97,8 +102,8 @@ func set_music_volume_linear(value: float) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(clamp(value, 0.0001, 1.0)))
 
 
-func _play_sfx(file_name: String) -> void:
-	var stream := _load_sfx(file_name)
+func _play_sfx(file_name: String, directory: String = SFX_DIR) -> void:
+	var stream := _load_sfx(file_name, directory)
 	if stream == null:
 		return
 	var player := _get_free_sfx_player()
@@ -106,14 +111,18 @@ func _play_sfx(file_name: String) -> void:
 	player.play()
 
 
-func _load_sfx(file_name: String) -> AudioStream:
-	if _sfx_cache.has(file_name):
-		return _sfx_cache[file_name]
-	var path := SFX_DIR + file_name
+func _load_sfx(file_name: String, directory: String = SFX_DIR) -> AudioStream:
+	var cache_key := directory + file_name
+	
+	if _sfx_cache.has(cache_key):
+		return _sfx_cache[cache_key]
+	
+	var path := directory + file_name
 	if not ResourceLoader.exists(path):
 		return null
+	
 	var stream: AudioStream = ResourceLoader.load(path)
-	_sfx_cache[file_name] = stream
+	_sfx_cache[cache_key] = stream
 	return stream
 
 
