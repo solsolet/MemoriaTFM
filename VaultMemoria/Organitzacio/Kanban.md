@@ -20,7 +20,6 @@ kanban-plugin: board
 - [ ] Tipus de restricció Focus #dev #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
 - [ ] Hi ha un xicotet huevo entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
-- [ ] HOME sona repe Do en les ultimes notes, problema del for? #bug #dev
 
 
 ## To Do (10)
@@ -38,6 +37,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] HOME sona repe Do en les ultimes notes, problema del for? #bug #dev
 - [x] Home tipo piano #ui #dev #l
 - [x] No sonen les tecles blanques HOME #i  #bug #dev #ui #nice-to-have
 - [x] Badge Dot avisa cartes noves #dev #ui #nice-to-have

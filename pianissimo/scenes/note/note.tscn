@@ -2,22 +2,16 @@
 
 [ext_resource type="Script" uid="uid://c2h4ydjbpb2ex" path="res://scenes/note/note.gd" id="1_wbc10"]
 
-[node name="Note" type="Control"]
+[node name="Note" type="Control" node_paths=PackedStringArray("visual")]
 custom_minimum_size = Vector2(80, 24)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 80.0
 offset_bottom = 24.0
 script = ExtResource("1_wbc10")
+visual = NodePath("Visual")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(80, 24)
-layout_mode = 0
-offset_right = 80.0
-offset_bottom = 24.0
-color = Color(1, 0.7019608, 0.47843137, 1)
-
-[node name="Panel" type="Panel" parent="."]
+[node name="Visual" type="Panel" parent="."]
 custom_minimum_size = Vector2(80, 24)
 layout_mode = 0
 offset_right = 80.0
