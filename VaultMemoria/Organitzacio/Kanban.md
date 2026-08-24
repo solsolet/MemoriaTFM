@@ -9,7 +9,6 @@ kanban-plugin: board
 - [ ] Repassar apunts AESM
 - [ ] Repassar apunts FV
 - [ ] Repassar documentació Kaiwa
-- [ ] Pensar logo #grafics
 - [ ] It 2 Disgrama Gantt
 - [ ] Pop-up desbloqueig d'assoliments #ui #nice-to-have
 - [ ] Tutorial joc #nice-to-have
@@ -19,7 +18,8 @@ kanban-plugin: board
 - [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 - [ ] Tipus de restricció Focus #dev #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
-- [ ] Hi ha un xicotet huevo entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
+- [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
+- [ ] Posar tipografia + xula #ui
 
 
 ## To Do (10)
@@ -32,6 +32,7 @@ kanban-plugin: board
 
 ## In Progress (5)
 
+- [ ] Pensar logo #grafics
 
 
 ## Done

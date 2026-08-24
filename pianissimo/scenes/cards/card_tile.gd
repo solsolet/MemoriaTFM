@@ -1,9 +1,9 @@
 extends PanelContainer
 class_name CardTile
 
-@onready var icon_rect: ColorRect = $VBoxContainer/IconRect
-@onready var title_label: Label = $VBoxContainer/TitleLabel
-@onready var desc_label: Label = $VBoxContainer/DescLabel
+@export var icon_rect: ColorRect
+@export var title_label: Label
+@export var desc_label: Label
 
 func setup(def: CardDefinition, unlocked: bool) -> void:
 	if unlocked:

@@ -408,10 +408,10 @@ Centrar-se en UI per a preparar proves usuaris.
 Fix: bug de focus en botó = posar un stylebox empty
 Fix: música que es para quan s'acaba
 Piano Home i Piano game amb tecles custom funcionals
-A mitges arreglat theme notes
+Arreglat theme notes, canvi de color rect a panel per a donar-li borde. S'havia desconfigurat el size pel canvi d'element però erqa per que el codi el tenia vinculat al Node ColorRect, en llevar la dependpencia i posar-la tipus `@export` s'havia arreglat.
 A mitges arreglat Cards
+Afegir sons per a totes les tecles fet amb Musescore + Audacity. S'ha corregit audio manager perque s'han posat els sons de les tecle sen `sfx/piano_keys` i s'ha afegit a `_play_sfx` el parametre directory per a especificar. Serà útil si en un furtur comptarem en motls sfx i volguerem situar-los en la seua corresponent subcarpeta.
 
-TODO : afegir sons per a totes les tecles
 TODO : corregir UI settings
 TODO : corregir UI focus
 

@@ -3357,12 +3357,12 @@ bg_color = Color(1, 0.7019608, 0.47843137, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
-border_width_bottom = 5
+border_width_bottom = 15
 border_color = Color(0.9411765, 0.5254902, 0.3764706, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 anti_aliasing = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juxpn"]

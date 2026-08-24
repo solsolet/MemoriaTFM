@@ -17,7 +17,6 @@ func _ready() -> void:
 		white_keys_column.get_child(i).pressed.connect(
 			func(): AudioManager.play_note_hit(HOME_WHITE_KEY_LANES[i])
 		)
-	
 	achievements_button.pressed.connect(_on_achievements_button_pressed)
 	_update_album_badge()
 
@@ -29,6 +28,7 @@ func _update_album_badge() -> void:
 		album_badge_label.text = str(new_count)
 
 
+# INFO: Botonera
 func _on_idle_button_pressed() -> void:
 	AudioManager.play_note_hit(HOME_BLACK_KEY_LANES[0])
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.GAME)

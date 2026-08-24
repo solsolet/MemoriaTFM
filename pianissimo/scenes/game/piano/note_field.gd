@@ -6,6 +6,9 @@ const PRECISION_BASE_PERFECT := 20.0
 const PRECISION_BASE_GOOD := 50.0
 const PRECISION_PER_LEVEL := 4.0
 
+const EARLY_PERFECT_LIMIT := -6.0
+const EARLY_GOOD_LIMIT := -20.0
+
 @export var note_speed: float = 220.0
 
 var hit_line_y: float = 0.0
@@ -35,22 +38,22 @@ func try_hit_lane(lane_index: int) -> String:
 	if best_note == null:
 		return ""
 
-	#var distance = abs((best_note.position.y + best_note.size.y) - hit_line_y)
-	#var accuracy := ""
-	#if distance <= _perfect_threshold():
-		#accuracy = "perfect"
-	#elif distance <= _good_threshold():
-		#accuracy = "good"
-	#else:
-		#return ""
-	var offset = (best_note.position.y + best_note.size.y) - hit_line_y  # negative = early, positive = late
+	var distance = abs((best_note.position.y + best_note.size.y) - hit_line_y)
 	var accuracy := ""
-	if offset >= -6.0 and offset <= _perfect_threshold():
+	if distance <= _perfect_threshold():
 		accuracy = "perfect"
-	elif offset >= -20.0 and offset <= _good_threshold():
+	elif distance <= _good_threshold():
 		accuracy = "good"
 	else:
 		return ""
+	#var offset = (best_note.position.y + best_note.size.y) - hit_line_y  # negative = early, positive = late
+	#var accuracy := ""
+	#if offset >= EARLY_PERFECT_LIMIT and offset <= _perfect_threshold():
+		#accuracy = "perfect"
+	#elif offset >= EARLY_GOOD_LIMIT and offset <= _good_threshold():
+		#accuracy = "good"
+	#else:
+		#return ""
 
 	best_note.missed.disconnect(_on_note_missed)
 	best_note.queue_free()

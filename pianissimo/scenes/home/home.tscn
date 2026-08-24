@@ -191,7 +191,6 @@ text = "HOME_ACHIEVEMENTS"
 
 [node name="AlbumButton" type="Button" parent="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn"]
 auto_translate_mode = 1
-visible = false
 layout_mode = 2
 size_flags_horizontal = 5
 size_flags_vertical = 7

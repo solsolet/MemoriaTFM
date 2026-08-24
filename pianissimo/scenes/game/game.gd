@@ -3,7 +3,6 @@ extends Control
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
 
-
 @export var notes_label: Label
 @export var settings_button: Button
 @export var piano: Piano
