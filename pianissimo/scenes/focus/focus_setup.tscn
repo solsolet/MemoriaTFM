@@ -16,7 +16,7 @@ title_field = NodePath("SafeArea/VBoxContainer/VBoxContainer/TitleField")
 description_field = NodePath("SafeArea/VBoxContainer/VBoxContainer/DescriptionField")
 duration_spinbox = NodePath("SafeArea/VBoxContainer/VBoxContainer/DurationSpinBox")
 start_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/StartButton")
-journal_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/JournalButton")
+journal_button = NodePath("SafeArea/VBoxContainer/JournalButton")
 back_button = NodePath("SafeArea/VBoxContainer/BackButton")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -24,6 +24,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_t76nn")
+stretch_mode = 6
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -32,26 +33,35 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 20
 script = ExtResource("2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeArea"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 30
 
 [node name="TitleLabel" type="Label" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+size_flags_vertical = 6
 theme_type_variation = &"TitleLabel"
 text = "PRACTISE_NEW_SESSION"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Spacer" type="Control" parent="SafeArea/VBoxContainer"]
+[node name="Control2" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeArea/VBoxContainer"]
+custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_constants/separation = 20
+size_flags_vertical = 3
+size_flags_stretch_ratio = 7.0
+theme_override_constants/separation = 30
 
 [node name="TitleField" type="LineEdit" parent="SafeArea/VBoxContainer/VBoxContainer"]
 auto_translate_mode = 1
@@ -76,29 +86,22 @@ min_value = 1.0
 max_value = 180.0
 value = 25.0
 
-[node name="Control" type="Control" parent="SafeArea/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-
 [node name="StartButton" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+size_flags_horizontal = 4
 text = "PRACTISE_START_BUTTON"
 
-[node name="JournalButton" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer"]
+[node name="JournalButton" type="Button" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "PRACTISE_PAST_SESSIONS_BUTTON"
-
-[node name="Spacer2" type="Control" parent="SafeArea/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
 
 [node name="BackButton" type="Button" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "BACK_BUTTON"
 
-[node name="BottomSpacer" type="Control" parent="SafeArea/VBoxContainer"]
+[node name="Control" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3

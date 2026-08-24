@@ -1,8 +1,8 @@
 extends Control
 
-@onready var title_label: Label = $SafeArea/VBoxContainer/TitleLabel
-@onready var time_label: Label = $SafeArea/VBoxContainer/TimeLabel
-@onready var progress_bar: ProgressBar = $SafeArea/VBoxContainer/ProgressBar
+@export var title_label: Label
+@export var time_label: Label
+@export var progress_bar: ProgressBar
 
 
 func _ready() -> void:
