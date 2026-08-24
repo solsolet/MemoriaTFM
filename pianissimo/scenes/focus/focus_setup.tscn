@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://blluuki5xyfal"]
+[gd_scene load_steps=4 format=3 uid="uid://blluuki5xyfal"]
 
 [ext_resource type="Script" uid="uid://obqdwdktwlrl" path="res://scenes/focus/focus_setup.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_t76nn"]
 
 [node name="FocusSetup" type="Control" node_paths=PackedStringArray("title_field", "description_field", "duration_spinbox", "start_button", "journal_button", "back_button")]
 layout_mode = 3
@@ -17,6 +18,12 @@ duration_spinbox = NodePath("SafeArea/VBoxContainer/VBoxContainer/DurationSpinBo
 start_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/StartButton")
 journal_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/JournalButton")
 back_button = NodePath("SafeArea/VBoxContainer/BackButton")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_t76nn")
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1

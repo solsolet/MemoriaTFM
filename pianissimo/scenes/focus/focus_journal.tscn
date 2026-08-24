@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://itukegwqtkcx"]
+[gd_scene load_steps=4 format=3 uid="uid://itukegwqtkcx"]
 
 [ext_resource type="Script" uid="uid://btgexob012atw" path="res://scenes/focus/focus_journal.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="3_0e8c5"]
 
 [node name="FocusJournal" type="Control" node_paths=PackedStringArray("entries_container")]
 layout_mode = 3
@@ -12,6 +13,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
 entries_container = NodePath("SafeArea/VBoxContainer/ScrollContainer/EntriesContainer")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 1920.0
+texture = ExtResource("3_0e8c5")
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1
