@@ -37,6 +37,14 @@ PRACTISE_NEW_SESSION, Nou assaig, Nuevo ensayo, New practise
 PRACTISE_TITLE_PLACEHOLDER, Títol de la sessió (p. ex. Escala Do M), Título de la sessión (p. ej. Escala Do M), Session title (e.g. Scales practice)
 PRACTISE_DESCRIPTION_PLACEHOLDER, Descripció (opcional), Descripción (opcional), Description (optional)
 PRACTISE_DURATION, Duració (minuts), Duración (minutos), Duration (minutes)
+PRACTISE_TAGS, Etiquetes, Etiquetas, Tags
+PRACTISE_TAG_TECHNIQUE, Tècnica, Técnica, Technique
+PRACTISE_TAG_WARMUP, Calfament, Calentamiento, Warm up
+PRACTISE_TAG_FIRST_SIGHT, 1a Vista, 1ª Vista, 1sr Sight
+PRACTISE_TAG_WORK, Treball, Trabajo, Work
+PRACTISE_TAG_STUDY, Estudiar, Estudiar, Study
+PRACTISE_TAG_WORKOUT, Entrenament, Entrenamiento, Work out
+PRACTISE_MODE, Estricte/Permissiu, Estricto/Permisivo, Strict/Permissive
 PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.

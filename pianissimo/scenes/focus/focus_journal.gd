@@ -25,15 +25,23 @@ func _populate() -> void:
 
 
 func _build_row(entry: Dictionary, history_index: int) -> Control:
+	var panel := PanelContainer.new()
+	panel.theme_type_variation = &"JournalRowPanel"
+
 	var row := HBoxContainer.new()
+	panel.add_child(row)
+
 	var info := VBoxContainer.new()
-	
 	info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
+	var title_row := HBoxContainer.new()
+	if entry.get("tag", "") != "":
+		title_row.add_child(_build_tag_dot(entry.get("tag_color", Color.GRAY)))
 	var title_label := Label.new()
 	var status := "Completed" if entry.get("completed", false) else "Failed"
 	title_label.text = "[%s]  %s" % [status, entry.get("title", "")]
-	info.add_child(title_label)
+	title_row.add_child(title_label)
+	info.add_child(title_row)
 
 	if entry.get("description", "") != "":
 		var desc_label := Label.new()
@@ -50,7 +58,7 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 	info.add_child(meta_label)
 
 	row.add_child(info)
-	
+
 	var delete_button := Button.new()
 	delete_button.text = "🗑"
 	delete_button.pressed.connect(func():
@@ -59,8 +67,20 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 		_populate()
 	)
 	row.add_child(delete_button)
-	
-	return row
+
+	return panel
+
+func _build_tag_dot(color: Color) -> Control:
+	var dot := Panel.new()
+	dot.custom_minimum_size = Vector2(16, 16)
+	var style := StyleBoxFlat.new()
+	style.bg_color = color
+	style.corner_radius_top_left = 8
+	style.corner_radius_top_right = 8
+	style.corner_radius_bottom_left = 8
+	style.corner_radius_bottom_right = 8
+	dot.add_theme_stylebox_override("panel", style)
+	return dot
 
 func _on_back_button_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SETUP)
