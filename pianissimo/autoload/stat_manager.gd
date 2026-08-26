@@ -47,10 +47,24 @@ func purchase(id: String) -> bool:
 	if not Economy.spend(get_cost(id)):
 		return false
 	var new_level := get_level(id) + 1
+	var def := get_definition(id)
+	if def.max_level >= 0 and new_level >= def.max_level:
+		AchievementManager.unlock("%s_maxed" % id)
+		if _all_stats_maxed():
+			AchievementManager.unlock("all_stats_maxed")
+	
 	SaveManager.data.stat_levels[id] = new_level
 	SaveManager.save_data()
 	stat_purchased.emit(id, new_level)
 	AchievementManager.unlock("first_stat_purchase")
 	if new_level >= 10:
 		AchievementManager.unlock("stat_level_10")
+	return true
+
+
+func _all_stats_maxed() -> bool:
+	for check_id in _definitions.keys():
+		var check_def: StatDefinition = _definitions[check_id]
+		if check_def.max_level >= 0 and get_level(check_id) < check_def.max_level:
+			return false
 	return true
