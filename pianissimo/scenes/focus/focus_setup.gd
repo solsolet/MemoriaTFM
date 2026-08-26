@@ -28,7 +28,7 @@ func _ready() -> void:
 
 # INFO: Tags
 func _on_preset_tag_pressed(button: Button) -> void:
-	tag_field.text = button.text
+	tag_field.text = tr(button.text)
 	_selected_tag_color = button.get_theme_color("icon_normal_color")
 
 func _on_tag_field_edited(_new_text: String) -> void:
@@ -38,7 +38,7 @@ func _on_tag_field_edited(_new_text: String) -> void:
 func _on_start_pressed() -> void:
 	var title = title_field.text.strip_edges() # erase special char (\n...)
 	if title == "":
-		title = "Practise session"
+		title = tr("PRACTISE_SESSION")
 	var target_seconds = int(duration_spinbox.value) * 60
 	
 	var mode: FocusManager.Mode = FocusManager.Mode.PERMISSIVE if mode_checkbutton.button_pressed else FocusManager.Mode.STRICT

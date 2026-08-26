@@ -18,7 +18,7 @@ func _populate() -> void:
 	var history: Array = SaveManager.data.focus_history
 	if history.is_empty():
 		var empty_label := Label.new()
-		empty_label.text = "No focus sessions yet."
+		empty_label.text = tr("PRACTISE_JOURNAL_EMPTY")
 		entries_container.add_child(empty_label)
 		return
 	
@@ -40,7 +40,7 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 	if entry.get("tag", "") != "":
 		title_row.add_child(_build_tag_dot(entry.get("tag_color", Color.GRAY)))
 	var title_label := Label.new()
-	var status := "Completed" if entry.get("completed", false) else "Failed"
+	var status := tr("PRACTISE_JOURNAL_COMPLETED") if entry.get("completed", false) else tr("PRACTISE_JOURNAL_FAILED")
 	title_label.text = "[%s]  %s" % [status, entry.get("title", "")]
 	title_row.add_child(title_label)
 	info.add_child(title_row)
@@ -74,13 +74,13 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 
 func _build_tag_dot(color: Color) -> Control:
 	var dot := Panel.new()
-	dot.custom_minimum_size = Vector2(16, 16)
+	dot.custom_minimum_size = Vector2(20, 20)
 	var style := StyleBoxFlat.new()
 	style.bg_color = color
-	style.corner_radius_top_left = 8
-	style.corner_radius_top_right = 8
-	style.corner_radius_bottom_left = 8
-	style.corner_radius_bottom_right = 8
+	style.corner_radius_top_left = 15
+	style.corner_radius_top_right = 15
+	style.corner_radius_bottom_left = 15
+	style.corner_radius_bottom_right = 15
 	dot.add_theme_stylebox_override("panel", style)
 	return dot
 
@@ -98,7 +98,7 @@ func _update_totals() -> void:
 			week += secs
 		if t >= day_start:
 			today += secs
-	totals_label.text = "Today: %dm   This week: %dm" % [today / 60, week / 60]
+	totals_label.text = tr("PRACTISE_JOURNAL_TODAY_WEEK_TOTALS") % [today / 60, week / 60]
 
 
 func _on_back_button_pressed() -> void:

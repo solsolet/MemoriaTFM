@@ -7,7 +7,6 @@ signal session_cancelled
 
 const BASE_REWARD := 20
 const REWARD_PER_MINUTE := 4
-#const TAG_PALETTE := [Color("#FF8C38"), Color("#3D7DDB"), Color("#6EE7D9"), Color("#FF6B6B"), Color("#9CE8A8")]
 
 enum Mode { STRICT, PERMISSIVE }
 var mode: Mode = Mode.STRICT
