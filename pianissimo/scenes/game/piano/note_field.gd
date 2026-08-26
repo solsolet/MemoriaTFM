@@ -91,10 +91,10 @@ func cleanup() -> void:
 
 
 func _perfect_threshold() -> float:
-	return PRECISION_BASE_PERFECT + StatManager.get_level("precision") * PRECISION_PER_LEVEL
+	return PRECISION_BASE_PERFECT + StatManager.get_level("precision") * PRECISION_PER_LEVEL + UpgradeManager.get_level("metronome") * 2.0
 
 func _good_threshold() -> float:
-	return PRECISION_BASE_GOOD + StatManager.get_level("precision") * (PRECISION_PER_LEVEL * 1.5)
+	return PRECISION_BASE_GOOD + StatManager.get_level("precision") * (PRECISION_PER_LEVEL * 1.5) + UpgradeManager.get_level("metronome") * 3.0
 
 func _on_note_missed(_note: Note) -> void:
 	pass

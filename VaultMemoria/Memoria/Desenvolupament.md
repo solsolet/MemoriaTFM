@@ -58,21 +58,25 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 #### v0.5.0
 
-- Afegir sons tecles bé.
+- Afegir sons per a les tecles bé.
 - Noves funcionalitats del mode assaig:
-	- Botó de cancelar sessió
-	- Tags
-	- Total setmanal i diari en journal
-	- Música sdisponible en focus session
-	- Poder esborrar entrades en journal.
-	- Assajos permissius: no hi ha penalització per abandonar l'aplicaiacó mentre estiga viva
-- Cavis a la UI:
-	- `home` tipus piano
-	- Fons personalitzat amb escalat adequat per a tot tipus de pantalles
+	- Botó de cancel·lar sessió.
+	- Tags.
+	- Total setmanal i diari en `journal`.
+	- Música disponible en `focus_session`.
+	- Poder esborrar entrades en `journal`.
+	- Assajos permissius: no hi ha penalització per abandonar l'aplicació mentre estiga viva.
+- Canvis a la UI:
+	- `home` tipus piano.
+	- Fons personalitzat amb escalat adequat per a tota mena de pantalles.
 	- Botons personalitzats amb variacions per a les tecles blanques i negres i botó de cancel·lació. Alguns disposen d'icones.
 	- Notes personalitzades.
+	- Cartes ara de color lila.
 	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
 	- Game, nova good-perfect area visual per a saber on polsar quan la nota s'apropa al teclat.
+- 5 nous assoliments: `velocity_maxed`, `precision_maxed`, `technique_maxed`, `keyboard_maxed`, `all_stats_maxed`.
+- 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
+- Correccions de les traduccions del text posat directament al codi amb `tr()`.
 
 ## Iteracions
 
@@ -427,7 +431,11 @@ Afegir sons per a totes les tecles fet amb Musescore + Audacity. S'ha corregit a
 
 feat: Focus = millora UI + tags i tags en color + strict/permissive mode
 
-TODO : corregir UI settings
+moltes coses però sobretot visuals.
+
+Comentar afegits en cards, assoliments i upgrades.
+
+Precisió millora amb metronom, fan signergia. Canvis a `_perfect` i `_good_threshold` amb el seu afegit que multiplica.
 
 ### Iteració 6
 

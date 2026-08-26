@@ -98,7 +98,8 @@
               "title": "Metodologia"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -284,10 +285,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "3dc5d0950143acef",
   "lastOpenFiles": [
-    "Memoria/Annexos/Ten-Pager.md",
     "Organitzacio/Kanban.md",
+    "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Metodologia.md",

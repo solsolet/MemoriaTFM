@@ -48,6 +48,7 @@ func _setup_timers() -> void:
 func _apply_velocity() -> void:
 	var level := StatManager.get_level("velocity")
 	var interval = BASE_SPAWN_INTERVAL * pow(VELOCITY_SPEEDUP_PER_LEVEL, level)
+	interval *= pow(0.95, UpgradeManager.get_level("note_torrent"))
 	spawn_timer.wait_time = max(MIN_SPAWN_INTERVAL, interval)
 
 
@@ -76,6 +77,8 @@ func _on_auto_tap_timeout() -> void:
 func _on_upgrade_purchased(id: String, new_level: int) -> void:
 	if id == "auto_tap":
 		auto_tap_timer.wait_time = max(0.4, 1.0 - 0.1 * new_level)
+	if id == "note_torrent":
+		_apply_velocity()
 
 
 func _on_stat_purchased(id: String, _new_level: int) -> void:
