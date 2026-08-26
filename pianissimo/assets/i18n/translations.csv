@@ -74,8 +74,11 @@ DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
 
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
-DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
+DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
+DATA_UPGRADES_NOTE_TORRENT, Torrent de Notes, Torrente de Notas, Notes Torrent
+DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
 
+DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
 DATA_ACHIEVEMENTS_FIRST_STEPS_DESC, Completa el teu primer assaig,Completa tu primer ensayo,Complete your first focus session
 DATA_ACHIEVEMENTS_VELOCITY_MAX, A corre cuita, A toda mecha, At full speed
 DATA_ACHIEVEMENTS_VELOCITY_MAX_DESC, Arriba a la velocitat màxima, Llega a la velocidad máxima, Get to the max velocity

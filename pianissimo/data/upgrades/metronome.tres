@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://cremaockyncik"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_w6rqd"]
+
+[resource]
+script = ExtResource("1_w6rqd")
+id = "metronome"
+display_name = "DATA_UPGRADES_METRONOME"
+base_cost = 60
+cost_multiplier = 1.1400000000000001
+max_level = 10
+metadata/_custom_type_script = "uid://ugia523xnwc0"

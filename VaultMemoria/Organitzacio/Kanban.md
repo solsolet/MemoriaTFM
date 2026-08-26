@@ -19,6 +19,7 @@ kanban-plugin: board
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
 - [ ] Posar tipografia + xula #ui
 - [ ] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
+- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
 
 
 ## To Do (10)
