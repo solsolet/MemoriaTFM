@@ -14,10 +14,8 @@ kanban-plugin: board
 - [ ] Tutorial joc #nice-to-have
 - [ ] Lore #nice-to-have
 - [ ] Settings notificació #nice-to-have
-- [ ] Música de fons Focus Mode Botó #nice-to-have
-- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
-- [ ] Tipus de restricció Focus #dev #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
+- [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
 - [ ] Posar tipografia + xula #ui
 
@@ -28,16 +26,23 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Notificació diària #dev
 - [ ] Comprimir imatges Memoria #memo #i
+- [ ] Focus  marcar visualment sifailed o completed en journal #ui
+- [ ] comptador total weekly/daily journal #nice-to-have #dev
+- [ ] tag color més gran en journal #ui
 
 
 ## In Progress (5)
 
 - [ ] Pensar logo #grafics
+- [ ] arreglar margin overwerite en focus #bug #dev #l
+- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 
 
 ## Done
 
 **Complete**
+- [x] Música de fons Focus Mode Botó #nice-to-have
+- [x] Tipus de restricció Focus #dev #nice-to-have
 - [x] HOME sona repe Do en les ultimes notes, problema del for? #bug #dev
 - [x] Home tipo piano #ui #dev #l
 - [x] No sonen les tecles blanques HOME #i  #bug #dev #ui #nice-to-have

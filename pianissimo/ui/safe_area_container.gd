@@ -2,6 +2,9 @@ extends MarginContainer
 
 const MIN_SIDE_MARGIN: float = 16.0
 
+#@export var min_left_right_margin: float = 100.0
+#@export var min_top_margin: float = 20.0
+#@export var min_bottom_margin: float = 20.0
 
 func _ready() -> void:
 	call_deferred("_apply_safe_area")

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_geqq2"]
 
-[node name="FocusSession" type="Control" node_paths=PackedStringArray("title_label", "time_label", "progress_bar")]
+[node name="FocusSession" type="Control" node_paths=PackedStringArray("title_label", "time_label", "progress_bar", "cancel_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,6 +15,7 @@ script = ExtResource("1")
 title_label = NodePath("SafeArea/VBoxContainer/TitleLabel")
 time_label = NodePath("SafeArea/VBoxContainer/VBoxContainer/TimeLabel")
 progress_bar = NodePath("SafeArea/VBoxContainer/VBoxContainer/ProgressBar")
+cancel_button = NodePath("SafeArea/VBoxContainer/CancelButton")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -76,6 +77,12 @@ layout_mode = 2
 theme_type_variation = &"CardLabel"
 text = "PRACTISE_SESSION_STAY"
 horizontal_alignment = 1
+
+[node name="CancelButton" type="Button" parent="SafeArea/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"CancelButton"
+text = "DIALOG_CANCEL"
 
 [node name="Control2" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2

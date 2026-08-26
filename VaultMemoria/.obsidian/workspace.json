@@ -84,8 +84,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -271,9 +270,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "f7bb3cbe3ef61239",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
     "Memoria/Desenvolupament.md",
+    "Memoria/Metodologia.md",
     "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Marc teoric.md",
@@ -288,7 +288,6 @@
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Home1_It2.jpg",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Game2_It2.jpg",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Game1_It2.jpg",
-    "Memoria/Metodologia.md",
     "Output/_build_processed.md",
     "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
     "Memoria/Assets/AltresJocs/Forest",

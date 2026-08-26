@@ -412,8 +412,9 @@ Arreglat theme notes, canvi de color rect a panel per a donar-li borde. S'havia 
 A mitges arreglat Cards
 Afegir sons per a totes les tecles fet amb Musescore + Audacity. S'ha corregit audio manager perque s'han posat els sons de les tecle sen `sfx/piano_keys` i s'ha afegit a `_play_sfx` el parametre directory per a especificar. Serà útil si en un furtur comptarem en motls sfx i volguerem situar-los en la seua corresponent subcarpeta.
 
+feat: Focus = millora UI + tags i tags en color + strict/permissive mode
+
 TODO : corregir UI settings
-TODO : corregir UI focus
 
 ### Iteració 6
 

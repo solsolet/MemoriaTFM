@@ -3,6 +3,7 @@ extends Node
 signal session_started
 signal session_completed(reward: int)
 signal session_failed
+signal session_cancelled
 
 const BASE_REWARD := 20
 const REWARD_PER_MINUTE := 4
@@ -159,3 +160,13 @@ func _notification(what: int) -> void:
 		if is_active and mode == Mode.STRICT:
 			fail_session()
 		# PERMISSIVE: do nothing
+
+
+# INFO: cancel without penalization if you do it in the time permited
+func cancel_session() -> void:
+	if not is_active:
+		return
+	is_active = false
+	_timer.stop()
+	_clear_persisted_session()
+	session_cancelled.emit()
