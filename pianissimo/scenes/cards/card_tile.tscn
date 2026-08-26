@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://blnvusx8ihioq" path="res://scenes/cards/card_tile.gd" id="1"]
 
 [node name="CardTile" type="PanelContainer" node_paths=PackedStringArray("icon_rect", "title_label", "desc_label")]
-custom_minimum_size = Vector2(300, 500)
+custom_minimum_size = Vector2(310, 500)
 script = ExtResource("1")
 icon_rect = NodePath("VBoxContainer/IconRect")
 title_label = NodePath("VBoxContainer/TitleLabel")

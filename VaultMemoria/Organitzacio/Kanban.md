@@ -28,8 +28,10 @@ kanban-plugin: board
 - [ ] Notificació diària #dev
 - [ ] Comprimir imatges Memoria #memo #i
 - [ ] Focus  marcar visualment sifailed o completed en journal #ui
-- [ ] comptador total weekly/daily journal #nice-to-have #dev
 - [ ] tag color més gran en journal #ui
+- [ ] Arreglar alt del fons, en el meu mòbil es talla #bug #nice-to-have #i
+- [ ] Icona paperera en journal list #nice-to-have
+- [ ] Icona auriculars toggle música focus session #nice-to-have
 
 
 ## In Progress (5)
@@ -41,6 +43,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] comptador total weekly/daily journal #nice-to-have #dev
 - [x] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 - [x] Música de fons Focus Mode Botó #nice-to-have
 - [x] Tipus de restricció Focus #dev #nice-to-have

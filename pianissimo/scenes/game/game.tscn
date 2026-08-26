@@ -22,11 +22,12 @@ settings_button = NodePath("SafeAreaContainer/VBoxContainer/TopBar/SettingsButto
 piano = NodePath("SafeAreaContainer/VBoxContainer/Piano")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 1075.0
-offset_bottom = 1915.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.76, 0.8993333, 0.95, 1)
 
 [node name="SafeAreaContainer" type="MarginContainer" parent="."]

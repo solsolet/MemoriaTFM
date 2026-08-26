@@ -16,10 +16,14 @@ entries_container = NodePath("SafeArea/VBoxContainer/ScrollContainer/EntriesCont
 totals_label = NodePath("SafeArea/VBoxContainer/TotalsLabel")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1080.0
-offset_bottom = 1920.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_0e8c5")
+stretch_mode = 6
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1
