@@ -43,6 +43,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_ng36q")
+min_left_right_margin = 10.0
+min_bottom_margin = 15.0
 
 [node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
 custom_minimum_size = Vector2(200, 200)

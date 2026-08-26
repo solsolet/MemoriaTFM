@@ -37,12 +37,13 @@ kanban-plugin: board
 ## In Progress (5)
 
 - [ ] Pensar logo #grafics
-- [ ] arreglar margin overwerite en focus #bug #dev #l
+- [ ] Arreglar traduccions harcoded #i #dev
 
 
 ## Done
 
 **Complete**
+- [x] arreglar margin overwerite en focus #bug #dev #l
 - [x] comptador total weekly/daily journal #nice-to-have #dev
 - [x] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 - [x] Música de fons Focus Mode Botó #nice-to-have

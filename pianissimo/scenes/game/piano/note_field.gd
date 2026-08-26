@@ -16,7 +16,7 @@ const EARLY_GOOD_LIMIT := -200.0
 var hit_line_y: float = 0.0:
 	set(value):
 		hit_line_y = value
-		_update_target_zone()
+		call_deferred("_update_target_zone")
 
 
 func _ready() -> void:

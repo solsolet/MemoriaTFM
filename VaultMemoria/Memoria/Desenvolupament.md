@@ -58,8 +58,21 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 #### v0.5.0
 
-- Implementació UI `home` tipus piano.
 - Afegir sons tecles bé.
+- Noves funcionalitats del mode assaig:
+	- Botó de cancelar sessió
+	- Tags
+	- Total setmanal i diari en journal
+	- Música sdisponible en focus session
+	- Poder esborrar entrades en journal.
+	- Assajos permissius: no hi ha penalització per abandonar l'aplicaiacó mentre estiga viva
+- Cavis a la UI:
+	- `home` tipus piano
+	- Fons personalitzat amb escalat adequat per a tot tipus de pantalles
+	- Botons personalitzats amb variacions per a les tecles blanques i negres i botó de cancel·lació. Alguns disposen d'icones.
+	- Notes personalitzades.
+	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
+	- Game, nova good-perfect area visual per a saber on polsar quan la nota s'apropa al teclat.
 
 ## Iteracions
 
