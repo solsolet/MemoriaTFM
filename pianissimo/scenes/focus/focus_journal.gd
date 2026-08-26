@@ -62,7 +62,9 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 	row.add_child(info)
 
 	var delete_button := Button.new()
-	delete_button.text = "🗑"
+	delete_button.icon = preload("res://assets/sprites/trash.svg")
+	delete_button.text = ""
+	delete_button.theme_type_variation = &"CancelButton"
 	delete_button.pressed.connect(func():
 		SaveManager.data.focus_history.remove_at(history_index)
 		SaveManager.save_data()

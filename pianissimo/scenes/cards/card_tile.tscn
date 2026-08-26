@@ -4,6 +4,7 @@
 
 [node name="CardTile" type="PanelContainer" node_paths=PackedStringArray("icon_rect", "title_label", "desc_label")]
 custom_minimum_size = Vector2(310, 500)
+theme_type_variation = &"CardTilePanel"
 script = ExtResource("1")
 icon_rect = NodePath("VBoxContainer/IconRect")
 title_label = NodePath("VBoxContainer/TitleLabel")

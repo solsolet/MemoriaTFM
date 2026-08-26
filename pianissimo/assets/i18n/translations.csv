@@ -66,9 +66,14 @@ DATA_CARDS_PIANO,El Piano,El Piano,The Piano
 DATA_CARDS_PIANO_DESC,"Inventat cap al 1700, pot tocar tant fort com fluix — d'aquí el seu nom original, ""pianoforte.""","Inventado alrededor de 1700, puede tocar tanto fuerte como suave — de ahí su nombre original, ""pianoforte.""","Invented around 1700, it can play both loud and soft — hence its original name, ""pianoforte."""
 DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered Clavier
 DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
+
 DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
 DATA_STATS_PRECISION, Precisió, Precisión, Precision
 DATA_STATS_VELOCITY, Velocitat, Velocidad, Velocity
 DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
+
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
+DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
+
+DATA_ACHIEVEMENTS_FIRST_STEPS_DESC, Completa el teu primer assaig,Completa tu primer ensayo,Complete your first focus session
