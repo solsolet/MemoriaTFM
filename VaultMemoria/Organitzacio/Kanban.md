@@ -18,6 +18,7 @@ kanban-plugin: board
 - [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
 - [ ] Posar tipografia + xula #ui
+- [ ] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
 
 
 ## To Do (10)
@@ -35,12 +36,12 @@ kanban-plugin: board
 
 - [ ] Pensar logo #grafics
 - [ ] arreglar margin overwerite en focus #bug #dev #l
-- [ ] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 
 
 ## Done
 
 **Complete**
+- [x] possibilitat de cancel·lar sense penalització Focus #nice-to-have #l
 - [x] Música de fons Focus Mode Botó #nice-to-have
 - [x] Tipus de restricció Focus #dev #nice-to-have
 - [x] HOME sona repe Do en les ultimes notes, problema del for? #bug #dev

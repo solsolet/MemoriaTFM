@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_geqq2"]
 
-[node name="FocusSession" type="Control" node_paths=PackedStringArray("title_label", "time_label", "progress_bar", "cancel_button")]
+[node name="FocusSession" type="Control" node_paths=PackedStringArray("title_label", "time_label", "progress_bar", "cancel_button", "music_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,6 +16,7 @@ title_label = NodePath("SafeArea/VBoxContainer/TitleLabel")
 time_label = NodePath("SafeArea/VBoxContainer/VBoxContainer/TimeLabel")
 progress_bar = NodePath("SafeArea/VBoxContainer/VBoxContainer/ProgressBar")
 cancel_button = NodePath("SafeArea/VBoxContainer/CancelButton")
+music_button = NodePath("SafeArea/VBoxContainer/MusicToggleButton")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -49,6 +50,12 @@ size_flags_vertical = 6
 theme_type_variation = &"TitleLabel"
 text = "PRACTISE_SESSION"
 horizontal_alignment = 1
+
+[node name="MusicToggleButton" type="CheckButton" parent="SafeArea/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "SETTINGS_MUSIC"
+alignment = 2
 
 [node name="Control" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2

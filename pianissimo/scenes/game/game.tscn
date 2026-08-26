@@ -107,7 +107,6 @@ theme_override_constants/separation = 15
 
 [node name="UpgradePanel" parent="SafeAreaContainer/VBoxContainer/ShopContainer" instance=ExtResource("3_0sr1o")]
 layout_mode = 2
-size_flags_vertical = 3
 
 [node name="StatsPanel" parent="SafeAreaContainer/VBoxContainer/ShopContainer" instance=ExtResource("5_lfrn8")]
 layout_mode = 2

@@ -6,6 +6,9 @@ const CANCEL_WINDOW := 10.0
 @export var time_label: Label
 @export var progress_bar: ProgressBar
 @export var cancel_button: Button
+@export var music_button: CheckButton
+
+var _music_on: bool = false
 
 
 func _ready() -> void:
@@ -16,6 +19,7 @@ func _ready() -> void:
 	FocusManager.session_failed.connect(_on_failed)
 	FocusManager.session_cancelled.connect(_on_cancelled)
 	cancel_button.pressed.connect(func(): FocusManager.cancel_session())
+	music_button.pressed.connect(_on_music_toggle_pressed)
 
 
 func _process(_delta: float) -> void:
@@ -37,12 +41,19 @@ func _format_time(seconds: float) -> String:
 	return "%02d:%02d" % [total / 60, total % 60]
 
 
+func _on_music_toggle_pressed() -> void:
+	_music_on = not _music_on
+	if _music_on:
+		AudioManager.ensure_playlist_playing(["Fugue No.2 Cm.mp3"])
+	else:
+		AudioManager.stop_music()
+
+
 func _on_completed(_reward: int) -> void:
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SUMMARY)
 
 func _on_failed() -> void:
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SUMMARY)
-
 
 func _on_cancelled() -> void:
 	get_tree().call_deferred("change_scene_to_file", ScenePaths.FOCUS_SETUP)
