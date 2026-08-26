@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_5vv3x")
 id = "harpsichord"
-display_name = "Harpsichord"
+display_name = "DATA_CARDS_HARPICORD"
 category = 1
-description = "A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone."
+description = "DATA_CARDS_HARPICORD_DESC"
 metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

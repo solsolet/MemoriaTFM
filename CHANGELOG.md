@@ -7,13 +7,16 @@
 - Implementació Piano en `home` interactiu.
 - Implementació de tema de les tecles blanques i negres personalitzat.
 - Addició icones en botons de `game`.
+- Addició botó per cancel·lar una sessió d'assaig sense penalització
 
 ### Fixed
 
-- Tema personalitzat amb més detall
+- Tema personalitzat amb més detall.
+- Reescalat correcte del fons perqueè es veja bé en totes les resolucions.
 - Paleta actualitzada.
 - Aspecte `Note` millorat.
 - Afegir i corregir efectes de so de les tecles.
+- Correcció traduccions text del codi amb `tr()`
 
 ## [v0.4.0] - 2026-08-21
 

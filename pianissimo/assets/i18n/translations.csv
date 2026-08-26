@@ -56,3 +56,19 @@ PRACTISE_JOURNAL_FAILED, Fallada, Fallada, Failed
 PRACTISE_JOURNAL_TODAY_WEEK_TOTALS, Hui: %dm   Aquesta setmana: %dm, Hoy: %dm   Esta semana: %dm, Today: %dm   This week: %dm
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album
+
+DATA_CARDS_BACH_DESC,Organista i compositor barroc famós per la seua extensa obra que es considerada una de les màximes expressions de la música universal,Organista y compositor barroco famoso por su extensa obra considerada una de las máximas expresiones de la música universal,Baroque composer and organist famed for intricate counterpoint like The Well-Tempered Clavier.
+DATA_CARDS_MOZART_DESC,Prodigi de l'època clàssica que componia simfonies des de l'infantesa, Prodigio de la época clásica que componía sinfonías desde su infancia, Classical-era prodigy who composed symphonies and operas from childhood.
+DATA_CARDS_CHOPIN_DESC, Compositor romàntic que va escriure quasi exclusivament per a pino, Compositor romántico que escribió casi exclusivamente para piano, Romantic-era composer who wrote almost exclusively for solo piano.
+DATA_CARDS_HARPICORD,Clavicèmbal, Clavicémbalo, Harpichord
+DATA_CARDS_HARPICORD_DESC,"Ancestre del piano que pinsa les cordes en lloc de colpejar-les, donant un to brillant","Ancestro del piano que pinza las cuerdas en lugar de golpear-las, dando un sonido brillante","A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone."
+DATA_CARDS_PIANO,El Piano,El Piano,The Piano
+DATA_CARDS_PIANO_DESC,"Inventat cap al 1700, pot tocar tant fort com fluix — d'aquí el seu nom original, ""pianoforte.""","Inventado alrededor de 1700, puede tocar tanto fuerte como suave — de ahí su nombre original, ""pianoforte.""","Invented around 1700, it can play both loud and soft — hence its original name, ""pianoforte."""
+DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered Clavier
+DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
+DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
+DATA_STATS_PRECISION, Precisió, Precisión, Precision
+DATA_STATS_VELOCITY, Velocitat, Velocidad, Velocity
+DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
+DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
+DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler

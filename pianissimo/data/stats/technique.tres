@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_ccwb2")
 id = "technique"
-display_name = "Technique"
+display_name = "DATA_STATS_TECHNIQUE"
 max_level = 10
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"
