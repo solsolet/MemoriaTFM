@@ -1,12 +1,14 @@
 extends Control
 
 @export var entries_container: VBoxContainer
+@export var totals_label: Label
 
 
 func _ready() -> void:
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
 	
 	_populate()
+	_update_totals()
 
 
 func _populate() -> void:
@@ -81,6 +83,23 @@ func _build_tag_dot(color: Color) -> Control:
 	style.corner_radius_bottom_right = 8
 	dot.add_theme_stylebox_override("panel", style)
 	return dot
+
+
+func _update_totals() -> void:
+	var now := int(Time.get_unix_time_from_system())
+	var day_start := now - (now % 86400)
+	var week_start := now - 7 * 86400
+	var today := 0
+	var week := 0
+	for entry in SaveManager.data.focus_history:
+		var t: int = entry.get("started_at", 0)
+		var secs: int = entry.get("actual_seconds", 0)
+		if t >= week_start:
+			week += secs
+		if t >= day_start:
+			today += secs
+	totals_label.text = "Today: %dm   This week: %dm" % [today / 60, week / 60]
+
 
 func _on_back_button_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SETUP)
