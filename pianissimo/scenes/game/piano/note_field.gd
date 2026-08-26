@@ -37,12 +37,15 @@ func _update_target_zone() -> void:
 	perfect_zone.size.y = _perfect_threshold() - EARLY_PERFECT_LIMIT
 
 
-func spawn_note(lane_index: int, key_rect: Rect2) -> void:
+func spawn_note(lane_index: int, key_rect: Rect2, golden: bool = false) -> void:
 	var note := NOTE_SCENE.instantiate() as Note
 	note.lane = lane_index
+	note.is_golden = golden
 	note.speed = note_speed
 	note.miss_y = hit_line_y
 	note.missed.connect(_on_note_missed)
+	if golden:
+		note.modulate = Color("FFD34D")
 
 	var note_width = max(1.0, key_rect.size.x)
 	var note_height = max(32.0, key_rect.size.y * 0.35)
@@ -62,6 +65,14 @@ func try_hit_lane(lane_index: int) -> String:
 		return ""
 	
 	var offset = (best_note.position.y + best_note.size.y) - hit_line_y  # negative = early, positive = late
+	
+	if best_note.is_golden:
+		if offset >= EARLY_GOOD_LIMIT and offset <= _good_threshold():
+			best_note.missed.disconnect(_on_note_missed)
+			best_note.queue_free()
+			return "golden"
+		return ""
+		
 	var accuracy := ""
 	if offset >= EARLY_PERFECT_LIMIT and offset <= _perfect_threshold():
 		accuracy = "perfect"

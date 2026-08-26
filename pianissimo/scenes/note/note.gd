@@ -8,6 +8,7 @@ signal missed(note: Note)
 var lane: int = 0
 var speed: float = 220.0
 var miss_y: float = 0.0 # y-coordinate of the hit line, in this note's parent space
+var is_golden: bool = false
 
 
 func _process(delta: float) -> void:

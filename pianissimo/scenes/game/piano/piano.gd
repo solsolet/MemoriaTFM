@@ -6,6 +6,7 @@ signal note_scored(lane: int, accuracy: String)
 const BASE_SPAWN_INTERVAL := 0.8
 const MIN_SPAWN_INTERVAL := 0.25
 const VELOCITY_SPEEDUP_PER_LEVEL := 0.93
+const GOLDEN_BASE_CHANCE := 0.01
 
 @onready var hit_line: ColorRect = $HitLine
 @onready var keyboard: PianoKeyboard = $KeyRow
@@ -54,7 +55,9 @@ func _apply_velocity() -> void:
 
 func _on_spawn_timer_timeout() -> void:
 	var lane = randi_range(0, keyboard.key_buttons.size() - 1)
-	note_field.spawn_note(lane, keyboard.get_key_rect(lane))
+	var golden_level := UpgradeManager.get_level("golden_notes")
+	var is_golden := golden_level > 0 and randf() < GOLDEN_BASE_CHANCE * golden_level
+	note_field.spawn_note(lane, keyboard.get_key_rect(lane), is_golden)
 
 
 func _on_key_pressed(lane_index: int) -> void:

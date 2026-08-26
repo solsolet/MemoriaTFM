@@ -70,6 +70,9 @@ func _on_notes_changed(value: int) -> void:
 
 
 func _on_note_scored(_lane: int, accuracy: String) -> void:
+	if accuracy == "golden":
+		Economy.add(1000)	# WARNING: Saber que ací puc augmentar le premir per golden note
+		return
 	var base_amount := 1
 	if accuracy == "perfect":
 		base_amount = 2 + StatManager.get_level("technique")
