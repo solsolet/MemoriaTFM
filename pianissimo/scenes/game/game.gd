@@ -13,7 +13,7 @@ const MIN_OFFLINE_SECONDS_FOR_TOAST := 30
 var active_notes: Array[Note] = []
 var spawn_timer: Timer
 var auto_tap_timer: Timer
-
+var _passive_timer: Timer
 var note_speed: float = 220.0
 
 
@@ -33,6 +33,12 @@ func _ready() -> void:
 
 	_apply_ui_scaling()
 	get_viewport().size_changed.connect(_apply_ui_scaling)
+	
+	_passive_timer = Timer.new()
+	_passive_timer.wait_time = 1.0
+	_passive_timer.autostart = true
+	_passive_timer.timeout.connect(_on_passive_tick)
+	add_child(_passive_timer)
 	
 	AudioManager.ensure_playlist_playing(["Fugue No.2 Cm.mp3"])
 
@@ -66,8 +72,9 @@ func _apply_offline_income() -> void:
 	if elapsed <= 0:
 		return
 	
-	var offline_rate = 1.0 + UpgradeManager.get_level("auto_tap") * 0.5
-	var offline_gain = int(elapsed * offline_rate)
+	var auto_tap_rate = 1.0 + UpgradeManager.get_level("auto_tap") * 0.5
+	var passive_rate = UpgradeManager.total_passive_rate()
+	var offline_gain = int(elapsed * (auto_tap_rate + passive_rate))
 	if offline_gain > 0:
 		Economy.add(offline_gain)
 		print("Offline gain: ", offline_gain)
@@ -92,11 +99,18 @@ func _on_note_scored(_lane: int, accuracy: String) -> void:
 	Economy.add(reward)
 
 
+func _on_passive_tick() -> void:
+	var rate := UpgradeManager.total_passive_rate()
+	if rate > 0.0:
+		Economy.add(int(round(rate)))
+
+
 # Stop timers and clear notes when leaving the scene
 func cleanup() -> void:
 	if piano:
 		piano.cleanup()
 	AudioManager.stop_music()
+	_passive_timer.stop()
 	SaveManager.save_data()
 
 

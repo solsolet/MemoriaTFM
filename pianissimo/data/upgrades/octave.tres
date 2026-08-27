@@ -9,5 +9,5 @@ display_name = "DATA_UPGRADES_OCTAVE"
 base_cost = 1000
 cost_multiplier = 1.18
 max_level = 15
-passive_rate = 5.0
+passive_rate = 8.0
 metadata/_custom_type_script = "uid://ugia523xnwc0"
