@@ -85,6 +85,9 @@ DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
 DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
 DATA_UPGRADES_NOTE_TORRENT, Torrent de Notes, Torrente de Notas, Notes Torrent
 DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
+DATA_UPGRADES_THIRD, Tercera, Tercera, Third
+DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth
+DATA_UPGRADES_OCTAVE, Octava, Octava, Octave
 
 DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
 DATA_ACHIEVEMENTS_FIRST_STEPS_DESC, Completa el teu primer assaig,Completa tu primer ensayo,Complete your first focus session
