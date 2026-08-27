@@ -97,6 +97,8 @@ Per a assegurar-se que no falla la traducció de la clau per la cadena en l'idio
 
 Hi ha moltes opcions d'internacionalització, però per a un projecte senzill no cal massa més coses. Es pot ampliar la informació consultant la documentació oficial de Godot en aquesta matèria: https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html
 
+Per a les cadenes de text posades directament al codi s'ha usat `tr(cadena)` i Godot les substitueix correctament.
+
 ### Persistència
 
 El joc necessita persistència per a dades que han de quedar entre partides. Aquestes necessiten ser recursos que es puguen llegir i escriure en la memòria del dispositiu. S'ha de guardar:

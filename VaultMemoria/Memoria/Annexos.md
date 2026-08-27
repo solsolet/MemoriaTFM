@@ -14,4 +14,4 @@
 **UX**: *User eXperience*, experiència d'usuari.
 **GDD**: *Game Design Document*.
 **SO**: Sistema Operatiu.
-**CC0**: *Creative Commons 0*, tipus de llicència de lliure ús. 
+**CC0**: *Creative Commons 0*, tipus de llicència de lliure ús.

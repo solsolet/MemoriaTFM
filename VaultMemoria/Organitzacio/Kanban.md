@@ -31,6 +31,7 @@ kanban-plugin: board
 - [ ] Focus  marcar visualment sifailed o completed en journal #ui
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
+- [ ] It6 #memo #l
 
 
 ## In Progress (5)
