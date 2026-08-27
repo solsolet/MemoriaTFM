@@ -17,6 +17,7 @@ class_name PlayerSaveData
 @export var focus_session_description: String = ""
 @export var focus_session_tag: String = ""
 @export var focus_session_tag_color: Color = Color.TRANSPARENT
+@export var focus_success_streak: int = 0
 # Unlockables
 @export var unlocked_cards: Array[String] = []
 @export var unlocked_achievements: Array[String] = []

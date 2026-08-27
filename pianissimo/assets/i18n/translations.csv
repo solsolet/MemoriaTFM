@@ -101,3 +101,21 @@ DATA_ACHIEVEMENTS_KEYBOARD_MAX, 88,88,88
 DATA_ACHIEVEMENTS_KEYBOARD_MAX_DESC, Desbloqueja tot el teclat, Desbloquea todo el teclado, Unlock all the keyboard
 DATA_ACHIEVEMENTS_ALL_STATS_MAX, Estadista, Estadista, Stadistic
 DATA_ACHIEVEMENTS_ALL_STATS_MAX_DESC, Arriba al nivell màxim en totes les estadístiques, Llega al nivel màximo en todas las estadísticas, Get to the max level in all stats
+DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION, Primera sessió estricta, Primera sesión estricta, First strict session
+DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION_DESC, Completa per primera vegada una sessió d'assaig estricta, Completa por primera vez una sesión de ensayo estricta, Complete for the first time a strict practise session
+DATA_ACHIEVEMENTS_SESSION_10MIN, A poc a poc, Poco a poco, Little by little
+DATA_ACHIEVEMENTS_SESSION_10MIN_DESC, Assaja per 10 minuts, Ensaya por 10 minutos, Practise for 10 minutes
+DATA_ACHIEVEMENTS_HOUR_IN_A_DAY, Una hora al dia, Una hora al día, Hour in a day
+DATA_ACHIEVEMENTS_HOUR_IN_A_DAY_DESC, Una hora d'assaig al dia manté la teua tècnica nova de trica, Una hora de ensayo al día mentiene tu tècnica nueva de trinca, A practise hour a day keeps your laziness away
+DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK, 10 hores setmanals, 10 horas semanales, 10 hours a week
+DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK_DESC, Arriba a fer 10 hores d'assaig en una setmana, Llega a ensayar por diez horas en una semana, Achieve 10 hours of practise in a week
+DATA_ACHIEVEMENTS_FOCUS_STREAK_3, Ratxa d'assajos: 3, Racha de 3, Focus streak: 3
+DATA_ACHIEVEMENTS_FOCUS_STREAK_3_DESC, Assaja per 3 dies seguits, Ensaya por 3 días seguidos, Practise for 3 days in a row
+DATA_ACHIEVEMENTS_FOCUS_STREAK_10, Ratxa d'assajos: 10, Racha de 10, Focus streak: 10
+DATA_ACHIEVEMENTS_FOCUS_STREAK_10_DESC, Assaja per 10 dies seguits, Ensaya por 10 días seguidos, Practise for 10 days in a row
+DATA_ACHIEVEMENTS_100_SESSIONS, Assaja 100 vegades, Ensaya 1090 veces, Practise 100 times
+DATA_ACHIEVEMENTS_100_SESSIONS_DESC, Consegueix assajar 100 vegades, Consigue ensayar 100 veces, Practice for 100 times
+DATA_ACHIEVEMENTS_10_CARDS, Col·leccionista petit, Pequeño coleccionista, Tiny coleccionist
+DATA_ACHIEVEMENTS_10_CARDS_DESC, Desbloqueja 10 cartes a l'àlbum de cartes, Desbloquea 10 cartas en el álbum de cartas, Unlock 10 cards in the card album
+DATA_ACHIEVEMENTS_ALL_CARDS, Col·leccionista de primera, Coleccionista de primera, First class collectionist
+DATA_ACHIEVEMENTS_ALL_CARDS_DESC, Desbloqueja totes les cartes, Desbloquea todas las cartas, Unlock all cards

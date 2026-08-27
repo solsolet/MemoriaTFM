@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://bk848ic43tp5s"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_lal2d"]
+
+[resource]
+script = ExtResource("1_lal2d")
+id = "first_strict_session"
+display_name = "DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION"
+description = "DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION_DESC"
+android_id = "CgkInrHOzokbEAIQDw"
+ios_id = "first_strict_session"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

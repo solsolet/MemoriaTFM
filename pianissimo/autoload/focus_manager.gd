@@ -109,7 +109,23 @@ func _complete_session() -> void:
 	last_completed = true
 	last_reward = reward
 	last_unlocked_card_id = CardManager.unlock_random_card()
+	
+	# INFO: Achievements
 	AchievementManager.unlock("first_focus_session")
+	if mode == Mode.STRICT:
+		AchievementManager.unlock("first_strict_session")
+	if target_seconds >= 600:
+		AchievementManager.unlock("session_10min")
+
+	SaveManager.data.focus_success_streak += 1
+	if SaveManager.data.focus_success_streak >= 3:
+		AchievementManager.unlock("focus_streak_3")
+	if SaveManager.data.focus_success_streak >= 10:
+		AchievementManager.unlock("focus_streak_10")
+
+	_check_time_based_achievements()
+	if SaveManager.data.focus_history.size() >= 100:
+		AchievementManager.unlock("hundred_sessions")
 
 	_log_session(title, description, tag, tag_color, target_seconds, target_seconds, true, SaveManager.data.focus_session_start_time)
 	_clear_persisted_session()
@@ -120,6 +136,7 @@ func fail_session() -> void:
 	if not is_active:
 		return
 	is_active = false
+	SaveManager.data.focus_success_streak = 0 # Looses streak
 	_timer.stop()
 	last_completed = false
 	last_reward = 0
@@ -140,6 +157,8 @@ func _log_session(p_title: String, p_description: String, p_tag: String, p_tag_c
 		"completed": p_completed,
 		"started_at": p_started_at,
 	})
+	if SaveManager.data.focus_history.size() >= 100:
+		AchievementManager.unlock("hundred_sessions")
 	SaveManager.save_data()
 
 
@@ -169,3 +188,24 @@ func cancel_session() -> void:
 	_timer.stop()
 	_clear_persisted_session()
 	session_cancelled.emit()
+
+
+func _check_time_based_achievements() -> void:
+	var now := int(Time.get_unix_time_from_system())
+	var day_start := now - (now % 86400)
+	var week_start := now - 7 * 86400
+	var today := 0
+	var week := 0
+	for entry in SaveManager.data.focus_history:
+		if not entry.get("completed", false):
+			continue
+		var t: int = entry.get("started_at", 0)
+		var secs: int = entry.get("actual_seconds", 0)
+		if t >= week_start:
+			week += secs
+		if t >= day_start:
+			today += secs
+	if today >= 3600:
+		AchievementManager.unlock("hour_in_a_day")
+	if week >= 36000:
+		AchievementManager.unlock("ten_hours_in_a_week")
