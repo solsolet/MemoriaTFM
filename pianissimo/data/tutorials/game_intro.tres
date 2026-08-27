@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TutorialDefinition" load_steps=5 format=3 uid="uid://k6yeehvdr8fm"]
+
+[ext_resource type="Texture2D" uid="uid://cinr8xrghvajr" path="res://assets/achievements/dedication.png" id="1_4txi3"]
+[ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="1_6yg1x"]
+[ext_resource type="Texture2D" uid="uid://ck6dwa6kvw3xp" path="res://assets/achievements/investor.png" id="2_3o5cs"]
+[ext_resource type="Texture2D" uid="uid://csta2jhqo3yqe" path="res://assets/achievements/discipline.png" id="3_cuj8l"]
+
+[resource]
+script = ExtResource("1_6yg1x")
+id = "game_intro"
+panels = Array[Texture2D]([ExtResource("1_4txi3"), ExtResource("2_3o5cs"), ExtResource("3_cuj8l")])
+metadata/_custom_type_script = "uid://bfj33tiyihf6b"

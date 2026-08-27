@@ -1,0 +1,10 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkry1xyetxhnd"]
+
+[ext_resource type="Script" uid="uid://be83sd0vq3u8c" path="res://autoload/tutorial_manager.gd" id="1_cce5d"]
+[ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="2_u84rs"]
+[ext_resource type="Resource" uid="uid://k6yeehvdr8fm" path="res://data/tutorials/game_intro.tres" id="3_pqss7"]
+[ext_resource type="Resource" uid="uid://hhtp4e1x7oyp" path="res://data/tutorials/focus_intro.tres" id="4_dgpo2"]
+
+[node name="TutorialManager" type="Node"]
+script = ExtResource("1_cce5d")
+definitions = Array[ExtResource("2_u84rs")]([ExtResource("3_pqss7"), ExtResource("4_dgpo2")])

@@ -437,6 +437,8 @@ Comentar afegits en cards, assoliments i upgrades.
 
 Precisió millora amb metronom, fan signergia. Canvis a `_perfect` i `_good_threshold` amb el seu afegit que multiplica.
 
+Sistema per a posar tutorials/lore... de moment preparar per a posar tutorial per a `game` i `focus`. Es poden tornar a veure en settings polsant els botons.
+
 ### Iteració 6
 
 Aquesta iteració comprén dle 27 al 31 (pot ser més dies si fem proves amb usuaris)

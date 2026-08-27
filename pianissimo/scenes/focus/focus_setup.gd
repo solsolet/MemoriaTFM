@@ -1,5 +1,7 @@
 extends Control
 
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
+
 @export var title_field: LineEdit
 @export var description_field: TextEdit
 @export var duration_spinbox: SpinBox
@@ -15,6 +17,11 @@ var _selected_tag_color: Color = Color.TRANSPARENT
 
 func _ready() -> void:
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
+	if not TutorialManager.has_been_seen("game_intro"):
+		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+		add_child(overlay)
+		overlay.setup("focus_intro")
 	
 	start_button.pressed.connect(_on_start_pressed)
 	journal_button.pressed.connect(_on_journal_pressed)

@@ -1,6 +1,7 @@
 extends Control
 
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
 const NOTE_HEIGHT = 36.0
 
 @export var notes_label: Label
@@ -15,6 +16,11 @@ var note_speed: float = 220.0
 
 
 func _ready() -> void:
+	if not TutorialManager.has_been_seen("game_intro"):
+		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+		add_child(overlay)
+		overlay.setup("game_intro")
+	
 	settings_button.pressed.connect(_on_settings_button_pressed)
 	Economy.notes_changed.connect(_on_notes_changed)
 	_on_notes_changed(Economy.notes)

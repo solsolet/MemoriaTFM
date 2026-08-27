@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://brm8nljmnjq4q"]
+
+[ext_resource type="Script" uid="uid://co8bqywukhyon" path="res://scenes/tutorial/tutorial_overlay.gd" id="1_okbap"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_xcprb"]
+
+[node name="TutorialOverlay" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_okbap")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.60784316)
+
+[node name="PanelCenter" type="CenterContainer" parent="Dim"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ComicImage" type="TextureRect" parent="Dim/PanelCenter"]
+layout_mode = 2
+texture = ExtResource("2_xcprb")
+stretch_mode = 5
+
+[node name="BottomBar" type="HBoxContainer" parent="Dim"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 901.0
+offset_right = 1065.0
+offset_bottom = 1019.0
+
+[node name="SkipButton" type="Button" parent="Dim/BottomBar"]
+layout_mode = 2
+text = "TUTORIAL_SKIP"
+alignment = 0
+
+[node name="NextButton" type="Button" parent="Dim/BottomBar"]
+layout_mode = 2
+text = "TUTORIAL_NEXT"
+alignment = 2
