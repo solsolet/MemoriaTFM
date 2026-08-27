@@ -1,8 +1,10 @@
 extends Control
 
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
-const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
 const NOTE_HEIGHT = 36.0
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
+const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/game/welcome_back_toast.tscn")
+const MIN_OFFLINE_SECONDS_FOR_TOAST := 30
 
 @export var notes_label: Label
 @export var settings_button: Button
@@ -69,6 +71,10 @@ func _apply_offline_income() -> void:
 	if offline_gain > 0:
 		Economy.add(offline_gain)
 		print("Offline gain: ", offline_gain)
+		if elapsed >= MIN_OFFLINE_SECONDS_FOR_TOAST:
+			var toast := WELCOME_BACK_TOAST_SCENE.instantiate() as WelcomeBackToast
+			add_child(toast)
+			toast.show_reward(offline_gain)
 
 
 func _on_notes_changed(value: int) -> void:

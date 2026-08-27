@@ -98,8 +98,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -285,14 +284,14 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3dc5d0950143acef",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
     "Memoria/Annexos/Ten-Pager.md",
+    "Memoria/Marc teoric.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Metodologia.md",
-    "Memoria/Marc teoric.md",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Home2_It2.jpg",
     "Memoria/Assets/Pianissimo/It1/Pianissimo-iOS-It1.jpg",
     "Memoria/Assets/Pianissimo/It1/Pianissimo-Android-It1.png",

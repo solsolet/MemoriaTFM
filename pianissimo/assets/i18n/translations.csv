@@ -19,6 +19,7 @@ PAUSE_HOME,Inici,Inicio,Home
 
 GAME_UPGRADES, Millores, Mejoras, Upgrades
 GAME_STATS, Stats, Stats, Stats
+WELCOME_BACK_REWARD, "Benvingut de nou! +%d notes mentre has estat fora", "¡Bienvenido de nuevo! +%d notas mientras estabas fuera", "Welcome back! +%d notes while you were away"
 
 SETTINGS,Configuració,Configuración,Settings
 SETTINGS_MUSIC,Música,Música,Music
