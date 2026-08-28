@@ -113,7 +113,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -299,15 +299,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9a95ba6b3fa63c7d",
+  "active": "82a2da8815f0a19d",
   "lastOpenFiles": [
+    "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.png",
+    "Memoria/Desenvolupament.md",
     "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_GameCenter_UI.jpg",
     "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.png.zip",
     "Memoria/Assets/Pianissimo/It5",
-    "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.png",
     "Memoria/Annexos.md",
-    "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Annexos/GDD.md",
     "Organitzacio/Kanban.md",
@@ -321,7 +321,6 @@
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots1_It2.png",
     "Memoria/Assets/Pianissimo/It2/Pianissimo-Demo_2_It2.mp4",
     "Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png",
-    "Memoria/Assets/Pianissimo/It2/Pianissimo_Home1_It2.jpg",
     "Output/_build_processed.md",
     "Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter.mov",
     "Memoria/Assets/AltresJocs/Forest",

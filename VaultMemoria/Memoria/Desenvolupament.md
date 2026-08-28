@@ -455,7 +455,7 @@ De moment s'ha preparat per a posar tutorial per a `game` i `focus` quan entres 
 
 Aquest sistema és molt ximple, es pot veure com se superposa a l'escena un `CanvasLayer` que mostra el contingut del tutorial, que en aquest cas és un *Array* dels *TextureRect* que s vulguen posar. Es pot passar al següent gràcies a les fletxes i també es pot saltar directament amb el botó que pertoca.
 
-Una altra cosa implementada és una mena de `toast` com si fora una notificació dins del joc que t'avisa moltes Notes has guanyat en la teua absència. Era un detall que estava mostrant en la terminal, que jocs com *Cookie Clicker* mostra i crec que suma a l'experipencia del jugador.
+Una altra cosa implementada és una mena de `toast` com si fora una notificació dins del joc que t'avisa moltes Notes has guanyat en la teua absència. Era un detall que estava mostrant en la terminal, que jocs com *Cookie Clicker* mostra i crec que suma a l'experiència del jugador.
 
 Per acabar, s'ha pensat a afegir més contingut de tots els recursos (Estadístiques, Millores, Cartes i Assoliments). 
 
@@ -464,11 +464,11 @@ Alguns canvis en les estadístiques ha portat a canviar paràmetres del codi com
 #### So
 Una vegada l'aspecte de `home` va estar fet, podria ser més divertit si les notes sonaven la nota corresponent.
 
-Els àudios que es tenia pel moment eren trets de Freesound per diferents autors i es notava la diferència. La solució més ràpida a la que es va arribar va ser generar-los pel meu compte sense dependre d'altres gravacions i es va fer amb Musescore.
+Els àudios que es tenia pel moment eren trets de Freesound per diferents autors i es notava la diferència. La solució més ràpida a la que es va arribar va ser generar-los pel meu compte sense dependre d'altres gravacions i es va fer amb MuseScore.
 
 Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que pot ser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
 
-![](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg)
+![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg)
 
 A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
 
