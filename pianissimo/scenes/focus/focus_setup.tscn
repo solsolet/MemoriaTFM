@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://blluuki5xyfal"]
+[gd_scene load_steps=4 format=3 uid="uid://blluuki5xyfal"]
 
 [ext_resource type="Script" uid="uid://obqdwdktwlrl" path="res://scenes/focus/focus_setup.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_t76nn"]
 
-[node name="FocusSetup" type="Control" node_paths=PackedStringArray("title_field", "description_field", "duration_spinbox", "start_button", "journal_button", "back_button")]
+[node name="FocusSetup" type="Control" node_paths=PackedStringArray("title_field", "description_field", "duration_spinbox", "mode_checkbutton", "tag_field", "tag_presets_row", "start_button", "journal_button", "back_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,10 +14,23 @@ grow_vertical = 2
 script = ExtResource("1")
 title_field = NodePath("SafeArea/VBoxContainer/VBoxContainer/TitleField")
 description_field = NodePath("SafeArea/VBoxContainer/VBoxContainer/DescriptionField")
-duration_spinbox = NodePath("SafeArea/VBoxContainer/VBoxContainer/DurationSpinBox")
+duration_spinbox = NodePath("SafeArea/VBoxContainer/VBoxContainer/DurationMode/DurationSpinBox")
+mode_checkbutton = NodePath("SafeArea/VBoxContainer/VBoxContainer/DurationMode/ModeCheckButton")
+tag_field = NodePath("SafeArea/VBoxContainer/VBoxContainer/TagField")
+tag_presets_row = NodePath("SafeArea/VBoxContainer/VBoxContainer/TagsPreset")
 start_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/StartButton")
-journal_button = NodePath("SafeArea/VBoxContainer/VBoxContainer/JournalButton")
+journal_button = NodePath("SafeArea/VBoxContainer/JournalButton")
 back_button = NodePath("SafeArea/VBoxContainer/BackButton")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t76nn")
+stretch_mode = 6
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,26 +39,35 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 20
 script = ExtResource("2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeArea"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 30
 
 [node name="TitleLabel" type="Label" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+size_flags_vertical = 6
 theme_type_variation = &"TitleLabel"
 text = "PRACTISE_NEW_SESSION"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Spacer" type="Control" parent="SafeArea/VBoxContainer"]
+[node name="Control2" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SafeArea/VBoxContainer"]
+custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_constants/separation = 20
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+theme_override_constants/separation = 40
 
 [node name="TitleField" type="LineEdit" parent="SafeArea/VBoxContainer/VBoxContainer"]
 auto_translate_mode = 1
@@ -62,36 +85,88 @@ auto_translate_mode = 1
 layout_mode = 2
 text = "PRACTISE_DURATION"
 
-[node name="DurationSpinBox" type="SpinBox" parent="SafeArea/VBoxContainer/VBoxContainer"]
+[node name="DurationMode" type="HBoxContainer" parent="SafeArea/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 50
+
+[node name="DurationSpinBox" type="SpinBox" parent="SafeArea/VBoxContainer/VBoxContainer/DurationMode"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/buttons_width = 30
 min_value = 1.0
 max_value = 180.0
 value = 25.0
 
-[node name="Control" type="Control" parent="SafeArea/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
+[node name="ModeCheckButton" type="CheckButton" parent="SafeArea/VBoxContainer/VBoxContainer/DurationMode"]
+auto_translate_mode = 1
 layout_mode = 2
+size_flags_horizontal = 3
+text = "PRACTISE_MODE"
+
+[node name="TagLabel" type="Label" parent="SafeArea/VBoxContainer/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "PRACTISE_TAGS"
+
+[node name="TagField" type="LineEdit" parent="SafeArea/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TagsPreset" type="HBoxContainer" parent="SafeArea/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TagWarmUp" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer/TagsPreset"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TagButton"
+theme_override_colors/icon_normal_color = Color(1, 0.7490196, 0.7490196, 1)
+text = "PRACTISE_TAG_WARMUP"
+
+[node name="TagTechnique" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer/TagsPreset"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TagButton"
+theme_override_colors/icon_normal_color = Color(1, 0.89411765, 0.8117647, 1)
+text = "PRACTISE_TAG_TECHNIQUE"
+
+[node name="TagFirst" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer/TagsPreset"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TagButton"
+theme_override_colors/icon_normal_color = Color(1, 0.9607843, 0.8117647, 1)
+text = "PRACTISE_TAG_FIRST_SIGHT"
+
+[node name="TagWork" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer/TagsPreset"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TagButton"
+theme_override_colors/icon_normal_color = Color(0.85882354, 1, 0.8392157, 1)
+text = "PRACTISE_TAG_WORK"
+
+[node name="TagStudy" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer/TagsPreset"]
+auto_translate_mode = 1
+layout_mode = 2
+theme_type_variation = &"TagButton"
+theme_override_colors/icon_normal_color = Color(0.8509804, 0.9411765, 1, 1)
+text = "PRACTISE_TAG_STUDY"
 
 [node name="StartButton" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+size_flags_horizontal = 4
 text = "PRACTISE_START_BUTTON"
 
-[node name="JournalButton" type="Button" parent="SafeArea/VBoxContainer/VBoxContainer"]
+[node name="JournalButton" type="Button" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "PRACTISE_PAST_SESSIONS_BUTTON"
-
-[node name="Spacer2" type="Control" parent="SafeArea/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
 
 [node name="BackButton" type="Button" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "BACK_BUTTON"
 
-[node name="BottomSpacer" type="Control" parent="SafeArea/VBoxContainer"]
+[node name="Control" type="Control" parent="SafeArea/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3

@@ -7,5 +7,6 @@
   "pickyMode": true,
   "motherTongue": "ca-ES-valencia",
   "staticLanguage": "auto",
-  "catalanVeriety": "ca-ES-valencia"
+  "catalanVeriety": "ca-ES-valencia",
+  "apiKeyStorage": "secret"
 }

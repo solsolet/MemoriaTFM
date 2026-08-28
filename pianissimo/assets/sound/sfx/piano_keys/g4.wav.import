@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://5vsgn4408llq"
-path="res://.godot/imported/d4.wav-4f5298f142cab0f70a4d29c1c5c0bfcf.sample"
+uid="uid://cy7ofu3i6yty4"
+path="res://.godot/imported/g4.wav-d93d3bfaf63c0c6de6bbee1de05aaeb7.sample"
 
 [deps]
 
-source_file="res://assets/sound/sfx/d4.wav"
-dest_files=["res://.godot/imported/d4.wav-4f5298f142cab0f70a4d29c1c5c0bfcf.sample"]
+source_file="res://assets/sound/sfx/piano_keys/g4.wav"
+dest_files=["res://.godot/imported/g4.wav-d93d3bfaf63c0c6de6bbee1de05aaeb7.sample"]
 
 [params]
 

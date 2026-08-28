@@ -6,5 +6,5 @@
 script = ExtResource("1_mx6aq")
 id = "mozart"
 display_name = "W. A. Mozart"
-description = "Classical-era prodigy who composed symphonies and operas from childhood."
+description = "DATA_CARDS_MOZART_DESC"
 metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_l8xtf")
 id = "wtc_fact"
-display_name = "The Well-Tempered Clavier"
+display_name = "DATA_CARDS_WTC_FACT"
 category = 2
-description = "A landmark collection covering every major and minor key, still used to teach piano technique today."
+description = "DATA_CARDS_WTC_FACT_DESC"
 metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

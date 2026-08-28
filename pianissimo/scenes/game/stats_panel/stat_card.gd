@@ -3,10 +3,10 @@ class_name StatCard
 
 var stat_id: String = ""
 
-@onready var icon_rect: ColorRect = $VBoxContainer/IconRect
-@onready var title_label: Label = $VBoxContainer/TitleLabel
-@onready var level_label: Label = $VBoxContainer/LevelLabel
-@onready var cost_label: Label = $VBoxContainer/CostLabel
+@export var icon_rect: ColorRect
+@export var title_label: Label
+@export var level_label: Label
+@export var cost_label: Label
 
 
 func setup(id: String) -> void:

@@ -6,6 +6,7 @@ signal note_scored(lane: int, accuracy: String)
 const BASE_SPAWN_INTERVAL := 0.8
 const MIN_SPAWN_INTERVAL := 0.25
 const VELOCITY_SPEEDUP_PER_LEVEL := 0.93
+const GOLDEN_BASE_CHANCE := 0.01
 
 @onready var hit_line: ColorRect = $HitLine
 @onready var keyboard: PianoKeyboard = $KeyRow
@@ -48,12 +49,15 @@ func _setup_timers() -> void:
 func _apply_velocity() -> void:
 	var level := StatManager.get_level("velocity")
 	var interval = BASE_SPAWN_INTERVAL * pow(VELOCITY_SPEEDUP_PER_LEVEL, level)
+	interval *= pow(0.95, UpgradeManager.get_level("note_torrent"))
 	spawn_timer.wait_time = max(MIN_SPAWN_INTERVAL, interval)
 
 
 func _on_spawn_timer_timeout() -> void:
 	var lane = randi_range(0, keyboard.key_buttons.size() - 1)
-	note_field.spawn_note(lane, keyboard.get_key_rect(lane))
+	var golden_level := UpgradeManager.get_level("golden_notes")
+	var is_golden := golden_level > 0 and randf() < GOLDEN_BASE_CHANCE * golden_level
+	note_field.spawn_note(lane, keyboard.get_key_rect(lane), is_golden)
 
 
 func _on_key_pressed(lane_index: int) -> void:
@@ -76,6 +80,8 @@ func _on_auto_tap_timeout() -> void:
 func _on_upgrade_purchased(id: String, new_level: int) -> void:
 	if id == "auto_tap":
 		auto_tap_timer.wait_time = max(0.4, 1.0 - 0.1 * new_level)
+	if id == "note_torrent":
+		_apply_velocity()
 
 
 func _on_stat_purchased(id: String, _new_level: int) -> void:

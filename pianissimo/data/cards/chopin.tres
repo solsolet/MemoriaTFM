@@ -6,5 +6,5 @@
 script = ExtResource("1_2mjl4")
 id = "chopin"
 display_name = "Frédéric Chopin"
-description = "Romantic-era composer who wrote almost exclusively for solo piano."
+description = "DATA_CARDS_CHOPIN_DESC"
 metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

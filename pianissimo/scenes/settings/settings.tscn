@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxdr2m7yf45q5"]
+[gd_scene load_steps=4 format=3 uid="uid://bxdr2m7yf45q5"]
 
 [ext_resource type="Script" uid="uid://bl2jptd8vxlei" path="res://scenes/settings/settings.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_vu5fi"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="3_tt6xx"]
 
-[node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "music_mute_button", "sfx_mute_button", "reset_button", "reset_confirm_dialog")]
+[node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "music_mute_button", "sfx_mute_button", "reset_button", "reset_confirm_dialog", "game_tutorial_button", "practise_tutorial_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,6 +18,18 @@ music_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundCo
 sfx_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer/SfxMuteButton")
 reset_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ResetButton")
 reset_confirm_dialog = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ConfirmationDialog")
+game_tutorial_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons/GameTutorial")
+practise_tutorial_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons/PractiseTutorial")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_tt6xx")
+stretch_mode = 6
 
 [node name="SafeAreaContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -39,6 +52,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.0
+theme_override_constants/separation = 20
 
 [node name="SettingsLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer"]
 auto_translate_mode = 1
@@ -126,21 +140,47 @@ auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_type_variation = &"CancelButton"
 text = "SETTINGS_RESET"
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
 auto_translate_mode = 1
+transparent_bg = true
 oversampling_override = 1.0
 title = "DIALOG_RESET_TITLE"
 initial_position = 1
-size = Vector2i(822, 246)
-min_size = Vector2i(250, 200)
-max_size = Vector2i(16000, 8000)
+size = Vector2i(765, 250)
+transparent = true
+min_size = Vector2i(765, 250)
+max_size = Vector2i(1080, 2000)
 content_scale_mode = 1
 content_scale_aspect = 4
 ok_button_text = "DIALOG_OK"
 dialog_text = "DIALOG_RESET_TEXT"
 cancel_button_text = "DIALOG_CANCEL"
+
+[node name="TutorialContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+layout_mode = 2
+
+[node name="TutorialLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer"]
+layout_mode = 2
+theme_type_variation = &"Title2Label"
+text = "TUTORIAL_HELP"
+
+[node name="TutorialButtons" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="GameTutorial" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+text = "SETTINGS_GAME_TUTORIAL"
+
+[node name="PractiseTutorial" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+text = "SETTINGS_PRACTISE_TUTORIAL"
 
 [node name="BackButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
 auto_translate_mode = 1

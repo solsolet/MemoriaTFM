@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_nn53a")
 id = "first_focus_session"
-display_name = "First Steps"
-description = "Complete your first focus session"
+display_name = "DATA_ACHIEVEMENTS_FIRST_STEPS"
+description = "DATA_ACHIEVEMENTS_FIRST_STEPS_DESC"
 android_id = "CgkInrHOzokbEAIQAQ"
 ios_id = "first_focus_session"
 metadata/_custom_type_script = "uid://cw2s1k8qqacba"

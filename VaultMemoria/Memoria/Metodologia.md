@@ -97,6 +97,14 @@ Editor de vídeo per a elaborar vídeos de demos i producte final.
 
 En el desenvolupament del joc s'ha utilitzat Claude i ChatGPT per a depurar, trobar errades i refactoritzar diferents funcionalitats implementades en el joc. Només s'han usat pel que fa a la programació. Aquests LLM han permés anar més de pressa i evitar quedar-se paralitzat per alguna cosa que no eixira durant la implementació.
 
+### Audacity
+
+S'ha fet servir per a editar els son del joc, ja siga per a retallar, ajustar volus o exportar a diferents formats.
+
+### Musescore
+
+S'ha fet servir per a exportar de partitures l'audio en el format desitjat.
+
 ## Anàlisi de videojocs {#sec-analisi-videojocs}
 
 Per a analitzar els videojocs de l'[estat l'art](#sec-estat-art), s'ha seguit aquesta metodologia:
@@ -119,7 +127,11 @@ Una vegada estiguen tots analitzats ajudarà al desenvolupament del videojoc del
 
 L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells:
 
-- Redmi note 13Pro + 5G:
-- iPhone 12:
+| Nom                   | Marca  | SO      | RAM   | Gràfics | API |
+| --------------------- | ------ | ------- | ----- | ------- | --- |
+| Redmi note 13Pro + 5G | Xiaomi | Android | 12 GB |         | 35  |
+| Mi A1                 | Xiaomi | Android |       |         | 21  |
+| iPhone 12             | Apple  | iOS     |       |         |     |
+
 
 TODO : posar característiques dels dispositius, podria ser en forma de taula

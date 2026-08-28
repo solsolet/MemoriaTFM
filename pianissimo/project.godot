@@ -14,7 +14,7 @@ config/name="Pianissimo"
 config/tags=PackedStringArray("android", "google_play_games_services", "ios")
 run/main_scene="uid://d3xjva4n8hejr"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://cjmmhepbg4f7r"
 
 [autoload]
 
@@ -25,6 +25,7 @@ UpgradeManager="*res://autoload/upgrade_manager.tscn"
 StatManager="*res://autoload/stat_manager.tscn"
 FocusManager="*res://autoload/focus_manager.gd"
 CardManager="*res://autoload/card_manager.tscn"
+TutorialManager="*res://autoload/tutorial_manager.tscn"
 AudioManager="*res://autoload/audio_manager.gd"
 AchievementManager="*res://autoload/achievement_manager.tscn"
 NotificationManager="*res://autoload/notification_manager.gd"

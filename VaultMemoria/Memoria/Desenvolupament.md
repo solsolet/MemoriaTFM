@@ -10,8 +10,6 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 ### Changelog
 
-%% TODO : vore si fer-ho amb títols o a mode taula %%
-
 #### v0.1.0
 
 - Planificació inicial Gantt Project.
@@ -55,6 +53,28 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Visualització de la UI d'assoliments de cada SO amb `show_achivements_ui`.
 - Proves en dispositius de cada SO per a validar que es poden desbloquejar assoliments.
 - Muntada del joc a les tendes d'aplicacions per a poder descarregar-lo.
+
+#### v0.5.0
+
+- Afegir sons per a les tecles bé.
+- Noves funcionalitats del mode assaig:
+	- Botó de cancel·lar sessió.
+	- Tags.
+	- Total setmanal i diari en `journal`.
+	- Música disponible en `focus_session`.
+	- Poder esborrar entrades en `journal`.
+	- Assajos permissius: no hi ha penalització per abandonar l'aplicació mentre estiga viva.
+- Canvis a la UI:
+	- `home` tipus piano.
+	- Fons personalitzat amb escalat adequat per a tota mena de pantalles.
+	- Botons personalitzats amb variacions per a les tecles blanques i negres i botó de cancel·lació. Alguns disposen d'icones.
+	- Notes personalitzades.
+	- Cartes ara de color lila.
+	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
+	- Game, nova good-perfect area visual per a saber on polsar quan la nota s'apropa al teclat.
+- Nous assoliments: `velocity_maxed`, `precision_maxed`, `technique_maxed`, `keyboard_maxed`, `all_stats_maxed`, `first_strict_session`, `session_10min`, `hour_in_a_day`, `ten_hours_in_a_week`, `focus_streak_3`, `focus_streak_10`, `hundred_sessions`, `ten_cards`, `all_cards`.
+- 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
+- Correccions de les traduccions del text posat directament al codi amb `tr()`.
 
 ## Iteracions
 
@@ -350,7 +370,7 @@ Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assolim
 
 ##### Problemes
 
-Deferring, aplaçar, els canvis descena evita que s'actue sobre els notes que estan a mig usar quan es produeix el canvi. Sha d'aplicat en tots els canvis d'escena.
+Deferring, aplaçar, els canvis d'escena evita que s'actue sobre els notes que estan a mig usar quan es produeix el canvi. Sha d'aplicat en tots els canvis d'escena.
 
 ```gd
 	# Error can_process
@@ -396,13 +416,70 @@ Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game 
 
 ### Iteració 5
 
-Aquesta iteració comprén del 22 fins al 26
+Aquesta iteració comprén del 22 fins al 27 d'agost de 2026. M'haguera agradat que durara un dia o dos menys per tal d'anar tancant coses, però no ha sigut possible.
 
-Centrar-se en UI per a preparar proves usuaris.
+Durant aquest temps s'ha millorat la UI i s'han afegit algunes funcionalitats per a deixar una versió bastant definitiva per a poder fer proves a usuaris en la següent iteració.
+
+No cal nomenar què feia falta millorar de la interfície si mirem les captures de les anteriors iteracions. S'ha canviat to en major o menor mesura. Es pot veure el detall al GDD.
+
+La mentalitat aquests dies ha sigut d'anar solucionant pantalla a pantalla fins deixar-la en estat òptim, i sobre la marxa si feia falta afegir alguna millora o corregir alguna errada s'anotava al Kanban.
+
+El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb el detall suficient per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt en implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
+
+Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "i si pose açò?" o els "pot ser es veuria millor d'aquesta manera". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+
+#### Projecte Godot
+
+Amb la premisa de la diversió va sorgir la idea que la pantalla de `home` tinguera l'aspecte d'un **teclat**. Com el mecanisme de teclat ja el tenia implementat a `game` i no calia que fora dinàmic va ser més senzill: es van col·locar els botons que farien de tecles blanques i negres en el seu corresponent contenidor, assignant un tema per a cada tecla i com distribuir-les ja es va aconseguir el resultat buscat.
+
+El tema de la interfície, `main_theme` ha canviat molt per les coses que s'han afegit i les que s'han arreglat.
+
+Una correcció va ser posar un tema a la variant `focus` dels botons, ja que al polsar un per defecte es quedava un fi requadre gris que quedava malament.
+
+També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil del borde que ja tenen altres elements. Aquest canvi va suposar el desconfigurament de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
+
+El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes en cas d'usar una predeterminada s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
+
+Fins a aquest moment es tenia un mode "restrictiu" que en cas d'eixir-se'n de l'aplicació donava l'assaig com a fallit. Això inclou també tancar el mòbil. Godot manca de mecanismes per a detectar si el dispositiu està encés o apagat així que aquest mode no era molt pràctic.
+
+Altres aplicacions, com *Forest*, tenen aquest mode i resulta molt atractiu, evitant que l'usuari puga caure en la temptació d'entrar en altres aplicacions. Al no poder implementar-ho amb la tecnologia al meu abast i estar quedant-se sense temps, s'ha optat per una solució menys rígida, que inclús queda millor a l'aplicació, ja que com s'ha mencionat en altres moments, el seguiment de tasques és un complement del joc *idle*. Com estava implementat el mode restrictiu només s'ha afegit el permissiu de manera que amb un *CheckButton* es puga controlar quin es vol usar en l'assaig.
+
+Com encara volia donar-li més voltes, es va afegir l'opció en poder eliminar assajos registrats a l'historial amb un botó paperera, un botó per a poder cancel·lar una sessió abans de passar 10 segons sense tenir penalització (l'usuari es pot penedir o donar-li sense voler), estil a les entrades de l'historial i un *CheckButton* per a activar música de fons mentre s'està en un assaig.
+
+Poques coses faltaven més al joc així que volia atacar un problema que segur que anava a passar quan es feren proves en usuaris, el joc no té instruccions i potser jo no estiga present quan algú el prove. 
+
+Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny de moment no és prou bo i les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
+
+La meua solució temporal, i que segurament es quedarà, és un **sistema** per a posar **tutorials** que també pot servir per a contar una miqueta la història del joc.
+De moment s'ha preparat per a posar tutorial per a `game` i `focus` quan entres per primer cop. Es poden tornar a veure en la pantalla de configuració polsant els botons corresponents.
+
+Aquest sistema és molt ximple, es pot veure com se superposa a l'escena un `CanvasLayer` que mostra el contingut del tutorial, que en aquest cas és un *Array* dels *TextureRect* que s vulguen posar. Es pot passar al següent gràcies a les fletxes i també es pot saltar directament amb el botó que pertoca.
+
+Una altra cosa implementada és una mena de `toast` com si fora una notificació dins del joc que t'avisa moltes Notes has guanyat en la teua absència. Era un detall que estava mostrant en la terminal, que jocs com *Cookie Clicker* mostra i crec que suma a l'experiència del jugador.
+
+Per acabar, s'ha pensat a afegir més contingut de tots els recursos (Estadístiques, Millores, Cartes i Assoliments). 
+
+Alguns canvis en les estadístiques ha portat a canviar paràmetres del codi com és el cas del *metrònom* que ara fa sinergia amb la *precisió*.
+
+#### So
+Una vegada l'aspecte de `home` va estar fet, podria ser més divertit si les notes sonaven la nota corresponent.
+
+Els àudios que es tenia pel moment eren trets de Freesound per diferents autors i es notava la diferència. La solució més ràpida a la que es va arribar va ser generar-los pel meu compte sense dependre d'altres gravacions i es va fer amb MuseScore.
+
+Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que pot ser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
+
+![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg)
+
+A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
+
+Una altra correcció del *manager* va ser arreglar que durant `game`la música quan acaba es parava per tal de fer que sempre sonara. Segons està el codi ara la música en bucle tota aquella  dins de `[musica1, musica2, ...]`.
+#### Affinity
+
+Les **icones** que apareixen en alguns botons del joc en un principi es tenia previst usar algunes d'alguna web d'icones de lliure ús o amb algun tipus de llicència permissiva. Al veure que les icones que m'agradaven o bé tenien cadascuna una llicència diferent o no m'agradavne les disponibles vaig pensar que seria més ràpid fer-les jo amb un programa que em permetera exportar-les com a SVG. Amb aquest format garanteix que es veurà bé a qualsevol resolució i a més les icones seràn més lleugeres que amb un PNG.
 
 ### Iteració 6
 
-Aquesta iteració comprén dle 27 al 31 (pot ser més dies si fem proves amb usuaris)
+Aquesta iteració comprén dle 28 al 31 (pot ser més dies si fem proves amb usuaris)
 
 Centrar-se en Notis if possible + crear més contingut de millores i stats + test
 

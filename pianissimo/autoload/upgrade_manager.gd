@@ -55,3 +55,12 @@ func purchase(id: String) -> bool:
 	if new_level >= 10:
 		AchievementManager.unlock("upgrade_level_10")
 	return true
+
+
+func total_passive_rate() -> float:
+	var total := 0.0
+	for id in _definitions.keys():
+		var def: UpgradeDefinition = _definitions[id]
+		if def.passive_rate > 0.0:
+			total += def.passive_rate * get_level(id)
+	return total

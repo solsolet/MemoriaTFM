@@ -17,12 +17,18 @@ PAUSE_LABEL,Pausa,Pausa,Pause
 RESUME,Resume,Continua,Continua
 PAUSE_HOME,Inici,Inicio,Home
 
+GAME_UPGRADES, Millores, Mejoras, Upgrades
+GAME_STATS, Stats, Stats, Stats
+WELCOME_BACK_REWARD, "Benvingut de nou! +%d notes mentre has estat fora", "¡Bienvenido de nuevo! +%d notas mientras estabas fuera", "Welcome back! +%d notes while you were away"
+
 SETTINGS,Configuració,Configuración,Settings
 SETTINGS_MUSIC,Música,Música,Music
 SETTINGS_SFX,SFX,SFX,SFX
 SETTINGS_MUTE, Silenciar, Silenciar, Mute
 SETTINGS_DATA, Dades, Datos, Data
 SETTINGS_RESET, Resetejar progrés, Resetear progreso, Reset progress
+SETTINGS_GAME_TUTORIAL, Tutorial joc, Tutorial juego, Game tutorial
+SETTINGS_PRACTISE_TUTORIAL, Tutorial assaig, Tutorial ensayo, Practise tutorial
 
 DIALOG_CANCEL, Cancel·lar, Cancelar, Cancel
 DIALOG_OK, D'acord, Aceptar, Accept
@@ -34,10 +40,82 @@ PRACTISE_NEW_SESSION, Nou assaig, Nuevo ensayo, New practise
 PRACTISE_TITLE_PLACEHOLDER, Títol de la sessió (p. ex. Escala Do M), Título de la sessión (p. ej. Escala Do M), Session title (e.g. Scales practice)
 PRACTISE_DESCRIPTION_PLACEHOLDER, Descripció (opcional), Descripción (opcional), Description (optional)
 PRACTISE_DURATION, Duració (minuts), Duración (minutos), Duration (minutes)
+PRACTISE_TAGS, Etiquetes, Etiquetas, Tags
+PRACTISE_TAG_TECHNIQUE, Tècnica, Técnica, Technique
+PRACTISE_TAG_WARMUP, Calfament, Calentamiento, Warm up
+PRACTISE_TAG_FIRST_SIGHT, 1a Vista, 1ª Vista, 1sr Sight
+PRACTISE_TAG_WORK, Treball, Trabajo, Work
+PRACTISE_TAG_STUDY, Estudiar, Estudiar, Study
+PRACTISE_TAG_WORKOUT, Entrenament, Entrenamiento, Work out
+PRACTISE_MODE, Estricte/Permissiu, Estricto/Permisivo, Strict/Permissive
 PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.
 PRACTISE_RESULT, Resultat, Resultado, Result
 PRACTISE_JOURNAL, Diari d'assajos, Diario de ensayos, Practise journal
+PRACTISE_JOURNAL_EMPTY, Encara no hi ha assajos registrats., Aún no hay registro de ningún ensayo., No practise sessions yet.
+PRACTISE_JOURNAL_COMPLETED, Completada, Completada, Completed
+PRACTISE_JOURNAL_FAILED, Fallada, Fallada, Failed
+PRACTISE_JOURNAL_TODAY_WEEK_TOTALS, Hui: %dm   Aquesta setmana: %dm, Hoy: %dm   Esta semana: %dm, Today: %dm   This week: %dm
+
+TUTORIAL_HELP, Ajuda, Ayuda, Help
+TUTORIAL_SKIP, Saltar, Saltar, Skip
+TUTORIAL_GOT_IT, Entesos, Entendido, Got it
+TUTORIAL_NEXT, Següent, Siguiente, Next
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album
+
+DATA_CARDS_BACH_DESC,Organista i compositor barroc famós per la seua extensa obra que es considerada una de les màximes expressions de la música universal,Organista y compositor barroco famoso por su extensa obra considerada una de las máximas expresiones de la música universal,Baroque composer and organist famed for intricate counterpoint like The Well-Tempered Clavier.
+DATA_CARDS_MOZART_DESC,Prodigi de l'època clàssica que componia simfonies des de l'infantesa, Prodigio de la época clásica que componía sinfonías desde su infancia, Classical-era prodigy who composed symphonies and operas from childhood.
+DATA_CARDS_CHOPIN_DESC, Compositor romàntic que va escriure quasi exclusivament per a pino, Compositor romántico que escribió casi exclusivamente para piano, Romantic-era composer who wrote almost exclusively for solo piano.
+DATA_CARDS_HARPICORD,Clavicèmbal, Clavicémbalo, Harpichord
+DATA_CARDS_HARPICORD_DESC,"Ancestre del piano que pinsa les cordes en lloc de colpejar-les, donant un to brillant","Ancestro del piano que pinza las cuerdas en lugar de golpear-las, dando un sonido brillante","A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone."
+DATA_CARDS_PIANO,El Piano,El Piano,The Piano
+DATA_CARDS_PIANO_DESC,"Inventat cap al 1700, pot tocar tant fort com fluix — d'aquí el seu nom original, ""pianoforte.""","Inventado alrededor de 1700, puede tocar tanto fuerte como suave — de ahí su nombre original, ""pianoforte.""","Invented around 1700, it can play both loud and soft — hence its original name, ""pianoforte."""
+DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered Clavier
+DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
+
+DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
+DATA_STATS_PRECISION, Precisió, Precisión, Precision
+DATA_STATS_VELOCITY, Velocitat, Velocidad, Velocity
+DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
+
+DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
+DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
+DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
+DATA_UPGRADES_NOTE_TORRENT, Torrent de Notes, Torrente de Notas, Notes Torrent
+DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
+DATA_UPGRADES_THIRD, Tercera, Tercera, Third
+DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth
+DATA_UPGRADES_OCTAVE, Octava, Octava, Octave
+
+DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
+DATA_ACHIEVEMENTS_FIRST_STEPS_DESC, Completa el teu primer assaig,Completa tu primer ensayo,Complete your first focus session
+DATA_ACHIEVEMENTS_VELOCITY_MAX, A corre cuita, A toda mecha, At full speed
+DATA_ACHIEVEMENTS_VELOCITY_MAX_DESC, Arriba a la velocitat màxima, Llega a la velocidad máxima, Get to the max velocity
+DATA_ACHIEVEMENTS_PRECISION_MAX, Precisió quirúrgica, Precisión quirúrgica, Quirurgic precision
+DATA_ACHIEVEMENTS_PRECISION_MAX_DESC, Arriba a la precisió màxima, Llega a la precisión máxima, Get to the max precision
+DATA_ACHIEVEMENTS_TECHNIQUE_MAX, "Primer l'amor, deprés la tècnica", "Primero el amor, después la técnica", "First love, then technique"
+DATA_ACHIEVEMENTS_TECHNIQUE_MAX_DESC, Arriba a la tècnica màxima, Llega a la técnica máxima, Get to the max technique
+DATA_ACHIEVEMENTS_KEYBOARD_MAX, 88,88,88
+DATA_ACHIEVEMENTS_KEYBOARD_MAX_DESC, Desbloqueja tot el teclat, Desbloquea todo el teclado, Unlock all the keyboard
+DATA_ACHIEVEMENTS_ALL_STATS_MAX, Estadista, Estadista, Stadistic
+DATA_ACHIEVEMENTS_ALL_STATS_MAX_DESC, Arriba al nivell màxim en totes les estadístiques, Llega al nivel màximo en todas las estadísticas, Get to the max level in all stats
+DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION, Primera sessió estricta, Primera sesión estricta, First strict session
+DATA_ACHIEVEMENTS_FIRST_STRICT_SESSION_DESC, Completa per primera vegada una sessió d'assaig estricta, Completa por primera vez una sesión de ensayo estricta, Complete for the first time a strict practise session
+DATA_ACHIEVEMENTS_SESSION_10MIN, A poc a poc, Poco a poco, Little by little
+DATA_ACHIEVEMENTS_SESSION_10MIN_DESC, Assaja per 10 minuts, Ensaya por 10 minutos, Practise for 10 minutes
+DATA_ACHIEVEMENTS_HOUR_IN_A_DAY, Una hora al dia, Una hora al día, Hour in a day
+DATA_ACHIEVEMENTS_HOUR_IN_A_DAY_DESC, Una hora d'assaig al dia manté la teua tècnica nova de trica, Una hora de ensayo al día mentiene tu tècnica nueva de trinca, A practise hour a day keeps your laziness away
+DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK, 10 hores setmanals, 10 horas semanales, 10 hours a week
+DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK_DESC, Arriba a fer 10 hores d'assaig en una setmana, Llega a ensayar por diez horas en una semana, Achieve 10 hours of practise in a week
+DATA_ACHIEVEMENTS_FOCUS_STREAK_3, Ratxa d'assajos: 3, Racha de 3, Focus streak: 3
+DATA_ACHIEVEMENTS_FOCUS_STREAK_3_DESC, Assaja per 3 dies seguits, Ensaya por 3 días seguidos, Practise for 3 days in a row
+DATA_ACHIEVEMENTS_FOCUS_STREAK_10, Ratxa d'assajos: 10, Racha de 10, Focus streak: 10
+DATA_ACHIEVEMENTS_FOCUS_STREAK_10_DESC, Assaja per 10 dies seguits, Ensaya por 10 días seguidos, Practise for 10 days in a row
+DATA_ACHIEVEMENTS_100_SESSIONS, Assaja 100 vegades, Ensaya 1090 veces, Practise 100 times
+DATA_ACHIEVEMENTS_100_SESSIONS_DESC, Consegueix assajar 100 vegades, Consigue ensayar 100 veces, Practice for 100 times
+DATA_ACHIEVEMENTS_10_CARDS, Col·leccionista petit, Pequeño coleccionista, Tiny coleccionist
+DATA_ACHIEVEMENTS_10_CARDS_DESC, Desbloqueja 10 cartes a l'àlbum de cartes, Desbloquea 10 cartas en el álbum de cartas, Unlock 10 cards in the card album
+DATA_ACHIEVEMENTS_ALL_CARDS, Col·leccionista de primera, Coleccionista de primera, First class collectionist
+DATA_ACHIEVEMENTS_ALL_CARDS_DESC, Desbloqueja totes les cartes, Desbloquea todas las cartas, Unlock all cards

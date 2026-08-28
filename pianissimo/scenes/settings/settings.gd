@@ -1,14 +1,20 @@
 extends Control
 
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
+
 @export var music_slider: HSlider
 @export var sfx_slider: HSlider
 @export var music_mute_button: CheckButton
 @export var sfx_mute_button: CheckButton
 @export var reset_button: Button
 @export var reset_confirm_dialog: ConfirmationDialog
+@export var game_tutorial_button: Button
+@export var practise_tutorial_button: Button
 
 
 func _ready() -> void:
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
 	music_slider.value = SettingsManager.music_volume
 	sfx_slider.value = SettingsManager.sfx_volume
 	music_mute_button.button_pressed = SettingsManager.music_muted
@@ -21,6 +27,8 @@ func _ready() -> void:
 	
 	reset_button.pressed.connect(func(): reset_confirm_dialog.popup_centered())
 	reset_confirm_dialog.confirmed.connect(_on_reset_confirmed)
+	game_tutorial_button.pressed.connect(_on_replay_game_tutorial_pressed)
+	practise_tutorial_button.pressed.connect(_on_replay_practise_tutorial_pressed)
 
 
 func _on_music_changed(value: float) -> void:
@@ -37,6 +45,17 @@ func _on_sfx_changed(value: float) -> void:
 func _on_reset_confirmed() -> void:
 	SaveManager.reset_data()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
+
+
+func _on_replay_game_tutorial_pressed() -> void:
+	var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+	add_child(overlay)
+	overlay.setup("game_intro")
+
+func _on_replay_practise_tutorial_pressed() -> void:
+	var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+	add_child(overlay)
+	overlay.setup("focus_intro")
 
 
 func _on_back_button_pressed() -> void:

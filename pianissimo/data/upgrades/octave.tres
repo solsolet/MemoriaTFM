@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://b6kbxyv82w6r"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_gf1e4"]
+
+[resource]
+script = ExtResource("1_gf1e4")
+id = "octave"
+display_name = "DATA_UPGRADES_OCTAVE"
+base_cost = 1000
+cost_multiplier = 1.18
+max_level = 15
+passive_rate = 8.0
+metadata/_custom_type_script = "uid://ugia523xnwc0"

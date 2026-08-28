@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://ktffw441rnnn"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_j3ufv"]
+
+[resource]
+script = ExtResource("1_j3ufv")
+id = "ten_hours_in_a_week"
+display_name = "DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK"
+description = "DATA_ACHIEVEMENTS_TEN_HOURS_IN_A_WEEK_DESC"
+android_id = "CgkInrHOzokbEAIQEg"
+ios_id = "ten_hours_in_a_week"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

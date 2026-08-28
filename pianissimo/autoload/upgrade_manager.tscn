@@ -1,10 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://clkqu0elnq6ov"]
+[gd_scene load_steps=11 format=3 uid="uid://clkqu0elnq6ov"]
 
 [ext_resource type="Script" uid="uid://duqe3xuqpmc85" path="res://autoload/upgrade_manager.gd" id="1_ot2vy"]
 [ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="2_0g3lt"]
 [ext_resource type="Resource" uid="uid://i1wonfcomvjo" path="res://data/upgrades/auto_tap.tres" id="3_nkogt"]
 [ext_resource type="Resource" uid="uid://du1i8sxnd3mwa" path="res://data/upgrades/multiplier.tres" id="4_o3imi"]
+[ext_resource type="Resource" uid="uid://cremaockyncik" path="res://data/upgrades/metronome.tres" id="5_liufm"]
+[ext_resource type="Resource" uid="uid://c0kbl3wono6qq" path="res://data/upgrades/note_torrent.tres" id="6_yf8il"]
+[ext_resource type="Resource" uid="uid://cxr1lvsapmkhr" path="res://data/upgrades/golden_notes.tres" id="7_gokox"]
+[ext_resource type="Resource" uid="uid://dgslgxwna3rju" path="res://data/upgrades/third.tres" id="8_6gngw"]
+[ext_resource type="Resource" uid="uid://defpkejbdv8nn" path="res://data/upgrades/fifth.tres" id="9_cowdu"]
+[ext_resource type="Resource" uid="uid://b6kbxyv82w6r" path="res://data/upgrades/octave.tres" id="10_87hrd"]
 
 [node name="UpgradeManager" type="Node"]
 script = ExtResource("1_ot2vy")
-definitions = Array[ExtResource("2_0g3lt")]([ExtResource("3_nkogt"), ExtResource("4_o3imi")])
+definitions = Array[ExtResource("2_0g3lt")]([ExtResource("3_nkogt"), ExtResource("4_o3imi"), ExtResource("5_liufm"), ExtResource("6_yf8il"), ExtResource("7_gokox"), ExtResource("8_6gngw"), ExtResource("9_cowdu"), ExtResource("10_87hrd")])

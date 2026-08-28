@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_pkmo0")
 id = "velocity"
-display_name = "Velocity"
+display_name = "DATA_STATS_VELOCITY"
+cost_multiplier = 1.35
 max_level = 10
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

@@ -3,9 +3,12 @@ class_name Note
 
 signal missed(note: Note)
 
+@export var visual: Control
+
 var lane: int = 0
 var speed: float = 220.0
 var miss_y: float = 0.0 # y-coordinate of the hit line, in this note's parent space
+var is_golden: bool = false
 
 
 func _process(delta: float) -> void:
@@ -18,7 +21,5 @@ func _process(delta: float) -> void:
 # INFO: Resize note root and its visual child
 func set_note_size(new_size: Vector2) -> void:
 	self.size = new_size
-	if has_node("ColorRect"):
-		var color_rect = $ColorRect as Control
-		color_rect.size = new_size
-		color_rect.custom_minimum_size = new_size
+	visual.size = new_size
+	visual.custom_minimum_size = new_size

@@ -97,6 +97,8 @@ Per a assegurar-se que no falla la traducció de la clau per la cadena en l'idio
 
 Hi ha moltes opcions d'internacionalització, però per a un projecte senzill no cal massa més coses. Es pot ampliar la informació consultant la documentació oficial de Godot en aquesta matèria: https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html
 
+Per a les cadenes de text posades directament al codi s'ha usat `tr(cadena)` i Godot les substitueix correctament.
+
 ### Persistència
 
 El joc necessita persistència per a dades que han de quedar entre partides. Aquestes necessiten ser recursos que es puguen llegir i escriure en la memòria del dispositiu. S'ha de guardar:
@@ -144,6 +146,8 @@ TODO : explicar el tema com s'ha fet i pensat, l'arxiu i com posar-lo global, va
 
 Upgrades de HBoxContainer a Card
 
+Tipografia icona: https://github.com/fkretlow/sebastian
+
 ## So
 
 ### Disseny sonor
@@ -159,17 +163,17 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 | Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
 : Efectes de so de Pianissimo
 
-| Nom             | Descripció                        | Àudio |
-| --------------- | --------------------------------- | ----- |
-| Menú            | Música que sona de fons en *home* |       |
-| Barroc1         | Fuga en Do m de J. S. Bach        |       |
-| Barroc2         |                                   |       |
-| Classicisme1    |                                   |       |
-| Classicisme2    |                                   |       |
-| Romanticisme1   |                                   |       |
-| Romaticisme2    |                                   |       |
-| Impressionisme1 |                                   |       |
-| Impressionisme2 |                                   |       |
+| Nom             | Descripció                        | Àudio                           |
+| --------------- | --------------------------------- | ------------------------------- |
+| Menú            | Música que sona de fons en *home* | https://freesound.org/s/621130/ |
+| Barroc1         | Fuga en Do m de J. S. Bach        |                                 |
+| Barroc2         |                                   |                                 |
+| Classicisme1    |                                   |                                 |
+| Classicisme2    |                                   |                                 |
+| Romanticisme1   |                                   |                                 |
+| Romaticisme2    |                                   |                                 |
+| Impressionisme1 |                                   |                                 |
+| Impressionisme2 |                                   |                                 |
 : Música de Pianissimo
 
 El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.
@@ -237,3 +241,16 @@ Quan es completa un assaig hi ha una recompensa en forma de carta que es poden v
 | harpichord       | Harpsichord               | Instrument | A piano ancestor that plucks its strings rather than striking them, giving it a brighter tone.       |
 | wtc_fact         | The Well-Tempered Clavier | Dada       | A landmark collection covering every major and minor key, still used to teach piano technique today. |
 : Recursos tipus carta implementats a Pianissimo
+
+### Icones UI
+
+Les icones que contenen alguns elements `Button` o `Label` contenen icones per a representar el seu significat. Totes les icones estaran en format SVG, ja que Godot pot importar i rasteritzar aquest format. Els dissenys en SVG garanteixen que sempre es veuran nítids sense importar la resolució i l'aplicació serà més lleugera.
+
+| Nom        | Ús                                      |
+| ---------- | --------------------------------------- |
+| back_arrow | Botó en `game` de tornar arrere         |
+| settings   | Botó en `game` d'anar a la configuració |
+| corchea    | Label comptador de notes                |
+: Icones que s'han usat per a alguns elements de la UI de Pianissimo
+
+Les icones són d'elaboració pròpia i s'han elaborat amb Affinity.

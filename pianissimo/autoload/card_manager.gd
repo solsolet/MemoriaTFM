@@ -36,4 +36,10 @@ func unlock_random_card() -> String:
 	SaveManager.data.unlocked_cards.append(chosen)
 	SaveManager.save_data()
 	card_unlocked.emit(chosen)
+	
+	if SaveManager.data.unlocked_cards.size() >= 10:
+		AchievementManager.unlock("ten_cards")
+	if SaveManager.data.unlocked_cards.size() >= _definitions.size():
+		AchievementManager.unlock("all_cards")
+
 	return chosen
