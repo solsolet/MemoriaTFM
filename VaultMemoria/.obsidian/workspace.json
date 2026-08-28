@@ -113,7 +113,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -299,8 +299,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "82a2da8815f0a19d",
+  "active": "3dc5d0950143acef",
   "lastOpenFiles": [
+    "Memoria/Annexos/Ten-Pager.md",
+    "Memoria/Marc teoric.md",
     "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.png",
     "Memoria/Desenvolupament.md",
     "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg",
@@ -311,8 +313,6 @@
     "Memoria/Metodologia.md",
     "Memoria/Annexos/GDD.md",
     "Organitzacio/Kanban.md",
-    "Memoria/Annexos/Ten-Pager.md",
-    "Memoria/Marc teoric.md",
     "Memoria/Assets/Pianissimo/It2/Pianissimo_Home2_It2.jpg",
     "Memoria/Assets/Pianissimo/It1/Pianissimo-iOS-It1.jpg",
     "Memoria/Assets/Pianissimo/It1/Pianissimo-Android-It1.png",
