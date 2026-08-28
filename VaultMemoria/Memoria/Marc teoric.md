@@ -255,7 +255,7 @@ En un monitor gran podem veure totes les seccions juntes. El detall en posar el 
 
 Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:cookie-mobil} i \ref{fig:cookie-mobil-esquema}.
 
-![Interfície d'usuari en mòbil. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.png){height=8cm}
+![Interfície d'usuari en mòbil. Font: Cookie Clicker \label{fig:cookie-mobil}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile.jpg){height=8cm}
 
 
 ![Interfície d'usuari en mòbil \label{fig:cookie-mobil-esquema}](Memoria/Assets/AltresJocs/Cookie/CookieClicker-UI-Mobile-Esquema.png){height=8cm}
