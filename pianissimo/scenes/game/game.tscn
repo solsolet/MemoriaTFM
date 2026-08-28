@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://c3mwxe5vw21ye" path="res://scenes/game/game.gd" id="1_sul5r"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_7h61r"]
 [ext_resource type="PackedScene" uid="uid://crevbtvnya6aq" path="res://scenes/game/upgrade_panel/upgrade_panel.tscn" id="3_0sr1o"]
-[ext_resource type="Texture2D" uid="uid://dyaa05jfx51f5" path="res://assets/sprites/arrow.svg" id="3_5i0tg"]
+[ext_resource type="Texture2D" uid="uid://dyaa05jfx51f5" path="res://assets/sprites/icons/arrow.svg" id="3_5i0tg"]
 [ext_resource type="PackedScene" uid="uid://bm3bx3x6h1drl" path="res://scenes/game/piano/piano.tscn" id="3_kelw5"]
-[ext_resource type="Texture2D" uid="uid://dbwjku0c45l1" path="res://assets/sprites/corchea.svg" id="4_87uf6"]
-[ext_resource type="Texture2D" uid="uid://80e1s0uxy0is" path="res://assets/sprites/settings.svg" id="4_bdhmt"]
+[ext_resource type="Texture2D" uid="uid://dbwjku0c45l1" path="res://assets/sprites/icons/corchea.svg" id="4_87uf6"]
+[ext_resource type="Texture2D" uid="uid://80e1s0uxy0is" path="res://assets/sprites/icons/settings.svg" id="4_bdhmt"]
 [ext_resource type="PackedScene" uid="uid://d4b7tc787ywhh" path="res://scenes/game/stats_panel/stats_panel.tscn" id="5_lfrn8"]
 
 [node name="Game" type="Control" node_paths=PackedStringArray("notes_label", "settings_button", "piano")]

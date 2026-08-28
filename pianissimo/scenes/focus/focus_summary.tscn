@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://caeq8g8okaqmm" path="res://scenes/focus/focus_summary.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_7502c"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_7502c"]
 
 [node name="FocusSummary" type="Control"]
 layout_mode = 3

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cjcoqsqh48w3s" path="res://scenes/home/home.gd" id="1_5q1ba"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_ng36q"]
-[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="3_uqaih"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="3_uqaih"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uqaih"]
 bg_color = Color(1, 0.41960785, 0.41960785, 1)

@@ -2,6 +2,7 @@ VaultMemoria/Diari
 .DS_Store
 
 Output/
+Assets-Optimized/
 
 *.aux
 *.log

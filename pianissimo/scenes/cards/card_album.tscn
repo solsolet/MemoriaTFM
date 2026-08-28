@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://biopfd5r2dygd" path="res://scenes/cards/card_album.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_fief8"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_fief8"]
 
 [node name="CardAlbum" type="Control" node_paths=PackedStringArray("grid")]
 layout_mode = 3

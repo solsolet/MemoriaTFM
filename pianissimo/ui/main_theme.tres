@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=77 format=4 uid="uid://dt2kc553fw26"]
 
-[ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/cercle.svg" id="1_g1fjd"]
+[ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/icons/cercle.svg" id="1_g1fjd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv78t"]
 content_margin_left = 20.0

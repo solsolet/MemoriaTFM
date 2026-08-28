@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bl2jptd8vxlei" path="res://scenes/settings/settings.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2_vu5fi"]
-[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="3_tt6xx"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="3_tt6xx"]
 
 [node name="Settings" type="Control" node_paths=PackedStringArray("music_slider", "sfx_slider", "music_mute_button", "sfx_mute_button", "reset_button", "reset_confirm_dialog", "game_tutorial_button", "practise_tutorial_button")]
 layout_mode = 3

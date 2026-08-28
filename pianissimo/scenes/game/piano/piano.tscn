@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b54bfjn6jqskw" path="res://scenes/game/piano/piano.gd" id="1"]
 [ext_resource type="Script" uid="uid://bpumwpmdmus4x" path="res://scenes/game/piano/note_field.gd" id="2_37rg0"]
 [ext_resource type="Script" uid="uid://bxkb0js8sg646" path="res://scenes/game/piano/piano_keyboard.gd" id="2_bpdpq"]
-[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/Fondo.png" id="2_gq0ba"]
+[ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_gq0ba"]
 
 [node name="Piano" type="Control"]
 custom_minimum_size = Vector2(450, 450)

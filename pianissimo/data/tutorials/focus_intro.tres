@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="TutorialDefinition" load_steps=6 format=3 uid="uid://hhtp4e1x7oyp"]
 
 [ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="1_e73nm"]
-[ext_resource type="Texture2D" uid="uid://bcpqtt2io0d5q" path="res://assets/sprites/trash.svg" id="1_qedkq"]
-[ext_resource type="Texture2D" uid="uid://4elv0drl3w11" path="res://assets/sprites/home.svg" id="2_qlxlc"]
-[ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/cercle.svg" id="3_eqd17"]
-[ext_resource type="Texture2D" uid="uid://dbwjku0c45l1" path="res://assets/sprites/corchea.svg" id="4_tv0i2"]
+[ext_resource type="Texture2D" uid="uid://bcpqtt2io0d5q" path="res://assets/sprites/icons/trash.svg" id="1_qedkq"]
+[ext_resource type="Texture2D" uid="uid://4elv0drl3w11" path="res://assets/sprites/icons/home.svg" id="2_qlxlc"]
+[ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/icons/cercle.svg" id="3_eqd17"]
+[ext_resource type="Texture2D" uid="uid://dbwjku0c45l1" path="res://assets/sprites/icons/corchea.svg" id="4_tv0i2"]
 
 [resource]
 script = ExtResource("1_e73nm")

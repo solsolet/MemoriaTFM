@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cth8pkkk77gc4"
-path="res://.godot/imported/Fondo.png-1f059c5ac309413b7d85e805bbcfea61.ctex"
+uid="uid://bcpqtt2io0d5q"
+path="res://.godot/imported/trash.svg-b1ab01ecf667c24e5b8f1561da2a089a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Fondo.png"
-dest_files=["res://.godot/imported/Fondo.png-1f059c5ac309413b7d85e805bbcfea61.ctex"]
+source_file="res://assets/sprites/icons/trash.svg"
+dest_files=["res://.godot/imported/trash.svg-b1ab01ecf667c24e5b8f1561da2a089a.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

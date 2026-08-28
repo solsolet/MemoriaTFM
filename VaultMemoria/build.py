@@ -6,6 +6,8 @@ import re
 ROOT = Path(__file__).parent
 CONFIG = ROOT / "Config"
 OUTPUT = ROOT / "Output"
+SOURCE = ROOT / "Memoria" / "Assets"
+DEST = ROOT / "Memoria" / "Assets-Optimized"
 
 MANIFEST = CONFIG / "manifest.txt"
 METADATA = CONFIG / "metadata.yaml"
@@ -112,6 +114,39 @@ def generar_docx():
         check=True,
     )
 
+def optimitzar_imatges():
+    subprocess.run(
+        [
+            "python3",
+            str(CONFIG / "optimize_images.py"),
+            str(BUILD_MD),
+        ],
+        cwd=ROOT,
+        check=True,
+    )
+
+def preparar_build_amb_imatges_optimitzades():
+    text = BUILD_MD.read_text(encoding="utf8")
+
+    patró = r'(!\[[^\]]*\]\()Memoria/Assets/([^) ]+)'
+
+    def substituir(match):
+        prefix = match.group(1)
+        relativa = match.group(2)
+
+        origen = SOURCE / relativa
+        optimitzada = DEST / relativa
+
+        if origen.suffix.lower() in {".png", ".jpeg", ".jpg"}:
+            optimitzada = optimitzada.with_suffix(".jpg")
+
+        nova_ruta = optimitzada.relative_to(ROOT)
+
+        return prefix + str(nova_ruta).replace("\\", "/")
+
+    text = re.sub(patró, substituir, text)
+
+    BUILD_MD.write_text(text, encoding="utf8")
 
 def main():
     OUTPUT.mkdir(exist_ok=True)
@@ -120,6 +155,12 @@ def main():
 
     validar(fitxers)
     construir_md(fitxers)
+
+    print("0. Optimitzant les imatges utilitzades...")
+    optimitzar_imatges()
+    print("0. Preparant les rutes de les imatges optimitzades...")
+    preparar_build_amb_imatges_optimitzades()
+
     generar_pdf()
     print("4. Generant DOCX...")
 
