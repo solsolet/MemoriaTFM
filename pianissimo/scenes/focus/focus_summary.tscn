@@ -18,6 +18,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_7502c")
+stretch_mode = 6
 
 [node name="SafeArea" type="MarginContainer" parent="."]
 layout_mode = 1

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bykng2kjgnvwh" path="res://scenes/game/stats_panel/stat_card.gd" id="1_hykih"]
 
 [node name="StatCard" type="Button" node_paths=PackedStringArray("icon_rect", "title_label", "level_label", "cost_label")]
-custom_minimum_size = Vector2(200, 200)
+custom_minimum_size = Vector2(220, 200)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -42,23 +42,28 @@ color = Color(0.43137255, 0.90588236, 0.8509804, 1)
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"CardLabel"
 theme_override_font_sizes/font_size = 32
 text = "Upgrade"
 horizontal_alignment = 1
 
 [node name="StatsRow" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 
 [node name="LevelLabel" type="Label" parent="VBoxContainer/StatsRow"]
 layout_mode = 2
+size_flags_horizontal = 2
+theme_type_variation = &"CardLabel"
 theme_override_font_sizes/font_size = 32
 text = "Lv 0"
-horizontal_alignment = 1
 
 [node name="CostLabel" type="Label" parent="VBoxContainer/StatsRow"]
 layout_mode = 2
+size_flags_horizontal = 10
+theme_type_variation = &"CardLabel"
 theme_override_font_sizes/font_size = 32
 text = "Cost"
-horizontal_alignment = 1
+horizontal_alignment = 2
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

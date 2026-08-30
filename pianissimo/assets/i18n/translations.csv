@@ -89,7 +89,7 @@ DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
 DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
-DATA_UPGRADES_NOTE_TORRENT, Torrent de Notes, Torrente de Notas, Notes Torrent
+DATA_UPGRADES_NOTE_TORRENT, Torrent Musical, Torrente de Notas, Notes Torrent
 DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
 DATA_UPGRADES_THIRD, Tercera, Tercera, Third
 DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth

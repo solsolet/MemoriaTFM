@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://brm8nljmnjq4q"]
+[gd_scene load_steps=4 format=3 uid="uid://brm8nljmnjq4q"]
 
 [ext_resource type="Script" uid="uid://co8bqywukhyon" path="res://scenes/tutorial/tutorial_overlay.gd" id="1_okbap"]
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_xcprb"]
+[ext_resource type="Texture2D" uid="uid://b3vk73yicdje6" path="res://assets/sprites/icons/arrow_right.svg" id="3_j443h"]
 
 [node name="TutorialOverlay" type="CanvasLayer"]
 layer = 100
@@ -29,12 +30,17 @@ texture = ExtResource("2_xcprb")
 stretch_mode = 5
 
 [node name="BottomBar" type="HBoxContainer" parent="Dim"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 901.0
-offset_right = 1065.0
-offset_bottom = 1019.0
-theme_override_constants/separation = 4
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -59.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
 
 [node name="SkipButton" type="Button" parent="Dim/BottomBar"]
 layout_mode = 2
@@ -42,8 +48,13 @@ size_flags_horizontal = 0
 text = "TUTORIAL_SKIP"
 alignment = 0
 
+[node name="Control" type="Control" parent="Dim/BottomBar"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="NextButton" type="Button" parent="Dim/BottomBar"]
 layout_mode = 2
 size_flags_horizontal = 8
-text = "TUTORIAL_NEXT"
+icon = ExtResource("3_j443h")
 alignment = 2

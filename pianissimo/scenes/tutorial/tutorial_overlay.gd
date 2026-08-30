@@ -24,7 +24,9 @@ func setup(tutorial_id: String) -> void:
 
 func _show_step() -> void:
 	comic_image.texture = _panels[_step]
-	next_button.text = tr("TUTORIAL_GOT_IT") if _step == _panels.size() - 1 else tr("TUTORIAL_NEXT")
+	if _step == _panels.size() - 1:
+		next_button.text = tr("TUTORIAL_GOT_IT")
+		next_button.icon = null
 
 func _on_next_pressed() -> void:
 	_step += 1

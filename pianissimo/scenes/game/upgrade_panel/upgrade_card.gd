@@ -20,7 +20,7 @@ func refresh() -> void:
 		return
 	title_label.text = def.display_name
 	level_label.text = "Lv %d" % UpgradeManager.get_level(upgrade_id)
-	cost_label.text = "%d notes" % UpgradeManager.get_cost(upgrade_id)
+	cost_label.text = "%d N" % UpgradeManager.get_cost(upgrade_id)
 	disabled = not UpgradeManager.can_purchase(upgrade_id)
 
 
