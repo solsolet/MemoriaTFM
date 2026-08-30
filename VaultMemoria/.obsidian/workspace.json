@@ -127,7 +127,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -313,9 +313,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "94d175d2df51557a",
+  "active": "3dc5d0950143acef",
   "lastOpenFiles": [
     "Organitzacio/Kanban.md",
+    "Memoria/Annexos/GDD.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Annexos.md",
     "Memoria/Metodologia.md",
@@ -342,7 +343,6 @@
     "Memoria/Assets-Optimized/AltresJocs/MagicArchery",
     "Memoria/Assets-Optimized/AltresJocs/PushTheSquare",
     "Memoria/Annexos/Ten-Pager.md",
-    "Memoria/Annexos/GDD.md",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",

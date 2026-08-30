@@ -496,7 +496,7 @@ Crear més contingut de millores i stats + test
 
 Per tenir un seguiment de com va el testing amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
 
-S'ha fet amb Google Forms Es poden veure els resultats al correscponent apartat en l'Annex
+S'ha fet amb Google Forms Es poden veure els resultats al corresponent apartat en l'Annex.
 
 #### Exportador memòria
 S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
@@ -518,6 +518,17 @@ Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos si
 Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
 
 TODO : posar foto icona mal comparació icona bé
+
+
+#### UI
+
+En aqeusta iteració també s'ha canviat la tipografia. Es buscava una tipus *serif* per què, a pesar que el joc vol tenir una estètica més aïna divertida, en música la immensa majoria de vegades s'usa aquest tipus de tipografia més seriosa i formal.
+
+Conceptualment, el piano és un instrument que se'l pot considerar elegant, solemne, regi... abans el joc tenia la tipografia per defecte *sense serifa*, que estava bé, però tampoc acabava d'encaixar. Amb `Noto Serif` crec que compleix bé el seu paper.
+
+S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. El problema: en un mòbil no es llegia molt còmodament. O almenys al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar problemes de visibilitat. Si ja tenia eixe dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
+
+S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que de moment s'ha pensat posar els crèdits corresponents al GDD. Dins de l'aplicació no cal posar el crèdit.
 
 ### Iteració 7
 

@@ -28,19 +28,20 @@ kanban-plugin: board
 - [ ] Tutorial focus #ui
 - [ ] Lore #nice-to-have
 - [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
-- [ ] Canviar tipografia
+- [ ] Publicar assoliments Play Store
+- [ ] Publicar Assoliments Apple Store
 
 
 ## In Progress (5)
 
 - [ ] Redactar It4 #memo #l
-- [ ] Arreglar traduccions harcoded #i #dev
-- [ ] Posar tipografia + xula #ui
 
 
 ## Done
 
 **Complete**
+- [x] Arreglar traduccions harcoded #i #dev
+- [x] Posar tipografia + xula #ui
 - [x] Notificació diària #dev
 - [x] Notificacions plugin #dev #l
 - [x] Pensar logo #grafics

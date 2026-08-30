@@ -1,5 +1,6 @@
 extends Control
 
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
 const HOME_BLACK_KEY_LANES := [1, 3, 6, 8, 10]  # C#, D#, F#, G#, A#
 const HOME_WHITE_KEY_LANES := [0, 2, 4, 5, 7, 9, 11]  # C, D, E, F, G, A, B
 
@@ -12,6 +13,11 @@ const HOME_WHITE_KEY_LANES := [0, 2, 4, 5, 7, 9, 11]  # C, D, E, F, G, A, B
 func _ready() -> void:
 	# INFO: Sound
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	
+	if not TutorialManager.has_been_seen("home_lore_1"):
+		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+		add_child(overlay)
+		overlay.setup("home_lore_1")
 	
 	for i in white_keys_column.get_child_count():
 		white_keys_column.get_child(i).pressed.connect(
