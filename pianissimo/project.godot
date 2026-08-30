@@ -41,7 +41,7 @@ window/handheld/orientation=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/GodotPlayGameServices/plugin.cfg", "res://addons/NotificationSchedulerPlugin/plugin.cfg")
+enabled=PackedStringArray("res://addons/GodotPlayGameServices/plugin.cfg", "res://addons/NotificationSchedulerPlugin/plugin.cfg")
 
 [file_customization]
 

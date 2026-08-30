@@ -28,12 +28,17 @@ func _on_initialized() -> void:
 
 func schedule_daily_reminder() -> void:
 	scheduler.cancel(NOTIFICATION_ID)  # avoid stacking duplicates if called twice
+	if not SettingsManager.reminders_enabled:
+		return
+	var delay_seconds := int(SettingsManager.reminder_hours * 3600.0)
 	var data = NotificationData.new() \
 		.set_id(NOTIFICATION_ID) \
 		.set_channel_id(CHANNEL_ID) \
 		.set_title(tr("REMINDER_TITLE")) \
 		.set_content(tr("REMINDER_BODY")) \
-		.set_delay(REMINDER_DELAY_SECONDS)
+		#.set_small_icon_name("ic_stat_notification") \
+		#.set_delay(REMINDER_DELAY_SECONDS)
+		.set_delay(delay_seconds)
 	scheduler.schedule(data)
 
 

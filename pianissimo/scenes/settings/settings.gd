@@ -6,6 +6,8 @@ const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.t
 @export var sfx_slider: HSlider
 @export var music_mute_button: CheckButton
 @export var sfx_mute_button: CheckButton
+@export var reminder_hours_field: SpinBox
+@export var reminders_enabled_toggle: CheckButton
 @export var reset_button: Button
 @export var reset_confirm_dialog: ConfirmationDialog
 @export var game_tutorial_button: Button
@@ -24,6 +26,17 @@ func _ready() -> void:
 	sfx_slider.value_changed.connect(_on_sfx_changed)
 	music_mute_button.toggled.connect(func(p): SettingsManager.music_muted = p; SettingsManager.save_settings())
 	sfx_mute_button.toggled.connect(func(p): SettingsManager.sfx_muted = p; SettingsManager.save_settings())
+	
+	reminder_hours_field.value = SettingsManager.reminder_hours
+	reminders_enabled_toggle.button_pressed = SettingsManager.reminders_enabled
+	reminder_hours_field.value_changed.connect(func(v):
+		SettingsManager.reminder_hours = v
+		SettingsManager.save_settings())
+	reminders_enabled_toggle.toggled.connect(func(p):
+		SettingsManager.reminders_enabled = p
+		SettingsManager.save_settings()
+		if not p:
+			NotificationManager.cancel_daily_reminder())
 	
 	reset_button.pressed.connect(func(): reset_confirm_dialog.popup_centered())
 	reset_confirm_dialog.confirmed.connect(_on_reset_confirmed)

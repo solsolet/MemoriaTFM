@@ -21,7 +21,6 @@ kanban-plugin: board
 ## To Do (10)
 
 - [ ] Diagrama Flux #memo
-- [ ] Notificació diària #dev
 - [ ] Focus  marcar visualment sifailed o completed en journal #ui
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
@@ -30,20 +29,21 @@ kanban-plugin: board
 - [ ] Tutorial focus #ui
 - [ ] Lore #nice-to-have
 - [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
-- [ ] Notificacions plugin
 - [ ] Canviar tipografia
 
 
 ## In Progress (5)
 
+- [ ] Notificació diària #dev
 - [ ] Redactar It4 #memo #l
-- [ ] Pensar logo #grafics
 - [ ] Arreglar traduccions harcoded #i #dev
 
 
 ## Done
 
 **Complete**
+- [x] Notificacions plugin #dev #l
+- [x] Pensar logo #grafics
 - [x] It5 #memo #l
 - [x] Comprimir imatges Memoria #memo #i
 - [x] Arreglar alt del fons, en el meu mòbil es talla #bug #nice-to-have #i

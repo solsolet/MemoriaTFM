@@ -76,6 +76,14 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
 
+#### v0.6.0
+
+- Icona de l'aplicació corregit perquè es veja bé en Android.
+- Incorporació del connector de Notificacions.
+- Notificacions funcionals en iOS i Android.
+- S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
+
+
 ## Iteracions
 
 ### Interacció 0

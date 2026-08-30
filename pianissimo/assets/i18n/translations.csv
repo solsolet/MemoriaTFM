@@ -29,6 +29,8 @@ SETTINGS_DATA, Dades, Datos, Data
 SETTINGS_RESET, Resetejar progrés, Resetear progreso, Reset progress
 SETTINGS_GAME_TUTORIAL, Tutorial joc, Tutorial juego, Game tutorial
 SETTINGS_PRACTISE_TUTORIAL, Tutorial assaig, Tutorial ensayo, Practise tutorial
+SETTINGS_NOTIFICATIONS, Notificacions, Notificaciones, Notifications
+SETTINGS_TURN_NOTIFICATIONS, Activar notificacions, Activar notificaciones, Turn on notifications
 
 REMINDER_TITLE, Les tecles t'esperen!, Las teclas te esperan, The keys are waiting!
 REMINDER_BODY, Torna i fes que la música continue, Vuelve y haz que la música continue, Come back and keep the music going.
