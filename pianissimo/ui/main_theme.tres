@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=77 format=4 uid="uid://dt2kc553fw26"]
+[gd_resource type="Theme" load_steps=78 format=4 uid="uid://dt2kc553fw26"]
 
 [ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/icons/cercle.svg" id="1_g1fjd"]
 
@@ -3653,6 +3653,11 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 expand_margin_bottom = 10.0
 
+[sub_resource type="FontVariation" id="FontVariation_g1fjd"]
+variation_opentype = {
+2003265652: 600
+}
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nyeea"]
 content_margin_left = 20.0
 content_margin_top = 10.0
@@ -3962,6 +3967,7 @@ JournalRowPanel/base_type = &"PanelContainer"
 JournalRowPanel/styles/panel = SubResource("StyleBoxFlat_d7bsk")
 Label/colors/font_color = Color(0.50638646, 0.48452926, 0.4492039, 1)
 Label/constants/line_spacing = 5
+Label/fonts/font = SubResource("FontVariation_g1fjd")
 LineEdit/colors/font_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
 LineEdit/font_sizes/font_size = 44
 LineEdit/styles/normal = SubResource("StyleBoxFlat_nyeea")

@@ -19,7 +19,7 @@ Fet per Gemma Sellés Lloret aka solsolet
 | :----- | :--------- | :------------------------------ |
 | v0.1.0 | 2026-06-23 | Creació inicial del document    |
 | v0.2.0 | 2026-08-15 | Mig afegides funcionalitats It2 |
-|        |            |                                 |
+| v0.3.0 | 2026-08-30 | Afegir secció crèdits           |
 
 ***
 
@@ -182,9 +182,6 @@ El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les o
 
 Credits audio de prova:
 
-- C4: https://freesound.org/s/794435/
-- C#4: https://freesound.org/s/794434/
-- D4: https://freesound.org/s/794458/
 - Pack: https://freesound.org/p/43099/
 - click1: https://freesound.org/s/751232/
 - click2: https://freesound.org/s/250552/
@@ -254,3 +251,7 @@ Les icones que contenen alguns elements `Button` o `Label` contenen icones per a
 : Icones que s'han usat per a alguns elements de la UI de Pianissimo
 
 Les icones són d'elaboració pròpia i s'han elaborat amb Affinity.
+
+## Crèdits
+
+Per a pianissimo s'ha usat la tipografia `Noto Serif` de Google Fonts: https://github.com/notofonts/notofonts.github.io/tree/main/fonts/NotoSerif/googlefonts

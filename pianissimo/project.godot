@@ -60,6 +60,7 @@ folder_colors={
 [gui]
 
 theme/custom="uid://dt2kc553fw26"
+theme/custom_font="uid://ne0g3n1xb1qv"
 
 [internationalization]
 

@@ -69,6 +69,7 @@ TUTORIAL_GOT_IT, Entesos, Entendido, Got it
 TUTORIAL_NEXT, Següent, Siguiente, Next
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album
+CARD_TILE_LOCKED, Completa una sessió d'assaig per a descobrir aquesta carta, Completa una sesión de ensayo para descubrir esta carta, Complete a practise session to discover this card.
 
 DATA_CARDS_BACH_DESC,Organista i compositor barroc famós per la seua extensa obra que es considerada una de les màximes expressions de la música universal,Organista y compositor barroco famoso por su extensa obra considerada una de las máximas expresiones de la música universal,Baroque composer and organist famed for intricate counterpoint like The Well-Tempered Clavier.
 DATA_CARDS_MOZART_DESC,Prodigi de l'època clàssica que componia simfonies des de l'infantesa, Prodigio de la época clásica que componía sinfonías desde su infancia, Classical-era prodigy who composed symphonies and operas from childhood.
