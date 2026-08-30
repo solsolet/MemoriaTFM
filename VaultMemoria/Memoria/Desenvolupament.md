@@ -78,7 +78,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 #### v0.6.0
 
-- Icona de l'aplicació corregit perquè es veja bé en Android.
+- Icona de l'aplicació corregida perquè es veja bé en Android.
 - Incorporació del connector de Notificacions.
 - Notificacions funcionals en iOS i Android.
 - S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
@@ -502,6 +502,22 @@ S'ha fet amb Google Forms Es poden veure els resultats al correscponent apartat 
 S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
 
 Aquesta solució beneficiara que en cas d'afegir imatges no es perga temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
+
+#### Projecte Godot
+
+TODO : comentar configuració plugin
+
+TODO : comentar modificacions setttings.
+
+S'ha arreglat l'aspecte de la icona de l'aplicació en Android. Segons el disseny de la icona si no està en la mida correcta en alguns paràmetres pot causar que es veja "ampliat".
+
+En un altre projecte que vaig fer eixe problema també passava, però com el disseny estava molt centrat i xicotet no quedava malament, per tant, mai havia pensat que era un problema.
+
+Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos sistemes operatius tracten les icones de manera distinta, en el cas d'Android, el que donava problemes, ho podia solucionar fent versions del logo en la mida adequada i posant-les en la configuració d'exportació d'Android.
+
+Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
+
+TODO : posar foto icona mal comparació icona bé
 
 ### Iteració 7
 

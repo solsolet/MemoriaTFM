@@ -36,7 +36,7 @@ func schedule_daily_reminder() -> void:
 		.set_channel_id(CHANNEL_ID) \
 		.set_title(tr("REMINDER_TITLE")) \
 		.set_content(tr("REMINDER_BODY")) \
-		#.set_small_icon_name("ic_stat_notification") \
+		.set_small_icon_name("ic_stat_notification") \
 		#.set_delay(REMINDER_DELAY_SECONDS)
 		.set_delay(delay_seconds)
 	scheduler.schedule(data)

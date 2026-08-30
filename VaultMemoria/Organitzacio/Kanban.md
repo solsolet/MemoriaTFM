@@ -24,7 +24,6 @@ kanban-plugin: board
 - [ ] Focus  marcar visualment sifailed o completed en journal #ui
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
-- [ ] Posar tipografia + xula #ui
 - [ ] Tutorial joc bé #nice-to-have
 - [ ] Tutorial focus #ui
 - [ ] Lore #nice-to-have
@@ -34,14 +33,15 @@ kanban-plugin: board
 
 ## In Progress (5)
 
-- [ ] Notificació diària #dev
 - [ ] Redactar It4 #memo #l
 - [ ] Arreglar traduccions harcoded #i #dev
+- [ ] Posar tipografia + xula #ui
 
 
 ## Done
 
 **Complete**
+- [x] Notificació diària #dev
 - [x] Notificacions plugin #dev #l
 - [x] Pensar logo #grafics
 - [x] It5 #memo #l

@@ -14,6 +14,7 @@ config/name="Pianissimo"
 config/tags=PackedStringArray("android", "google_play_games_services", "ios")
 run/main_scene="uid://d3xjva4n8hejr"
 config/features=PackedStringArray("4.5", "Mobile")
+boot_splash/bg_color=Color(0.5019608, 0.93333334, 0.99215686, 1)
 config/icon="uid://c8ep8j06lj8p5"
 
 [autoload]

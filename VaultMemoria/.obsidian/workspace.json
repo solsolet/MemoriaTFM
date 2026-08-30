@@ -126,8 +126,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -313,10 +312,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3dc5d0950143acef",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
