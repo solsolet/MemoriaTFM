@@ -479,11 +479,16 @@ Les **icones** que apareixen en alguns botons del joc en un principi es tenia pr
 
 ### Iteració 6
 
-Aquesta iteració comprén del 28 al 31 d'agost de 2026.
+Aquesta iteració comprén del 28 al 31 d'agost de 2026. S'ha aconseguit implementar les notificacions amb el connector `NotificationSchedulerPlugin`, descarregat directament de GitHub i posat a mà en la corresponent carpeta perquè cap dels altres mètodes d'instal·lació ha semblat funcionar.
 
-Centrar-se en Notis if possible + crear més contingut de millores i stats + test
+Crear més contingut de millores i stats + test
 
-TODO : fer formulari respostes
+
+#### Formulari proves usuaris
+
+Per tenir un seguiment de com va el testing amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
+
+S'ha fet amb Google Forms Es poden veure els resultats al correscponent apartat en l'Annex
 
 #### Exportador memòria
 S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
