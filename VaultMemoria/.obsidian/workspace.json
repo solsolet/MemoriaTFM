@@ -113,7 +113,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -299,8 +299,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "82a2da8815f0a19d",
+  "active": "f7bb3cbe3ef61239",
   "lastOpenFiles": [
+    "Organitzacio/Kanban.md",
+    "Memoria/Desenvolupament.md",
+    "Memoria/Marc teoric.md",
     "Output/_build_processed.md",
     "Memoria/Assets-Optimized/Pianissimo/It5/Pianissimo-AudioKeys.jpg",
     "Memoria/Assets-Optimized/Pianissimo/It5",
@@ -322,13 +325,10 @@
     "Memoria/Assets-Optimized/AltresJocs/RhythmParadise",
     "Memoria/Assets-Optimized/AltresJocs/MagicArchery",
     "Memoria/Assets-Optimized/AltresJocs/PushTheSquare",
-    "Memoria/Desenvolupament.md",
-    "Memoria/Marc teoric.md",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Annexos.md",
     "Memoria/Metodologia.md",
     "Memoria/Annexos/GDD.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",

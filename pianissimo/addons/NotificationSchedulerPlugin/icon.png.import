@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n08jn0utbycx"
-path="res://.godot/imported/Logo.png-07c0bdee1230fb1d2460bb69250c0350.ctex"
+uid="uid://d31eefbtysb1h"
+path="res://.godot/imported/icon.png-838f73c17a0e540d021697cea4772ebd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/store/Logo.png"
-dest_files=["res://.godot/imported/Logo.png-07c0bdee1230fb1d2460bb69250c0350.ctex"]
+source_file="res://addons/NotificationSchedulerPlugin/icon.png"
+dest_files=["res://.godot/imported/icon.png-838f73c17a0e540d021697cea4772ebd.ctex"]
 
 [params]
 

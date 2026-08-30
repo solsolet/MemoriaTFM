@@ -68,6 +68,9 @@ Addicionalment, ha servit per al desenvolupament d'aquest treball els següents 
 
 - *Godot Play Game Services*: [https://github.com/godot-sdk-integrations/godot-play-game-services.git](https://github.com/godot-sdk-integrations/godot-play-game-services.git)
 - *Godot iOS GameCenter plugin*: [https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)
+- *Notification Scheduler Plugin*: https://github.com/godot-mobile-plugins/godot-notification-scheduler/releases/tag/v5.1
+
+En els connectors s'ha usat la versió corresponent a la versió de Godot, ja que si no no funcionaven correctament.
 
 ### VSCode
 

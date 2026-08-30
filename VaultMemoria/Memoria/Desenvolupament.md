@@ -479,9 +479,16 @@ Les **icones** que apareixen en alguns botons del joc en un principi es tenia pr
 
 ### Iteració 6
 
-Aquesta iteració comprén dle 28 al 31 (pot ser més dies si fem proves amb usuaris)
+Aquesta iteració comprén del 28 al 31 d'agost de 2026.
 
 Centrar-se en Notis if possible + crear més contingut de millores i stats + test
+
+TODO : fer formulari respostes
+
+#### Exportador memòria
+S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
+
+Aquesta solució beneficiara que en cas d'afegir imatges no es perga temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
 
 ### Iteració 7
 

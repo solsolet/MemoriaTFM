@@ -11,31 +11,32 @@ kanban-plugin: board
 - [ ] Repassar documentació Kaiwa
 - [ ] It 2 Disgrama Gantt
 - [ ] Pop-up desbloqueig d'assoliments #ui #nice-to-have
-- [ ] Tutorial joc #nice-to-have
-- [ ] Lore #nice-to-have
 - [ ] Settings notificació #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
 - [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
-- [ ] Posar tipografia + xula #ui
 - [ ] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
-- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
 
 
 ## To Do (10)
 
 - [ ] Diagrama Flux #memo
-- [ ] Redactar It4 #memo #l
 - [ ] Notificació diària #dev
-- [ ] Comprimir imatges Memoria #memo #i
 - [ ] Focus  marcar visualment sifailed o completed en journal #ui
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
-- [ ] It6 #memo #l
+- [ ] Posar tipografia + xula #ui
+- [ ] Tutorial joc bé #nice-to-have
+- [ ] Tutorial focus #ui
+- [ ] Lore #nice-to-have
+- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
+- [ ] Notificacions plugin
+- [ ] Canviar tipografia
 
 
 ## In Progress (5)
 
+- [ ] Redactar It4 #memo #l
 - [ ] Pensar logo #grafics
 - [ ] Arreglar traduccions harcoded #i #dev
 
@@ -43,6 +44,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] It5 #memo #l
+- [x] Comprimir imatges Memoria #memo #i
 - [x] Arreglar alt del fons, en el meu mòbil es talla #bug #nice-to-have #i
 - [x] Icona paperera en journal list #nice-to-have
 - [x] arreglar margin overwerite en focus #bug #dev #l

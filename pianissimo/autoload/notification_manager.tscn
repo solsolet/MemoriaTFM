@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cflahhrebgniu"]
+
+[ext_resource type="Script" uid="uid://2kwnq4ecrg63" path="res://autoload/notification_manager.gd" id="1_nkhak"]
+[ext_resource type="Script" uid="uid://cmbw5jfd83cnr" path="res://addons/NotificationSchedulerPlugin/NotificationScheduler.gd" id="2_kvia4"]
+
+[node name="NotificationManager" type="Node"]
+script = ExtResource("1_nkhak")
+
+[node name="NotificationScheduler" type="Node" parent="."]
+script = ExtResource("2_kvia4")
+metadata/_custom_type_script = "uid://cmbw5jfd83cnr"

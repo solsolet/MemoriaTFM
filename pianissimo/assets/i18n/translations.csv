@@ -30,6 +30,9 @@ SETTINGS_RESET, Resetejar progrés, Resetear progreso, Reset progress
 SETTINGS_GAME_TUTORIAL, Tutorial joc, Tutorial juego, Game tutorial
 SETTINGS_PRACTISE_TUTORIAL, Tutorial assaig, Tutorial ensayo, Practise tutorial
 
+REMINDER_TITLE, Les tecles t'esperen!, Las teclas te esperan, The keys are waiting!
+REMINDER_BODY, Torna i fes que la música continue, Vuelve y haz que la música continue, Come back and keep the music going.
+
 DIALOG_CANCEL, Cancel·lar, Cancelar, Cancel
 DIALOG_OK, D'acord, Aceptar, Accept
 DIALOG_RESET_TITLE, Vols esborrar el teu progrés ?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
