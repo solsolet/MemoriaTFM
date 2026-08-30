@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxh0yddj80kxr"
-path="res://.godot/imported/icon_android_background.svg-ea01aef469c7f7388dc12f8c4958a104.ctex"
+uid="uid://g3lqgne4c038"
+path="res://.godot/imported/android_icon_foreground.png-f33acb3b60306f0e5ac645bb25f52304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/store/icon_android_background.svg"
-dest_files=["res://.godot/imported/icon_android_background.svg-ea01aef469c7f7388dc12f8c4958a104.ctex"]
+source_file="res://assets/sprites/store/android_icon_foreground.png"
+dest_files=["res://.godot/imported/android_icon_foreground.png-f33acb3b60306f0e5ac645bb25f52304.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
