@@ -20,12 +20,25 @@
                     false,
                     false,
                     false,
+                    false,
                     false
                   ]
                 }
               },
               "icon": "lucide-trello",
               "title": "Kanban"
+            }
+          },
+          {
+            "id": "ff10d61c21c27a92",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "Pianissimo_Permis_It6"
             }
           },
           {
@@ -127,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -313,26 +326,28 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3dc5d0950143acef",
+  "active": "f7bb3cbe3ef61239",
   "lastOpenFiles": [
+    "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg",
+    "Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Error.jpg",
+    "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg",
+    "Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.png",
+    "Memoria/Assets/Pianissimo/It5/Pianissimo_Game_It5.jpg",
+    "Memoria/Assets/Pianissimo/It5/Pianissimo_Summary_It5.jpg",
+    "Memoria/Assets/Pianissimo/It5/Pianissimo_Tuto_Game_It5.jpg",
+    "Memoria/Assets/Pianissimo/It5/Pianisimo_Home_It5.jpg",
+    "Memoria/Assets/Pianissimo/Pianissimo_PlayStore1.jpg",
+    "Memoria/Assets/Pianissimo/IMG-20260828-WA0004.jpg",
+    "Memoria/Assets/Pianissimo/It6",
     "Organitzacio/Kanban.md",
-    "Memoria/Annexos/GDD.md",
     "Memoria/Desenvolupament.md",
+    "Memoria/Annexos/GDD.md",
     "Memoria/Annexos.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
     "Output/_build_processed.md",
     "Memoria/Assets-Optimized/Pianissimo/It5/Pianissimo-AudioKeys.jpg",
     "Memoria/Assets-Optimized/Pianissimo/It5",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Screenshots2_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Autoloads_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo-folders-It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Game1_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Screenshots1_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Settings_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Game2_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Home1_It2.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/It2/Pianissimo_Home2_It2.jpg",
     "Memoria/Assets-Optimized/Pianissimo/It2",
     "Memoria/Assets-Optimized/Pianissimo/It3",
     "Memoria/Assets-Optimized/Pianissimo/It4",
@@ -341,7 +356,6 @@
     "Memoria/Assets-Optimized/AltresJocs/Cookie",
     "Memoria/Assets-Optimized/AltresJocs/RhythmParadise",
     "Memoria/Assets-Optimized/AltresJocs/MagicArchery",
-    "Memoria/Assets-Optimized/AltresJocs/PushTheSquare",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",

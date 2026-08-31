@@ -57,6 +57,11 @@ PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.
 PRACTISE_RESULT, Resultat, Resultado, Result
+PRACTISE_SUMMARY_COMPLETE, Assaig completat!, Ensayo completado, Session complete!
+PRACTISE_SUMMARY_COMPLETE_REWARD, Has guanyat %d notes., Has ganado %d notas., You earned %d notes.
+PRACTISE_SUMMARY_COMPLETE_CARD, \nNova carta: %s!, \n¡Nueva carta: %s!, \nNew card: %s!
+PRACTISE_SUMMARY_FAILED, Assaig fallit, Ensayo fallido, Session failed
+PRACTISE_SUMMARY_FAILED_DETAIL, Has abandonat l'assaig abans d'acabar-lo, Has abandonado el ensayo antes de haberlo terminado, You left the app before finishing.
 PRACTISE_JOURNAL, Diari d'assajos, Diario de ensayos, Practise journal
 PRACTISE_JOURNAL_EMPTY, Encara no hi ha assajos registrats., Aún no hay registro de ningún ensayo., No practise sessions yet.
 PRACTISE_JOURNAL_COMPLETED, Completada, Completada, Completed
@@ -89,7 +94,7 @@ DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
 DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
-DATA_UPGRADES_NOTE_TORRENT, Torrent Musical, Torrente de Notas, Notes Torrent
+DATA_UPGRADES_NOTE_TORRENT, Torrent Musical, Torrente Musical, Notes Torrent
 DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
 DATA_UPGRADES_THIRD, Tercera, Tercera, Third
 DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth
