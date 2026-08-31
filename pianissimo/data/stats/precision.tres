@@ -6,5 +6,6 @@
 script = ExtResource("1_bha2y")
 id = "precision"
 display_name = "DATA_STATS_PRECISION"
+description = "DATA_STATS_PRECISION_DESC"
 max_level = 10
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

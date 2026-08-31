@@ -6,6 +6,7 @@
 script = ExtResource("1_osp27")
 id = "keyboard"
 display_name = "DATA_STATS_KEYBOARD"
+description = "DATA_STATS_KEYBOARD_DESC"
 base_cost = 100
 cost_multiplier = 1.5
 max_level = 9
