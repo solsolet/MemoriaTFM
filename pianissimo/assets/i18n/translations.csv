@@ -37,7 +37,7 @@ REMINDER_BODY, Torna i fes que la música continue, Vuelve y haz que la música 
 
 DIALOG_CANCEL, Cancel·lar, Cancelar, Cancel
 DIALOG_OK, D'acord, Aceptar, Accept
-DIALOG_RESET_TITLE, Vols esborrar el teu progrés ?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
+DIALOG_RESET_TITLE, Vols esborrar el teu progrés?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
 DIALOG_RESET_TEXT, Aquesta acció no es podrà desfer, Esta acción no se podrá deshacer, This action could not be reversed
 
 PRACTISE_SESSION, Assaig, Ensayo, Practise
@@ -70,7 +70,7 @@ PRACTISE_JOURNAL_TODAY_WEEK_TOTALS, Hui: %dm   Aquesta setmana: %dm, Hoy: %dm   
 
 TUTORIAL_HELP, Ajuda, Ayuda, Help
 TUTORIAL_SKIP, Saltar, Saltar, Skip
-TUTORIAL_GOT_IT, Entesos, Entendido, Got it
+TUTORIAL_GOT_IT, OK!, ¡OK!, OK!
 TUTORIAL_NEXT, Següent, Siguiente, Next
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album

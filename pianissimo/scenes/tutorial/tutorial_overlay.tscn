@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://brm8nljmnjq4q"]
+[gd_scene load_steps=5 format=3 uid="uid://brm8nljmnjq4q"]
 
 [ext_resource type="Script" uid="uid://co8bqywukhyon" path="res://scenes/tutorial/tutorial_overlay.gd" id="1_okbap"]
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_xcprb"]
+[ext_resource type="Texture2D" uid="uid://dyaa05jfx51f5" path="res://assets/sprites/icons/arrow_left.svg" id="3_0p8ng"]
 [ext_resource type="Texture2D" uid="uid://b3vk73yicdje6" path="res://assets/sprites/icons/arrow_right.svg" id="3_j443h"]
 
-[node name="TutorialOverlay" type="CanvasLayer"]
+[node name="TutorialOverlay" type="CanvasLayer" node_paths=PackedStringArray("comic_image", "back_button", "next_button", "skip_button")]
 layer = 100
 script = ExtResource("1_okbap")
+comic_image = NodePath("Dim/PanelCenter/ComicImage")
+back_button = NodePath("Dim/BottomBar/BackButton")
+next_button = NodePath("Dim/BottomBar/NextButton")
+skip_button = NodePath("Dim/SkipBar/SkipButton")
 
 [node name="Dim" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -42,11 +47,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="SkipButton" type="Button" parent="Dim/BottomBar"]
+[node name="BackButton" type="Button" parent="Dim/BottomBar"]
 layout_mode = 2
-size_flags_horizontal = 0
-text = "TUTORIAL_SKIP"
-alignment = 0
+icon = ExtResource("3_0p8ng")
 
 [node name="Control" type="Control" parent="Dim/BottomBar"]
 custom_minimum_size = Vector2(10, 0)
@@ -58,3 +61,19 @@ layout_mode = 2
 size_flags_horizontal = 8
 icon = ExtResource("3_j443h")
 alignment = 2
+
+[node name="SkipBar" type="CenterContainer" parent="Dim"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -118.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SkipButton" type="Button" parent="Dim/SkipBar"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "TUTORIAL_SKIP"
+alignment = 0
