@@ -23,6 +23,7 @@ func _ready() -> void:
 		add_child(overlay)
 		overlay.setup("focus_intro")
 	
+	duration_spinbox.value_changed.connect(func(): AudioManager.play_ui_click())
 	start_button.pressed.connect(_on_start_pressed)
 	journal_button.pressed.connect(_on_journal_pressed)
 	back_button.pressed.connect(_on_back_pressed)
@@ -43,6 +44,7 @@ func _on_tag_field_edited(_new_text: String) -> void:
 
 
 func _on_start_pressed() -> void:
+	AudioManager.play_ui_click()
 	var title = title_field.text.strip_edges() # erase special char (\n...)
 	if title == "":
 		title = tr("PRACTISE_SESSION")
@@ -54,8 +56,10 @@ func _on_start_pressed() -> void:
 
 
 func _on_journal_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_JOURNAL)
 
 
 func _on_back_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)

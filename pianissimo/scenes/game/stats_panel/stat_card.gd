@@ -32,6 +32,7 @@ func _on_pressed() -> void:
 	StatManager.purchase(stat_id)
 
 func _on_info_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	var def := StatManager.get_definition(stat_id)
 	var popup := DETAIL_POPUP_SCENE.instantiate() as DetailPopup
 	get_tree().root.add_child(popup)

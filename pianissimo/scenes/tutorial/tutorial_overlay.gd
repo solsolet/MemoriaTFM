@@ -41,11 +41,13 @@ func _show_step() -> void:
 
 # INFO: Pressed buttons
 func _on_back_pressed() -> void:
+	AudioManager.play_ui_click()
 	if _step > 0:
 		_step -= 1
 		_show_step()
 
 func _on_next_pressed() -> void:
+	AudioManager.play_ui_click()
 	_step += 1
 	if _step >= _panels.size():
 		_finish()
@@ -53,6 +55,7 @@ func _on_next_pressed() -> void:
 		_show_step()
 
 func _on_skip_pressed() -> void:
+	AudioManager.play_ui_click()
 	_finish()
 
 

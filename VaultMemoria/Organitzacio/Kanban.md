@@ -30,7 +30,6 @@ kanban-plugin: board
 - [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
 - [ ] Publicar assoliments Play Store
 - [ ] Publicar Assoliments Apple Store
-- [ ] SFX per a "i" botó #nice-to-have #i
 
 
 ## Feedback Testing
@@ -42,7 +41,6 @@ kanban-plugin: board
 
 ## In Progress (5)
 
-- [ ] Info detallada stats #nice-to-have #ui #dev
 - [ ] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
@@ -51,6 +49,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] SFX per a "i" botó i afegir click a tots les botons que faltaven #nice-to-have #i
+- [x] Info detallada stats #nice-to-have #ui #dev
 - [x] Botó tornar arrere tutorial #nice-to-have #i
 - [x] Scroll Container no agafa bé scroll si no és en la barra #bug #l
 - [x] Tutorial arreglo botons per a podar un back button #ui #nice-to-have

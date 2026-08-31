@@ -66,6 +66,7 @@ func _build_row(entry: Dictionary, history_index: int) -> Control:
 	delete_button.text = ""
 	delete_button.theme_type_variation = &"CancelButton"
 	delete_button.pressed.connect(func():
+		AudioManager.play_ui_click()
 		SaveManager.data.focus_history.remove_at(history_index)
 		SaveManager.save_data()
 		_populate()
@@ -104,4 +105,5 @@ func _update_totals() -> void:
 
 
 func _on_back_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_SETUP)

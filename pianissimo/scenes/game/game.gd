@@ -135,11 +135,13 @@ func _exit_tree() -> void:
 
 
 func _on_btn_back_pressed() -> void:
+	AudioManager.play_ui_click()
 	cleanup()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
 
 
 func _on_settings_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	SettingsManager.return_scene_path = ScenePaths.GAME
 	cleanup()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.SETTINGS)

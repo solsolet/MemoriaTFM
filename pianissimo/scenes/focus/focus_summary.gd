@@ -22,4 +22,5 @@ func _ready() -> void:
 
 
 func _on_continue_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
