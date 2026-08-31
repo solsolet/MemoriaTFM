@@ -87,13 +87,13 @@ DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered 
 DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
 
 DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
-DATA_STATS_KEYBOARD_DESC, "Tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats", Teclado, Keyboard
+DATA_STATS_KEYBOARD_DESC, "Tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats", "Tamaño máximo del teclado. Se empieza con un número de teclas delimitado, por tanto los puntos que le puedes sacar serán también limitados", "Max keyboard size. It starts with a delimited key number, so your score will be limited too."
 DATA_STATS_PRECISION, Precisió, Precisión, Precision
-DATA_STATS_PRECISION_DESC, Quina certesa tens a l'hora de tocar bé les notes., Precisión, Precision
+DATA_STATS_PRECISION_DESC, Quina certesa tens a l'hora de tocar bé les notes., Qué certeza tienes a la hora de tocar bien las notas., How confident are you about playing the notes correctly.
 DATA_STATS_VELOCITY, Velocitat, Velocidad, Velocity
-DATA_STATS_VELOCITY_DESC, Com de ràpid pots arribar a tocar les notes., Velocidad, Velocity
+DATA_STATS_VELOCITY_DESC, Com de ràpid pots arribar a tocar les notes., Lo rápido que puedes llegar a tocar las notas., How fast you can play the notes.
 DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
-DATA_STATS_TECHNIQUE_DESC, "Com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat. En el cas pràctic del joc es traduirà en major bonificació en encetar notes perfectes", Técnica, Technique
+DATA_STATS_TECHNIQUE_DESC, "Com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat. En el cas pràctic del joc es traduirà en major bonificació en encetar notes perfectes", "Como bien puedes interpretar una obra. No sólo se trata de pulsar notas sino de atinar también la articulación y la sonoridad. En el caso práctico del juego se traducirá en mayor bonificación al empezar notas perfectas", "It is about how well you interpret a piece. It is not just a matter of hitting the notes, but also nailing the articulation and tone. In practical gameplay terms, this translates into a higher bonus for hitting perfect notes."
 
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
