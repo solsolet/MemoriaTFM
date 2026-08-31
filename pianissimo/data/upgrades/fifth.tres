@@ -6,8 +6,8 @@
 script = ExtResource("1_cqn0a")
 id = "fifth"
 display_name = "DATA_UPGRADES_FIFTH"
-base_cost = 400
-cost_multiplier = 1.16
+base_cost = 500
+cost_multiplier = 1.5
 max_level = 15
 passive_rate = 5.0
 metadata/_custom_type_script = "uid://ugia523xnwc0"

@@ -7,5 +7,7 @@ script = ExtResource("1_bha2y")
 id = "precision"
 display_name = "DATA_STATS_PRECISION"
 description = "DATA_STATS_PRECISION_DESC"
+base_cost = 200
+cost_multiplier = 1.6
 max_level = 10
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

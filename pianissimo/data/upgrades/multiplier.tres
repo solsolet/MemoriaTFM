@@ -6,5 +6,6 @@
 script = ExtResource("1_db0vn")
 id = "multiplier"
 display_name = "DATA_UPGRADES_MULTIPLIER"
-base_cost = 15
+base_cost = 100
+cost_multiplier = 1.2
 metadata/_custom_type_script = "uid://ugia523xnwc0"

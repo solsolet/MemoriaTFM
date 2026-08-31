@@ -7,5 +7,7 @@ script = ExtResource("1_ccwb2")
 id = "technique"
 display_name = "DATA_STATS_TECHNIQUE"
 description = "DATA_STATS_TECHNIQUE_DESC"
+base_cost = 300
+cost_multiplier = 1.7
 max_level = 10
 metadata/_custom_type_script = "uid://dp5pd6qoytn7i"

@@ -71,10 +71,12 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 	- Notes personalitzades.
 	- Cartes ara de color lila.
 	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
-	- Game, nova good-perfect area visual per a saber on polsar quan la nota s'apropa al teclat.
+	- Game, nova *good-perfect* àrea visual per a saber on polsar quan la nota s'apropa al teclat.
 - Nous assoliments: `velocity_maxed`, `precision_maxed`, `technique_maxed`, `keyboard_maxed`, `all_stats_maxed`, `first_strict_session`, `session_10min`, `hour_in_a_day`, `ten_hours_in_a_week`, `focus_streak_3`, `focus_streak_10`, `hundred_sessions`, `ten_cards`, `all_cards`.
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
+- *Toast* de benvinguda quan s'entra a `game`, informa de les notes guanyades.
+- Sistema per a mostrar tutorials.
 
 #### v0.6.0
 
@@ -82,6 +84,12 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Incorporació del connector de Notificacions.
 - Notificacions funcionals en iOS i Android.
 - S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
+- Afegir so de "clic" per a tots els botons.
+- Afegir *pop-up* de numerets quan s'encerta una nota per a donar retroalimentació visual.
+- Detall de les Estadístiques per a saber com funcionen.
+- Muntar els preus i el cost per a fer la progressió més lenta.
+- Arreglar *scroll* en Millores.
+- Correccions dels botons de tutorial.
 
 
 ## Iteracions
@@ -434,7 +442,9 @@ La mentalitat aquests dies ha sigut d'anar solucionant pantalla a pantalla fins 
 
 El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb el detall suficient per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt en implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
 
-Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "i si pose açò?" o els "pot ser es veuria millor d'aquesta manera". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+
+![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg){height=6cm}
 
 #### Projecte Godot
 
@@ -476,7 +486,7 @@ Els àudios que es tenia pel moment eren trets de Freesound per diferents autors
 
 Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que pot ser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
 
-![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg)
+![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg){height=6cm}
 
 A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
 
@@ -517,9 +527,11 @@ Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos si
 
 Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
 
-TODO : posar foto icona mal comparació icona bé
+![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=4cm}
 
 *Scroll Container* arreglat per a la tenda de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
+
+S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depèn si la nota és *perfect* o *good*. S'ha fet usant `tween`
 
 #### UI
 

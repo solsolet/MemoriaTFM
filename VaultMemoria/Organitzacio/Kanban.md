@@ -11,7 +11,6 @@ kanban-plugin: board
 - [ ] Repassar documentació Kaiwa
 - [ ] It 2 Disgrama Gantt
 - [ ] Pop-up desbloqueig d'assoliments #ui #nice-to-have
-- [ ] Settings notificació #nice-to-have
 - [ ] Arreglar taula assoliments GDD #docu
 - [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
@@ -22,18 +21,20 @@ kanban-plugin: board
 ## To Do (10)
 
 - [ ] Diagrama Flux #memo
-- [ ] Focus  marcar visualment sifailed o completed en journal #ui
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
 - [ ] Tutorial joc bé #nice-to-have
 - [ ] Tutorial focus #ui
-- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
+- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker. En notes i costos #ui #nice-to-have #dev
 - [ ] Publicar assoliments Play Store
 - [ ] Publicar Assoliments Apple Store
+- [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
+- [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
 
 
 ## Feedback Testing
 
+- [ ] Focus  marcar visualment sifailed o completed en journal. P.ex. fer el panel d'un color u altre  #ui #i #nice-to-have
 - [ ] Destacar notes que cauen per a tecles negres diferent de les blanques #ui #nice-to-have #i
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
 - [ ] Notes golden més shiny #ui #nice-to-have
@@ -41,7 +42,6 @@ kanban-plugin: board
 
 ## In Progress (5)
 
-- [ ] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 
@@ -49,7 +49,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
-- [x] SFX per a "i" botó i afegir click a tots les botons que faltaven #nice-to-have #i
+- [x] Settings notificació #nice-to-have
 - [x] Info detallada stats #nice-to-have #ui #dev
 - [x] Botó tornar arrere tutorial #nice-to-have #i
 - [x] Scroll Container no agafa bé scroll si no és en la barra #bug #l
@@ -105,6 +105,8 @@ kanban-plugin: board
 ## Feedback Done
 
 **Complete**
+- [x] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
+- [x] SFX per a "i" botó i afegir click a tots les botons que faltaven #nice-to-have #i
 
 
 ***
