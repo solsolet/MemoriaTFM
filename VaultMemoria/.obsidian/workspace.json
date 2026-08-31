@@ -31,18 +31,6 @@
             }
           },
           {
-            "id": "ff10d61c21c27a92",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg"
-              },
-              "icon": "lucide-image",
-              "title": "Pianissimo_Permis_It6"
-            }
-          },
-          {
             "id": "94d175d2df51557a",
             "type": "leaf",
             "state": {
@@ -140,8 +128,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -327,8 +314,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "48f7094ed9e83815",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
+    "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Desenvolupament.md",
     "Organitzacio/Kanban.md",
     "Memoria/Metodologia.md",
@@ -356,7 +344,6 @@
     "Memoria/Assets-Optimized/AltresJocs/Cookie",
     "Memoria/Assets-Optimized/AltresJocs/RhythmParadise",
     "Memoria/Assets-Optimized/AltresJocs/MagicArchery",
-    "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",
