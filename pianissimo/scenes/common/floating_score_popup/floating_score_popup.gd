@@ -7,7 +7,8 @@ class_name FloatingScorePopup
 func play(text: String, color: Color, start_position: Vector2) -> void:
 	global_position = start_position
 	label.text = text
-	label.modulate = color
+	label.add_theme_color_override("font_color", color)
+	modulate = Color(1, 1, 1, 1)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 	var tween := create_tween()

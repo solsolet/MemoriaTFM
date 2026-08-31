@@ -3,8 +3,8 @@ extends Control
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
 const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
-const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/game/welcome_back_toast.tscn")
-const FLOATING_SCORE_SCENE = preload("res://scenes/game/floating_score_popup/floating_score_popup.tscn")
+const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/common/welcome_back_toast/welcome_back_toast.tscn")
+const FLOATING_SCORE_SCENE = preload("res://scenes/common/floating_score_popup/floating_score_popup.tscn")
 
 const MIN_OFFLINE_SECONDS_FOR_TOAST := 30
 

@@ -16,3 +16,4 @@ func show_reward(amount: int) -> void:
 	tween.tween_interval(2.5)
 	tween.tween_property(panel, "modulate:a", 0.0, 0.4)
 	tween.tween_callback(queue_free)
+	

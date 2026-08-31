@@ -26,18 +26,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="Dim/PanelCenter"]
-custom_minimum_size = Vector2(700, 700)
+[node name="Panel" type="PanelContainer" parent="Dim/PanelCenter"]
+custom_minimum_size = Vector2(400, 300)
 layout_mode = 2
 theme_type_variation = &"CardDetailPanel"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Dim/PanelCenter/Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_constants/separation = 30
 
 [node name="TitleLabel" type="Label" parent="Dim/PanelCenter/Panel/VBoxContainer"]
@@ -47,7 +42,7 @@ theme_type_variation = &"TitleLabel"
 horizontal_alignment = 1
 
 [node name="DescLabel" type="Label" parent="Dim/PanelCenter/Panel/VBoxContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(650, 100)
 layout_mode = 2
 size_flags_vertical = 3
 theme_type_variation = &"CardDetailLabel"

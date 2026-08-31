@@ -30,6 +30,7 @@ kanban-plugin: board
 - [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker #ui #nice-to-have #dev
 - [ ] Publicar assoliments Play Store
 - [ ] Publicar Assoliments Apple Store
+- [ ] SFX per a "i" botó #nice-to-have #i
 
 
 ## Feedback Testing
