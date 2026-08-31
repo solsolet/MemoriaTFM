@@ -140,7 +140,8 @@
               "title": "Metodologia"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -199,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 304.6328125
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -326,9 +327,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "48f7094ed9e83815",
   "lastOpenFiles": [
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Metodologia.md",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Error.jpg",
@@ -341,7 +343,6 @@
     "Memoria/Assets/Pianissimo/Pianissimo_PlayStore1.jpg",
     "Memoria/Assets/Pianissimo/IMG-20260828-WA0004.jpg",
     "Memoria/Assets/Pianissimo/It6",
-    "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Annexos.md",
     "Memoria/Marc teoric.md",

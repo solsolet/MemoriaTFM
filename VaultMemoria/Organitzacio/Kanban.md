@@ -35,19 +35,20 @@ kanban-plugin: board
 
 ## Feedback Testing
 
-- [ ] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
 
 
 ## In Progress (5)
 
+- [ ] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
-- [ ] Tutorial arreglo botons per a podar un back button #ui #nice-to-have
 
 
 ## Done
 
 **Complete**
+- [x] Scroll Container no agafa bé scroll si no és en la barra #bug #l
+- [x] Tutorial arreglo botons per a podar un back button #ui #nice-to-have
 - [x] Arreglar traduccions harcoded #i #dev
 - [x] Posar tipografia + xula #ui
 - [x] Notificació diària #dev

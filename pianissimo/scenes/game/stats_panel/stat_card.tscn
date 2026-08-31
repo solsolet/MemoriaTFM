@@ -67,4 +67,18 @@ theme_override_font_sizes/font_size = 32
 text = "Cost"
 horizontal_alignment = 2
 
+[node name="InfoButton" type="Button" parent="."]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 30.0
+grow_horizontal = 0
+theme_type_variation = &"InfoButton"
+text = "i"
+icon_alignment = 1
+
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="InfoButton" to="." method="_on_info_button_pressed"]

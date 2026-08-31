@@ -519,6 +519,7 @@ Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una 
 
 TODO : posar foto icona mal comparació icona bé
 
+*Scroll Container* arreglat per a la tenda de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
 
 #### UI
 

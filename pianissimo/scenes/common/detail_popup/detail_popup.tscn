@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcwe3g6n4vmbr"]
+
+[ext_resource type="Script" uid="uid://cnwnvviwfgadw" path="res://scenes/common/detail_popup/detail_popup.gd" id="1_02d3l"]
+
+[node name="DetailPopup" type="CanvasLayer" node_paths=PackedStringArray("dim", "title_label", "desc_label", "close_button")]
+script = ExtResource("1_02d3l")
+dim = NodePath("Dim")
+title_label = NodePath("Dim/PanelCenter/Panel/VBoxContainer/TitleLabel")
+desc_label = NodePath("Dim/PanelCenter/Panel/VBoxContainer/DescLabel")
+close_button = NodePath("Dim/PanelCenter/Panel/VBoxContainer/CloseButton")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.60784316)
+
+[node name="PanelCenter" type="CenterContainer" parent="Dim"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Dim/PanelCenter"]
+custom_minimum_size = Vector2(700, 700)
+layout_mode = 2
+theme_type_variation = &"CardDetailPanel"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dim/PanelCenter/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="TitleLabel" type="Label" parent="Dim/PanelCenter/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_type_variation = &"TitleLabel"
+horizontal_alignment = 1
+
+[node name="DescLabel" type="Label" parent="Dim/PanelCenter/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"CardDetailLabel"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="CloseButton" type="Button" parent="Dim/PanelCenter/Panel/VBoxContainer"]
+layout_mode = 2
+text = "BACK_BUTTON"
