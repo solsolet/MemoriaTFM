@@ -23,7 +23,7 @@ func refresh() -> void:
 	title_label.text = def.display_name
 	level_label.text = "Lv %d" % StatManager.get_level(stat_id)
 	var maxed := def.max_level >= 0 and StatManager.get_level(stat_id) >= def.max_level
-	cost_label.text = "MAX" if maxed else "%d N" % StatManager.get_cost(stat_id)
+	cost_label.text = "MAX" if maxed else "%s N" % NumberFormat.format(StatManager.get_cost(stat_id))
 	disabled = not StatManager.can_purchase(stat_id)
 
 

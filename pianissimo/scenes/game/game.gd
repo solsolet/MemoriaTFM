@@ -87,7 +87,7 @@ func _apply_offline_income() -> void:
 
 
 func _on_notes_changed(value: int) -> void:
-	notes_label.text = "Notes: %d " % value
+		notes_label.text = "Notes: %s" % NumberFormat.format(value, 2)
 
 
 func _on_note_scored(_lane: int, accuracy: String) -> void:
