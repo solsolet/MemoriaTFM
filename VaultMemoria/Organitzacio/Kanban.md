@@ -25,7 +25,6 @@ kanban-plugin: board
 - [ ] Icona auriculars toggle música focus session #nice-to-have
 - [ ] Tutorial joc bé #nice-to-have
 - [ ] Tutorial focus #ui
-- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker. En notes i costos #ui #nice-to-have #dev
 - [ ] Publicar assoliments Play Store
 - [ ] Publicar Assoliments Apple Store
 - [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
@@ -36,7 +35,6 @@ kanban-plugin: board
 
 - [ ] Focus  marcar visualment sifailed o completed en journal. P.ex. fer el panel d'un color u altre  #ui #i #nice-to-have
 - [ ] Destacar notes que cauen per a tecles negres diferent de les blanques #ui #nice-to-have #i
-- [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
 - [ ] Notes golden més shiny #ui #nice-to-have
 
 
@@ -44,6 +42,8 @@ kanban-plugin: board
 
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
+- [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
+- [ ] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker. En notes i costos #ui #nice-to-have #dev
 
 
 ## Done

@@ -156,8 +156,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -324,7 +323,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -343,14 +342,14 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "82fdb615d7f7b6b7",
   "lastOpenFiles": [
+    "Memoria/Annexos/GDD.md",
+    "Memoria/Desenvolupament.md",
     "Memoria/Annexos.md",
     "Memoria/Resum.md",
     "Memoria/Introduccio.md",
     "Memoria/Objectius.md",
-    "Memoria/Annexos/GDD.md",
-    "Memoria/Desenvolupament.md",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg",
     "Memoria/Assets/Pianissimo/It5/Documento.jpg",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_Settings_It6.jpg",
