@@ -3,7 +3,7 @@ class_name StatsPanel
 
 const STAT_CARD_SCENE = preload("res://scenes/game/stats_panel/stat_card.tscn")
 
-@onready var cards_container: HBoxContainer = $VBoxContainer/ScrollContainer/CardsRow
+@export var cards_container: HBoxContainer
 
 var _cards: Dictionary = {}
 

@@ -35,7 +35,7 @@ mouse_filter = 2
 theme_override_constants/separation = 5
 
 [node name="IconRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(200, 150)
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 2
