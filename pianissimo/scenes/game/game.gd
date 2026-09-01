@@ -3,7 +3,9 @@ extends Control
 const NOTE_SCENE = preload("res://scenes/note/note.tscn")
 const NOTE_HEIGHT = 36.0
 const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
-const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/game/welcome_back_toast.tscn")
+const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/common/welcome_back_toast/welcome_back_toast.tscn")
+const FLOATING_SCORE_SCENE = preload("res://scenes/common/floating_score_popup/floating_score_popup.tscn")
+
 const MIN_OFFLINE_SECONDS_FOR_TOAST := 30
 
 @export var notes_label: Label
@@ -90,13 +92,25 @@ func _on_notes_changed(value: int) -> void:
 
 func _on_note_scored(_lane: int, accuracy: String) -> void:
 	if accuracy == "golden":
-		Economy.add(1000)	# WARNING: Saber que ací puc augmentar le premir per golden note
+		Economy.add(1000)	# WARNING: Saber que ací puc augmentar el premi per golden note
+		_spawn_floating_score(_lane, "+1000", Color("#FFD34D"))
 		return
+	
 	var base_amount := 1
 	if accuracy == "perfect":
 		base_amount = 2 + StatManager.get_level("technique")
 	var reward = base_amount * (1 + UpgradeManager.get_level("multiplier"))
 	Economy.add(reward)
+	
+	var color := Color("#FF8C38") if accuracy == "perfect" else Color("#6EE7D9")
+	_spawn_floating_score(_lane, "+%d" % reward, color)
+
+
+func _spawn_floating_score(lane: int, text: String, color: Color) -> void:
+	var key_rect := piano.keyboard.get_key_rect(lane)
+	var popup := FLOATING_SCORE_SCENE.instantiate() as FloatingScorePopup
+	add_child(popup)
+	popup.play(text, color, key_rect.position + key_rect.size * 0.5)
 
 
 func _on_passive_tick() -> void:
@@ -121,11 +135,13 @@ func _exit_tree() -> void:
 
 
 func _on_btn_back_pressed() -> void:
+	AudioManager.play_ui_click()
 	cleanup()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
 
 
 func _on_settings_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	SettingsManager.return_scene_path = ScenePaths.GAME
 	cleanup()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.SETTINGS)

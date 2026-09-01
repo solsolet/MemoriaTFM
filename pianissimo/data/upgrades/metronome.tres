@@ -6,7 +6,7 @@
 script = ExtResource("1_w6rqd")
 id = "metronome"
 display_name = "DATA_UPGRADES_METRONOME"
-base_cost = 60
-cost_multiplier = 1.1400000000000001
+base_cost = 100
+cost_multiplier = 1.4
 max_level = 10
 metadata/_custom_type_script = "uid://ugia523xnwc0"

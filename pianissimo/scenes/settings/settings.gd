@@ -6,6 +6,8 @@ const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.t
 @export var sfx_slider: HSlider
 @export var music_mute_button: CheckButton
 @export var sfx_mute_button: CheckButton
+@export var reminder_hours_field: SpinBox
+@export var reminders_enabled_toggle: CheckButton
 @export var reset_button: Button
 @export var reset_confirm_dialog: ConfirmationDialog
 @export var game_tutorial_button: Button
@@ -25,7 +27,19 @@ func _ready() -> void:
 	music_mute_button.toggled.connect(func(p): SettingsManager.music_muted = p; SettingsManager.save_settings())
 	sfx_mute_button.toggled.connect(func(p): SettingsManager.sfx_muted = p; SettingsManager.save_settings())
 	
-	reset_button.pressed.connect(func(): reset_confirm_dialog.popup_centered())
+	reminder_hours_field.value = SettingsManager.reminder_hours
+	reminders_enabled_toggle.button_pressed = SettingsManager.reminders_enabled
+	reminder_hours_field.value_changed.connect(func(v):
+		AudioManager.play_ui_click()
+		SettingsManager.reminder_hours = v
+		SettingsManager.save_settings())
+	reminders_enabled_toggle.toggled.connect(func(p):
+		SettingsManager.reminders_enabled = p
+		SettingsManager.save_settings()
+		if not p:
+			NotificationManager.cancel_daily_reminder())
+	
+	reset_button.pressed.connect(func(): reset_confirm_dialog.popup_centered(); AudioManager.play_ui_click())
 	reset_confirm_dialog.confirmed.connect(_on_reset_confirmed)
 	game_tutorial_button.pressed.connect(_on_replay_game_tutorial_pressed)
 	practise_tutorial_button.pressed.connect(_on_replay_practise_tutorial_pressed)
@@ -48,15 +62,18 @@ func _on_reset_confirmed() -> void:
 
 
 func _on_replay_game_tutorial_pressed() -> void:
+	AudioManager.play_ui_click()
 	var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
 	add_child(overlay)
 	overlay.setup("game_intro")
 
 func _on_replay_practise_tutorial_pressed() -> void:
+	AudioManager.play_ui_click()
 	var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
 	add_child(overlay)
 	overlay.setup("focus_intro")
 
 
 func _on_back_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",SettingsManager.return_scene_path)

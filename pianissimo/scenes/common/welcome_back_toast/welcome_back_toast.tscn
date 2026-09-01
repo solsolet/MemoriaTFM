@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://g02y6c4wi2fu"]
 
-[ext_resource type="Script" uid="uid://bit0x1cgboikd" path="res://scenes/game/welcome_back_toast.gd" id="1"]
+[ext_resource type="Script" uid="uid://bit0x1cgboikd" path="res://scenes/common/welcome_back_toast/welcome_back_toast.gd" id="1"]
 
 [node name="WelcomeBackToast" type="CanvasLayer"]
 layer = 90

@@ -3,6 +3,9 @@ extends Node
 const SETTINGS_PATH := "user://settings.cfg"
 
 var return_scene_path: String = ScenePaths.HOME
+# Notification plugin
+var reminder_hours: float = 24.0
+var reminders_enabled: bool = true
 
 var music_volume: float = 0.8:
 	set(value):
@@ -37,6 +40,8 @@ func load_settings() -> void:
 		sfx_volume = float(config.get_value("audio", "sfx_volume", 0.8))
 		music_muted = bool(config.get_value("audio", "music_muted", false))
 		sfx_muted = bool(config.get_value("audio", "sfx_muted", false))
+		reminder_hours = float(config.get_value("notifications", "reminder_hours", 24.0))
+		reminders_enabled = bool(config.get_value("notifications", "reminders_enabled", true))
 	else:
 		music_volume = music_volume
 		sfx_volume = sfx_volume
@@ -50,6 +55,8 @@ func save_settings() -> void:
 	config.set_value("audio", "sfx_volume", sfx_volume)
 	config.get_value("audio", "music_muted", false)
 	config.get_value("audio", "sfx_muted", false)
+	config.set_value("notifications", "reminder_hours", reminder_hours)
+	config.set_value("notifications", "reminders_enabled", reminders_enabled)
 	config.save(SETTINGS_PATH)
 
 

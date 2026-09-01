@@ -12,7 +12,7 @@ func setup(def: CardDefinition, unlocked: bool) -> void:
 		icon_rect.color = _category_color(def.category)
 	else:
 		title_label.text = "???"
-		desc_label.text = "Complete a focus session to discover this card."
+		desc_label.text = "CARD_TILE_LOCKED"
 		icon_rect.color = Color(0.2, 0.2, 0.2, 1)
 
 func _category_color(category: int) -> Color:

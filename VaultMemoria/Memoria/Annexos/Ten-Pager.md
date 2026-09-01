@@ -75,12 +75,12 @@ Vols entrar al superior de piano i per tant s'ha d'esforçar en aquests últims 
 
 El jugador de base tindrà unes *estadístiques* que podrà conforme vaja jugant en un mode o altre millorar. Entre elles tindrem:
 
-- **Velocitat**: com de ràpid pots arribar a tocar les notes.
+- **Velocitat**: com pots arribar de ràpid a tocar les notes.
 - **Precisió**: quina certesa tens a l'hora de tocar bé les notes.
-- **Resistència**: molt de temps seràs capaç d'assatjar de manera continuada sense fatigar-te.
+- **Resistència**: molt de temps seràs capaç d'assajar de manera continuada sense fatigar-te.
 - **Tècnica**: com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat.
-- **Frustració**: conforme erre moltes notes seguides, la desesperació anirà muntant entorpint el teu progrés. Per a reduir-la has de fer menys errades i encertar més seguit. En cas d'arribar al burnout tindrás un temps de descans obligatori que t'impedirà seguir jugant.
-- **Teclat**: tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats
+- **Frustració**: a mesura que erre moltes notes seguides, la desesperació anirà muntant entorpint el teu progrés. Per a reduir-la has de fer menys errades i encertar més seguit. En cas d'arribar al *burnout* tindràs un temps de descans obligatori que t'impedirà continuar jugant.
+- **Teclat**: grandària màxima del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seran també limitats.
 
 A banda de les estadístiques, el jugador tindrà un *nivell* on segons vages guanyant punts d'experiència anirà augmentant. Aquesta pujada implicarà poder desbloquejar noves habilitats, power-ups, peces que estudiar...
 

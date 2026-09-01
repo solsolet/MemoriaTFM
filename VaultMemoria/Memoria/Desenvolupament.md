@@ -71,10 +71,26 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 	- Notes personalitzades.
 	- Cartes ara de color lila.
 	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
-	- Game, nova good-perfect area visual per a saber on polsar quan la nota s'apropa al teclat.
+	- Game, nova *good-perfect* àrea visual per a saber on polsar quan la nota s'apropa al teclat.
 - Nous assoliments: `velocity_maxed`, `precision_maxed`, `technique_maxed`, `keyboard_maxed`, `all_stats_maxed`, `first_strict_session`, `session_10min`, `hour_in_a_day`, `ten_hours_in_a_week`, `focus_streak_3`, `focus_streak_10`, `hundred_sessions`, `ten_cards`, `all_cards`.
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
+- *Toast* de benvinguda quan s'entra a `game`, informa de les notes guanyades.
+- Sistema per a mostrar tutorials.
+
+#### v0.6.0
+
+- Icona de l'aplicació corregida perquè es veja bé en Android.
+- Incorporació del connector de Notificacions.
+- Notificacions funcionals en iOS i Android.
+- S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
+- Afegir so de "clic" per a tots els botons.
+- Afegir *pop-up* de numerets quan s'encerta una nota per a donar retroalimentació visual.
+- Detall de les Estadístiques per a saber com funcionen.
+- Muntar els preus i el cost per a fer la progressió més lenta.
+- Arreglar *scroll* en Millores.
+- Correccions dels botons de tutorial.
+
 
 ## Iteracions
 
@@ -426,7 +442,9 @@ La mentalitat aquests dies ha sigut d'anar solucionant pantalla a pantalla fins 
 
 El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb el detall suficient per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt en implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
 
-Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "i si pose açò?" o els "pot ser es veuria millor d'aquesta manera". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+
+![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg){height=6cm}
 
 #### Projecte Godot
 
@@ -468,7 +486,7 @@ Els àudios que es tenia pel moment eren trets de Freesound per diferents autors
 
 Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que pot ser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
 
-![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg)
+![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg){height=6cm}
 
 A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
 
@@ -479,9 +497,51 @@ Les **icones** que apareixen en alguns botons del joc en un principi es tenia pr
 
 ### Iteració 6
 
-Aquesta iteració comprén dle 28 al 31 (pot ser més dies si fem proves amb usuaris)
+Aquesta iteració comprén del 28 al 31 d'agost de 2026. S'ha aconseguit implementar les notificacions amb el connector `NotificationSchedulerPlugin`, descarregat directament de GitHub i posat a mà en la corresponent carpeta perquè cap dels altres mètodes d'instal·lació ha semblat funcionar.
 
-Centrar-se en Notis if possible + crear més contingut de millores i stats + test
+Crear més contingut de millores i stats + test
+
+
+#### Formulari proves usuaris
+
+Per tenir un seguiment de com va el testing amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
+
+S'ha fet amb Google Forms Es poden veure els resultats al corresponent apartat en l'Annex.
+
+#### Exportador memòria
+S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
+
+Aquesta solució beneficiara que en cas d'afegir imatges no es perga temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
+
+#### Projecte Godot
+
+TODO : comentar configuració plugin
+
+TODO : comentar modificacions setttings.
+
+S'ha arreglat l'aspecte de la icona de l'aplicació en Android. Segons el disseny de la icona si no està en la mida correcta en alguns paràmetres pot causar que es veja "ampliat".
+
+En un altre projecte que vaig fer eixe problema també passava, però com el disseny estava molt centrat i xicotet no quedava malament, per tant, mai havia pensat que era un problema.
+
+Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos sistemes operatius tracten les icones de manera distinta, en el cas d'Android, el que donava problemes, ho podia solucionar fent versions del logo en la mida adequada i posant-les en la configuració d'exportació d'Android.
+
+Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
+
+![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=4cm}
+
+*Scroll Container* arreglat per a la tenda de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
+
+S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depèn si la nota és *perfect* o *good*. S'ha fet usant `tween`
+
+#### UI
+
+En aqeusta iteració també s'ha canviat la tipografia. Es buscava una tipus *serif* per què, a pesar que el joc vol tenir una estètica més aïna divertida, en música la immensa majoria de vegades s'usa aquest tipus de tipografia més seriosa i formal.
+
+Conceptualment, el piano és un instrument que se'l pot considerar elegant, solemne, regi... abans el joc tenia la tipografia per defecte *sense serifa*, que estava bé, però tampoc acabava d'encaixar. Amb `Noto Serif` crec que compleix bé el seu paper.
+
+S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. El problema: en un mòbil no es llegia molt còmodament. O almenys al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar problemes de visibilitat. Si ja tenia eixe dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
+
+S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que de moment s'ha pensat posar els crèdits corresponents al GDD. Dins de l'aplicació no cal posar el crèdit.
 
 ### Iteració 7
 

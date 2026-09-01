@@ -29,10 +29,15 @@ SETTINGS_DATA, Dades, Datos, Data
 SETTINGS_RESET, Resetejar progrés, Resetear progreso, Reset progress
 SETTINGS_GAME_TUTORIAL, Tutorial joc, Tutorial juego, Game tutorial
 SETTINGS_PRACTISE_TUTORIAL, Tutorial assaig, Tutorial ensayo, Practise tutorial
+SETTINGS_NOTIFICATIONS, Notificacions, Notificaciones, Notifications
+SETTINGS_TURN_NOTIFICATIONS, Activar notificacions, Activar notificaciones, Turn on notifications
+
+REMINDER_TITLE, Les tecles t'esperen!, Las teclas te esperan, The keys are waiting!
+REMINDER_BODY, Torna i fes que la música continue, Vuelve y haz que la música continue, Come back and keep the music going.
 
 DIALOG_CANCEL, Cancel·lar, Cancelar, Cancel
 DIALOG_OK, D'acord, Aceptar, Accept
-DIALOG_RESET_TITLE, Vols esborrar el teu progrés ?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
+DIALOG_RESET_TITLE, Vols esborrar el teu progrés?, ¿Quieres borrar tu progreso?, Would you like to erase your progress?
 DIALOG_RESET_TEXT, Aquesta acció no es podrà desfer, Esta acción no se podrá deshacer, This action could not be reversed
 
 PRACTISE_SESSION, Assaig, Ensayo, Practise
@@ -52,6 +57,11 @@ PRACTISE_START_BUTTON, Inici assaig, Inicio ensayo, Start Practise
 PRACTISE_PAST_SESSIONS_BUTTON, Veure assajos anteriors, Ver ensayos anteriores, View Past Sessions
 PRACTISE_SESSION_STAY, Quedat en l'aplicació per a completar l'assaig,Quédate en la aplicación para completar el ensayo, Stay in the app to complete this session.
 PRACTISE_RESULT, Resultat, Resultado, Result
+PRACTISE_SUMMARY_COMPLETE, Assaig completat!, Ensayo completado, Session complete!
+PRACTISE_SUMMARY_COMPLETE_REWARD, Has guanyat %d notes., Has ganado %d notas., You earned %d notes.
+PRACTISE_SUMMARY_COMPLETE_CARD, \nNova carta: %s!, \n¡Nueva carta: %s!, \nNew card: %s!
+PRACTISE_SUMMARY_FAILED, Assaig fallit, Ensayo fallido, Session failed
+PRACTISE_SUMMARY_FAILED_DETAIL, Has abandonat l'assaig abans d'acabar-lo, Has abandonado el ensayo antes de haberlo terminado, You left the app before finishing.
 PRACTISE_JOURNAL, Diari d'assajos, Diario de ensayos, Practise journal
 PRACTISE_JOURNAL_EMPTY, Encara no hi ha assajos registrats., Aún no hay registro de ningún ensayo., No practise sessions yet.
 PRACTISE_JOURNAL_COMPLETED, Completada, Completada, Completed
@@ -60,10 +70,11 @@ PRACTISE_JOURNAL_TODAY_WEEK_TOTALS, Hui: %dm   Aquesta setmana: %dm, Hoy: %dm   
 
 TUTORIAL_HELP, Ajuda, Ayuda, Help
 TUTORIAL_SKIP, Saltar, Saltar, Skip
-TUTORIAL_GOT_IT, Entesos, Entendido, Got it
+TUTORIAL_GOT_IT, OK!, ¡OK!, OK!
 TUTORIAL_NEXT, Següent, Siguiente, Next
 
 CARD_ALBUM, Àlbum de cromos, Álbum de cromos, Card Album
+CARD_TILE_LOCKED, Completa una sessió d'assaig per a descobrir aquesta carta, Completa una sesión de ensayo para descubrir esta carta, Complete a practise session to discover this card.
 
 DATA_CARDS_BACH_DESC,Organista i compositor barroc famós per la seua extensa obra que es considerada una de les màximes expressions de la música universal,Organista y compositor barroco famoso por su extensa obra considerada una de las máximas expresiones de la música universal,Baroque composer and organist famed for intricate counterpoint like The Well-Tempered Clavier.
 DATA_CARDS_MOZART_DESC,Prodigi de l'època clàssica que componia simfonies des de l'infantesa, Prodigio de la época clásica que componía sinfonías desde su infancia, Classical-era prodigy who composed symphonies and operas from childhood.
@@ -76,14 +87,18 @@ DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered 
 DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
 
 DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
+DATA_STATS_KEYBOARD_DESC, "Tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats", "Tamaño máximo del teclado. Se empieza con un número de teclas delimitado, por tanto los puntos que le puedes sacar serán también limitados", "Max keyboard size. It starts with a delimited key number, so your score will be limited too."
 DATA_STATS_PRECISION, Precisió, Precisión, Precision
+DATA_STATS_PRECISION_DESC, Quina certesa tens a l'hora de tocar bé les notes., Qué certeza tienes a la hora de tocar bien las notas., How confident are you about playing the notes correctly.
 DATA_STATS_VELOCITY, Velocitat, Velocidad, Velocity
+DATA_STATS_VELOCITY_DESC, Com de ràpid pots arribar a tocar les notes., Lo rápido que puedes llegar a tocar las notas., How fast you can play the notes.
 DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
+DATA_STATS_TECHNIQUE_DESC, "Com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat. En el cas pràctic del joc es traduirà en major bonificació en encetar notes perfectes", "Como bien puedes interpretar una obra. No sólo se trata de pulsar notas sino de atinar también la articulación y la sonoridad. En el caso práctico del juego se traducirá en mayor bonificación al empezar notas perfectas", "It is about how well you interpret a piece. It is not just a matter of hitting the notes, but also nailing the articulation and tone. In practical gameplay terms, this translates into a higher bonus for hitting perfect notes."
 
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
 DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
-DATA_UPGRADES_NOTE_TORRENT, Torrent de Notes, Torrente de Notas, Notes Torrent
+DATA_UPGRADES_NOTE_TORRENT, Torrent Musical, Torrente Musical, Notes Torrent
 DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
 DATA_UPGRADES_THIRD, Tercera, Tercera, Third
 DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth

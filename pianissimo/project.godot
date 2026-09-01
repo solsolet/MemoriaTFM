@@ -14,7 +14,8 @@ config/name="Pianissimo"
 config/tags=PackedStringArray("android", "google_play_games_services", "ios")
 run/main_scene="uid://d3xjva4n8hejr"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="uid://cjmmhepbg4f7r"
+boot_splash/bg_color=Color(0.5019608, 0.93333334, 0.99215686, 1)
+config/icon="uid://c8ep8j06lj8p5"
 
 [autoload]
 
@@ -28,7 +29,7 @@ CardManager="*res://autoload/card_manager.tscn"
 TutorialManager="*res://autoload/tutorial_manager.tscn"
 AudioManager="*res://autoload/audio_manager.gd"
 AchievementManager="*res://autoload/achievement_manager.tscn"
-NotificationManager="*res://autoload/notification_manager.gd"
+NotificationManager="*res://autoload/notification_manager.tscn"
 GodotPlayGameServices="*res://addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd"
 
 [display]
@@ -41,7 +42,7 @@ window/handheld/orientation=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GodotPlayGameServices/plugin.cfg")
+enabled=PackedStringArray("res://addons/GodotPlayGameServices/plugin.cfg", "res://addons/NotificationSchedulerPlugin/plugin.cfg")
 
 [file_customization]
 
@@ -59,6 +60,7 @@ folder_colors={
 [gui]
 
 theme/custom="uid://dt2kc553fw26"
+theme/custom_font="uid://ne0g3n1xb1qv"
 
 [internationalization]
 

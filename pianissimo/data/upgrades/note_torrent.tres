@@ -6,7 +6,7 @@
 script = ExtResource("1_bwxg7")
 id = "note_torrent"
 display_name = "DATA_UPGRADES_NOTE_TORRENT"
-base_cost = 80
-cost_multiplier = 1.16
+base_cost = 100
+cost_multiplier = 1.6
 max_level = 8
 metadata/_custom_type_script = "uid://ugia523xnwc0"

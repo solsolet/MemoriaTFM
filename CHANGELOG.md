@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.6.0] - 2026-08-31
+
+### Added
+
+
+
+### Fixed
+
+
+
 ## [v0.5.0] - 2026-08-23
 
 ### Added
@@ -7,16 +17,26 @@
 - Implementació Piano en `home` interactiu.
 - Implementació de tema de les tecles blanques i negres personalitzat.
 - Addició icones en botons de `game`.
-- Addició botó per cancel·lar una sessió d'assaig sense penalització
+- Implementació nova *good-perfect* àrea visual per a saber on polsar quan la nota s'apropa al teclat.
+- Implementació *toast* de benvinguda quan s'entra a `game`.
+- Incorporació de noves funcionalitats a **assaig**:
+    - Addició botó per cancel·lar una sessió d'assaig sense penalització.
+    - Implementació de camp per a posar _etiquetes_ en la configuració d'una sessió d'assaig.
+    - Total setmanal i diari en `journal`.
+    - Música disponible en `focus_session`.
+    - Poder esborrar entrades en `journal`.
+    - Assajos permissius: no hi ha penalització per abandonar l'aplicació mentre estiga viva.
+- Implementació sistema de `tutorials`.
+- Incorporació de nous assoliments i millores.
 
 ### Fixed
 
 - Tema personalitzat amb més detall.
-- Reescalat correcte del fons perqueè es veja bé en totes les resolucions.
+- Reescalat correcte del fons perquè es veja bé en totes les resolucions.
 - Paleta actualitzada.
 - Aspecte `Note` millorat.
 - Afegir i corregir efectes de so de les tecles.
-- Correcció traduccions text del codi amb `tr()`
+- Correcció traduccions text del codi amb `tr()`.
 
 ## [v0.4.0] - 2026-08-21
 

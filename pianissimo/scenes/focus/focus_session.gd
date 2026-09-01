@@ -18,7 +18,7 @@ func _ready() -> void:
 	FocusManager.session_completed.connect(_on_completed)
 	FocusManager.session_failed.connect(_on_failed)
 	FocusManager.session_cancelled.connect(_on_cancelled)
-	cancel_button.pressed.connect(func(): FocusManager.cancel_session())
+	cancel_button.pressed.connect(func(): AudioManager.play_ui_click(); FocusManager.cancel_session())
 	music_button.pressed.connect(_on_music_toggle_pressed)
 
 

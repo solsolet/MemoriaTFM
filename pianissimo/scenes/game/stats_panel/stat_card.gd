@@ -1,6 +1,8 @@
 extends Button
 class_name StatCard
 
+const DETAIL_POPUP_SCENE = preload("res://scenes/common/detail_popup/detail_popup.tscn")
+
 var stat_id: String = ""
 
 @export var icon_rect: ColorRect
@@ -21,9 +23,17 @@ func refresh() -> void:
 	title_label.text = def.display_name
 	level_label.text = "Lv %d" % StatManager.get_level(stat_id)
 	var maxed := def.max_level >= 0 and StatManager.get_level(stat_id) >= def.max_level
-	cost_label.text = "MAX" if maxed else "%d notes" % StatManager.get_cost(stat_id)
+	cost_label.text = "MAX" if maxed else "%d N" % StatManager.get_cost(stat_id)
 	disabled = not StatManager.can_purchase(stat_id)
+
 
 func _on_pressed() -> void:
 	AudioManager.play_ui_click()
 	StatManager.purchase(stat_id)
+
+func _on_info_button_pressed() -> void:
+	AudioManager.play_ui_click()
+	var def := StatManager.get_definition(stat_id)
+	var popup := DETAIL_POPUP_SCENE.instantiate() as DetailPopup
+	get_tree().root.add_child(popup)
+	popup.setup(def.display_name, def.description)

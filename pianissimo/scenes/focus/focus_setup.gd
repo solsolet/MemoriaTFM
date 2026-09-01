@@ -18,11 +18,12 @@ var _selected_tag_color: Color = Color.TRANSPARENT
 func _ready() -> void:
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
 	
-	if not TutorialManager.has_been_seen("game_intro"):
+	if not TutorialManager.has_been_seen("focus_intro"):
 		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
 		add_child(overlay)
 		overlay.setup("focus_intro")
 	
+	duration_spinbox.value_changed.connect(func(): AudioManager.play_ui_click())
 	start_button.pressed.connect(_on_start_pressed)
 	journal_button.pressed.connect(_on_journal_pressed)
 	back_button.pressed.connect(_on_back_pressed)
@@ -43,6 +44,7 @@ func _on_tag_field_edited(_new_text: String) -> void:
 
 
 func _on_start_pressed() -> void:
+	AudioManager.play_ui_click()
 	var title = title_field.text.strip_edges() # erase special char (\n...)
 	if title == "":
 		title = tr("PRACTISE_SESSION")
@@ -54,8 +56,10 @@ func _on_start_pressed() -> void:
 
 
 func _on_journal_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.FOCUS_JOURNAL)
 
 
 func _on_back_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.HOME)
