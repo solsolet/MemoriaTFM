@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="StatDefinition" load_steps=2 format=3 uid="uid://bpagjsovsmxmp"]
+[gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://bpagjsovsmxmp"]
 
+[ext_resource type="Texture2D" uid="uid://bcpqtt2io0d5q" path="res://assets/sprites/icons/trash.svg" id="1_m5r57"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_pkmo0"]
 
 [resource]
@@ -7,6 +8,7 @@ script = ExtResource("1_pkmo0")
 id = "velocity"
 display_name = "DATA_STATS_VELOCITY"
 description = "DATA_STATS_VELOCITY_DESC"
+icon = ExtResource("1_m5r57")
 base_cost = 100
 cost_multiplier = 1.5
 max_level = 10

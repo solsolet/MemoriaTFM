@@ -56,7 +56,7 @@ func purchase(id: String) -> bool:
 		AchievementManager.unlock("upgrade_level_10")
 	return true
 
-
+# INFO: it works in 3, 5, 8...
 func total_passive_rate() -> float:
 	var total := 0.0
 	for id in _definitions.keys():
@@ -64,3 +64,14 @@ func total_passive_rate() -> float:
 		if def.passive_rate > 0.0:
 			total += def.passive_rate * get_level(id)
 	return total
+
+
+func is_unlocked(id: String) -> bool:
+	var def := get_definition(id)
+	if def == null:
+		return false
+	if def.requires_upgrade_id != "" and get_level(def.requires_upgrade_id) < def.requires_upgrade_level:
+		return false
+	if SaveManager.data.total_notes_earned < def.requires_total_notes_earned:
+		return false
+	return true

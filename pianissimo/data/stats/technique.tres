@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="StatDefinition" load_steps=2 format=3 uid="uid://brg8vmi4bsm0"]
+[gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://brg8vmi4bsm0"]
 
+[ext_resource type="Texture2D" uid="uid://4elv0drl3w11" path="res://assets/sprites/icons/home.svg" id="1_bekbw"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_ccwb2"]
 
 [resource]
@@ -7,6 +8,7 @@ script = ExtResource("1_ccwb2")
 id = "technique"
 display_name = "DATA_STATS_TECHNIQUE"
 description = "DATA_STATS_TECHNIQUE_DESC"
+icon = ExtResource("1_bekbw")
 base_cost = 300
 cost_multiplier = 1.7
 max_level = 10

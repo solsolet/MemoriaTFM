@@ -156,8 +156,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -343,8 +342,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
+    "Memoria/Desenvolupament.md",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Game_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_DetailStat_It6.jpg",
@@ -356,10 +356,8 @@
     "Memoria/Assets/Pianissimo/It5/Pianissimo_Tuto_Game_It5.jpg",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_Summary_It5.jpg",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_Settings_It6.jpg",
-    "Memoria/Assets/Pianissimo/It5/Pianissimo_Game_It5.jpg",
     "Organitzacio/Kanban.md",
     "Memoria/Annexos/GDD.md",
-    "Memoria/Desenvolupament.md",
     "Memoria/Annexos.md",
     "Memoria/Resum.md",
     "Memoria/Introduccio.md",

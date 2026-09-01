@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="StatDefinition" load_steps=2 format=3 uid="uid://ix4k64vlovk8"]
+[gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://ix4k64vlovk8"]
 
+[ext_resource type="Texture2D" uid="uid://dyaa05jfx51f5" path="res://assets/sprites/icons/arrow_left.svg" id="1_lcumi"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_osp27"]
 
 [resource]
@@ -7,6 +8,7 @@ script = ExtResource("1_osp27")
 id = "keyboard"
 display_name = "DATA_STATS_KEYBOARD"
 description = "DATA_STATS_KEYBOARD_DESC"
+icon = ExtResource("1_lcumi")
 base_cost = 500
 cost_multiplier = 1.8
 max_level = 9
