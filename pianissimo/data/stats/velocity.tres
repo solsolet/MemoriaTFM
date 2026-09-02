@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://bpagjsovsmxmp"]
 
-[ext_resource type="Texture2D" uid="uid://bcpqtt2io0d5q" path="res://assets/sprites/icons/trash.svg" id="1_m5r57"]
+[ext_resource type="Texture2D" uid="uid://bieodvlswhwcm" path="res://assets/sprites/icons/stats/stat_velocity.svg" id="1_m5r57"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_pkmo0"]
 
 [resource]

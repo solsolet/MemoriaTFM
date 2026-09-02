@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://brg8vmi4bsm0"]
 
-[ext_resource type="Texture2D" uid="uid://4elv0drl3w11" path="res://assets/sprites/icons/home.svg" id="1_bekbw"]
+[ext_resource type="Texture2D" uid="uid://drrkwktcvuh53" path="res://assets/sprites/icons/stats/stat_technique.svg" id="1_bekbw"]
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_ccwb2"]
 
 [resource]

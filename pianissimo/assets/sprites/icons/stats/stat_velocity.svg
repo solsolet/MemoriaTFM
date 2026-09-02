@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="stat_velocity">
+        <path d="M512,35.84L512,476.16C512,495.941 495.941,512 476.16,512L35.84,512C16.059,512 0,495.941 0,476.16L0,35.84C0,16.059 16.059,0 35.84,0L476.16,0C495.941,0 512,16.059 512,35.84Z" style="fill:rgb(242,228,194);"/>
+        <g id="metronomo" transform="matrix(1.096838,0,0,1.096838,4.933949,-24.790514)">
+            <g transform="matrix(1.089286,0,0,1,-87.730558,-65)">
+                <path d="M431,482L207,482L283.637,160L354.363,160L431,482Z" style="fill:rgb(253,246,228);stroke:rgb(230,183,89);stroke-width:13.08px;"/>
+            </g>
+            <g transform="matrix(1.089286,0,0,0.357143,-87.730558,244.857143)">
+                <path d="M431,482L207,482L234.717,160L403.283,160L431,482Z" style="fill:rgb(230,183,89);stroke:rgb(230,183,89);stroke-width:16.87px;"/>
+            </g>
+            <g transform="matrix(-0.159762,-0.11886,0.041515,-0.055802,323.362546,323.712375)">
+                <path d="M431,482L207,482L234.717,160L403.283,160L431,482Z" style="fill:rgb(230,183,89);stroke:rgb(230,183,89);stroke-width:30.56px;"/>
+            </g>
+            <g transform="matrix(1.868053,1.427743,-0.622001,0.813823,-6.8844,-294.999532)">
+                <rect x="242" y="95" width="4" height="207" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:5.03px;"/>
+            </g>
+            <g transform="matrix(0,0.425593,-0.561554,0,232.557768,-7.993435)">
+                <path d="M246,96.516L246,300.484C246,301.321 245.104,302 244,302C242.896,302 242,301.321 242,300.484L242,96.516C242,95.679 242.896,95 244,95C245.104,95 246,95.679 246,96.516Z" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:36.6px;"/>
+            </g>
+            <g transform="matrix(0,0.425593,-0.4894,0,210.767197,58.557158)">
+                <path d="M246,96.739L246,300.261C246,301.221 245.104,302 244,302C242.896,302 242,301.221 242,300.261L242,96.739C242,95.779 242.896,95 244,95C245.104,95 246,95.779 246,96.739Z" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:39.76px;"/>
+            </g>
+            <g transform="matrix(0,0.425593,-0.382011,0,178.335584,125.10775)">
+                <path d="M246,97.228L246,299.772C246,301.002 245.104,302 244,302C242.896,302 242,301.002 242,299.772L242,97.228C242,95.998 242.896,95 244,95C245.104,95 246,95.998 246,97.228Z" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:45.09px;"/>
+            </g>
+            <g transform="matrix(0,0.425593,-0.302609,0,154.356379,191.658343)">
+                <path d="M246,97.813L246,299.187C246,300.74 245.104,302 244,302C242.896,302 242,300.74 242,299.187L242,97.813C242,96.26 242.896,95 244,95C245.104,95 246,96.26 246,97.813Z" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:49.38px;"/>
+            </g>
+            <g transform="matrix(0,0.425593,-0.226241,0,131.292997,258.208936)">
+                <path d="M246,98.762L246,298.238C246,300.314 245.104,302 244,302C242.896,302 242,300.314 242,298.238L242,98.762C242,96.686 242.896,95 244,95C245.104,95 246,96.686 246,98.762Z" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:53.5px;"/>
+            </g>
+            <g transform="matrix(0,1,-0.111258,0,404.136054,107.984777)">
+                <rect x="242" y="95" width="4" height="207" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:19.22px;"/>
+            </g>
+            <g transform="matrix(1,-0,0,0.111258,151.566525,329.900025)">
+                <rect x="242" y="95" width="4" height="207" style="fill:rgb(227,189,92);stroke:rgb(230,183,89);stroke-width:19.22px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="StatDefinition" load_steps=3 format=3 uid="uid://dds7lied185et"]
 
 [ext_resource type="Script" uid="uid://dp5pd6qoytn7i" path="res://resources/stat_definition.gd" id="1_bha2y"]
-[ext_resource type="Texture2D" uid="uid://dbwjku0c45l1" path="res://assets/sprites/icons/corchea.svg" id="1_exmax"]
+[ext_resource type="Texture2D" uid="uid://chvpnigihqboa" path="res://assets/sprites/icons/stats/stat_precision.svg" id="1_exmax"]
 
 [resource]
 script = ExtResource("1_bha2y")

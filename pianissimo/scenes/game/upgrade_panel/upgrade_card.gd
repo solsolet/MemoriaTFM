@@ -27,7 +27,7 @@ func refresh() -> void:
 		level_label.text = "Lv %d" % UpgradeManager.get_level(upgrade_id)
 		var maxed := def.max_level >= 0 and UpgradeManager.get_level(upgrade_id) >= def.max_level
 		cost_label.text = "MAX" if maxed else "%s N" % NumberFormat.format(UpgradeManager.get_cost(upgrade_id))
-	disabled = not UpgradeManager.can_purchase(upgrade_id)
+	disabled = not UpgradeManager.can_purchase(upgrade_id) # BUG: vore com arreglar que pugues comprar una millora misteriosa
 
 
 func _on_pressed() -> void:

@@ -140,8 +140,7 @@
               "title": "Metodologia"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -327,19 +326,20 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "21de9b9dacabc78a",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
-    "Memoria/Assets/Pianissimo/It6/Pianissimo_Album_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Achievements_It6.jpg",
+    "Output/_build_processed.md",
+    "Memoria/Assets-Optimized/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It6",
+    "Memoria/Assets-Optimized/Pianissimo/It5/Pianissimo_UI_It5.jpg",
+    "Memoria/Assets/Pianissimo/It6/Pianissimo_Album_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Focus_Journal_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissmo_Focus_Session_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Settings_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Focus_Setup_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Home_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Game_It6.jpg",
-    "Memoria/Assets/Pianissimo/It6/Pianissimo_Permis_It6.jpg",
-    "Memoria/Assets/Pianissimo/It6/Pianissimo_DetailStat_It6.jpg",
-    "Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Ok.jpg",
     "Memoria/Desenvolupament.md",
     "Organitzacio/Kanban.md",
     "Memoria/Marc teoric.md",
@@ -353,7 +353,6 @@
     "Memoria/Annexos.md",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Metodologia.md",
-    "Output/_build_processed.md",
     "Memoria/Assets-Optimized/Pianissimo/It5",
     "Memoria/Assets-Optimized/Pianissimo/It2",
     "Memoria/Assets-Optimized/Pianissimo/It3",
@@ -362,7 +361,6 @@
     "Memoria/Assets-Optimized/Pianissimo/Diagrames",
     "Memoria/Assets-Optimized/AltresJocs/Cookie",
     "Memoria/Assets-Optimized/AltresJocs/RhythmParadise",
-    "Memoria/Assets-Optimized/AltresJocs/MagicArchery",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",
