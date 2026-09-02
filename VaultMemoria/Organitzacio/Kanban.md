@@ -45,13 +45,13 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
-- [ ] Arreglar millora misteriosa que puga ser comprada quan esta locked #bug #l #dev
-- [ ] Icones Stats #ui
 
 
 ## Done
 
 **Complete**
+- [x] Icones Stats #ui
+- [x] Arreglar millora misteriosa que puga ser comprada quan esta locked #bug #l #dev
 - [x] Corregir el que porte amb Salt #memo #i
 - [x] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker. En notes i costos #ui #nice-to-have #dev
 - [x] Settings notificació #nice-to-have

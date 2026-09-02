@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dss56dhhaoqxh"]
+[gd_scene load_steps=2 format=3 uid="uid://dss56dhhaoqxh"]
 
 [ext_resource type="Script" uid="uid://bykng2kjgnvwh" path="res://scenes/game/stats_panel/stat_card.gd" id="1_hykih"]
-[ext_resource type="Texture2D" uid="uid://bjvu1vlchswhr" path="res://bundles/iOS/Pianissimo/Images.xcassets/AppIcon.appiconset/Icon-152.png" id="2_7tdjh"]
 
 [node name="StatCard" type="Button" node_paths=PackedStringArray("icon_rect", "title_label", "level_label", "cost_label")]
 custom_minimum_size = Vector2(220, 200)
@@ -41,7 +40,6 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 2
-texture = ExtResource("2_7tdjh")
 expand_mode = 1
 stretch_mode = 5
 
