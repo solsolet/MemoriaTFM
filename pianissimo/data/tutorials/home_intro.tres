@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TutorialDefinition" load_steps=4 format=3 uid="uid://w4s3v15y75nn"]
+
+[ext_resource type="Texture2D" uid="uid://bo2gbwxflp2or" path="res://assets/sprites/tutorials/Intro1.png" id="1_cetpw"]
+[ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="2_cetpw"]
+[ext_resource type="Texture2D" uid="uid://cgad76nteflry" path="res://assets/sprites/tutorials/Intro2.png" id="2_o8s4r"]
+
+[resource]
+script = ExtResource("2_cetpw")
+id = "home_intro"
+panels = Array[Texture2D]([ExtResource("1_cetpw"), ExtResource("2_o8s4r")])
+metadata/_custom_type_script = "uid://bfj33tiyihf6b"

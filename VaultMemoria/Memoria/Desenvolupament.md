@@ -548,3 +548,17 @@ S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur in
 De l'1 fins al 6 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
 
 Pel que fa a la memòria s'ha acabat quasi sencera.
+
+#### Tendes d'aplicacions
+
+Aquesta iteració ha tingut els últims retocs de cada tenda. 
+
+Pel que fa a l'App Store m'he barallat per a poder enviar l'aplicació a revisió molta estona perquè emplenar tota la pàgina és llarg i tediós, en lloc de dir-te quins camps són obligatoris per a emplenar, només ho pots saber quan li dones el botó d'enviar a revisió.
+
+On més temps he perdut és que demana captures tant sí com no d'iPhone de 6.5". El dispositiu que jo tinc per a fer proves és un iPhone 12 que té 6.3" i encara que deixa muntar-les és obligatori multar les de la mida que ells diuen. Supose que si pots provar l'aplicació en l'emulador de Xcode pot ser senzill, però els jocs de Godot tenen la particularitat que els projectes que esportes per a iOS no es poden provar a l'emulador, dona error.
+
+Les he hagut de trampejar amb Affinity reescalant les que ja tenia a mà. I no només ha sigut exisit amb la mida, si no també amb el canal alfa.
+
+Després de l'odissea d'intentar arribar a la mida que deixava després m'he topat amb què també havia de muntar captures en un iPad. Evidentment, la meua paciència no donava més de si i les imatges estan estirades horitzontalment.
+
+![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Memoria/Assets/Pianissimo/It7/Pianissimo_AppStore_iPad.png)

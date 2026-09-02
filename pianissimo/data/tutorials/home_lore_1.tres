@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TutorialDefinition" load_steps=2 format=3 uid="uid://w4s3v15y75nn"]
-
-[ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="1_mw5nd"]
-
-[resource]
-script = ExtResource("1_mw5nd")
-id = "home_lore_1"
-metadata/_custom_type_script = "uid://bfj33tiyihf6b"

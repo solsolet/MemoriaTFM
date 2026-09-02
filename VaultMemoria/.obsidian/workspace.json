@@ -140,7 +140,8 @@
               "title": "Metodologia"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -326,9 +327,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "c6c908a97980f287",
   "lastOpenFiles": [
+    "Memoria/Assets/Pianissimo/It7/Pianissimo_AppStore_iPad.png",
     "Memoria/Desenvolupament.md",
+    "Memoria/Assets/Pianissimo/It7",
     "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Achievements_It6.jpg",
     "Output/_build_processed.md",
@@ -341,7 +344,6 @@
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Settings_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Focus_Setup_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Home_It6.jpg",
-    "Memoria/Assets/Pianissimo/It6/Pianissimo_Game_It6.jpg",
     "Memoria/Marc teoric.md",
     "Memoria/Introduccio.md",
     "Memoria/Llegenda.md",
@@ -360,7 +362,6 @@
     "Memoria/Assets-Optimized/Pianissimo/It1",
     "Memoria/Assets-Optimized/Pianissimo/Diagrames",
     "Memoria/Assets-Optimized/AltresJocs/Cookie",
-    "Memoria/Assets-Optimized/AltresJocs/RhythmParadise",
     "Memoria/Assets/Pianissimo/It3.md",
     "Memoria/Assets/Pianissimo/Sense títol.md",
     "Diari/2026-08-12.md",

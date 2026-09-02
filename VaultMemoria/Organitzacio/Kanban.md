@@ -45,6 +45,7 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
+- [ ] Arreglar Submision Ap Store per a que deixe d'estar en draft
 
 
 ## Done
