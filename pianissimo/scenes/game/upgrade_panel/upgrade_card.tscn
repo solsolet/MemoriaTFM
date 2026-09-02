@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://rsxgsy63mldx"]
+[gd_scene load_steps=3 format=3 uid="uid://rsxgsy63mldx"]
 
 [ext_resource type="Script" uid="uid://22hyjitrnjw" path="res://scenes/game/upgrade_panel/upgrade_card.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://q5fwgecho73c" path="res://assets/sprites/store/Logo512.png" id="2_6ii7u"]
 
 [node name="UpgradeCard" type="Button" node_paths=PackedStringArray("icon_rect", "title_label", "level_label", "cost_label")]
 custom_minimum_size = Vector2(240, 200)
@@ -34,12 +35,14 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_constants/separation = 5
 
-[node name="IconRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(150, 150)
+[node name="IconRect" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(180, 180)
 layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 2
-color = Color(1, 0.7019608, 0.47843137, 1)
+texture = ExtResource("2_6ii7u")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2

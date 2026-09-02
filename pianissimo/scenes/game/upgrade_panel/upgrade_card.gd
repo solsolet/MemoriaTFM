@@ -3,7 +3,7 @@ class_name UpgradeCard
 
 var upgrade_id: String = ""
 
-@export var icon_rect: ColorRect
+@export var icon_rect: TextureRect
 @export var title_label: Label
 @export var level_label: Label
 @export var cost_label: Label

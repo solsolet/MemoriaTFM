@@ -3,9 +3,10 @@ class_name UpgradePanel
 
 const UPGRADE_CARD_SCENE = preload("res://scenes/game/upgrade_panel/upgrade_card.tscn")
 
-@onready var cards_container: HBoxContainer = $VBoxContainer/ScrollContainer/CardsRow
+@export var cards_container: HBoxContainer
 
 var _cards: Dictionary = {}
+
 
 func _ready() -> void:
 	for id in UpgradeManager.get_all_ids():

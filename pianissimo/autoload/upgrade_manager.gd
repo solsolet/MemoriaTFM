@@ -34,6 +34,8 @@ func get_cost(id: String) -> int:
 
 
 func can_purchase(id: String) -> bool:
+	if not is_unlocked(id):
+		return false
 	var def := get_definition(id)
 	if def == null:
 		return 0
