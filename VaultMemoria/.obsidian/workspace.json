@@ -140,7 +140,8 @@
               "title": "Metodologia"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -326,8 +327,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "c6c908a97980f287",
   "lastOpenFiles": [
+    "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Achievements_It6.jpg",
     "Output/_build_processed.md",
     "Memoria/Assets-Optimized/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg",
@@ -341,7 +343,6 @@
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Home_It6.jpg",
     "Memoria/Assets/Pianissimo/It6/Pianissimo_Game_It6.jpg",
     "Memoria/Desenvolupament.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Marc teoric.md",
     "Memoria/Introduccio.md",
     "Memoria/Llegenda.md",
