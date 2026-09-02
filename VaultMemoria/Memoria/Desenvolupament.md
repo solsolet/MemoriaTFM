@@ -545,4 +545,6 @@ S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur in
 
 ### Iteració 7
 
-setembre, rematar + resultats + p
+De l'1 fins al 6 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
+
+Pel que fa a la memòria s'ha acabat quasi sencera.

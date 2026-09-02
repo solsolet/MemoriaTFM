@@ -5,6 +5,8 @@
 ### Added
 
 - Implemetació format de nombres a milers, milions, bilions... amb K, M, B...
+- Desbloqueig per condicions a les Millores.
+- Icones en Estadístiques.
 
 ### Fixed
 

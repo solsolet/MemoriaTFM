@@ -6,7 +6,7 @@ Per a desenvolupar el videojoc hauré de familiaritzar-me i aprendre a usar el m
 
 ## Objectius específics
 
-- Conéixer el mercat mòbil de videojocs.
+- Conèixer el mercat mòbil de videojocs.
 - Planificar les etapes de desenvolupament i quines coses es farà en elles.
 - Aprendre a usar Godot.
 - Investigar de jocs similars al que vulga fer.

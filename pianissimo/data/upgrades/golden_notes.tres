@@ -9,4 +9,5 @@ display_name = "DATA_UPGRADES_GOLDEN_NOTES"
 base_cost = 777
 cost_multiplier = 1.77
 max_level = 10
+requires_total_notes_earned = 77777
 metadata/_custom_type_script = "uid://ugia523xnwc0"

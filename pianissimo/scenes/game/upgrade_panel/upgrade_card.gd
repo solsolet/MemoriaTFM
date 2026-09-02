@@ -18,10 +18,15 @@ func refresh() -> void:
 	var def := UpgradeManager.get_definition(upgrade_id)
 	if def == null:
 		return
-	title_label.text = def.display_name
-	level_label.text = "Lv %d" % UpgradeManager.get_level(upgrade_id)
-	var maxed := def.max_level >= 0 and UpgradeManager.get_level(upgrade_id) >= def.max_level
-	cost_label.text = "MAX" if maxed else "%s N" % NumberFormat.format(UpgradeManager.get_cost(upgrade_id))
+	if not UpgradeManager.is_unlocked(upgrade_id):
+		title_label.text = "???"
+		level_label.text = ""
+		cost_label.text = ""
+	else:
+		title_label.text = def.display_name
+		level_label.text = "Lv %d" % UpgradeManager.get_level(upgrade_id)
+		var maxed := def.max_level >= 0 and UpgradeManager.get_level(upgrade_id) >= def.max_level
+		cost_label.text = "MAX" if maxed else "%s N" % NumberFormat.format(UpgradeManager.get_cost(upgrade_id))
 	disabled = not UpgradeManager.can_purchase(upgrade_id)
 
 

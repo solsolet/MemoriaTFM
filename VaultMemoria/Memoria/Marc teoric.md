@@ -16,7 +16,7 @@ Els jocs tenen dos tipus de gèneres: el de la història i el del joc. Ens centr
 
 Una altra cosa que cal destacar és que molts jocs poden tenir més d'un tipus de gènere, de manera que es veuran alguns dels trets d'aquests en el joc resultant.
 
-Per exemple, *Crypt of the NecroDancer* és un videojoc roguelike de ritme.
+Per exemple, *Crypt of the NecroDancer* és un videojoc *roguelike* de ritme.
 
 ##### Idle
 
@@ -33,7 +33,7 @@ Aquest gènere també el trobar anomenat com: *background games*, *ambiental gam
 - Infinits o amb molts nivells de millora.
 - Constant interacció i retroalimentació.
 - Sentiment d'assoliment immediat sense esforç.
-- No hi ha Game Over.
+- No hi ha *Game Over*.
 
 **Exemples**: *Cookie clicker*, *Magic Archery*, *Progress Quest* o *Push The Square*.
 
@@ -77,7 +77,7 @@ Per tindre una idea d'on partim, els primers jocs per a mòbils van més enllà 
 En aquestes primeres instàncies els jocs venien inclosos en els dispositius, no calia fer un esforç per a tindre'ls, com era el cas del *Snake* de Nokia, en 1997 que va estar en 350 milions de dispositius [@exploringMobileGameInteractions].
 Van ser plataformes com *i-mode* al Japó que permetien la descàrrega i es començava a conrear un interés per part de companyies desenvolupadores per aquest mercat, com Konami, Nintendo o Bandai entre altres [@edge1999mobiles].
 
-Si ens situem als 2000, per molt que l'interés existís, hi havia una gran limitació per diverses bandes del creixement d'aquest mercat:
+Si ens situem als 2000, per molt que l'interés existira, hi havia una gran limitació per diverses bandes del creixement d'aquest mercat:
 
 - L'accés a internet dels dispositius mòbils.
 - Molta diversitat de programari: cada casa feia el seu i no hi havia un estàndard per als desenvolupadors que els facilitara la portabilitat dels jocs.
@@ -150,7 +150,7 @@ Godot a més, després de la polèmica de Unity l'any 2023 de les tarifes per in
 
 Unity és un motor de programari privatiu, per tant, no és mai del desenvolupador; aquests només tenen una llicència d'ús. Es troba en mans d'una corporació que mira pel seu interés propi, encara que això signifique degradar el servei, les condicions i perdre la confiança dels seus usuaris.
 
-I per afegir més motius: mesos abans de la polèmica, Godot va llançar la seua versió 4.0 on s'afig i es millora suport gràfic 3D com també altres funcionalitats i arreglar algunes errades. Aquest Godot va traent versions i a dia de la redacció d'aquesta memòria hi ha fins a la 4.7 llançada en juny de 2026.
+I per afegir més motius: mesos abans de la polèmica, Godot va llançar la seua versió 4.0 on s'afig i es millora suport gràfic 3D com també altres funcionalitats i arreglar algunes errades. Aquest Godot va traient versions i a dia de la redacció d'aquesta memòria hi ha fins a la 4.7 llançada en juny de 2026.
 
 ![Jocs fets amb Godot llançats en steam cada any. Font: steamdb.info](Memoria/Assets/Godot-Steam-Releases.png){height=5cm}
 
@@ -190,19 +190,19 @@ Després hi ha la pestanya de **millores** que es poden comprar. Es divideix en 
 
 #### UI/UX
 
-El joc té un estil pixel art on el personatge del jugador, l'arquer és molt petit i tota l'atenció de la pantalla la tenen la trajectòria de les fletxes i les dianes.
+El joc té un estil *pixel art* on el personatge del jugador, l'arquer és molt petit i tota l'atenció de la pantalla la tenen la trajectòria de les fletxes i les dianes.
 
-Es pot accedir als menú clicant els botons per a mostrar-los i ocultar-los.
+Es pot accedir als menús clicant els botons per a mostrar-los i ocultar-los.
 
-Una vegada es desbloquegen les fletxes s'obri un menú que mostra el dany de cada tipus de fletxa i conforme en compres s'incorporen.
+Una vegada es desbloquegen les fletxes s'obri un menú que mostra el dany de cada tipus de fletxa i segons en compres s'incorporen.
 
-Els menús resulten una mica molestos perquè tapen la pantalla del joc i no s'acaben de veure les fletxes, que son l'únic atractiu visual fora del fons de bosc. Els joc idle, com es vorà a continuació, solen tenir una interfície on la tenda de millores es troba a la dreta sense interrompre en l'escena del joc.
+Els menús resulten una mica molestos perquè tapen la pantalla del joc i no s'acaben de veure les fletxes, que són l'únic atractiu visual fora del fons de bosc. Els jocs *idle*, com es veurà a continuació, solen tenir una interfície on la tenda de millores es troba a la dreta sense interrompre en l'escena del joc.
 
 ![Captura de pantalla de Magic Archery. Font: itch.io](Memoria/Assets/AltresJocs/MagicArchery/MagicArchery-Joc.png){height=7cm}
 
 Les fletxes quan impacten en la diana els apareix el dany que li han inflingit amb el color del tipus de fletxa.
 
-La música és relaxant i promou l'amosfera màgica de bosc. Els efectes sonors el principi quan hi ha poques fletxes és agradable, però conforme es tenen moltes resulta molt molest. Cada fletxa sona diferent
+La música és relaxant i promou l'atmosfera màgica de bosc. Els efectes sonors el principi quan hi ha poques fletxes és agradable, però a mesura que es tenen moltes resulta molt molest. Cada fletxa sona diferent.
 
 ### [Cookie Clicker](https://cookieclicker.com)
 
@@ -262,14 +262,14 @@ Es pot veure l'adaptació de la interfície en mòbil en les figures \ref{fig:co
 
 La interfície és senzilla tant visualment com d'usar-la. Es pot veure ben diferenciades cada part d'aquesta:
 
-| Zona         | Funcionalitat                                                                              | Navegador                                                                              | Mòbil                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **Cookie**   | Mostra el marcador i és la zona interacutable per a guanyar galetes                        | Fer clic                                                                               | Fer tap                                                                   |
-| **Menú**     | Menú variat amb els botos per a veure: opcions, estadístiques, informació del joc i llegat | Tots en els botons en un mateix lloc                                                   | Desplega ten diferents apartats entre la pestanya de "`Stats`" i "`Misc`" |
-| **Recursos** | Disposició gràfica dels Edificis comprats                                                  | Quan hi ha més files que espai disponible en la pantalla es pot desplaçar verticalment | No apareix                                                                |
-| **Tenda**    | Mostra els articles que es poden comprar amb un clic d'Edificis i millores.                | Les millores al situar el ratolí es desplegar per a verue'n totes les disponibles      | Es separa en dues pantalles que per met desplaçar-te per la llista        |
-| **Anuncis**  | Anunci tipus *banner*                                                                      | No hi ha                                                                               | Hi ha en la versió gratuïta                                               |
-| **Especial** | Events estacionals                                                                         | No hi ha                                                                               | S'activa quan hi ha                                                       |
+| Zona         | Funcionalitat                                                                               | Navegador                                                                              | Mòbil                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Cookie**   | Mostra el marcador i és la zona interacutable per a guanyar galetes                         | Fer clic                                                                               | Fer tap                                                                   |
+| **Menú**     | Menú variat amb els botons per a veure: opcions, estadístiques, informació del joc i llegat | Tots en els botons en un mateix lloc                                                   | Desplega ten diferents apartats entre la pestanya de "`Stats`" i "`Misc`" |
+| **Recursos** | Disposició gràfica dels Edificis comprats                                                   | Quan hi ha més files que espai disponible en la pantalla es pot desplaçar verticalment | No apareix                                                                |
+| **Tenda**    | Mostra els articles que es poden comprar amb un clic d'Edificis i millores.                 | Les millores en situar el ratolí es despleguen per a veure'n totes les disponibles     | Es separa en dues pantalles que per met desplaçar-te per la llista        |
+| **Anuncis**  | Anunci tipus *banner*                                                                       | No hi ha                                                                               | Hi ha en la versió gratuïta                                               |
+| **Especial** | Esdeveniments estacionals                                                                   | No hi ha                                                                               | S'activa quan hi ha                                                       |
 : Comparativa interfície entre la versió de navegador de Cookie Clicker i la de mòbil
 
 #### Música i so
@@ -281,7 +281,7 @@ El joc en la seua versió mòbil està carent de música de cap mena i de sons n
 
 ### [Push The Square](https://asdehielo.itch.io/push-the-square)
 
-Joc indie desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publicat a itch.io en 2021. Tracta que un misteriós quadrat ha aparegut en ta casa i no fa res a banda de girar en el sentit de els agulles del rellotge. Gastaràs tots els teus estalvis assegurant-te que gire [@PushSquare].
+Joc *indie* desenvolupat per [Raúl Moreno Tamayo](https://asdehielo.itch.io) publicat a itch.io en 2021. Tracta que un misteriós quadrat ha aparegut en ta casa i no fa res a banda de girar en el sentit de les agulles del rellotge. Gastaràs tots els teus estalvis assegurant-te que gire [@PushSquare].
 
 #### Mecàniques i progressió
 
@@ -292,13 +292,13 @@ Es juga donant clic als botons de la part inferior:
 
 Les **millores** que es poden adquirir ajuden a generar més diners, tant per clic com passivament, redueix la fricció en girar el quadrat, per tat anirà més de pressa, o s'afigen elements decoratius a la pantalla.
 
-És un joc curt que es pot passar en menys de 10 minuts, no hi ha moltes millores i eventualment es generen diners i voltes molt ràpides sense esforç, ja que es pot deixar polsat el botó. El fet que siga curt no li lleva la gràcia, les millores són absurdes i es veu com la pantalla va omplint-se de ninots que fan una festa mentre es gira el quadrat. És un exemple absurdament condensat del gènere idle i funciona perfectament, fan ganes de jugar per a veure fins on arriba.
+És un joc curt que es pot passar en menys de 10 minuts, no hi ha moltes millores i eventualment es generen diners i voltes molt ràpides sense esforç, ja que es pot deixar polsat el botó. El fet que siga curt no li lleva la gràcia, les millores són absurdes i es veu com la pantalla va omplint-se de ninots que fan una festa mentre es gira el quadrat. És un exemple absurdament condensat del gènere *idle* i funciona perfectament, fan ganes de jugar per a veure fins on arriba.
 
 #### UI/UX
 
-El joc té un estil píxel art senzill, com també una interfície simple amb la tenda a la dreta com *Cookie clicker*. En les millores que pots comprar hi ha una descripció del que fan.
+El joc té un estil *píxel art* senzill, com també una interfície simple amb la tenda a la dreta com *Cookie clicker*. En les millores que pots comprar hi ha una descripció del que fan.
 
-No té versió mòbill com a tal, encara que es pot jugar en el navegador a itch.io amb el disposiu apaïsat.
+No té versió mòbil com a tal, encara que es pot jugar en el navegador a itch.io amb el dispositiu apaïsat.
 
 ![Pantalla del joc. Font: Push the Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-2.png){height=6cm}
 
@@ -343,7 +343,7 @@ Per a jugar al *Rhythm Paradise* no fa falta res més que girar la Nintendo vert
 
 Amb aquest hi ha 4 **gestos** que es poden fer: tocar, soltar, lliscar i tirar. Es poden practicar a la cafeteria.
 
-A cada minijoc seràs un personatge que es mourà al ritme que se li marque. Els botons no s’utilitzen a excepció del minijoc dels Rockers 2, que es gasten L o R (segons es siga esquerrà o dret) juntament amb l’stylus.
+A cada minijoc seràs un personatge que es mourà al ritme que se li marque. Els botons no s’utilitzen a excepció del minijoc dels Rockers 2, que es gasten L o R (segons se siga esquerrà o dret) juntament amb l’stylus.
 
 És una mecànica molt senzilla, però efectiva, no cal tindre molta destresa.
 
@@ -380,7 +380,7 @@ A la barra central del menú veiem opcions com: la *Cafetería*, el *Medallero*,
 
 És un joc 2D (menys per alguns minijocs) on trobem dos estils: el de les portades i el dels propis minijocs.
 
-Les **portades** tenen un estil més lliure, pot ser més geomètric, tenir diferents composicions, usar degradats... Mentre que els **jocs** tenen un *sprites* *cartoon* ximples, on el personatges i escenaris tenen unes línies i figures ben definides, acolorits segons la paleta del nivell.
+Les **portades** tenen un estil més lliure, pot ser més geomètric, tenir diferents composicions, usar degradats... Mentre que els **jocs** tenen un *sprites* *cartoon* ximples, on els personatges i escenaris tenen unes línies i figures ben definides, acolorits segons la paleta del nivell.
 
 Visualment és molt consistent, a pesar de tenir molts minijocs i cadascun anar de coses diferents, cadascun és fidel a la seua temàtica i encaixa en el conjunt.
 
@@ -419,9 +419,9 @@ S'exemplificarà a través de dos minijocs: *Aves Marciales* i *Remix 3*.
 
 \end{table}
 
-Pel que fa a les paletes, son de colors vius i funcionen bé en l'estètica del nivell, en aquestos casos verds per a simular l'entrenament militar de les aus i morats seductors dues execucions pensades per al mateix estil: un tango.
+Pel que fa a les paletes, són de colors vius i funcionen bé en l'estètica del nivell, en aquests casos verds per a simular l'entrenament militar de les aus i morats seductors dues execucions pensades per al mateix estil: un tango.
 
-Els *Remix* com tornem a veure les escenes dels minijocs que en formen part i escoltem les seues músiques, l'estil de cada aparició s'integra en l'estètica comuna. En el cas d'aquest 3r, tenen una estètica tradicional japonesa on veurem personatges amb kimono i flors de cirerer, mentre els personatges es mouen al ritme de la música tenyits dels colors morats i grocs.
+Els *Remix* com tornem a veure les escenes dels minijocs que en formen part i escoltem les seues músiques, l'estil de cada aparició s'integra en l'estètica comuna. En el cas d'aquest 3r, tenen una estètica tradicional japonesa on veurem personatges amb quimono i flors de cirerer, mentre els personatges es mouen al ritme de la música tenyits dels colors morats i grocs.
 
 Cal destacar també que com el joc és per a la Nintendo, l'acció es veu en la pantalla superior de la consola i el jugador interacciona en la inferior, la tàctil. En aquesta última només veurem un punter redó al tocar la pantalla amb l'stylus amb els colors de la paleta del nivell.
 
@@ -449,17 +449,17 @@ S'ha fet una petita anàlisi sobre una partitura:
 
 La presentació de la pantalla d’inici dels *Remix* està fet a l’estil 8 bit. La cançó en si és una **barreja d’estils** com puga ser tango, jazz, copla o folk.
 
-Se Senten trompetes, un saxo, una carraca, un cencerro, plats, piano, flautes… el que podria ser una mena de big band.
+Se senten trompetes, un saxo, una carraca, un cencerro, plats, piano, flautes… el que podria ser una mena de big band.
 
 La cançó està en subdivisió ternària. Es tracta d’un 6 per 8 i està en **La m**.
 
-Es senten dues parts separades d’un pont. Una possible estructura seria A-B-pont-B'-A.
+Se senten dues parts separades d’un pont. Una possible estructura seria A-B-pont-B'-A.
 
 En la primera part escoltem la trompeta acompanyada del que podria ser la big band, després dona pas al solo de saxo mentre el jugador fa tresillos.
 
-A continuació hi ha un pont on sonen els vents fusta que ens tornen a dur al la part de saxo. Acaba en el tema principal i la tornada de la trompeta.
+A continuació hi ha un pont on sonen els vents fusta que ens tornen a dur a la part de saxo. Acaba en el tema principal i la tornada de la trompeta.
 
-O podriem interpretar-ho com a A-B-A' i on abans havia distingit en A i B fer que siguen frases diferents.
+O podríem interpretar-ho com a A-B-A' i on abans havia distingit en A i B fer que siguen frases diferents.
 
 De tota manera tant la part de trompeta  o de saxo estan en La m, al canvi al vent fusta es produeix una modulació a la dominant, Mi m. Després torna a la tònica i acaba.
 
@@ -472,7 +472,7 @@ L'aplicació Forest és una aplicació de concentració que permet als usuaris f
 
 L'aplicació comença amb un tutorial de swipe? I et demana estar registrat o bé amb google o amb email. L'app et pregunta si vols que t'enviï notificacions i si li dius que sí apareix el toggle de permetre el permís. Té un pla de pagament
 
-L'estètica és 2D senzilla, colors vers, marrons, que evoquen la natura d'acord amb tota el imaginari d'un bosc.
+L'estètica és 2D senzilla, colors verds, marrons, que evoquen la natura d'acord amb tota el imaginari d'un bosc.
 
 #### So
 

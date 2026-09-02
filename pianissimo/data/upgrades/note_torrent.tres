@@ -9,4 +9,5 @@ display_name = "DATA_UPGRADES_NOTE_TORRENT"
 base_cost = 100
 cost_multiplier = 1.6
 max_level = 8
+requires_total_notes_earned = 750
 metadata/_custom_type_script = "uid://ugia523xnwc0"

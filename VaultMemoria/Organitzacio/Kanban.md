@@ -29,6 +29,7 @@ kanban-plugin: board
 - [ ] Publicar Assoliments Apple Store
 - [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
 - [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
+- [ ] Arreglar millora misteriosa que puga ser comprada quan esta locked #bug #l #dev
 
 
 ## Feedback Testing
@@ -50,6 +51,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] Corregir el que porte amb Salt #memo #i
 - [x] Embellecedor de nombres, Usar M, B T per a milio, bilio... com cookie clicker. En notes i costos #ui #nice-to-have #dev
 - [x] Settings notificació #nice-to-have
 - [x] Info detallada stats #nice-to-have #ui #dev
