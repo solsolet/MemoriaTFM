@@ -106,7 +106,7 @@ S'ha fet servir per a editar els son del joc, ja siga per a retallar, ajustar vo
 
 ### Musescore
 
-S'ha fet servir per a exportar de partitures l'audio en el format desitjat.
+S'ha fet servir per a exportar de partitures l'àudio en el format desitjat.
 
 ## Anàlisi de videojocs {#sec-analisi-videojocs}
 
@@ -125,14 +125,26 @@ Una vegada estiguen tots analitzats ajudarà al desenvolupament del videojoc del
 
 ## Proves
 
-%%TODO : explicar com s'ha testejat l'app%%
+Durant el desenvolupament el joc s'ha provat en 3 dispositius mòbils distints que es tenien a l'abast:
+
+- Redmi note 13 Pro + 5G: com a representació d'un mòbil Android actual i actualitzat.
+- Mi A1: Android vell més limitat.
+- iPhone 12: iOS actualitzat.
+
+En Android ha sigut senzill instal·lar el joc per a fer proves ràpides gràcies que en Godot si es connecta el mòbil en mode desenvolupador per USB, el detecta i amb un botó s'instal·la.
+
+En iOS, en canvi, s'havia d'exportar el projecte, obrir-lo amb Xcode i executar-lo en el dispositiu des d'ací.
+
+Fora de les proves durant el desenvolupament en les últimes instàncies del projecte es va fer una prova amb usuaris per tal de conéixer l'opinió i rebre retroalimentació del joc, a més de saber si funciona en distints dispositius mòbils.
+
 ### Dispositius
 
-L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells:
+L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han documentat els següents:
 
-| Nom                   | Marca  | SO      | RAM   | Pantalla | API |
-| --------------------- | ------ | ------- | ----- | -------- | --- |
-| Redmi note 13Pro + 5G | Xiaomi | Android | 12 GB |          | 35  |
-| Mi A1                 | Xiaomi | Android | 4 GB  | 5.5"     | 21  |
-| iPhone 12             | Apple  | iOS     |       |          |     |
-| Redmi 9               |        |         |       |          |     |
+| Nom                   | Marca   | SO      | API    | RAM   | Pantalla |
+| --------------------- | ------- | ------- | ------ | ----- | -------- |
+| Redmi note 13Pro + 5G | Xiaomi  | Android | 35     | 12 GB | 6.67"    |
+| Mi A1                 | Xiaomi  | Android | 21     | 4 GB  | 5.5"     |
+| iPhone 12             | Apple   | iOS     | 18.7.8 | 4 GB  | 6.1"     |
+| Redmi 9               | Xiaomi  | Android | 30     | 4 GB  | 6.53"    |
+| Samsung S10           | Samsung | Android | 31-32  | 8 GB  | 6.1"     |

@@ -547,6 +547,8 @@ S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur in
 
 De l'1 fins al 6 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
 
+S'ha fet gestions acadèmiques com demanar la defensa i emplenar documentació.
+
 Pel que fa a la memòria s'ha acabat quasi sencera.
 
 #### Tendes d'aplicacions
@@ -562,3 +564,5 @@ Les he hagut de trampejar amb Affinity reescalant les que ja tenia a mà. I no n
 Després de l'odissea d'intentar arribar a la mida que deixava després m'he topat amb què també havia de muntar captures en un iPad. Evidentment, la meua paciència no donava més de si i les imatges estan estirades horitzontalment.
 
 ![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Memoria/Assets/Pianissimo/It7/Pianissimo_AppStore_iPad.png)
+
+#### Proves amb usuaris
