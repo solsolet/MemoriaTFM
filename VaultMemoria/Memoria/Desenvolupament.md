@@ -44,7 +44,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 
 #### v0.4.0
 
-- Implementació dels connectors específics de cada tenda d'aplicacions al projecte de Godot.
+- Implementació dels connectors específics de cada botiga d'aplicacions al projecte de Godot.
 - Investigació de les especificacions dels connectors `godot-play-services` i `gamecenter` de Godot.
 - Façana comuna i *back-end* específic per a assoliments tant d'Android com d'iOS.
 - Implementació d'assoliments en la Play Store i App Store.
@@ -124,7 +124,7 @@ Durant la realització d'algunes tasques ja he anat experimentant que les he sub
 
 %% TODO : Posar imatge de solució GanttProject realista %%
 
-Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una tenda d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#changelog).
+Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una botiga d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#changelog).
 
 He donat per conclosa aquesta primera iteració quan he tingut les primeres peces d'aquest projecte i memòria per tal de no fer-la més llarga i així passar a un nou començament amb les idees més clares per a la següent.
 
@@ -168,9 +168,9 @@ En veure que funciona en dispositius reals, s'ha preparat correctament la config
 - S'ha muntat a la Play Store com una prova interna.
 - S'ha activat el Google Play App Signing.
 
-Pel que fa a iOS, Godot no et dona un arxiu que muntar a la tenda d'aplicacions tan fàcilment, sinó que et genera el projecte per a poder compilar-lo amb Xcode.
+Pel que fa a iOS, Godot no et dona un arxiu que muntar a la botiga d'aplicacions tan fàcilment, sinó que et genera el projecte per a poder compilar-lo amb Xcode.
 
-Em vaig posar en contacte amb Miguel Ángel perquè em fes una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la tenda no tenia els permisos necessaris.
+Em vaig posar en contacte amb Miguel Ángel perquè em fes una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la botiga no tenia els permisos necessaris.
 Com les proves es poden fer en el dispositiu sense problema, quan necessite muntar una versió li la puc passar a ell perquè la compile i munte sense problema.
 
 Finalment, amb la *build* muntada vaig poder provar l'aplicació amb *TestFlight*.
@@ -223,7 +223,7 @@ Entre els botons de *home* es troben:
 - **Idle**: porta a *game*.
 - **Focus**: portarà al mode Assaig. S'ha quedat en aquest nom temporal, però segurament canvie a assaig per a mantenir l'estètica musical.
 - **Configuració**: porta a *settings*.
-- **Assoliments**: portarà als assoliments, segons si és per a iOS o Android canviarà segons es connecte amb la tenda d'aplicacions.
+- **Assoliments**: portarà als assoliments, segons si és per a iOS o Android canviarà segons es connecte amb la botiga d'aplicacions.
 
 A *game* trobem el piano, les millores i estadístiques, el camp de notes i el marcador de notes junt els botons d'anar a *home* o *settings*. Per a veure el detall de com s'ha implementat es pot consultar el [GDD](GDD) a l'annex.
 
@@ -372,7 +372,7 @@ S'ha quedat una errada surant que aprofitant, ja que la resta ha sigut ràpid d'
 
 Aquesta iteració comprén del 18 al 21 d'agost de 2026. També ha sigut relativament ràpida encara que ha sigut la més costosa i desesperant de realitzar fins al moment.
 
-S'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la tenda corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna.
+S'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la botiga corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna.
 
 La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
 
@@ -529,7 +529,7 @@ Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una 
 
 ![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=4cm}
 
-*Scroll Container* arreglat per a la tenda de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
+*Scroll Container* arreglat per a la botiga de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
 
 S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depèn si la nota és *perfect* o *good*. S'ha fet usant `tween`
 
@@ -553,7 +553,7 @@ Pel que fa a la memòria s'ha acabat quasi sencera.
 
 #### Tendes d'aplicacions
 
-Aquesta iteració ha tingut els últims retocs de cada tenda. 
+Aquesta iteració ha tingut els últims retocs de cada botiga. 
 
 Pel que fa a l'App Store m'he barallat per a poder enviar l'aplicació a revisió molta estona perquè emplenar tota la pàgina és llarg i tediós, en lloc de dir-te quins camps són obligatoris per a emplenar, només ho pots saber quan li dones el botó d'enviar a revisió.
 

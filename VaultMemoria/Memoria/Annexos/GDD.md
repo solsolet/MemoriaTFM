@@ -191,7 +191,7 @@ Credits audio de prova:
 
 ## Integració segons SO
 
-Com el joc està pensat per a iOS i Android hi ha funcionalitats que s'han d'adaptar segons el SO i la seua tenda d'aplicacions.
+Com el joc està pensat per a iOS i Android hi ha funcionalitats que s'han d'adaptar segons el SO i la seua botiga d'aplicacions.
 
 ### Assoliments
 

@@ -22,7 +22,8 @@
     "UpgradeManager",
     "HBoxContainer",
     "idle",
-    "Redmi"
+    "Redmi",
+    "interactuable"
   ],
   "alwaysUpdateLinks": true
 }
