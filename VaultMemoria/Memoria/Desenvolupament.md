@@ -91,6 +91,16 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Arreglar *scroll* en Millores.
 - Correccions dels botons de tutorial.
 
+#### v0.7.0
+
+- Acabar la redacció dels següents apartats de la memòria: iteracions pendents, resums, metodologia, marc teòric i GDD.
+- Ajust de volums dels àudios del joc.
+- Noves millores.
+- Afegir pantalla de crèdits o llicències.
+- Compartir el joc per a fer proves amb usuaris i rebre retroalimentació.
+- Acabar dibuixos historieta inicial en `home`.
+- Fer logo per a `home`.
+- Aglutinar estadístiques en una pestanya d'usuari (?)
 
 ## Iteracions
 

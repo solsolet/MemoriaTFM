@@ -23,12 +23,10 @@ kanban-plugin: board
 - [ ] Diagrama Flux #memo
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
-- [ ] Tutorial joc bé #nice-to-have
-- [ ] Tutorial focus #ui
 - [ ] Publicar assoliments Play Store
 - [ ] Publicar Assoliments Apple Store
-- [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
-- [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
+- [ ] Afegir millora 2/4, 4/4 i 6/8 #nice-to-have #i #dev
+- [ ] Afegir millora sensible #nice-to-have
 
 
 ## Feedback Testing
@@ -36,8 +34,21 @@ kanban-plugin: board
 - [ ] Focus  marcar visualment sifailed o completed en journal. P.ex. fer el panel d'un color u altre  #ui #i #nice-to-have
 - [ ] Destacar notes que cauen per a tecles negres diferent de les blanques #ui #nice-to-have #i
 - [ ] Notes golden més shiny #ui #nice-to-have
+- [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
+- [ ] Tutorial focus #ui
+- [ ] Tutorial joc bé #nice-to-have
+- [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
 - [ ] Opció de llevar el popup dels numeritos? #ui #nice-to-have
 - [ ] Setting idioma?? #nice-to-have
+- [ ] Posar botó "i" en millores #ui #nice-to-have #l
+- [ ] Arreglar Toggles quan se li va el fondo #ui #l
+- [ ] Popup numeros més visible #ui #nice-to-have #i
+- [ ] Indicar què les hores notificacions + clares #ui #nice-to-have #i
+- [ ] Música repetitiva, afegir-ne més #nice-to-have #i
+- [ ] Pensar com remediar que al principi les stats tenen efecte pero en el late game no es nota molt #nice-to-have #ux
+- [ ] Al dejar la app en segundo plano mucho tiempo luego se cierra de golpe #bug #l
+- [ ] Saber stats actuales #nice-to-have #dev #ui #i
+- [ ] hora está desfasada -2 en Assaig #bug
 
 
 ## In Progress (5)
@@ -45,13 +56,12 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
-- [ ] Arreglar Submision Ap Store per a que deixe d'estar en draft
-- [ ] Passar correccions text a net #l
 
 
 ## Done
 
 **Complete**
+- [x] Passar correccions text a net #l
 - [x] Sol·licitar defensa #j
 - [x] Icones Stats #ui
 - [x] Arreglar millora misteriosa que puga ser comprada quan esta locked #bug #l #dev
@@ -122,6 +132,7 @@ kanban-plugin: board
 ## Archive
 
 - [x] lol @{2026-04-22} @@{11:45}
+- [ ] Arreglar Submision Ap Store per a que deixe d'estar en draft
 
 %% kanban:settings
 ```

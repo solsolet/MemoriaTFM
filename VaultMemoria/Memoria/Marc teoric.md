@@ -65,7 +65,7 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 %%TODO : Contar què son, quan tinga algo del mode concentració implementat, ocmentar si la música de fons pot aaportar a performejar millor%%
 
-**Exemples**: *Forest*.
+**Exemples**: *Forest*, *Habitica* i *Sleep Town*.
 
 ### Mercat de videojocs mòbils
 
