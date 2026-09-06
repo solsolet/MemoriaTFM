@@ -63,7 +63,45 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 ##### Productivitat
 
-%%TODO : Contar què son, quan tinga algo del mode concentració implementat, ocmentar si la música de fons pot aaportar a performejar millor%%
+En aquest apartat es comentarà sobre els videojocs i aplicacions de productivitat/seguiment de tasques o hàbits/concentració, fent les distincions oportunes.
+
+Primer s'ha de conéixer a què ens referim quan es parla de productivitat. El diccionari diu que és la relació entre la producció obtinguda i els factors utilitzats per a obtindre-la en un període de temps determinat https://www.avl.gva.es/lexicval/?paraula=productivitat.
+
+En el context d'una aplicació, siga un videojoc o no, una persona recorre a alguna per a ser productiu segons els paràmetres que puga oferir. Aquesta producció ocorre en el món real i en el virtual veiem una representació, per exemple:
+
+- *Habitica* ofereix una infraestructura per a gamificar hàbits i tasques (temps que es dedica en el món real) a canvi d'un progrés del teu personatge en forma d'experiència o monedes (recompensa virtual).
+- *Clockify* ofereix un seguiment de tasques per temps amb diferents paràmetres com etiquetes, projectes, si és monetitzable o no... Es pot crear una tasca que es vulga seguir del món real i en l'aplicació podem veure el temps que li hem dedicat ja siga per sessió, per interval de temps, jutament altres tasques que compartisquen projecte...
+
+Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. En canvi, una aplicació de productivitat a seques s'ha de preocupar que l'usuari s'enganxe ni de ser divertida.
+
+Algunes característiques que podem trobar generalment són:
+
+- Recompenses per complir una tasca/hàbit.
+- Progrés
+- Monitoratge de tasques i la seua compleció.
+- Motivació
+- Gamificació
+- Punts.
+- Reptes/assoliments
+
+https://dl.acm.org/doi/epdf/10.1145/3681716.3681717 Focus application and gamification (p.3 1a col ultimes coses)
+
+Comparació d'estrategies de les distintes apps:
+**Trello:** productivity through organization/task management  
+**Habitica:** productivity through task management + gamification  
+**Forest:** productivity through focus + gamification  
+**Study Bunny/Focus Quest:** productivity through focus + game/narrative systems
+
+%%TODO : comentar si la música de fons pot aaportar a performejar millor%%
+
+[https://www.proquest.com/docview/1022581492/fulltextPDF/2794B4606CBB4E72PQ/1?accountid=17192&sourcetype=Trade%20Journals](https://www.proquest.com/trade-journals/games-gamification-quest-learner-engagement/docview/1022581492/se-2?accountid=17192)
+
+Gamification can increase employee engagement by incorporating game-like elements into non-game contexts such as work, to create a more interactive and engaging experience
+
+Freedon to fail: The risk of faialure without punishment is engaging. Learners will explore and examine causes and effects if they know it's 
+ok to fail. [...] Don't trap the learner into always being correct because that doesn't happen in real life and it's not engaging. Take the lesson from games and encourage learning from failure.
+
+Feedback: is a critial element in learning.
 
 **Exemples**: *Forest*, *Habitica* i *Sleep Town*.
 
@@ -469,6 +507,9 @@ De tota manera, tant la part de trompeta o la de saxo estan en La m, al canvi a
 L'aplicació Forest és una aplicació de concentració que permet als usuaris fer seguiment de les seues tasques.
 
 #### Mecàniques i progressió
+
+https://ieeexplore.ieee.org/document/8979872 mirar d'ací per a vore si se'ns oblida algo
+
 #### UI/UX
 
 L'aplicació comença amb un tutorial de swipe? I et demana estar registrat o bé amb google o amb email. L'app et pregunta si vols que t'enviï notificacions i si li dius que sí apareix el toggle de permetre el permís. Té un pla de pagament

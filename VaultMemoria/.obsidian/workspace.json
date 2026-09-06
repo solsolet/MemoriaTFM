@@ -101,7 +101,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -160,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.6328125
+    "width": 304.6328125,
+    "collapsed": true
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -268,12 +269,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -288,12 +288,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "482886da16214086",
+  "active": "82fdb615d7f7b6b7",
   "lastOpenFiles": [
-    "Organitzacio/Kanban.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
+    "De tot/Videojoc.md",
     "Memoria/Desenvolupament.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Annexos.md",
     "().md",
     "Memoria/Assets/Metodologia",
@@ -334,7 +335,6 @@
     "Diari/2026-08-12.md",
     "Diari/2026-08-16.md",
     "Diari/2026-08-13.md",
-    "Diari/2026-07-24.md",
-    "Diari/2026-08-06.md"
+    "Diari/2026-07-24.md"
   ]
 }

@@ -396,7 +396,7 @@ Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assolim
 
 ##### Problemes
 
-Deferring, aplaçar, els canvis d'escena evita que s'actue sobre els notes que estan a mig usar quan es produeix el canvi. Sha d'aplicat en tots els canvis d'escena.
+Deferring, ajornar, els canvis d'escena evita que s'actue sobre les notes que estan a mig usar quan es produeix el canvi. S'ha d'aplicar en tots els canvis d'escena.
 
 ```gd
 	# Error can_process
@@ -559,7 +559,7 @@ De l'1 fins al 6 de setembre del 2026. En aquesta penúltima iteració s'intenta
 
 S'ha fet gestions acadèmiques com demanar la defensa i emplenar documentació.
 
-Pel que fa a la memòria s'ha acabat quasi sencera.
+Pel que fa a la memòria s'ha acabat quasi sencera. A l'apartat de metodologia només li faria falta anar afegint més dispositius quan la gent acabe de fer l'enquesta.
 
 #### Tendes d'aplicacions
 
@@ -576,3 +576,9 @@ Després de l'odissea d'intentar arribar a la mida que deixava després m'he top
 ![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Memoria/Assets/Pianissimo/It7/Pianissimo_AppStore_iPad.png)
 
 #### Proves amb usuaris
+
+S'ha passat l'aplicació a diferents usuaris així com una enquesta preguntant per diversos aspectes del joc. S'ha donat de termini preferentment de dijous a diumenge d'aquesta setmana, per tal de fer la següent iteració final que durara l'última setmana i corregir totes les errades que puga.
+
+Molts comentaris que veig els podia esperar, per tant, ja els tenia previstos d'anar arreglat els següents dies. No els vaig poder corregir abans per què en algun punt havia de compartir l'aplicació i quan més tardara menys temps tindria per poder corregir qualsevol comentari.
+
+El tauler Kanban s'ha afegit una columna *Feedback Testing* per a posar dedicadament les tasques que he de fer associades a la retroalimentació.

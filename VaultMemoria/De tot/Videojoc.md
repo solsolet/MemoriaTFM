@@ -5,4 +5,6 @@ Dos modes:
 - Idle: assatjar, farmeges tècnica
 - Gameplay: joc de ritme uses els punts de poder, tecnica... en una obra
 	- Si no ix eñ joc de rime: visuaal novel de com avances la teua travesia musical
-- RPG: roleges de music d'un instrument entre diversos a elegir
+- RPG: roleges de music d'un instrument entre diversos a elegir.
+
+Storytelling: necessite un objectiu clar i definit. tinc lo de voler aprovar els examens, ho he de contar.
