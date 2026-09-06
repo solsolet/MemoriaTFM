@@ -65,43 +65,42 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 En aquest apartat es comentarà sobre els videojocs i aplicacions de productivitat/seguiment de tasques o hàbits/concentració, fent les distincions oportunes.
 
-Primer s'ha de conéixer a què ens referim quan es parla de productivitat. El diccionari diu que és la relació entre la producció obtinguda i els factors utilitzats per a obtindre-la en un període de temps determinat https://www.avl.gva.es/lexicval/?paraula=productivitat.
+Primer s'ha de conéixer a què ens referim quan es parla de productivitat. El diccionari diu que és la relació entre la producció obtinguda i els factors utilitzats per a obtindre-la en un període de temps determinat [@DNVproductivitat].
 
-En el context d'una aplicació, siga un videojoc o no, una persona recorre a alguna per a ser productiu segons els paràmetres que puga oferir. Aquesta producció ocorre en el món real i en el virtual veiem una representació, per exemple:
+En el context d'una aplicació, siga un videojoc o no, una persona l'usa per a ser productiu segons els paràmetres que puga oferir. Aquesta producció ocorre en el món real i en el virtual veiem una representació, per exemple:
 
 - *Habitica* ofereix una infraestructura per a gamificar hàbits i tasques (temps que es dedica en el món real) a canvi d'un progrés del teu personatge en forma d'experiència o monedes (recompensa virtual).
 - *Clockify* ofereix un seguiment de tasques per temps amb diferents paràmetres com etiquetes, projectes, si és monetitzable o no... Es pot crear una tasca que es vulga seguir del món real i en l'aplicació podem veure el temps que li hem dedicat ja siga per sessió, per interval de temps, jutament altres tasques que compartisquen projecte...
 
-Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. En canvi, una aplicació de productivitat a seques s'ha de preocupar que l'usuari s'enganxe ni de ser divertida.
+Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. La gamificació és la pràctica de fer alguna activitat, fora del context dels videojocs, semblant a un joc per fer-la més interessant o disfrutable [@CambridgeDicctionary_Gamification].
 
-Algunes característiques que podem trobar generalment són:
+En canvi, una aplicació de productivitat a seques no s'ha de preocupar que l'usuari s'enganxe ni de ser divertida, encara que ho pot ser. Una aplicació de productivitat és una aplicació mòbil dissenyada per a ajudar els usuaris a concentrar-se en les seues tasques per reduir distraccions i fomentar una rutina de treballs més estructurada [@pavavimolFocusPlayExploring2024].
 
-- Recompenses per complir una tasca/hàbit.
-- Progrés
+Algunes **característiques** que podem trobar generalment són:
+
+- Recompenses per complir una tasca/hàbit (ítems, col·leccions, exclusivitat).
+- Sensació de progrés (barres de progrés, passos, mapes).
+- Sessions de concentració.
+- Bloquejar distraccions, com puga ser vetar l'accés a algunes aplicacions.
 - Monitoratge de tasques i la seua compleció.
-- Motivació
-- Gamificació
-- Punts.
-- Reptes/assoliments
+- Control del temps (compte enrere, rellotges).
+- Haver-hi alguna cosa que motive (reptes diaris, muntar de nivell).
+- Gamificació.
+- Narrativa/fil conductor.
+- Anar guanyant punts (d'experiència, en un marcador, d'habilitat).
+- Reconeixement (insígnies, medalles, assoliments, trofeus).
 
-https://dl.acm.org/doi/epdf/10.1145/3681716.3681717 Focus application and gamification (p.3 1a col ultimes coses)
+| Aplicació       | Estratègia de productivitat mitjançant   |
+| --------------- | ---------------------------------------- |
+| **Trello**      | Organització/seguiment de tasques        |
+| **Habitica**    | Seguiment de tasques + gamificació       |
+| **Forest**      | Concentració + gamificació               |
+| **Study Bunny** | Concentració + sistemes de joc/narrativa |
+: Comparació d'estratègies de les distintes apps
 
-Comparació d'estrategies de les distintes apps:
-**Trello:** productivity through organization/task management  
-**Habitica:** productivity through task management + gamification  
-**Forest:** productivity through focus + gamification  
-**Study Bunny/Focus Quest:** productivity through focus + game/narrative systems
+Un altre tret que es veuen en aquest tipus d'aplicacions és la llibertat de perdre: el risc de perdre sense cap càstig és atractiu per als jugadors. Provar noves tasques i fracassar en la seua compleció no té cap penalització, això transmet al jugador que està bé perdre, està bé intentar-ho. Atrapar a l'usuari en estar sempre fent-ho bé no és beneficiós, això no passa en la vida real i li resta atractiu. Igual que els jocs et donen més d'una oportunitat per a poder passar-te un nivell, es pot exportar la mateixa idea en una tasca, no passa res si t'enganyes o no la compleixes en el temps que tenies previst, ja ho tornaràs a intentar [@kappGAMESGAMIFICATIONQUEST2012].
 
-%%TODO : comentar si la música de fons pot aaportar a performejar millor%%
-
-[https://www.proquest.com/docview/1022581492/fulltextPDF/2794B4606CBB4E72PQ/1?accountid=17192&sourcetype=Trade%20Journals](https://www.proquest.com/trade-journals/games-gamification-quest-learner-engagement/docview/1022581492/se-2?accountid=17192)
-
-Gamification can increase employee engagement by incorporating game-like elements into non-game contexts such as work, to create a more interactive and engaging experience
-
-Freedon to fail: The risk of faialure without punishment is engaging. Learners will explore and examine causes and effects if they know it's 
-ok to fail. [...] Don't trap the learner into always being correct because that doesn't happen in real life and it's not engaging. Take the lesson from games and encourage learning from failure.
-
-Feedback: is a critial element in learning.
+I per acabar, mencionar que la retroalimentació és crítica per a l'aprenentatge, tots els jocs d'aquest tipus incorporen algun element que apel·le al jugador quan fa les coses bé.
 
 **Exemples**: *Forest*, *Habitica* i *Sleep Town*.
 

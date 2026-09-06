@@ -178,4 +178,5 @@ L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han
 | **POCO F7 Pro**           | Xiaomi  | Android | 36     | 12 GB | 6.67"    |
 | **Vivo V23**              | Vivo    | Android | 30     | 12 GB | 6.44"    |
 | **Samsung Galaxy A34**    | Samsung | Android | 36     | 8 GB  | 6.6"     |
+| **Redmi Note 12**         | Xiaomi  | Android | 33     | 8 GB  | 6.67"    |
 : Dispositius mòbils on s'ha provat Pianissimo
