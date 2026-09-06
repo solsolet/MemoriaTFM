@@ -64,11 +64,11 @@ Addicionalment, ha servit per al desenvolupament i organització d'aquest trebal
 - *Git*: detecta el repositori i permet control de versions.
 - *Kanban*: permet crear taulers Kanban amb certa configuració, l'he usat per al control de tasques.
 - *LanguageTool Integration*: marca errades ortogràfiques i gramaticals al text.
-- *Style settings*: controla el aspecte del tema d'Obsidian amb més paràmetres.
-- *TODOseq*: permet posar `TODO` al text ressaltats i els agrupa en una finestra lateral.
+- *Style settings*: controla l'aspecte del tema d'Obsidian amb més paràmetres.
+- *TODOseq*: permet posar `TODO` al text ressaltat i els agrupa en una finestra lateral.
 - *Zotero Integration*: inserta, importa citacions, bibliografia... de Zotero.
 
-![Aspecte d'Obsidian del tauler Kanban i el connector TODOseq](Memoria/Assets/Metodologia/Obsidian-aspect.png)]
+![Aspecte d'Obsidian del tauler Kanban i el connector TODOseq](Memoria/Assets/Metodologia/Obsidian-aspect.png){height=7cm}
 
 Els connectors que van amb **Zotero** s'han complementat amb l'extensió de Safari i l'aplicació d'escriptori. S'ha sincronitzat tot de manera que quan es guardara una referència al navegador, s'actualitzara la biblioteca automàticament i permetera usar-ho en Obsidian sense tornar a importar.
 

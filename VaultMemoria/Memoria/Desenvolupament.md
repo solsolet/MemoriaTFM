@@ -72,7 +72,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 	- Cartes ara de color lila.
 	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
 	- Game, nova *good-perfect* àrea visual per a saber on polsar quan la nota s'apropa al teclat.
-- Nous assoliments: `velocity_maxed`, `precision_maxed`, `technique_maxed`, `keyboard_maxed`, `all_stats_maxed`, `first_strict_session`, `session_10min`, `hour_in_a_day`, `ten_hours_in_a_week`, `focus_streak_3`, `focus_streak_10`, `hundred_sessions`, `ten_cards`, `all_cards`.
+- Nous assoliments: *velocity_maxed*, *precision_maxed*, *technique_maxed*, *keyboard_maxed*, *all_stats_maxed*, *first_strict_session*, *session_10min*, *hour_in_a_day*, *ten_hours_in_a_week*, *focus_streak_3*, *focus_streak_10*, *hundred_sessions*, *ten_cards*, *all_cards*.
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
 - *Toast* de benvinguda quan s'entra a `game`, informa de les notes guanyades.
@@ -239,7 +239,7 @@ A *game* trobem el piano, les millores i estadístiques, el camp de notes i el m
 
 En eixe moment es va decidir una estructura de carpetes inicial, on es podia veure *scenes*, *assets*, *scripts*, *ui* i *autoloads*. Després es mostrarà l'estat final de les carpetes en aquesta iteració, ja que segons les necessitats del moment es van anar creant més.
 
-![Estructra de carpetes final de la iteració 2](Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png){height=4cm}
+![Estructra de carpetes final de la iteració 2](Memoria/Assets/Pianissimo/It2/Pianissimo-folders-It2.png){height=3cm}
 
 Continuant amb la implementació, una vegada estaven les escenes, alguns elements de la interfície (botons, etiquetes...) es va preparar la **[internacionalització](#gdd-internacionalitzacio)**, perquè era una tasca senzilla i es podria provar el seu funcionament amb el poc text que es tenia de moment.
 
@@ -454,7 +454,7 @@ El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigu
 
 Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
 
-![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg){height=6cm}
+![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg){height=8cm}
 
 #### Projecte Godot
 
@@ -501,6 +501,7 @@ Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i 
 A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
 
 Una altra correcció del *manager* va ser arreglar que durant `game`la música quan acaba es parava per tal de fer que sempre sonara. Segons està el codi ara la música en bucle tota aquella  dins de `[musica1, musica2, ...]`.
+
 #### Affinity
 
 Les **icones** que apareixen en alguns botons del joc en un principi es tenia previst usar algunes d'alguna web d'icones de lliure ús o amb algun tipus de llicència permissiva. Al veure que les icones que m'agradaven o bé tenien cadascuna una llicència diferent o no m'agradavne les disponibles vaig pensar que seria més ràpid fer-les jo amb un programa que em permetera exportar-les com a SVG. Amb aquest format garanteix que es veurà bé a qualsevol resolució i a més les icones seràn més lleugeres que amb un PNG.
@@ -537,7 +538,7 @@ Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos si
 
 Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
 
-![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=4cm}
+![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=3cm}
 
 *Scroll Container* arreglat per a la botiga de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
 

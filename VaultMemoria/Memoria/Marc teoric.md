@@ -72,7 +72,7 @@ En el context d'una aplicació, siga un videojoc o no, una persona l'usa per a s
 - *Habitica* ofereix una infraestructura per a gamificar hàbits i tasques (temps que es dedica en el món real) a canvi d'un progrés del teu personatge en forma d'experiència o monedes (recompensa virtual).
 - *Clockify* ofereix un seguiment de tasques per temps amb diferents paràmetres com etiquetes, projectes, si és monetitzable o no... Es pot crear una tasca que es vulga seguir del món real i en l'aplicació podem veure el temps que li hem dedicat ja siga per sessió, per interval de temps, jutament altres tasques que compartisquen projecte...
 
-Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. La gamificació és la pràctica de fer alguna activitat, fora del context dels videojocs, semblant a un joc per fer-la més interessant o disfrutable [@CambridgeDicctionary_Gamification].
+Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. La gamificació és la pràctica de fer alguna activitat, fora del context dels videojocs, semblant a un joc per fer-la més interessant o disfrutable [@CambridgeDictionary_Gamification].
 
 En canvi, una aplicació de productivitat a seques no s'ha de preocupar que l'usuari s'enganxe ni de ser divertida, encara que ho pot ser. Una aplicació de productivitat és una aplicació mòbil dissenyada per a ajudar els usuaris a concentrar-se en les seues tasques per reduir distraccions i fomentar una rutina de treballs més estructurada [@pavavimolFocusPlayExploring2024].
 
@@ -168,7 +168,7 @@ Pel que fa al públic dels jocs *idle*, es veu que els usuaris d'aquest tipus de
 | **Adults**      | $7.18 bilions    | 54.4%           |
 | **Adolescents** | $3.7 bilions     | 28%             |
 | **Xiquets**     | $2.32 bilions    | 16.6%           |
-: Segments demogràfics i el seu valor de mercat dels jocs *idle
+: Segments demogràfics i el seu valor de mercat dels jocs *idle*
 
 El públic adult és el que encapçala el mercat dels jocs *idles*. Aquest públic, a causa de la seua independència econòmica i voluntat d'invertir a millorar l'experiència de joc, demostren els ingressos mitjans més alts per usuari entre els 32 $ - 45 $ anuals [@inteloIdleGamesMarket2025].
 
@@ -342,9 +342,7 @@ No té versió mòbil com a tal, encara que es pot jugar en el navegador a itch.
 
 En clicar en un botó, comprar una millora o guanyar diners sentirem un efecte sonor de l’acció. Quan es compra la millora de festa es pot sentir música dels altaveus que apareixen en l’escenari.
 
-![Estadístiques. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-1.png){height=6cm}
-
-![Pantalla final. Font: Push The Square](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-Credits.png){height=6cm}
+![Estadístiques i pantalla final. Font: *Push The Square*](Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-22.jpg){height=7cm}
 
 Al final el terra es trenca i es veu el quadrat flotar en l'espai en 3D mentre apareix el temps que s'ha tardat en passar-se el joc.
 
@@ -503,20 +501,57 @@ De tota manera, tant la part de trompeta o la de saxo estan en La m, al canvi a
 
 ### Forest {#sec-marc-teoric-forest}
 
-L'aplicació Forest és una aplicació de concentració que permet als usuaris fer seguiment de les seues tasques.
+L'aplicació Forest és una aplicació de concentració que permet als usuaris fer seguiment de les seues tasques. Va ser llançada per [Seektech](https://seekrtech.com/en/) l'any 2014. És una aplicació de descàrrega gratuïta, *free-to-play*, encara que compta amb un pla de pagament que inclou funcionalitats prèmium.
 
 #### Mecàniques i progressió
 
-https://ieeexplore.ieee.org/document/8979872 mirar d'ací per a vore si se'ns oblida algo
+La mecànica principal és **fer tasques** segons els paràmetres que esculla el jugador de:
+ 
+ - **Temps**: molt de temps es vol dedicar a la tasca. Segons el temps l'aspecte de la planta canvia, de més simple com menys temps a més complex com més temps. El mínim són 10 min i el màxim 3 hores.
+ - **Planta**: en polsar sobre la planta s'entra al menú de configuració de plantació i es pot elegir entre els models disponibles. Inicialment, hi ha 3 desbloquejats i la resta es podrà desbloquejar o bé amb monedes (*moneda blana*) o bé amb diamants (*moneda dura*).
+ - **Etiqueta** (opcional): hi ha unes predeterminades per elegir i si es vol posar alguna personalitzada s'ha de ser prèmium.
+ - Mode de **concentració**: pot ser temporitzador o cronòmetre. Ambdós compten amb alguns paràmetres per seleccionar, comparteixen el de *Deepfocus* què és un mode restrictiu per a no entrar en altres aplicacions.
+
+Quan completes una tasca, reps monedes com a recompensa proporcionals al teu temps d'estudi (més temps vol dir més monedes). Es pot duplicar la quantitat de monedes guanyades si es veu un anunci. A més, podràs veure en el teu jardí la planta que has cultivat. En cas en fracassar només tindràs una planta seca.
+
+Altres coses que té l'usuari en la seua mà és poder **comprar** noves plantes o música de fons. Totes ten uns preus elevats, costarà moltes tasques i molt de temps per a estalviar. Pot prendre's com una fita. El *pla gratuït* inclou altres accions com:
+
+- Analítiques de la concentració (dia/setmana/mes).
+- Reptes diaris i mensuals on es pot guanyar nous tipus d'arbres.
+- Sons d'ambient.
+- *Plant Together*, opció per a sincronitzar sessions de concentració amb amics, si algú falla falleu tots.
+- Esdeveniments estacionals.
+- Sincronització multiplataforma.
+
+Totes aquestes altres funcionalitats no s'han provat a fons perquè amb la funcionalitat bàsica l'aplicació és excel·lent i resulta prou inspiradora per al meu joc.
+
+A més, com a usuària em quede en la superfície, tinc un interés a fer un seguiment de tasques i amb què una aplicació faça bé eixa funcionalitat en tinc prou. He estat usuària de Forest durant molts moments de la meua vida, a l'institut, a la universitat per a alguns exàmens concrets, per al TFG... No he sigut mai constant, per a les meues necessitats he trobat altres aplicacions que m'encaixen millor, com *Clockify* o temporitzador de Pomodoros amb taulers o llistes de tasques, com *Trello*.
+
+Aquest fet no impedeix que és una de les aplicacions més descarregades de productivitat de totes les tendes d'aplicacions a més que a diferència d'altres, usant l'aplicació gratuïtament no hi ha anuncis invasius i tens accés a 6 funcionalitats sense restricció, l'aspecte *prèmium* és cosmètic i compta en les funcionalitats de:
+
+- Gamificació amb conseqüències.
+- Més configuració de concentració/bloquejador d'apps/temps de pantalla.
+- Activar les opcions del mode concentració.
+- Contribució en la seua iniciativa de plantar arbres de veritat a l'Àfrica.
+- Productivitat amb reforç positiu.
+- Funcionament sense accés a internet.
+
+Com a tal no hi ha progressió. L'usuari que la prove veurà que a mesura que vaja fent tasques anirà emplenant el jardí i eventualment anirà comprant diferents tipus de plantes.
 
 #### UI/UX
 
-L'aplicació comença amb un tutorial de swipe? I et demana estar registrat o bé amb google o amb email. L'app et pregunta si vols que t'enviï notificacions i si li dius que sí apareix el toggle de permetre el permís. Té un pla de pagament
+L'aplicació comença amb un tutorial on pots lliscar per a veure els diferents panels explicatius. Després et demana iniciar sessió o registrar-se, bé amb Google o bé amb email. A continuació et pregunta si vols que t'envie notificacions i si li dius que sí, apareix el *popup* del sistema per sol·licitar el permís.
 
-L'estètica és 2D senzilla, colors verds, marrons, que evoquen la natura d'acord amb tota el imaginari d'un bosc.
+L'estètica és 2D senzilla, colors verds, marrons, que evoquen la natura d'acord amb tot l'imaginari d'un bosc. Amb l'estètica de natura té una molt bona premissa per a l'usuari: cuida una planta, un ésser viu, en cas de no fer-ho morirà i serà culpa teua i veuràs el teu fracàs en el teu jardí, veuràs la planta seca \ref{fig:forest-fail}.
+
+![Arbre sec al fallar la sessió. Font: *Forest Press Kit* \label{fig:forest-fail}](Memoria/Assets/AltresJocs/Forest/Forest_Fail.png){height=2.5cm}
+
+Pel que fa a la interfície de l'aplicació és senzilla i molt intuïtiva com podem veure en algunes de les pantalles a \ref{fig:forest-screens}.
+
+![Aspecte de la interfície de Forest. Font: *Forest* \label{fig:forest-screens}](Memoria/Assets/AltresJocs/Forest/Forest_Screens.jpg){height=8cm}
 
 #### So
 
 El joc com a tal no té efectes de so al clicar els diferents elements de la pantalla, però sí que hi ha l'opció de posar so de fons, durant la tasca al clicar a l'icona dels auriculars.
 
-Els sons disponibles son relaxants i d'ambient. Son sons de fons que s'apropen als sorolls de tots els colors, blanc, marró, rosa... Per exemple, el so d'una cascada, un riu, el vent, etc. tenen unes freqüències que s'identifiquen en aquests tipus de so.
+Els sons disponibles són relaxants i d'ambient. Són sons de fons que s'apropen als sorolls de tots els colors, blanc, marró, rosa... P. ex. el so d'una cascada, un riu, el vent, etc. tenen unes freqüències que s'identifiquen en aquests tipus de so.

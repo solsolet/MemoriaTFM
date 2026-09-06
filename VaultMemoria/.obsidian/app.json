@@ -24,7 +24,9 @@
     "idle",
     "Redmi",
     "interactuable",
-    "Kanban"
+    "Kanban",
+    "velocity_maxed"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
 }
