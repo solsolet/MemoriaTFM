@@ -188,7 +188,7 @@ layout_mode = 2
 size_flags_horizontal = 5
 size_flags_vertical = 7
 theme_type_variation = &"BlackKeyButton_V"
-text = "HOME_ACHIEVEMENTS"
+text = "HOME_PROFILE"
 
 [node name="AlbumButton" type="Button" parent="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn"]
 auto_translate_mode = 1
@@ -225,4 +225,5 @@ vertical_alignment = 1
 [connection signal="pressed" from="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/IdleButton" to="." method="_on_idle_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/FocusButton" to="." method="_on_focus_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/AchievementsButton" to="." method="_on_achievements_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/PianoMenu/BlackKeysInset/BlackKeysColumn/AlbumButton" to="." method="_on_album_button_pressed"]

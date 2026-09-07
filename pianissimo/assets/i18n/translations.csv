@@ -5,6 +5,7 @@ GAME_TITLE,Pianissimo,Pianissimo,Pianissimo
 HOME_IDLE,Idle,Idle,Idle
 HOME_FOCUS,Assaig,Ensayo,Practise
 HOME_ACHIEVEMENTS,Assoliments,Logros,Achievements
+HOME_PROFILE,Perfil,Perfil,Profile
 HOME_ALBUM,Àlbum,Álbum,Album
 HOME_CREDITS,Crèdits,Créditos,Credits
 
@@ -67,6 +68,21 @@ PRACTISE_JOURNAL_EMPTY, Encara no hi ha assajos registrats., Aún no hay registr
 PRACTISE_JOURNAL_COMPLETED, Completada, Completada, Completed
 PRACTISE_JOURNAL_FAILED, Fallada, Fallada, Failed
 PRACTISE_JOURNAL_TODAY_WEEK_TOTALS, Hui: %dm   Aquesta setmana: %dm, Hoy: %dm   Esta semana: %dm, Today: %dm   This week: %dm
+
+PROFILE, Perfil, Perfil, Profile
+PROFILE_LEVEL,"Nivell %d","Nivel %d","Level %d"
+PROFILE_CARDS,"Cartes: %d / %d","Cartas: %d / %d","Cards: %d / %d"
+PROFILE_ACHIEVEMENTS,"Assoliments desbloquejats: %d","Logros desbloqueados: %d","Achievements unlocked: %d"
+PROFILE_FOCUS_TOTALS,"Avui: %dm  -  Aquesta setmana: %dm","Hoy: %dm  -  Esta semana: %dm","Today: %dm  -  This week: %dm"
+PROFILE_STATS_HEADER,"Les teves estadístiques","Tus estadísticas","Your stats"
+PROFILE_VIEW_ACHIEVEMENTS,"Veure assoliments","Ver logros","View achievements"
+LEVEL_UP_MESSAGE,"Nivell %d assolit: %s!","¡Nivel %d alcanzado: %s!","Level %d reached: %s!"
+
+ERA_BAROQUE, Barroc, Barroco, Baroque
+ERA_ROMANTICISM, Romanticisme, Romanticismo, Romanticism
+ERA_CLASSICISM, Classisisme, Clasicismo, Classicism
+ERA_IMPRESSIONISM, Impressionisme, Impresionismo, Impressionism
+ERA_XX_CENTURY, Segle XX, Siglo XX, XX century
 
 TUTORIAL_HELP, Ajuda, Ayuda, Help
 TUTORIAL_SKIP, Saltar, Saltar, Skip

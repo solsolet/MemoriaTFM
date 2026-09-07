@@ -12,6 +12,7 @@ const HOME_WHITE_KEY_LANES := [0, 2, 4, 5, 7, 9, 11]  # C, D, E, F, G, A, B
 
 func _ready() -> void:
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
+	#AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
 	
 	if not TutorialManager.has_been_seen("home_intro"):
 		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
@@ -49,7 +50,8 @@ func _on_settings_button_pressed() -> void:
 
 func _on_achievements_button_pressed() -> void:
 	AudioManager.play_note_hit(HOME_BLACK_KEY_LANES[3])
-	AchievementManager.show_achievements_ui()
+	#AchievementManager.show_achievements_ui()
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.PROFILE)
 
 func _on_album_button_pressed() -> void:
 	AudioManager.play_note_hit(HOME_BLACK_KEY_LANES[4])

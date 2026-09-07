@@ -72,8 +72,7 @@
               "title": "Desenvolupament"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.8333435058594
+    "width": 304.6328125
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -259,17 +258,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
     "Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png",
-    "Memoria/Annexos/Ten-Pager.md",
-    "Memoria/Annexos/GDD.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
     "Memoria/Abstract.md",
     "Output/_build_processed.md",
+    "Organitzacio/Kanban.md",
     "Memoria/Assets-Optimized/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets-Optimized/Metodologia/Obsidian-aspect.jpg",
@@ -295,7 +292,9 @@
     "Memoria/Llegenda.md",
     "Memoria/Justificacio i Objectius.md",
     "Memoria/Assets/Pianissimo/It6",
+    "Memoria/Annexos/GDD.md",
     "Memoria/Annexos.md",
+    "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Assets-Optimized/Pianissimo/It5",
     "Memoria/Assets-Optimized/Pianissimo/It2",
     "Memoria/Assets/Pianissimo/It3.md",

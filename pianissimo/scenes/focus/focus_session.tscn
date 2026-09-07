@@ -49,11 +49,13 @@ alignment = 1
 
 [node name="TitleLabel" type="Label" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_vertical = 6
 theme_type_variation = &"TitleLabel"
 text = "PRACTISE_SESSION"
 horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="MusicToggleButton" type="CheckButton" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
