@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyhmpinr58t7h"
+path="res://.godot/imported/Sonata No.1 Fm III.mp3-1b8c83a8ffd54b8bf0f718e969e9f953.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/music/Sonata No.1 Fm III.mp3"
+dest_files=["res://.godot/imported/Sonata No.1 Fm III.mp3-1b8c83a8ffd54b8bf0f718e969e9f953.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

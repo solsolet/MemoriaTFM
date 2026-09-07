@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelDefinition" load_steps=2 format=3 uid="uid://dnthfvr74xioi"]
+
+[ext_resource type="Script" uid="uid://gsfxmjbgc1vq" path="res://resources/level_definition.gd" id="1_j4elq"]
+
+[resource]
+script = ExtResource("1_j4elq")
+level_number = 4
+era_name = "ERA_CLASSICISM"
+notes_required = 100000
+stat_investment_required = 6
+unlocked_tracks = Array[String](["Sonata No.1 Fm III.mp3"])
+metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

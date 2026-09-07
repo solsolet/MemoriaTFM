@@ -10,7 +10,8 @@ extends Control
 
 
 func _ready() -> void:
-	AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
+	#AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
+	AudioManager.ensure_playlist_playing(["menu1.mp3"])
 
 	level_label.text = tr("PROFILE_LEVEL") % LevelManager.current_level()
 	cards_label.text = tr("PROFILE_CARDS") % [SaveManager.data.unlocked_cards.size(), CardManager.get_all_ids().size()]
@@ -22,7 +23,7 @@ func _ready() -> void:
 	var totals := _focus_totals()
 	focus_label.text = tr("PROFILE_FOCUS_TOTALS") % [totals.x / 60, totals.y / 60]
 
-	view_achievements_button.pressed.connect(func(): AchievementManager.show_achievements_ui())
+	view_achievements_button.pressed.connect(_on_achievements_button_pressed)
 	back_button.pressed.connect(func(): get_tree().call_deferred("change_scene_to_file", ScenePaths.HOME))
 
 
@@ -55,3 +56,8 @@ func _focus_totals() -> Vector2i:
 			today += secs
 			
 	return Vector2i(today, week)
+
+
+func _on_achievements_button_pressed() -> void:
+	AudioManager.play_ui_click()
+	AchievementManager.show_achievements_ui()

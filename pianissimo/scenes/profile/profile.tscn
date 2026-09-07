@@ -5,8 +5,13 @@
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="3_jvc4n"]
 
 [node name="Profile" type="Control" node_paths=PackedStringArray("level_label", "cards_label", "achievements_label", "view_achievements_button", "focus_label", "stats_container", "back_button")]
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_x4tjc")
 level_label = NodePath("SafeArea/Layout/LevelLabel")
 cards_label = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/CardsLabel")
@@ -17,44 +22,71 @@ stats_container = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/StatsC
 back_button = NodePath("SafeArea/Layout/BackButton")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_xyg2x")
 stretch_mode = 6
 
 [node name="SafeArea" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 50
 script = ExtResource("3_jvc4n")
 
 [node name="Layout" type="VBoxContainer" parent="SafeArea"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
 
 [node name="TitleLabel" type="Label" parent="SafeArea/Layout"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_type_variation = &"TitleLabel"
 text = "PROFILE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="SafeArea/Layout"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 
 [node name="LevelLabel" type="Label" parent="SafeArea/Layout"]
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "PROFILE_LEVEL"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="SafeArea/Layout"]
+custom_minimum_size = Vector2(300, 400)
 layout_mode = 2
 size_flags_vertical = 3
+horizontal_scroll_mode = 0
 
 [node name="ContentColumn" type="VBoxContainer" parent="SafeArea/Layout/ScrollContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/separation = 16
 
 [node name="CardsLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "PROFILE_CARDS"
 
 [node name="AchievementsLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "PROFILE_ACHIEVEMENTS"
 
 [node name="ViewAchievementsButton" type="Button" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
@@ -62,16 +94,26 @@ layout_mode = 2
 text = "PROFILE_VIEW_ACHIEVEMENTS"
 
 [node name="FocusLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "PROFILE_FOCUS_TOTALS"
+autowrap_mode = 3
 
 [node name="StatsHeaderLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
 layout_mode = 2
+theme_type_variation = &"Title2Label"
 text = "PROFILE_STATS_HEADER"
 
 [node name="StatsContainer" type="VBoxContainer" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="BackButton" type="Button" parent="SafeArea/Layout"]
 layout_mode = 2
 text = "BACK_BUTTON"
+
+[node name="Control" type="Control" parent="SafeArea/Layout"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2

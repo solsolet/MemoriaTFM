@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgg281c8itneg"
+path="res://.godot/imported/Etude Fm op.10 No.9.mp3-21c8a2c4bed68a3a7807415a5a556b46.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/music/Etude Fm op.10 No.9.mp3"
+dest_files=["res://.godot/imported/Etude Fm op.10 No.9.mp3-21c8a2c4bed68a3a7807415a5a556b46.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -33,7 +33,7 @@ func _check_level_up(_notes: int) -> void:
 
 		var toast := WELCOME_BACK_TOAST_SCENE.instantiate() as WelcomeBackToast
 		get_tree().root.add_child(toast)
-		toast.show_message(tr("LEVEL_UP_MESSAGE") % [def.level_number, tr(def.era_name)], Color("#FFD34D"))
+		toast.show_message(tr("LEVEL_UP_MESSAGE") % [def.level_number, tr(def.era_name)], Color("695000ff"))
 
 		leveled_up.emit(def.level_number, def)
 

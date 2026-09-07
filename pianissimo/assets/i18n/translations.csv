@@ -79,8 +79,8 @@ PROFILE_VIEW_ACHIEVEMENTS,"Veure assoliments","Ver logros","View achievements"
 LEVEL_UP_MESSAGE,"Nivell %d assolit: %s!","¡Nivel %d alcanzado: %s!","Level %d reached: %s!"
 
 ERA_BAROQUE, Barroc, Barroco, Baroque
-ERA_ROMANTICISM, Romanticisme, Romanticismo, Romanticism
 ERA_CLASSICISM, Classisisme, Clasicismo, Classicism
+ERA_ROMANTICISM, Romanticisme, Romanticismo, Romanticism
 ERA_IMPRESSIONISM, Impressionisme, Impresionismo, Impressionism
 ERA_XX_CENTURY, Segle XX, Siglo XX, XX century
 

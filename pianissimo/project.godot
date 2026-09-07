@@ -35,7 +35,7 @@ AudioManager="*res://autoload/audio_manager.gd"
 AchievementManager="*res://autoload/achievement_manager.tscn"
 NotificationManager="*res://autoload/notification_manager.tscn"
 GodotPlayGameServices="*res://addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd"
-LevelManager="*res://autoload/level_manager.gd"
+LevelManager="*res://autoload/level_manager.tscn"
 
 [display]
 

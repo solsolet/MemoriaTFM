@@ -23,7 +23,7 @@ func _ready() -> void:
 		white_keys_column.get_child(i).pressed.connect(
 			func(): AudioManager.play_note_hit(HOME_WHITE_KEY_LANES[i])
 		)
-	achievements_button.pressed.connect(_on_achievements_button_pressed)
+	# achievements_button.pressed.connect(_on_achievements_button_pressed)
 	_update_album_badge()
 
 

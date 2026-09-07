@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelDefinition" load_steps=2 format=3 uid="uid://dhy58l3xfgo4v"]
+
+[ext_resource type="Script" uid="uid://gsfxmjbgc1vq" path="res://resources/level_definition.gd" id="1_4q5yl"]
+
+[resource]
+script = ExtResource("1_4q5yl")
+level_number = 8
+era_name = "ERA_IMPRESSIONISM"
+notes_required = 1000000000
+stat_investment_required = 14
+metadata/_custom_type_script = "uid://gsfxmjbgc1vq"
