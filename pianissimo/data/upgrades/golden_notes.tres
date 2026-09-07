@@ -6,6 +6,7 @@
 script = ExtResource("1_bxy3t")
 id = "golden_notes"
 display_name = "DATA_UPGRADES_GOLDEN_NOTES"
+description = "DATA_UPGRADES_GOLDEN_NOTES_DESC"
 base_cost = 777
 cost_multiplier = 1.77
 max_level = 10

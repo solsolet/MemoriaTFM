@@ -3,6 +3,7 @@ class_name UpgradeDefinition
 
 @export var id: String = ""
 @export var display_name: String = ""
+@export var description: String = ""
 @export var icon: Texture2D
 @export var base_cost: int = 10
 @export var cost_multiplier: float = 1.12 # costarà 1.12 més per nivell, ho farà exponencial

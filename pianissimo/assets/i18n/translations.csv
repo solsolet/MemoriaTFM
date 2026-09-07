@@ -96,13 +96,21 @@ DATA_STATS_TECHNIQUE, Tècnica, Técnica, Technique
 DATA_STATS_TECHNIQUE_DESC, "Com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat. En el cas pràctic del joc es traduirà en major bonificació en encetar notes perfectes", "Como bien puedes interpretar una obra. No sólo se trata de pulsar notas sino de atinar también la articulación y la sonoridad. En el caso práctico del juego se traducirá en mayor bonificación al empezar notas perfectas", "It is about how well you interpret a piece. It is not just a matter of hitting the notes, but also nailing the articulation and tone. In practical gameplay terms, this translates into a higher bonus for hitting perfect notes."
 
 DATA_UPGRADES_AUTOTAP, Auto-Tap, Auto-Tap, Auto Tap
+DATA_UPGRADES_AUTOTAP_DESC,"Colpeja automàticament la nota més propera cada cert temps. Compra més nivells per fer-ho més sovint.","Golpea automáticamente la nota más cercana cada cierto tiempo. Compra más niveles para hacerlo más a menudo.","Automatically taps the nearest note at a set interval. Buy more levels to do it more often."
 DATA_UPGRADES_MULTIPLIER, Multiplicador, Multiplicador, Multipler
+DATA_UPGRADES_MULTIPLIER_DESC,"Multiplica les notes que guanyes per cada toc encertat.","Multiplica las notas que ganas por cada toque acertado.","Multiplies the notes you earn on every successful tap."
 DATA_UPGRADES_METRONOME, Metrònom, Metrónomo, Metronome
+DATA_UPGRADES_METRONOME_DESC,"Amplia el marge de temps per encertar una nota amb precisió.","Amplía el margen de tiempo para acertar una nota con precisión.","Widens the timing window for landing an accurate hit."
 DATA_UPGRADES_NOTE_TORRENT, Torrent Musical, Torrente Musical, Notes Torrent
+DATA_UPGRADES_NOTE_TORRENT_DESC,"Fa que caiguin notes amb més freqüència.","Hace que caigan notas con más frecuencia.","Makes notes fall more frequently."
 DATA_UPGRADES_GOLDEN_NOTES, Notes daurades, Notas doradas, Godlen Notes
+DATA_UPGRADES_GOLDEN_NOTES_DESC,"Desbloqueja notes daurades que et donen una gran recompensa en tocar-les. Puja de nivell per veure-les més sovint.","Desbloquea notas doradas que dan una gran recompensa al tocarlas. Sube de nivel para verlas más a menudo.","Unlocks golden notes that give a big reward when tapped. Level up to see them more often."
 DATA_UPGRADES_THIRD, Tercera, Tercera, Third
+DATA_UPGRADES_THIRD_DESC,"Genera notes de forma passiva cada segon, encara que no toquis.","Genera notas de forma pasiva cada segundo, aunque no toques.","Passively generates notes every second, even while you're not tapping."
 DATA_UPGRADES_FIFTH, Quinta, Quinta, Fifth
+DATA_UPGRADES_FIFTH_DESC,"Genera més notes passives per segon que la Tercera.","Genera más notas pasivas por segundo que la Tercera.","Generates more passive notes per second than the Third."
 DATA_UPGRADES_OCTAVE, Octava, Octava, Octave
+DATA_UPGRADES_OCTAVE_DESC,"Genera la major quantitat de notes passives per segon.","Genera la mayor cantidad de notas pasivas por segundo.","Generates the largest amount of passive notes per second."
 
 DATA_ACHIEVEMENTS_FIRST_STEPS, Primer Assaig,Primer Ensayo,First Steps
 DATA_ACHIEVEMENTS_FIRST_STEPS_DESC, Completa el teu primer assaig,Completa tu primer ensayo,Complete your first focus session

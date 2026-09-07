@@ -6,6 +6,7 @@
 script = ExtResource("1_cqn0a")
 id = "fifth"
 display_name = "DATA_UPGRADES_FIFTH"
+description = "DATA_UPGRADES_FIFTH_DESC"
 base_cost = 500
 cost_multiplier = 1.5
 max_level = 15

@@ -1,6 +1,8 @@
 extends Button
 class_name UpgradeCard
 
+const DETAIL_POPUP_SCENE = preload("res://scenes/common/detail_popup/detail_popup.tscn")
+
 var upgrade_id: String = ""
 
 @export var icon_rect: TextureRect
@@ -33,3 +35,11 @@ func refresh() -> void:
 func _on_pressed() -> void:
 	AudioManager.play_ui_click()
 	UpgradeManager.purchase(upgrade_id)
+
+
+func _on_info_button_pressed() -> void:
+	AudioManager.play_ui_click()
+	var def := UpgradeManager.get_definition(upgrade_id)
+	var popup := DETAIL_POPUP_SCENE.instantiate() as DetailPopup
+	get_tree().root.add_child(popup)
+	popup.setup(def.display_name, def.description)

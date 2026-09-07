@@ -6,6 +6,7 @@
 script = ExtResource("1_gf1e4")
 id = "octave"
 display_name = "DATA_UPGRADES_OCTAVE"
+description = "DATA_UPGRADES_OCTAVE_DESC"
 base_cost = 800
 cost_multiplier = 1.8
 max_level = 15

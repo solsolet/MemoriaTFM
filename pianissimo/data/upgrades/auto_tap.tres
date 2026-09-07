@@ -6,6 +6,7 @@
 script = ExtResource("1_3ow8b")
 id = "auto_tap"
 display_name = "DATA_UPGRADES_AUTOTAP"
+description = "DATA_UPGRADES_AUTOTAP_DESC"
 base_cost = 100
 cost_multiplier = 1.2
 metadata/_custom_type_script = "uid://ugia523xnwc0"
