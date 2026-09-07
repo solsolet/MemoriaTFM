@@ -212,16 +212,13 @@ Aquesta iteració s'ha centrat a aconseguir una versió del joc bàsica, tipus *
 
 Abans de començar a picar codi es va intentar agrupar a forma d'esquema alguns esbossos i arquitectura del que seria el joc:
 
-%%TODO : explicar i passat a net%%
+![Diagrames inicials en brut. Per ordre de esquerra-dreta dalt-baix: esquema de singletons, idees UI 2-5, idees UI 1, pas de prototip *grayboxed* a v0.2.0](Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png)
 
-![[Diagrama_Singleton_Paper.jpg]]
+Pel que fa a la interfície el mode *idle* del joc tenia clar l'estructura d'un piano on les notes cauen i en algun costat tenir les millores. Per a la pantalla inicial hi havia més dubtes, moltes aplicacions tenen una estructura similar l'esborrany 3. En aquesta sol haver-hi una filera de botons per costat que porten a la tenda, a reptes diaris, a ofertes especials, a ruletes o coses d'atzar que donen premis... Personalment, no m'agrada, és molt genèrica i en principi el joc no tindrà tantes coses per a repartir-les en tants apartats.
 
-![[Diagrama_SistemesGame_It2_Paper.jpg]]
+L'esquema dels *managers* es va fer pensant en els apartats que necessitarien ser singleton per estar funcionant durant tota l'aplicació o evitar duplicitats. No era molt concret, es plantejava quines necessitats es podria tenir en el projecte i eventualment a mesura que s'anaren implementant s'aniria especificant.
 
-![[Pianissimo_MockupUI_paper.jpg]]
-
-![[Pianissimo_MockupUI_paper2.jpg]]
-
+Finalment, l'esquema de l'evolució tractava d'intentar posar ordre de com estava el projecte funcional en el codi mal fet a com podríem anant encaminant-lo.
 #### Projecte Godot
 
 Després de pensar quin aspecte tindria el joc i quins sistemes hauria de tindre, es va començar amb la creació de les escenes **home** i **game**.

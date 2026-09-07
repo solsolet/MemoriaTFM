@@ -61,7 +61,6 @@ kanban-plugin: board
 ## Done
 
 **Complete**
-- [x] Arreglar CheckButton quan se li va el fondo #ui #l
 - [x] Passar correccions text a net #l
 - [x] Sol·licitar defensa #j
 - [x] Icones Stats #ui
@@ -124,6 +123,7 @@ kanban-plugin: board
 ## Feedback Done
 
 **Complete**
+- [x] Arreglar CheckButton quan se li va el fondo #ui #l
 - [x] Spawn números al polsar correctament una tecla amb la recompensa corresponenent #nice-to-have #i #ui
 - [x] SFX per a "i" botó i afegir click a tots les botons que faltaven #nice-to-have #i
 

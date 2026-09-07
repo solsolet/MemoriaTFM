@@ -25,7 +25,8 @@
     "Redmi",
     "interactuable",
     "Kanban",
-    "velocity_maxed"
+    "velocity_maxed",
+    "singleton"
   ],
   "alwaysUpdateLinks": true,
   "promptDelete": false
