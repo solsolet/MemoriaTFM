@@ -553,7 +553,7 @@ S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur in
 
 ### Iteració 7
 
-De l'1 fins al 6 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
+De l'1 fins al 7 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
 
 S'ha fet gestions acadèmiques com demanar la defensa i emplenar documentació.
 
@@ -584,3 +584,9 @@ El tauler Kanban s'ha afegit una columna *Feedback Testing* per a posar dedicada
 Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar l'aplicació, en canvi, per iOS no s'ha tingut massa sort, i damunt en els que s'ha provat fora del meu dispositiu de proves el so no anava. Aquesta errada no l'he entesa molt bé perquè per defecte el so està activat i com a mi sempre m'ha anat quan he fet les proves amb Xcode o quan l'he baixat de *test flight* em vaig quedar bloquejada.
 
 No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i es veu estupendament, wl disseny suporta dimensions grans, està ben fet doncs.
+
+### Iteració 8
+
+Aqeusta iteació comprén del 8 al 15 de setembre de 2026.
+
+S'ha afegit una escena de perfil del jugador.

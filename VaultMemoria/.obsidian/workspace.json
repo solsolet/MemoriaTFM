@@ -72,7 +72,8 @@
               "title": "Desenvolupament"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -258,15 +259,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "c6c908a97980f287",
   "lastOpenFiles": [
+    "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png",
     "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
     "Memoria/Abstract.md",
     "Output/_build_processed.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Assets-Optimized/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets-Optimized/Metodologia/Obsidian-aspect.jpg",
@@ -277,7 +278,6 @@
     "Memoria/Assets-Optimized/AltresJocs/Forest/Forest_Fail.jpg",
     "Pasted image 20260907003037.png",
     "Memoria/Assets/AltresJocs/Forest/Forest_Fail.png",
-    "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-15-49-845_cc.forestapp.jpg",
     "Memoria/Assets/Metodologia",
     "Memoria/Bibliografia.md",
     "Sense títol.md",
