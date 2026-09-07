@@ -583,3 +583,7 @@ S'ha passat l'aplicació a diferents usuaris així com una enquesta preguntant p
 Molts comentaris que veig els podia esperar, per tant, ja els tenia previstos d'anar arreglat els següents dies. No els vaig poder corregir abans per què en algun punt havia de compartir l'aplicació i quan més tardara menys temps tindria per poder corregir qualsevol comentari.
 
 El tauler Kanban s'ha afegit una columna *Feedback Testing* per a posar dedicadament les tasques que he de fer associades a la retroalimentació.
+
+Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar l'aplicació, en canvi, per iOS no s'ha tingut massa sort, i damunt en els que s'ha provat fora del meu dispositiu de proves el so no anava. Aquesta errada no l'he entesa molt bé perquè per defecte el so està activat i com a mi sempre m'ha anat quan he fet les proves amb Xcode o quan l'he baixat de *test flight* em vaig quedar bloquejada.
+
+No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i es veu estupendament, wl disseny suporta dimensions grans, està ben fet doncs.

@@ -41,7 +41,6 @@ kanban-plugin: board
 - [ ] Opció de llevar el popup dels numeritos? #ui #nice-to-have
 - [ ] Setting idioma?? #nice-to-have
 - [ ] Posar botó "i" en millores #ui #nice-to-have #l
-- [ ] Arreglar Toggles quan se li va el fondo #ui #l
 - [ ] Popup numeros més visible #ui #nice-to-have #i
 - [ ] Indicar què les hores notificacions + clares #ui #nice-to-have #i
 - [ ] Música repetitiva, afegir-ne més #nice-to-have #i
@@ -56,11 +55,13 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
+- [ ] Esbrinar perquè falla el so en iPhone laura #bug #dev #j
 
 
 ## Done
 
 **Complete**
+- [x] Arreglar CheckButton quan se li va el fondo #ui #l
 - [x] Passar correccions text a net #l
 - [x] Sol·licitar defensa #j
 - [x] Icones Stats #ui

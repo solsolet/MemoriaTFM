@@ -71,37 +71,8 @@
               "icon": "lucide-file",
               "title": "Desenvolupament"
             }
-          },
-          {
-            "id": "82a2da8815f0a19d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memoria/Marc teoric.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Marc teoric"
-            }
-          },
-          {
-            "id": "f7bb3cbe3ef61239",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memoria/Metodologia.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Metodologia"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -287,12 +258,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "c55d40714af84ba1",
   "lastOpenFiles": [
-    "Output/_build_processed.md",
-    "Memoria/Assets-Optimized/AltresJocs/PushTheSquare/PushSquare-22.jpg",
+    "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
+    "Memoria/Abstract.md",
+    "Output/_build_processed.md",
+    "Organitzacio/Kanban.md",
+    "Memoria/Assets-Optimized/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets-Optimized/Metodologia/Obsidian-aspect.jpg",
     "Memoria/Assets-Optimized/Metodologia/GitHub-commits.jpg",
@@ -304,8 +278,6 @@
     "Memoria/Assets/AltresJocs/Forest/Forest_Fail.png",
     "Memoria/Assets/AltresJocs/Forest/Screenshot_2026-08-21-20-15-49-845_cc.forestapp.jpg",
     "Memoria/Assets/Metodologia",
-    "Memoria/Desenvolupament.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Bibliografia.md",
     "Sense títol.md",
     "Memoria/Objectius.md",

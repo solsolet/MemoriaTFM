@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=81 format=4 uid="uid://dt2kc553fw26"]
+[gd_resource type="Theme" load_steps=82 format=4 uid="uid://dt2kc553fw26"]
 
 [ext_resource type="FontFile" uid="uid://cwk246stpi62q" path="res://assets/fonts/NotoSerif-SemiBoldItalic.ttf" id="1_6tukj"]
 [ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/icons/cercle.svg" id="1_g1fjd"]
@@ -3530,6 +3530,23 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 expand_margin_bottom = 15.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao5vj"]
+content_margin_left = 20.0
+content_margin_top = 15.0
+content_margin_right = 20.0
+content_margin_bottom = 15.0
+bg_color = Color(1, 0.7019608, 0.47843137, 1)
+border_width_left = 5
+border_width_top = 10
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.23921569, 0.43529412, 0.7490196, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_bottom = 10.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ty1u5"]
 content_margin_left = 20.0
 content_margin_top = 15.0
@@ -3999,6 +4016,7 @@ CheckButton/icons/unchecked_disabled_mirrored = SubResource("DPITexture_b6qw3")
 CheckButton/icons/unchecked_mirrored = SubResource("DPITexture_8hapq")
 CheckButton/styles/focus = SubResource("StyleBoxEmpty_6tukj")
 CheckButton/styles/hover = SubResource("StyleBoxFlat_v1noe")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxFlat_ao5vj")
 CheckButton/styles/normal = SubResource("StyleBoxFlat_ty1u5")
 CheckButton/styles/pressed = SubResource("StyleBoxFlat_byjbl")
 ConfirmationDialog/colors/title_color = Color(0.39880723, 0.17221117, 0.15135005, 1)
