@@ -6,10 +6,14 @@
 
 - Implemetació format de nombres a milers, milions, bilions... amb K, M, B...
 - Desbloqueig per condicions a les Millores.
+- Descripcions en Millores.
 - Icones en Estadístiques.
+- Pantalla de Perfil on es poden veure les estadístiques.
+- Sistema de nivells amb nova música per al mode `idle`.
 
 ### Fixed
 
+- Solucionar estat dels `CheckButtons` on es tornava transparent.
 
 
 ## [v0.6.0] - 2026-08-31

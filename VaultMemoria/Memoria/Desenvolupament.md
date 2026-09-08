@@ -218,6 +218,8 @@ Pel que fa a la interfície el mode *idle* del joc tenia clar l'estructura d'un 
 
 L'esquema dels *managers* es va fer pensant en els apartats que necessitarien ser singleton per estar funcionant durant tota l'aplicació o evitar duplicitats. No era molt concret, es plantejava quines necessitats es podria tenir en el projecte i eventualment a mesura que s'anaren implementant s'aniria especificant.
 
+![Diagrama singletons inical](Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png)
+
 Finalment, l'esquema de l'evolució tractava d'intentar posar ordre de com estava el projecte funcional en el codi mal fet a com podríem anant encaminant-lo.
 #### Projecte Godot
 

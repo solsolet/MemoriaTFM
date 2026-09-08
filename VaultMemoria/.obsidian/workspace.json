@@ -244,7 +244,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,9 +262,11 @@
   },
   "active": "c6c908a97980f287",
   "lastOpenFiles": [
+    "Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png",
+    "Memoria/Desenvolupament.md",
+    "Pasted image 20260908111249.png",
     "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png",
-    "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
     "Memoria/Abstract.md",
@@ -276,8 +279,6 @@
     "Memoria/Assets-Optimized/Metodologia",
     "Memoria/Assets-Optimized/AltresJocs/Forest/Forest_Screens.jpg",
     "Memoria/Assets-Optimized/AltresJocs/Forest/Forest_Fail.jpg",
-    "Pasted image 20260907003037.png",
-    "Memoria/Assets/AltresJocs/Forest/Forest_Fail.png",
     "Memoria/Assets/Metodologia",
     "Memoria/Bibliografia.md",
     "Sense títol.md",
