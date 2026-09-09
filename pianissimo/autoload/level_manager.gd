@@ -5,11 +5,11 @@ signal leveled_up(level_number: int, def: LevelDefinition)
 const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/common/welcome_back_toast/welcome_back_toast.tscn")
 const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
 const ERA_MILESTONES := {
-	2: {"achievement": "baroque_master", "card": "era_baroque_fact", "lore": "lore_baroque"},
-	4: {"achievement": "classicism_master", "card": "era_classicism_fact", "lore": "lore_classicism"},
-	6: {"achievement": "romanticism_master", "card": "era_romanticism_fact", "lore": "lore_romanticism"},
-	8: {"achievement": "impressionism_master", "card": "era_impressionism_fact", "lore": "lore_impressionism"},
-	10: {"achievement": "twentieth_century_master", "card": "era_20th_century_fact", "lore": "lore_20th_century"},
+	2: {"achievement": "baroque_master", "card": "era_baroque", "lore": "lore_baroque"},
+	4: {"achievement": "classicism_master", "card": "era_classicism", "lore": "lore_classicism"},
+	6: {"achievement": "romanticism_master", "card": "era_romanticism", "lore": "lore_romanticism"},
+	8: {"achievement": "impressionism_master", "card": "era_impressionism", "lore": "lore_impressionism"},
+	10: {"achievement": "twentieth_century_master", "card": "era_20th_century", "lore": "lore_20th_century"},
 }
 
 @export var definitions: Array[LevelDefinition] = []
