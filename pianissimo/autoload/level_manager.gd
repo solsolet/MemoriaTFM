@@ -12,7 +12,6 @@ const ERA_MILESTONES := {
 	10: {"achievement": "twentieth_century_master", "card": "era_20th_century_fact", "lore": "lore_20th_century"},
 }
 
-
 @export var definitions: Array[LevelDefinition] = []
 
 

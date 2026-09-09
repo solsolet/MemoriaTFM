@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_xyg2x"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="3_jvc4n"]
 
-[node name="Profile" type="Control" node_paths=PackedStringArray("level_label", "cards_label", "achievements_label", "view_achievements_button", "focus_label", "stats_container", "back_button")]
+[node name="Profile" type="Control" node_paths=PackedStringArray("level_label", "cards_label", "achievements_label", "view_achievements_button", "focus_label", "stats_container", "passive_rate_label", "back_button")]
 custom_minimum_size = Vector2(300, 300)
 layout_mode = 3
 anchors_preset = 15
@@ -19,6 +19,7 @@ achievements_label = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/Ach
 view_achievements_button = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/ViewAchievementsButton")
 focus_label = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/FocusLabel")
 stats_container = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/StatsContainer")
+passive_rate_label = NodePath("SafeArea/Layout/ScrollContainer/ContentColumn/PassiveRateLabel")
 back_button = NodePath("SafeArea/Layout/BackButton")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -99,6 +100,9 @@ layout_mode = 2
 theme_type_variation = &"Title2Label"
 text = "PROFILE_FOCUS_TOTALS"
 autowrap_mode = 3
+
+[node name="PassiveRateLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
+layout_mode = 2
 
 [node name="StatsHeaderLabel" type="Label" parent="SafeArea/Layout/ScrollContainer/ContentColumn"]
 layout_mode = 2

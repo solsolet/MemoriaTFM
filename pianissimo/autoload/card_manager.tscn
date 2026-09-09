@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxmm73l3c48me"]
+[gd_scene load_steps=13 format=3 uid="uid://bxmm73l3c48me"]
 
 [ext_resource type="Script" uid="uid://cb6lp05ddwevl" path="res://autoload/card_manager.gd" id="1_2yo8l"]
 [ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="2_0lcwv"]
@@ -8,9 +8,13 @@
 [ext_resource type="Resource" uid="uid://0xsx1ic7wc8b" path="res://data/cards/mozart.tres" id="6_vy5o2"]
 [ext_resource type="Resource" uid="uid://cb7w5uo83drio" path="res://data/cards/piano.tres" id="7_juee0"]
 [ext_resource type="Resource" uid="uid://bi8tvlu5wg4us" path="res://data/cards/wtc_fact.tres" id="8_hr0ay"]
+[ext_resource type="Resource" uid="uid://bycf0afy7ucxv" path="res://data/cards/era_baroque.tres" id="9_vy5o2"]
+[ext_resource type="Resource" uid="uid://cwtelyfdyyvm4" path="res://data/cards/era_classicism.tres" id="10_juee0"]
+[ext_resource type="Resource" uid="uid://dsnop84xqsirr" path="res://data/cards/era_romanticism.tres" id="11_hr0ay"]
+[ext_resource type="Resource" uid="uid://ba8dhe1xv8mhm" path="res://data/cards/era_xx_century.tres" id="12_ray6o"]
 
 [node name="CardManager" type="Node"]
 auto_translate_mode = 1
 script = ExtResource("1_2yo8l")
-definitions = Array[ExtResource("2_0lcwv")]([ExtResource("3_fgy4v"), ExtResource("4_enavl"), ExtResource("5_nwhwk"), ExtResource("6_vy5o2"), ExtResource("7_juee0"), ExtResource("8_hr0ay")])
-random_pool_excluded_ids = Array[String](["era_baroque"])
+definitions = Array[ExtResource("2_0lcwv")]([ExtResource("3_fgy4v"), ExtResource("4_enavl"), ExtResource("5_nwhwk"), ExtResource("6_vy5o2"), ExtResource("7_juee0"), ExtResource("8_hr0ay"), ExtResource("9_vy5o2"), ExtResource("10_juee0"), ExtResource("11_hr0ay"), ExtResource("12_ray6o")])
+random_pool_excluded_ids = Array[String](["era_baroque", "era_classicism", "era_romanticism", "era_impressionism", "era_xx_century"])

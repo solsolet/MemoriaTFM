@@ -6,6 +6,7 @@ extends Control
 @export var view_achievements_button: Button
 @export var focus_label: Label
 @export var stats_container: VBoxContainer
+@export var passive_rate_label: Label
 @export var back_button: Button
 
 
@@ -16,6 +17,7 @@ func _ready() -> void:
 	level_label.text = tr("PROFILE_LEVEL") % LevelManager.current_level()
 	cards_label.text = tr("PROFILE_CARDS") % [SaveManager.data.unlocked_cards.size(), CardManager.get_all_ids().size()]
 	achievements_label.text = tr("PROFILE_ACHIEVEMENTS") % SaveManager.data.unlocked_achievements.size()
+	passive_rate_label.text = tr("PROFILE_PASSIVE_RATE") % UpgradeManager.total_passive_rate()
 
 	for stat_id in StatManager.get_all_ids():
 		stats_container.add_child(_build_stat_row(stat_id))

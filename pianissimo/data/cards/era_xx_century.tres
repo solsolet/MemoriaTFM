@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://ba8dhe1xv8mhm"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_dnltw"]
+
+[resource]
+script = ExtResource("1_dnltw")
+id = "era_xx_century"
+display_name = "DATA_CARDS_ERA_20TH_CENTURY"
+category = 2
+description = "DATA_CARDS_ERA_20TH_CENTURY_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

@@ -1,7 +1,8 @@
-[gd_resource type="Theme" load_steps=82 format=4 uid="uid://dt2kc553fw26"]
+[gd_resource type="Theme" load_steps=83 format=4 uid="uid://dt2kc553fw26"]
 
 [ext_resource type="FontFile" uid="uid://cwk246stpi62q" path="res://assets/fonts/NotoSerif-SemiBoldItalic.ttf" id="1_6tukj"]
 [ext_resource type="Texture2D" uid="uid://d1lydg7gh1xhw" path="res://assets/sprites/icons/cercle.svg" id="1_g1fjd"]
+[ext_resource type="FontFile" uid="uid://b2df4v16x2km" path="res://assets/fonts/NotoSerif-Bold.ttf" id="2_3xb56"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv78t"]
 content_margin_left = 20.0
@@ -4049,6 +4050,10 @@ ProgressBar/constants/outline_size = 11
 ProgressBar/font_sizes/font_size = 60
 ProgressBar/styles/background = SubResource("StyleBoxFlat_agaqe")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_vpiha")
+RichTextLabel/colors/default_color = Color(0.6509804, 0.29803923, 0.28627452, 1)
+RichTextLabel/font_sizes/bold_font_size = 50
+RichTextLabel/font_sizes/normal_font_size = 40
+RichTextLabel/fonts/bold_font = ExtResource("2_3xb56")
 SpinBox/colors/down_icon_modulate = Color(0.875, 0.875, 0.875, 1)
 SpinBox/colors/up_icon_modulate = Color(0.875, 0.875, 0.875, 1)
 SpinBox/constants/buttons_vertical_separation = 10

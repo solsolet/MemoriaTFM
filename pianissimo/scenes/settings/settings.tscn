@@ -210,6 +210,12 @@ layout_mode = 2
 theme_type_variation = &"FlatButton"
 text = "SETTINGS_PRACTISE_TUTORIAL"
 
+[node name="CreditsButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_vertical = 10
+text = "CREDITS"
+
 [node name="BackButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
 auto_translate_mode = 1
 layout_mode = 2
@@ -220,4 +226,5 @@ text = "BACK_BUTTON"
 layout_mode = 2
 size_flags_vertical = 3
 
+[connection signal="pressed" from="SafeAreaContainer/Layout/SettingsContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="SafeAreaContainer/Layout/SettingsContainer/BackButton" to="." method="_on_back_button_pressed"]
