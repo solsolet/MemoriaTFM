@@ -15,7 +15,6 @@ kanban-plugin: board
 - [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
 - [ ] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
-- [ ] Posar pantalla de crèdits en alguna banda i posar llicència de la tipografia #i
 
 
 ## To Do (10)
@@ -27,8 +26,6 @@ kanban-plugin: board
 - [ ] Publicar Assoliments Apple Store
 - [ ] Afegir millora 2/4, 4/4 i 6/8 #nice-to-have #i #dev
 - [ ] Afegir millora sensible #nice-to-have
-- [ ] Afegir cartes
-- [ ] Afegir assolemtns de les cartes era
 - [ ] saver si les cartes era es poden posar més comodament i no copiar a ma el stirng dels id
 
 
@@ -38,8 +35,8 @@ kanban-plugin: board
 - [ ] Destacar notes que cauen per a tecles negres diferent de les blanques #ui #nice-to-have #i
 - [ ] Notes golden més shiny #ui #nice-to-have
 - [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
-- [ ] Tutorial focus #ui
-- [ ] Tutorial joc bé #nice-to-have
+- [ ] Tutorial focus #ui #j
+- [ ] Tutorial joc bé #j  #nice-to-have
 - [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
 - [ ] Opció de llevar el popup dels numeritos? #ui #nice-to-have
 - [ ] Setting idioma?? #nice-to-have
@@ -56,12 +53,17 @@ kanban-plugin: board
 - [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
-- [ ] Música repetitiva, afegir-ne més #nice-to-have #i
 
 
 ## Done
 
 **Complete**
+- [x] Posar pantalla de crèdits en alguna banda i posar llicència de la tipografia #i
+- [x] Afegir assolemtns de les cartes període #i #dev #nice-to-have
+- [x] Afegir cartes període #nice-to-have #i #dev
+- [x] Música repetitiva, afegir-ne més
+	[] falta impressionisme
+	#nice-to-have #i
 - [x] Passar correccions text a net #l
 - [x] Sol·licitar defensa #j
 - [x] Icones Stats #ui

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmvbl5o0ieskq"
+path="res://.godot/imported/Barcarolle No.1 Am I.mp3-35424f385b83da869a9b2321ca219079.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/music/Barcarolle No.1 Am I.mp3"
+dest_files=["res://.godot/imported/Barcarolle No.1 Am I.mp3-35424f385b83da869a9b2321ca219079.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

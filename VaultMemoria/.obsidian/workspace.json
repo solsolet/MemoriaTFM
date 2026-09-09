@@ -73,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -259,7 +259,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "94d175d2df51557a",
   "lastOpenFiles": [
     "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",

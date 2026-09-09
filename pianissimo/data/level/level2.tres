@@ -6,6 +6,7 @@
 script = ExtResource("1_4orbv")
 level_number = 2
 era_name = "ERA_BAROQUE"
-notes_required = 20
+notes_required = 1000
+stat_investment_required = 2
 unlocked_tracks = Array[String](["Fugue No.2 Cm.mp3"])
 metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

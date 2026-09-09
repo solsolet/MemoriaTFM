@@ -163,20 +163,22 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 | Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
 : Efectes de so de Pianissimo
 
-| Nom             | Descripció                        | Àudio                           |
-| --------------- | --------------------------------- | ------------------------------- |
-| Menú            | Música que sona de fons en *home* | https://freesound.org/s/621130/ |
-| Barroc1         | Fuga en Do m de J. S. Bach        |                                 |
-| Barroc2         |                                   |                                 |
-| Classicisme1    |                                   |                                 |
-| Classicisme2    |                                   |                                 |
-| Romanticisme1   |                                   |                                 |
-| Romaticisme2    |                                   |                                 |
-| Impressionisme1 |                                   |                                 |
-| Impressionisme2 |                                   |                                 |
+| Nom             | Descripció                        | Compositor | Àudio                                                                                                                              |
+| --------------- | --------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Menú            | Música que sona de fons en *home* |            | https://freesound.org/s/621130/                                                                                                    |
+| Barroc1         | Preludi en Dm                     | J. S. Bach |                                                                                                                                    |
+| Barroc2         | Fuga en Do m                      | J. S. Bach |                                                                                                                                    |
+| Classicisme1    | Sonanta no.1 Fm, Op.2 no. 1 I     | Beethoven  | https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/                                                               |
+| Classicisme2    | Sonanta no.1 Fm, Op.2 no. 1 III   | Beethoven  | https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/                                                               |
+| Romanticisme1   | Etude Op.10, no.9 Fm              | Chopin     | https://musopen.org/music/610-etudes-op-10/                                                                                        |
+| Romaticisme2    | Barcarolle No. 1 Am, Op.26 I      | Fauré      | https://musopen.org/music/485-barcarolle-no-1-op-26/                                                                               |
+| Impressionisme1 | La fille aux chaveux de lin       | Debussy    | https://imslp.eu/files/imglnks/euimg/7/73/IMSLP704772-PMLP2394-No.8._La_fille_aux_cheveux_de_lin_(A_moça_dos_cabelos_de_linho).mp3 |
+| Impressionisme2 |                                   |            |                                                                                                                                    |
 : Música de Pianissimo
 
 El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.
+
+A excepció de la cançó del menú la resta les he tocades totes durant la meua etapa al conservatori. Moltes obres són la mateixa, però diferents moviments, com és el cas de la fuga i preludi i de la sonata.
 
 #### Audios prova
 
