@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://c0epjgoqicvbq"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_1wjw1"]
+
+[resource]
+script = ExtResource("1_1wjw1")
+id = "xx_century_master"
+display_name = "DATA_ACHIEVEMENTS_20TH_CENTURY_MASTER"
+description = "DATA_ACHIEVEMENTS_20TH_CENTURY_MASTER_DESC"
+android_id = "CgkInrHOzokbEAIQHA"
+ios_id = "xx_century_master"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

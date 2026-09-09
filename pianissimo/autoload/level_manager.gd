@@ -9,7 +9,7 @@ const ERA_MILESTONES := {
 	4: {"achievement": "classicism_master", "card": "era_classicism", "lore": "lore_classicism"},
 	6: {"achievement": "romanticism_master", "card": "era_romanticism", "lore": "lore_romanticism"},
 	8: {"achievement": "impressionism_master", "card": "era_impressionism", "lore": "lore_impressionism"},
-	10: {"achievement": "twentieth_century_master", "card": "era_20th_century", "lore": "lore_20th_century"},
+	10: {"achievement": "xx_century_master", "card": "era_20th_century", "lore": "lore_20th_century"},
 }
 
 @export var definitions: Array[LevelDefinition] = []
