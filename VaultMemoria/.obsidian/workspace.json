@@ -244,8 +244,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,17 +259,17 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c6c908a97980f287",
+  "active": "82fdb615d7f7b6b7",
   "lastOpenFiles": [
     "Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png",
-    "Memoria/Desenvolupament.md",
-    "Pasted image 20260908111249.png",
+    "Output/_build_processed.md",
+    "Memoria/Assets-Optimized/Pianissimo/Diagrames/diagrames_bruts.jpg",
     "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png",
+    "Memoria/Desenvolupament.md",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",
     "Memoria/Abstract.md",
-    "Output/_build_processed.md",
     "Memoria/Assets-Optimized/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets/AltresJocs/PushTheSquare/PushSquare-22.jpg",
     "Memoria/Assets-Optimized/Metodologia/Obsidian-aspect.jpg",
@@ -279,6 +278,7 @@
     "Memoria/Assets-Optimized/Metodologia",
     "Memoria/Assets-Optimized/AltresJocs/Forest/Forest_Screens.jpg",
     "Memoria/Assets-Optimized/AltresJocs/Forest/Forest_Fail.jpg",
+    "Pasted image 20260907003037.png",
     "Memoria/Assets/Metodologia",
     "Memoria/Bibliografia.md",
     "Sense títol.md",

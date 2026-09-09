@@ -327,9 +327,9 @@ Quan es va aconseguir solucionar-ho tot s'hi van afegir algunes funcions per a r
 
 #### Investigació
 
-Es va consultar molta documentació per a veure en quin format es podria emmagatzemar les dades de l'usuari. Pel que vaig llegir per al me cas em convindria un **recurs propi** en el cas de les dades del joc i un **CofigFile** per als ajustos que tinga el jugador en *settings*, a pesar que ene la primera versió espgueti vaig usar un JSON.
+Es va consultar molta documentació per a veure en quin format es podria emmagatzemar les dades de l'usuari. Pel que vaig llegir per al meu cas em convindria un **recurs propi** en el cas de les dades del joc i un **CofigFile** per als ajustos que tinga el jugador en *settings*, a pesar que ene la primera versió *espagueti* vaig usar un JSON.
 
-https://uhiyama-lab.com/en/notes/godot/save-load-system/
+Els millors tipus de recursos durant el desenvolupament que es poden usar són els `.tres`, ja que són fàcils de llegir, encara que seria interessant en un futur quan tinga els valors de cada recurs tancat, passar-los a `.res`, a binari, per a la distribució a usuaris que són molt més ràpids i xicotets [@GodotImplementingLoad2025]. 
 
 ### Iteració 3
 
@@ -587,8 +587,14 @@ Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar 
 
 No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i es veu estupendament, wl disseny suporta dimensions grans, està ben fet doncs.
 
+TODO : anotar algunes de les observacions.
+
 ### Iteració 8
 
 Aqeusta iteació comprén del 8 al 15 de setembre de 2026.
 
 S'ha afegit una escena de perfil del jugador.
+
+TODO : posar quines coses estem implementant
+
+TODO : explicar reunió breument
