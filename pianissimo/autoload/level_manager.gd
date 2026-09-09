@@ -3,6 +3,15 @@ extends Node
 signal leveled_up(level_number: int, def: LevelDefinition)
 
 const WELCOME_BACK_TOAST_SCENE = preload("res://scenes/common/welcome_back_toast/welcome_back_toast.tscn")
+const TUTORIAL_OVERLAY_SCENE = preload("res://scenes/tutorial/tutorial_overlay.tscn")
+const ERA_MILESTONES := {
+	2: {"achievement": "baroque_master", "card": "era_baroque_fact", "lore": "lore_baroque"},
+	4: {"achievement": "classicism_master", "card": "era_classicism_fact", "lore": "lore_classicism"},
+	6: {"achievement": "romanticism_master", "card": "era_romanticism_fact", "lore": "lore_romanticism"},
+	8: {"achievement": "impressionism_master", "card": "era_impressionism_fact", "lore": "lore_impressionism"},
+	10: {"achievement": "twentieth_century_master", "card": "era_20th_century_fact", "lore": "lore_20th_century"},
+}
+
 
 @export var definitions: Array[LevelDefinition] = []
 
@@ -26,6 +35,15 @@ func _check_level_up(_notes: int) -> void:
 	var stat_total := StatManager.get_level("velocity") + StatManager.get_level("precision") + StatManager.get_level("technique") + StatManager.get_level("keyboard")
 	if SaveManager.data.total_notes_earned >= def.notes_required and stat_total >= def.stat_investment_required:
 		SaveManager.data.player_level = def.level_number
+		
+		if ERA_MILESTONES.has(def.level_number):
+			var milestone: Dictionary = ERA_MILESTONES[def.level_number]
+			AchievementManager.unlock(milestone["achievement"])
+			CardManager.unlock_specific_card(milestone["card"])
+			var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
+			get_tree().root.add_child(overlay)
+			overlay.setup(milestone["lore"])
+		
 		SaveManager.save_data()
 		for track in def.unlocked_tracks:
 			if not SaveManager.data.unlocked_tracks.has(track):

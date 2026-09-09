@@ -13,3 +13,4 @@
 auto_translate_mode = 1
 script = ExtResource("1_2yo8l")
 definitions = Array[ExtResource("2_0lcwv")]([ExtResource("3_fgy4v"), ExtResource("4_enavl"), ExtResource("5_nwhwk"), ExtResource("6_vy5o2"), ExtResource("7_juee0"), ExtResource("8_hr0ay")])
+random_pool_excluded_ids = Array[String](["era_baroque"])

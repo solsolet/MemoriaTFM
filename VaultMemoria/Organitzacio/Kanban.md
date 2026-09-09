@@ -27,6 +27,9 @@ kanban-plugin: board
 - [ ] Publicar Assoliments Apple Store
 - [ ] Afegir millora 2/4, 4/4 i 6/8 #nice-to-have #i #dev
 - [ ] Afegir millora sensible #nice-to-have
+- [ ] Afegir cartes
+- [ ] Afegir assolemtns de les cartes era
+- [ ] saver si les cartes era es poden posar més comodament i no copiar a ma el stirng dels id
 
 
 ## Feedback Testing

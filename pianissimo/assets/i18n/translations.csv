@@ -77,6 +77,11 @@ PROFILE_FOCUS_TOTALS,"Avui: %dm  -  Aquesta setmana: %dm","Hoy: %dm  -  Esta sem
 PROFILE_STATS_HEADER,"Les teves estadístiques","Tus estadísticas","Your stats"
 PROFILE_VIEW_ACHIEVEMENTS,"Veure assoliments","Ver logros","View achievements"
 LEVEL_UP_MESSAGE,"Nivell %d assolit: %s!","¡Nivel %d alcanzado: %s!","Level %d reached: %s!"
+PROFILE_PASSIVE_RATE,"Notes passives: %.1f/s","Notas pasivas: %.1f/s","Passive notes: %.1f/s"
+PROFILE_STAT_VELOCITY,"%.2fs entre notes","%.2fs entre notas","%.2fs between notes"
+PROFILE_STAT_PRECISION,"Marge de %dpx","Margen de %dpx","%dpx window"
+PROFILE_STAT_TECHNIQUE,"+%d notes per perfecta","+%d notas por perfecta","+%d notes per perfect"
+PROFILE_STAT_KEYBOARD,"%d tecles","%d teclas","%d keys"
 
 ERA_BAROQUE, Barroc, Barroco, Baroque
 ERA_CLASSICISM, Classisisme, Clasicismo, Classicism
@@ -101,6 +106,30 @@ DATA_CARDS_PIANO,El Piano,El Piano,The Piano
 DATA_CARDS_PIANO_DESC,"Inventat cap al 1700, pot tocar tant fort com fluix — d'aquí el seu nom original, ""pianoforte.""","Inventado alrededor de 1700, puede tocar tanto fuerte como suave — de ahí su nombre original, ""pianoforte.""","Invented around 1700, it can play both loud and soft — hence its original name, ""pianoforte."""
 DATA_CARDS_WTC_FACT,El clave ben temperat,El clave bien temperado,Well-Tempered Clavier
 DATA_CARDS_WTC_FACT_DESC,"Emblemàtica col·lecció de preludis i fugues que cobrien tote les tonalitats majors i menors, encara usat hui dia per a ensenyar piano","Emblemática colección de preludios y fugas de todas que cubríatodas las tonalidades mayors y menores, aun utilizada hoy en día para ensenyar piano","A landmark collection covering every major and minor key, still used to teach piano technique today."
+
+DATA_CARDS_BEETHOVEN,"Ludwig van Beethoven","Ludwig van Beethoven","Ludwig van Beethoven"
+DATA_CARDS_BEETHOVEN_DESC,"Va fer de pont entre el Classicisme i el Romanticisme; va seguir component després de perdre l'oïda.","Hizo de puente entre el Clasicismo y el Romanticismo; siguió componiendo tras perder el oído.","Bridged Classicism and Romanticism; kept composing after losing his hearing."
+DATA_CARDS_HANON,"Charles-Louis Hanon","Charles-Louis Hanon","Charles-Louis Hanon"
+DATA_CARDS_HANON_DESC,"Autor de 'El Pianista Virtuós', un llibre d'exercicis de tècnica de dits encara utilitzat avui.","Autor de 'El Pianista Virtuoso', un libro de ejercicios de técnica de dedos aún utilizado hoy.","Wrote 'The Virtuoso Pianist,' a still-used finger-technique exercise book."
+DATA_CARDS_BURGMULLER,"Friedrich Burgmüller","Friedrich Burgmüller","Friedrich Burgmüller"
+DATA_CARDS_BURGMULLER_DESC,"Conegut pels seus estudis accessibles i expressius escrits per a estudiants de piano.","Conocido por sus estudios accesibles y expresivos escritos para estudiantes de piano.","Known for accessible, expressive études written for piano students."
+DATA_CARDS_CZERNY,"Carl Czerny","Carl Czerny","Carl Czerny"
+DATA_CARDS_CZERNY_DESC,"Alumne de Beethoven i compositor prolífic d'estudis de piano encara utilitzats en l'ensenyament.","Alumno de Beethoven y compositor prolífico de estudios de piano aún utilizados en la enseñanza.","Beethoven's student, prolific composer of piano etudes still used in teaching."
+DATA_CARDS_ORGAN,"L'Orgue","El Órgano","The Organ"
+DATA_CARDS_ORGAN_DESC,"Instrument de teclat impulsat per tubs, sovint anomenat el 'rei dels instruments' per la seva escala.","Instrumento de teclado impulsado por tubos, a menudo llamado el 'rey de los instrumentos' por su escala.","Pipe-driven keyboard instrument, often called 'king of instruments' for its scale."
+DATA_CARDS_CELESTA,"Celesta","Celesta","Celesta"
+DATA_CARDS_CELESTA_DESC,"Un instrument de teclat de so semblant a campanes; famós per la 'Dansa de la Fada de Sucre'.","Un instrumento de teclado de sonido similar a campanas; famoso por la 'Danza del Hada de Azúcar'.","A bell-like keyboard instrument; famous from 'Dance of the Sugar Plum Fairy.'"
+DATA_CARDS_ERA_BAROQUE,"Època Barroca","Época Barroca","Baroque Era"
+DATA_CARDS_ERA_BAROQUE_DESC,"~1600-1750. Música ornamentada i molt estructurada; Bach i Vivaldi en són els grans exponents.","~1600-1750. Música ornamentada y muy estructurada; Bach y Vivaldi son sus grandes exponentes.","~1600-1750. Ornate, highly structured music; Bach and Vivaldi its giants."
+DATA_CARDS_ERA_CLASSICISM,"Època Clàssica","Época Clásica","Classical Era"
+DATA_CARDS_ERA_CLASSICISM_DESC,"~1750-1820. Formes equilibrades i clares; Mozart i Haydn en van definir l'estil.","~1750-1820. Formas equilibradas y claras; Mozart y Haydn definieron el estilo.","~1750-1820. Balanced, clear forms; Mozart and Haydn defined the style."
+DATA_CARDS_ERA_ROMANTICISM,"Època Romàntica","Época Romántica","Romantic Era"
+DATA_CARDS_ERA_ROMANTICISM_DESC,"~1820-1900. Música emotiva i expressiva, amb harmonia més àmplia; Chopin, Liszt.","~1820-1900. Música emotiva y expresiva, con armonía más amplia; Chopin, Liszt.","~1820-1900. Emotional, expressive, expanded harmony; Chopin, Liszt."
+DATA_CARDS_ERA_IMPRESSIONISM,"Època Impressionista","Época Impresionista","Impressionist Era"
+DATA_CARDS_ERA_IMPRESSIONISM_DESC,"~1890-1920. Tonalitat difuminada, l'atmosfera per sobre de l'estructura; Debussy, Ravel.","~1890-1920. Tonalidad difuminada, la atmósfera por encima de la estructura; Debussy, Ravel.","~1890-1920. Blurred tonality, atmosphere over structure; Debussy, Ravel."
+DATA_CARDS_ERA_20TH_CENTURY,"Segle XX","Siglo XX","20th Century Era"
+DATA_CARDS_ERA_20TH_CENTURY_DESC,"Des de principis del segle XX. Enormement divers: atonalitat, minimalisme, influència del jazz.","Desde principios del siglo XX. Enormemente diverso: atonalidad, minimalismo, influencia del jazz.","1900s onward. Wildly diverse: atonality, minimalism, jazz influence."
+
 
 DATA_STATS_KEYBOARD, Teclat, Teclado, Keyboard
 DATA_STATS_KEYBOARD_DESC, "Tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats", "Tamaño máximo del teclado. Se empieza con un número de teclas delimitado, por tanto los puntos que le puedes sacar serán también limitados", "Max keyboard size. It starts with a delimited key number, so your score will be limited too."
@@ -158,3 +187,14 @@ DATA_ACHIEVEMENTS_10_CARDS, Col·leccionista petit, Pequeño coleccionista, Tiny
 DATA_ACHIEVEMENTS_10_CARDS_DESC, Desbloqueja 10 cartes a l'àlbum de cartes, Desbloquea 10 cartas en el álbum de cartas, Unlock 10 cards in the card album
 DATA_ACHIEVEMENTS_ALL_CARDS, Col·leccionista de primera, Coleccionista de primera, First class collectionist
 DATA_ACHIEVEMENTS_ALL_CARDS_DESC, Desbloqueja totes les cartes, Desbloquea todas las cartas, Unlock all cards
+
+DATA_ACHIEVEMENTS_BAROQUE_MASTER,"Barroc complet","Barroco completado","Baroque Complete"
+DATA_ACHIEVEMENTS_BAROQUE_MASTER_DESC,"Arriba al final del període barroc.","Llega al final del período barroco.","Reach the end of the Baroque era."
+DATA_ACHIEVEMENTS_CLASSICISM_MASTER,"Classicisme complet","Clasicismo completado","Classicism Complete"
+DATA_ACHIEVEMENTS_CLASSICISM_MASTER_DESC,"Arriba al final del període clàssic.","Llega al final del período clásico.","Reach the end of the Classical era."
+DATA_ACHIEVEMENTS_ROMANTICISM_MASTER,"Romanticisme complet","Romanticismo completado","Romanticism Complete"
+DATA_ACHIEVEMENTS_ROMANTICISM_MASTER_DESC,"Arriba al final del període romàntic.","Llega al final del período romántico.","Reach the end of the Romantic era."
+DATA_ACHIEVEMENTS_IMPRESSIONISM_MASTER,"Impressionisme complet","Impresionismo completado","Impressionism Complete"
+DATA_ACHIEVEMENTS_IMPRESSIONISM_MASTER_DESC,"Arriba al final del període impressionista.","Llega al final del período impresionista.","Reach the end of the Impressionist era."
+DATA_ACHIEVEMENTS_20TH_CENTURY_MASTER,"Segle XX complet","Siglo XX completado","20th Century Complete"
+DATA_ACHIEVEMENTS_20TH_CENTURY_MASTER_DESC,"Arriba al final del segle XX.","Llega al final del siglo XX.","Reach the end of the 20th Century."

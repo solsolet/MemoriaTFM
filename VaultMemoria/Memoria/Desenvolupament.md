@@ -589,12 +589,27 @@ No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i es veu estupendamen
 
 TODO : anotar algunes de les observacions.
 
+#### Projecte Godot
+
+S'ha implementat un sistema de nivells. 
+TODO : posar error música
+
 ### Iteració 8
 
-Aqeusta iteació comprén del 8 al 15 de setembre de 2026.
+Aquesta iteació comprén del 8 al 15 de setembre de 2026.
 
 S'ha afegit una escena de perfil del jugador.
 
 TODO : posar quines coses estem implementant
 
 TODO : explicar reunió breument
+
+#### Projecte Godot
+
+S'ha arreglat l'errada de la música quan es canviava de `home` a `idle`. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
+
+Resulta que quan tornàvem a `Home` després d'entrar a `Idle` per primera vegada, la variable `_playlist` estava buida perquè s'ha esborrat amb `cleanup()`, per tant, quan entrava de nou. a `Idle` es quedava en la música que estava sonant, la de *menú*.
+
+L'errada era la típica que sol passar amb els *arrays*: Godot els **passa per referència** i, com a resultat, quan es buida per a tornar a `home` quan torna a `idle` com no se li assigne directament una peça continuarà amb el que hi havia. Abans no passava perquè només teníem una peça sonant en `idle` i l'assignàvem manualment. El problema no era la implementació del `LevelManager` sinó com estava fet `AudioManager`.
+
+La solució ha estat duplicar l'*array* amb `duplicate()` per fer-ne una còpia.
