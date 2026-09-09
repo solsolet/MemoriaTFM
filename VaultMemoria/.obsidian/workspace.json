@@ -72,7 +72,8 @@
               "title": "Desenvolupament"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -258,13 +259,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c55d40714af84ba1",
+  "active": "c6c908a97980f287",
   "lastOpenFiles": [
+    "Organitzacio/Kanban.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png",
     "Output/_build_processed.md",
     "Memoria/Assets-Optimized/Pianissimo/Diagrames/diagrames_bruts.jpg",
-    "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png",
     "Memoria/Metodologia.md",
     "Memoria/Marc teoric.md",

@@ -9,7 +9,9 @@
 - Descripcions en Millores.
 - Icones en Estadístiques.
 - Pantalla de Perfil on es poden veure les estadístiques.
+- Pantalla de crèdits.
 - Sistema de nivells amb nova música per al mode `idle`.
+- Noves i assoliments cartes per era musical.
 
 ### Fixed
 

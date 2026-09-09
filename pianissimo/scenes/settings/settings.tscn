@@ -12,16 +12,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
-music_slider = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer/MusicSlider")
-sfx_slider = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer/SfxSlider")
-music_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer/MusicMuteButton")
-sfx_mute_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer/SfxMuteButton")
-reminder_hours_field = NodePath("SafeAreaContainer/Layout/SettingsContainer/NotificationContainer/NotificationSettings/ReminderHoursField")
-reminders_enabled_toggle = NodePath("SafeAreaContainer/Layout/SettingsContainer/NotificationContainer/NotificationSettings/RemindersEnabledToggle")
-reset_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ResetButton")
-reset_confirm_dialog = NodePath("SafeAreaContainer/Layout/SettingsContainer/DataContainer/ConfirmationDialog")
-game_tutorial_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons/GameTutorial")
-practise_tutorial_button = NodePath("SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons/PractiseTutorial")
+music_slider = NodePath("SafeAreaContainer/SettingsContainer/SoundContainer/MusicCntainer/MusicSlider")
+sfx_slider = NodePath("SafeAreaContainer/SettingsContainer/SoundContainer/SfxContainer/SfxSlider")
+music_mute_button = NodePath("SafeAreaContainer/SettingsContainer/SoundContainer/MusicCntainer/MusicMuteButton")
+sfx_mute_button = NodePath("SafeAreaContainer/SettingsContainer/SoundContainer/SfxContainer/SfxMuteButton")
+reminder_hours_field = NodePath("SafeAreaContainer/SettingsContainer/NotificationContainer/NotificationSettings/ReminderHoursField")
+reminders_enabled_toggle = NodePath("SafeAreaContainer/SettingsContainer/NotificationContainer/NotificationSettings/RemindersEnabledToggle")
+reset_button = NodePath("SafeAreaContainer/SettingsContainer/DataContainer/ResetButton")
+reset_confirm_dialog = NodePath("SafeAreaContainer/SettingsContainer/DataContainer/ConfirmationDialog")
+game_tutorial_button = NodePath("SafeAreaContainer/SettingsContainer/TutorialContainer/TutorialButtons/GameTutorial")
+practise_tutorial_button = NodePath("SafeAreaContainer/SettingsContainer/TutorialContainer/TutorialButtons/PractiseTutorial")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -40,23 +40,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 40
 script = ExtResource("2_vu5fi")
+min_bottom_margin = 40.0
 
-[node name="Layout" type="VBoxContainer" parent="SafeAreaContainer"]
-layout_mode = 2
-
-[node name="Spacer" type="Control" parent="SafeAreaContainer/Layout"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="SettingsContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout"]
+[node name="SettingsContainer" type="VBoxContainer" parent="SafeAreaContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-size_flags_stretch_ratio = 3.0
-theme_override_constants/separation = 20
+size_flags_stretch_ratio = 4.0
+theme_override_constants/separation = 15
 
-[node name="SettingsLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="SettingsLabel" type="Label" parent="SafeAreaContainer/SettingsContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
@@ -66,25 +64,25 @@ text = "SETTINGS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SoundContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="SoundContainer" type="VBoxContainer" parent="SafeAreaContainer/SettingsContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 
-[node name="MusicLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+[node name="MusicLabel" type="Label" parent="SafeAreaContainer/SettingsContainer/SoundContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"Title2Label"
 text = "SETTINGS_MUSIC"
 
-[node name="MusicCntainer" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+[node name="MusicCntainer" type="HBoxContainer" parent="SafeAreaContainer/SettingsContainer/SoundContainer"]
 custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 theme_override_constants/separation = 20
 
-[node name="MusicSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer"]
+[node name="MusicSlider" type="HSlider" parent="SafeAreaContainer/SettingsContainer/SoundContainer/MusicCntainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -92,25 +90,25 @@ size_flags_stretch_ratio = 3.0
 max_value = 1.0
 step = 0.05
 
-[node name="MusicMuteButton" type="CheckButton" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/MusicCntainer"]
+[node name="MusicMuteButton" type="CheckButton" parent="SafeAreaContainer/SettingsContainer/SoundContainer/MusicCntainer"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "SETTINGS_MUTE"
 
-[node name="SfxLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+[node name="SfxLabel" type="Label" parent="SafeAreaContainer/SettingsContainer/SoundContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 theme_type_variation = &"Title2Label"
 text = "SETTINGS_SFX"
 
-[node name="SfxContainer" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer"]
+[node name="SfxContainer" type="HBoxContainer" parent="SafeAreaContainer/SettingsContainer/SoundContainer"]
 custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 theme_override_constants/separation = 20
 
-[node name="SfxSlider" type="HSlider" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer"]
+[node name="SfxSlider" type="HSlider" parent="SafeAreaContainer/SettingsContainer/SoundContainer/SfxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -118,44 +116,45 @@ size_flags_stretch_ratio = 3.0
 max_value = 1.0
 step = 0.05
 
-[node name="SfxMuteButton" type="CheckButton" parent="SafeAreaContainer/Layout/SettingsContainer/SoundContainer/SfxContainer"]
+[node name="SfxMuteButton" type="CheckButton" parent="SafeAreaContainer/SettingsContainer/SoundContainer/SfxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 text = "SETTINGS_MUTE"
 
-[node name="NotificationContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="NotificationContainer" type="VBoxContainer" parent="SafeAreaContainer/SettingsContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/separation = 20
 
-[node name="NotificationsLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/NotificationContainer"]
+[node name="NotificationsLabel" type="Label" parent="SafeAreaContainer/SettingsContainer/NotificationContainer"]
 layout_mode = 2
 theme_type_variation = &"Title2Label"
 text = "SETTINGS_NOTIFICATIONS"
 
-[node name="NotificationSettings" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/NotificationContainer"]
+[node name="NotificationSettings" type="HBoxContainer" parent="SafeAreaContainer/SettingsContainer/NotificationContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 30
 
-[node name="ReminderHoursField" type="SpinBox" parent="SafeAreaContainer/Layout/SettingsContainer/NotificationContainer/NotificationSettings"]
+[node name="ReminderHoursField" type="SpinBox" parent="SafeAreaContainer/SettingsContainer/NotificationContainer/NotificationSettings"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 min_value = 1.0
 max_value = 72.0
 value = 1.0
 
-[node name="RemindersEnabledToggle" type="CheckButton" parent="SafeAreaContainer/Layout/SettingsContainer/NotificationContainer/NotificationSettings"]
+[node name="RemindersEnabledToggle" type="CheckButton" parent="SafeAreaContainer/SettingsContainer/NotificationContainer/NotificationSettings"]
 layout_mode = 2
 text = "SETTINGS_TURN_NOTIFICATIONS"
 
-[node name="DataContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="DataContainer" type="VBoxContainer" parent="SafeAreaContainer/SettingsContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 20
 
-[node name="DataLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+[node name="DataLabel" type="Label" parent="SafeAreaContainer/SettingsContainer/DataContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 6
@@ -163,7 +162,7 @@ theme_type_variation = &"Title2Label"
 text = "SETTINGS_DATA"
 vertical_alignment = 1
 
-[node name="ResetButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+[node name="ResetButton" type="Button" parent="SafeAreaContainer/SettingsContainer/DataContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
@@ -171,7 +170,7 @@ size_flags_vertical = 4
 theme_type_variation = &"CancelButton"
 text = "SETTINGS_RESET"
 
-[node name="ConfirmationDialog" type="ConfirmationDialog" parent="SafeAreaContainer/Layout/SettingsContainer/DataContainer"]
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="SafeAreaContainer/SettingsContainer/DataContainer"]
 auto_translate_mode = 1
 transparent_bg = true
 oversampling_override = 1.0
@@ -187,44 +186,43 @@ ok_button_text = "DIALOG_OK"
 dialog_text = "DIALOG_RESET_TEXT"
 cancel_button_text = "DIALOG_CANCEL"
 
-[node name="TutorialContainer" type="VBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="TutorialContainer" type="VBoxContainer" parent="SafeAreaContainer/SettingsContainer"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
-[node name="TutorialLabel" type="Label" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer"]
+[node name="TutorialLabel" type="Label" parent="SafeAreaContainer/SettingsContainer/TutorialContainer"]
 layout_mode = 2
 theme_type_variation = &"Title2Label"
 text = "TUTORIAL_HELP"
 
-[node name="TutorialButtons" type="HBoxContainer" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer"]
+[node name="TutorialButtons" type="HBoxContainer" parent="SafeAreaContainer/SettingsContainer/TutorialContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 20
 
-[node name="GameTutorial" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons"]
+[node name="GameTutorial" type="Button" parent="SafeAreaContainer/SettingsContainer/TutorialContainer/TutorialButtons"]
 layout_mode = 2
 theme_type_variation = &"FlatButton"
 text = "SETTINGS_GAME_TUTORIAL"
 
-[node name="PractiseTutorial" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer/TutorialContainer/TutorialButtons"]
+[node name="PractiseTutorial" type="Button" parent="SafeAreaContainer/SettingsContainer/TutorialContainer/TutorialButtons"]
 layout_mode = 2
 theme_type_variation = &"FlatButton"
 text = "SETTINGS_PRACTISE_TUTORIAL"
 
-[node name="CreditsButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="CreditsButton" type="Button" parent="SafeAreaContainer/SettingsContainer"]
 auto_translate_mode = 1
+custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 10
 text = "CREDITS"
 
-[node name="BackButton" type="Button" parent="SafeAreaContainer/Layout/SettingsContainer"]
+[node name="BackButton" type="Button" parent="SafeAreaContainer/SettingsContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 10
 text = "BACK_BUTTON"
 
-[node name="Spacer2" type="Control" parent="SafeAreaContainer/Layout"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[connection signal="pressed" from="SafeAreaContainer/Layout/SettingsContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="SafeAreaContainer/Layout/SettingsContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/SettingsContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="SafeAreaContainer/SettingsContainer/BackButton" to="." method="_on_back_button_pressed"]
