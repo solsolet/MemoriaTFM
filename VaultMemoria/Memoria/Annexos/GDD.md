@@ -4,7 +4,7 @@ last_reviewed: 2026-06-23
 state: "In Progress"
 ---
 
-# GDD - Pianissimo
+# GDD - Pianissimo {#gdd}
 
 %%TODO : Açò aniria en una portada d'alguna manera%%
 

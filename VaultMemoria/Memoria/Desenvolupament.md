@@ -4,13 +4,13 @@
 
 ## Disseny
 
-El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sheet](One-Sheet), [Ten-Pager](Ten-Pager) i [GDD](GDD).
+El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sheet](#one-sheet), [Ten-Pager](#ten-pager) i [GDD](#gdd).
 
 ## Projecte
 
 ### Changelog
 
-#### v0.1.0
+#### v0.1.0 – juny/juliol 2026
 
 - Planificació inicial Gantt Project.
 - Investigació Marc Teòric.
@@ -25,7 +25,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Build muntada en Play Store i App Store.
 - Baixada com a testers de l'aplicació en les tendes d'aplicacions.
 
-#### v0.2.0
+#### v0.2.0 – 5/14 agost 2026
 
 - Pantalles **home**, **game**, **settings**.
 - Sistema de piano amb notes que cauen.
@@ -35,14 +35,14 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Sistema d'àudio.
 - Internacionalització.
 
-#### v0.3.0
+#### v0.3.0 – 15/17 agost 2026
 
 - Pantalles mode **focus** (configuració, historial, sessió i resultat d'assajos) i **àlbum** de cartes.
 - Sistema d'assajos.
 - Recompensa de guanyar cartes i desbloquejar-les en l'àlbum per assaig completat.
 - Solució error `can_process`.
 
-#### v0.4.0
+#### v0.4.0 – 18/21 agost 2026
 
 - Implementació dels connectors específics de cada botiga d'aplicacions al projecte de Godot.
 - Investigació de les especificacions dels connectors `godot-play-services` i `gamecenter` de Godot.
@@ -54,7 +54,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Proves en dispositius de cada SO per a validar que es poden desbloquejar assoliments.
 - Muntada del joc a les tendes d'aplicacions per a poder descarregar-lo.
 
-#### v0.5.0
+#### v0.5.0 – 22/27 agost 2026
 
 - Afegir sons per a les tecles bé.
 - Noves funcionalitats del mode assaig:
@@ -78,7 +78,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - *Toast* de benvinguda quan s'entra a `game`, informa de les notes guanyades.
 - Sistema per a mostrar tutorials.
 
-#### v0.6.0
+#### v0.6.0 – 28/31 agost 2026
 
 - Icona de l'aplicació corregida perquè es veja bé en Android.
 - Incorporació del connector de Notificacions.
@@ -91,22 +91,23 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Arreglar *scroll* en Millores.
 - Correccions dels botons de tutorial.
 
-#### v0.7.0
+#### v0.7.0 – 1/15 de setembre 2026
 
 - Acabar la redacció dels següents apartats de la memòria: iteracions pendents, resums, metodologia, marc teòric i GDD.
+- Correcció d'alguns títols perquè es puguen navegar a l'índex.
 - Ajust de volums dels àudios del joc.
-- Noves millores.
-- Afegir pantalla de crèdits o llicències.
+- Noves millores i assoliments.
+- Afegir pantalla de crèdits.
 - Compartir el joc per a fer proves amb usuaris i rebre retroalimentació.
 - Acabar dibuixos historieta inicial en `home`.
 - Fer logo per a `home`.
-- Aglutinar estadístiques en una pestanya d'usuari (?)
+- Nova pantalla *Perfil* per a mostrar totes les estadístiques de l'usuari.
 
 ## Iteracions
 
 ### Interacció 0
 
-Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usaríem, Godot. 
+Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usaríem, Godot. Va ocòrrer a principi d'any.
 
 Després em vaig centrar a aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc usant el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
 
@@ -118,11 +119,11 @@ La idea i el projecte es van quedar de costat durant el curs, ja que sempre li d
 
 Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig continuar treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per continuar familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
 
-Després d'un temps usant-lo el trobe còmode d'usar i m'alegre d'haver pres la decisió d'elegir Godot perquè, en el context d'un projecte real on tens una motivació per a desenvolupar-lo, et veus forçat aprendre al ritme que marca el projecte i no tu sense cap restricció.
+Després d'un temps usant-lo el trobe còmode i m'alegre d'haver pres la decisió d'elegir Godot perquè, en el context d'un projecte real on tens una motivació per a desenvolupar-lo, et veus forçat aprendre al ritme que marca el projecte i no tu sense cap restricció.
 
 ### Iteració 1
 
-En aquesta iteració s'han fet les preparacions inicials per a tot el que conforma el projecte de Godot com per a la memòria.
+En aquesta iteració s'han fet les preparacions inicials per a tot el que conforma el projecte de Godot com per a la memòria. Va començar a mitjan juny de 2026, just en acabar les entregues de la resta d'assignatures del màster.
 
 #### Planificació
 
@@ -156,8 +157,7 @@ Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la 
 
 El format es va fer amb una combinació de Python i el contingut de la carpeta `config`, ja que es necessiten alguns fitxers per a poder exportar la memòria correctament a PDF, com l'ordre de les notes d'Obsidian a `manifest.txt`, la portada segons la plantilla, el format APA desitjat, les metadades que controlen manualment algunes variables de Pandoc i la bibliografia que es guarda automàticament de Zotero. 
 
-Van sorgir alguns problemes durant aquesta iteració.
-Un va ser que la versió de Pandoc instal·lada era l'actual en el moment d'instal·lació, però durant el desenvolupament va eixir una nova que venia amb moltes més llibreries amb funcions que s'han programat a mà que hagueren fet més senzill el sistema d'exportació.
+Van sorgir alguns problemes durant aquesta iteració. Un va ser que la versió de Pandoc instal·lada era l'actual en el moment d'instal·lació, però durant el desenvolupament va eixir una nova que venia amb moltes més llibreries amb funcions que s'han programat a mà que hagueren fet més senzill el sistema d'exportació.
 
 Un altre va ser que es va subestimar el temps que es tardaria a aconseguir aquest sistema. En principi pensava que amb el connector de *Pandoc* o *Enhancing Export* disponibles a Obsidian serien suficients, però mancaven dels detalls que fan que la memòria siga mantenible en el temps, com l'índex i bibliografia automàtics.
 
@@ -180,8 +180,8 @@ En veure que funciona en dispositius reals, s'ha preparat correctament la config
 
 Pel que fa a iOS, Godot no et dona un arxiu que muntar a la botiga d'aplicacions tan fàcilment, sinó que et genera el projecte per a poder compilar-lo amb Xcode.
 
-Em vaig posar en contacte amb Miguel Ángel perquè em fes una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la botiga no tenia els permisos necessaris.
-Com les proves es poden fer en el dispositiu sense problema, quan necessite muntar una versió li la puc passar a ell perquè la compile i munte sense problema.
+Em vaig posar en contacte amb Miguel Ángel Lozano perquè em fes una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la botiga no tenia els permisos necessaris.
+Com les proves es poden fer en el dispositiu sense problema, quan calga muntar una versió li la puc passar a ell perquè la compile i munte sense problema.
 
 Finalment, amb la *build* muntada vaig poder provar l'aplicació amb *TestFlight*.
 
@@ -216,11 +216,14 @@ Abans de començar a picar codi es va intentar agrupar a forma d'esquema alguns 
 
 Pel que fa a la interfície el mode *idle* del joc tenia clar l'estructura d'un piano on les notes cauen i en algun costat tenir les millores. Per a la pantalla inicial hi havia més dubtes, moltes aplicacions tenen una estructura similar l'esborrany 3. En aquesta sol haver-hi una filera de botons per costat que porten a la tenda, a reptes diaris, a ofertes especials, a ruletes o coses d'atzar que donen premis... Personalment, no m'agrada, és molt genèrica i en principi el joc no tindrà tantes coses per a repartir-les en tants apartats.
 
-L'esquema dels *managers* es va fer pensant en els apartats que necessitarien ser singleton per estar funcionant durant tota l'aplicació o evitar duplicitats. No era molt concret, es plantejava quines necessitats es podria tenir en el projecte i eventualment a mesura que s'anaren implementant s'aniria especificant.
+L'esquema dels *managers* es va fer pensant en els apartats que necessitarien ser Singleton per estar funcionant durant tota l'aplicació o evitar duplicitats. No era molt concret, es plantejava quines necessitats es podria tenir en el projecte i eventualment a mesura que s'anaren implementant s'aniria especificant.
 
-![Diagrama singletons inical](Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png)
+![Diagrama singletons inical](Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png){height=6cm}
 
-Finalment, l'esquema de l'evolució tractava d'intentar posar ordre de com estava el projecte funcional en el codi mal fet a com podríem anant encaminant-lo.
+Finalment, l'esquema de l'evolució tractava d'intentar posar ordre de com estava el projecte funcional en el codi mal fet a com podríem anant encaminant-lo. Podem veure un diagrama senzill en les pantalles que teníem clares a la figura \ref{fig:mockup_senzill}.
+
+![Diagrama inicial de navegació \label{fig:mockup_senzill}](Memoria/Assets/Pianissimo/Diagrames/Pianissimo_Mockup1.png){height=6cm}
+
 #### Projecte Godot
 
 Després de pensar quin aspecte tindria el joc i quins sistemes hauria de tindre, es va començar amb la creació de les escenes **home** i **game**.
@@ -234,7 +237,7 @@ Entre els botons de *home* es troben:
 - **Configuració**: porta a *settings*.
 - **Assoliments**: portarà als assoliments, segons si és per a iOS o Android canviarà segons es connecte amb la botiga d'aplicacions.
 
-A *game* trobem el piano, les millores i estadístiques, el camp de notes i el marcador de notes junt els botons d'anar a *home* o *settings*. Per a veure el detall de com s'ha implementat es pot consultar el [GDD](GDD) a l'annex.
+A *game* trobem el piano, les millores i estadístiques, el camp de notes i el marcador de notes junt els botons d'anar a *home* o *settings*. Per a veure el detall de com s'ha implementat es pot consultar el [GDD](#gdd) a l'annex.
 
 En eixe moment es va decidir una estructura de carpetes inicial, on es podia veure *scenes*, *assets*, *scripts*, *ui* i *autoloads*. Després es mostrarà l'estat final de les carpetes en aquesta iteració, ja que segons les necessitats del moment es van anar creant més.
 
@@ -244,11 +247,11 @@ Continuant amb la implementació, una vegada estaven les escenes, alguns element
 
 Ja clavant-nos en el desenvolupament com a tal, les mecàniques bàsiques inicials que volia aconseguir eren:
 
-- Un teclat (servia en poques notes) que en polsar sonara una nota
+- Un teclat (servia en poques notes) que en polsar sonara una nota.
 - Un sistema que generara notes a l'estil *Magik Piano* que en polsar-les quan estiguen a prop del teclat es guanyen punts, **notes**.
 - Un sistema econòmic per intercanviar notes per millores del tipus:
 	- **Millores** que permetera guanyar més notes. Cada millora tindria un cost de notes associat. De moment s'havia pensat en una de fer *tap automàticament* (i així tenir la mecànica *idle*) i una de *multiplicador* de notes per nota ben polsada.
-	- **Estadístiques** del jugador que permetera facilitar l'obtenció de notes. Com les millores, però semànticament diferent. De les planejades en el [Ten-Pager](Ten-Pager), primer s'implementarien la del teclat, velocitat i precisió.
+	- **Estadístiques** del jugador que permetera facilitar l'obtenció de notes. Com les millores, però semànticament diferent. De les planejades en el [Ten-Pager](#ten-pager), primer s'implementarien la del teclat, velocitat i precisió.
 - Persistència de les dades en tancar i obrir el joc així com continuar guanyant notes quan no s'està en l'aplicació i continuar la mecànica *idle*.
 
 Per a fer-ho, no es va elegir la manera més intel·ligent i calculada de programar, sinó que es va tirar per la força bruta per a veure si es podia i quedava bé el prototip, abans de perdre el temps dissenyant i implementant sistemes que potser no resultaren viables.
@@ -277,7 +280,7 @@ Es va crear l'escena de *settings* amb el seu codi associat. La idea en aquesta 
 
 Un nou paradigma de l'evolució del joc va ser que en principi s'havia apostat per una evolució lineal, però en diverses proves es veia l'errada: un munt de notes que no pots ni gastar-te-les totes en *millores*. Va ser aleshores el moment de revisar el funcionament dels *idles*, el seu creixement sol ser exponencial, així que inspirant-nos de nou en el *Cookie Clicker*, es va fer el canvi. Abans el lineal feia `return def.base_cost + get_level(id) * def.cost_growth` en la funció de `get_cost`dels *managers* de *Update* i *Stat*, i el canvi va ser a `return int(round(def.base_cost * pow(def.cost_multiplier, get_level(id))))`.
 
-*Cookie Clicker* té un creixement del 15% a cada compra de *Millores*, nosaltres el farem d'un 12% més cada vegada.
+*Cookie Clicker* té un creixement del 15% a cada compra de *Millores*, nosaltres el farem d'un 12% més cada vegada de moment.
 
 Finalment, la resta de la implementació es va centrar a millorar errades, centralitzar les rutes, millorar l'estil dels botons, i fer que es poguera accedir a les *settings* dins del joc.
 
@@ -339,7 +342,7 @@ El mode *focus*, o millor dit, d'**assaig**, naix de la idea que l'aplicació po
 
 Si bé és cert que d'aplicacions de concentració n'hi ha moltes, aquesta vol apostar per combinar el gènere *idle* en unes sessions de *productivitat gamificada* amb una estètica musical. A més té molt de sentit, els jocs *idle* són jocs d'esperar i depenent del tipus, tens una xicoteta part de controlar els recursos al teu abast. Per què no aprofitar l'espera i fer alguna cosa de profit mentrestant i, a canvi, reps una recompensa per la part *idle*?
 
-Aquesta lògica s'ha inspirat en l'aplicació Forest, que es pot consultar al seu corresponent apartat en el [marc teòric](#sec-marc-teoric-forest). Forest fa molt bé donar-li importància a la teua concentració i accions: quan comences una tasca tens un arbre que creix durant el temps que s'ha determinat. En cas d'eixir de l'aplicació, "distreure't", la planta morirà i hauràs "fracassat", en canvi, si la compleixes la tindràs al teu jardí.
+Aquesta lògica s'ha inspirat en l'aplicació Forest, que es pot consultar al seu corresponent apartat en el [marc teòric](#sec-marc-teoric-forest). Forest fa molt bé donar-li importància a la teua concentració i accions: quan comences una tasca tens un arbre que creix durant el temps que s'ha determinat. En cas d'eixir de l'aplicació, “distreure't”, la planta morirà i hauràs “fracassat”, en canvi, si la compleixes la tindràs al teu jardí.
 
 És molt bona aplicació i realment encara que s'imités al 100% ningú tindria prou raons per apostar pel meu joc en lloc de l'original. Per això necessita la part *idle* per a donar-li sentit i pes, i l'estètica musical pot ser interessant per a músics que vulguen fer seguiment dels seus assajos.
 
@@ -383,19 +386,52 @@ Aquesta iteració comprén del 18 al 21 d'agost de 2026. També ha sigut relativ
 
 S'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la botiga corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna.
 
-La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
+La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament, ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
 
 #### Projecte Godot
 
-Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assoliments que tinga tots els mètodes necessaris i per baix hi haja una espècie de back-end específic tant per a Android com per a iOS.
+Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assoliments que tinga tots els mètodes necessaris i per baix hi haja una espècie de *back-end* específic tant per a Android com per a iOS. Aquest *back-end* específic fa ús de les funcions pròpies de cada connector que s'ha incorporat al joc: *GoodlePlayServices* i *gamecenter*, cadascun en la seua corresponent carpeta.
 
 ![Captures de Pianissimo en un iPhone amb Game Center habilitat en iOS](Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Config.png){height=6cm}
 
-![Captures de Pianissimo en un Android amb els Google Play Services habilitats](Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png){height=6cm}
+Per fer la façana es va fer un `achievements_manager.gd` que a pesar que el nom indique assoliments, per a aconseguir-los primer s'ha d'autenticar l'usuari. La façana controlaria totes les funcions necessàries i segons el SO del dispositiu cridaria a la corresponent del connector a través dels fitxers específics `android_backend.gd` i `ios_backend.gd`. En cas de no detectar cap SO (com pot ser per a les proves en l'ordinador), hi ha un `null_backend.gd` per si de cas, que mostraria a la terminal què està al passant al joc amb els assoliments.
+
+Amb Android no vaig tenir molts problemes, ja que en l'assignatura de videojocs, com vaig usar també Godot i el meu projecte era en Android, *Floc*, ja m'havia barallat amb el connector. Es pot veure l'autenticació i els assoliments funcionals a la figura \ref{fig:pianissimo-achievements-backend1}. El que més va costar va ser la configuració en el núvol amb els SHA-1.
+
+Em van resultar molt útils un parell de vídeos de YouTube de *Piledrivegames Studio*, el canal té una [llista de reproducció](https://youtube.com/playlist?list=PLxucBh1Tbzzfz_kId18RgNViYCpAL5KqZ&si=tLrV3lwXmMMnjuSn) dedicada a fer un joc Android amb Godot. Em vaig fixar només als 3 que té d'habilitar els *Google Play Services* i com fer el *sign-in* i posar assoliments. A més, el que vaig trobar molt útil és que eren relativament recents, els havia muntat a principi d'any, per tant, si fa i no fa les interfícies eren quasi clavades i eren molt fàcils de seguir.
+
+![Captures de Pianissimo en un Android amb els Google Play Services habilitats \label{fig:pianissimo-achievements-backend1}](Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png){height=6cm}
+
+De fet, per al codi específic del *back-end* en Android vaig consultar el que vaig fer per a *Floc* i el vaig adaptar a l'estructura de Pianissimo refactoritzant-lo.
+
+En el cas d'iOS vaig tenir uns quants problemes com es relatarà a continuació. Una vegada superats, vaig adaptar el codi d'Android a les funcions d'iOS. Part de la dificultat d'instal·lar correctament el connector, com també saber fer-lo funcionar, trobe que és culpa de la documentació del mateix connector a GitHub, on només diu quines funcions hi ha i poca cosa més.
+
+Una vegada implementats els dos codis i comprovar que l'autenticació funcionava vaig passar a la implementació dels assoliments. Seguint la manera d'implementar de les millores, es va fer en la carpeta `data` una nova per als assoliments `achievements` i a `resources` una nova definició.
+
+Els assoliments han de tenir un **ID** de cada plataforma perquè el joc els puga identificar i llançar el seu desbloqueig. Per traure l'ID s'ha de crear l'assoliment en la plataforma en qüestió:
+
+- **PlayStore**: demana títol i descripció, i si el guardes ja es genera un ID que comença per `CgkInr...`. Per a publicar-lo farà falta una imatge de 512x512 px justos i a més es poden configurar altres camps addicionals.
+- **App Store**: demana un títol, descripció i ID, el pots elegir. A més pots posar una imatge (sense restriccions) i has d'emplenar altres camps. Per a publicar-los s'ha de publicar amb una *build* que tinga *Game Center* habilitat com es pot veure a la figura \ref{fig:AppStore-AchievementWarning}.
+
+![Errada per a muntar assoliments a l'App Store \label{fig:AppStore-AchievementWarning}](Memoria/Assets/Pianissimo/It4/AppStore_AchievementWarning.png){height=5cm}
+
+Encara que no es publiquen els assoliments, per als usuaris de prova seran visibles. En aquesta iteració només s'han publicat els d'Android perquè era més senzill.
+
+A *Floc*, com només tenia un únic codi, els assoliments només eren constants amb l'ID de la Play Store. Per a tenir una mica de consens i pensant en el futur, per si em faria falta en la definició es van afegir variables per al nom i la descripció, totes amb claus per a la internacionalització. Si en lloc de voler dependre dels serveis de Google Play o de Game Center volguera mostrar els assoliments llistats en alguna banda de la meua aplicació, podria aprofitar aquestes característiques.
+
+Per a fer proves havia d'usar els dispositius físics, en l'emulador no s'autentica. I a més passa el següent, si uses un Android connectat per USB sí que pot detectar que hi ha els Play Services, però mai arriba a autenticar. Ix el seleccionador de compte de Google Play però no funciona. S'ha de muntar el joc a la botiga i quan el descarregues per eixa via sí que funcionen.
+
+Primer es va provar amb Android per facilitat i una vegada resolts els problemes d'iOS, també amb l'iPhone.
 
 ##### Problemes
 
-Deferring, ajornar, els canvis d'escena evita que s'actue sobre les notes que estan a mig usar quan es produeix el canvi. S'ha d'aplicar en tots els canvis d'escena.
+Com es comentava abans aquesta iteració ha sigut a més problemàtica.
+
+Primer es va solucionar el problema que s'anava arrossegant en la terminal de `can_process` que ocorria quan canviava d'escena, però no apuntava a cap lloc concret, sinó a una mena de node intern dels subprocessos de Godot, per tant, era molt difícil fer una traça.
+
+Per trobar la solució vaig fer ús tant de Claude com de ChatGPT, ja que per internet i fòrums de Godot no trobava una resposta que em servira. El primer després de moltes proves em deia que si on m'afectava al joc ho podia posposar i el segon en un parell de preguntes em va trobar què fallava.
+
+Resulta que quan canviava d'escena amb `change_scene_to_file()` es quedaven nodes orfes que seguien en l'arbre de l'escena mentre es posava l'altra i, per tant, emetia eixa errada perquè no havien acabat el que estaven fent. Perquè no passe s'ha d'ajornar amb `call_deferred()` i aquesta modificació s'ha d'aplicar en tots els canvis d'escena.
 
 ```gd
 	# Error can_process
@@ -405,9 +441,16 @@ Deferring, ajornar, els canvis d'escena evita que s'actue sobre les notes que es
 
 ```
 
-Més errors trobats per logcat (comando llarg de `lol`)
+Després entrant a les errades per les noves implementacions. Amb Android encara que havia sigut relativament senzill fallava alguna cosa que impedia poder autenticar correctament l'aplicació. Els passos per a fer que funcionara van ser:
 
-```gd
+- Instal·lar correctament el connector i activar-lo, com també posar l'ID del projecte.
+- fer el codi de la façana amb el *back-end*.
+- Configurar la clau de desenvolupament i la de Cloud Console.
+- Muntar el *bundle* perquè se signe en el núvol.
+
+Els vaig repassar tots amb el vídeo per veure que estiguera tot correctament, podia firmar el joc amb la meua clau, tenia la resta en Cloud Console... Vaig recórrer de nou a internet i a falta de respostes a la IA, que en una allau d'originalitat, em demana que tornés a fer les comprovacions que ja havia fet. Així vaig estar molt de temps fins que en algun moment vaig provar diferents comandos amb *logcat* a la terminal i vaig poder traure el següent (s'ha acurtat les dades confidencials per privacitat):
+
+```logcat
 **** APP NOT CORRECTLY CONFIGURED TO USE GOOGLE PLAY GAME SERVICES
 **** DEVELOPER_ERROR
 **** This is usually caused by one of these reasons:
@@ -423,8 +466,8 @@ Més errors trobats per logcat (comando llarg de `lol`)
 ****
 **** To help you debug, here is the information about this app
 **** Package name         : es.ua.eps.pianissimo
-**** Cert SHA1 fingerprint: A7:42:B2:A3:3B:D6:58:C3:67:16:04:F6:7A:0B:38:F8:8F:3E:15:0E
-**** App ID from manifest : 930293717150
+**** Cert SHA1 fingerprint: A7:42:B2:...:3E:15:0E
+**** App ID from manifest : 93...50
 ****
 **** Check that the above information matches your setup in 
 **** Developer Console. Also, check that you're logging in with the
@@ -432,12 +475,22 @@ Més errors trobats per logcat (comando llarg de `lol`)
 **** your project is not yet published).
 ****
 **** For more information, refer to the troubleshooting guide:
-****   http://developers.google.com/games/services/android/troubleshooting
+****   http://developers.google.com/...
 ```
 
-Per a comprovar que funcionen els assoliments s'ha de muntar una build amb Game Center habilitat.
+Les raons que donava era el que la IA i internet no paraven de repetir (informació de la documentació d'Android Studio), però en l'ajuda per a *debuggejar* el SHA-1 resulta no ser-me familiar, cap de les claus que tinc tenia eixe aspecte, com era possible?
 
-![[AppStore_AchievementWarning.png]]
+L'única explicació que li puc donar és que quan vaig muntar l'aplicació en la iteració 1 es va signar al núvol i eixa clau no la vaig configurar a la Cloud Console, però per algun motiu en els passos de configuració no feia falta. Això o en alguna distracció vaig fer una clau de més o a saber si vaig signar dues vegades en algun moment i alguna clau no me la vaig guardar. Tant se valia, vaig afegir la clau a Cloud Console i com per art de màgia ja anava a la perfecció.
+
+Si amb aquesta errada vaig tenir aquest esglai, en iOS em faltava estar a la vora de tirar la tovallola i quedar-me només amb Android.
+
+Resulta que els connectors per a iOS en Godot s'han de posar a una carpeta `res://ios/plugin` cosa que desconeixia perquè estava posant el de Game Center dins d'`addons` com feia amb Android i clar, no ho veia enlloc per a habilitar-lo. 
+
+Fins que no vaig saber la ruta correcta em vaig trobar de nou buscant ajuda inútilment per què no estava trobant la resposta que era la solució i a més alguns suggeriments de la meua errada ni tan sols apareixien a Godot. Per exemple, trobava respostes com: *marca a "Plugins" la casella de "game center" dins de la configuració d'exportació d'iOS*, i era impossible trobar-ho perquè no m'eixiria fins que no tinguera ben col·locat el connector.
+
+Aquesta va ser la primera d'iOS, la segons va ser que em vaig descarregar la versió que hi havia disponible al repositori dels connectors i, com comentava per la poca claredat de la documentació, em vaig descarregar una versió que per a la meua versió de projecte no servia. Tenia la 4.7 i el meu projecte necessitava una per a la 4.5 o si hi havia, 4.5.1. Resulta que sí que existia aquesta versió concreta, el que passava era que descarregant-la i col·locant-la al seu lloc encara no funcionava, començava a ser desesperant.
+
+Es veu que havia de compilar-la jo mateixa perquè no es trobava en cap lloc compilada, així que amb la terminal em vaig descarregar diverses llibreries que m'ajudarien a obtenir els `.xcframework` que requeria el connector. Va tardar bastant més temps del que pensava, però un cop tenia ja el connector en aquest format i a la ubicació correcta ja va funcionar sense problema. Tota aquesta *faenata* s'haguera pogut estalviar si a la documentació especificara que s'ha d'usar la versió adequada i que estiguera ja compilada, però això és un altre tema.
 
 ### Iteració 5
 

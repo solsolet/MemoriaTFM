@@ -25,13 +25,13 @@ Sistema operatiu d'Apple. Compte en la versió Tahoe 26.0. S'ha usat com a SO pr
 
 Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 
-### [GitHub](https://github.com)
+### GitHub
 
-Programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte. S'ha fet ús d'un mateix repositori per a la memòria i per al projecte de Godot.
+[GitHub](https://github.com) és un programari de sistema de control de versions per a mantenir el projecte en diversos dispositius i tenint constància de com avança el projecte. S'ha fet ús d'un mateix repositori per a la memòria i per al projecte de Godot.
 
 S'ha usat una organització per branques:
 
-- `main`: versions estables i acabades del projecte. Al principi tot estava en esta branca, però en un punt vaig decidir reorganitzar el projecte per a diferenciar els diferents punts en què es trobava el joc. Quan s'acabe aquest treball contindrà la `v1.0.0`.
+- `main`: versions estables i acabades del projecte. Al principi tot estava en aqeusta branca, però en un punt vaig decidir reorganitzar el projecte per a diferenciar els diferents punts en què es trobava el joc. Quan s'acabe aquest treball contindrà la `v1.0.0`.
 - `develop`: branca on s'ha desenvolupat la major part del projecte de Godot on fer *merge* de les branques de funcionalitat `feature/` i corregir errades que s'han detectat després de les versions. Conté totes les etiquetes de les versions.
 - `feature/x`: branca per a les funcionalitats del joc. Cada versió inclou unes funcionalitats al voltant d'un aspecte concret del joc, p. ex. millorar la UI, quan s'acabava d'implementar tot el planejat o corregir les errades necessàries es feia *merge* i s'esborrava la branca.
 
@@ -39,9 +39,9 @@ I per a tenir un registre de les versions s'han fet les *Releases* corresponents
 
 ![Commits d'un dia a GitHub](Memoria/Assets/Metodologia/GitHub-commits.png){height=5cm}
 
-### [Clockify](https://clockify.me/es/)
+### Clockify
 
-Programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte ‘TFM’ i he anat creant diferents tasques com:
+[Clockify](https://clockify.me/es/) és un programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte ‘TFM’ i he anat creant diferents tasques com:
 
 - **Memòria Obsidian**: per a tot el relacionat amb la memòria
 - **Reunió/Correu *x***: per a tota classe de reunions i correus que s'han enviat al tutor.
@@ -52,9 +52,9 @@ Altres tasques no han tingut un nom transversal a tot el projecte, però sí un 
 
 ![Tasques a Clockify en un dia](Memoria/Assets/Metodologia/Clockify-dia.png){height=5cm}
 
-### [Obsidian](https://obsidian.md)
+### Obsidian
 
-Programa per a prendre notes, seleccionar i gestionar informació i idees. S'usarà per a redactar tota la memòria i organitzar tasques i idees.
+[Obsidian](https://obsidian.md) és un programa per a prendre notes, seleccionar i gestionar informació i idees. S'usarà per a redactar tota la memòria i organitzar tasques i idees.
 
 Cada apartat d'aquesta memòria és un fitxer `.md` independent per tal de reduir la càrrega mental i facilitar l'organització. Les imatges de la memòria s'han guardat en una carpeta `Assets/` per tal de distingir i tenir més centralitzades les rutes.
 
@@ -72,9 +72,9 @@ Addicionalment, ha servit per al desenvolupament i organització d'aquest trebal
 
 Els connectors que van amb **Zotero** s'han complementat amb l'extensió de Safari i l'aplicació d'escriptori. S'ha sincronitzat tot de manera que quan es guardara una referència al navegador, s'actualitzara la biblioteca automàticament i permetera usar-ho en Obsidian sense tornar a importar.
 
-### [Pandoc](https://pandoc.org)
+### Pandoc
 
-Convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
+[Pandoc](https://pandoc.org) és un convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
 
 S'ha fet un exportador de la memòria a PDF amb uns scripts de Python que han permés que amb un simple `./build.sh` a la terminal en la carpeta del *Vault* traguera la memòria en el format adequat amb:
 - Índexs autogenerats: general, de figures i taules.
@@ -86,9 +86,9 @@ S'ha fet un exportador de la memòria a PDF amb uns scripts de Python que han pe
 - Portada al principi del document. La portada es troba al projecte com a PDF i amb el script els uneix.
 - A més totes les imatges que usa la memòria estan comprimides automàticament durant l'exportació perquè el PDF resultant no siga molt pesat.
 
-### [Godot 4.5.1](https://godotengine.org) {#sec-godot-451}
+### Godot 4.5.1 {#sec-godot-451}
 
-Motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
+ [Godot](https://godotengine.org) és un motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
 
 Addicionalment, ha servit per al desenvolupament d'aquest treball els següents connectors:
 
@@ -100,36 +100,37 @@ En els connectors s'ha usat la versió corresponent a la versió de Godot (4.5.1
 
 Hi ha diverses maneres d'obtenir-los, però en aquest projecte s'ha optat per descarregar-los directament del repositori corresponent, col·locar-los a mà dins del projecte i activant-los en la configuració del projecte.
 
-### [VSCode](https://code.visualstudio.com/)
+### VSCode
 
-Editor de codi que s'ha usat per a fer l'exportador a PDF, com també revisar i alguns fitxers, usar la terminal integrada i controlar el repositori de Git.
+[VSCode](https://code.visualstudio.com/) és un editor de codi que s'ha usat per a fer l'exportador a PDF, com també revisar i alguns fitxers, usar la terminal integrada i controlar el repositori de Git.
 
 Ha sigut l'editor del fitxer CSV de les traduccions del joc, ja que a Godot no es pot manipular. S'ha usat l'extensió *Rainbow CSV* per facilitar la lectura.
 
 També s'ha usat per a tocar algun paràmetre concret dels fitxers `.tscn`, ja que en algunes solucions a errades que trobava mencionaven directament els paràmetres en codi pla i no en el nom de l'inspector de Godot.
 
-### [Xcode](https://developer.apple.com/xcode/)
+### Xcode
 
-Per a compilar i fer proves del projecte de Godot en un iPhone real. S'ha usat un *provisioning profile* per a poder provar en l'iPhone i per a muntar el joc a l'App Store un de distribució. D'aquest últim s'ha encarregat Miguel Ángel Lozano tirant-me una maneta perquè poguera usar el compte del màster per a muntar el joc. El procés era exportar el joc i passar-li'l perquè el poguera compilar i muntar a l'App Store Connect.
-### [GanttProject](https://www.ganttproject.biz/)
+[Xcode](https://developer.apple.com/xcode/) s'ha usat per a compilar i fer proves del projecte de Godot en un iPhone real. S'ha usat un *provisioning profile* per a poder provar en l'iPhone i per a muntar el joc a l'App Store un de distribució. D'aquest últim s'ha encarregat Miguel Ángel Lozano tirant-me una maneta perquè poguera usar el compte del màster per a muntar el joc. El procés era exportar el joc i passar-li'l perquè el poguera compilar i muntar a l'App Store Connect.
 
-Aplicació multiplataforma de programari lliure (sota la llicència GPL), la fi de la qual és la **gestió de projectes** mitjançant una representació gràfica de la distribució de les tasques necessàries a curt, mitjà i/o llarg termini.
+### GanttProject
+
+[GanttProject](https://www.ganttproject.biz/) és una aplicació multiplataforma de programari lliure (sota la llicència GPL), la fi de la qual és la **gestió de projectes** mitjançant una representació gràfica de la distribució de les tasques necessàries a curt, mitjà i/o llarg termini.
 
 ### Affinity
 
-Editor d'imatges per a fer dibuixos i icones dels diferents elements artístics del joc a més dels muntatges d'algunes figures de la memòria per tal d'agrupar fotos.
+[Affinity](https://www.affinity.studio) és un editor d'imatges per a fer dibuixos i icones dels diferents elements artístics del joc a més dels muntatges d'algunes figures de la memòria per tal d'agrupar fotos.
 
-### [Audacity](https://www.audacityteam.org/)
+### Audacity
 
-Programa de gravació i edició d'àudio multipista de codi obert. S'ha usat per a editar els efectes de so i la música del joc siga retallant siga ajustant el volum o exportant a diferents formats.
+[Audacity](https://www.audacityteam.org/) és un programa de gravació i edició d'àudio multipista de codi obert. S'ha usat per a editar els efectes de so i la música del joc siga retallant siga ajustant el volum o exportant a diferents formats.
 
-### [MuseScore](https://musescore.org/ca)
+### MuseScore
 
-Programa de composició i notació musical. S'ha usat per a exportar el so d'una escala tocada a piano per fer el so de les tecles del joc.
+[MuseScore](https://musescore.org/ca) és un programa de composició i notació musical. S'ha usat per a exportar el so d'una escala tocada a piano per fer el so de les tecles del joc.
 
-### [KDenLive](https://kdenlive.org/es/)
+### KDenLive
 
-Editor de vídeo per a elaborar vídeos de demos i producte final.
+[KDenLive](https://kdenlive.org/es/) és un editor de vídeo per a elaborar vídeos de demos i producte final.
 
 ### LLM
 
@@ -179,4 +180,13 @@ L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han
 | **Vivo V23**              | Vivo    | Android | 30     | 12 GB | 6.44"    |
 | **Samsung Galaxy A34**    | Samsung | Android | 36     | 8 GB  | 6.6"     |
 | **Redmi Note 12**         | Xiaomi  | Android | 33     | 8 GB  | 6.67"    |
+| **iPhone 16**                 | Apple   | iOS     |        |       |          |
+| **iPhone**                    | Apple   | iOS     |        |       |          |
+| **iPad**                      | Apple   | iOS     |        |       |          |
+|                           | Android | iOS     |        |       |          |
 : Dispositius mòbils on s'ha provat Pianissimo
+
+Segons el SO l'usuari s'ha instal·lat l'aplicació:
+
+- **Android**: a la *Play Store*, com a usuari de proves internes. Clavant-lo al grup de testers amb el seu correu podien descarregar-lo mitjançant un *enllaç* que portava a la pàgina del joc.
+- **iOS**: amb *Test Flight*, per formar part del grup d'usuaris externs. En convidar un usuari a ser tester els arribava un correu amb un enllaç per a accedir-hi.

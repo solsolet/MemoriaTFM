@@ -8,4 +8,5 @@ level_number = 6
 era_name = "ERA_ROMANTICISM"
 notes_required = 10000000
 stat_investment_required = 10
+unlocked_tracks = Array[String](["Barcarolle No.1 Am I.mp3"])
 metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

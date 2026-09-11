@@ -3,7 +3,7 @@ created: 2026-06-18 01:01
 last_reviewed: 2026-06-19
 state: In Progress
 ---
-# One-Sheet
+# One-Sheet {#one-sheet}
 
 ### Historial de versions
 

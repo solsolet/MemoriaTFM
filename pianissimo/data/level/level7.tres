@@ -8,4 +8,5 @@ level_number = 7
 era_name = "ERA_IMPRESSIONISM"
 notes_required = 100000000
 stat_investment_required = 12
+unlocked_tracks = Array[String]([""])
 metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

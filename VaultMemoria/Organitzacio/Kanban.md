@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## Backlog
 
-- [ ] Repassar apunts AESM
 - [ ] Repassar apunts FV
 - [ ] Repassar documentació Kaiwa
 - [ ] It 2 Disgrama Gantt
@@ -14,7 +13,6 @@ kanban-plugin: board
 - [ ] Arreglar taula assoliments GDD #docu
 - [ ] fer picker temps més gran focus #ui #nice-to-have
 - [ ] Hi ha un xicotet hueco entre piano i fondo i es veu un tall HOME #nice-to-have #ui #dev #bug
-- [ ] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
 
 
 ## To Do (10)
@@ -27,6 +25,7 @@ kanban-plugin: board
 - [ ] Afegir millora 2/4, 4/4 i 6/8 #nice-to-have #i #dev
 - [ ] Afegir millora sensible #nice-to-have
 - [ ] saver si les cartes era es poden posar més comodament i no copiar a ma el stirng dels id
+- [ ] Revisar com escric *backend* o *back-end* en tota la memòria per a posar-ho igual #memo #i
 
 
 ## Feedback Testing
@@ -46,23 +45,31 @@ kanban-plugin: board
 - [ ] Al dejar la app en segundo plano mucho tiempo luego se cierra de golpe #bug #l
 - [ ] Saber stats actuales #nice-to-have #dev #ui #i
 - [ ] hora está desfasada -2 en Assaig #bug
+- [ ] crear nous assoliments en l'App Store #l
 
 
 ## In Progress (5)
 
-- [ ] Redactar It4 #memo #l
 - [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
+- [ ] Repassar apunts AESM
+- [ ] Combinar
+	- [ ] it3-4
+	- [ ] it5-6
+	
+	#memo #l
 
 
 ## Done
 
 **Complete**
+- [x] Redactar It4 #memo #l
+- [x] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
 - [x] Posar pantalla de crèdits en alguna banda i posar llicència de la tipografia #i
 - [x] Afegir assolemtns de les cartes període #i #dev #nice-to-have
 - [x] Afegir cartes període #nice-to-have #i #dev
 - [x] Música repetitiva, afegir-ne més
-	[] falta impressionisme
+	- [ ] falta impressionisme
 	#nice-to-have #i
 - [x] Passar correccions text a net #l
 - [x] Sol·licitar defensa #j

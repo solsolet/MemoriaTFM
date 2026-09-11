@@ -60,6 +60,22 @@ func _focus_totals() -> Vector2i:
 	return Vector2i(today, week)
 
 
+func _stat_effect_text(stat_id: String) -> String:
+	var level := StatManager.get_level(stat_id)
+	match stat_id:
+		"velocity":
+			var interval = max(Piano.MIN_SPAWN_INTERVAL, Piano.BASE_SPAWN_INTERVAL * pow(Piano.VELOCITY_SPEEDUP_PER_LEVEL, level))
+			return tr("PROFILE_STAT_VELOCITY") % interval
+		"precision":
+			return tr("PROFILE_STAT_PRECISION") % int(NoteField.PRECISION_BASE_PERFECT + level * NoteField.PRECISION_PER_LEVEL)
+		"technique":
+			return tr("PROFILE_STAT_TECHNIQUE") % level
+		"keyboard":
+			return tr("PROFILE_STAT_KEYBOARD") % min(3 + level, PianoKeyboard.NOTE_SEQUENCE.size())
+		_:
+			return ""
+
+
 func _on_achievements_button_pressed() -> void:
 	AudioManager.play_ui_click()
 	AchievementManager.show_achievements_ui()
