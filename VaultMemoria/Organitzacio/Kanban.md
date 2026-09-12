@@ -54,7 +54,7 @@ kanban-plugin: board
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
 - [ ] Repassar apunts AESM
 - [ ] Combinar
-	- [ ] it3-4
+	- [x] it3-4
 	- [ ] it5-6
 	
 	#memo #l

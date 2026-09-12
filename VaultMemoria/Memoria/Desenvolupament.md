@@ -336,7 +336,7 @@ Els millors tipus de recursos durant el desenvolupament que es poden usar són e
 
 ### Iteració 3
 
-Aquesta iteració comprén del 15 al 17 d'agost de 2026. Ha durat menys del previst (5 o 6 dies), ja que ha resultat una implementació senzilla.
+Aquesta iteració comprén del 15 al 21 d'agost de 2026. Ha combinat la versió 0.3.0 i la 0.4.0, primer s'ha centrat en el mode focus i després en els assoliments.
 
 El mode *focus*, o millor dit, d'**assaig**, naix de la idea que l'aplicació pot ser un punt d'encontre entre jugadors casuals de la part *idle* i de gent que vulga una aplicació per a fer un seguiment de tasques per temps. Al ser de temàtica musical, els músics poden ser públic objectiu.
 
@@ -354,7 +354,13 @@ Aquest disseny *piano-musical* també escau en el fet que he estudiat música pe
 
 Sempre he hagut de dedicar-li més hores que ningú per a tenir resultats normals i, així i tot, no sempre l'esforç s'ha vist recompensat. Anotar el que assajava, apuntar notes sobre el meu progrés, quines seccions d'una obra em costaven més, què estava fent per a treballar-les... va suposar un punt d'inflexió en la meua destresa com a pianista.
 
+Finalment, s'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la botiga corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna. Ha estat el més difícil de la iteració.
+
+La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament, ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
+
 #### Projecte Godot
+
+##### Mode assaig
 
 Primer es van crear les pantalles, començant per la de la configuració de la sessió d'assaig. Per ara, només s'han posat camps bàsics com el títol de la sessió, el temps en minuts de durada i, opcionalment, una descripció de la tasca. En el futur es podrien afegir més camps com etiquetes o el tipus de restricció que volem.
 
@@ -379,20 +385,11 @@ La interfície és molt lletja de moment, només hi ha els elements bàsics sens
 ![Mode Assaig en la iteració 3 de Pianissimo \label{fig:screenshots-it3}](Memoria/Assets/Pianissimo/It3/Pianissimo_FocusMode.png){height=6cm}
 
 S'ha quedat una errada surant que aprofitant, ja que la resta ha sigut ràpid d'implementar, s'ha preferit continuar i continuar implementant característiques més rellevants del joc que continuar aprofundint perquè la solució segurament portaria cert temps.
-
-### Iteració 4
-
-Aquesta iteració comprén del 18 al 21 d'agost de 2026. També ha sigut relativament ràpida encara que ha sigut la més costosa i desesperant de realitzar fins al moment.
-
-S'han implementat els assoliments del joc, en aquest moment només uns 6. Per a fer-ho s'ha tingut en compte que s'han d'implementar al joc, crear-los a les tendes d'aplicacions i connectar l'aplicació, segons el SO, a la botiga corresponent perquè es puga sincronitzar i tenir accés a les funcionalitats específiques de cadascuna.
-
-La iteració ha servit per a poder configurar bé el sistema d'assoliments en totes les seues facetes. Com s'ha pogut realitzar correctament, ara afegir-ne de nous és molt senzill i es farà en pròximes iteracions.
-
-#### Projecte Godot
+##### Assoliments
 
 Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assoliments que tinga tots els mètodes necessaris i per baix hi haja una espècie de *back-end* específic tant per a Android com per a iOS. Aquest *back-end* específic fa ús de les funcions pròpies de cada connector que s'ha incorporat al joc: *GoodlePlayServices* i *gamecenter*, cadascun en la seua corresponent carpeta.
 
-![Captures de Pianissimo en un iPhone amb Game Center habilitat en iOS](Memoria/Assets/Pianissimo/It4/Pianissimo_GameCenter_Config.png){height=6cm}
+![Captures de Pianissimo en un iPhone amb Game Center habilitat en iOS](Memoria/Assets/Pianissimo/It3/Pianissimo_GameCenter_Config.png){height=6cm}
 
 Per fer la façana es va fer un `achievements_manager.gd` que a pesar que el nom indique assoliments, per a aconseguir-los primer s'ha d'autenticar l'usuari. La façana controlaria totes les funcions necessàries i segons el SO del dispositiu cridaria a la corresponent del connector a través dels fitxers específics `android_backend.gd` i `ios_backend.gd`. En cas de no detectar cap SO (com pot ser per a les proves en l'ordinador), hi ha un `null_backend.gd` per si de cas, que mostraria a la terminal què està al passant al joc amb els assoliments.
 
@@ -400,7 +397,7 @@ Amb Android no vaig tenir molts problemes, ja que en l'assignatura de videojocs,
 
 Em van resultar molt útils un parell de vídeos de YouTube de *Piledrivegames Studio*, el canal té una [llista de reproducció](https://youtube.com/playlist?list=PLxucBh1Tbzzfz_kId18RgNViYCpAL5KqZ&si=tLrV3lwXmMMnjuSn) dedicada a fer un joc Android amb Godot. Em vaig fixar només als 3 que té d'habilitar els *Google Play Services* i com fer el *sign-in* i posar assoliments. A més, el que vaig trobar molt útil és que eren relativament recents, els havia muntat a principi d'any, per tant, si fa i no fa les interfícies eren quasi clavades i eren molt fàcils de seguir.
 
-![Captures de Pianissimo en un Android amb els Google Play Services habilitats \label{fig:pianissimo-achievements-backend1}](Memoria/Assets/Pianissimo/It4/Pianissimo_GPS_Config.png){height=6cm}
+![Captures de Pianissimo en un Android amb els Google Play Services habilitats \label{fig:pianissimo-achievements-backend1}](Memoria/Assets/Pianissimo/It3/Pianissimo_GPS_Config.png){height=6cm}
 
 De fet, per al codi específic del *back-end* en Android vaig consultar el que vaig fer per a *Floc* i el vaig adaptar a l'estructura de Pianissimo refactoritzant-lo.
 
@@ -413,7 +410,7 @@ Els assoliments han de tenir un **ID** de cada plataforma perquè el joc els pug
 - **PlayStore**: demana títol i descripció, i si el guardes ja es genera un ID que comença per `CgkInr...`. Per a publicar-lo farà falta una imatge de 512x512 px justos i a més es poden configurar altres camps addicionals.
 - **App Store**: demana un títol, descripció i ID, el pots elegir. A més pots posar una imatge (sense restriccions) i has d'emplenar altres camps. Per a publicar-los s'ha de publicar amb una *build* que tinga *Game Center* habilitat com es pot veure a la figura \ref{fig:AppStore-AchievementWarning}.
 
-![Errada per a muntar assoliments a l'App Store \label{fig:AppStore-AchievementWarning}](Memoria/Assets/Pianissimo/It4/AppStore_AchievementWarning.png){height=5cm}
+![Errada per a muntar assoliments a l'App Store \label{fig:AppStore-AchievementWarning}](Memoria/Assets/Pianissimo/It3/AppStore_AchievementWarning.png){height=5cm}
 
 Encara que no es publiquen els assoliments, per als usuaris de prova seran visibles. En aquesta iteració només s'han publicat els d'Android perquè era més senzill.
 
@@ -486,13 +483,13 @@ Si amb aquesta errada vaig tenir aquest esglai, en iOS em faltava estar a la vor
 
 Resulta que els connectors per a iOS en Godot s'han de posar a una carpeta `res://ios/plugin` cosa que desconeixia perquè estava posant el de Game Center dins d'`addons` com feia amb Android i clar, no ho veia enlloc per a habilitar-lo. 
 
-Fins que no vaig saber la ruta correcta em vaig trobar de nou buscant ajuda inútilment per què no estava trobant la resposta que era la solució i a més alguns suggeriments de la meua errada ni tan sols apareixien a Godot. Per exemple, trobava respostes com: *marca a "Plugins" la casella de "game center" dins de la configuració d'exportació d'iOS*, i era impossible trobar-ho perquè no m'eixiria fins que no tinguera ben col·locat el connector.
+Fins que no vaig saber la ruta correcta em vaig trobar de nou buscant ajuda inútilment per què no estava trobant la resposta que era la solució i a més alguns suggeriments de la meua errada ni tan sols apareixien a Godot. Per exemple, trobava respostes com: *marca a “Plugins” la casella de "game center" dins de la configuració d'exportació d'iOS*, i era impossible trobar-ho perquè no me n'eixiria fins que no tinguera ben col·locat el connector.
 
 Aquesta va ser la primera d'iOS, la segons va ser que em vaig descarregar la versió que hi havia disponible al repositori dels connectors i, com comentava per la poca claredat de la documentació, em vaig descarregar una versió que per a la meua versió de projecte no servia. Tenia la 4.7 i el meu projecte necessitava una per a la 4.5 o si hi havia, 4.5.1. Resulta que sí que existia aquesta versió concreta, el que passava era que descarregant-la i col·locant-la al seu lloc encara no funcionava, començava a ser desesperant.
 
 Es veu que havia de compilar-la jo mateixa perquè no es trobava en cap lloc compilada, així que amb la terminal em vaig descarregar diverses llibreries que m'ajudarien a obtenir els `.xcframework` que requeria el connector. Va tardar bastant més temps del que pensava, però un cop tenia ja el connector en aquest format i a la ubicació correcta ja va funcionar sense problema. Tota aquesta *faenata* s'haguera pogut estalviar si a la documentació especificara que s'ha d'usar la versió adequada i que estiguera ja compilada, però això és un altre tema.
 
-### Iteració 5
+### Iteració 4
 
 Aquesta iteració comprén del 22 fins al 27 d'agost de 2026. M'haguera agradat que durara un dia o dos menys per tal d'anar tancant coses, però no ha sigut possible.
 
@@ -506,29 +503,29 @@ El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigu
 
 Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
 
-![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It5/Pianissimo_UI_It5.jpg){height=8cm}
+![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It4/Pianissimo_UI_It4.jpg){height=8cm}
 
 #### Projecte Godot
 
-Amb la premisa de la diversió va sorgir la idea que la pantalla de `home` tinguera l'aspecte d'un **teclat**. Com el mecanisme de teclat ja el tenia implementat a `game` i no calia que fora dinàmic va ser més senzill: es van col·locar els botons que farien de tecles blanques i negres en el seu corresponent contenidor, assignant un tema per a cada tecla i com distribuir-les ja es va aconseguir el resultat buscat.
+Amb la premissa de la diversió va sorgir la idea que la pantalla de *home* tinguera l'aspecte d'un **teclat**. Com el mecanisme de teclat ja el tenia implementat a *game* i no calia que fora dinàmic va ser més senzill: es van col·locar els botons que farien de tecles blanques i negres en el seu corresponent contenidor, assignant un tema per a cada tecla i com distribuir-les ja es va aconseguir el resultat buscat.
 
 El tema de la interfície, `main_theme` ha canviat molt per les coses que s'han afegit i les que s'han arreglat.
 
-Una correcció va ser posar un tema a la variant `focus` dels botons, ja que al polsar un per defecte es quedava un fi requadre gris que quedava malament.
+Una correcció va ser posar un tema a la variant *focus* dels botons, ja que en polsar un per defecte es quedava un fi requadre gris que quedava malament.
 
-També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil del borde que ja tenen altres elements. Aquest canvi va suposar el desconfigurament de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
+També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar el desconfigurament de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
 
 El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes en cas d'usar una predeterminada s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
 
-Fins a aquest moment es tenia un mode "restrictiu" que en cas d'eixir-se'n de l'aplicació donava l'assaig com a fallit. Això inclou també tancar el mòbil. Godot manca de mecanismes per a detectar si el dispositiu està encés o apagat així que aquest mode no era molt pràctic.
+Fins a aquest moment es tenia un mode “restrictiu” que en cas d'eixir-se'n de l'aplicació donava l'assaig com a fallit. Això inclou també tancar el mòbil. Godot manca de mecanismes per a detectar si el dispositiu està encés o apagat així que aquest mode no era molt pràctic.
 
-Altres aplicacions, com *Forest*, tenen aquest mode i resulta molt atractiu, evitant que l'usuari puga caure en la temptació d'entrar en altres aplicacions. Al no poder implementar-ho amb la tecnologia al meu abast i estar quedant-se sense temps, s'ha optat per una solució menys rígida, que inclús queda millor a l'aplicació, ja que com s'ha mencionat en altres moments, el seguiment de tasques és un complement del joc *idle*. Com estava implementat el mode restrictiu només s'ha afegit el permissiu de manera que amb un *CheckButton* es puga controlar quin es vol usar en l'assaig.
+Altres aplicacions, com *Forest*, tenen aquest mode i resulta molt atractiu, evitant que l'usuari puga caure en la temptació d'entrar en altres aplicacions. Com no podia implementar-ho amb la tecnologia al meu abast i estar quedant-se sense temps, s'ha optat per una solució menys rígida, que inclús queda millor a l'aplicació, ja que com s'ha mencionat en altres moments, el seguiment de tasques és un complement del joc *idle*. Com estava implementat el mode restrictiu només s'ha afegit el permissiu de manera que amb un *CheckButton* es puga controlar quin es vol usar en l'assaig.
 
 Com encara volia donar-li més voltes, es va afegir l'opció en poder eliminar assajos registrats a l'historial amb un botó paperera, un botó per a poder cancel·lar una sessió abans de passar 10 segons sense tenir penalització (l'usuari es pot penedir o donar-li sense voler), estil a les entrades de l'historial i un *CheckButton* per a activar música de fons mentre s'està en un assaig.
 
 Poques coses faltaven més al joc així que volia atacar un problema que segur que anava a passar quan es feren proves en usuaris, el joc no té instruccions i potser jo no estiga present quan algú el prove. 
 
-Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny de moment no és prou bo i les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
+Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny, de moment, no és prou bo i les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
 
 La meua solució temporal, i que segurament es quedarà, és un **sistema** per a posar **tutorials** que també pot servir per a contar una miqueta la història del joc.
 De moment s'ha preparat per a posar tutorial per a `game` i `focus` quan entres per primer cop. Es poden tornar a veure en la pantalla de configuració polsant els botons corresponents.
@@ -542,13 +539,14 @@ Per acabar, s'ha pensat a afegir més contingut de tots els recursos (Estadísti
 Alguns canvis en les estadístiques ha portat a canviar paràmetres del codi com és el cas del *metrònom* que ara fa sinergia amb la *precisió*.
 
 #### So
-Una vegada l'aspecte de `home` va estar fet, podria ser més divertit si les notes sonaven la nota corresponent.
 
-Els àudios que es tenia pel moment eren trets de Freesound per diferents autors i es notava la diferència. La solució més ràpida a la que es va arribar va ser generar-los pel meu compte sense dependre d'altres gravacions i es va fer amb MuseScore.
+Una vegada l'aspecte de *home* va estar fet, podria ser més divertit si les notes sonaven la nota corresponent.
 
-Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que pot ser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
+Els àudios que es tenia de moment eren trets de Freesound per diferents autors i es notava la diferència. La solució més ràpida a la que es va arribar va ser generar-los pel meu compte sense dependre d'altres gravacions i es va fer amb MuseScore.
 
-![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It5/Pianissimo-AudioKeys.jpg){height=6cm}
+Sabia que quan s'escriu una partitura en aquesta aplicació la pots reproduir i escoltar com sona, així que potser es podria exportar a àudio, com va ser el cas. Es va escriure una escala cromàtica ascendent on hi havia una nota negra per compàs i de velocitat, per a tenir una aproximació del que sona en la vida real, BPM = 60.
+
+![Contingut Audacity i MuseScore per obtenir el so de les tecles](Memoria/Assets/Pianissimo/It4/Pianissimo-AudioKeys.jpg){height=6cm}
 
 A més també s'ha corregit `audio_manager` perquè s'han posat els sons de les tecles en `sfx/piano_keys` i s'ha afegit a `_play_sfx` el paràmetre *directory* per a especificar. Serà útil si en un futur comptarem en molts efectes de so i es volgueren situar en la seua corresponent subcarpeta.
 
@@ -556,9 +554,9 @@ Una altra correcció del *manager* va ser arreglar que durant `game`la música q
 
 #### Affinity
 
-Les **icones** que apareixen en alguns botons del joc en un principi es tenia previst usar algunes d'alguna web d'icones de lliure ús o amb algun tipus de llicència permissiva. Al veure que les icones que m'agradaven o bé tenien cadascuna una llicència diferent o no m'agradavne les disponibles vaig pensar que seria més ràpid fer-les jo amb un programa que em permetera exportar-les com a SVG. Amb aquest format garanteix que es veurà bé a qualsevol resolució i a més les icones seràn més lleugeres que amb un PNG.
+Les **icones** que apareixen en alguns botons del joc en un principi es tenia previst usar algunes d'alguna web d'icones de lliure ús o amb algun tipus de llicència permissiva. En veure que les icones que m'agradaven o bé tenien cadascuna una llicència diferent o no m'agradaven les disponibles vaig pensar que seria més ràpid fer-les jo amb un programa que em permetera exportar-les com a SVG. Amb aquest format garanteix que es veurà bé a qualsevol resolució i a més les icones seran més lleugeres que amb un PNG.
 
-### Iteració 6
+### Iteració 5
 
 Aquesta iteració comprén del 28 al 31 d'agost de 2026. S'ha aconseguit implementar les notificacions amb el connector `NotificationSchedulerPlugin`, descarregat directament de GitHub i posat a mà en la corresponent carpeta perquè cap dels altres mètodes d'instal·lació ha semblat funcionar.
 
@@ -567,9 +565,9 @@ Crear més contingut de millores i stats + test
 
 #### Formulari proves usuaris
 
-Per tenir un seguiment de com va el testing amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
+Per tenir un seguiment de com van les proves amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
 
-S'ha fet amb Google Forms Es poden veure els resultats al corresponent apartat en l'Annex.
+S'ha fet amb Google Forms, es poden veure els resultats al corresponent apartat en l'Annex.
 
 #### Exportador memòria
 S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
@@ -606,7 +604,7 @@ S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el con
 
 S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que de moment s'ha pensat posar els crèdits corresponents al GDD. Dins de l'aplicació no cal posar el crèdit.
 
-### Iteració 7
+### Iteració 6
 
 De l'1 fins al 7 de setembre del 2026. En aquesta penúltima iteració s'intentarà tancar el joc el màxim possible. S'afegiran detallets principalment, algunes millores que vinguen dels comentaris que encaixen en el temps que queda... El gruix del joc ja està fet. Només es pot millorar cosetes i afegir contingut.
 
@@ -647,7 +645,7 @@ TODO : anotar algunes de les observacions.
 S'ha implementat un sistema de nivells. 
 TODO : posar error música
 
-### Iteració 8
+### Iteració 7
 
 Aquesta iteació comprén del 8 al 15 de setembre de 2026.
 

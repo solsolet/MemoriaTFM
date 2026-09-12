@@ -180,10 +180,10 @@ L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han
 | **Vivo V23**              | Vivo    | Android | 30     | 12 GB | 6.44"    |
 | **Samsung Galaxy A34**    | Samsung | Android | 36     | 8 GB  | 6.6"     |
 | **Redmi Note 12**         | Xiaomi  | Android | 33     | 8 GB  | 6.67"    |
-| **iPhone 16**                 | Apple   | iOS     |        |       |          |
-| **iPhone**                    | Apple   | iOS     |        |       |          |
-| **iPad**                      | Apple   | iOS     |        |       |          |
-|                           | Android | iOS     |        |       |          |
+| **iPhone 16**             | Apple   | iOS     | -      | 8 GB  | 6.1"     |
+| **iPhone 13**             | Apple   | iOS     | 26.6.1 | 4 GB  | 6.1"     |
+| **iPad**                  | Apple   | iOS     | 26.4.1 | 6 GB  | 11"      |
+| **Tablet desconeguda**    | Android | iOS     | -      | -     | -        |
 : Dispositius mòbils on s'ha provat Pianissimo
 
 Segons el SO l'usuari s'ha instal·lat l'aplicació:
