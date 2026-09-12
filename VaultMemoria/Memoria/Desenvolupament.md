@@ -513,7 +513,7 @@ El tema de la interfície, `main_theme` ha canviat molt per les coses que s'han 
 
 Una correcció va ser posar un tema a la variant *focus* dels botons, ja que en polsar un per defecte es quedava un fi requadre gris que quedava malament.
 
-També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar el desconfigurament de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
+També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar el desconfiguració de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
 
 El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes en cas d'usar una predeterminada s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
 

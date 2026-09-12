@@ -69,6 +69,11 @@ theme/custom_font="uid://ne0g3n1xb1qv"
 
 [internationalization]
 
+locale/translation_remaps={
+"res://assets/sprites/tutorials/TutoApp/TutoApp1-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp1-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp1-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp2-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp2-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp2-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp3-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp3-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp3-en.png:en")
+}
 locale/translations=PackedStringArray("res://assets/i18n/translations.ca.translation", "res://assets/i18n/translations.en.translation", "res://assets/i18n/translations.es.translation")
 
 [rendering]
