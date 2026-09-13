@@ -23,7 +23,16 @@ func _ready() -> void:
 		add_child(overlay)
 		overlay.setup("focus_intro")
 	
-	duration_spinbox.value_changed.connect(func(): AudioManager.play_ui_click())
+	# Duration
+	var line_edit := duration_spinbox.get_line_edit()
+	line_edit.virtual_keyboard_type = LineEdit.KEYBOARD_TYPE_NUMBER
+	line_edit.focus_entered.connect(_on_duration_focus_entered)
+
+	#line_edit.text = str(int(duration_spinbox.value))
+	
+	duration_spinbox.value_changed.connect(func():
+		AudioManager.play_ui_click()
+	)
 	start_button.pressed.connect(_on_start_pressed)
 	journal_button.pressed.connect(_on_journal_pressed)
 	back_button.pressed.connect(_on_back_pressed)
@@ -32,6 +41,14 @@ func _ready() -> void:
 		if child is Button:
 			child.pressed.connect(_on_preset_tag_pressed.bind(child))
 	tag_field.text_changed.connect(_on_tag_field_edited)
+
+
+func _on_duration_focus_entered() -> void:
+	DisplayServer.virtual_keyboard_show(
+		"",
+		Rect2(),
+		DisplayServer.KEYBOARD_TYPE_NUMBER
+	)
 
 
 # INFO: Tags

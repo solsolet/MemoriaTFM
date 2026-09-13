@@ -77,7 +77,9 @@ locale/translation_remaps={
 "res://assets/sprites/tutorials/TutoApp/TutoApp5-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp5-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp5-en.png:en"),
 "res://assets/sprites/tutorials/TutoApp/TutoApp6-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp6-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp6-en.png:en"),
 "res://assets/sprites/tutorials/TutoApp/TutoApp7-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp7-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp7-en.png:en"),
-"res://assets/sprites/tutorials/TutoApp/TutoApp8-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp8-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp8-en.png:en")
+"res://assets/sprites/tutorials/TutoApp/TutoApp8-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp8-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp8-en.png:en"),
+"res://assets/sprites/tutorials/TutoGame/TutoGame3-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame3-en.png:en"),
+"res://assets/sprites/tutorials/TutoGame/TutoGame4-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame4-cas.png:es", "res://assets/sprites/tutorials/TutoGame/TutoGame4-en.png:en")
 }
 locale/translations=PackedStringArray("res://assets/i18n/translations.ca.translation", "res://assets/i18n/translations.en.translation", "res://assets/i18n/translations.es.translation")
 

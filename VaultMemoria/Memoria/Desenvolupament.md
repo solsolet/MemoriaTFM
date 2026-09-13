@@ -655,6 +655,7 @@ TODO : posar quines coses estem implementant
 
 TODO : explicar reunió breument
 
+S'ha afegit unes noves imatges de tutorials, fetes amb affinity també, que ara tenen el fil argumental i son més clares.
 #### Projecte Godot
 
 S'ha arreglat l'errada de la música quan es canviava de `home` a `idle`. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
