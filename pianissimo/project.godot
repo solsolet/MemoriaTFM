@@ -78,6 +78,8 @@ locale/translation_remaps={
 "res://assets/sprites/tutorials/TutoApp/TutoApp6-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp6-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp6-en.png:en"),
 "res://assets/sprites/tutorials/TutoApp/TutoApp7-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp7-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp7-en.png:en"),
 "res://assets/sprites/tutorials/TutoApp/TutoApp8-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp8-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp8-en.png:en"),
+"res://assets/sprites/tutorials/TutoFocus/TutoFocus1-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoFocus/TutoFocus1-cas.png:es", "res://assets/sprites/tutorials/TutoFocus/TutoFocus1-en.png:en"),
+"res://assets/sprites/tutorials/TutoFocus/TutoFocus2-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoFocus/TutoFocus2-cas.png:es", "res://assets/sprites/tutorials/TutoFocus/TutoFocus2-en.png:en"),
 "res://assets/sprites/tutorials/TutoGame/TutoGame3-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame3-en.png:en"),
 "res://assets/sprites/tutorials/TutoGame/TutoGame4-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame4-cas.png:es", "res://assets/sprites/tutorials/TutoGame/TutoGame4-en.png:en")
 }

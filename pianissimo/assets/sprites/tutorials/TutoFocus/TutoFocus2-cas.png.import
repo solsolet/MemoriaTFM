@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfxcwcaajcaij"
-path="res://.godot/imported/TutoApp5-val.png-ded4540985512375df6637aeccdc1e81.ctex"
+uid="uid://b6bblhquo2c6u"
+path="res://.godot/imported/TutoFocus2-cas.png-0239f68842974de487cf01b20bd49822.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/tutorials/TutoApp5-val.png"
-dest_files=["res://.godot/imported/TutoApp5-val.png-ded4540985512375df6637aeccdc1e81.ctex"]
+source_file="res://assets/sprites/tutorials/TutoFocus/TutoFocus2-cas.png"
+dest_files=["res://.godot/imported/TutoFocus2-cas.png-0239f68842974de487cf01b20bd49822.ctex"]
 
 [params]
 
