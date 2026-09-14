@@ -653,7 +653,9 @@ S'ha afegit una escena de perfil del jugador.
 
 TODO : posar quines coses estem implementant
 
-TODO : explicar reunió breument
+En aquesta última iteració també he tingut l'última reunió amb el meu tutor. Aquesta reunió va servir per a poder mostrar-li l'aplicació en persona, veure si calia afegir o polir alguna coseta i saber la seua opinió. Una de les preocupacions que tenia era si no hauria estat suficient tota la meua faena d'implementació, encara que sospitava que amb les notificacions, que funcionara bé amb els dos SO i que ho tinguera disponible a les botigues seria una gran base.
+
+La seua opinió va se que anava molt bé, em va donar una mica de retroalimentació i vam parlar d'alguns aspectes de la memòria, l'entrega i la defensa.
 
 S'ha afegit unes noves imatges de tutorials, fetes amb affinity també, que ara tenen el fil argumental i son més clares.
 #### Projecte Godot
@@ -665,3 +667,15 @@ Resulta que quan tornàvem a `Home` després d'entrar a `Idle` per primera vegad
 L'errada era la típica que sol passar amb els *arrays*: Godot els **passa per referència** i, com a resultat, quan es buida per a tornar a `home` quan torna a `idle` com no se li assigne directament una peça continuarà amb el que hi havia. Abans no passava perquè només teníem una peça sonant en `idle` i l'assignàvem manualment. El problema no era la implementació del `LevelManager` sinó com estava fet `AudioManager`.
 
 La solució ha estat duplicar l'*array* amb `duplicate()` per fer-ne una còpia.
+
+#### Botigues d'aplicacions
+
+S'ha enviat per a revisió l'aplicació a l'App Store. El període de revisió pot arribar a les 48 h. S'ha enviat en un recull d'assoliments a falta d'afegir-los tots. Com la lògica ja està implementada a la *build* no hi ha cap problema per a afegir-los solts després o modificar alguns camps, ja només és tasca de la botiga. Es canviarà algunes de les imatges dels assoliments perquè per tal d'accelerar la faena s'ha repetit la mateixa imatge per a mots d'ells.
+
+Totes les imatges en les dues botigues tenen la mateixa estètica, un fons acolorit i les dues “p” per a fer el símbol de la dinàmica musical. Cada imatge té un color i una tipografia diferent, encara que en un futur es podria posar una icona més personalitzada que tinga a veure en el mateix assoliment.
+
+Per a enviar l'aplicació s'ha fet la fitxa en els tres idiomes que he posat: valencià, castellà i anglés. Per a la fitxa en anglés he hagut de canviar el títol de l'aplicació a *Pianissim* perquè *Pianissimo* ja estava agafat. Li queda bé de tota manera, sembla una versió anglesa del terme italià.
+
+Pel que fa a la Play Store s'ha promocionat l'última versió que hi havia en el canal de proves internes al de tancades. Quan s'ha pogut enviar els canvis a revisió, el termini posa que pot allargar-se al cap de 7 dies. Després només queda promocionar la versió a oberta per a finalment llançar-la com a pública.
+
+Amb aquests dos processos he pogut experimentar com és muntar un joc per a les dues plataformes, trobar-me les errades més comunes i poder configurar-ho tot bé al meu joc. Els connectors de Godot han funcionat a la perfecció per al meu propòsit.
