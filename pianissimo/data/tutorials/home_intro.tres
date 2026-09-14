@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TutorialDefinition" load_steps=10 format=3 uid="uid://w4s3v15y75nn"]
+
+[ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="2_cetpw"]
+[ext_resource type="Texture2D" uid="uid://demw88e7ohxth" path="res://assets/sprites/tutorials/TutoApp/TutoApp1-val.png" id="3_o8s4r"]
+[ext_resource type="Texture2D" uid="uid://m8u8kytyusle" path="res://assets/sprites/tutorials/TutoApp/TutoApp2-val.png" id="4_rv3lo"]
+[ext_resource type="Texture2D" uid="uid://7v4ck7p8ptkr" path="res://assets/sprites/tutorials/TutoApp/TutoApp3-val.png" id="5_e525r"]
+[ext_resource type="Texture2D" uid="uid://tw2ul8cot61b" path="res://assets/sprites/tutorials/TutoApp/TutoApp4-val.png" id="6_a7dhj"]
+[ext_resource type="Texture2D" uid="uid://bl8nagwwcx3p1" path="res://assets/sprites/tutorials/TutoApp/TutoApp5-val.png" id="7_ie3ox"]
+[ext_resource type="Texture2D" uid="uid://dh8nl4xglgnv5" path="res://assets/sprites/tutorials/TutoApp/TutoApp6-val.png" id="8_isvof"]
+[ext_resource type="Texture2D" uid="uid://uh6ca80ecqpf" path="res://assets/sprites/tutorials/TutoApp/TutoApp7-val.png" id="9_wcly3"]
+[ext_resource type="Texture2D" uid="uid://h42yge24x66u" path="res://assets/sprites/tutorials/TutoApp/TutoApp8-val.png" id="10_eb31n"]
+
+[resource]
+script = ExtResource("2_cetpw")
+id = "home_intro"
+panels = Array[Texture2D]([ExtResource("3_o8s4r"), ExtResource("4_rv3lo"), ExtResource("5_e525r"), ExtResource("6_a7dhj"), ExtResource("7_ie3ox"), ExtResource("8_isvof"), ExtResource("9_wcly3"), ExtResource("10_eb31n")])
+metadata/_custom_type_script = "uid://bfj33tiyihf6b"

@@ -13,7 +13,7 @@ func _ready() -> void:
 		var detail = tr("PRACTISE_SUMMARY_COMPLETE_REWARD") % FocusManager.last_reward
 		if FocusManager.last_unlocked_card_id != "":
 			var def := CardManager.get_definition(FocusManager.last_unlocked_card_id)
-			detail += tr("PRACTISE_SUMMARY_COMPLETE_CARD") % def.display_name
+			detail += tr("PRACTISE_SUMMARY_COMPLETE_CARD") % tr(def.display_name)
 		detail_label.text = detail
 	else:
 		result_label.text = tr("PRACTISE_SUMMARY_FAILED")

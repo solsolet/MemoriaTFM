@@ -42,7 +42,7 @@ func _ready() -> void:
 	_passive_timer.timeout.connect(_on_passive_tick)
 	add_child(_passive_timer)
 	
-	AudioManager.ensure_playlist_playing(["Fugue No.2 Cm.mp3"])
+	AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
 
 
 # INFO: UI
@@ -87,7 +87,7 @@ func _apply_offline_income() -> void:
 
 
 func _on_notes_changed(value: int) -> void:
-	notes_label.text = "Notes: %d " % value
+		notes_label.text = "Notes: %s" % NumberFormat.format(value, 2)
 
 
 func _on_note_scored(_lane: int, accuracy: String) -> void:

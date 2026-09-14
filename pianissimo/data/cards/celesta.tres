@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dj4sykbhd57t3"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_8p6c0"]
+
+[resource]
+script = ExtResource("1_8p6c0")
+id = "celesta"
+display_name = "DATA_CARDS_CELESTA"
+category = 1
+description = "DATA_CARDS_CELESTA_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

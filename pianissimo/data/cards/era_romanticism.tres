@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dsnop84xqsirr"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_ushvu"]
+
+[resource]
+script = ExtResource("1_ushvu")
+id = "era_romanticism"
+display_name = "DATA_CARDS_ERA_ROMANTICISM"
+category = 2
+description = "DATA_CARDS_ERA_ROMANTICISM_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

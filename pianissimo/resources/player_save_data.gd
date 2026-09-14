@@ -7,6 +7,7 @@ class_name PlayerSaveData
 @export var achievements_unlocked: Array[String] = []
 @export var last_save_time: int = 0
 @export var stat_levels: Dictionary = {}
+@export var player_level: int = 1
 # Practise
 @export var focus_session_mode: int = 0 # enum
 @export var focus_history: Array = []
@@ -21,6 +22,7 @@ class_name PlayerSaveData
 # Unlockables
 @export var unlocked_cards: Array[String] = []
 @export var unlocked_achievements: Array[String] = []
+@export var unlocked_tracks: Array[String] = [] # music
 @export var achievements_synced: Array[String] = []
 @export var total_notes_earned: int = 0
 # Seen

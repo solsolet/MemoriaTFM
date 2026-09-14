@@ -3,7 +3,9 @@ class_name ScenePaths
 
 const HOME := "res://scenes/home/home.tscn"
 const SETTINGS := "res://scenes/settings/settings.tscn"
+const CREDITS := "res://scenes/credits/credits.tscn"
 const CARD_ALBUM := "res://scenes/cards/card_album.tscn"
+const PROFILE := "res://scenes/profile/profile.tscn"
 
 const GAME := "res://scenes/game/game.tscn"
 const NOTE := "res://scenes/note/note.tscn"

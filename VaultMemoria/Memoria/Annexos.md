@@ -15,6 +15,7 @@
 **GDD**: *Game Design Document*.
 **SO**: Sistema Operatiu.
 **CC0**: *Creative Commons 0*, tipus de llicència de lliure ús.
+**GPS**: *Google Play Services*.
 
 ## Formulari proves amb usuaris
 

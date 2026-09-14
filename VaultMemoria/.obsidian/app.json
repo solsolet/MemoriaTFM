@@ -21,7 +21,13 @@
     "SaveManager",
     "UpgradeManager",
     "HBoxContainer",
-    "idle"
+    "idle",
+    "Redmi",
+    "interactuable",
+    "Kanban",
+    "velocity_maxed",
+    "singleton"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
 }

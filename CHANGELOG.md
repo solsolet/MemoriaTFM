@@ -1,13 +1,40 @@
 # Changelog
 
+## [v0.7.0] - 2026-09-06
+
+### Added
+
+- Implemetació format de nombres a milers, milions, bilions... amb K, M, B...
+- Desbloqueig per condicions a les Millores.
+- Descripcions en Millores.
+- Icones en Estadístiques.
+- Pantalla de Perfil on es poden veure les estadístiques.
+- Pantalla de crèdits.
+- Sistema de nivells amb nova música per al mode `idle`.
+- Noves i assoliments cartes per era musical.
+
+### Fixed
+
+- Solucionar estat dels `CheckButtons` on es tornava transparent.
+
+
 ## [v0.6.0] - 2026-08-31
 
 ### Added
 
-
+- Incorporació del connector de Notificacions.
+- Notificacions funcionals en iOS i Android.
+- S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
+- Afegir so de "clic" per a tots els botons.
+- Afegir *pop-up* de numerets quan s'encerta una nota per a donar retroalimentació visual.
+- Detall de les Estadístiques per a saber com funcionen.
 
 ### Fixed
 
+- Icona de l'aplicació corregida perquè es veja bé en Android.
+- Muntar els preus i el cost per a fer la progressió més lenta.
+- Arreglar *scroll* en Millores.
+- Correccions dels botons de tutorial.
 
 
 ## [v0.5.0] - 2026-08-23
@@ -37,6 +64,7 @@
 - Aspecte `Note` millorat.
 - Afegir i corregir efectes de so de les tecles.
 - Correcció traduccions text del codi amb `tr()`.
+
 
 ## [v0.4.0] - 2026-08-21
 

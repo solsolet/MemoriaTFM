@@ -17,6 +17,10 @@ config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/bg_color=Color(0.5019608, 0.93333334, 0.99215686, 1)
 config/icon="uid://c8ep8j06lj8p5"
 
+[audio]
+
+general/ios/session_category=3
+
 [autoload]
 
 SettingsManager="*res://autoload/settings_manager.gd"
@@ -31,6 +35,7 @@ AudioManager="*res://autoload/audio_manager.gd"
 AchievementManager="*res://autoload/achievement_manager.tscn"
 NotificationManager="*res://autoload/notification_manager.tscn"
 GodotPlayGameServices="*res://addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd"
+LevelManager="*res://autoload/level_manager.tscn"
 
 [display]
 
@@ -64,6 +69,20 @@ theme/custom_font="uid://ne0g3n1xb1qv"
 
 [internationalization]
 
+locale/translation_remaps={
+"res://assets/sprites/tutorials/TutoApp/TutoApp1-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp1-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp1-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp2-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp2-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp2-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp3-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp3-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp3-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp4-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp4-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp4-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp5-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp5-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp5-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp6-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp6-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp6-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp7-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp7-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp7-en.png:en"),
+"res://assets/sprites/tutorials/TutoApp/TutoApp8-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoApp/TutoApp8-cas.png:es", "res://assets/sprites/tutorials/TutoApp/TutoApp8-en.png:en"),
+"res://assets/sprites/tutorials/TutoFocus/TutoFocus1-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoFocus/TutoFocus1-cas.png:es", "res://assets/sprites/tutorials/TutoFocus/TutoFocus1-en.png:en"),
+"res://assets/sprites/tutorials/TutoFocus/TutoFocus2-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoFocus/TutoFocus2-cas.png:es", "res://assets/sprites/tutorials/TutoFocus/TutoFocus2-en.png:en"),
+"res://assets/sprites/tutorials/TutoGame/TutoGame3-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame3-en.png:en"),
+"res://assets/sprites/tutorials/TutoGame/TutoGame4-val.png": PackedStringArray("res://assets/sprites/tutorials/TutoGame/TutoGame4-cas.png:es", "res://assets/sprites/tutorials/TutoGame/TutoGame4-en.png:en")
+}
 locale/translations=PackedStringArray("res://assets/i18n/translations.ca.translation", "res://assets/i18n/translations.en.translation", "res://assets/i18n/translations.es.translation")
 
 [rendering]

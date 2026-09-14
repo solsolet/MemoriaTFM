@@ -56,9 +56,11 @@ func _ensure_bus(bus_name: String) -> void:
 
 
 func ensure_playlist_playing(file_names: Array[String]) -> void:
+	#print("ensure_playlist_playing called with: ", file_names, " | current _playlist: ", _playlist, " | music_player.playing: ", music_player.playing)
 	if music_player.playing and _playlist == file_names:
+		#print("  -> already playing this playlist, skipping")
 		return
-	_playlist = file_names
+	_playlist = file_names.duplicate()
 	_playlist_index = 0
 	_play_current_track()
 
@@ -74,8 +76,10 @@ func play_ui_click() -> void:
 
 func _play_current_track() -> void:
 	if _playlist.is_empty():
+		#print("  -> playlist is empty, nothing to play")
 		return
 	var path := MUSIC_DIR + _playlist[_playlist_index]
+	#print("  -> trying to play: ", path, " | exists: ", ResourceLoader.exists(path))
 	if not ResourceLoader.exists(path):
 		return
 	music_player.stream = ResourceLoader.load(path)

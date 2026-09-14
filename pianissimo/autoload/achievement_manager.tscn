@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://yox1hb6km7dy"]
+[gd_scene load_steps=28 format=3 uid="uid://yox1hb6km7dy"]
 
 [ext_resource type="Script" uid="uid://djd8863mc2lhy" path="res://autoload/achievement_manager.gd" id="1_a2ob2"]
 [ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="2_l8hkb"]
@@ -8,7 +8,26 @@
 [ext_resource type="Resource" uid="uid://c88fgdpddk3c4" path="res://data/achievements/notes_1000.tres" id="6_dgkrk"]
 [ext_resource type="Resource" uid="uid://cfxwd54paibaq" path="res://data/achievements/stat_level_10.tres" id="7_1sg6p"]
 [ext_resource type="Resource" uid="uid://d3mi23acrktko" path="res://data/achievements/upgrade_level_10.tres" id="8_suxok"]
+[ext_resource type="Resource" uid="uid://cjcgrkw4hfaxq" path="res://data/achievements/all_cards.tres" id="9_m0u41"]
+[ext_resource type="Resource" uid="uid://4q4xu2wquy23" path="res://data/achievements/all_stats_maxed.tres" id="10_mq4oi"]
+[ext_resource type="Resource" uid="uid://b5ymct6kct42e" path="res://data/achievements/baroque_master.tres" id="11_kk2bb"]
+[ext_resource type="Resource" uid="uid://df57c2i56d314" path="res://data/achievements/classicism_master.tres" id="12_r1ql3"]
+[ext_resource type="Resource" uid="uid://bk848ic43tp5s" path="res://data/achievements/first_strict_session.tres" id="13_g3aja"]
+[ext_resource type="Resource" uid="uid://buop7oc085swd" path="res://data/achievements/focus_streak_3.tres" id="14_dhsnd"]
+[ext_resource type="Resource" uid="uid://dk4r7b510vnvd" path="res://data/achievements/focus_streak_10.tres" id="15_w38i0"]
+[ext_resource type="Resource" uid="uid://s0csn6ll2mif" path="res://data/achievements/hour_in_a_day.tres" id="16_3xq4f"]
+[ext_resource type="Resource" uid="uid://g1neu1dvwpk8" path="res://data/achievements/hundred_sessions.tres" id="17_q52k6"]
+[ext_resource type="Resource" uid="uid://chcoy3ru8xreb" path="res://data/achievements/impressionism_master.tres" id="18_ue52m"]
+[ext_resource type="Resource" uid="uid://cosqee7rni3ux" path="res://data/achievements/keyboard_maxed.tres" id="19_4pnpc"]
+[ext_resource type="Resource" uid="uid://dua6124whhck0" path="res://data/achievements/precision_maxed.tres" id="20_oj1p5"]
+[ext_resource type="Resource" uid="uid://dh00242rr4us6" path="res://data/achievements/romanticism_master.tres" id="21_qsi8e"]
+[ext_resource type="Resource" uid="uid://buffqet1whagk" path="res://data/achievements/session_10min.tres" id="22_vlpo2"]
+[ext_resource type="Resource" uid="uid://bjihg1cmw644k" path="res://data/achievements/technique_maxed.tres" id="23_4p1ql"]
+[ext_resource type="Resource" uid="uid://dwgy8duc3vbfs" path="res://data/achievements/ten_cards.tres" id="24_kfpcs"]
+[ext_resource type="Resource" uid="uid://ktffw441rnnn" path="res://data/achievements/ten_hours_in_a_week.tres" id="25_88hdt"]
+[ext_resource type="Resource" uid="uid://dk0m4dap1op1x" path="res://data/achievements/velocity_maxed.tres" id="26_sfl6i"]
+[ext_resource type="Resource" uid="uid://c0epjgoqicvbq" path="res://data/achievements/xx_century_master.tres" id="27_awclm"]
 
 [node name="AchievementManager" type="Node"]
 script = ExtResource("1_a2ob2")
-definitions = Array[ExtResource("2_l8hkb")]([ExtResource("3_7x2d4"), ExtResource("4_cumlm"), ExtResource("5_a3ymf"), ExtResource("6_dgkrk"), ExtResource("7_1sg6p"), ExtResource("8_suxok")])
+definitions = Array[ExtResource("2_l8hkb")]([ExtResource("3_7x2d4"), ExtResource("4_cumlm"), ExtResource("5_a3ymf"), ExtResource("6_dgkrk"), ExtResource("7_1sg6p"), ExtResource("8_suxok"), ExtResource("9_m0u41"), ExtResource("10_mq4oi"), ExtResource("11_kk2bb"), ExtResource("12_r1ql3"), ExtResource("13_g3aja"), ExtResource("14_dhsnd"), ExtResource("15_w38i0"), ExtResource("16_3xq4f"), ExtResource("17_q52k6"), ExtResource("18_ue52m"), ExtResource("19_4pnpc"), ExtResource("20_oj1p5"), ExtResource("21_qsi8e"), ExtResource("22_vlpo2"), ExtResource("23_4p1ql"), ExtResource("24_kfpcs"), ExtResource("25_88hdt"), ExtResource("26_sfl6i"), ExtResource("27_awclm")])

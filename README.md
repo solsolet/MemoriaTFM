@@ -9,4 +9,4 @@ Hi figuren totes les parts que s'avaluaran del treball:
 - `VaultMemoria/`: on està la memòria del treball així com tots els arxius que han format part del projecte.
 - `Presentacio/`: on estarà la presentació en Power Point de la defensa.
 
-En l'apartat de `Releases` estarà la versió del videojoc final per a descarregar-la.
+En l'apartat de `Releases` estarà la versió del videojoc final per a descarregar-la així com la memòria.

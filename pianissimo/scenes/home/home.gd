@@ -11,19 +11,18 @@ const HOME_WHITE_KEY_LANES := [0, 2, 4, 5, 7, 9, 11]  # C, D, E, F, G, A, B
 
 
 func _ready() -> void:
-	# INFO: Sound
 	AudioManager.ensure_playlist_playing(["menu1.mp3"])
 	
-	if not TutorialManager.has_been_seen("home_lore_1"):
+	if not TutorialManager.has_been_seen("home_intro"):
 		var overlay := TUTORIAL_OVERLAY_SCENE.instantiate() as TutorialOverlay
 		add_child(overlay)
-		overlay.setup("home_lore_1")
+		overlay.setup("home_intro")
 	
 	for i in white_keys_column.get_child_count():
 		white_keys_column.get_child(i).pressed.connect(
 			func(): AudioManager.play_note_hit(HOME_WHITE_KEY_LANES[i])
 		)
-	achievements_button.pressed.connect(_on_achievements_button_pressed)
+	# achievements_button.pressed.connect(_on_achievements_button_pressed)
 	_update_album_badge()
 
 
@@ -48,9 +47,10 @@ func _on_settings_button_pressed() -> void:
 	SettingsManager.return_scene_path = ScenePaths.HOME
 	get_tree().call_deferred("change_scene_to_file",ScenePaths.SETTINGS)
 
-func _on_achievements_button_pressed() -> void:
+func _on_achievements_button_pressed() -> void: #WARNING: canviar nom funció
 	AudioManager.play_note_hit(HOME_BLACK_KEY_LANES[3])
-	AchievementManager.show_achievements_ui()
+	#AchievementManager.show_achievements_ui()
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.PROFILE)
 
 func _on_album_button_pressed() -> void:
 	AudioManager.play_note_hit(HOME_BLACK_KEY_LANES[4])

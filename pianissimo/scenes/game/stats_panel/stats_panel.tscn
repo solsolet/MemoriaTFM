@@ -2,10 +2,13 @@
 
 [ext_resource type="Script" uid="uid://ejltda6v51aj" path="res://scenes/game/stats_panel/stats_panel.gd" id="1_i6aim"]
 
-[node name="StatsPanel" type="Panel"]
-custom_minimum_size = Vector2(50, 300)
+[node name="StatsPanel" type="Panel" node_paths=PackedStringArray("cards_container")]
+custom_minimum_size = Vector2(200, 300)
+offset_right = 200.0
+offset_bottom = 300.0
 size_flags_vertical = 3
 script = ExtResource("1_i6aim")
+cards_container = NodePath("MarginContainer/HBoxContainer/ScrollContainer/CardsRow")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -16,27 +19,50 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8392157, 0.9607843, 0.9411765, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
 
-[node name="StatsLabel" type="Label" parent="VBoxContainer"]
-auto_translate_mode = 1
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(90, 220)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="StatsLabel" type="Label" parent="MarginContainer/HBoxContainer/Control"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(220, 80)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+rotation = -1.5707964
 theme_type_variation = &"Title2Label"
 text = "GAME_STATS"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/HBoxContainer"]
+clip_contents = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 vertical_scroll_mode = 0
 
-[node name="CardsRow" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="CardsRow" type="HBoxContainer" parent="MarginContainer/HBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 12

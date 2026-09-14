@@ -9,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
 icon_alignment = 1
@@ -34,12 +35,13 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_constants/separation = 5
 
-[node name="IconRect" type="ColorRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(200, 150)
+[node name="IconRect" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 2
-color = Color(0.43137255, 0.90588236, 0.8509804, 1)
+expand_mode = 1
+stretch_mode = 5
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2

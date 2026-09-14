@@ -3,7 +3,7 @@ created: 2026-06-18 01:17
 last_reviewed: 2026-06-19
 state: In Progress
 ---
-# Ten-Pager
+# Ten-Pager {#ten-pager}
 
 ### Historial de versions
 

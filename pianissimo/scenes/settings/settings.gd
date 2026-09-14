@@ -74,6 +74,10 @@ func _on_replay_practise_tutorial_pressed() -> void:
 	overlay.setup("focus_intro")
 
 
+func _on_credits_button_pressed() -> void:
+	AudioManager.play_ui_click()
+	get_tree().call_deferred("change_scene_to_file",ScenePaths.CREDITS)
+
 func _on_back_button_pressed() -> void:
 	AudioManager.play_ui_click()
 	get_tree().call_deferred("change_scene_to_file",SettingsManager.return_scene_path)
