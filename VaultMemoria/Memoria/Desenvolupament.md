@@ -495,15 +495,15 @@ Aquesta iteració comprén del 22 fins al 27 d'agost de 2026. M'haguera agradat 
 
 Durant aquest temps s'ha millorat la UI i s'han afegit algunes funcionalitats per a deixar una versió bastant definitiva per a poder fer proves a usuaris en la següent iteració.
 
-No cal nomenar què feia falta millorar de la interfície si mirem les captures de les anteriors iteracions. S'ha canviat to en major o menor mesura. Es pot veure el detall al GDD.
+No cal nomenar què feia falta millorar de la interfície si mirem les captures de les anteriors iteracions. S'ha canviat tot en certa manera. Es pot veure el detall al GDD.
 
-La mentalitat aquests dies ha sigut d'anar solucionant pantalla a pantalla fins deixar-la en estat òptim, i sobre la marxa si feia falta afegir alguna millora o corregir alguna errada s'anotava al Kanban.
+La mentalitat d'aquests dies ha sigut anar solucionant pantalla a pantalla fins a deixar-la en estat òptim i, sobre la marxa si feia falta, afegir alguna millora o corregir alguna errada s'anotava al Kanban.
 
 El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb el detall suficient per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt en implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
 
 Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
 
-![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 5](Memoria/Assets/Pianissimo/It4/Pianissimo_UI_It4.jpg){height=8cm}
+![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 4](Memoria/Assets/Pianissimo/It4/Pianissimo_UI_It4.jpg){height=8cm}
 
 #### Projecte Godot
 
@@ -515,7 +515,7 @@ Una correcció va ser posar un tema a la variant *focus* dels botons, ja que en 
 
 També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar el desconfiguració de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
 
-El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes en cas d'usar una predeterminada s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
+El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes, en cas d'usar una predeterminada, s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
 
 Fins a aquest moment es tenia un mode “restrictiu” que en cas d'eixir-se'n de l'aplicació donava l'assaig com a fallit. Això inclou també tancar el mòbil. Godot manca de mecanismes per a detectar si el dispositiu està encés o apagat així que aquest mode no era molt pràctic.
 
@@ -525,12 +525,12 @@ Com encara volia donar-li més voltes, es va afegir l'opció en poder eliminar a
 
 Poques coses faltaven més al joc així que volia atacar un problema que segur que anava a passar quan es feren proves en usuaris, el joc no té instruccions i potser jo no estiga present quan algú el prove. 
 
-Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny, de moment, no és prou bo i les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
+Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny, de moment, no és prou bo i algunes de les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
 
 La meua solució temporal, i que segurament es quedarà, és un **sistema** per a posar **tutorials** que també pot servir per a contar una miqueta la història del joc.
-De moment s'ha preparat per a posar tutorial per a `game` i `focus` quan entres per primer cop. Es poden tornar a veure en la pantalla de configuració polsant els botons corresponents.
+De moment s'ha preparat per a posar tutorial per a *game* i *focus* quan entres per primer cop. Es poden tornar a veure en la pantalla de configuració polsant els botons corresponents.
 
-Aquest sistema és molt ximple, es pot veure com se superposa a l'escena un `CanvasLayer` que mostra el contingut del tutorial, que en aquest cas és un *Array* dels *TextureRect* que s vulguen posar. Es pot passar al següent gràcies a les fletxes i també es pot saltar directament amb el botó que pertoca.
+Aquest sistema és molt ximple, es pot veure com se superposa a l'escena un `CanvasLayer` que mostra el contingut del tutorial, que en aquest cas és un *Array* dels *TextureRect* que s'hi vulguen posar. Es pot passar al següent gràcies a les fletxes i també es pot saltar directament amb el botó que pertoca.
 
 Una altra cosa implementada és una mena de `toast` com si fora una notificació dins del joc que t'avisa moltes Notes has guanyat en la teua absència. Era un detall que estava mostrant en la terminal, que jocs com *Cookie Clicker* mostra i crec que suma a l'experiència del jugador.
 
@@ -560,49 +560,80 @@ Les **icones** que apareixen en alguns botons del joc en un principi es tenia pr
 
 Aquesta iteració comprén del 28 al 31 d'agost de 2026. S'ha aconseguit implementar les notificacions amb el connector `NotificationSchedulerPlugin`, descarregat directament de GitHub i posat a mà en la corresponent carpeta perquè cap dels altres mètodes d'instal·lació ha semblat funcionar.
 
-Crear més contingut de millores i stats + test
+També s'ha creat més contingut de *millores* i *estadístiques* com també arreglar alguns desperfectes i millorar l'experiència de l'usuari.
 
+Finalment, a més s'ha pensat i fet un formulari per a fer proves en usuaris.
 
 #### Formulari proves usuaris
 
 Per tenir un seguiment de com van les proves amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
 
-S'ha fet amb Google Forms, es poden veure els resultats al corresponent apartat en l'Annex.
+S'ha fet amb Google Forms, es poden veure les preguntes i respostes al corresponent apartat en l'[Annex](#sec-formulari).
 
 #### Exportador memòria
-S'ha reduït el pes del PDF resultant perquè a mesura que estava cada vegada pesava més i era més lent. El motiu era que les imatges es clavaven sense comprimir i en tot a la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60MB en l'anterior iteració a pesar-ne 10MB.
+S'ha modificat l'exportador per tal de reduït el pes del PDF resultant. A mesura que hi afegia més contingut a la memòria cada vegada pesava més i tardava més l'exportació.
+
+El motiu era que les imatges es clavaven sense comprimir amb tota la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60 MB en l'anterior iteració a pesar-ne 10 MB.
 
 Aquesta solució beneficiara que en cas d'afegir imatges no es perga temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
 
 #### Projecte Godot
 
-TODO : comentar configuració plugin
+Primer es va configurar el connector de les notificacions. A diferència dels de les botigues, aquest comptava en el mateix connector una versió per a Android i per a iOS. Va ser senzill d'instal·lar, la part d'Android a la carpeta d'`addons` i la d'iOS a `iOS/plugins`. Quan dic que va ser senzill va ser no sense primer intentar posar-ho tot en la carpeta d'`addons`inútilment.
 
-TODO : comentar modificacions setttings.
+El que va costar una miqueta al principi va ser d'on obtindre'l: segons el repositori hi ha 3 maneres per a instal·lar-lo, a través de:
 
-S'ha arreglat l'aspecte de la icona de l'aplicació en Android. Segons el disseny de la icona si no està en la mida correcta en alguns paràmetres pot causar que es veja "ampliat".
+- GMP Menu (via recomanada).
+- AssetLib en Godot.
+- Manualment amb Github.
 
-En un altre projecte que vaig fer eixe problema també passava, però com el disseny estava molt centrat i xicotet no quedava malament, per tant, mai havia pensat que era un problema.
+Vaig fracassar amb les dues primeres, pot ser per a la meua versió de Godot no era tan senzill. Amb la tercera va ser senzill com comentava abans.
+
+Per tal d'implementar les notificacions al joc vaig fer un *autoload*, `NotificationManager`, tant en escena (amb un fill `NotificatioScheduler`) com en codi.
+
+El codi és senzill:
+
+1. S'inicialitza el *scheduler*, es comprova el permís de l'aplicació de les notificacions.
+2. Una vegada inicialitzat es crea un canal de notificacions i l'establim.
+3. S'estableix el recordatori: s'elegeix el canal, títol, descripció, icona i el temps que tarda.
+
+Les notificacions amb aquest connector s'han plantejat de la següent manera: quan l'usuari abandone l'aplicació, es conta quant de temps té l'usuari establit de notificacions (en hores) i quan passa eixe temps es dispara la notificació. En cas que l'usuari torne abans d'eixe període es cancel·la i es torna a reiniciar quan ix.
+
+Em pensava que anava a ser supercomplicat, però és molt senzill, per això la iteració es va fer més curta. Realment és un codi únic, no ha calgut fer distincions entre Android i iOS com sí que va passar als assoliments. Els connectors tenen la capa que controla cada SO i nosaltres no hem de preocupar-nos. Es pot veure el resultat a la figura \ref{fig:pianissimo-notification}.
+
+![Notificacions a Pianissimo \label{fig:pianissimo-notification](Memoria/Assets/Pianissimo/It5/Pianissimo_NotificationPlugin.png){height=6cm}
+
+Una vegada establit aquest sistema es va pensar que estaria bé que fora l'usuari qui determinara quant de temps ha de passar sense tocar el joc fins que t'envie la notificació. Aquesta funcionalitat va comportar modificar *settings*, es va afegir nous camps, connectats a noves variables de `SettingManager` que se'n feren càrrec.
+
+A les estadístiques s'havia ficat la millora de posar un xicotet botó amb una “i” d'informació per a veure el detall del que fan. Primer es va provar en les estadístiques i de cara a les proves amb usuaris veure si ho trobarien a faltar també en les millores. La meua sospita era que sí, encara que no descartava que potser ningú les usara i, per tant, no s'hi fixarien. Per a implementar-ho a més del botó s'hi havien afegit al CSV totes les cadenes en les descripcions corresponents i la classe `detail_popup`.
+
+#### UI/UX
+
+S'ha arreglat l'aspecte de la icona de l'aplicació en Android. Segons el disseny de la icona si no està en la mida correcta en alguns paràmetres pot causar que es veja “ampliat”.
+
+En un altre projecte que vaig fer, *Floc*, eixe problema també passava, però com el disseny estava molt centrat i xicotet no quedava malament, per tant, mai havia pensat que era un problema.
 
 Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos sistemes operatius tracten les icones de manera distinta, en el cas d'Android, el que donava problemes, ho podia solucionar fent versions del logo en la mida adequada i posant-les en la configuració d'exportació d'Android.
 
 Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
 
-![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It6/Pianissimo_AndroidIcon_Comparison.jpg){height=3cm}
+![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It5/Pianissimo_AndroidIcon_Comparison.jpg){height=3cm}
 
-*Scroll Container* arreglat per a la botiga de millores, no lliscava bé a menys que es posares exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll per tant no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, per tant, tota la zona ja llisca bé.
+També es va arreglar el *Scroll Container* per a la botiga de millores, no lliscava bé a menys que posares el dit exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll, per tant, no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, com a resultat, tota la zona ja llisca bé.
 
-S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depèn si la nota és *perfect* o *good*. S'ha fet usant `tween`
+S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depén si la nota és *perfect* o *good*. S'ha fet usant `tween`.
 
-#### UI
+Al sistema de tutorials s'havia millorat amb icones en lloc de text per als botons d'anar avant o enrere.
 
 En aquesta iteració també s'ha canviat la tipografia. Es buscava una tipus *serif* per què, a pesar que el joc vol tenir una estètica més aïna divertida, en música la immensa majoria de vegades s'usa aquest tipus de tipografia més seriosa i formal.
 
-Conceptualment, el piano és un instrument que se'l pot considerar elegant, solemne, regi... abans el joc tenia la tipografia per defecte *sense serifa*, que estava bé, però tampoc acabava d'encaixar. Amb `Noto Serif` crec que compleix bé el seu paper.
+En l'imaginari col·lectiu, el piano és un instrument que se'l pot considerar elegant, solemne, regi... abans el joc tenia la tipografia per defecte *sense serifa*, que estava bé, però tampoc acabava d'encaixar. Amb `Noto Serif` crec que compleix bé el seu paper.
 
-S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. El problema: en un mòbil no es llegia molt còmodament. O almenys al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar problemes de visibilitat. Si ja tenia eixe dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
+S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. Però hi havia un problema: en un mòbil no es llegia molt còmodament. O almenys per al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar problemes de visibilitat. Si ja tenia eixe dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
 
-S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que de moment s'ha pensat posar els crèdits corresponents al GDD. Dins de l'aplicació no cal posar el crèdit.
+S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que es valorarà on posar-los.
+
+Per a millorar la progressió s'han incrementat els preus i costos de tot per fer-la més lenta i disfrutable. 
 
 ### Iteració 6
 
@@ -624,7 +655,7 @@ Les he hagut de trampejar amb Affinity reescalant les que ja tenia a mà. I no n
 
 Després de l'odissea d'intentar arribar a la mida que deixava després m'he topat amb què també havia de muntar captures en un iPad. Evidentment, la meua paciència no donava més de si i les imatges estan estirades horitzontalment.
 
-![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Memoria/Assets/Pianissimo/It7/Pianissimo_AppStore_iPad.png)
+![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Pianissimo_AppStore_iPad.png)
 
 #### Proves amb usuaris
 
@@ -675,6 +706,10 @@ S'ha enviat per a revisió l'aplicació a l'App Store. El període de revisió p
 Totes les imatges en les dues botigues tenen la mateixa estètica, un fons acolorit i les dues “p” per a fer el símbol de la dinàmica musical. Cada imatge té un color i una tipografia diferent, encara que en un futur es podria posar una icona més personalitzada que tinga a veure en el mateix assoliment.
 
 Per a enviar l'aplicació s'ha fet la fitxa en els tres idiomes que he posat: valencià, castellà i anglés. Per a la fitxa en anglés he hagut de canviar el títol de l'aplicació a *Pianissim* perquè *Pianissimo* ja estava agafat. Li queda bé de tota manera, sembla una versió anglesa del terme italià.
+
+A l'App Store ha sorgit un problema en l'enviament per a revisió i s'ha hagut de fer uns ajustos.
+
+![Error en l'enviament per a revisió a l'App Store](Memoria/Assets/Pianissimo/It7/Pianissimo-AppStore-SubmissionIssue.png)
 
 Pel que fa a la Play Store s'ha promocionat l'última versió que hi havia en el canal de proves internes al de tancades. Quan s'ha pogut enviar els canvis a revisió, el termini posa que pot allargar-se al cap de 7 dies. Després només queda promocionar la versió a oberta per a finalment llançar-la com a pública.
 

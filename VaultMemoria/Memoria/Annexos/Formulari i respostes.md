@@ -1,4 +1,4 @@
-# Formulari i respostes
+# Formulari i respostes {#sec-formulari}
 
 Per a la part de proves amb usuaris s'ha enviat el joc a uns quants amics perquè el puguen provar. Per tal de tenir la informació organitzada s'ha optat per fer un [formulari de Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSefA4UdPvJDXB7OLbnSGBtzP6iXZDcTJ1vvQdqB7CWBHSdl-Q/viewform?usp=header). Compte amb 7 participants.
 
