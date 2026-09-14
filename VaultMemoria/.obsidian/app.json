@@ -26,7 +26,8 @@
     "interactuable",
     "Kanban",
     "velocity_maxed",
-    "singleton"
+    "singleton",
+    "disfrutable"
   ],
   "alwaysUpdateLinks": true,
   "promptDelete": false

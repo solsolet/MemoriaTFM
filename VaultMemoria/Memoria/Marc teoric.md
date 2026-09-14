@@ -65,16 +65,16 @@ La forma que tenen els videojocs de ritme de rebre l’input del jugador pot ser
 
 En aquest apartat es comentarà sobre els videojocs i aplicacions de productivitat/seguiment de tasques o hàbits/concentració, fent les distincions oportunes.
 
-Primer s'ha de conéixer a què ens referim quan es parla de productivitat. El diccionari diu que és la relació entre la producció obtinguda i els factors utilitzats per a obtindre-la en un període de temps determinat [@DNVproductivitat].
+Primer s’ha de conéixer a què ens referim quan es parla de productivitat. El diccionari la defineix com la relació entre la producció obtinguda i els factors utilitzats per a obtindre-la en un període de temps determinat [@DNVproductivitat].
 
-En el context d'una aplicació, siga un videojoc o no, una persona l'usa per a ser productiu segons els paràmetres que puga oferir. Aquesta producció ocorre en el món real i en el virtual veiem una representació, per exemple:
+En el context d'una aplicació, siga un videojoc o no, una persona l'usa per a ser productiu segons els paràmetres que puga oferir. Aquesta producció ocorre en el món real, i en el virtual veiem una representació, per exemple:
 
-- *Habitica* ofereix una infraestructura per a gamificar hàbits i tasques (temps que es dedica en el món real) a canvi d'un progrés del teu personatge en forma d'experiència o monedes (recompensa virtual).
-- *Clockify* ofereix un seguiment de tasques per temps amb diferents paràmetres com etiquetes, projectes, si és monetitzable o no... Es pot crear una tasca que es vulga seguir del món real i en l'aplicació podem veure el temps que li hem dedicat ja siga per sessió, per interval de temps, jutament altres tasques que compartisquen projecte...
+- _Habitica_ ofereix una infraestructura per a ludificar hàbits i tasques (temps que es dedica en el món real) a canvi d’un progrés del teu personatge en forma d’experiència o monedes (recompensa virtual).
+- *Clockify* ofereix un seguiment de tasques per temps amb diferents paràmetres com etiquetes, projectes, si és monetitzable o no... Es pot crear una tasca que es vulga seguir del món real i en l'aplicació podem veure el temps que li hem dedicat, siga per sessió, per interval de temps, juntament altres tasques que compartisquen projecte...
 
-Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **gamificació**. La gamificació és la pràctica de fer alguna activitat, fora del context dels videojocs, semblant a un joc per fer-la més interessant o disfrutable [@CambridgeDictionary_Gamification].
+Un videojoc de productivitat usarà estratègies pròpies dels videojocs per a portar a terme la productivitat. El recurs per excel·lència és la **ludificació**. La ludificació és la pràctica de fer alguna activitat, fora del context dels videojocs, semblant a un joc per fer-la més interessant o disfrutable [@CambridgeDictionary_Gamification].
 
-En canvi, una aplicació de productivitat a seques no s'ha de preocupar que l'usuari s'enganxe ni de ser divertida, encara que ho pot ser. Una aplicació de productivitat és una aplicació mòbil dissenyada per a ajudar els usuaris a concentrar-se en les seues tasques per reduir distraccions i fomentar una rutina de treballs més estructurada [@pavavimolFocusPlayExploring2024].
+En canvi, una aplicació de productivitat a seques no s’ha de preocupar que l’usuari s’hi enganxe ni de ser divertida, encara que pot ser-ho. Una aplicació de productivitat és una aplicació mòbil dissenyada per a ajudar els usuaris a concentrar-se en les seues tasques per reduir distraccions i fomentar una rutina de treballs més estructurada [@pavavimolFocusPlayExploring2024].
 
 Algunes **característiques** que podem trobar generalment són:
 
@@ -85,7 +85,7 @@ Algunes **característiques** que podem trobar generalment són:
 - Monitoratge de tasques i la seua compleció.
 - Control del temps (compte enrere, rellotges).
 - Haver-hi alguna cosa que motive (reptes diaris, muntar de nivell).
-- Gamificació.
+- Ludificació.
 - Narrativa/fil conductor.
 - Anar guanyant punts (d'experiència, en un marcador, d'habilitat).
 - Reconeixement (insígnies, medalles, assoliments, trofeus).
@@ -93,12 +93,12 @@ Algunes **característiques** que podem trobar generalment són:
 | Aplicació       | Estratègia de productivitat mitjançant   |
 | --------------- | ---------------------------------------- |
 | **Trello**      | Organització/seguiment de tasques        |
-| **Habitica**    | Seguiment de tasques + gamificació       |
-| **Forest**      | Concentració + gamificació               |
+| **Habitica**    | Seguiment de tasques + ludificació       |
+| **Forest**      | Concentració + ludificació               |
 | **Study Bunny** | Concentració + sistemes de joc/narrativa |
 : Comparació d'estratègies de les distintes apps
 
-Un altre tret que es veuen en aquest tipus d'aplicacions és la llibertat de perdre: el risc de perdre sense cap càstig és atractiu per als jugadors. Provar noves tasques i fracassar en la seua compleció no té cap penalització, això transmet al jugador que està bé perdre, està bé intentar-ho. Atrapar a l'usuari en estar sempre fent-ho bé no és beneficiós, això no passa en la vida real i li resta atractiu. Igual que els jocs et donen més d'una oportunitat per a poder passar-te un nivell, es pot exportar la mateixa idea en una tasca, no passa res si t'enganyes o no la compleixes en el temps que tenies previst, ja ho tornaràs a intentar [@kappGAMESGAMIFICATIONQUEST2012].
+Un altre tret que caracteritza aquest tipus d’aplicacions és la llibertat de perdre: el risc de perdre sense cap càstig és atractiu per als jugadors. Provar noves tasques i fracassar a l’hora de completar-la no té cap penalització. Això transmet al jugador que està bé perdre, està bé intentar-ho. Atrapar l’usuari quan està sempre fent-ho bé no és beneficiós; això no passa en la vida real i li resta atractiu. Igual que els jocs et donen més d’una oportunitat per a poder passar-te un nivell, es pot exportar la mateixa idea en una tasca, no passa res si t’enganyes o no la compleixes en el temps que tenies previst, ja ho tornaràs a intentar [@kappGAMESGAMIFICATIONQUEST2012].
 
 I per acabar, mencionar que la retroalimentació és crítica per a l'aprenentatge, tots els jocs d'aquest tipus incorporen algun element que apel·le al jugador quan fa les coses bé.
 
@@ -501,48 +501,48 @@ De tota manera, tant la part de trompeta o la de saxo estan en La m, al canvi a
 
 ### Forest {#sec-marc-teoric-forest}
 
-L'aplicació Forest és una aplicació de concentració que permet als usuaris fer seguiment de les seues tasques. Va ser llançada per [Seektech](https://seekrtech.com/en/) l'any 2014. És una aplicació de descàrrega gratuïta, *free-to-play*, encara que compta amb un pla de pagament que inclou funcionalitats prèmium.
+L'aplicació Forest és una aplicació de concentració, que permet als usuaris fer seguiment de les seues tasques. Va ser llançada per [Seektech](https://seekrtech.com/en/) l'any 2014. És una aplicació de descàrrega gratuïta, *free-to-play*, encara que disposa d'un pla de pagament que inclou funcionalitats prèmium.
 
 #### Mecàniques i progressió
 
-La mecànica principal és **fer tasques** segons els paràmetres que esculla el jugador de:
+La mecànica principal és **fer tasques** segons els paràmetres que trie el jugador de:
  
- - **Temps**: molt de temps es vol dedicar a la tasca. Segons el temps l'aspecte de la planta canvia, de més simple com menys temps a més complex com més temps. El mínim són 10 min i el màxim 3 hores.
- - **Planta**: en polsar sobre la planta s'entra al menú de configuració de plantació i es pot elegir entre els models disponibles. Inicialment, hi ha 3 desbloquejats i la resta es podrà desbloquejar o bé amb monedes (*moneda blana*) o bé amb diamants (*moneda dura*).
- - **Etiqueta** (opcional): hi ha unes predeterminades per elegir i si es vol posar alguna personalitzada s'ha de ser prèmium.
- - Mode de **concentració**: pot ser temporitzador o cronòmetre. Ambdós compten amb alguns paràmetres per seleccionar, comparteixen el de *Deepfocus* què és un mode restrictiu per a no entrar en altres aplicacions.
+ - **Temps**: molt de temps es vol dedicar a la tasca. Segons el temps, l’aspecte de la planta canvia: de més simple, com menys temps, a més complex, com més temps. El mínim són 10 min i el màxim 3 hores.
+ - **Planta**: en polsar sobre la planta s’entra al menú de configuració de plantació i es pot triar entre els models disponibles. Inicialment, n’hi ha 3 de desbloquejats i la resta es podrà desbloquejar o bé amb monedes (_moneda blana_) o bé amb diamants (_moneda dura_).
+ - **Etiqueta** (opcional): n'hi ha unes predeterminades per triar, i si se'n vol posar cap de personalitzada, s'ha de ser prèmium.
+ - Mode de **concentració**: pot ser temporitzador o cronòmetre. Ambdós compten amb alguns paràmetres per seleccionar, comparteixen el de _Deepfocus,_ què és un mode restrictiu per a no entrar en altres aplicacions.
 
-Quan completes una tasca, reps monedes com a recompensa proporcionals al teu temps d'estudi (més temps vol dir més monedes). Es pot duplicar la quantitat de monedes guanyades si es veu un anunci. A més, podràs veure en el teu jardí la planta que has cultivat. En cas en fracassar només tindràs una planta seca.
+Quan es completa una tasca, es reben monedes com a recompensa proporcionals al temps d’estudi del jugador (més temps vol dir més monedes). Es pot duplicar la quantitat de monedes guanyades si es veu un anunci. A més, el jugador podrà veure en el seu jardí la planta que ha cultivat. En cas en fracassar, només tindrà una planta seca.
 
-Altres coses que té l'usuari en la seua mà és poder **comprar** noves plantes o música de fons. Totes ten uns preus elevats, costarà moltes tasques i molt de temps per a estalviar. Pot prendre's com una fita. El *pla gratuït* inclou altres accions com:
+Altres coses que té l’usuari en la seua mà és poder **comprar** noves plantes o música de fons. Totes tenen preus elevats, costarà moltes tasques i molt de temps per a estalviar. Pot prendre’s com una fita. El _pla gratuït_ inclou altres accions com ara:
 
 - Analítiques de la concentració (dia/setmana/mes).
-- Reptes diaris i mensuals on es pot guanyar nous tipus d'arbres.
+- Reptes diaris i mensuals en què es pot guanyar nous tipus d'arbres.
 - Sons d'ambient.
-- *Plant Together*, opció per a sincronitzar sessions de concentració amb amics, si algú falla falleu tots.
+- *Plant Together*, opció per a sincronitzar sessions de concentració amb amics: si algú falla, falleu tots.
 - Esdeveniments estacionals.
 - Sincronització multiplataforma.
 
-Totes aquestes altres funcionalitats no s'han provat a fons perquè amb la funcionalitat bàsica l'aplicació és excel·lent i resulta prou inspiradora per al meu joc.
+Totes aquestes altres funcionalitats no s’han provat a fons perquè amb la funcionalitat bàsica l’aplicació és excel·lent i resulta prou inspiradora per al meu joc.
 
-A més, com a usuària em quede en la superfície, tinc un interés a fer un seguiment de tasques i amb què una aplicació faça bé eixa funcionalitat en tinc prou. He estat usuària de Forest durant molts moments de la meua vida, a l'institut, a la universitat per a alguns exàmens concrets, per al TFG... No he sigut mai constant, per a les meues necessitats he trobat altres aplicacions que m'encaixen millor, com *Clockify* o temporitzador de Pomodoros amb taulers o llistes de tasques, com *Trello*.
+A més, com a usuària em quede en la superfície, tinc interés a fer un seguiment de tasques i en tinc prou amb el fet que una aplicació faça bé aquesta funcionalitat. He sigut usuària de Forest durant molts moments de la meua vida, a l’institut, a la universitat per a alguns exàmens concrets, per al TFG… No he sigut mai constant, per a les meues necessitats he trobat altres aplicacions que m’encaixen més bé, com _Clockify_ o temporitzador de Pomodoros amb taulers o llistes de tasques, com _Trello_.
 
-Aquest fet no impedeix que és una de les aplicacions més descarregades de productivitat de totes les tendes d'aplicacions a més que a diferència d'altres, usant l'aplicació gratuïtament no hi ha anuncis invasius i tens accés a 6 funcionalitats sense restricció, l'aspecte *prèmium* és cosmètic i compta en les funcionalitats de:
+Aquest fet no impedeix que siga una de les aplicacions més descarregades de productivitat de totes les botigues d’aplicacions, a més, a diferència d’altres, usant l’aplicació gratuïta no hi ha anuncis invasius i el jugador té accés a 6 funcionalitats sense restricció, l’aspecte _prèmium_ és cosmètic i presenta les funcionalitats de:
 
-- Gamificació amb conseqüències.
+- Ludificació amb conseqüències.
 - Més configuració de concentració/bloquejador d'apps/temps de pantalla.
 - Activar les opcions del mode concentració.
 - Contribució en la seua iniciativa de plantar arbres de veritat a l'Àfrica.
 - Productivitat amb reforç positiu.
 - Funcionament sense accés a internet.
 
-Com a tal no hi ha progressió. L'usuari que la prove veurà que a mesura que vaja fent tasques anirà emplenant el jardí i eventualment anirà comprant diferents tipus de plantes.
+Com a tal, no hi ha progressió. L'usuari que la prove veurà que, a mesura que vaja fent tasques, anirà emplenant el jardí i eventualment anirà comprant diferents tipus de plantes.
 
 #### UI/UX
 
-L'aplicació comença amb un tutorial on pots lliscar per a veure els diferents panels explicatius. Després et demana iniciar sessió o registrar-se, bé amb Google o bé amb email. A continuació et pregunta si vols que t'envie notificacions i si li dius que sí, apareix el *popup* del sistema per sol·licitar el permís.
+L’aplicació comença amb un tutorial on pots lliscar per a veure els diferents panels explicatius. Després et demana iniciar sessió o registrar-se, bé amb Google o bé amb email. A continuació et pregunta si vols que t’envie notificacions i si li dius que sí, apareix el _popup_ del sistema per sol·licitar el permís.
 
-L'estètica és 2D senzilla, colors verds, marrons, que evoquen la natura d'acord amb tot l'imaginari d'un bosc. Amb l'estètica de natura té una molt bona premissa per a l'usuari: cuida una planta, un ésser viu, en cas de no fer-ho morirà i serà culpa teua i veuràs el teu fracàs en el teu jardí, veuràs la planta seca \ref{fig:forest-fail}.
+L’estètica és 2D senzilla, colors verds, marrons, que evoquen la natura d’acord amb tot l’imaginari d’un bosc. Amb l’estètica de natura té una molt bona premissa per a l’usuari: cuida una planta, un ésser viu, en cas de no fer-ho morirà i serà culpa teua i veuràs el teu fracàs en el teu jardí, veuràs la planta seca \ref{fig:forest-fail}.
 
 ![Arbre sec al fallar la sessió. Font: *Forest Press Kit* \label{fig:forest-fail}](Memoria/Assets/AltresJocs/Forest/Forest_Fail.png){height=2.5cm}
 

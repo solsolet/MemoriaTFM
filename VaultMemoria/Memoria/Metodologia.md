@@ -4,18 +4,17 @@
 
 ## Metodologia àgil
 
-Durant el desenvolupament d'aquest treball se seguirà una metodologia àgil de manera que s'**itere** sobre el projecte, fent xicotetes versions funcionals que cada vegada integren més aspectes del producte per així provar-lo ràpidament i poder fer canvis sobre la marxa.
-Per a implementar-la s'han planificat una sèrie de fites per a anar avançant durant el desenvolupament.
+Durant el desenvolupament d’aquest treball se seguirà una metodologia àgil, de manera que s’**itere** sobre el projecte, fent versions funcionals breus que cada vegada integren més aspectes del producte, per a així provar-lo ràpidament i poder fer canvis sobre la marxa. Per a implementar-la s’han planificat una sèrie de fites i anar avançant durant el desenvolupament.
 
-S'ha plasmat aquesta planificació inicial amb Gantt Project de manera que es visualitze com es van completant les tasques respecte a una línia del temps.
+S’ha plasmat aquesta planificació inicial amb Gantt Project, de manera que es visualitze com es van completant les tasques respecte a una línia del temps.
 
-A més també s'ha usat un tauler Kanban per a controlar quines tasques hi ha pendents, quines s'estan executant i quines s'acaben en cada moment. D'aquesta manera serà molt més senzill detectar colls de botella que es puguen produir durant el desenvolupament.
+A més, també s’ha usat un tauler Kanban per a controlar les tasques que hi ha pendents, les que s’estan executant i les que s’acaben en cada moment. D’aquesta manera serà molt més senzill detectar colls de botella que es puguen produir durant el desenvolupament.
 
-Aquestes ferramentes ajuden a fer l'exercici de planificar les tasques, donar-les un pes, calcular quant tardaran a realitzar-se, quina prioritat donar-li... així tot queda organitzat visualment i qualsevol persona podria ubicar en quin punt es troba el projecte, què s'ha fet i quines tasques queden per acabar.
+Aquestes ferramentes ajuden a fer l’exercici de planificar les tasques, donar-los un pes, calcular quant tardaran a realitzar-se, quina prioritat cal donar-los… així tot queda organitzat visualment i qualsevol persona podria localitzar en quin punt es troba el projecte, què s’ha fet i quines tasques queden per acabar.
 
 ## Ferramentes
 
-Per al desenvolupament d'aquest TFG m'he basat en les següents ferramentes i sistemes per a les diferents tasques que havia d'abordar:
+Per al desenvolupament d'aquest TFM m'he basat en les següents ferramentes i sistemes per a les diferents tasques que havia d'abordar:
 
 ### MacOS Tahoe
 
@@ -31,9 +30,9 @@ Sistema operatiu de Microsoft. Compte amb la versió de Windows 11.
 
 S'ha usat una organització per branques:
 
-- `main`: versions estables i acabades del projecte. Al principi tot estava en aqeusta branca, però en un punt vaig decidir reorganitzar el projecte per a diferenciar els diferents punts en què es trobava el joc. Quan s'acabe aquest treball contindrà la `v1.0.0`.
+- `main`: versions estables i acabades del projecte. Al principi tot estava en aquesta branca, però en un punt vaig decidir reorganitzar el projecte per a diferenciar els diferents estats en què es trobava el joc. Quan s'acabe aquest treball contindrà la `v1.0.0`.
 - `develop`: branca on s'ha desenvolupat la major part del projecte de Godot on fer *merge* de les branques de funcionalitat `feature/` i corregir errades que s'han detectat després de les versions. Conté totes les etiquetes de les versions.
-- `feature/x`: branca per a les funcionalitats del joc. Cada versió inclou unes funcionalitats al voltant d'un aspecte concret del joc, p. ex. millorar la UI, quan s'acabava d'implementar tot el planejat o corregir les errades necessàries es feia *merge* i s'esborrava la branca.
+- `feature/x`: branca per a les funcionalitats del joc. Cada versió inclou funcionalitats al voltant d'un aspecte concret del joc, com ara millorar la UI, quan s'acabava d'implementar tot el planejat o corregir les errades necessàries es feia *merge* i s'esborrava la branca.
 
 I per a tenir un registre de les versions s'han fet les *Releases* corresponents. Al *CHANGELOG* del repositori està tota la informació de què conté cadascuna.
 
@@ -43,7 +42,7 @@ I per a tenir un registre de les versions s'han fet les *Releases* corresponents
 
 [Clockify](https://clockify.me/es/) és un programa per al seguiment de temps per a les meues hores de treball en aquest projecte. Dins de l'aplicatiu, m'he creat el projecte ‘TFM’ i he anat creant diferents tasques com:
 
-- **Memòria Obsidian**: per a tot el relacionat amb la memòria
+- **Memòria Obsidian**: per a tot allò relacionat amb la memòria.
 - **Reunió/Correu *x***: per a tota classe de reunions i correus que s'han enviat al tutor.
 - **Investigació *x***: per al temps dedicat documentant-me i informant-me en temes relacionats amb els videojocs, el mercat mòbil...
 - **Organització *x*:** per al temps que s'ha dedicat organitzant algunes coses relacionades en algun aspecte del TFM ja siga el *Vault*, control de versions, revisar el seguiment...
@@ -56,13 +55,13 @@ Altres tasques no han tingut un nom transversal a tot el projecte, però sí un 
 
 [Obsidian](https://obsidian.md) és un programa per a prendre notes, seleccionar i gestionar informació i idees. S'usarà per a redactar tota la memòria i organitzar tasques i idees.
 
-Cada apartat d'aquesta memòria és un fitxer `.md` independent per tal de reduir la càrrega mental i facilitar l'organització. Les imatges de la memòria s'han guardat en una carpeta `Assets/` per tal de distingir i tenir més centralitzades les rutes.
+Cada apartat d'aquesta memòria és un fitxer `.md` independent per tal de reduir la càrrega mental i facilitar l'organització. Les imatges de la memòria s'han guardat en una carpeta `Assets/` per tal de distingir les rutes i tenir-les més centralitzades.
 
 Addicionalment, ha servit per al desenvolupament i organització d'aquest treball els següents connectors:
 
-- *Citations*: inserta cites de Zotero.
+- *Citations*: inserta citacions de Zotero.
 - *Git*: detecta el repositori i permet control de versions.
-- *Kanban*: permet crear taulers Kanban amb certa configuració, l'he usat per al control de tasques.
+- *Kanban*: permet crear taulers Kanban amb certa configuració; l'he usat per al control de tasques.
 - *LanguageTool Integration*: marca errades ortogràfiques i gramaticals al text.
 - *Style settings*: controla l'aspecte del tema d'Obsidian amb més paràmetres.
 - *TODOseq*: permet posar `TODO` al text ressaltat i els agrupa en una finestra lateral.
@@ -70,13 +69,14 @@ Addicionalment, ha servit per al desenvolupament i organització d'aquest trebal
 
 ![Aspecte d'Obsidian del tauler Kanban i el connector TODOseq](Memoria/Assets/Metodologia/Obsidian-aspect.png){height=7cm}
 
-Els connectors que van amb **Zotero** s'han complementat amb l'extensió de Safari i l'aplicació d'escriptori. S'ha sincronitzat tot de manera que quan es guardara una referència al navegador, s'actualitzara la biblioteca automàticament i permetera usar-ho en Obsidian sense tornar a importar.
+Els connectors que van amb **Zotero** s’han complementat amb l’extensió de Safari i l’aplicació d’escriptori. S’ha sincronitzat tot de manera que quan es guardara una referència al navegador, s’actualitzara la biblioteca automàticament i permetera usar-lo en Obsidian sense tornar a importar.
 
 ### Pandoc
 
-[Pandoc](https://pandoc.org) és un convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar al principi del projecte.
+[Pandoc](https://pandoc.org) és un convertidor universal de documents. S'usarà per a convertir els fitxers `.md` de la memòria elaborats amb Obsidian a un format compatible amb l'entrega del projecte (PDF). S'ha usat la versió 3.8.3 que és la que es va instal·lar a l'inici del projecte.
 
 S'ha fet un exportador de la memòria a PDF amb uns scripts de Python que han permés que amb un simple `./build.sh` a la terminal en la carpeta del *Vault* traguera la memòria en el format adequat amb:
+
 - Índexs autogenerats: general, de figures i taules.
 - Numerada.
 - Bibliografia actualitzada. Al text es cridava amb `[@index_cita]` i s'afegia amb format APA a l'apartat de la bibliografia amb `:::{#refs}:::`.
@@ -84,37 +84,37 @@ S'ha fet un exportador de la memòria a PDF amb uns scripts de Python que han pe
 - Enllaços interns entre diferents seccions.
 - Aspecte desitjat: marges, interlineat, tipografia...
 - Portada al principi del document. La portada es troba al projecte com a PDF i amb el script els uneix.
-- A més totes les imatges que usa la memòria estan comprimides automàticament durant l'exportació perquè el PDF resultant no siga molt pesat.
+- A més totes les imatges que usa la memòria estan comprimides automàticament durant l'exportació perquè el PDF resultant no pese molt.
 
 ### Godot 4.5.1 {#sec-godot-451}
 
- [Godot](https://godotengine.org) és un motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1 que és l'última estable a l'abast del projecte en el seu inici.
+ [Godot](https://godotengine.org) és un motor de jocs 2D-3D de codi obert multiplataforma amb què es desenvoluparà el videojoc del qual tracta aquest treball. S'usarà la versió 4.5.1, que és l'última estable a l'abast del projecte en el seu inici.
 
 Addicionalment, ha servit per al desenvolupament d'aquest treball els següents connectors:
 
-- *[Godot Play Game Services](https://github.com/godot-sdk-integrations/godot-play-game-services.git)*: permet usar els GPS al projecte, cal posar l'ID del projecte de la Play Console en l'apartat corresponent del connector a Godot i en els paràmetres d'exportació d'Android emplenar els apartats de la clau, el nom del paquet... Després al codi es podrà cridar als mètodes que té disponibles. S'ha de col·locar en `addons`.
+- *[Godot Play Game Services](https://github.com/godot-sdk-integrations/godot-play-game-services.git)*: permet usar els GPS al projecte, cal posar l’ID del projecte de la Play Console en l’apartat corresponent del connector a Godot i en els paràmetres d’exportació d’Android emplenar els apartats de la clau, el nom del paquet… Després al codi es podrà cridar als mètodes que té disponibles. S’ha de col·locar en `addons`.
 - *[Godot iOS GameCenter plugin](https://github.com/godot-sdk-integrations/godot-ios-plugins/tree/master/plugins/gamecenter)*: permet connectar Game Center amb el joc, s'ha de seleccionar en la pestanya d'exportació la casella en `Plugins > Game Center`. S'ha de col·locar en `ios/plugins`.
-- *[Notification Scheduler Plugin](https://github.com/godot-mobile-plugins/godot-notification-scheduler/releases/tag/v5.1)*: connector multiplataforma per a poder usar notificacions al nostre joc. El connector té 2 carpetes una per a Android que ha d'anar a `addons` i altra per a iOS en `ios/plugins`
+- *[Notification Scheduler Plugin](https://github.com/godot-mobile-plugins/godot-notification-scheduler/releases/tag/v5.1)*: connector multiplataforma per a poder usar notificacions al nostre joc. El connector té 2 carpetes una per a Android que ha d'anar a `addons` i altra per a iOS en `ios/plugins`.
 
-En els connectors s'ha usat la versió corresponent a la versió de Godot (4.5.1) i s'han posat en la carpeta corresponent, ja que si no, no funcionaven correctament.
+En els connectors s’ha usat la versió corresponent a la versió de Godot (4.5.1) i s’han posat en la carpeta corresponent, ja que si no es feia així, no funcionaven correctament.
 
-Hi ha diverses maneres d'obtenir-los, però en aquest projecte s'ha optat per descarregar-los directament del repositori corresponent, col·locar-los a mà dins del projecte i activant-los en la configuració del projecte.
+Hi ha diverses maneres d’obtenir-los, però en aquest projecte s’ha optat per descarregar-los directament del repositori corresponent, col·locar-los a mà dins del projecte i activar-los en la configuració del projecte.
 
 ### VSCode
 
 [VSCode](https://code.visualstudio.com/) és un editor de codi que s'ha usat per a fer l'exportador a PDF, com també revisar i alguns fitxers, usar la terminal integrada i controlar el repositori de Git.
 
-Ha sigut l'editor del fitxer CSV de les traduccions del joc, ja que a Godot no es pot manipular. S'ha usat l'extensió *Rainbow CSV* per facilitar la lectura.
+Ha sigut l'editor del fitxer CSV de les traduccions del joc, ja que a Godot no es pot manipular. S'ha usat l'extensió *Rainbow CSV* per facilitar-ne la lectura.
 
 També s'ha usat per a tocar algun paràmetre concret dels fitxers `.tscn`, ja que en algunes solucions a errades que trobava mencionaven directament els paràmetres en codi pla i no en el nom de l'inspector de Godot.
 
 ### Xcode
 
-[Xcode](https://developer.apple.com/xcode/) s'ha usat per a compilar i fer proves del projecte de Godot en un iPhone real. S'ha usat un *provisioning profile* per a poder provar en l'iPhone i per a muntar el joc a l'App Store un de distribució. D'aquest últim s'ha encarregat Miguel Ángel Lozano tirant-me una maneta perquè poguera usar el compte del màster per a muntar el joc. El procés era exportar el joc i passar-li'l perquè el poguera compilar i muntar a l'App Store Connect.
+[Xcode](https://developer.apple.com/xcode/) s'ha usat per a compilar i fer proves del projecte de Godot en un iPhone real. S’ha usat un _provisioning profile_ per a poder provar en l’iPhone i per a muntar el joc a l’App Store un de distribució. D’aquest últim s’ha encarregat Miguel Ángel Lozano, que m’ha tirat una maneta perquè poguera usar el compte del màster per a muntar el joc. El procés era exportar el joc i passar-li’l perquè el poguera compilar i muntar a l’App Store Connect.
 
 ### GanttProject
 
-[GanttProject](https://www.ganttproject.biz/) és una aplicació multiplataforma de programari lliure (sota la llicència GPL), la fi de la qual és la **gestió de projectes** mitjançant una representació gràfica de la distribució de les tasques necessàries a curt, mitjà i/o llarg termini.
+[GanttProject](https://www.ganttproject.biz/) és una aplicació multiplataforma de programari lliure (sota la llicència GPL), la finalitat de la qual és la **gestió de projectes** mitjançant una representació gràfica de la distribució de les tasques necessàries a curt, mitjà i/o llarg termini.
 
 ### Affinity
 
@@ -188,5 +188,5 @@ L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han
 
 Segons el SO l'usuari s'ha instal·lat l'aplicació:
 
-- **Android**: a la *Play Store*, com a usuari de proves internes. Clavant-lo al grup de testers amb el seu correu podien descarregar-lo mitjançant un *enllaç* que portava a la pàgina del joc.
+- **Android**: a la *Play Store*, com a usuari de proves internes. Clavant-lo al grup de testers amb el seu correu podien descarregar el joc mitjançant un *enllaç* que portava a la seua pàgina.
 - **iOS**: amb *Test Flight*, per formar part del grup d'usuaris externs. En convidar un usuari a ser tester els arribava un correu amb un enllaç per a accedir-hi.
