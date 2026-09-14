@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://433xhptei1u"]
+[gd_scene load_steps=5 format=3 uid="uid://433xhptei1u"]
 
 [ext_resource type="Script" uid="uid://djkhurqr5x0j" path="res://scenes/focus/focus_session.gd" id="1"]
 [ext_resource type="Script" uid="uid://cfb0qannguffv" path="res://ui/safe_area_container.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cth8pkkk77gc4" path="res://assets/sprites/icons/Fondo.png" id="2_geqq2"]
+[ext_resource type="Texture2D" uid="uid://bsg5ehq5inv8y" path="res://assets/sprites/icons/headset.png" id="4_dujjx"]
 
 [node name="FocusSession" type="Control" node_paths=PackedStringArray("title_label", "time_label", "progress_bar", "cancel_button", "music_button")]
 layout_mode = 3
@@ -60,7 +61,7 @@ autowrap_mode = 3
 [node name="MusicToggleButton" type="CheckButton" parent="SafeArea/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
-text = "SETTINGS_MUSIC"
+icon = ExtResource("4_dujjx")
 alignment = 2
 
 [node name="Control" type="Control" parent="SafeArea/VBoxContainer"]

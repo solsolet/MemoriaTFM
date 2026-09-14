@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bfj33tiyihf6b" path="res://resources/tutorial_definition.gd" id="1_e73nm"]
 [ext_resource type="Texture2D" uid="uid://brhs2jct7uao5" path="res://assets/sprites/tutorials/TutoFocus/TutoFocus1-val.png" id="1_qedkq"]
-[ext_resource type="Texture2D" uid="uid://b3d6mqw5vttxc" path="res://assets/sprites/tutorials/TutoFocus/TutoFocus2.png" id="2_tjm3d"]
+[ext_resource type="Texture2D" uid="uid://df3puofxjqiqp" path="res://assets/sprites/tutorials/TutoFocus/TutoFocus2-val.png" id="2_tjm3d"]
 
 [resource]
 script = ExtResource("1_e73nm")

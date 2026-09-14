@@ -8,4 +8,5 @@ level_number = 8
 era_name = "ERA_IMPRESSIONISM"
 notes_required = 1000000000
 stat_investment_required = 14
+unlocked_tracks = Array[String](["La_fille_aux_cheveux_de_lin.mp3"])
 metadata/_custom_type_script = "uid://gsfxmjbgc1vq"
