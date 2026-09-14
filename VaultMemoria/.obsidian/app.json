@@ -27,7 +27,8 @@
     "Kanban",
     "velocity_maxed",
     "singleton",
-    "disfrutable"
+    "disfrutable",
+    "Affinity"
   ],
   "alwaysUpdateLinks": true,
   "promptDelete": false

@@ -17,6 +17,7 @@ kanban-plugin: board
 
 ## To Do (10)
 
+- [ ] Lore #nice-to-have
 - [ ] Diagrama Flux #memo
 - [ ] tag color més gran en journal #ui
 - [ ] Icona auriculars toggle música focus session #nice-to-have
@@ -33,8 +34,6 @@ kanban-plugin: board
 - [ ] Focus  marcar visualment sifailed o completed en journal. P.ex. fer el panel d'un color u altre  #ui #i #nice-to-have
 - [ ] Destacar notes que cauen per a tecles negres diferent de les blanques #ui #nice-to-have #i
 - [ ] Notes golden més shiny #ui #nice-to-have
-- [ ] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
-- [ ] Tutorial focus #ui #j
 - [ ] Canviar ample perfect zone i good zone #ui #nice-to-have #i
 - [ ] Opció de llevar el popup dels numeritos? #ui #nice-to-have
 - [ ] Setting idioma?? #nice-to-have
@@ -49,20 +48,18 @@ kanban-plugin: board
 
 ## In Progress (5)
 
-- [ ] Lore #nice-to-have
 - [ ] Ajustar volums pistes d'àudio (la música éstpa més forta qeu les notes per defecte) #nice-to-have #i
-- [ ] Repassar apunts AESM
-- [ ] Combinar
-	- [x] it3-4
-	- [ ] it5-6
-	
-	#memo #l
-- [ ] Tutorial joc bé #j  #nice-to-have
 
 
 ## Done
 
 **Complete**
+- [x] Repassar apunts AESM
+- [x] Combinar
+	- [x] it3-4
+	- [x] it5-6
+	
+	#memo #l
 - [x] Tuto home #ui #nice-to-have
 - [x] Redactar It4 #memo #l
 - [x] Refactoritzar música per a tindre-la tota en un arxiu i no hard-codejada pel codi #nice-to-have #dev #i
@@ -134,6 +131,9 @@ kanban-plugin: board
 ## Feedback Done
 
 **Complete**
+- [x] Canviar color de les perfect per good. i al revés no corresponen amb el color de les zones #ui #nice-to-have
+- [x] Tutorial joc bé #j  #nice-to-have
+- [x] Tutorial focus #ui #j
 - [x] Posar botó "i" en millores #ui #nice-to-have #l
 - [x] Esbrinar perquè falla el so en iPhone laura #bug #dev #j
 - [x] Arreglar CheckButton quan se li va el fondo #ui #l

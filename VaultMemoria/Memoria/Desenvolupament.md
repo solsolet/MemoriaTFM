@@ -133,8 +133,6 @@ Es va elaborar una planificació amb GanttProject per a tot el projecte, pensada
 
 Durant la realització d'algunes tasques ja he anat experimentant que les he subestimades, fent que una darrere l'altra s'endarrerisquen i la planificació quede obsoleta. El resultat ha sigut que jo em pensava que en poc temps podria tenir moltes coses fetes i definides. Per uns imprevistos o altres no ha sigut així.
 
-%% TODO : Posar imatge de solució GanttProject realista %%
-
 Una altra cosa a tenir en compte és l'ús de Git. S'ha decidit usar **etiquetes** per a ordenar millor el repositori i tenir un control de versions que es puga seguir més fàcilment, de manera que només mirant a quina etiqueta correspon una *build* en una botiga d'aplicacions, sabem quin codi es tenia en aquell moment. Resultarà útil per a controlar les dues tendes. Podem veure les etiquetes en l'apartat de [changelog](#changelog).
 
 He donat per conclosa aquesta primera iteració quan he tingut les primeres peces d'aquest projecte i memòria per tal de no fer-la més llarga i així passar a un nou començament amb les idees més clares per a la següent.
@@ -651,7 +649,7 @@ Pel que fa a l'App Store m'he barallat per a poder enviar l'aplicació a revisi�
 
 On més temps he perdut és que demana captures tant sí com no d'iPhone de 6.5". El dispositiu que jo tinc per a fer proves és un iPhone 12 que té 6.3" i encara que deixa muntar-les és obligatori multar les de la mida que ells diuen. Supose que si pots provar l'aplicació en l'emulador de Xcode pot ser senzill, però els jocs de Godot tenen la particularitat que els projectes que esportes per a iOS no es poden provar a l'emulador, dona error.
 
-Les he hagut de trampejar amb Affinity reescalant les que ja tenia a mà. I no només ha sigut exisit amb la mida, si no també amb el canal alfa.
+Les he hagudes de trampejar amb Affinity redimensionant les que ja tenia a mà. I no només ha sigut exquisit amb la mida, sinó també amb el canal alfa.
 
 Després de l'odissea d'intentar arribar a la mida que deixava després m'he topat amb què també havia de muntar captures en un iPad. Evidentment, la meua paciència no donava més de si i les imatges estan estirades horitzontalment.
 
@@ -661,26 +659,42 @@ Després de l'odissea d'intentar arribar a la mida que deixava després m'he top
 
 S'ha passat l'aplicació a diferents usuaris així com una enquesta preguntant per diversos aspectes del joc. S'ha donat de termini preferentment de dijous a diumenge d'aquesta setmana, per tal de fer la següent iteració final que durara l'última setmana i corregir totes les errades que puga.
 
-Molts comentaris que veig els podia esperar, per tant, ja els tenia previstos d'anar arreglat els següents dies. No els vaig poder corregir abans per què en algun punt havia de compartir l'aplicació i quan més tardara menys temps tindria per poder corregir qualsevol comentari.
+Molts comentaris que veig els podia esperar, per tant, ja els tenia previstos d'anar arreglat els següents dies. No els vaig poder corregir abans per què en algun punt havia de compartir l'aplicació i com més tardara menys temps tindria per poder corregir qualsevol comentari.
 
 El tauler Kanban s'ha afegit una columna *Feedback Testing* per a posar dedicadament les tasques que he de fer associades a la retroalimentació.
 
+![Aspecte del tauler Kanban amb les noves columnes de *Feedback Testing*](Memoria/Assets/Pianissimo/It6/Kanban_It6.png){height=6cm}
+
 Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar l'aplicació, en canvi, per iOS no s'ha tingut massa sort, i damunt en els que s'ha provat fora del meu dispositiu de proves el so no anava. Aquesta errada no l'he entesa molt bé perquè per defecte el so està activat i com a mi sempre m'ha anat quan he fet les proves amb Xcode o quan l'he baixat de *test flight* em vaig quedar bloquejada.
 
-No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i es veu estupendament, wl disseny suporta dimensions grans, està ben fet doncs.
+No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i una tauleta Android i es veu estupendament, el disseny suporta dimensions grans, està ben fet doncs.
 
-TODO : anotar algunes de les observacions.
+![Pianissimo en un iPad real amb la interfície correctament diposada](Memoria/Assets/Pianissimo/It6/Pianisismo_iPad_real.jpg){height=6cm}
+
+La gran majoria de comentaris els podia intuir, si haguera tingut més una setmaneta més potser haguera pogut arreglar-los tots abans del test, però tenia pressa de saber la resta d'opinions.
+
+Alguns comentaris que vaig rebre tenien a veure amb la claredat dels tutorials, només tenia acabat el de *game*, encara que fora temporal, la resta simplement eren de prova per a veure si anava el sistema de tutorials, també amb la “i” que podria estar també a les millores, posar més objectius o nivells... tot previst, però útil saber que s'ha trobat a faltar, em dona una pista de com és de prioritari.
+
+Un que no tenia molt fitxada, però semblava molt socorregut era que els *checkButton* en un estat desapareixien. No entenia si l'errada era meua o alguna mena d'herència que tinguera a veure en l'element pare *Button*. Resultava ser que un estat del botó, pensava que tenia un tema associat, jo en tenia un buit.
 
 #### Projecte Godot
 
-S'ha implementat un sistema de nivells. 
-TODO : posar error música
+S'ha implementat un sistema de nivells. Aquest seguint el rastre de la resta de recursos del joc (assoliments, cartes...) no podia ser menys. 
+
+Els nivells tenen de paràmetres com es pot arribar a ells, quin número són i quina cançó desbloquegen. 
+Cada 2 nivells superats se supera una època musical i es desbloqueja una carta d'aquesta per tal de fer-ho més interessant i recompensant.
+
+El fet d'afegir noves pistes d'àudio al meu canal de música no va ser senzill de plantejar al principi. Es podien afegir noves pistes separant entre els `[]` amb comes, però com m'ho faria per a detectar quan ha de sonar una o repetir-se per què ha desbloquejat alguna cosa? Es va afegir un nou paràmetre a `player_save_data` per a fer així:
+
+```gd
+AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
+```
 
 ### Iteració 7
 
-Aquesta iteació comprén del 8 al 15 de setembre de 2026.
+Aquesta iteració comprén del 8 al 15 de setembre de 2026.
 
-S'ha afegit una escena de perfil del jugador.
+S'ha afegit una escena de perfil del jugador, en aquest podem veure les estadístiques del jugador, nivells, assoliments, quantes coses es té desbloquejat...
 
 TODO : posar quines coses estem implementant
 
@@ -688,7 +702,9 @@ En aquesta última iteració també he tingut l'última reunió amb el meu tutor
 
 La seua opinió va se que anava molt bé, em va donar una mica de retroalimentació i vam parlar d'alguns aspectes de la memòria, l'entrega i la defensa.
 
-S'ha afegit unes noves imatges de tutorials, fetes amb affinity també, que ara tenen el fil argumental i son més clares.
+S'ha afegit unes noves imatges de tutorials, fetes amb Affinity també, que ara tenen el fil argumental i són més clares.
+
+S'ha acabat i revisat també aquesta memòria com també preparat l'entrega del TFM.
 #### Projecte Godot
 
 S'ha arreglat l'errada de la música quan es canviava de `home` a `idle`. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
