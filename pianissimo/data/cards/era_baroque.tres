@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bycf0afy7ucxv"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_e6al7"]
+
+[resource]
+script = ExtResource("1_e6al7")
+id = "era_baroque"
+display_name = "DATA_CARDS_ERA_BAROQUE"
+category = 2
+description = "DATA_CARDS_ERA_BAROQUE_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

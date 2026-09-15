@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://dgslgxwna3rju"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_fwg6h"]
+
+[resource]
+script = ExtResource("1_fwg6h")
+id = "third"
+display_name = "DATA_UPGRADES_THIRD"
+description = "DATA_UPGRADES_THIRD_DESC"
+base_cost = 300
+cost_multiplier = 1.3
+max_level = 15
+passive_rate = 3.0
+requires_total_notes_earned = 3333
+metadata/_custom_type_script = "uid://ugia523xnwc0"

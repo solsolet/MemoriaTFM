@@ -1,3 +1,5 @@
 {
-  "cssTheme": "AnuPpuccin"
+  "cssTheme": "AnuPpuccin",
+  "theme": "system",
+  "baseFontSize": 18
 }

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LevelDefinition" load_steps=2 format=3 uid="uid://dm7q5kd4o6rv3"]
+
+[ext_resource type="Script" uid="uid://gsfxmjbgc1vq" path="res://resources/level_definition.gd" id="1_ix52n"]
+
+[resource]
+script = ExtResource("1_ix52n")
+era_name = "ERA_BAROQUE"
+unlocked_tracks = Array[String](["Prelude No.2 Cm.mp3"])
+metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

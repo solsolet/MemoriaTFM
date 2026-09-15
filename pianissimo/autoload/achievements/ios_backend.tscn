@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm8jn805vbl1a"]
+
+[ext_resource type="Script" uid="uid://duikd6y7hs08k" path="res://autoload/achievements/ios_backend.gd" id="1_3jv4j"]
+
+[node name="IosBackend" type="Node"]
+script = ExtResource("1_3jv4j")

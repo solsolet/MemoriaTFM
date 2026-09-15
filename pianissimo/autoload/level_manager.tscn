@@ -1,0 +1,13 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqklgorekmmgv"]
+
+[ext_resource type="Script" uid="uid://ct2ksc4lr54m1" path="res://autoload/level_manager.gd" id="1_t7u32"]
+[ext_resource type="Script" uid="uid://gsfxmjbgc1vq" path="res://resources/level_definition.gd" id="2_538cy"]
+[ext_resource type="Resource" uid="uid://dm7q5kd4o6rv3" path="res://data/level/level1.tres" id="3_d6odc"]
+[ext_resource type="Resource" uid="uid://csajjrevuv17c" path="res://data/level/level2.tres" id="4_u3afy"]
+[ext_resource type="Resource" uid="uid://bwqefcmoc1sn8" path="res://data/level/level3.tres" id="5_538cy"]
+[ext_resource type="Resource" uid="uid://dnthfvr74xioi" path="res://data/level/level4.tres" id="6_d6odc"]
+[ext_resource type="Resource" uid="uid://cqjkmnu0kw6j1" path="res://data/level/level5.tres" id="7_u3afy"]
+
+[node name="LevelManager" type="Node"]
+script = ExtResource("1_t7u32")
+definitions = Array[ExtResource("2_538cy")]([ExtResource("3_d6odc"), ExtResource("4_u3afy"), ExtResource("5_538cy"), ExtResource("6_d6odc"), ExtResource("7_u3afy")])

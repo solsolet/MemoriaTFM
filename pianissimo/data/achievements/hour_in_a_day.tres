@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://s0csn6ll2mif"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_pun8p"]
+
+[resource]
+script = ExtResource("1_pun8p")
+id = "hour_in_a_day"
+display_name = "DATA_ACHIEVEMENTS_HOUR_IN_A_DAY"
+description = "DATA_ACHIEVEMENTS_HOUR_IN_A_DAY_DESC"
+android_id = "CgkInrHOzokbEAIQEQ"
+ios_id = "hour_in_a_day"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

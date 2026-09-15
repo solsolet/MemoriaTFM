@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://bjihg1cmw644k"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_hfww4"]
+
+[resource]
+script = ExtResource("1_hfww4")
+id = "technique_maxed"
+display_name = "DATA_ACHIEVEMENTS_TECHNIQUE_MAX"
+description = "DATA_ACHIEVEMENTS_TECHNIQUE_MAX_DESC"
+android_id = "CgkInrHOzokbEAIQDA"
+ios_id = "technique_maxed"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

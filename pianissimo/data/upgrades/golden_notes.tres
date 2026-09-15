@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3 uid="uid://cxr1lvsapmkhr"]
+
+[ext_resource type="Script" uid="uid://ugia523xnwc0" path="res://resources/upgrade_definition.gd" id="1_bxy3t"]
+
+[resource]
+script = ExtResource("1_bxy3t")
+id = "golden_notes"
+display_name = "DATA_UPGRADES_GOLDEN_NOTES"
+description = "DATA_UPGRADES_GOLDEN_NOTES_DESC"
+base_cost = 777
+cost_multiplier = 1.77
+max_level = 10
+requires_total_notes_earned = 77777
+metadata/_custom_type_script = "uid://ugia523xnwc0"

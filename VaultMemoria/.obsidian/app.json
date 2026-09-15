@@ -12,7 +12,24 @@
     "Changelog",
     "Zotero",
     "VSCode",
-    "Tahoe"
+    "Tahoe",
+    "autoloads",
+    "scenes",
+    "assets",
+    "settings",
+    "SaveManager",
+    "SaveManager",
+    "UpgradeManager",
+    "HBoxContainer",
+    "idle",
+    "Redmi",
+    "interactuable",
+    "Kanban",
+    "velocity_maxed",
+    "singleton",
+    "disfrutable",
+    "Affinity"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
 }

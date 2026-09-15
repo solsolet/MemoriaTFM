@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://buffqet1whagk"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_w8xt0"]
+
+[resource]
+script = ExtResource("1_w8xt0")
+id = "session_10min"
+display_name = "DATA_ACHIEVEMENTS_SESSION_10MIN"
+description = "DATA_ACHIEVEMENTS_SESSION_10MIN_DESC"
+android_id = "CgkInrHOzokbEAIQEA"
+ios_id = "session_10min"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

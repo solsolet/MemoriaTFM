@@ -1,0 +1,45 @@
+extends Button
+class_name UpgradeCard
+
+const DETAIL_POPUP_SCENE = preload("res://scenes/common/detail_popup/detail_popup.tscn")
+
+var upgrade_id: String = ""
+
+@export var icon_rect: TextureRect
+@export var title_label: Label
+@export var level_label: Label
+@export var cost_label: Label
+
+
+func setup(id: String) -> void:
+	upgrade_id = id
+	refresh()
+
+
+func refresh() -> void:
+	var def := UpgradeManager.get_definition(upgrade_id)
+	if def == null:
+		return
+	if not UpgradeManager.is_unlocked(upgrade_id):
+		title_label.text = "???"
+		level_label.text = ""
+		cost_label.text = ""
+	else:
+		title_label.text = def.display_name
+		level_label.text = "Lv %d" % UpgradeManager.get_level(upgrade_id)
+		var maxed := def.max_level >= 0 and UpgradeManager.get_level(upgrade_id) >= def.max_level
+		cost_label.text = "MAX" if maxed else "%s N" % NumberFormat.format(UpgradeManager.get_cost(upgrade_id))
+	disabled = not UpgradeManager.can_purchase(upgrade_id) # BUG: vore com arreglar que pugues comprar una millora misteriosa
+
+
+func _on_pressed() -> void:
+	AudioManager.play_ui_click()
+	UpgradeManager.purchase(upgrade_id)
+
+
+func _on_info_button_pressed() -> void:
+	AudioManager.play_ui_click()
+	var def := UpgradeManager.get_definition(upgrade_id)
+	var popup := DETAIL_POPUP_SCENE.instantiate() as DetailPopup
+	get_tree().root.add_child(popup)
+	popup.setup(def.display_name, def.description)

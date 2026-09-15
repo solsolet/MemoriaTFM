@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://b1vercav7055f"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_1haw3"]
+
+[resource]
+script = ExtResource("1_1haw3")
+id = "era_impresionism"
+display_name = "DATA_CARDS_ERA_IMPRESSIONISM"
+category = 2
+description = "DATA_CARDS_ERA_IMPRESSIONISM_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

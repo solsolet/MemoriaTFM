@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AchievementDefinition" load_steps=2 format=3 uid="uid://chcoy3ru8xreb"]
+
+[ext_resource type="Script" uid="uid://cw2s1k8qqacba" path="res://resources/achievement_definition.gd" id="1_x6ijh"]
+
+[resource]
+script = ExtResource("1_x6ijh")
+id = "impressionism_master"
+display_name = "DATA_ACHIEVEMENTS_IMPRESSIONISM_MASTER"
+description = "DATA_ACHIEVEMENTS_IMPRESSIONISM_MASTER_DESC"
+android_id = "CgkInrHOzokbEAIQGw"
+ios_id = "impressionism_master"
+metadata/_custom_type_script = "uid://cw2s1k8qqacba"

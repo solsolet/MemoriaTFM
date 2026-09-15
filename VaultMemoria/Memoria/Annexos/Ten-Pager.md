@@ -3,23 +3,19 @@ created: 2026-06-18 01:17
 last_reviewed: 2026-06-19
 state: In Progress
 ---
-# Ten-Pager
+# Ten-Pager: Pianissimo {#ten-pager}
 
 ### Historial de versions
 
-| Versió | Data       | Descripció dels canvis       |
-| :----- | :--------- | :--------------------------- |
-| v1.0.0 | 2026-06-18 | Creació inicial del document |
-| v1.0.1 | 2026-07-31 | Revisió puntuació            |
-|        |            |                              |
-
-***
+| Versió | Data       | Descripció dels canvis         |
+| :----- | :--------- | :----------------------------- |
+| v1.0.0 | 2026-06-18 | Creació inicial del document   |
+| v1.0.1 | 2026-07-31 | Revisió puntuació              |
+| v1.0.2 | 2026-09-14 | Revisions i correccions finals |
 
 ## Títol
 
 ### Pianissimo
-
-Títol provisional.
 
 ### Plataformes
 
@@ -43,7 +39,7 @@ Setembre 2026
 
 ### Resum de la historia del joc
 
-POV: eres un jove pianista estudiant del conservatori i t'has d'aplicar per als examens finals. Durant el curs has estat treballant prou, però has d'esforçar-te més si vols superar el *tribunal*. Pots elegir dues vies per a aconseguir-ho:
+POV: eres un jove pianista estudiant del conservatori i t'has d'aplicar per als exàmens finals. Durant el curs has estat treballant prou, però has d'esforçar-te més si vols superar el *tribunal*. Pots elegir dues vies per a aconseguir-ho:
 
 - Tenir un ritme de faena constant, treballar en sessions de treball controlades, mesurar el teu progres... diguem que estaràs mode **concentració**. A canvi obtindràs millors resultats i recompenses.
 - O bé apostar per la màgia i la fantasia i que el temps ho solucione tot amb el mode **idle**. Segons la teua sort i decisions obtindràs millores per a seguir avançant.
@@ -61,11 +57,23 @@ POV: eres un jove pianista estudiant del conservatori i t'has d'aplicar per als 
 
 #### Assaig (concentració)
 
+- Configures una sessió d'assaig amb títol, descripció, temps dedicat, mode de l'assaig (restrictiu o permissiu) i etiquetes.
+- Fas la sessió:
+	- En cas de completar-la guanyes una recompensa, notes per al mode *idle* i una nova carta.
+	- En cas de no completar-la, ja siga eixint de l'aplicació quan no toca o cancel·lar-la, no guanyes res i tampoc tens cap penalització.
+- Pot veure els assajos en el *diari d'assajos*.
+
+#### Altres
+
+- **Configuració**: pots canviar els paràmetres per tal d'ajustar el so, reiniciar el joc, posar o llevar notificacions o veure els crèdits.
+- **Perfil**: pots veure les estadístiques del jugador com també els assoliments.
+- **Àlbum**: pots veure les cartes que vas guanyant durant el joc, per muntar de nivell o per completar un assaig.
+
 ## El personatge
 
 ### Edat, sexe, aparença
 
-Jove andrògin al qual només veurem les mans de moment.
+Jove androgin amb els cabells punxeguts i magenta amb un aspecte 2D de dibuix animat.
 
 ### Historia de fons i relació amb el gameplay
 
@@ -75,19 +83,16 @@ Vols entrar al superior de piano i per tant s'ha d'esforçar en aquests últims 
 
 El jugador de base tindrà unes *estadístiques* que podrà conforme vaja jugant en un mode o altre millorar. Entre elles tindrem:
 
-- **Velocitat**: com de ràpid pots arribar a tocar les notes.
+- **Velocitat**: com pots arribar de ràpid a tocar les notes.
 - **Precisió**: quina certesa tens a l'hora de tocar bé les notes.
-- **Resistència**: molt de temps seràs capaç d'assatjar de manera continuada sense fatigar-te.
 - **Tècnica**: com de bé pots interpretar una obra. No només es tracta de polsar notes si no d'atinar també l'articulació i la sonoritat.
-- **Frustració**: conforme erre moltes notes seguides, la desesperació anirà muntant entorpint el teu progrés. Per a reduir-la has de fer menys errades i encertar més seguit. En cas d'arribar al burnout tindrás un temps de descans obligatori que t'impedirà seguir jugant.
-- **Teclat**: tamany máxim del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seràn també limitats
+- **Teclat**: grandària màxima del teclat. Es comença en un nombre de tecles delimitat, per tants els punts que li pugues traure seran també limitats.
 
-A banda de les estadístiques, el jugador tindrà un *nivell* on segons vages guanyant punts d'experiència anirà augmentant. Aquesta pujada implicarà poder desbloquejar noves habilitats, power-ups, peces que estudiar...
+A banda de les estadístiques, el jugador tindrà un *nivell* on segons vages guanyant punts d'experiència anirà augmentant. Aquesta pujada implicarà poder desbloquejar noves habilitats, *power-ups*, peces que estudiar...
 
 ### Controls
 
-- Tap per a polsar les tecles del teclat
-- Long tap per a mantenir polsada una tecla.
+- Tap per a polsar les tecles del teclat i interactuar en la resta dels botons.
 
 ***
 
@@ -95,36 +100,35 @@ A banda de les estadístiques, el jugador tindrà un *nivell* on segons vages gu
 
 ### Gènere del joc
 
-Idle, Ritme, Casual, Productivitat
+*Idle*, Ritme, Casual, Productivitat
 
 ### Capitols o fases de la història
 
 Segons el nivell del jugador tindrem les següents fases:
 
-- Barroquista
-- Clàssic
-- Romanticona
-- Se llevará una gran impresión
-- XX
+- Barroc
+- Classicisme
+- Romanticisme
+- Impressionisme
+- Segle XX
 
-Es repartira el nombre de nivells totals entre aquesta quantitat de fases.
+Es repartira el nombre de nivells totals entre aquesta quantitat de fases. De moment es compta amb 10 nivells, per tant, 2 nivells per fase. Cada fase suposa un assoliment i cada nivell t'atorga una nova cançó de fons en el mode *idle*.
 
 ### Mecàniques
 
 Totes les mecàniques son usant la pantalla tàctil del mòbil fent *tap*, entre elles tindrem que podem:
 
-- Tocar tecles
-- Elegir habilitat
-- Comprar millores
-
-### Minijocs
-
-Tocar cançons a l'estil Piano Tiles. Segons el nivell en que estem desbloquejarem noves obres.
+- Tocar tecles.
+- Comprar millora/estadística.
+- Veure detall.
+- Assajar.
 
 ### Elements propis de la plataforma
 
-- Notificacions
-- Detecció del cicle de vida de l'aplicació (p.e.: detecta si te n'ixes en el mode concentració)
+- Notificacions.
+- Detecció del cicle de vida de l'aplicació (p. ex.: detecta si te n'ixes en el mode concentració).
+- Disseny adaptable per a qualsevol telèfon o tauleta.
+- Inici de sessió amb GPS o game center segons la plataforma, cosa que permet tenir un registre de la teua activitat en les botigues així com assoliments per a desbloquejar.
 
 ***
 
@@ -132,11 +136,12 @@ Tocar cançons a l'estil Piano Tiles. Segons el nivell en que estem desbloquejar
 
 ### Descripció de l'entorn
 
-Entorn 2D on en la part de baix de la pantalla hi ha un teclat en un número inicial de tecles. Cauran notes (en forma de blocs) de dalt de la pantalla de manera que el jugador toque la tecla corresponent quant tecla estiga a sobre.
+L'entorn es 2D colorit seguint una paleta de colors vius i 
+
+Entorn 2D on en la part central de la pantalla hi ha un teclat en un nombre inicial de tecles. Cauran notes (en forma de blocs) de dalt de la pantalla de manera que el jugador toque la tecla corresponent quan la nota estiga a sobre.
 
 "Tenda": lloc on comprar millores a mode kiosk
 
-Arbre d'habilitats
 
 ### Mapa
 

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://f5avi75wh4uw"]
+
+[ext_resource type="Script" uid="uid://c3l4ow6kxsm7b" path="res://resources/card_definition.gd" id="1_8skub"]
+
+[resource]
+script = ExtResource("1_8skub")
+id = "czerny"
+display_name = "DATA_CARDS_CZERNY"
+description = "DATA_CARDS_CZERNY_DESC"
+metadata/_custom_type_script = "uid://c3l4ow6kxsm7b"

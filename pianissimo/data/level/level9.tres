@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelDefinition" load_steps=2 format=3 uid="uid://cv8s7r1mtx2gb"]
+
+[ext_resource type="Script" uid="uid://gsfxmjbgc1vq" path="res://resources/level_definition.gd" id="1_go0p6"]
+
+[resource]
+script = ExtResource("1_go0p6")
+level_number = 9
+era_name = "ERA_XX_CENTURY"
+notes_required = 10000000000
+stat_investment_required = 16
+metadata/_custom_type_script = "uid://gsfxmjbgc1vq"

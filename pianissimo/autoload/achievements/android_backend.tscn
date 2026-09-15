@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn65rkfpiv540"]
+
+[ext_resource type="Script" uid="uid://dd68afopm6f3j" path="res://autoload/achievements/android_backend.gd" id="1"]
+[ext_resource type="Script" uid="uid://najrktkbwowh" path="res://addons/GodotPlayGameServices/scripts/sign_in/sign_in_client.gd" id="2"]
+[ext_resource type="Script" uid="uid://bxc4ry21g40wn" path="res://addons/GodotPlayGameServices/scripts/achievements/achievements_client.gd" id="3"]
+
+[node name="AndroidBackend" type="Node"]
+script = ExtResource("1")
+
+[node name="PlayGamesSignInClient" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="PlayGamesAchievementsClient" type="Node" parent="."]
+script = ExtResource("3")
