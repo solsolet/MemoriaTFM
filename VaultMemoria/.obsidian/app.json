@@ -28,7 +28,8 @@
     "velocity_maxed",
     "singleton",
     "disfrutable",
-    "Affinity"
+    "Affinity",
+    "autoload"
   ],
   "alwaysUpdateLinks": true,
   "promptDelete": false

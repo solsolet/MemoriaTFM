@@ -690,9 +690,9 @@ AudioManager.ensure_playlist_playing(SaveManager.data.unlocked_tracks)
 
 Aquesta iteració comprén del 8 al 15 de setembre de 2026.
 
-S'ha afegit una escena de perfil del jugador, en aquest podem veure les estadístiques del jugador, nivells, assoliments, quantes coses es té desbloquejat...
+S'ha afegit una escena de *perfil* del jugador, en aquest podem veure les estadístiques del jugador, nivells, assoliments, quantes coses es té desbloquejat...
 
-TODO : posar quines coses estem implementant
+També s'ha afegit més contingut de cartes i s'han afegit nivells.
 
 En aquesta última iteració també he tingut l'última reunió amb el meu tutor. Aquesta reunió va servir per a poder mostrar-li l'aplicació en persona, veure si calia afegir o polir alguna coseta i saber la seua opinió. Una de les preocupacions que tenia era si no hauria estat suficient tota la meua faena d'implementació, encara que sospitava que amb les notificacions, que funcionara bé amb els dos SO i que ho tinguera disponible a les botigues seria una gran base.
 
@@ -754,3 +754,5 @@ Com s'ha anat comentant al llarg de la memòria les aplicacions estan disponible
 - **App Store**: https://testflight.apple.com/join/TX8GUnMW
 
 En el cas de l'App Store no vaig passar la revisió de l'aplicació i ja em vaig quedar sense temps per a l'entrega. Es pot provar com a usuari de proves extern amb *Test Flight*.
+
+Es pot veure el projecte de Godot a l'entrega d'aquest treball i aquest repositori: https://github.com/solsolet/MemoriaTFM.git

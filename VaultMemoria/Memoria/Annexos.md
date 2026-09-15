@@ -16,6 +16,7 @@
 **SO**: Sistema Operatiu.
 **CC0**: *Creative Commons 0*, tipus de llicència de lliure ús.
 **GPS**: *Google Play Services*.
+**SFX**: *Sound Effects*.
 
 ## Formulari proves amb usuaris
 

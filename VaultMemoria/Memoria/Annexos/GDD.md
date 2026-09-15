@@ -169,6 +169,22 @@ Es poden ordenar segons la prioritat. En el cas de Pianissimo és de vital impor
 
 Evitar posar en els scripts `class_name`, car que dona error també, entra en conflicte amb la naturalesa dels *Autoloads* de tenir una única instància.
 
+### Comunicació entre classes
+
+Mentre els autoloads estan disponibles per a totes les classes en tot moment, hi ha d'altres que per a comunicar-se usen **signals**. Aquests senyals avisen d'esdeveniments com `notes_changed` i els altres *managers* estan pendents, l'emissor no sap qui està escoltant. Per exemple en diferents parts del codi veurem:
+
+```gdscript
+# En una classe declarem
+signal notes_changed(new_value: int)
+## Disparem el senyal quan passe alguna cosa
+notes_changed.emit(SaveManager.data.notes)
+
+# En una altra classe hi reaccionem
+Economy.notes_changed.connect(_on_notes_changed)
+```
+
+L'avantatge una vegada més és el **desacoblament**. La idea darrere dels senyals m'ha resultat curiosa perquè no atén de classes públiques o privades, els és irrellevant, el que importa és el *node* que llança el senyal i si hi ha algú que l'escolta es farà alguna cosa.
+
 ### Internacionalització {#gdd-internacionalitzacio}
 
 Una bona pràctica per a fer que el joc arribe a més gent és tenir-lo disponible en diversos idiomes. En Godot es pot aconseguir de manera senzilla amb un CSV.
@@ -225,6 +241,8 @@ func save_data() -> void:
 
 El progrés també ha de ser capaç de reiniciar-se en cas que el jugador ho necessite sense desinstal·lar-se el joc. Per a fer-ho s'usa la funció `reset_data()` que crea un nou *PlayerSaveData* i guardar-lo en lloc de què teníem, com a tal no esborra res, sobreescriu.
 
+Una altra característica de la persistència és que les dades que es guarden per l'**ID**, no per referències, si no ho férem així tindríem un grau alt d'acoblament als recursos.
+
 ### Piano
 
 El piano té 4 parts mòbils:
@@ -271,6 +289,8 @@ Per a posar aquestes variacions, en l'Inspector hem d'anar a `Theme > Type varia
 
 ![Menú de tema de Godot](Memoria/Assets/Pianissimo/It7/godot-theme-edit.png)
 
+A banda de la implementació en general, per a l'aspecte de *Pianissimo* i que fora coherent en diferents mides de pantalles, s'ha tingut cura de respectar les *safe area* del dispositiu i de guardar un marge respecte a les vores de la pantalla. Aquesta funcionalitat s'ha implementat als *MarginContainers* que tenen quasi totes les escenes associades al codi de `safe_area_container.gd`.
+
 ### Experiència del joc
 
 La sensació a transmetre és de diversió, absurditat, ganes d'anar conquerint objectius. No té per què ser un joc addictiu, de fet els *idles* per molt que ho siguen ho són al principi i després es tornen una carrera de fons. Tampoc és la intenció que es torne addictiu, recordem que una de les mecàniques és **esperar** i és per això que s'ha pensat que combinar-ho amb una part de productivitat és aprofitar-la.
@@ -279,6 +299,12 @@ Per a gent casual, pot ser un bon joc durant un temps. Per als jugadors que els 
 
 
 ## So
+
+Per a Pianissimo era molt important que tinguera so en tenir una estètica musical. Per a implementar-lo s'ha fet un `AudioManager`, un *autoload* que controlava tots els esdeveniments sonors i que qualsevol classe del codi poguera cridar a les seues funcions, ja que totes, d'una manera o una altra, emetien so en algun moment.
+
+Aquest *manager* comptava en una *pool* de 8 sons per als SFX i un reproductor per a la música on al codi es creaven *busos* per a poder-los reproduir.
+
+Els sons es troben a `assets/sound/sfx` i `music` respectivament. 
 
 ### Disseny sonor
 
@@ -292,17 +318,17 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 
 La música que sone de fons serà acorde a les èpoques desbloquejades en el nivell corresponent interpretades per un piano.
 
-| Nom             | Descripció                        | Compositor                                               | Àudio                                                                                                                                                                     |
-| --------------- | --------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Menú            | Música que sona de fons en *home* | [mikewhite12](https://freesound.org/people/mikewhite12/) | [menu1.mp3](https://freesound.org/s/621130/)                                                                                                                              |
-| Barroc1         | Preludi en Dm                     | J. S. Bach                                               | [MusOpen - TWK prelude Cm](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                 |
-| Barroc2         | Fuga en Do m                      | J. S. Bach                                               | [MusOpen - TWK fugue Cm](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                   |
-| Classicisme1    | Sonanta no.1 Fm, Op.2 no. 1 I     | Beethoven                                                | [MusOpen - Piano Sonana No.1 in Fm Op.1 I](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                          |
-| Classicisme2    | Sonanta no.1 Fm, Op.2 no. 1 III   | Beethoven                                                | [MusOpen - Piano Sonata No.1 in Fm Op.1 III](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                        |
-| Romanticisme1   | Etude Op.10, no.9 Fm              | Chopin                                                   | [MusOpen - Étude Op.10](https://musopen.org/music/610-etudes-op-10/)                                                                                                      |
-| Romaticisme2    | Barcarolle No. 1 Am, Op.26 I      | Fauré                                                    | [MusOpen - Barcarolle No.1 Op.26](https://musopen.org/music/485-barcarolle-no-1-op-26/)                                                                                   |
-| Impressionisme1 | Gymnopédie No. 1                  | Satie                                                    | [MusOpen - Gymnopédies](https://musopen.org/music/8010-3-gymnopedies/)                                                                                                    |
-| Impressionisme2 | La fille aux chaveux de lin       | Debussy                                                  | [IMSPL - La fille aux cheveux de lin](https://imslp.eu/files/imglnks/euimg/7/73/IMSLP704772-PMLP2394-No.8._La_fille_aux_cheveux_de_lin_(A_moça_dos_cabelos_de_linho).mp3) |
+| Nom                                     | Descripció                                                                                                                                                        | Compositor                                               |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| [Menú](https://freesound.org/s/621130/) | Música que sona de fons en *home*                                                                                                                                 | [mikewhite12](https://freesound.org/people/mikewhite12/) |
+| Barroc1                                 | [Preludi en Dm](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                    | J. S. Bach                                               |
+| Barroc2                                 | [Fuga en Do m](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                     | J. S. Bach                                               |
+| Classicisme1                            | [Sonanta no.1 Fm, Op.2 no. 1 I](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                             | Beethoven                                                |
+| Classicisme2                            | [Sonanta no.1 Fm, Op.2 no. 1 III](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                           | Beethoven                                                |
+| Romanticisme1                           | [Etude Op.10, no.9 Fm](https://musopen.org/music/610-etudes-op-10/)                                                                                               | Chopin                                                   |
+| Romanticisme2                           | [Barcarolle No. 1 Am, Op.26 I](https://musopen.org/music/485-barcarolle-no-1-op-26/)                                                                              | Fauré                                                    |
+| Impressionisme1                         | [Gymnopédie No. 1](https://musopen.org/music/8010-3-gymnopedies/)                                                                                                 | Satie                                                    |
+| Impressionisme2                         | [La fille aux chaveux de lin](https://imslp.eu/files/imglnks/euimg/7/73/IMSLP704772-PMLP2394-No.8._La_fille_aux_cheveux_de_lin_(A_moça_dos_cabelos_de_linho).mp3) | Debussy                                                  |
 : Música de Pianissimo
 
 El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.
@@ -321,14 +347,11 @@ S'ha usat els connectors oficials de Godot de `google-play-services` i `gamecent
 
 Els assoliments en el projecte es troben com a recursos personalitzats `.tres` definits per `achievementDefinition` on inclouen diferents variables per a cadascun.
 
-| ID                       | Títol           | Descripció                        | ID Android             | ID iOS                 |
-| ------------------------ | --------------- | --------------------------------- | ---------------------- | ---------------------- |
-| `first_focus_session`    | First Steps     | Complete your first focus session | CgkInrHOzokbEAIQAQ     | first_focus_session    |
-| `notes_1000`             | Getting Started | Earn 1,000 notes in total         | <br>CgkInrHOzokbEAIQAg | notes_1000             |
-| `first_upgrade_purchase` | Investor        | Buy your first upgrade            | CgkInrHOzokbEAIQAw     | first_upgrade_purchase |
-| `first_stat_purchase`    | Growth Mindset  | Buy your first stat               | <br>CgkInrHOzokbEAIQBA | first_stat_purchase    |
-| `upgrade_level_10`       | Dedicated       | Reach level 10 on any upgrade     | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10       |
-| `stat_level_10`          | Disciplined     | Reach level 10 on any stat        | CgkInrHOzokbEAIQBg     | stat_level_10          |
+| ID                    | Títol           | Descripció                    | ID Android             | ID iOS              |
+| --------------------- | --------------- | ----------------------------- | ---------------------- | ------------------- |
+| `notes_1000`          | Getting Started | Earn 1,000 notes in total     | <br>CgkInrHOzokbEAIQAg | notes_1000          |
+| `upgrade_level_10`    | Dedicated       | Reach level 10 on any upgrade | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10    |
+| `stat_level_10`       | Disciplined     | Reach level 10 on any stat    | CgkInrHOzokbEAIQBg     | stat_level_10       |
 : Assoliments implementats en Pianissimo
 
 S'ha creat una imatge diferent per a cada assoliment no per decisió pròpia si no per què la Play Store ho exigeix i, ja que estava li dona una miqueta més de personalitat. Com s'ha fet a faena l'App Store també es beneficia de la diversitat de caràtules.
@@ -354,6 +377,17 @@ Al joc el seu control el té *NotificationManager*, un *autoload*, que el codi �
 
 ## Recursos
 
+El joc està molt orientat en les dades i els recursos. Les *millores*, *estadístiques*, *cartes*, *assoliments*, *nivells*, *tutorials* i les dades de la partida són un subtipus de **Resource** diferent que té la seua pròpia definició:
+
+```gdscript
+extends Resource
+class_name nom_del_recurs
+```
+
+Aquests tenen les seues variables i els podem *instanciar* en arxius `.tres`. Els troben a la carpeta `data` i la seua definició a `resources`. Les instàncies s'han clavat a una escena *manager* referenciats amb `@export Array[tipus_recurs]`, per això hi ha autoloads que són escenes amb codi associat en lloc de ser només un *script*.
+
+Tots els recursos compten amb un ID, pel que s'ha comentat abans en l'apartat de persistència.
+
 ### Àlbum de cartes {#gdd-album-cartes}
 
 Quan es completa un assaig hi ha una recompensa en forma de carta que es poden visualitzar en l'escena d'**àlbum**. De moment hi ha 3 tipus de cartes:
@@ -377,6 +411,7 @@ Com s'ha fet en els assoliments, agruparé per tipus de carta i no fer la taula 
 - **Compositor**: Beethoven, Hanon, Burgmuller, Czerny.
 - **Intrument**: organ, celesta.
 - **Dada**: barroc, classicisme, romanticisme, impressionisme, segle XX.
+
 ### Icones UI
 
 Les icones que contenen alguns elements `Button` o `Label` contenen icones per a representar el seu significat. Totes les icones estaran en format SVG, ja que Godot pot importar i rasteritzar aquest format. Els dissenys en SVG garanteixen que sempre es veuran nítids sense importar la resolució i l'aplicació serà més lleugera.

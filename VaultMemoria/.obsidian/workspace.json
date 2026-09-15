@@ -45,41 +45,21 @@
             }
           },
           {
-            "id": "3906d7d85001f704",
+            "id": "57ee00b1608a5d01",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memoria/Metodologia.md",
+                "file": "Memoria/Annexos/Formulari i respostes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodologia"
+              "title": "Formulari i respostes"
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "6318de1edf4363d9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f6a34b013708cf49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Memoria/Desenvolupament.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Desenvolupament"
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -265,42 +245,43 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "f6a34b013708cf49",
+  "active": "57ee00b1608a5d01",
   "lastOpenFiles": [
-    "Memoria/Annexos/GDD.md",
     "Output/_build_processed.md",
+    "Memoria/Annexos/GDD.md",
+    "Output/TFM.pdf",
+    "Memoria/Annexos/Formulari i respostes.md",
+    "Memoria/Annexos.md",
     "Memoria/Desenvolupament.md",
+    "Memoria/Assets-Optimized/Pianissimo/pianissimo_paleta.jpg",
     "Memoria/Assets-Optimized/Pianissimo/It7/pianissimo_it7.jpg",
     "Memoria/Assets-Optimized/Pianissimo/It7/godot-theme-edit.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/GDD/Flux-pianissimo.jpg",
-    "Memoria/Assets/Pianissimo/GDD/Flux-pianissimo.png",
-    "Memoria/Metodologia.md",
-    "Memoria/Assets/Pianissimo/It7/godot-theme-edit.png",
-    "Memoria/Assets/Pianissimo/It5/Pianissimo_Focus_Setup_It5.jpg",
-    "Memoria/Assets/Pianissimo/It7/pianissimo_it7.png",
-    "Memoria/Assets/Pianissimo/It7/Pianissimo-game-it7.jpg",
-    "Memoria/Assets/Pianissimo/It7/Pianissimo-home-it7.jpg",
-    "Memoria/Assets/Pianissimo/It5/Pianissimo_Focus_Journal_It5.jpg",
-    "Memoria/Assets-Optimized/Pianissimo/GDD",
-    "Memoria/Annexos/One-Sheet.md",
+    "Memoria/Assets-Optimized/Pianissimo/It7/Pianissimo-AppStore-SubmissionIssue.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It6/Pianissimo_AppStore_iPad.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It6/Pianisismo_iPad_real.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It6/Kanban_It6.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It5/Pianissimo_NotificationPlugin.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It5/Pianissimo_AndroidIcon_Comparison.jpg",
+    "Memoria/Assets-Optimized/Pianissimo/It4/Pianissimo_UI_It4.jpg",
+    "Memoria/Assets/Pianissimo/It6",
+    "Memoria/Assets/Pianissimo/It3/Pianissimo_GameCenter.mov",
+    "Memoria/Assets/Pianissimo/It2/Pianissimo_Demo1_It2.mp4",
+    "Memoria/Assets/Pianissimo/It2/Pianissimo-Demo_2_It2.mp4",
     "Memoria/Assets/Pianissimo/GDD",
-    "Memoria/Assets/Pianissimo/It5/GDD",
+    "Memoria/Assets/Pianissimo/Diagrames/DiagramaMockups.drawio",
+    "Memoria/Assets/Pianissimo/Diagrames/DiagramaMockups 1.drawio",
+    "Memoria/Assets/Pianissimo/Diagrames",
+    "Memoria/Assets/Metodologia",
+    "Memoria/Metodologia.md",
+    "Memoria/Annexos/One-Sheet.md",
     "Memoria/Annexos/Ten-Pager.md",
     "Memoria/Llegenda.md",
     "Memoria/Conclusions.md",
-    "Memoria/Annexos/Formulari i respostes.md",
-    "Memoria/Assets-Optimized/Clockify",
-    "Memoria/Assets/Clockify/clockify-setembre.png.sb-55e61c72-A8aiGH",
-    "Memoria/Assets/Clockify/clockify-agost.png.sb-55e61c72-3emRJz",
-    "Memoria/Assets/Clockify/clockify-juliol.png.sb-55e61c72-0ruVJj",
-    "Memoria/Assets/Clockify",
     "De tot/Videojoc.md",
     "Memoria/Marc teoric.md",
     "Organitzacio/Kanban.md",
     "Memoria/Objectius.md",
     "Memoria/Justificacio i Objectius.md",
-    "Memoria/Assets/Pianissimo/It7",
-    "De tot/Resums.txt",
     "Diari/2026-06-30.md",
     "Diari/2026-07-02.md",
     "Diari/2026-07-09.md",
@@ -310,7 +291,6 @@
     "Diari/2026-08-06.md",
     "Diari/2026-08-09.md",
     "Diari/2026-08-12.md",
-    "Diari/2026-08-13.md",
-    "Diari/2026-08-16.md"
+    "Diari/2026-08-13.md"
   ]
 }
