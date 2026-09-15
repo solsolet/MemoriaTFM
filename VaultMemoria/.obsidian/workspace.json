@@ -73,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -132,7 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 458.140625
+    "width": 231.5
   },
   "right": {
     "id": "1b74aecf4bded87a",
@@ -259,10 +259,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "48b094f5ba4e9391",
+  "active": "f3e35109a28f3bad",
   "lastOpenFiles": [
-    "Memoria/Desenvolupament.md",
     "Memoria/Annexos/Ten-Pager.md",
+    "Memoria/Desenvolupament.md",
     "Memoria/Annexos/GDD.md",
     "Memoria/Conclusions.md",
     "Memoria/Annexos/Formulari i respostes.md",

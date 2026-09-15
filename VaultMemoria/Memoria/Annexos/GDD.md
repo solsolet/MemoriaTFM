@@ -55,7 +55,7 @@ Totes les imatges, són d’elaboració pròpia.
 
 #### Assaig
 
-Ús de FocusManager. Afegim dades a playersavedata relacionades amb el mode per a poder guardar la sessió.
+Ús de *FocusManager*. Afegim dades a `player_save_data` relacionades amb el mode per a poder guardar la sessió.
 
 TODO : posar més coses.
 
@@ -140,11 +140,26 @@ El piano té 4 parts mòbils:
 
 ### Tema personalitzat
 
-TODO : explicar el tema com s'ha fet i pensat, l'arxiu i com posar-lo global, variacions ppersonalitzades paleta, estètica...
+L'estètica de Pianissimo vol imitar als colors vius i alegres de *Rhythm Paradise* de la DS com també el seu estil *cartoon* 2D, de contorns gruixuts i foscos. Els personatges i objectes son poc seriosos i tenen un aspecte divertit. Aquesta serà la mentalitat per dissenyar.
+
+![Paleta de colors de Pianissimo](Memoria/Assets/Pianissimo/pianissimo_paleta.png){height=3cm}
+
+Tots els gràfics s'han fet amb *Affinity*, la majoria amb l'espai de treball de *Vectors*. Resulta més còmode a l'hora de fer formats que puguen variar de mida encara que té el desavantatge que els faig més lentament.
+
+No estic tan acostumada a la ferramenta ploma d'aquest programa com d'altres, com puga ser *Photoshop*, però com no disposava d'ell en el Mac s'ha optat per usar un programa gratuït i multiplataforma com *Affinity*.
+
+#### Tipografia
+
+S'ha usat dues tipografies per al projecte:
+
+- [**Sebastian**](https://github.com/fkretlow/sebastian): per a la `P` de la icona de l'aplicació i del logo. Només la *p*. Aquesta tipografia té només caràcters musicals, per tant, com ja tenia la *p* de la dinàmica pianissimo era perfecta.
+- [**Note Serif**](https://github.com/notofonts/notofonts.github.io/tree/main/fonts/NotoSerif/googlefonts): per a la resta d'aplicació i “ianissimo” del logo.
+
+Totes dues s'han escollit a més per ser de codi obert i lliure ús.
+
+TODO : explicar el tema com s'ha fet i pensat, l'arxiu i com posar-lo global, variacions personalitzades ...
 
 Upgrades de HBoxContainer a Card
-
-Tipografia icona: https://github.com/fkretlow/sebastian
 
 ## So
 
@@ -152,20 +167,17 @@ Tipografia icona: https://github.com/fkretlow/sebastian
 
 El joc en tenir un component pianístic es necessitaran sons adients a aquesta estètica. Tots els àudios que s'han utilitzat estan sota la llicència CC0, trets de *Freesound* o *Musopen*. Per tal d'organitzar-los tots junts s'han disposat en forma de taula:
 
-| Nom                        | Descripció                                                                      | Àudio                          |
-| -------------------------- | ------------------------------------------------------------------------------- | ------------------------------ |
-| Clic                       | Menys els botons especials, la resta faran aquest so en polsar-los              | clic.wav                       |
-| Notes piano                | Cada tecla del piano fa el corresponent so, el nom de la pista és el de la nota | C4.wav, C#4.wav, [...], B4.wav |
-| Compra Millora/Estadística | Quan es polsa una millora o estadística sonarà                                  |                                |
-| Muntar de nivell           | Quan el jugador munte de nivell                                                 |                                |
-| Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
+| Nom         | Descripció                                                                      | Àudio                          |
+| ----------- | ------------------------------------------------------------------------------- | ------------------------------ |
+| Clic        | Menys les tecles, la resta faran aquest so en polsar-los                        | clic.wav                       |
+| Notes piano | Cada tecla del piano fa el corresponent so, el nom de la pista és el de la nota | C4.wav, C#4.wav, [...], B4.wav |
 : Efectes de so de Pianissimo
 
 | Nom             | Descripció                        | Compositor | Àudio                                                                                                                                                                     |
 | --------------- | --------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Menú            | Música que sona de fons en *home* |            | https://freesound.org/s/621130/                                                                                                                                           |
-| Barroc1         | Preludi en Dm                     | J. S. Bach |                                                                                                                                                                           |
-| Barroc2         | Fuga en Do m                      | J. S. Bach |                                                                                                                                                                           |
+| Barroc1         | Preludi en Dm                     | J. S. Bach | [MusOpen - TWK prelude Cm](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                 |
+| Barroc2         | Fuga en Do m                      | J. S. Bach | [MusOpen - TWK fugue Cm](https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/)                                                                   |
 | Classicisme1    | Sonanta no.1 Fm, Op.2 no. 1 I     | Beethoven  | [MusOpen - Piano Sonana No.1 in Fm Op.1 I](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                          |
 | Classicisme2    | Sonanta no.1 Fm, Op.2 no. 1 III   | Beethoven  | [MusOpen - Piano Sonata No.1 in Fm Op.1 III](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                        |
 | Romanticisme1   | Etude Op.10, no.9 Fm              | Chopin     | [MusOpen - Étude Op.10](https://musopen.org/music/610-etudes-op-10/)                                                                                                      |
@@ -186,8 +198,6 @@ Credits audio de prova:
 - click1: https://freesound.org/s/751232/
 - click2: https://freesound.org/s/250552/
 - pop: https://freesound.org/s/665183/
-- ding: https://freesound.org/s/204648/
-- bach: https://musopen.org/music/43466-the-well-tempered-clavier-book-i-bwv-846-869/
 
 ## Integració segons SO
 
@@ -243,15 +253,14 @@ Quan es completa un assaig hi ha una recompensa en forma de carta que es poden v
 
 Les icones que contenen alguns elements `Button` o `Label` contenen icones per a representar el seu significat. Totes les icones estaran en format SVG, ja que Godot pot importar i rasteritzar aquest format. Els dissenys en SVG garanteixen que sempre es veuran nítids sense importar la resolució i l'aplicació serà més lleugera.
 
-| Nom        | Ús                                      |
-| ---------- | --------------------------------------- |
-| back_arrow | Botó en `game` de tornar arrere         |
-| settings   | Botó en `game` d'anar a la configuració |
-| corchea    | Label comptador de notes                |
+| Nom         | Ús                                                   |
+| ----------- | ---------------------------------------------------- |
+| **left_arrow**  | Botó en `game` de tornar arrere                      |
+| **right_arrow** | Botó en `game` d'anar cap endavant                   |
+| **settings**    | Botó en `game` d'anar a la configuració              |
+| **corchea**     | Label comptador de notes                             |
+| **auriculars**  | Botó en `focus_session` per a activar música de fons |
+| **cercle**      | *Tag* per a `focus_setup` que canvia de color        |
 : Icones que s'han usat per a alguns elements de la UI de Pianissimo
 
-Les icones són d'elaboració pròpia i s'han elaborat amb Affinity.
-
-## Crèdits
-
-Per a pianissimo s'ha usat la tipografia `Noto Serif` de Google Fonts: https://github.com/notofonts/notofonts.github.io/tree/main/fonts/NotoSerif/googlefonts
+Les icones són d'elaboració pròpia i s'han elaborat també amb Affinity.
