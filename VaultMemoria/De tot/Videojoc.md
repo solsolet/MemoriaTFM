@@ -8,3 +8,10 @@ Dos modes:
 - RPG: roleges de music d'un instrument entre diversos a elegir.
 
 Storytelling: necessite un objectiu clar i definit. tinc lo de voler aprovar els examens, ho he de contar.
+
+
+
+- [Magic Archery](https://barribob.itch.io/magic-archery)
+- [Push the square](https://asdehielo.itch.io/push-the-square) he tardat 9 minuts
+- [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/)
+- [Pathogen](https://papput.itch.io/pathogen) Hauré tardat mitja horeta a passar-me'l

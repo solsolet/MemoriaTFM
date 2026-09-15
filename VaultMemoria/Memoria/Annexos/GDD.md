@@ -20,6 +20,7 @@ Fet per Gemma Sellés Lloret aka solsolet
 | v0.1.0 | 2026-06-23 | Creació inicial del document    |
 | v0.2.0 | 2026-08-15 | Mig afegides funcionalitats It2 |
 | v0.3.0 | 2026-08-30 | Afegir secció crèdits           |
+| v0.4.0 | 2026-09-14 | Versió final per a l'entrega    |
 
 ***
 
@@ -38,9 +39,7 @@ Es farà ús de la *cursiva* quan es nomene un anglicisme o es posen exemples.
 
 S'usarà la **negreta** per a emfatitzar alguna paraula clau per a facilitar la lectura.
 
-Totes les imatges, si no s’indica el contrari, son d’elaboració pròpia.
-
-%%TODO : si al final no hi ha cap externa, llevar aquesta línia%%
+Totes les imatges, són d’elaboració pròpia.
 
 ## Màquina objectiu
 
@@ -76,8 +75,6 @@ Una bona pràctica per a fer que el joc arribe a més gent és tenir-lo disponib
 
 En aquest fitxer s'ha de declarar en la primera fila les llengües que tindrà, en aquest cas català, espanyol i anglés i si en un futur se'n volguera afegir més seria possible.
 
-
-> [!NOTE] i18n
 > El terme **i18n** correspon a *internacionalization* on la `i` i la `n` són la primera i última lletra de la paraula i `18` el nombre de caràcters que hi ha entre elles. És un numerònim per descriure el procés de dissenyar i preparar una aplicació de programari perquè suporte diferents idiomes.
 
 Pel que fa al d'aquest projecte el document es troba en `assets\i18n\translations.csv` i té aquest aspecte:
@@ -113,7 +110,8 @@ Exemple del codi de `save_manager.gd`:
 ```gd
 func load_data() -> void:
 	if ResourceLoader.exists(SAVE_PATH):
-		var loaded = ResourceLoader.load(SAVE_PATH, "", ResourceLoader.CACHE_MODE_IGNORE)
+		var loaded = ResourceLoader.load(SAVE_PATH, "", 
+			ResourceLoader.CACHE_MODE_IGNORE)
 		data = loaded if loaded is PlayerSaveData else PlayerSaveData.new()
 	else:
 		# Primera partida
@@ -163,17 +161,17 @@ El joc en tenir un component pianístic es necessitaran sons adients a aquesta e
 | Desbloquejar assoliment    | Quan el jugador desbloquege un assoliment                                       |                                |
 : Efectes de so de Pianissimo
 
-| Nom             | Descripció                        | Compositor | Àudio                                                                                                                              |
-| --------------- | --------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Menú            | Música que sona de fons en *home* |            | https://freesound.org/s/621130/                                                                                                    |
-| Barroc1         | Preludi en Dm                     | J. S. Bach |                                                                                                                                    |
-| Barroc2         | Fuga en Do m                      | J. S. Bach |                                                                                                                                    |
-| Classicisme1    | Sonanta no.1 Fm, Op.2 no. 1 I     | Beethoven  | https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/                                                               |
-| Classicisme2    | Sonanta no.1 Fm, Op.2 no. 1 III   | Beethoven  | https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/                                                               |
-| Romanticisme1   | Etude Op.10, no.9 Fm              | Chopin     | https://musopen.org/music/610-etudes-op-10/                                                                                        |
-| Romaticisme2    | Barcarolle No. 1 Am, Op.26 I      | Fauré      | https://musopen.org/music/485-barcarolle-no-1-op-26/                                                                               |
-| Impressionisme1 | La fille aux chaveux de lin       | Debussy    | https://imslp.eu/files/imglnks/euimg/7/73/IMSLP704772-PMLP2394-No.8._La_fille_aux_cheveux_de_lin_(A_moça_dos_cabelos_de_linho).mp3 |
-| Impressionisme2 |                                   |            |                                                                                                                                    |
+| Nom             | Descripció                        | Compositor | Àudio                                                                                                                                                                     |
+| --------------- | --------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Menú            | Música que sona de fons en *home* |            | https://freesound.org/s/621130/                                                                                                                                           |
+| Barroc1         | Preludi en Dm                     | J. S. Bach |                                                                                                                                                                           |
+| Barroc2         | Fuga en Do m                      | J. S. Bach |                                                                                                                                                                           |
+| Classicisme1    | Sonanta no.1 Fm, Op.2 no. 1 I     | Beethoven  | [MusOpen - Piano Sonana No.1 in Fm Op.1 I](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                          |
+| Classicisme2    | Sonanta no.1 Fm, Op.2 no. 1 III   | Beethoven  | [MusOpen - Piano Sonata No.1 in Fm Op.1 III](https://musopen.org/music/26-piano-sonata-no-1-in-f-minor-op-2-no-1/)                                                        |
+| Romanticisme1   | Etude Op.10, no.9 Fm              | Chopin     | [MusOpen - Étude Op.10](https://musopen.org/music/610-etudes-op-10/)                                                                                                      |
+| Romaticisme2    | Barcarolle No. 1 Am, Op.26 I      | Fauré      | [MusOpen - Barcarolle No.1 Op.26](https://musopen.org/music/485-barcarolle-no-1-op-26/)                                                                                   |
+| Impressionisme1 | La fille aux chaveux de lin       | Debussy    | [IMSPL - La fille aux cheveux de lin](https://imslp.eu/files/imglnks/euimg/7/73/IMSLP704772-PMLP2394-No.8._La_fille_aux_cheveux_de_lin_(A_moça_dos_cabelos_de_linho).mp3) |
+| Impressionisme2 |                                   |            |                                                                                                                                                                           |
 : Música de Pianissimo
 
 El fet d'usar música clàssica, a banda de l'estètica, rau en el fet que les obres de piano pensades no tenen copyright, encara que les gravacions sí. Per tant, trobar interpretacions de lliure accés no és molt complicat i en cas de no trobar-ne amb qualsevol editor de partitures pots exportar l'àudio d'una en concret.
@@ -205,14 +203,14 @@ TODO : posar enllaços ací o en la iteració o en els dos llocs.
 
 Els assoliments en el projecte es troben com a recursos personalitzats `.tres` definits per `achievementDefinition` on inclouen diferents variables per a cadascun.
 
-| ID                       | Títol           | Descripció                        | ID Android             | ID iOS                 | Imatge |
-| ------------------------ | --------------- | --------------------------------- | ---------------------- | ---------------------- | ------ |
-| `first_focus_session`    | First Steps     | Complete your first focus session | CgkInrHOzokbEAIQAQ     | first_focus_session    |        |
-| `notes_1000`             | Getting Started | Earn 1,000 notes in total         | <br>CgkInrHOzokbEAIQAg | notes_1000             |        |
-| `first_upgrade_purchase` | Investor        | Buy your first upgrade            | CgkInrHOzokbEAIQAw     | first_upgrade_purchase |        |
-| `first_stat_purchase`    | Growth Mindset  | Buy your first stat               | <br>CgkInrHOzokbEAIQBA | first_stat_purchase    |        |
-| `upgrade_level_10`       | Dedicated       | Reach level 10 on any upgrade     | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10       |        |
-| `stat_level_10`          | Disciplined     | Reach level 10 on any stat        | CgkInrHOzokbEAIQBg     | stat_level_10          |        |
+| ID                       | Títol           | Descripció                        | ID Android             | ID iOS                 |
+| ------------------------ | --------------- | --------------------------------- | ---------------------- | ---------------------- |
+| `first_focus_session`    | First Steps     | Complete your first focus session | CgkInrHOzokbEAIQAQ     | first_focus_session    |
+| `notes_1000`             | Getting Started | Earn 1,000 notes in total         | <br>CgkInrHOzokbEAIQAg | notes_1000             |
+| `first_upgrade_purchase` | Investor        | Buy your first upgrade            | CgkInrHOzokbEAIQAw     | first_upgrade_purchase |
+| `first_stat_purchase`    | Growth Mindset  | Buy your first stat               | <br>CgkInrHOzokbEAIQBA | first_stat_purchase    |
+| `upgrade_level_10`       | Dedicated       | Reach level 10 on any upgrade     | <br>CgkInrHOzokbEAIQBQ | upgrade_level_10       |
+| `stat_level_10`          | Disciplined     | Reach level 10 on any stat        | CgkInrHOzokbEAIQBg     | stat_level_10          |
 : Assoliments implementats en Pianissimo
 
 S'ha creat una imatge diferent per a cada assoliment no per decisió pròpia si no per què la Play Store ho exigeix i, ja que estava li dona una miqueta més de personalitat. Com s'ha fet a faena l'App Store també es beneficia de la diversitat de caràtules.

@@ -72,7 +72,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 	- Cartes ara de color lila.
 	- Camps de focus personalitzats i entrades de les sessions amb tema personalitzat.
 	- Game, nova *good-perfect* àrea visual per a saber on polsar quan la nota s'apropa al teclat.
-- Nous assoliments: *velocity_maxed*, *precision_maxed*, *technique_maxed*, *keyboard_maxed*, *all_stats_maxed*, *first_strict_session*, *session_10min*, *hour_in_a_day*, *ten_hours_in_a_week*, *focus_streak_3*, *focus_streak_10*, *hundred_sessions*, *ten_cards*, *all_cards*.
+- Nous assoliments: estadístiques maximitzades, diferents hores i dies de ratxa aconseguits en el mode assaig, i relacionats amb el desbloqueig de les cartes.
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
 - *Toast* de benvinguda quan s'entra a *game*, informa de les notes guanyades.
@@ -216,7 +216,7 @@ Pel que fa a la interfície el mode *idle* del joc tenia clar l'estructura d'un 
 
 L'esquema dels *managers* es va fer pensant en els apartats que necessitarien ser Singleton per estar funcionant durant tota l'aplicació o evitar duplicitats. No era molt concret, es plantejava quines necessitats es podria tenir en el projecte i eventualment a mesura que s'anaren implementant s'aniria especificant.
 
-![Diagrama singletons inical](Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png){height=6cm}
+![Diagrama singletons inical](Memoria/Assets/Pianissimo/Diagrames/Diagrama_Singleton.png){height=5cm}
 
 Finalment, l'esquema de l'evolució tractava d'intentar posar ordre de com estava el projecte funcional en el codi mal fet a com podríem anant encaminant-lo. Podem veure un diagrama senzill en les pantalles que teníem clares a la figura \ref{fig:mockup_senzill}.
 
@@ -601,7 +601,7 @@ Les notificacions amb aquest connector s'han plantejat de la següent manera: qu
 
 Em pensava que anava a ser supercomplicat, però és molt senzill, per això la iteració es va fer més curta. Realment és un codi únic, no ha calgut fer distincions entre Android i iOS com sí que va passar als assoliments. Els connectors tenen la capa que controla cada SO i nosaltres no hem de preocupar-nos. Es pot veure el resultat a la figura \ref{fig:pianissimo-notification}.
 
-![Notificacions a Pianissimo \label{fig:pianissimo-notification](Memoria/Assets/Pianissimo/It5/Pianissimo_NotificationPlugin.png){height=6cm}
+![Notificacions a Pianissimo \label{fig:pianissimo-notification}](Memoria/Assets/Pianissimo/It5/Pianissimo_NotificationPlugin.png){height=6cm}
 
 Una vegada establit aquest sistema es va pensar que estaria bé que fora l'usuari qui determinara quant de temps ha de passar sense tocar el joc fins que t'envie la notificació. Aquesta funcionalitat va comportar modificar *settings*, es va afegir nous camps, connectats a noves variables de `SettingManager` que se'n feren càrrec.
 
@@ -655,7 +655,7 @@ Les he hagudes de trampejar amb Affinity redimensionant les que ja tenia a mà. 
 
 Després de l'odissea d'intentar arribar a la mida que deixava després m'he topat amb què també havia de muntar captures en un iPad. Evidentment, la meua paciència no donava més de si i les imatges estan estirades horitzontalment.
 
-![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Pianissimo_AppStore_iPad.png)
+![Captures estirades de Pianissimo per a iPad per tal que l'App Store permetera enviar l'aplicació a revisió](Memoria/Assets/Pianissimo/It6/Pianissimo_AppStore_iPad.png)
 
 #### Proves amb usuaris
 
@@ -707,6 +707,7 @@ La seua opinió va ser que anava molt bé, em va donar una mica de retroalimenta
 S'ha afegit unes noves imatges de tutorials, fetes amb Affinity també, que ara tenen el fil argumental i són més clares.
 
 S'ha acabat i revisat també aquesta memòria com també preparat l'entrega del TFM.
+
 #### Projecte Godot
 
 S'ha arreglat l'errada de la música quan es canviava de *home* a *idle*. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
@@ -732,3 +733,30 @@ A l'App Store ha sorgit un problema en l'enviament per a revisió i s'ha hagut d
 Pel que fa a la Play Store s'ha promocionat l'última versió que hi havia en el canal de proves internes al de tancades. Quan s'ha pogut enviar els canvis a revisió, el termini posa que pot allargar-se al cap de 7 dies. Després només queda promocionar la versió a oberta per a finalment llançar-la com a pública.
 
 Amb aquests dos processos he pogut experimentar com és muntar un joc per a les dues plataformes, trobar-me les errades més comunes i poder configurar-ho tot bé al meu joc. Els connectors de Godot han funcionat a la perfecció per al meu propòsit.
+
+## Seguiment de tasques
+
+A Clockify s'ha registrat aquest temps en la duració del projecte. Passaré a mostrar un resum per mesos, que és el que permet l'aplicació. S'ha de tenir en compte que les tasques sota el projecte TFG és una errada, realment corresponen a TFM, ja en són tantes que canviar-les a mà una per una resulta una faena molt pesada i llarga.
+
+![Resum de Clockify de gener](Memoria/Assets/Clockify/clockify-gener.png)
+
+![Resum de Clockify d'abril](Memoria/Assets/Clockify/clockify-abril.png)
+
+![Resum de Clockify de juny](Memoria/Assets/Clockify/clockify-juny.png)
+
+![Resum de Clockify de juliol](Memoria/Assets/Clockify/clockify-juliol.png)
+
+![Resum de Clockify d'agost](Memoria/Assets/Clockify/clockify-agost.png)
+
+![Resum de Clockify de setembre](Memoria/Assets/Clockify/clockify-setembre.png)
+
+Si fem la suma total de temps tenim unes **337 h 54 min 11 seg**, que per a un treball de 12 ECTS em passe una mica, però res exagerat. Faria falta sumar les últimes tasques que es faran de cara a la defensa i entregar el treball i revisar-lo diverses vegades, però a hores d'estar a punt d'acabar-lo, millor començar a tancar seccions de la memòria.
+
+## Resultats
+
+Com s'ha anat comentant al llarg de la memòria les aplicacions estan disponibles a les botigues d'aplicacions i es poden veure en els següents enllaços:
+
+- **Play Store**: https://play.google.com/store/apps/details?id=es.ua.eps.pianissimo
+- **App Store**: https://testflight.apple.com/join/TX8GUnMW
+
+En el cas de l'App Store no vaig passar la revisió de l'aplicació i ja em vaig quedar sense temps per a l'entrega. Es pot provar com a usuari de proves extern amb Test Flight.

@@ -32,6 +32,8 @@ Tot i estar molt contenta en el resultat trobe que hi podria afegir i millorar e
 - Reptes diaris, per motivar al jugador a fer algun assaig o aconseguir cert nombre de notes al dia.
 - Més funcionalitats per al mode assaig, pot ser posar marcadors a les botigues per a competir amb els teus amics a veure qui fa més hores.
 - Incorporar anuncis per tal que l'aplicació es poguera monetitzar.
+- Poder compartir les teues fites per xarxes.
+- Afegir una ferramenta de metrònom musical que ajude a l'estudi.
 - Un nou mode de joc de ritme, aprofitant el sistema de piano i notes poder sincronitzar en les obres amb el jugador. Un mode de joc de ritme més clàssic.
 - Més efectes de retroalimentació per a l'usuari. Sempre és més agradable quan el joc respon a l'acció que fa.
 - Incorporar noves *estadístiques*, *millores*, *cartes* i *assoliments* per tal que no acabe mai la diversió i continue sent interessant de jugar per molt de temps.
