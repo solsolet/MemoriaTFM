@@ -16,6 +16,7 @@
 ### Fixed
 
 - Solucionar estat dels `CheckButtons` on es tornava transparent.
+- Corregir volumen per defecte de la música.
 
 
 ## [v0.6.0] - 2026-08-31

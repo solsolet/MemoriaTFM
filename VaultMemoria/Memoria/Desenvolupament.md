@@ -4,11 +4,11 @@
 
 ## Disseny
 
-El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sheet](#one-sheet), [Ten-Pager](#ten-pager) i [GDD](#gdd).
+El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sheet](#one-sheet) i [GDD](#gdd).
 
 ## Projecte
 
-### Changelog
+### *Changelog*
 
 #### v0.1.0 – juny/juliol 2026
 
@@ -22,7 +22,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Prova en Android/iOS físics.
 - Exportació Android i iOS configurada.
 - Fitxes d'aplicació creades en Play Store i App Store.
-- Build muntada en Play Store i App Store.
+- *Build* muntada en Play Store i App Store.
 - Baixada com a testers de l'aplicació en les tendes d'aplicacions.
 
 #### v0.2.0 – 5/14 agost 2026
@@ -249,7 +249,7 @@ Ja clavant-nos en el desenvolupament com a tal, les mecàniques bàsiques inicia
 - Un sistema que generara notes a l'estil *Magik Piano* que en polsar-les quan estiguen a prop del teclat es guanyen punts, **notes**.
 - Un sistema econòmic per intercanviar notes per millores del tipus:
 	- **Millores** que permetera guanyar més notes. Cada millora tindria un cost de notes associat. De moment s'havia pensat en una de fer *tap automàticament* (i així tenir la mecànica *idle*) i una de *multiplicador* de notes per nota ben polsada.
-	- **Estadístiques** del jugador que permetera facilitar l'obtenció de notes. Com les millores, però semànticament diferent. De les planejades en el [Ten-Pager](#ten-pager), primer s'implementarien la del teclat, velocitat i precisió.
+	- **Estadístiques** del jugador que permetera facilitar l'obtenció de notes. Com les millores, però semànticament diferent. De les planejades en el *Ten-Pager*, primer s'implementarien la del teclat, velocitat i precisió.
 - Persistència de les dades en tancar i obrir el joc així com continuar guanyant notes quan no s'està en l'aplicació i continuar la mecànica *idle*.
 
 Per a fer-ho, no es va elegir la manera més intel·ligent i calculada de programar, sinó que es va tirar per la força bruta per a veure si es podia i quedava bé el prototip, abans de perdre el temps dissenyant i implementant sistemes que potser no resultaren viables.
@@ -591,12 +591,6 @@ Vaig fracassar amb les dues primeres, pot ser per a la meua versió de Godot no 
 
 Per tal d'implementar les notificacions al joc vaig fer un *autoload*, `NotificationManager`, tant en escena (amb un fill `NotificatioScheduler`) com en codi.
 
-El codi és senzill:
-
-1. S'inicialitza el *scheduler*, es comprova el permís de l'aplicació de les notificacions.
-2. Una vegada inicialitzat es crea un canal de notificacions i l'establim.
-3. S'estableix el recordatori: s'elegeix el canal, títol, descripció, icona i el temps que tarda.
-
 Les notificacions amb aquest connector s'han plantejat de la següent manera: quan l'usuari abandone l'aplicació, es conta quant de temps té l'usuari establit de notificacions (en hores) i quan passa eixe temps es dispara la notificació. En cas que l'usuari torne abans d'eixe període es cancel·la i es torna a reiniciar quan ix.
 
 Em pensava que anava a ser supercomplicat, però és molt senzill, per això la iteració es va fer més curta. Realment és un codi únic, no ha calgut fer distincions entre Android i iOS com sí que va passar als assoliments. Els connectors tenen la capa que controla cada SO i nosaltres no hem de preocupar-nos. Es pot veure el resultat a la figura \ref{fig:pianissimo-notification}.
@@ -706,7 +700,7 @@ La seua opinió va ser que anava molt bé, em va donar una mica de retroalimenta
 
 S'ha afegit unes noves imatges de tutorials, fetes amb Affinity també, que ara tenen el fil argumental i són més clares.
 
-S'ha acabat i revisat també aquesta memòria com també preparat l'entrega del TFM.
+S'ha acabat i revisat també aquesta memòria com també preparat l'entrega del TFM. Un canvi als annexos que s'ha decidit a l'últim moment és que hi havia alguns fragments repetits o molt similars entre el GDD i el Ten-Pager i s'ha decidit apostar pel GDD, ja que és un format més lliure. A més, amb l'etil de l'exportació amb LaTeX perd la gràcia de tenir 10 pàgines.
 
 #### Projecte Godot
 
@@ -738,17 +732,17 @@ Amb aquests dos processos he pogut experimentar com és muntar un joc per a les 
 
 A Clockify s'ha registrat aquest temps en la duració del projecte. Passaré a mostrar un resum per mesos, que és el que permet l'aplicació. S'ha de tenir en compte que les tasques sota el projecte TFG és una errada, realment corresponen a TFM, ja en són tantes que canviar-les a mà una per una resulta una faena molt pesada i llarga.
 
-![Resum de Clockify de gener](Memoria/Assets/Clockify/clockify-gener.png)
+![Resum de Clockify de gener](Memoria/Assets/Clockify/clockify-gener.png){height=7cm}
 
-![Resum de Clockify d'abril](Memoria/Assets/Clockify/clockify-abril.png)
+![Resum de Clockify d'abril](Memoria/Assets/Clockify/clockify-abril.png){height=7cm}
 
-![Resum de Clockify de juny](Memoria/Assets/Clockify/clockify-juny.png)
+![Resum de Clockify de juny](Memoria/Assets/Clockify/clockify-juny.png){height=7cm}
 
-![Resum de Clockify de juliol](Memoria/Assets/Clockify/clockify-juliol.png)
+![Resum de Clockify de juliol](Memoria/Assets/Clockify/clockify-juliol.png){height=7cm}
 
-![Resum de Clockify d'agost](Memoria/Assets/Clockify/clockify-agost.png)
+![Resum de Clockify d'agost](Memoria/Assets/Clockify/clockify-agost.png){height=7cm}
 
-![Resum de Clockify de setembre](Memoria/Assets/Clockify/clockify-setembre.png)
+![Resum de Clockify de setembre](Memoria/Assets/Clockify/clockify-setembre.png){height=7cm}
 
 Si fem la suma total de temps tenim unes **337 h 54 min 11 seg**, que per a un treball de 12 ECTS em passe una mica, però res exagerat. Faria falta sumar les últimes tasques que es faran de cara a la defensa i entregar el treball i revisar-lo diverses vegades, però a hores d'estar a punt d'acabar-lo, millor començar a tancar seccions de la memòria.
 
@@ -759,4 +753,4 @@ Com s'ha anat comentant al llarg de la memòria les aplicacions estan disponible
 - **Play Store**: https://play.google.com/store/apps/details?id=es.ua.eps.pianissimo
 - **App Store**: https://testflight.apple.com/join/TX8GUnMW
 
-En el cas de l'App Store no vaig passar la revisió de l'aplicació i ja em vaig quedar sense temps per a l'entrega. Es pot provar com a usuari de proves extern amb Test Flight.
+En el cas de l'App Store no vaig passar la revisió de l'aplicació i ja em vaig quedar sense temps per a l'entrega. Es pot provar com a usuari de proves extern amb *Test Flight*.

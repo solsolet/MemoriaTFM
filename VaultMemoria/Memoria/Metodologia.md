@@ -165,7 +165,7 @@ En iOS, en canvi, s'havia d'exportar el projecte, obrir-lo amb Xcode i executar-
 
 Fora de les proves durant el desenvolupament en les últimes instàncies del projecte es va fer una prova amb usuaris per tal de conéixer l'opinió i rebre retroalimentació del joc, a més de saber si funciona en distints dispositius mòbils.
 
-### Dispositius
+### Dispositius {#sec-metodologia-dispositius}
 
 L'aplicació s'ha pogut provar en diversos dispositius mòbils, entre ells s'han documentat els següents:
 
