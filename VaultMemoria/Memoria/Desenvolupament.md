@@ -59,13 +59,13 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Afegir sons per a les tecles bé.
 - Noves funcionalitats del mode assaig:
 	- Botó de cancel·lar sessió.
-	- Tags.
-	- Total setmanal i diari en `journal`.
-	- Música disponible en `focus_session`.
-	- Poder esborrar entrades en `journal`.
+	- Etiquetes.
+	- Total setmanal i diari en *journal*.
+	- Música disponible en *focus_session*.
+	- Poder esborrar entrades en *journal*.
 	- Assajos permissius: no hi ha penalització per abandonar l'aplicació mentre estiga viva.
 - Canvis a la UI:
-	- `home` tipus piano.
+	- *home* tipus piano.
 	- Fons personalitzat amb escalat adequat per a tota mena de pantalles.
 	- Botons personalitzats amb variacions per a les tecles blanques i negres i botó de cancel·lació. Alguns disposen d'icones.
 	- Notes personalitzades.
@@ -75,7 +75,7 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Nous assoliments: *velocity_maxed*, *precision_maxed*, *technique_maxed*, *keyboard_maxed*, *all_stats_maxed*, *first_strict_session*, *session_10min*, *hour_in_a_day*, *ten_hours_in_a_week*, *focus_streak_3*, *focus_streak_10*, *hundred_sessions*, *ten_cards*, *all_cards*.
 - 3 noves millores: `metronome`, `note_torrent`, `golden_notes`.
 - Correccions de les traduccions del text posat directament al codi amb `tr()`.
-- *Toast* de benvinguda quan s'entra a `game`, informa de les notes guanyades.
+- *Toast* de benvinguda quan s'entra a *game*, informa de les notes guanyades.
 - Sistema per a mostrar tutorials.
 
 #### v0.6.0 – 28/31 agost 2026
@@ -83,8 +83,8 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Icona de l'aplicació corregida perquè es veja bé en Android.
 - Incorporació del connector de Notificacions.
 - Notificacions funcionals en iOS i Android.
-- S'ha afegit a `settings` ajustos per a controlar el temps que tarden les notificacions.
-- Afegir so de "clic" per a tots els botons.
+- S'ha afegit a *settings* ajustos per a controlar el temps que tarden les notificacions.
+- Afegir so de “clic“ per a tots els botons.
 - Afegir *pop-up* de numerets quan s'encerta una nota per a donar retroalimentació visual.
 - Detall de les Estadístiques per a saber com funcionen.
 - Muntar els preus i el cost per a fer la progressió més lenta.
@@ -99,25 +99,25 @@ El disseny del projecte s'arreplega en els documents situats en l'annex: [One-Sh
 - Noves millores i assoliments.
 - Afegir pantalla de crèdits.
 - Compartir el joc per a fer proves amb usuaris i rebre retroalimentació.
-- Acabar dibuixos historieta inicial en `home`.
-- Fer logo per a `home`.
+- Acabar dibuixos historieta inicial en *home*.
+- Fer logo per a *home*.
 - Nova pantalla *Perfil* per a mostrar totes les estadístiques de l'usuari.
 
 ## Iteracions
 
 ### Interacció 0
 
-Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usaríem, Godot. Va ocòrrer a principi d'any.
+Es podria considerar l'inici del TFM la primera reunió amb el tutor on es va parlar de quin tipus de videojoc es podria fer, jocs per a jugar i investigar i el motor que usaríem, Godot. Va ocórrer a principi d'any.
 
-Després em vaig centrar a aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc usant el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
+Després em vaig centrar a aprendre una miqueta de Godot seguint alguns tutorials i llegint documentació. El resultat va ser provar com seria fer un videojoc fent servir el motor, exportar-lo i poder-lo jugar a més d'una mica de coneixement i familiaritat en l'entorn.
 
-Aquest escalfament es va fer sense tenir encara una idea del joc. No va ser fins a la segona reunió amb el tutor que no es va tindre un idea més concisa: un joc mòbil *idle*, senzill, que explorara alguna característica pròpia dels dispositius mòbils, per exemple les notificacions. Se'm va ocórrer que fora de temàtica musical, ja que tinc afinitat pel tema al ser pianista. *POV: eres un pianista que ha d'assatjar per als seus exàmens* va ser la premissa amb la que ho construiria tot.
+Aquest escalfament es va fer sense tenir encara una idea del joc. No va ser fins a la segona reunió amb el tutor que no es va tindre un idea més concisa: un joc mòbil *idle*, senzill, que explorara alguna característica pròpia dels dispositius mòbils, per exemple les notificacions. Se'm va ocórrer que fora de temàtica musical, ja que tinc afinitat pel tema en ser pianista. *POV: eres un pianista que ha d'assajar per als seus exàmens* va ser la premissa amb què ho construiria tot.
 
-El temps d'assaig seria la mecànica *idle*, on pots manualment tocar tecles i de fer-ho bé guanyes puntuació, experiència... com es vulga dir. A poc a poc podries anar guanyant millores que automatitzarien eixe procés per a poder continuar guanyant més.
+El temps d'assaig seria la mecànica *idle*, on pots manualment tocar tecles i de fer-ho bé guanyes puntuació, experiència... com es vulga dir. A poc a poc podries anar guanyant millores que automatitzarien aquest procés per a poder continuar guanyant més.
 
 La idea i el projecte es van quedar de costat durant el curs, ja que sempre li donava prioritat a les pràctiques de les assignatures i li'ls dedicava més temps que res per a fer-les el millor possible.
 
-Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig continuar treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per continuar familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
+Una cosa bona del segon quadrimestre és que durant l'assignatura de PODM i Videojocs vaig continuar treballant en Godot, en una en equip i en l'altra en solitari i aquest temps em va servir per a continuar familiaritzant-me tant en el motor com en fer 2 jocs mòbils d'aquesta índole.
 
 Després d'un temps usant-lo el trobe còmode i m'alegre d'haver pres la decisió d'elegir Godot perquè, en el context d'un projecte real on tens una motivació per a desenvolupar-lo, et veus forçat aprendre al ritme que marca el projecte i no tu sense cap restricció.
 
@@ -139,7 +139,7 @@ He donat per conclosa aquesta primera iteració quan he tingut les primeres pece
 
 #### Exportador de memòria
 
-Pel que fa a la memòria, com s'ha explicat en la metodologia, en Obsidian s'han usat diferents extensions i ferramentes per a facilitar la recopilació de bibliografia i exportació de la memòria en un format PDF, però no era suficient, ja que el format no es podia controlar a mesura i calia fer molts canvis manualment.
+Pel que fa a la memòria, com s'ha explicat en la metodologia, en Obsidian s'han fet ús de diferents extensions i ferramentes per a facilitar la recopilació de bibliografia i exportació de la memòria en un format PDF. Aquestes no van ser suficients, ja que el format no es podia controlar a mesura i calia fer molts canvis manualment.
 
 Donada aquesta problemàtica, vaig optar per fer un sistema d'exportació de la memòria, redactada en Obsidian com a Markdown, que amb un simple `./build.sh` m'exportara la memòria en un format llest per a entregar. Aquest format inclou:
 
@@ -178,7 +178,7 @@ En veure que funciona en dispositius reals, s'ha preparat correctament la config
 
 Pel que fa a iOS, Godot no et dona un arxiu que muntar a la botiga d'aplicacions tan fàcilment, sinó que et genera el projecte per a poder compilar-lo amb Xcode.
 
-Em vaig posar en contacte amb Miguel Ángel Lozano perquè em fes una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la botiga no tenia els permisos necessaris.
+Em vaig posar en contacte amb Miguel Ángel Lozano perquè em fera una fitxa en l'App Store i em convidara en l'equip del compte del màster. Aquesta invitació m'ha atorgat rols d'*App Manager*, que per a fer proves en un dispositiu físic va bé, però per a muntar a la botiga no tenia els permisos necessaris.
 Com les proves es poden fer en el dispositiu sense problema, quan calga muntar una versió li la puc passar a ell perquè la compile i munte sense problema.
 
 Finalment, amb la *build* muntada vaig poder provar l'aplicació amb *TestFlight*.
@@ -197,7 +197,7 @@ De la mà de la memòria la investigació ha sigut un eix central d'aquesta iter
 
 Pel que fa a l'estat de l'art una part més agraïda ha sigut haver de jugar a molts jocs per a poder analitzar-los. Mai havia jugat a jocs incrementals per tant de temps i els he trobat molt entretinguts i m'he enganxat una mica. He caigut en totes les tècniques que he d'aconseguir replicar per al meu.
 
-Un inconvenient que em vaig trobar va ser a principi de juliol per a accedir a certs portals d'articles amb les credencials de la UA perquè se'm va caducar la contrasenya durant la caiguda dels servidors d'UACloud i durant aquells dies no vaig consultar fonts per eixa via sinó per altres.
+Un inconvenient que em vaig trobar va ser a principi de juliol per a accedir a certs portals d'articles amb les credencials de la UA perquè se'm va caducar la contrasenya durant la caiguda dels servidors d'UACloud i durant aquells dies no vaig consultar fonts per aquesta via sinó per altres.
 
 No només s'ha investigat per a aquest apartat de la memòria, també s'ha hagut de fer recerca per al desenvolupament en Godot.
 
@@ -210,7 +210,7 @@ Aquesta iteració s'ha centrat a aconseguir una versió del joc bàsica, tipus *
 
 Abans de començar a picar codi es va intentar agrupar a forma d'esquema alguns esbossos i arquitectura del que seria el joc:
 
-![Diagrames inicials en brut. Per ordre de esquerra-dreta dalt-baix: esquema de singletons, idees UI 2-5, idees UI 1, pas de prototip *grayboxed* a v0.2.0](Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png)
+![Diagrames inicials en brut. Per ordre d'esquerra-dreta dalt-baix: esquema de singletons, idees UI 2-5, idees UI 1, pas de prototip *grayboxed* a v0.2.0](Memoria/Assets/Pianissimo/Diagrames/diagrames_bruts.png)
 
 Pel que fa a la interfície el mode *idle* del joc tenia clar l'estructura d'un piano on les notes cauen i en algun costat tenir les millores. Per a la pantalla inicial hi havia més dubtes, moltes aplicacions tenen una estructura similar l'esborrany 3. En aquesta sol haver-hi una filera de botons per costat que porten a la tenda, a reptes diaris, a ofertes especials, a ruletes o coses d'atzar que donen premis... Personalment, no m'agrada, és molt genèrica i en principi el joc no tindrà tantes coses per a repartir-les en tants apartats.
 
@@ -254,9 +254,9 @@ Ja clavant-nos en el desenvolupament com a tal, les mecàniques bàsiques inicia
 
 Per a fer-ho, no es va elegir la manera més intel·ligent i calculada de programar, sinó que es va tirar per la força bruta per a veure si es podia i quedava bé el prototip, abans de perdre el temps dissenyant i implementant sistemes que potser no resultaren viables.
 
-El codi resultant era espagueti, no respectava cap principi ACID era insostenible a llarg termini. Game tenia el fitxer de codi de tot i ja es pot intuir com devia ser de llarg. El seu propòsit va servir per a determinar que efectivament la idea era viable, atractiva inclús. De refactoritzar el codi correctament es podria deixar una base sòlida on anar afegint noves millores i estadístiques per fer de la part *idle* duradora.
+El codi resultant era espagueti, no respectava cap principi ACID era insostenible a llarg termini. *Game* tenia el fitxer de codi de tot i ja es pot intuir com devia ser de llarg. El seu propòsit va servir per a determinar que efectivament la idea era viable, atractiva inclús. De refactoritzar el codi correctament es podria deixar una base sòlida on anar afegint noves millores i estadístiques per fer de la part *idle* duradora.
 
-![Captures de pantalla de la primer aversió del joc](Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots1_It2.png){height=6cm}
+![Captures de pantalla de la primera versió del joc](Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots1_It2.png){height=6cm}
 
 En aquest punt es contemplava que els **assoliments** haurien de tenir importància per a sincronitzar amb les millores així com ho fa *Cookie Clicker*, per exemple, quan compres una millora per primer cop aconsegueixes un assoliment nou. La dificultat d'implementar el sistema d'assoliments ara és que s'hauria de fer una façana per a delegar segons el SO en l'API de la *store* corresponent. Mentre que Android sí que es dominava millor gràcies a un anterior projecte, iOS era el gran desconegut i per a deixar-ho a mitges o tardar molt a incloure-ho en el prototip de *gray box*, millor deixar-ho per a una següent iteració.
 
@@ -270,7 +270,7 @@ Els fitxers es van crear buits primer i després es van posar com a *Autoloads*.
 
 A `game.gd`, que abans era un monòlit, s'ha adaptat per a llevar-li la funcionalitat de guardar que tenia i s'ha traspassat a `SaveManager.save_data`. L'abstracció continua amb les millores, que s'han separat en una escena que actua com a panell i cada *Millora* va tenir el seu propi *HBoxContainer* i més tard una aparença més de *carta*.
 
-Posteriorment, les *Estadístiques* copien l'estructura de les *Millores* i prenen la mateixa forma. Pel moment encara que siguen iguals a nivell de codi, la seua definició conceptual no és la mateixa, és per això que és una decisió de disseny mantenir-les per separat. Encara més, de les *estadístiques* que s'han pogut implementar podrien passar per *Millores*, però les que falten per implementar potser necessiten més especificitat en la seua declaració. Si en un futur no fos així es podria tornar a refactoritzar i afegir algun atribut que determine si és *millora* o *estadística*.
+Posteriorment, les *Estadístiques* copien l'estructura de les *Millores* i prenen la mateixa forma. Pel moment encara que siguen iguals pel que fa al codi, la seua definició conceptual no és la mateixa, és per això que és una decisió de disseny mantenir-les per separat. Encara més, de les *estadístiques* que s'han pogut implementar podrien passar per *Millores*, però les que falten per implementar potser necessiten més especificitat en la seua declaració. Si en un futur no fora així es podria tornar a refactoritzar i afegir algun atribut que determine si és *millora* o *estadística*.
 
 També s'ha refactoritzat l'escena *Note* de manera cada nota és responsable del seu moviment, no ho ha de fer `game.gd` fotograma a fotograma. Si algú necessita totes les notes pot fer `notes_layer.get_children()`
 
@@ -293,7 +293,7 @@ En la primera versió el control de l'àudio comptava en uns *HSliders* en la pa
 
 ##### UI
 
-Per a tenir un control més uniforme i centralitzat de l'aspecte del joc es va crear un tema propi, `main_theme.tres`. També es va respectar les *safe area* del mòbil, perquè no interferira amb els *action button* o el *notch* en cas de tenir i tenir un xicotet marge a l'esquerra i dreta.
+Per a tenir un control més uniforme i centralitzat de l'aspecte del joc es va crear un tema propi, `main_theme.tres`. També es va respectar les *safe area* del mòbil, perquè no interferira amb els *action button* o el *notch* en cas de tenir. Addicionalment, compta amb un xicotet marge a l'esquerra i dreta.
 
 Posteriorment, intentant millorar el codi de la *safe àrea*, em vaig adonar que no s'estava mostrant bé els píxels físics enfront dels lògics:
 
@@ -308,7 +308,7 @@ A més es va ajustar el *Display* en les *settings* del projecte, ja que la dife
 
 El resultat de la UI en aquesta fase es pot veure a la figura \ref{fig:screenshots2-it2}.
 
-![Captures de pantalla de la primer aversió del joc \label{fig:screenshots2-it2}](Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots2_It2.png){height=6cm}
+![Captures de pantalla de la segona versió del joc \label{fig:screenshots2-it2}](Memoria/Assets/Pianissimo/It2/Pianissimo_Screenshots2_It2.png){height=6cm}
 
 Les *Millores* es va decidir fer-les tipus "carta", l'estil de tot el text horitzontal no aprofitava bé la pantalla, ja que en tenir moltes millores s'hauria de lliscar verticalment en una zona molt estreta.
 
@@ -340,9 +340,9 @@ El mode *focus*, o millor dit, d'**assaig**, naix de la idea que l'aplicació po
 
 Si bé és cert que d'aplicacions de concentració n'hi ha moltes, aquesta vol apostar per combinar el gènere *idle* en unes sessions de *productivitat gamificada* amb una estètica musical. A més té molt de sentit, els jocs *idle* són jocs d'esperar i depenent del tipus, tens una xicoteta part de controlar els recursos al teu abast. Per què no aprofitar l'espera i fer alguna cosa de profit mentrestant i, a canvi, reps una recompensa per la part *idle*?
 
-Aquesta lògica s'ha inspirat en l'aplicació Forest, que es pot consultar al seu corresponent apartat en el [marc teòric](#sec-marc-teoric-forest). Forest fa molt bé donar-li importància a la teua concentració i accions: quan comences una tasca tens un arbre que creix durant el temps que s'ha determinat. En cas d'eixir de l'aplicació, “distreure't”, la planta morirà i hauràs “fracassat”, en canvi, si la compleixes la tindràs al teu jardí.
+Aquesta lògica s'ha inspirat en l'aplicació Forest, que es pot consultar al seu corresponent apartat en el [marc teòric](#sec-marc-teoric-forest). Forest fa molt bé donar-li importància a la teua concentració i accions: quan comences una tasca tens un arbre que creix durant el temps que s'ha determinat. En cas d'eixir de l'aplicació, “distraure't”, la planta morirà i hauràs “fracassat”, en canvi, si la compleixes la tindràs al teu jardí.
 
-És molt bona aplicació i realment encara que s'imités al 100% ningú tindria prou raons per apostar pel meu joc en lloc de l'original. Per això necessita la part *idle* per a donar-li sentit i pes, i l'estètica musical pot ser interessant per a músics que vulguen fer seguiment dels seus assajos.
+És molt bona aplicació i realment encara que s'imitara al 100% ningú tindria prou raons per apostar pel meu joc en lloc de l'original. Per això necessita la part *idle* per a donar-li sentit i pes, i l'estètica musical pot ser interessant per a músics que vulguen fer seguiment dels seus assajos.
 
 *Pianissimo* podria ser un joc *idle* a seques, però no una aplicació de control de tasques a soles. Sobretot al nivell ximple que tindrà de moment l'apartat d'assajos.
 
@@ -366,9 +366,9 @@ Per a guardar les dades s'afigen com a variables en `player_save_data.gd` i es c
 
 Una vegada amb aquesta base feta es van continuar implementant la resta de les pantalles:
 
-- `focus_journal`: mostra els assajos en mode llista, es creen per files.
+- `focus_journal`: mostra els assajos disposats en una llista, es creen per files.
 - `focus_session`: L'assaig en si, veient com passa el comptador i s'emplena el progrés.
-- `focus_summary`: El resultat de l'assaig, si s'ha completat a més es posa la recompensa.
+- `focus_summary`: El resultat de l'assaig. Si s'ha completat posa la recompensa.
 
 Una vegada comprovat que funcionaven es va implementar el sistema de cartes desbloquejables com a recompensa, això va comportar crear:
 
@@ -382,7 +382,8 @@ La interfície és molt lletja de moment, només hi ha els elements bàsics sens
 
 ![Mode Assaig en la iteració 3 de Pianissimo \label{fig:screenshots-it3}](Memoria/Assets/Pianissimo/It3/Pianissimo_FocusMode.png){height=6cm}
 
-S'ha quedat una errada surant que aprofitant, ja que la resta ha sigut ràpid d'implementar, s'ha preferit continuar i continuar implementant característiques més rellevants del joc que continuar aprofundint perquè la solució segurament portaria cert temps.
+S'ha quedat una errada surant que aprofitant, ja que la resta ha sigut ràpid d'implementar, s'ha preferit continuar i continuar implementant característiques més rellevants del joc que continuar aprofundint perquè la solució segurament tardaria cert temps.
+
 ##### Assoliments
 
 Per la diferència segons el SO, s'ha optat per fer una façana comuna d'assoliments que tinga tots els mètodes necessaris i per baix hi haja una espècie de *back-end* específic tant per a Android com per a iOS. Aquest *back-end* específic fa ús de les funcions pròpies de cada connector que s'ha incorporat al joc: *GoodlePlayServices* i *gamecenter*, cadascun en la seua corresponent carpeta.
@@ -412,7 +413,7 @@ Els assoliments han de tenir un **ID** de cada plataforma perquè el joc els pug
 
 Encara que no es publiquen els assoliments, per als usuaris de prova seran visibles. En aquesta iteració només s'han publicat els d'Android perquè era més senzill.
 
-A *Floc*, com només tenia un únic codi, els assoliments només eren constants amb l'ID de la Play Store. Per a tenir una mica de consens i pensant en el futur, per si em faria falta en la definició es van afegir variables per al nom i la descripció, totes amb claus per a la internacionalització. Si en lloc de voler dependre dels serveis de Google Play o de Game Center volguera mostrar els assoliments llistats en alguna banda de la meua aplicació, podria aprofitar aquestes característiques.
+A *Floc*, com només tenia un únic codi, els assoliments només eren constants amb l'ID de la Play Store. Per a tenir una mica de consens i pensant en el futur, per si em faria falta en la definició, es van afegir variables per al nom i la descripció, totes amb claus per a la internacionalització. Si en lloc de voler dependre dels serveis de Google Play o de Game Center m'abellira mostrar els assoliments llistats en alguna banda de la meua aplicació, podria aprofitar aquestes característiques.
 
 Per a fer proves havia d'usar els dispositius físics, en l'emulador no s'autentica. I a més passa el següent, si uses un Android connectat per USB sí que pot detectar que hi ha els Play Services, però mai arriba a autenticar. Ix el seleccionador de compte de Google Play però no funciona. S'ha de muntar el joc a la botiga i quan el descarregues per eixa via sí que funcionen.
 
@@ -424,7 +425,7 @@ Com es comentava abans aquesta iteració ha sigut a més problemàtica.
 
 Primer es va solucionar el problema que s'anava arrossegant en la terminal de `can_process` que ocorria quan canviava d'escena, però no apuntava a cap lloc concret, sinó a una mena de node intern dels subprocessos de Godot, per tant, era molt difícil fer una traça.
 
-Per trobar la solució vaig fer ús tant de Claude com de ChatGPT, ja que per internet i fòrums de Godot no trobava una resposta que em servira. El primer després de moltes proves em deia que si on m'afectava al joc ho podia posposar i el segon en un parell de preguntes em va trobar què fallava.
+Per trobar la solució vaig fer ús tant de Claude com de ChatGPT, ja que per internet i fòrums de Godot no trobava una resposta que em servira. El primer després de moltes proves em deia que si on m'afectava el joc ho podia posposar i el segon en un parell de preguntes em va trobar què fallava.
 
 Resulta que quan canviava d'escena amb `change_scene_to_file()` es quedaven nodes orfes que seguien en l'arbre de l'escena mentre es posava l'altra i, per tant, emetia eixa errada perquè no havien acabat el que estaven fent. Perquè no passe s'ha d'ajornar amb `call_deferred()` i aquesta modificació s'ha d'aplicar en tots els canvis d'escena.
 
@@ -443,7 +444,7 @@ Després entrant a les errades per les noves implementacions. Amb Android encara
 - Configurar la clau de desenvolupament i la de Cloud Console.
 - Muntar el *bundle* perquè se signe en el núvol.
 
-Els vaig repassar tots amb el vídeo per veure que estiguera tot correctament, podia firmar el joc amb la meua clau, tenia la resta en Cloud Console... Vaig recórrer de nou a internet i a falta de respostes a la IA, que en una allau d'originalitat, em demana que tornés a fer les comprovacions que ja havia fet. Així vaig estar molt de temps fins que en algun moment vaig provar diferents comandos amb *logcat* a la terminal i vaig poder traure el següent (s'ha acurtat les dades confidencials per privacitat):
+Els vaig repassar tots amb el vídeo per veure que estiguera tot correctament, podia firmar el joc amb la meua clau, tenia la resta en Cloud Console... Vaig recórrer de nou a internet i a falta de respostes a la IA, que en una allau d'originalitat, em demana que tornara a fer les comprovacions que ja havia fet. Així vaig estar molt de temps fins que en algun moment vaig provar diferents comandos amb *logcat* a la terminal i vaig poder traure el següent (s'ha acurtat les dades confidencials per privacitat):
 
 ```logcat
 **** APP NOT CORRECTLY CONFIGURED TO USE GOOGLE PLAY GAME SERVICES
@@ -473,9 +474,9 @@ Els vaig repassar tots amb el vídeo per veure que estiguera tot correctament, p
 ****   http://developers.google.com/...
 ```
 
-Les raons que donava era el que la IA i internet no paraven de repetir (informació de la documentació d'Android Studio), però en l'ajuda per a *debuggejar* el SHA-1 resulta no ser-me familiar, cap de les claus que tinc tenia eixe aspecte, com era possible?
+Les raons que donava era el que la IA i internet no paraven de repetir (informació de la documentació d'Android Studio), però en l'ajuda per a *debuggejar*, el SHA-1 resultant no m'era familiar, cap de les meues claus tenia eixe aspecte, com era possible?
 
-L'única explicació que li puc donar és que quan vaig muntar l'aplicació en la iteració 1 es va signar al núvol i eixa clau no la vaig configurar a la Cloud Console, però per algun motiu en els passos de configuració no feia falta. Això o en alguna distracció vaig fer una clau de més o a saber si vaig signar dues vegades en algun moment i alguna clau no me la vaig guardar. Tant se valia, vaig afegir la clau a Cloud Console i com per art de màgia ja anava a la perfecció.
+L'única explicació que li puc donar és que quan vaig muntar l'aplicació en la iteració 1 es va signar al núvol i aquesta clau no la vaig configurar a la Cloud Console, però per algun motiu en els passos de configuració no feia falta. Això o en alguna distracció vaig fer una clau de més o a saber si vaig signar dues vegades en algun moment i alguna clau no me la vaig guardar. Tant se valia, vaig afegir la clau a Cloud Console i com per art de màgia ja anava a la perfecció.
 
 Si amb aquesta errada vaig tenir aquest esglai, en iOS em faltava estar a la vora de tirar la tovallola i quedar-me només amb Android.
 
@@ -497,9 +498,9 @@ No cal nomenar què feia falta millorar de la interfície si mirem les captures 
 
 La mentalitat d'aquests dies ha sigut anar solucionant pantalla a pantalla fins a deixar-la en estat òptim i, sobre la marxa si feia falta, afegir alguna millora o corregir alguna errada s'anotava al Kanban.
 
-El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb el detall suficient per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt en implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
+El Kanban durant el projecte s'ha usat molt poc, però aquesta iteració ha sigut clau per a mantenir tot ordenat i organitzat. Les tasques eren descriptives i amb prou detall per a saber del que estava parlant en el moment d'anotar-les. No s'ha tardat molt a implementar-se, principalment s'anotaven amb etiquetes denotant la seua importància i de quina temàtica eren.
 
-Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els "*i si pose açò?*" o els "*pot ser es veuria millor d'aquesta manera*". Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
+Les que més s'han anotat eren `nice-to-have`, ja que una vegada s'acomplia en el previst als esbossos sorgien els “*i si pose açò?*” o els “*potser es veuria millor d'aquesta manera*”. Els colors han anat variant, la manera de distribuir l'espai també, s'han ajustat mil vegades els marges i els contenidors... El resultat que s'ha buscat ha sigut consistent, colorit i a poder ser divertit.
 
 ![Aspecte d'algunes de les pantalles de Pianissimo després dels canvis en la Iteració 4](Memoria/Assets/Pianissimo/It4/Pianissimo_UI_It4.jpg){height=8cm}
 
@@ -511,7 +512,7 @@ El tema de la interfície, `main_theme` ha canviat molt per les coses que s'han 
 
 Una correcció va ser posar un tema a la variant *focus* dels botons, ja que en polsar un per defecte es quedava un fi requadre gris que quedava malament.
 
-També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar el desconfiguració de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
+També s'ha arreglat l'aspecte de les Notes, un canvi de *ColorRect* a *Panel* per a donar-li l'estil de la vora que ja tenen altres elements. Aquest canvi va suposar la desconfiguració de la mida, però era perquè el codi el tenia vinculat al Node *ColorRect*, quan es va llevar la dependència s'havia arreglat.
 
 El **mode assaig** també va patir un canvi radical: va passar de gris fosc a un colorit fons i elements amb estil aplicat. No només la millora va ser visual sinó que es va afegir un camp per a posar etiquetes siga personalitza o predeterminada. Aquestes etiquetes, en cas d'usar una predeterminada, s'hi pot veure el color de l'activitat a l'historial d'assajos. A més configurant l'assaig s'ha afegit el mode *permissiu*.
 
@@ -523,7 +524,7 @@ Com encara volia donar-li més voltes, es va afegir l'opció en poder eliminar a
 
 Poques coses faltaven més al joc així que volia atacar un problema que segur que anava a passar quan es feren proves en usuaris, el joc no té instruccions i potser jo no estiga present quan algú el prove. 
 
-Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpiga com usar-lo. El meu disseny, de moment, no és prou bo i algunes de les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
+Un bon disseny hauria de ser aquell que no necessita explicació i que només mirant-lo l'usuari ja sàpia com usar-lo. El meu disseny, de moment, no és prou bo i algunes de les persones que provaran el joc no estan acostumades a jugar en mòbil i molt menys a *idles* (i saber de què van). Encara més, crec que no els agradarà aquest gènere i no li veuran la gràcia, així que, ja que em faran el favor, per què no fer-los la vida més fàcil.
 
 La meua solució temporal, i que segurament es quedarà, és un **sistema** per a posar **tutorials** que també pot servir per a contar una miqueta la història del joc.
 De moment s'ha preparat per a posar tutorial per a *game* i *focus* quan entres per primer cop. Es poden tornar a veure en la pantalla de configuració polsant els botons corresponents.
@@ -562,22 +563,23 @@ També s'ha creat més contingut de *millores* i *estadístiques* com també arr
 
 Finalment, a més s'ha pensat i fet un formulari per a fer proves en usuaris.
 
-#### Formulari proves usuaris
+#### Formulari de proves amb usuaris
 
 Per tenir un seguiment de com van les proves amb els usuaris que han volgut participar s'ha pensat a fer una enquesta que cobrisca molts dels aspectes del joc.
 
 S'ha fet amb Google Forms, es poden veure les preguntes i respostes al corresponent apartat en l'[Annex](#sec-formulari).
 
 #### Exportador memòria
+
 S'ha modificat l'exportador per tal de reduït el pes del PDF resultant. A mesura que hi afegia més contingut a la memòria cada vegada pesava més i tardava més l'exportació.
 
 El motiu era que les imatges es clavaven sense comprimir amb tota la resolució i com jo no havia tingut cura hi havia de molt grans i pesades. S'ha fet una solució automatitzada que detecta les imatges que s'usen en la memòria i les substitueix per una versió JPG al 90% de qualitat. Ha passat de pesar 60 MB en l'anterior iteració a pesar-ne 10 MB.
 
-Aquesta solució beneficiara que en cas d'afegir imatges no es perga temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
+Aquesta solució beneficiara que en cas d'afegir imatges no es perda temps editant-les per a ocupar menys i no haver d'usar un programari de tercers per a comprimir el PDF. Ens estalviarà un ensurt a l'hora d'entrega si per la mida la plataforma no deixava muntar-ho.
 
 #### Projecte Godot
 
-Primer es va configurar el connector de les notificacions. A diferència dels de les botigues, aquest comptava en el mateix connector una versió per a Android i per a iOS. Va ser senzill d'instal·lar, la part d'Android a la carpeta d'`addons` i la d'iOS a `iOS/plugins`. Quan dic que va ser senzill va ser no sense primer intentar posar-ho tot en la carpeta d'`addons`inútilment.
+Primer es va configurar el connector de les notificacions. A diferència dels de les botigues, aquest comptava en el mateix connector una versió per a Android i per a iOS. Va ser senzill d'instal·lar, la part d'Android a la carpeta d'`addons` i la d'iOS a `iOS/plugins`. Quan dic que va ser senzill va ser no sense primer intentar posar-ho tot en la carpeta d'`addons` inútilment.
 
 El que va costar una miqueta al principi va ser d'on obtindre'l: segons el repositori hi ha 3 maneres per a instal·lar-lo, a través de:
 
@@ -603,7 +605,7 @@ Em pensava que anava a ser supercomplicat, però és molt senzill, per això la 
 
 Una vegada establit aquest sistema es va pensar que estaria bé que fora l'usuari qui determinara quant de temps ha de passar sense tocar el joc fins que t'envie la notificació. Aquesta funcionalitat va comportar modificar *settings*, es va afegir nous camps, connectats a noves variables de `SettingManager` que se'n feren càrrec.
 
-A les estadístiques s'havia ficat la millora de posar un xicotet botó amb una “i” d'informació per a veure el detall del que fan. Primer es va provar en les estadístiques i de cara a les proves amb usuaris veure si ho trobarien a faltar també en les millores. La meua sospita era que sí, encara que no descartava que potser ningú les usara i, per tant, no s'hi fixarien. Per a implementar-ho a més del botó s'hi havien afegit al CSV totes les cadenes en les descripcions corresponents i la classe `detail_popup`.
+A les estadístiques s'havia ficat la millora de posar un xicotet botó amb una “i” d'informació per a veure la descripció del que fan. Primer es va provar en les estadístiques i de cara a les proves amb usuaris veure si ho trobarien a faltar també en les millores. La meua sospita era que sí, encara que no descartava que potser ningú les usara i, per tant, no s'hi fixarien. Per a implementar-ho a més del botó s'hi havien afegit al CSV totes les cadenes en les descripcions corresponents i la classe `detail_popup`.
 
 #### UI/UX
 
@@ -611,23 +613,23 @@ S'ha arreglat l'aspecte de la icona de l'aplicació en Android. Segons el dissen
 
 En un altre projecte que vaig fer, *Floc*, eixe problema també passava, però com el disseny estava molt centrat i xicotet no quedava malament, per tant, mai havia pensat que era un problema.
 
-Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos sistemes operatius tracten les icones de manera distinta, en el cas d'Android, el que donava problemes, ho podia solucionar fent versions del logo en la mida adequada i posant-les en la configuració d'exportació d'Android.
+Resultava estrany que a iOS es veiés bé i en Android no. Es veu que els dos sistemes operatius tracten les icones de manera distinta, en el cas d'Android, el que donava dificultats, ho podia solucionar fent versions del logo en la mida adequada i posant-les en la configuració d'exportació d'Android.
 
 Amb Affinity va ser tan fàcil com fer una versió de 192x192 px i després una versió *foreground* i *background* de 432x432 px.
 
 ![Comparació entre icones en Android abans sense tenir el tamany adequat amb quan sí](Memoria/Assets/Pianissimo/It5/Pianissimo_AndroidIcon_Comparison.jpg){height=3cm}
 
-També es va arreglar el *Scroll Container* per a la botiga de millores, no lliscava bé a menys que posares el dit exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del scroll, per tant, no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, com a resultat, tota la zona ja llisca bé.
+També es va arreglar el *Scroll Container* per a la botiga de millores, no lliscava bé a menys que posares el dit exactament en la zona on estava la barra horitzontal. Es veu que Godot superposava l'àrea del botó a la del *scroll*, per tant, no propagava el gest, canviar el `mouse = Pass` permet que el gest arribe correctament, com a resultat, tota la zona ja llisca bé.
 
 S'ha afegit també una millora per a fer més visual quan encertes una nota que és un xicotet *pop-up* d'un número segons les notes que guanyes per nota correcta. El color depén si la nota és *perfect* o *good*. S'ha fet usant `tween`.
 
 Al sistema de tutorials s'havia millorat amb icones en lloc de text per als botons d'anar avant o enrere.
 
-En aquesta iteració també s'ha canviat la tipografia. Es buscava una tipus *serif* per què, a pesar que el joc vol tenir una estètica més aïna divertida, en música la immensa majoria de vegades s'usa aquest tipus de tipografia més seriosa i formal.
+En aquesta iteració també s'ha canviat la tipografia. Es buscava una tipus *serif* per què, a pesar que el joc vol tenir una estètica més aïna divertida, en música la immensa majoria de vegades s'utilitza aquest tipus de tipografia més seriosa i formal.
 
 En l'imaginari col·lectiu, el piano és un instrument que se'l pot considerar elegant, solemne, regi... abans el joc tenia la tipografia per defecte *sense serifa*, que estava bé, però tampoc acabava d'encaixar. Amb `Noto Serif` crec que compleix bé el seu paper.
 
-S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. Però hi havia un problema: en un mòbil no es llegia molt còmodament. O almenys per al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar problemes de visibilitat. Si ja tenia eixe dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
+S'havia provat abans amb `Playfair Display`, encaixava a la perfecció en el concepte i s'assemblava moltíssim a llibres de partitures que tinc. Però hi havia un problema: en un mòbil no es llegia molt còmodament. O almenys per al meu criteri, perquè aquesta tipografia té alguns traços prou finets en algunes direccions i podia causar que es veiés malament. Si ja tenia aquest dubte mirant la primera pantalla, on el text blanc contrasta amb les tecles, no volia pensar en altres bandes. 
 
 S'ha consultat la llicència i es pot usar sense cap problema. Si en el futur inclús volguera comercialitzar el joc tampoc tindria problema. L'única cosa que s'ha de tenir en compte amb el tipus de llicència, *SIL Open Font License*, és que si es distribueix la tipografia s'ha d'incloure la llicència. En el meu cas, en una *bundle* de l'aplicació sí que cau en eixe paraigua així que es valorarà on posar-los.
 
@@ -665,7 +667,7 @@ El tauler Kanban s'ha afegit una columna *Feedback Testing* per a posar dedicada
 
 ![Aspecte del tauler Kanban amb les noves columnes de *Feedback Testing*](Memoria/Assets/Pianissimo/It6/Kanban_It6.png){height=6cm}
 
-Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar l'aplicació, en canvi, per iOS no s'ha tingut massa sort, i damunt en els que s'ha provat fora del meu dispositiu de proves el so no anava. Aquesta errada no l'he entesa molt bé perquè per defecte el so està activat i com a mi sempre m'ha anat quan he fet les proves amb Xcode o quan l'he baixat de *test flight* em vaig quedar bloquejada.
+Per a les proves he tingut un bon nombre d'usuaris d'Android per a poder provar l'aplicació, en canvi, per iOS no s'ha tingut massa sort, i damunt en els que s'ha provat fora del meu dispositiu de proves el so no anava. Aquesta errada no l'he entesa molt bé perquè per defecte el so està activat i com a mi sempre m'ha anat quan he fet les proves amb Xcode o quan l'he baixat de *Test Flight* em vaig quedar bloquejada.
 
 No tot podia ser roí, s'ha provat *Pianissimo* en un iPad i una tauleta Android i es veu estupendament, el disseny suporta dimensions grans, està ben fet doncs.
 
@@ -700,18 +702,18 @@ TODO : posar quines coses estem implementant
 
 En aquesta última iteració també he tingut l'última reunió amb el meu tutor. Aquesta reunió va servir per a poder mostrar-li l'aplicació en persona, veure si calia afegir o polir alguna coseta i saber la seua opinió. Una de les preocupacions que tenia era si no hauria estat suficient tota la meua faena d'implementació, encara que sospitava que amb les notificacions, que funcionara bé amb els dos SO i que ho tinguera disponible a les botigues seria una gran base.
 
-La seua opinió va se que anava molt bé, em va donar una mica de retroalimentació i vam parlar d'alguns aspectes de la memòria, l'entrega i la defensa.
+La seua opinió va ser que anava molt bé, em va donar una mica de retroalimentació i vam parlar d'alguns aspectes de la memòria, l'entrega i la defensa.
 
 S'ha afegit unes noves imatges de tutorials, fetes amb Affinity també, que ara tenen el fil argumental i són més clares.
 
 S'ha acabat i revisat també aquesta memòria com també preparat l'entrega del TFM.
 #### Projecte Godot
 
-S'ha arreglat l'errada de la música quan es canviava de `home` a `idle`. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
+S'ha arreglat l'errada de la música quan es canviava de *home* a *idle*. S'ha posat una sèrie de *prints* per a trobar quina pista d'àudio s'estava reproduint i si existia, a veure si és que s'esborrava en el canvi de l'escena per la implementació dels nivells.
 
-Resulta que quan tornàvem a `Home` després d'entrar a `Idle` per primera vegada, la variable `_playlist` estava buida perquè s'ha esborrat amb `cleanup()`, per tant, quan entrava de nou. a `Idle` es quedava en la música que estava sonant, la de *menú*.
+Resulta que quan tornàvem a *home* després d'entrar a *idle* per primera vegada, la variable `_playlist` estava buida perquè s'ha esborrat amb `cleanup()`, per tant, quan entrava de nou a *idle* es quedava en la música que estava sonant, la de *menú*.
 
-L'errada era la típica que sol passar amb els *arrays*: Godot els **passa per referència** i, com a resultat, quan es buida per a tornar a `home` quan torna a `idle` com no se li assigne directament una peça continuarà amb el que hi havia. Abans no passava perquè només teníem una peça sonant en `idle` i l'assignàvem manualment. El problema no era la implementació del `LevelManager` sinó com estava fet `AudioManager`.
+L'errada era la típica que sol passar amb els *arrays*: Godot els **passa per referència** i, com a resultat, quan es buida per a tornar a *home* quan torna a *idle* com no se li assigne directament una peça continuarà amb el que hi havia. Abans no passava perquè només teníem una peça sonant en *idle* i l'assignàvem manualment. El problema no era la implementació del `LevelManager` sinó com estava fet `AudioManager`.
 
 La solució ha estat duplicar l'*array* amb `duplicate()` per fer-ne una còpia.
 

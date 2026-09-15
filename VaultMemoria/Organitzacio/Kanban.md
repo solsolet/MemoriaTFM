@@ -27,6 +27,7 @@ kanban-plugin: board
 - [ ] Afegir millora sensible #nice-to-have
 - [ ] saver si les cartes era es poden posar més comodament i no copiar a ma el stirng dels id
 - [ ] Revisar com escric *backend* o *back-end* en tota la memòria per a posar-ho igual #memo #i
+- [ ] Posar clockify en desenvolupament #l #memo
 
 
 ## Feedback Testing

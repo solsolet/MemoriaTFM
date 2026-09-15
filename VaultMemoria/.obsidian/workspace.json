@@ -143,7 +143,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -329,14 +329,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "f6a34b013708cf49",
+  "active": "756d5ac1b4da36c8",
   "lastOpenFiles": [
-    "Memoria/Annexos/One-Sheet.md",
     "Memoria/Desenvolupament.md",
     "Memoria/Conclusions.md",
+    "Memoria/Marc teoric.md",
+    "Organitzacio/Kanban.md",
+    "Memoria/Annexos/One-Sheet.md",
     "Memoria/Objectius.md",
     "Memoria/Justificacio i Objectius.md",
-    "Organitzacio/Kanban.md",
     "Memoria/Assets/Pianissimo/It6/Pianisismo_iPad_real.jpg",
     "Memoria/Assets/Pianissimo/It6/Kanban_It6.png",
     "Memoria/Assets/Pianissimo/It5/Pianissimo_Notification.png",
@@ -373,7 +374,6 @@
     "Memoria/Assets/Pianissimo/Diagrames/DiagramaMockups.drawio",
     "Memoria/Index.md",
     "Memoria/Cites.md",
-    "Memoria/Dedicatoria.md",
     "Memoria/Assets-Optimized/Metodologia",
     "Memoria/Assets/Metodologia",
     "Memoria/Assets-Optimized/Pianissimo/It7"

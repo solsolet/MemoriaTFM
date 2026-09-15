@@ -22,9 +22,9 @@ Una altra cosa per la qual estic orgullosa és que aquest és el primer desenvol
 
 M'ha agradat molt el desenvolupament en Godot, no m'he sentit limitada en cap moment i permet tantes possibilitats que per a desenvolupaments d'aquest tipus que no té res a envejar als grans motors comercials.
 
-L'elecció d'un joc idle al principi es va prendre com un xicotet repte, que pot ser en no molt esforç podria tenir un joc funcional i durant el desenvolupament m'he adonat que tan senzill no era. Ha requerit un gran esforç inicial per tal de deixar una base sòlida.
+L'elecció d'un joc *idle* al principi es va prendre com un xicotet repte, que pot ser en no molt esforç podria tenir un joc funcional i durant el desenvolupament m'he adonat que tan senzill no era. Ha requerit un gran esforç inicial per tal de deixar una base sòlida.
 
-El temps que s'ha invertit per a fer cada sistema robust i poc acoblat permetrà en un futur si es vol afegir nou contingut serà molt senzill. Ha pagat la pena invertir tant de temps i esforç.
+El temps que s'ha invertit per a fer cada sistema robust i poc acoblat permetrà en un futur, si es vol afegir nou contingut, siga molt senzill. Ha pagat la pena invertir tant de temps i esforç.
 
 Tot i estar molt contenta en el resultat trobe que hi podria afegir i millorar els següents aspectes:
 
