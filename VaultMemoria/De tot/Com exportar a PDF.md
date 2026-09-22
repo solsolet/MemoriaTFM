@@ -47,3 +47,18 @@ Si per algun motiu l'estil de cursiva no s'aplica a un text que tinga alguna reg
 \itshape
 tot el text d'ací baix estarà en cursiva
 ```
+
+### Bibliografia
+
+#### Cita inline
+
+```
+[@idDeLaCitaEnZotero]
+```
+
+### Enllaços
+
+He esbrinat com posar enllaços que referencien a altres títols fora de la nota en la qual estem. Es fa:
+
+- Posa al costat del títol entre claus el nom que vulguem: `## Estat de l'art {#sec-estat-art}`
+- Referenciar-ho amb corxets i parèntesi amb el "`id`": `[estat l'art](#sec-estat-art)`.
